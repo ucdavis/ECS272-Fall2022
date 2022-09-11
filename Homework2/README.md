@@ -29,11 +29,12 @@ To use a dataset, download the data file from the respective URL above and put i
 
 
 ### Coding template
-To get started, you can use one of the provided templates for setting up the application and loading the dataset. These templates can be found in the "Templates" directory under  Homework 2  directory on Github.
+To get started, we will be using a VUE frame work, as seen in the directory under  Homework 2  directory on Github.
 
 You are free to use other existing frameworks and libraries outside of vanilla javascript to implement the system. Some common frameworks and libraries include:
-* [Vue](https://vuejs.org/v2/guide/)
+* [Vue](https://vuejs.org/guide/introduction.html)
   *  Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.
+  
 * [React](https://reactjs.org/tutorial/tutorial.html)  (Links to an external site.)is a JavaScript library for building user interfaces.
     * React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
 
