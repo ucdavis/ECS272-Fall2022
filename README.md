@@ -2,8 +2,8 @@
 This repository contains class materials for ECS 272 in Fall 2022.
 
 ## Time and Location
-* Lecture Time: __1:40 - 3:00pm Tuesday and Thursday__
-* Location: __Wellman__
+* Lecture Time: __12:10 - 1:30pm Tuesday and Thursday__
+* Location: __Hart 1150__
 
 ## Instructors and Office Hours
 * Instructor: [Kwan-Liu Ma](https://www.cs.ucdavis.edu/~ma)
