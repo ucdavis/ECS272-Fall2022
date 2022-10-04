@@ -16,14 +16,16 @@ If you need to learn more about JavaScript, you can refer to [A re-introduction 
 
 
 # Datasets 
-In this assignment, you can choose one of the following datasets:
+In this assignment, you can choose one of the following datasets (as seen on Canvas):
 
-* [LAX Passenger Counts by Terminal](https://data.lacity.org/A-Prosperous-City/Los-Angeles-International-Airport-Passenger-Traffi/g3qu-7q2u)
-* [Film Locations in San Francisco](https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am)
-* [List of Historical Ballot Measures in San Francisco](https://data.sfgov.org/City-Management-and-Ethics/List-of-Historical-Ballot-Measures/xzie-ixjw)
-* [Louisville Restaurant Health Inspections](https://data.louisvilleky.gov/dataset/restaurant-inspection-data)
-* [SF Crime Dataset](https://www.kaggle.com/roshansharma/sanfranciso-crime-dataset)
+* [Airline Passenger Satisfaction](https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfaction)
+* [CO2 Emissions Around the World](https://www.kaggle.com/datasets/koustavghosh149/co2-emission-around-the-world)
+* [Netflix TV Shows and Movies](https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies)
+* [Student Performance Dataset](https://www.kaggle.com/datasets/devansodariya/student-performance-data)
+* [Spotify Dataset](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks)
 * [Global Terrorism Database](https://www.kaggle.com/START-UMD/gtd)
+* [Cosmetics](https://www.kaggle.com/datasets/kingabzpro/cosmetics-datasets)
+* [US Wildfire Dataset](https://www.kaggle.com/rtatman/188-million-us-wildfires)
   
 To use a dataset, download the data file from the respective URL above and put it in the "datasets" folder under the Homework 2 directory.
 

@@ -96,6 +96,17 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'graphql-tag/loader',
             },
+            {
+                test: /\.(txt|csv|mmdb)$/,
+                use:
+                {
+                    loader: 'file-loader',
+                    options: {
+                    name: "[path][name].[ext]",
+                    emitFile: true,
+                    },
+                },
+            }
         ],
     },
     resolve: {

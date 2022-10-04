@@ -33,7 +33,7 @@
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
     "@types/lodash": "^4.14.182",
-    "@types/node": "^18.0.3",
+    "@types/node": "^18.8.1",
     "autoprefixer": "^10.3.6",
     "axios": "^0.26.1",
     "babel-loader": "^8.2.2",
