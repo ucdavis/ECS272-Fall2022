@@ -34,7 +34,7 @@ import BarChart1 from "../components/barchart1.vue"
 import BarChart2 from "../components/barchart2.vue"
 import * as d3 from "d3";
 import csvPath from "../../../../dataset/CO2_emission.csv";
-import geoPath from "../../../../dataset/world_countries.json";
+// import geoPath from "../../../../dataset/world_countries.json";
 
 export default {
     data(){
