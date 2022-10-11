@@ -1,5 +1,5 @@
 <template>
-    <div id="bar"></div>
+    <div id="bar2"></div>
 </template>
 
 <script>
@@ -7,7 +7,7 @@
     import testData from "../../assets/data/test.json"; /* Example of reading in data direct from file*/
 
     export default {
-        name: 'BarChart',
+        name: 'BarChart2',
         data() {
             return {
                 name: 'Hello',
@@ -21,14 +21,14 @@
         mounted(){
             console.log(testData);
             let localData = testData['data'];
-            this.drawBarChart(localData, "#bar") /* Example of reading data from a json file */
+            this.drawBarChart(localData, "#bar2") /* Example of reading data from a json file */
             // this.drawBarChart(this.myBarchartData, "#bar")
             console.log("Data Passed down as a Prop  ", this.myBarchartData)
         },
         methods: {
             drawBarChart(data, id) {
 
-                const margin = { top: 40, right: 40, bottom: 120, left: 100 };
+                const margin = { top: 20, right: 20, bottom: 20, left: 20 };
                 const height = 300;
                 const width = 500;
 
@@ -51,7 +51,7 @@
                     .attr("y", d => y(d.x))
                     .attr("width", x.bandwidth())
                     .attr("height", d => y(0) - y(d.x))
-                    .attr("fill", "green");
+                    .attr("fill", "blue");
 
                 const xAxis = g => g
                     .attr("transform", `translate(0,${height - margin.bottom})`)

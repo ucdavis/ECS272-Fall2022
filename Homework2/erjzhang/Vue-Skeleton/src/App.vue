@@ -19,6 +19,6 @@ import Navigation from "./views/components/navbar.vue"
 
 <style scoped lang="css">
 .main-page{
-    height:100%;
+    height:125%;
 }
 </style>
