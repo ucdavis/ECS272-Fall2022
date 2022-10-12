@@ -49,14 +49,12 @@ export default {
                 .range(["#ffddcc", "#993300"]);
             d3.json(
                 // 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
-                'https://gist.githubusercontent.com/alexwebgr/10249781/raw/2df84591a9e1fb891bcfde3a3c41d6cfc70cb5ee/world-topo.json'
+                // 'https://gist.githubusercontent.com/alexwebgr/10249781/raw/2df84591a9e1fb891bcfde3a3c41d6cfc70cb5ee/world-topo.json'
+                '../../../dataset/world_topo.json'
                 )
-                .then(data => {
+                .then((data) => {
                     const countries = topojson.feature(data, data.objects.countries);
                     console.log(countries)
-
-
-
 
                     // Use regular flat projection
                     const projection = d3.geoMercator()
@@ -76,6 +74,7 @@ export default {
                         .attr("d", path)
                 })
         },
+
         drawMainChart(data, id) {
             const margin = { top: 20, right: 20, bottom: 20, left: 20 };
             const height = 300;
