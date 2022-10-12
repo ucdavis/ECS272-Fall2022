@@ -19,24 +19,23 @@ export default {
         }
     },
     props: {
-        myMainChartData: Array,
+        myMainChartData: Object,
     },
     mounted() {
-        console.log(testData);
+        // console.log(testData);
         let localData = testData['data'];
-        this.drawMainChart(localData, "#main") /* Example of reading data from a json file */
+        // this.drawMainChart(localData, "#main") /* Example of reading data from a json file */
         // this.drawMainChart(this.myMainChartData, "#main")
-        this.drawMap("#map")
+        this.drawMap(this.myMainChartData, "#map")
         console.log("Data Passed down as a Prop  ", this.myMainChartData)
     },
     methods: {
-        drawMap(id) {
+        drawMap(data, id) {
             const margin = { top: 20, right: 20, bottom: 20, left: 20 };
             const height = 500 * 0.65;
             const width = 960 * 0.65;
 
             let svg = d3.select(id).append("svg")
-
                 .attr("viewBox", [0, 0, width, height])
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
@@ -47,32 +46,27 @@ export default {
             const color = d3.scaleLinear()
                 .domain([0, 9])
                 .range(["#ffddcc", "#993300"]);
-            d3.json(
-                // 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
-                // 'https://gist.githubusercontent.com/alexwebgr/10249781/raw/2df84591a9e1fb891bcfde3a3c41d6cfc70cb5ee/world-topo.json'
-                '../../../dataset/world_topo.json'
-                )
-                .then((data) => {
-                    const countries = topojson.feature(data, data.objects.countries);
-                    console.log(countries)
 
-                    // Use regular flat projection
-                    const projection = d3.geoMercator()
-                        .scale(100)
-                        .translate([width / 2, height / 1.5])
-                    // .fitSize([width*2, height*2], countries);
-                    const path = d3.geoPath(projection)
-                    g.selectAll("path").data(countries.features)
-                        .enter()
-                        .append("path")
-                        
-                        .attr("fill", (d, i) => {
-                            // console.log(i)
-                            return d3.interpolateOranges(i/241) // number of countries...
-                        })
-                        .attr("class", "countries")
-                        .attr("d", path)
+            const countries = topojson.feature(data, data.objects.countries);
+            console.log(countries)
+
+            // Use regular flat projection
+            const projection = d3.geoMercator()
+                .scale(100)
+                .translate([width / 2, height / 1.5])
+            
+            const path = d3.geoPath(projection)
+            g.selectAll("path").data(countries.features)
+                .enter()
+                .append("path")
+
+                .attr("fill", (d, i) => {
+                    // console.log(i)
+                    return d3.interpolateOranges(i / 241) // number of countries...
                 })
+                .attr("class", "countries")
+                .attr("d", path)
+            // })
         },
 
         drawMainChart(data, id) {
