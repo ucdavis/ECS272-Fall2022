@@ -12,7 +12,6 @@ import { integer } from "vue-types";
         data() {
             return {
                 name: 'Hello',
-                someLocalValues: [1, 2, 3, 4, 5],
             }
         },
         props:{
@@ -27,9 +26,6 @@ import { integer } from "vue-types";
                         let b = this.toNumber(d2[this.curr_year])
                         return d3.descending(a, b)
                     })
-            console.log(testData);
-            // let localData = testData['data'];
-            // this.drawBarChart(this.myBarchartData, "#bar")
             console.log("Mounted: My chart 1 data  ")
             this.drawBarChart(this.myBarchartData, "#bar1", this.curr_year, this.x_key, this.top_n) /* Example of reading data from a json file */
 
@@ -41,13 +37,13 @@ import { integer } from "vue-types";
                         let b = this.toNumber(d2[this.curr_year])
                         return d3.descending(a, b)
                     })
-            console.log(testData);
             console.log("Updated: My chart 1 data  ")
             this.updateBarChart(this.myBarchartData, "#bar1", this.curr_year, this.x_key, this.top_n)
         },
         methods: {
             updateBarChart(data, id, year ,x_key, top_n) {
                 data = data.slice(0,top_n)
+                console.log(data);
                 const margin = { top: 20, right: 20, bottom: 20, left: 20 };
                 const height = 300;
                 const width = 600;
@@ -60,9 +56,6 @@ import { integer } from "vue-types";
                     .rangeRound([height - margin.bottom, margin.top]);
 
                 let svg = d3.select(id).select("svg")
-                    // .attr("viewBox", [0, 0, width, height])
-                    // .attr("width", width + margin.left + margin.right)
-                    // .attr("height", height + margin.top + margin.bottom);
 
                 svg.selectAll("rect")
                     .data(data)
@@ -85,26 +78,20 @@ import { integer } from "vue-types";
                     .attr("class", "x axis")
                     .attr("transform", "translate(0," + height + ")")
                     .call(xAxis)
-                    // .selectAll("text")
-                    // .style("text-anchor", "middle")
-                    // .attr("dx", "0em")
-                    // .attr("dy", "1em")
-                    // // .attr("transform", "rotate(-65)")
-                    // // .attr("class", "mx-auto")
-                    // .attr("font-weight", "bold");
+                    .selectAll("text")
+                    .style("text-anchor", "middle")
+                    .attr("dx", "0em")
+                    .attr("dy", "1em")
+                    .attr("font-weight", "bold");
+
 
                 svg.select("#b1_y")
                     .call(yAxis)
-                    // .call(g => g.select(".tick:last-of-type text")
-                    //     .clone()
-                    //     .attr("transform", `rotate(-90)`)
-                    //     .attr("text-anchor", "middle")
-                    //     .attr("x", -(15 - margin.top - margin.bottom) / 2)
-                    //     .attr("y", -80)
-                    //     .attr("font-weight", "bold"))
             },
+
             drawBarChart(data, id, year ,x_key, top_n) {
                 data = data.slice(0,top_n)
+                console.log(data);
                 const margin = { top: 20, right: 20, bottom: 20, left: 20 };
                 const height = 300;
                 const width = 600;
@@ -147,8 +134,6 @@ import { integer } from "vue-types";
                     .style("text-anchor", "middle")
                     .attr("dx", "0em")
                     .attr("dy", "1em")
-                    // .attr("transform", "rotate(-65)")
-                    // .attr("class", "mx-auto")
                     .attr("font-weight", "bold");
 
                 svg.append("g")
@@ -163,7 +148,7 @@ import { integer } from "vue-types";
                         .attr("font-weight", "bold"))
             },
             toNumber(item) {
-            // console.log(item)
+
             if (typeof item === 'number') {
                 return item
             }

@@ -41,15 +41,12 @@
 import MainChart from "../components/mainchart.vue"
 import BarChart1 from "../components/barchart1.vue"
 import BarChart2 from "../components/barchart2.vue"
-// import VueSlider from 'vue-slider-component'
-// import 'vue-slider-component/theme/default.css'
 import * as d3 from "d3";
 import * as topojson from "topojson"
 import csvPath from "../../../dataset/CO2_emission.csv";
 
 
-const geoPath =
-    'https://raw.githubusercontent.com/1832051637/ECS272-Fall2022/main/Homework2/erjzhang/dataset/world_topo.json'
+const geoPath = 'https://raw.githubusercontent.com/1832051637/ECS272-Fall2022/main/Homework2/erjzhang/dataset/world_topo.json'
 
 const FIRST_YEAR = 1990
 const LAST_YEAR = 2019
@@ -57,27 +54,6 @@ const CURR_YEAR = 2019
 const TOP_N = 7
 const X_KEY = 'Country Name'
 const HISTORY_MAX = 50.95403383
-// const slider = document.getElementById("year_slider");
-
-// function all_year_max(data) {
-//     let max = Number.NEGATIVE_INFINITY
-//     for (let index = FIRST_YEAR; index < LAST_YEAR + 1; index++) {
-//         let every_max = d3.max(data, d => {
-//             return toNumber(d[index])
-//         })
-//         if (every_max > max) {
-//             max = every_max
-//         }
-//     }
-//     return max
-// }
-
-// function toNumber(item) {
-//     if (typeof item === 'number') {
-//         return item
-//     }
-//     return item ? parseFloat(item) : 0.0
-// }
 
 export default {
     data() {
@@ -115,31 +91,17 @@ export default {
             //async method
             d3.csv(csvPath)
                 .then((data) => { 
-                    // array of objects
-                    // data.sort((d1, d2) => {
-                    //     let a = this.toNumber(d1[this.curr_year])
-                    //     let b = this.toNumber(d2[this.curr_year])
-                    //     return d3.descending(a, b)
-                    // })
                     console.log(data.length);
                     console.log(data);
                     this.country_num = data.length
                     this.dataExists = true; // updates the v-if to conditionally show the barchart only if our data is here.const countries 
                     this.myCsvData = data; // updates the prop value to be the recieved data, which we hand in to our bar-chart
                     this.x_key = X_KEY
-                    // console.log(slider)
                     // this.curr_year = CURR_YEAR
                     this.top_n = TOP_N
                     this.history_max = HISTORY_MAX
-                    // console.log("all year max ", this.history_max)
+
                 });
-            // d3.json(geoPath)
-            //     .then((geoData) => {
-            //         console.log(geoData)
-            //         this.geoDataExists = true;
-            //         this.myGeoData = geoData
-            //     })
-            // this.$forceUpdate()
         },
 
         drawMapFromJson() {
@@ -159,5 +121,44 @@ export default {
         },
     }
 }
+
+// function all_year_max(data) {
+//     let max = Number.NEGATIVE_INFINITY
+//     for (let index = FIRST_YEAR; index < LAST_YEAR + 1; index++) {
+//         let every_max = d3.max(data, d => {
+//             return toNumber(d[index])
+//         })
+//         if (every_max > max) {
+//             max = every_max
+//         }
+//     }
+//     return max
+// }
+
+// function all_year_min(data) {
+//     let min = Infinity
+//     for (let index = FIRST_YEAR; index < LAST_YEAR + 1; index++) {
+//         let every_min = d3.min(data, d => {
+//             if (d[index]) {
+//                 // if (parseFloat(d[index]) == 0.0) {
+//                 //     console.log("Wow, there is actually a ZERO")
+//                 // }
+//                 return parseFloat(d[index])
+//             }
+//             return Infinity
+//         })
+//         if (every_min < min) {
+//             min = every_min
+//         }
+//     }
+//     return min
+// }
+
+// function toNumber(item) {
+//     if (typeof item === 'number') {
+//         return item
+//     }
+//     return item ? parseFloat(item) : 0.0
+// }
 
 </script>
