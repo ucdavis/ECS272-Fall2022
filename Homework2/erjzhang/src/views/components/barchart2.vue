@@ -23,7 +23,7 @@
             let localData = testData['data'];
             this.drawBarChart(localData, "#bar2") /* Example of reading data from a json file */
             // this.drawBarChart(this.myBarchartData, "#bar")
-            console.log("Data Passed down as a Prop  ", this.myBarchartData)
+            console.log("My chart 2 data  ", this.myBarchartData)
         },
         methods: {
             drawBarChart(data, id) {
