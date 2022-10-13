@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import Navigation from "./views/components/navbar.vue"
+// import Navigation from "./views/components/navbar.vue"
 // import SideBar from "./views/components/sidebar.vue"
 
 </script>
