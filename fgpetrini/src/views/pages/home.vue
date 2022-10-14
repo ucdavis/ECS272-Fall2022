@@ -40,7 +40,7 @@ export default {
             d3.csv(csvPath).then((data) => {
                 // array of objects
                 console.log(data.length);
-                console.log(data);
+                console.log(data[0]);
                 this.dataExists = true; // updates the v-if to conditionally show the RadarPlot  only if our data is here.
                 this.myRadarData = data; // updates the prop value to be the recieved data, which we hand in to our bar-chart
 
