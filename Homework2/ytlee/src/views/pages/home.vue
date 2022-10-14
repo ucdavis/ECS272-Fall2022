@@ -1,9 +1,11 @@
 <template>
     <div class="page-container">
         <RadarChart
+        ref="radar_chart"
         v-if="filtered_data"
         :data="filtered_data"
         ></RadarChart>
+        <button type="button" @click="radar_chart.goNext"> Next </button>
     </div>
 </template>
 
@@ -25,6 +27,7 @@ import RadarChart from "../components/RadarChart.vue"
 import spotifyData from "../../assets/data/data_1000.json"
 const data: Ref<any> = ref(spotifyData)
 const filtered_data: Ref<any|undefined> = ref(undefined)
+const radar_chart = ref(null)
 
 
 vue.onMounted(() => {
@@ -50,10 +53,11 @@ vue.onMounted(() => {
     const target_song_ids = artist_counts[top_artist]
     filtered_data.value = idsToItems(target_song_ids, song_id_dict)
 
+})
+
 function idsToItems(ids, id_item_dict) {
     return ids.reduce(function(item_list, id) { item_list.push(id_item_dict[id]); return item_list; }, [])
 }
-})
 
 </script>
 

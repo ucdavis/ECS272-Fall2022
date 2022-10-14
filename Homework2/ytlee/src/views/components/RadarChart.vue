@@ -4,6 +4,7 @@
 <script setup lang=ts>
 import * as d3 from "d3"
 import * as vue from "vue"
+import { Ref, ref} from "vue"
 import { any } from "vue-types";
 import { RadarChart } from "./charts/RadarChart"
 
@@ -37,7 +38,8 @@ const radar_key_list = [
         "valence",
 ]
 const sorted_data = vue.computed(() => props.data.sort((s1, s2) => s1.release_date - s2.release_date))
-
+const step: Ref<number> = ref(0)
+let radarChart;
 var color = d3.scaleOrdinal()
     .range(["#EDC951","#CC333F","#00A0B0"]);
     
@@ -55,12 +57,12 @@ var radarChartOptions = {
 //Call function to draw the Radar chart
 vue.onMounted(() => {
     console.log(sorted_data.value)
-    const radarChart = new RadarChart(".radarChart", radar_key_list, radarChartOptions)
+    radarChart = new RadarChart(".radarChart", radar_key_list, radarChartOptions)
     radarChart.init()
-    radarChart.update(convert_to_radar_data(sorted_data.value[0]))
+    radarChart.update(convert_to_radar_data(sorted_data.value[step.value]))
+    // loop(sorted_data.value)
     // RadarChart(".radarChart", radar_data.value, radarChartOptions);
 })
-
 function loop(sorted_data) {
     let counter = 0
     if(sorted_data[counter + 1]) {
@@ -79,5 +81,17 @@ function convert_to_radar_data(item) {
     })
     return res
 }
+
+function goNext() {
+    console.log("go next")
+    step.value += 1
+    if(step.value < sorted_data.value.length)
+        radarChart.update(convert_to_radar_data(sorted_data.value[step.value]))
+
+}
+
+defineExpose({
+    goNext
+})
 
 </script>

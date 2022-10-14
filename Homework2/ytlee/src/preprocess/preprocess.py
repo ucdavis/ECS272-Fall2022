@@ -44,7 +44,7 @@ def preprocess_func(data):
     
     for item in data:
         process_data.append({ kept_key: clean(kept_key, normalize(kept_key, item[kept_key])) for kept_key in key_list })
-    return process_data
+    return process_data[0:1000]
 
 def normalize(key, value):
     normalize_dict = {
@@ -67,5 +67,5 @@ def clean(key, value):
 
 
 csvFilePath = r'data.csv'
-jsonFilePath = r'data.json'
+jsonFilePath = r'data_1000.json'
 csv_to_json(csvFilePath, jsonFilePath, preprocess_func)

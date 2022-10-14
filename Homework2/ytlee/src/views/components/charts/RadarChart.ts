@@ -185,7 +185,8 @@ export class RadarChart {
 		const g = svg.select("g")
 		var self = this
 
-		const duration = 100
+		const duration = 500
+		console.log(data)
 		const radarArea = g.selectAll("path.radarArea")
 			.data([data])
 			.join(
@@ -245,13 +246,18 @@ export class RadarChart {
 		// blobWrapper.selectAll(".radarCircle")
 		const radarCircles = g.selectAll("circle.radarCircle")
 			.data(data)
-			.enter().append("circle")
-			.attr("class", "radarCircle")
-			.attr("r", self.cfg.dotRadius)
-			.attr("cx", function(d,i){ return self.rScale(d.value) * Math.cos(self.angleSlice*i - Math.PI/2); })
-			.attr("cy", function(d,i){ return self.rScale(d.value) * Math.sin(self.angleSlice*i - Math.PI/2); })
-			.style("fill", function(d,i,j) { return self.cfg.color(j); })
-			.style("fill-opacity", 0.8);
+			.join(
+				enter => enter.append("circle").attr("class", "radarCircle")
+						.attr("r", self.cfg.dotRadius)
+						.attr("cx", function(d,i){ return self.rScale(d.value) * Math.cos(self.angleSlice*i - Math.PI/2); })
+						.attr("cy", function(d,i){ return self.rScale(d.value) * Math.sin(self.angleSlice*i - Math.PI/2); })
+						.style("fill", function(d,i,j) { return self.cfg.color(j); })
+						.style("fill-opacity", 0.8),
+				update => update.transition().duration()
+						.attr("cx", function(d,i){ return self.rScale(d.value) * Math.cos(self.angleSlice*i - Math.PI/2); })
+						.attr("cy", function(d,i){ return self.rScale(d.value) * Math.sin(self.angleSlice*i - Math.PI/2); })
+
+			)
 
 		/////////////////////////////////////////////////////////
 		//////// Append invisible circles for tooltip ///////////
