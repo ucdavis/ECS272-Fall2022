@@ -1,4 +1,12 @@
 <template>
+    <div id="check-box-selection">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br>
+    </div>
     <div id="radar">
     </div>
 </template>
@@ -50,20 +58,19 @@
             dd_option : String,
         },
         mounted(){
-            console.log(this.dd_option);
-            if(this.dd_option == "Dis_Vs_Sat") {
-                const satisfaction_data = this.groupBy(this.myRadarPlotData, "satisfaction");
-                const satisfied = this.getSpiderPlotData(satisfaction_data["satisfied"]);
-                const dissatisfied = this.getSpiderPlotData(satisfaction_data["neutral or dissatisfied"]);
-                this.dissatisfied_v_satisfied_data = [dissatisfied, satisfied];
-                this.drawRadarPlot(this.dissatisfied_v_satisfied_data, "#radar");
+            document.getElementById("check-box-selection").style.marginBottom = -1 * this.height * 0.2;
+            this.radius = this.height * 0.4;
+            const satisfaction_data = this.groupBy(this.myRadarPlotData, "satisfaction");
+            const satisfied = this.getSpiderPlotData(satisfaction_data["satisfied"]);
+            const dissatisfied = this.getSpiderPlotData(satisfaction_data["neutral or dissatisfied"]);
+            this.dissatisfied_v_satisfied_data = [dissatisfied, satisfied];
+            this.drawRadarPlot(this.dissatisfied_v_satisfied_data, "#radar");
 
-                // Prioritize Render, then initialize other data
-                const loyalty_data = this.groupBy(this.myRadarPlotData, "Customer Type");
-                const disloyal = this.getSpiderPlotData(loyalty_data["disloyal Customer"]);
-                const loyal = this.getSpiderPlotData(loyalty_data["Loyal Customer"]);
-                this.disloyal_v_loyal_data = [disloyal, loyal];
-            }
+            // Prioritize Render, then initialize other data
+            const loyalty_data = this.groupBy(this.myRadarPlotData, "Customer Type");
+            const disloyal = this.getSpiderPlotData(loyalty_data["disloyal Customer"]);
+            const loyal = this.getSpiderPlotData(loyalty_data["Loyal Customer"]);
+            this.disloyal_v_loyal_data = [disloyal, loyal];
         },
         methods: {
             drawRadarPlot(radar_data, id) {
@@ -213,7 +220,11 @@
 
 
 <style>
+#check-box-selection {
+    margin-bottom: -75px;
+    padding-left: 10px;
+}
 #radar {
-    background-color: white;
+    background-color: red;
 }
 </style>
