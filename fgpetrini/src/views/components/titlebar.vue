@@ -1,11 +1,10 @@
 <template>
     <div class="header">
-        <h1>Airline Satisfaction Visualization</h1>
-        <h3>By Francesco Petrini</h3>
+        <h1>Airline Satisfaction Visualization - By Francesco Petrini</h1>
     </div>
 </template>
 
-<style scoped>
+<style>
 
 .header h1{
     background-color: black;
