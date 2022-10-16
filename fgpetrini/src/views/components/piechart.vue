@@ -114,6 +114,7 @@
                     .join("path")
                     .attr("text", d=>console.log(d.data))
                     .attr("fill", d => color[d.data])
+                    .attr("fill-opacity", 0.8)
                     .attr("d", arc)
                     .on("mouseover", function(d) {
                     d3.select(this)
@@ -154,11 +155,11 @@
 
                 // Handmade legend
                 console.log(height);
-                svg.append("text").attr("x", width*0.25).attr("y", -height*0.45).text("Legend").style("font-size", "15px").style("font-weight", "bold").attr("alignment-baseline","right")
-                svg.append("circle").attr("cx", width*0.25).attr("cy",-height*0.42).attr("r", 4).style("fill", "steelblue")
-                svg.append("circle").attr("cx", width*0.25).attr("cy",-height*0.39).attr("r", 4).style("fill", "red")
-                svg.append("text").attr("x", width*0.26).attr("y", -height*0.414).text(lenged_titles[0]).style("font-size", "15px").attr("alignment-baseline","right")
-                svg.append("text").attr("x",width*0.26).attr("y", -height*0.384).text(lenged_titles[1]).style("font-size", "15px").attr("alignment-baseline","right")
+                svg.append("text").attr("x", width*0.25).attr("y", -height*0.45).text("Legend").style("font-size", "15px").style("font-weight", "bold").attr("alignment-baseline","right");
+                svg.append("circle").attr("cx", width*0.25).attr("cy",-height*0.42).attr("r", 4).style("fill", "orange").style("fill-opacity", 0.8);
+                svg.append("circle").attr("cx", width*0.25).attr("cy",-height*0.39).attr("r", 4).style("fill", "blue").style("fill-opacity", 0.8);
+                svg.append("text").attr("x", width*0.26).attr("y", -height*0.414).text(lenged_titles[0]).style("font-size", "15px").attr("alignment-baseline","right");
+                svg.append("text").attr("x",width*0.26).attr("y", -height*0.384).text(lenged_titles[1]).style("font-size", "15px").attr("alignment-baseline","right");
                 
             },
             groupBy(objectArray, property) {

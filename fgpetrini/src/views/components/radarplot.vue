@@ -54,7 +54,7 @@
                 maxValue : 5,
                 angleSlice : Math.PI * 2 / 14,
                 axisLabelFactor : 1.12,
-                category : d => ["Not Satisfied", "Satisfied"][d],
+                category : d => ["Not Satisfied", "Satisfied", "Disloyal", "Loyal"][d],
                 color : d3.scaleOrdinal()
                     .range(["orange","blue"]),
                 dissatisfied_v_satisfied_data : [],
@@ -189,7 +189,12 @@
                     .selectAll('g')
                     .data(radar_data)
                     .join('g')
-                        .attr("data-name", (d, i) => this.category(i))
+                        .attr("data-name", (d, i) => {
+                            if(this.dd_option != "Dis_Vs_Sat")
+                                return this.category(i+2);
+                            else
+                                return this.category(i)
+                        })
                         .attr("fill", "none")
                         .attr("stroke", "steelblue");
                 
@@ -207,7 +212,14 @@
                     .on("mouseout", function(d) {
                         d3.select(this)
                         .attr("fill-opacity", 0.1)
-                    });
+                    })
+                    .append("title")
+                        .text((d, i) => {
+                            if(this.dd_option != "Dis_Vs_Sat")
+                                return this.category(i+2);
+                            else
+                                return this.category(i)
+                        });
                 
                 plots.selectAll("circle")
                     .data(d => d)
