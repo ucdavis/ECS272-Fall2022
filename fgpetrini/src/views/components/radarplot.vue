@@ -55,8 +55,6 @@
                 angleSlice : Math.PI * 2 / 14,
                 axisLabelFactor : 1.12,
                 category : d => ["Not Satisfied", "Satisfied", "Disloyal", "Loyal"][d],
-                color : d3.scaleOrdinal()
-                    .range(["orange","blue"]),
                 dissatisfied_v_satisfied_data : [],
                 dissatisfied_v_satisfied_filtered_data : [],
                 disloyal_v_loyal_data : [],
@@ -78,6 +76,8 @@
                     "Inflight Service" : 12,
                     "Cleanliness" : 13,
                 },
+                color_dict : {"default" : ["green", "yellow"],
+                                "cb_accessible" : ["orange", "blue"] },
                 satisfaction_data : [],
                 loyalty_data : [],
 
@@ -88,8 +88,10 @@
             height : Number,
             width : Number,
             dd_option : String,
+            radio_option: String,
         },
         mounted(){
+            this.color = d3.scaleOrdinal().range(this.color_dict[this.radio_option]);
             document.getElementById("checkbox-selection").style.marginBottom = -1 * this.height * 0.2;
             this.radius = this.height * 0.4;
             this.satisfaction_data = this.groupBy(this.myRadarPlotData, "satisfaction");
@@ -158,7 +160,6 @@
                     .style("stroke", "#CDCDCD")
                     .style("fill-opacity", 0.1);
             
-                console.log(this.axesDomain)
                 const axis = axisGrid.selectAll(".axis")
                     .data(this.axesDomain)
                     .enter()
@@ -184,7 +185,6 @@
                     .attr("y", (d, i) => rScale(this.maxValue * this.axisLabelFactor) * Math.sin(this.angleSlice*i - Math.PI/2))
                     .text(d => d);
                 
-                console.log(radar_data);
                 const plots = container.append('g')
                     .selectAll('g')
                     .data(radar_data)
@@ -201,7 +201,7 @@
                 plots.append('path')
                     .attr("d", d => radarLine(d.map(v => v.value)))
                     .attr("fill", (d, i) => this.color(i))
-                    .attr("fill-opacity", 0.1)
+                    .attr("fill-opacity", 0.3)
                     .attr("stroke", (d, i) => this.color(i))
                     .attr("stroke-width", 2)
                     .on("mouseover", function(d) {
@@ -268,11 +268,12 @@
             },
             updatePlot() {
                 d3.selectAll("#radar svg").remove();
+                this.color = d3.scaleOrdinal().range(this.color_dict[this.radio_option]);
                 if(this.dd_option == "Dis_Vs_Sat") {
-                    this.drawRadarPlot(this.dissatisfied_v_satisfied_filtered_data, "#radar")
+                    this.drawRadarPlot(this.dissatisfied_v_satisfied_filtered_data, "#radar");
                 }
                 else {
-                    this.drawRadarPlot(this.disloyal_v_loyal_filtered_data, "#radar")
+                    this.drawRadarPlot(this.disloyal_v_loyal_filtered_data, "#radar");
                 }
             },
             checkboxChanged(event) {
@@ -286,9 +287,7 @@
                     // Need to search for new index, because modifications may change default
                     let id_index = 0;
                     for(let i = 0; i < this.axesDomain.length; i++) {
-                        console.log(this.dissatisfied_v_satisfied_filtered_data[0][i].axis, target_key);
                         if(this.dissatisfied_v_satisfied_filtered_data[0][i].axis == target_key) {
-                            console.log("Found @: ", i);
                             id_index = i;
                             break;
                         }

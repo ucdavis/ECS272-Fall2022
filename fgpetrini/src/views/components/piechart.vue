@@ -1,4 +1,5 @@
 <template>
+    <title>Percent Satisfied Vs. Unsatisfied</title>
     <div id="pie"></div>
 </template>
 
@@ -11,18 +12,25 @@
             return {
                 margin : 30,
                 id : "#pie",
+                satisfaction_data : [],
+                loyalty_data : [],
+                color_dict : {"default" : ["green", "yellow"],
+                                "cb_accessible" : ["orange", "blue"] },
             }
         },
         props:{
             myPieChartData: Array,
             height : Number,
             width : Number,
+            dd_option: String,
+            radio_option: String,
         },
         mounted(){
             
-            const pie_data = this.SatisfactionBreakdown(this.myPieChartData);
-            console.log(pie_data);
-            this.drawPieChart(pie_data);
+            this.satisfaction_data = this.SatisfactionBreakdown(this.myPieChartData);
+            this.drawPieChart(this.satisfaction_data);
+
+            this.loyalty_data = this.LoyaltyBreakdown(this.myPieChartData);
         },
         methods: {
             drawPieChart(pie_data) {
@@ -31,7 +39,6 @@
                     name: d => d.name,
                     value: d => d.value,
                     count: d => d.count,
-                    lenged_titles : ["Dissatisfied Respondents", "Satisfied Respondents"],
                     width : this.width,
                     height: this.height,
                     });
@@ -45,7 +52,7 @@
                 width = this.width, // outer width, in pixels
                 height = this.height, // outer height, in pixels
                 innerRadius = 0, // inner radius of pie, in pixels (non-zero for donut)
-                outerRadius = Math.min(width, height) / 2, // outer radius of pie, in pixels
+                outerRadius = Math.min(width, height) / 2.3, // outer radius of pie, in pixels
                 labelRadius = (innerRadius * 0.2 + outerRadius * 0.8), // center radius of labels
                 format = ",", // a format specifier for values (in the label)
                 names, // array of names (the domain of the color scale)
@@ -66,13 +73,7 @@
                 if (names === undefined) names = N;
                 names = new d3.InternSet(names);
 
-                // Chose a default color scheme based on cardinality.
-                if (colors === undefined) colors = d3.schemeSpectral[names.size];
-                if (colors === undefined) colors = d3.quantize(t => d3.interpolateSpectral(t * 0.8 + 0.1), names.size);
-
-                // Construct scales.
-                //const color = d3.scaleOrdinal(names, colors);
-                const color = ["orange", "blue"];
+                let color = this.color_dict[this.radio_option];
 
                 // Compute titles.
                 if (title === undefined) {
@@ -95,6 +96,7 @@
                 }
 
                 // Construct arcs.
+                console.log(innerRadius, outerRadius);
                 const arcs = d3.pie().padAngle(padAngle).sort(null).value(i => V[i])(I);
                 const arc = d3.arc().innerRadius(innerRadius).outerRadius(outerRadius);
                 const arcLabel = d3.arc().innerRadius(labelRadius).outerRadius(labelRadius);
@@ -151,16 +153,7 @@
                     .attr("x", 0)
                     .attr("y", (_, i) => `${i * 1.1}em`)
                     .attr("font-weight", (_, i) => i ? null : "bold")
-                    .text(d => d);
-
-                // Handmade legend
-                console.log(height);
-                svg.append("text").attr("x", width*0.25).attr("y", -height*0.45).text("Legend").style("font-size", "15px").style("font-weight", "bold").attr("alignment-baseline","right");
-                svg.append("circle").attr("cx", width*0.25).attr("cy",-height*0.42).attr("r", 4).style("fill", "orange").style("fill-opacity", 0.8);
-                svg.append("circle").attr("cx", width*0.25).attr("cy",-height*0.39).attr("r", 4).style("fill", "blue").style("fill-opacity", 0.8);
-                svg.append("text").attr("x", width*0.26).attr("y", -height*0.414).text(lenged_titles[0]).style("font-size", "15px").attr("alignment-baseline","right");
-                svg.append("text").attr("x",width*0.26).attr("y", -height*0.384).text(lenged_titles[1]).style("font-size", "15px").attr("alignment-baseline","right");
-                
+                    .text(d => d);      
             },
             groupBy(objectArray, property) {
                 return objectArray.reduce(function (acc, obj) {
@@ -182,6 +175,26 @@
                 const formatted_data = [{name: "Dissatisfied", value: dissatisfied_share, count: dissatisfied}, 
                                     {name: "Satisfied", value: satisfied_share, count: satisfied}];
                 return formatted_data;
+            },
+            LoyaltyBreakdown(data) {
+                const chartdata = this.groupBy(data, "Customer Type");
+                const loyal = chartdata["Loyal Customer"].length;
+                const disloyal = chartdata["disloyal Customer"].length;
+                const loyal_share = loyal / (loyal + disloyal);
+                const disloyal_share = 1 - loyal_share;
+
+                const formatted_data = [{name: "Disloyal", value: disloyal_share, count: disloyal}, 
+                                        {name: "Loyal", value: loyal_share, count: loyal}];
+                return formatted_data;
+            },
+            updatePlot() {
+                d3.selectAll("#pie svg").remove();
+                if(this.dd_option == "Dis_Vs_Sat") {
+                    this.drawPieChart(this.satisfaction_data);
+                }
+                else {
+                    this.drawPieChart(this.loyalty_data);
+                }
             },
         }
     }
