@@ -1,6 +1,4 @@
 <template>
-    <!-- <div> -->
-    <!-- <h1>Welcome Home</h1> -->
     <div class="container-fluid">
         <div id="split" class="row">
             <div class="col">
@@ -8,13 +6,12 @@
                     <h1 class="">World CO2 Emission Per Capita</h1>
                     <h2>Year: {{curr_year}}</h2>
                     <div class="slidecontainer">
-                        <input 
-                        type="range" v-bind:min="first_year" v-bind:max="last_year" class="slider"
-                            id="year_slider"  v-model.lazy="curr_year">
+                        <input type="range" v-bind:min="first_year" v-bind:max="last_year" class="slider"
+                            id="year_slider" v-model.lazy="curr_year">
                     </div>
 
                     <MainChart v-if="geoDataExists" :myGeoData="myGeoData" :myMainChartData="myCsvData"
-                        :curr_year="parseInt(curr_year)" :history_max="history_max"/>
+                        :curr_year="parseInt(curr_year)" :history_max="history_max" />
                 </div>
             </div>
 
@@ -26,14 +23,13 @@
                 </div>
                 <div class="row border">
                     <p>Chart 2: Radar Chart on Emission by Regions in {{curr_year}}</p>
-                    <RadarChart v-if="dataExists" :myCsvData="myCsvData" :curr_year="parseInt(curr_year)"/>
+                    <RadarChart v-if="dataExists" :myCsvData="myCsvData" :curr_year="parseInt(curr_year)" />
 
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- </div> -->
 </template>
 
 <script>
@@ -42,7 +38,6 @@ import MainChart from "../components/mainchart.vue"
 import BarChart from "../components/barchart.vue"
 import RadarChart from "../components/radarchart.vue"
 import * as d3 from "d3";
-import * as topojson from "topojson"
 import csvPath from "../../../dataset/CO2_emission.csv";
 
 
@@ -63,10 +58,9 @@ export default {
             country_num: -999,
             dataExists: false,
             geoDataExists: false,
-            radarDataExists:false,
+            radarDataExists: false,
             myCsvData: [],
             myGeoData: [],
-            // myRadarData: [],
             first_year: FIRST_YEAR,
             last_year: LAST_YEAR,
             curr_year: CURR_YEAR,
@@ -76,7 +70,6 @@ export default {
         }
     },
     components: {
-        // VueSlider,
         MainChart,
         BarChart,
         RadarChart,
@@ -85,17 +78,13 @@ export default {
         /* Fetch via CSV */
         this.read_from_csv()
         this.read_from_geo()
-        // this.drawRadarFronCSV()
     },
-    mounted() {
-        // this.read_from_csv()
-        // this.read_from_geo()
-    },
+    mounted() { },
     methods: {
         read_from_csv() {
             //async method
             d3.csv(csvPath)
-                .then((data) => { 
+                .then((data) => {
                     console.log(data.length);
                     console.log(data);
                     this.country_num = data.length
@@ -116,23 +105,6 @@ export default {
                     this.myGeoData = geoData
                 })
         },
-
-        // drawRadarFronCSV() {
-        //     d3.csv(csvPath)
-        //         .then((data) => { 
-                    
-        //             this.radarDataExists = true
-        //             this.myCsvData = data
-        //         });
-
-        // },
-        // toNumber(item) {
-        //     // console.log(item)
-        //     if (typeof item === 'number') {
-        //         return item
-        //     }
-        //     return item ? parseFloat(item) : 0.0
-        // },
     }
 }
 
@@ -168,11 +140,5 @@ export default {
 //     return min
 // }
 
-// function toNumber(item) {
-//     if (typeof item === 'number') {
-//         return item
-//     }
-//     return item ? parseFloat(item) : 0.0
-// }
 
 </script>

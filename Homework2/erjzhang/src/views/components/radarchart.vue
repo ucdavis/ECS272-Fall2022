@@ -5,10 +5,8 @@
 <script>
 // Resources URL: https://yangdanny97.github.io/blog/2019/03/01/D3-Spider-Chart
 
-// import { count } from "console";
-import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import * as d3 from "d3";
-import testData from "../../assets/data/test.json"; /* Example of reading in data direct from file*/
+
 
 export default {
     name: 'RadarChart',
@@ -21,21 +19,17 @@ export default {
     },
     props: {
         myCsvData: Array,
-        // myRadarchartData: Array,
         curr_year: Number,
     },
     mounted() {
-
-
-        this.drawRadarChart(this.process_data(), "#radar") /* Example of reading data from a json file */
-        // this.drawRadarChart(this.myBarchartData, "#bar")
-        // console.log("My chart 2 data  ", this.myBarchartData)
+        console.log("Mounted My radar data");
+        this.initialize_radarchart("#radar")
+        this.draw_radarchart(this.process_data(), "#radar")
     },
 
     updated() {
-
-        // console.log("Updated My radar data", this.myCsvData);
-        this.updateRadarChart(this.process_data(), "#radar")
+        console.log("Updated My radar data");
+        this.draw_radarchart(this.process_data(), "#radar")
     },
     methods: {
         process_data() {
@@ -66,19 +60,28 @@ export default {
             // console.log("Group by region data: ", group_by_region_array)
 
             // Sort the array to alphabetical order
-            group_by_region_array = group_by_region_array.sort((a,b) => {
-                return d3.descending(a["region"],b["region"])
+            group_by_region_array = group_by_region_array.sort((a, b) => {
+                return d3.descending(a["region"], b["region"])
             })
 
             console.log("Mounted My radar data", group_by_region_array);
             return group_by_region_array
         },
-        drawRadarChart(data, id) {
+
+        initialize_radarchart(id) {
+            let svg = d3.select(id).append("svg")
+            svg.append("g").attr("id", "radar_panel");
+            svg.append("g").attr("id", "radar_number");
+            svg.append("g").attr("id", "radar_axis");
+            svg.append("path").attr("id", "radar_path")
+        },
+
+        draw_radarchart(data, id) {
             const margin = { top: 40, right: 20, bottom: 40, left: 20 };
             const height = 300;
             const width = 650;
 
-            let svg = d3.select(id).append("svg")
+            let svg = d3.select(id).select("svg")
                 .attr("viewBox", [0, 0, width, height])
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom);
@@ -102,196 +105,9 @@ export default {
                 ])
                 .range([0, height / 2]);
 
-            let panel = svg.append("g").attr("id", "radar_panel");
-            let nums = svg.append("g").attr("id", "radar_number");
-            // interval.forEach(t =>
-            panel.selectAll("circle")
-                .data(interval)
-                .join("circle")
-                .attr("cx", width / 2)
-                .attr("cy", height / 2)
-                .attr("fill", "none")
-                .attr("stroke", "#808080")
-                .attr("r", d => radialScale(d))
-            // .attr("d", "circle")
-            // );
-
-            // interval.forEach(t =>
-            nums.selectAll("text")
-                .data(interval)
-                .join("text")
-                .attr("x", width / 2 + 5)
-                .attr("y", d => {
-                    return height / 2 - radialScale(d) - 1
-                })
-                .text(d => {
-                    if (d == interval[interval.length - 1]) {
-                        return d.toString() + " ton per capita"
-                    } else {
-                        return d.toString()
-                    }
-                }
-                )
-            // );
-
-
-            // Utility functions
-            function angleToCoordinate(angle, value) {
-                let x = Math.cos(angle) * radialScale(value);
-                let y = Math.sin(angle) * radialScale(value);
-                return { "x": width / 2 + x, "y": height / 2 - y };
-            }
-
-            // Draw data and axis
-            const line = d3.line()
-                .x(d => d.x)
-                .y(d => d.y);
-
-            const color = "orange"
-
-            let axis = svg.append("g").attr("id", "radar_axis");
-            let positions = []      //Position array for data
-            let line_coords = []
-            let label_coords = []
-            let label_names = []
-            for (let i = 0; i < data.length; i++) {
-                // let region_name = data[i]["region"]
-                let angle = Math.PI / 2 + 2 * Math.PI * i / data.length
-                label_names.push(data[i]["region"])
-                line_coords.push(angleToCoordinate(angle, interval[interval.length - 1]));
-                label_coords.push(angleToCoordinate(angle, interval[interval.length - 1] * 1.1));
-                // console.log(data[i])
-                positions.push(angleToCoordinate(angle, data[i]["emission"] / data[i]["count"]))
-
-                // draw axis
-                // axis.append("line")
-                //     // .attr("id", "radar_axis")
-                //     .attr("x1", width / 2)
-                //     .attr("y1", height / 2)
-                //     .attr("x2", line_coordinate.x)
-                //     .attr("y2", line_coordinate.y)
-                //     .attr("stroke", "black");
-
-                //draw axis label
-                // svg.append("text")
-                //     // .attr("id", "radar_label")
-                //     .attr("x", label_coordinate.x)
-                //     .attr("y", label_coordinate.y)
-                //     .attr("class", "font-weight-bold")
-                //     .attr("text-anchor", function () {
-                //         if (label_coordinate.x > width / 2) {
-                //             return "start"
-                //         } else if (label_coordinate.x < width / 2) {
-                //             return "end"
-                //         }
-                //         return "middle"
-                //     })
-                //     .text(region_name);
-            }
-
-            axis.selectAll("line").data(line_coords)
-                .join("line")
-                .attr("x1", width / 2)
-                .attr("y1", height / 2)
-                .attr("x2", d => d.x)
-                .attr("y2", d => d.y)
-                .attr("stroke", "black");
-
-            axis.selectAll("text").data(label_coords)
-                .join("text")
-                .attr("x", d => d.x)
-                .attr("y", d => d.y)
-                .attr("class", "font-weight-bold")
-                .attr("text-anchor", d => {
-                    if (d.x > width / 2) {
-                        return "start"
-                    } else if (d.x < width / 2) {
-                        return "end"
-                    }
-                    return "middle"
-                })
-                .text((d, i) => {
-                    return label_names[i]
-                });
-
-            // for (let i = 0; i < data.length; i++) {
-            //     let region_name = data[i]["region"]
-            //     let angle = Math.PI / 2 + 2 * Math.PI * i / data.length
-            //     let line_coordinate = angleToCoordinate(angle, interval[interval.length - 1]);
-            //     let label_coordinate = angleToCoordinate(angle, interval[interval.length - 1] * 1.1);
-            //     console.log(data[i])
-            //     positions.push(angleToCoordinate(angle, data[i]["emission"] / data[i]["count"]))
-
-            //     // draw axis
-            //     axis.append("line")
-            //         // .attr("id", "radar_axis")
-            //         .attr("x1", width / 2)
-            //         .attr("y1", height / 2)
-            //         .attr("x2", line_coordinate.x)
-            //         .attr("y2", line_coordinate.y)
-            //         .attr("stroke", "black");
-
-            //     //draw axis label
-            //     svg.append("text")
-            //         // .attr("id", "radar_label")
-            //         .attr("x", label_coordinate.x)
-            //         .attr("y", label_coordinate.y)
-            //         .attr("class", "font-weight-bold")
-            //         .attr("text-anchor", function () {
-            //             if (label_coordinate.x > width / 2) {
-            //                 return "start"
-            //             } else if (label_coordinate.x < width / 2) {
-            //                 return "end"
-            //             }
-            //             return "middle"
-            //         })
-            //         .text(region_name);
-            // }
-
-            // In addition we have to connect the head and tail of the path
-            positions.push(positions[0])
-
-
-            let radar_path = svg.append("path").attr("id", "radar_path")
-
-            radar_path.datum(positions)
-                .attr("d", line)
-                .attr("stroke-width", 3)
-                .attr("stroke", color)
-                .attr("fill", color)
-                .attr("stroke-opacity", 1)
-                .attr("fill-opacity", 0.5);
-        },
-
-        updateRadarChart(data, id) {
-            const margin = { top: 40, right: 20, bottom: 40, left: 20 };
-            const height = 300;
-            const width = 650;
-
-            let svg = d3.select(id).select("svg")
-
-            const circle_num = 5            // How many circles in radar chart
-            let max_regional_emission = closest_divisble(d3.max(data, d => {
-                return d["emission"] / d["count"]
-            }), circle_num)
-
-
-            let interval = [];
-            for (let i = 1; i < circle_num + 1; i++) {
-                interval.push(max_regional_emission * i / circle_num)
-
-            }
-
-            let radialScale = d3.scaleLinear()
-                .domain([0,
-                    interval[interval.length - 1]
-
-                ])
-                .range([0, height / 2]);
-
             let panel = svg.select("#radar_panel");
             let nums = svg.select("#radar_number");
-            // interval.forEach(t =>
+
             panel.selectAll("circle")
                 .data(interval)
                 .join("circle")
@@ -300,10 +116,7 @@ export default {
                 .attr("fill", "none")
                 .attr("stroke", "#808080")
                 .attr("r", d => radialScale(d))
-            // .attr("d", "circle")
-            // );
 
-            // interval.forEach(t =>
             nums.selectAll("text")
                 .data(interval)
                 .join("text")
@@ -319,8 +132,6 @@ export default {
                     }
                 }
                 )
-            // );
-
 
             // Utility functions
             function angleToCoordinate(angle, value) {
@@ -342,40 +153,14 @@ export default {
             let label_coords = []
             let label_names = []
             for (let i = 0; i < data.length; i++) {
-                // let region_name = data[i]["region"]
                 let angle = Math.PI / 2 + 2 * Math.PI * i / data.length
                 label_names.push(data[i]["region"])
                 line_coords.push(angleToCoordinate(angle, interval[interval.length - 1]));
                 label_coords.push(angleToCoordinate(angle, interval[interval.length - 1] * 1.1));
-                // console.log(data[i])
                 positions.push(angleToCoordinate(angle, data[i]["emission"] / data[i]["count"]))
-
-                // draw axis
-                // axis.append("line")
-                //     // .attr("id", "radar_axis")
-                //     .attr("x1", width / 2)
-                //     .attr("y1", height / 2)
-                //     .attr("x2", line_coordinate.x)
-                //     .attr("y2", line_coordinate.y)
-                //     .attr("stroke", "black");
-
-                //draw axis label
-                // svg.append("text")
-                //     // .attr("id", "radar_label")
-                //     .attr("x", label_coordinate.x)
-                //     .attr("y", label_coordinate.y)
-                //     .attr("class", "font-weight-bold")
-                //     .attr("text-anchor", function () {
-                //         if (label_coordinate.x > width / 2) {
-                //             return "start"
-                //         } else if (label_coordinate.x < width / 2) {
-                //             return "end"
-                //         }
-                //         return "middle"
-                //     })
-                //     .text(region_name);
             }
 
+            // Draw Axis
             axis.selectAll("line").data(line_coords)
                 .join("line")
                 .attr("x1", width / 2)
@@ -384,6 +169,7 @@ export default {
                 .attr("y2", d => d.y)
                 .attr("stroke", "black");
 
+            // Draw Labels
             axis.selectAll("text").data(label_coords)
                 .join("text")
                 .attr("x", d => d.x)
@@ -401,46 +187,11 @@ export default {
                     return label_names[i]
                 });
 
-            // for (let i = 0; i < data.length; i++) {
-            //     let region_name = data[i]["region"]
-            //     let angle = Math.PI / 2 + 2 * Math.PI * i / data.length
-            //     let line_coordinate = angleToCoordinate(angle, interval[interval.length - 1]);
-            //     let label_coordinate = angleToCoordinate(angle, interval[interval.length - 1] * 1.1);
-            //     console.log(data[i])
-            //     positions.push(angleToCoordinate(angle, data[i]["emission"] / data[i]["count"]))
-
-            //     // draw axis
-            //     axis.append("line")
-            //         // .attr("id", "radar_axis")
-            //         .attr("x1", width / 2)
-            //         .attr("y1", height / 2)
-            //         .attr("x2", line_coordinate.x)
-            //         .attr("y2", line_coordinate.y)
-            //         .attr("stroke", "black");
-
-            //     //draw axis label
-            //     svg.append("text")
-            //         // .attr("id", "radar_label")
-            //         .attr("x", label_coordinate.x)
-            //         .attr("y", label_coordinate.y)
-            //         .attr("class", "font-weight-bold")
-            //         .attr("text-anchor", function () {
-            //             if (label_coordinate.x > width / 2) {
-            //                 return "start"
-            //             } else if (label_coordinate.x < width / 2) {
-            //                 return "end"
-            //             }
-            //             return "middle"
-            //         })
-            //         .text(region_name);
-            // }
-
             // In addition we have to connect the head and tail of the path
             positions.push(positions[0])
 
-
+            // Draw Radar Graph on the panel
             let radar_path = svg.select("#radar_path")
-
             radar_path.datum(positions)
                 .attr("d", line)
                 .attr("stroke-width", 3)
@@ -460,17 +211,16 @@ function closest_divisble(a, b) {
     let quotient = parseInt(a / b);
 
     // closest int 1
-    let int1 = b * quotient+1;
+    let int1 = b * quotient + 1;
 
     // closest int 2
     let int2 = (a * b) > 0 ?
         (b * (quotient + 1)) : (b * (quotient - 1));
 
-    // if true, int1 is the answer
+    // Return the larger one
     if (int1 > int2) {
         return int1;
     }
-    // otherwise, int2 is the answer
     return int2;
 }
 
