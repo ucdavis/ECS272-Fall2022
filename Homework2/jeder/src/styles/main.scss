@@ -1,0 +1,70 @@
+@import "~animate.css/animate.css";
+
+
+/* Example of using SCSS */
+$font-size: 1rem;
+$font-color: lch(53 105 40);
+
+html {
+  font-size: $font-size;
+  color: $font-color;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+.dashboard {
+  height: 100%;
+  width: 100%;
+}
+
+.overview {
+  position: fixed;
+  left: 50px;
+  top: 100px;
+  width: 1000px;
+  height: 300px;
+}
+
+#overviewChart{
+  position: fixed;
+  left: 250px;
+  width: 500px; 
+  height: 300px;
+}
+
+#addInfo{
+  position: fixed;
+  left: 750px;
+  top: 100px;
+  width: 300px; 
+  height: 250px;
+  overflow: auto;
+}
+
+.detail1 {
+  position: fixed;
+  left: 50px;
+  top: 400px;
+  width: 500px;
+  height: 300px;
+}
+
+.detail2 {
+  position: fixed;
+  left: 550px;
+  top: 400px;
+  width: 500px;
+  height: 300px;
+}
+
+#filterContainer{
+  width: 200px;
+}
