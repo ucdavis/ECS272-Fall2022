@@ -21,12 +21,12 @@
             <div class="col">
                 <div class="row border">
                     <p>Chart 1: Top {{top_n}} CO2 Emission Countries in {{curr_year}}</p>
-                    <BarChart1 v-if="dataExists" :myBarchartData="myCsvData" :curr_year="parseInt(curr_year)"
+                    <BarChart v-if="dataExists" :myBarchartData="myCsvData" :curr_year="parseInt(curr_year)"
                         :x_key="x_key" :top_n="top_n" />
                 </div>
                 <div class="row border">
-                    <p>Bar chart 2</p>
-                    <BarChart2 v-if="dataExists" :myBarchartData="myCsvData" />
+                    <p>Chart 2: Radar Chart on Emission by Regions in {{curr_year}}</p>
+                    <RadarChart v-if="dataExists" :myCsvData="myCsvData" :curr_year="parseInt(curr_year)"/>
 
                 </div>
             </div>
@@ -39,8 +39,8 @@
 <script>
 
 import MainChart from "../components/mainchart.vue"
-import BarChart1 from "../components/barchart1.vue"
-import BarChart2 from "../components/barchart2.vue"
+import BarChart from "../components/barchart.vue"
+import RadarChart from "../components/radarchart.vue"
 import * as d3 from "d3";
 import * as topojson from "topojson"
 import csvPath from "../../../dataset/CO2_emission.csv";
@@ -53,7 +53,9 @@ const LAST_YEAR = 2019
 const CURR_YEAR = 2019
 const TOP_N = 7
 const X_KEY = 'Country Name'
-const HISTORY_MAX = 50.95403383
+
+const HISTORY_MAX = 50  // actual value is 50.95403383
+
 
 export default {
     data() {
@@ -61,8 +63,10 @@ export default {
             country_num: -999,
             dataExists: false,
             geoDataExists: false,
+            radarDataExists:false,
             myCsvData: [],
             myGeoData: [],
+            // myRadarData: [],
             first_year: FIRST_YEAR,
             last_year: LAST_YEAR,
             curr_year: CURR_YEAR,
@@ -74,51 +78,61 @@ export default {
     components: {
         // VueSlider,
         MainChart,
-        BarChart1,
-        BarChart2,
+        BarChart,
+        RadarChart,
     },
     created() {
         /* Fetch via CSV */
-        this.drawBarFromCsv()
-        this.drawMapFromJson()
+        this.read_from_csv()
+        this.read_from_geo()
+        // this.drawRadarFronCSV()
     },
     mounted() {
-        this.drawBarFromCsv()
-        this.drawMapFromJson()
+        // this.read_from_csv()
+        // this.read_from_geo()
     },
     methods: {
-        drawBarFromCsv() {
+        read_from_csv() {
             //async method
             d3.csv(csvPath)
                 .then((data) => { 
                     console.log(data.length);
                     console.log(data);
                     this.country_num = data.length
-                    this.dataExists = true; // updates the v-if to conditionally show the barchart only if our data is here.const countries 
-                    this.myCsvData = data; // updates the prop value to be the recieved data, which we hand in to our bar-chart
+                    this.dataExists = true; // updates the v-if to conditionally when data loaded successfully
+                    this.myCsvData = data; // updates the prop value to be the recieved data from csv
                     this.x_key = X_KEY
-                    // this.curr_year = CURR_YEAR
+                    this.curr_year = CURR_YEAR
                     this.top_n = TOP_N
                     this.history_max = HISTORY_MAX
 
                 });
         },
 
-        drawMapFromJson() {
+        read_from_geo() {
             d3.json(geoPath)
                 .then((geoData) => {
-                    // console.log(geoData)
                     this.geoDataExists = true;
                     this.myGeoData = geoData
                 })
         },
-        toNumber(item) {
-            // console.log(item)
-            if (typeof item === 'number') {
-                return item
-            }
-            return item ? parseFloat(item) : 0.0
-        },
+
+        // drawRadarFronCSV() {
+        //     d3.csv(csvPath)
+        //         .then((data) => { 
+                    
+        //             this.radarDataExists = true
+        //             this.myCsvData = data
+        //         });
+
+        // },
+        // toNumber(item) {
+        //     // console.log(item)
+        //     if (typeof item === 'number') {
+        //         return item
+        //     }
+        //     return item ? parseFloat(item) : 0.0
+        // },
     }
 }
 

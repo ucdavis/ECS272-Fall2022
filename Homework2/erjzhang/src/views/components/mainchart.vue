@@ -49,7 +49,7 @@ export default {
             let svg = d3.select(id).select("svg")
 
 
-            let g = svg.select("g");
+            let g = svg.select("#map_group");
 
             
             // Let's have different color...
@@ -109,7 +109,7 @@ export default {
                 .attr("height", height + margin.top + margin.bottom)
 
 
-            let g = svg.append("g");
+            let g = svg.append("g").attr("id", "map_group");
 
             // Let's have different color for countries by emission...
             const color = d3.interpolateYlOrRd
