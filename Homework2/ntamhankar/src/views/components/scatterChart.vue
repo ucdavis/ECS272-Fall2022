@@ -23,6 +23,10 @@
                 artistNames: [],
                 topSongs: [],
                 generalName: "Top 10 Artists of 2020",
+                //maroon, red, purple, fuschia, green, navy, blue, teal, darkorange, darkgoldenrod
+                colorsBySinger: ['#800000','#FF0000','#800080','#FF00FF','#008000','#000080','#0000FF', '#008080', '#ff8c00', '#b8860b'],
+                // grey
+                generalColor: ["#808080"]
 
             }
         },
@@ -151,7 +155,7 @@
                 }
 
 
-                let color = d3.scaleOrdinal().domain([this.generalName].concat(artistNames)).range(d3.schemeDark2.concat(d3.schemeCategory10));
+                let color = d3.scaleOrdinal().domain([this.generalName].concat(artistNames)).range(this.generalColor.concat(this.colorsBySinger));
 
 
                 // Needed for svg

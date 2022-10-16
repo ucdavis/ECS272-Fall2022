@@ -22,7 +22,11 @@
                 generalName: "Top 10 Artists of 2020",
                 spiderData1: [],
                 spiderData2: [],
-                svg: null
+                svg: null,
+                //maroon, red, purple, fuschia, green, navy, blue, teal, darkorange, darkgoldenrod
+                colorsBySinger: ['#800000','#FF0000','#800080','#FF00FF','#008000','#000080','#0000FF', '#008080', '#ff8c00', '#b8860b'],
+                // grey
+                generalColor: ["#808080"]
 
             }
         },
@@ -259,9 +263,10 @@
                 let axesDomain = ["acousticness", "instrumentalness", "liveness", "speechiness"];
 
                 // concact this.artistNames to keep same ordering as parallelSetChart
-                let color = d3.scaleOrdinal().domain([this.generalName].concat(this.artistNames)).range(d3.schemeDark2.concat(d3.schemeCategory10));
+                let color = d3.scaleOrdinal().domain([this.generalName].concat(this.artistNames)).range(this.generalColor.concat(this.colorsBySinger));
 
                 let container = null;
+                let annotations = null;
                 let rScale = null;
                 let radarLine = null;
                 let axis = null;
@@ -274,6 +279,9 @@
                         .attr("width", width + margin.left + margin.right)
                         .attr("height", height + margin.top + margin.bottom)
                         .attr('transform', `translate(${(width/2)+margin.left}, ${(height/2)-margin.top})`);
+
+                    // annotation layer to keep labels on top of data
+                    annotations = this.svg.append("g").attr("id", "annotations");
 
 
                     rScale = d3.scaleLinear()
@@ -366,6 +374,26 @@
                         .attr("cx", (d,i) => rScale(d.value) * Math.cos(angleSlice*i - Math.PI/2))
                         .attr("cy", (d,i) => rScale(d.value) * Math.sin(angleSlice*i - Math.PI/2))
                         .style("fill-opacity", 0.8);
+
+
+                    // if we are viewing all singers create a legend
+
+                    if(currentSingers == origSingers){
+                        // add a legend
+                        console.log("Trying to add legend")
+                        // Add in the legend for each name.
+                        annotations.selectAll("labels")
+                            .data(this.artistNames)
+                            .enter()
+                            .append("text")
+                            .attr("x", 300)
+                            .attr("y", function(d,i){ return 15 + i*10})
+                            .style("fill", function(d, i){ return color(d)})
+                            .style("font", "10px times")
+                            .text(function(d){ return d})
+                            .attr("text-anchor", "left")
+                            .style("alignment-baseline", "middle")
+                    }
                 }
 
 
@@ -385,6 +413,7 @@
                     }
                     
                     d3.select(viz).select("#spider1").remove();
+                    d3.select(viz).select("#annotations").remove();
                     createChart(currentData, currentSinger);
 
                 }
@@ -406,7 +435,7 @@
                 
   
                 // set the dimensions and margins of the graph
-                const margin = {top: 20, right: 5, bottom: 5, left: 0};
+                const margin = {top: 20, right: 5, bottom: 5, left: 10};
                 let width = 350 - margin.left - margin.right;
                 let height = 400 - margin.top - margin.bottom;
 
@@ -426,7 +455,7 @@
                 let axesDomain = ["danceability", "energy", "loudness"];
 
                 // concact this.artistNames to keep same ordering as parallelSetChart
-                let color = d3.scaleOrdinal().domain([this.generalName].concat(this.artistNames)).range(d3.schemeDark2.concat(d3.schemeCategory10));
+                let color = d3.scaleOrdinal().domain([this.generalName].concat(this.artistNames)).range(this.generalColor.concat(this.colorsBySinger));
 
                 let container = null;
                 let rScale = null;
@@ -440,7 +469,7 @@
                     .attr("id", "spider2")
                     .attr("width", width + margin.left + margin.right)
                     .attr("height", height + margin.top + margin.bottom)
-                    .attr('transform', `translate(${width + (width/2)+margin.left}, ${(height/2)-margin.top})`);
+                    .attr('transform', `translate(${width + (width/2) + margin.left}, ${(height/2)-margin.top})`);
 
                     rScale = d3.scaleLinear()
                         .domain([0, maxValue])
