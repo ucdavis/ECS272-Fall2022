@@ -1,13 +1,24 @@
 <template>
-    <div id="check-box-selection">
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> I have a bike</label><br>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2"> I have a car</label><br>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-        <label for="vehicle3"> I have a boat</label><br>
+    <div id="checkbox-selection" class="dropdown-check-list">
+        <span class="anchor">Filter Data</span>
+        <ul id="checkbox-selection-items" class="items">
+            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Inflight Wifi"/> Inflight Wifi</li>
+            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Departure/Arrival Time"/> Departure/Arrival Time</li>
+            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Ease of Booking"/> Ease of Booking</li>
+            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Gate Location"/> Gate Location</li>
+            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Food and Drink"/> Food and Drink</li>
+            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Online Boarding"/> Online Boarding</li>
+            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Seat Comfort"/> Seat Comfort</li>
+            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Inflight Entertainment"/> Inflight Entertainment</li>
+            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="On-board Service"/> On-board Service</li>
+            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Leg Room"/> Leg Room</li>
+            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Baggage Handling"/> Baggage Handling</li>
+            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Checkin"/> Checkin</li>
+            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Inflight Service"/> Inflight Service</li>
+            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Cleanliness"/> Cleanliness</li>
+        </ul>
     </div>
-    <div id="radar">
+    <div id="radar"> 
     </div>
 </template>
 
@@ -23,6 +34,7 @@
                 radius : 160,
                 axisCircles: 5,
                 dotRadius: 4,
+                // 14 elements
                 axesDomain : [
                     "Inflight Wifi", 
                     "Departure/Arrival Time", 
@@ -36,7 +48,7 @@
                     "Leg Room", 
                     "Baggage Handling", 
                     "Checkin", 
-                    "Inflight service",
+                    "Inflight Service",
                     "Cleanliness"
                 ],
                 maxValue : 5,
@@ -46,8 +58,28 @@
                 color : d3.scaleOrdinal()
                     .range(["orange","blue"]),
                 dissatisfied_v_satisfied_data : [],
+                dissatisfied_v_satisfied_filtered_data : [],
                 disloyal_v_loyal_data : [],
+                disloyal_v_loyal_filtered_data : [],
                 drop_down_option : "Dis_Vs_Sat",
+                id_map : {
+                    "Inflight Wifi" : 0,
+                    "Departure/Arrival Time" : 1,
+                    "Ease of Booking" : 2, 
+                    "Gate Location" : 3,
+                    "Food and Drink" : 4,
+                    "Online Boarding" : 5,
+                    "Seat Comfort" : 6,
+                    "Inflight Entertainment" : 7, 
+                    "On-board Service" : 8,
+                    "Leg Room" : 9,
+                    "Baggage Handling" : 10, 
+                    "Checkin" : 11,
+                    "Inflight Service" : 12,
+                    "Cleanliness" : 13,
+                },
+                satisfaction_data : [],
+                loyalty_data : [],
 
             }
         },
@@ -58,19 +90,34 @@
             dd_option : String,
         },
         mounted(){
-            document.getElementById("check-box-selection").style.marginBottom = -1 * this.height * 0.2;
+            document.getElementById("checkbox-selection").style.marginBottom = -1 * this.height * 0.2;
             this.radius = this.height * 0.4;
-            const satisfaction_data = this.groupBy(this.myRadarPlotData, "satisfaction");
-            const satisfied = this.getSpiderPlotData(satisfaction_data["satisfied"]);
-            const dissatisfied = this.getSpiderPlotData(satisfaction_data["neutral or dissatisfied"]);
+            this.satisfaction_data = this.groupBy(this.myRadarPlotData, "satisfaction");
+            const satisfied = this.getSpiderPlotData(this.satisfaction_data["satisfied"]);
+            const dissatisfied = this.getSpiderPlotData(this.satisfaction_data["neutral or dissatisfied"]);
             this.dissatisfied_v_satisfied_data = [dissatisfied, satisfied];
+            // Need a deep copy
+            this.dissatisfied_v_satisfied_filtered_data = JSON.parse(JSON.stringify(this.dissatisfied_v_satisfied_data));
+
             this.drawRadarPlot(this.dissatisfied_v_satisfied_data, "#radar");
 
             // Prioritize Render, then initialize other data
-            const loyalty_data = this.groupBy(this.myRadarPlotData, "Customer Type");
-            const disloyal = this.getSpiderPlotData(loyalty_data["disloyal Customer"]);
-            const loyal = this.getSpiderPlotData(loyalty_data["Loyal Customer"]);
+            this.loyalty_data = this.groupBy(this.myRadarPlotData, "Customer Type");
+            const disloyal = this.getSpiderPlotData(this.loyalty_data["disloyal Customer"]);
+            const loyal = this.getSpiderPlotData(this.loyalty_data["Loyal Customer"]);
             this.disloyal_v_loyal_data = [disloyal, loyal];
+            // Need a deep copy
+            this.disloyal_v_loyal_filtered_data = JSON.parse(JSON.stringify(this.disloyal_v_loyal_data));
+
+            var checkList = document.getElementById('checkbox-selection');
+            checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
+            if (checkList.classList.contains('visible'))
+                checkList.classList.remove('visible');
+            else
+                checkList.classList.add('visible');
+            }
+
+            //this.populateCheckboxes();
         },
         methods: {
             drawRadarPlot(radar_data, id) {
@@ -84,8 +131,10 @@
                     .radius(d => rScale(d))
                     .angle((d, i) => i * this.angleSlice);
 
+                const dotRadius = this.dotRadius;
+
                 let svg = d3.select(id).append("svg")
-                    .attr("viewBox", [0, 30, this.width, this.height])
+                    .attr("viewBox", [-30, 30, this.width, this.height])
                     .attr("width", this.width)
                     .attr("height", this.height);
                 
@@ -109,6 +158,7 @@
                     .style("stroke", "#CDCDCD")
                     .style("fill-opacity", 0.1);
             
+                console.log(this.axesDomain)
                 const axis = axisGrid.selectAll(".axis")
                     .data(this.axesDomain)
                     .enter()
@@ -134,6 +184,7 @@
                     .attr("y", (d, i) => rScale(this.maxValue * this.axisLabelFactor) * Math.sin(this.angleSlice*i - Math.PI/2))
                     .text(d => d);
                 
+                console.log(radar_data);
                 const plots = container.append('g')
                     .selectAll('g')
                     .data(radar_data)
@@ -161,7 +212,7 @@
                 plots.selectAll("circle")
                     .data(d => d)
                     .join("circle")
-                        .attr("r", this.dotRadius)
+                        .attr("r", dotRadius)
                         .attr("cx", (d,i) => rScale(d.value) * Math.cos(this.angleSlice*i - Math.PI/2))
                         .attr("cy", (d,i) => rScale(d.value) * Math.sin(this.angleSlice*i - Math.PI/2))
                         .style("fill-opacity", 0.8)
@@ -189,10 +240,10 @@
                 const columns = this.myRadarPlotData.columns;
                 for(let i = 0; i < subset.length; i++) {
                     for (let j = 8; j < 22; j++) {
-                    if(columns[j] in ratings)
-                        ratings[columns[j]] += Number(subset[i][columns[j]]);
-                    else
-                        ratings[columns[j]] = Number(subset[i][columns[j]]);
+                        if(columns[j] in ratings)
+                            ratings[columns[j]] += Number(subset[i][columns[j]]);
+                        else
+                            ratings[columns[j]] = Number(subset[i][columns[j]]);
                     }
                 }
                 let final = [];
@@ -205,26 +256,156 @@
             },
             updatePlot() {
                 d3.selectAll("#radar svg").remove();
-                console.log(this.dd_option);
                 if(this.dd_option == "Dis_Vs_Sat") {
-                    this.drawRadarPlot(this.dissatisfied_v_satisfied_data, "#radar")
+                    this.drawRadarPlot(this.dissatisfied_v_satisfied_filtered_data, "#radar")
                 }
                 else {
-                    this.drawRadarPlot(this.disloyal_v_loyal_data, "#radar")
+                    this.drawRadarPlot(this.disloyal_v_loyal_filtered_data, "#radar")
                 }
+            },
+            checkboxChanged(event) {
+                //const id_index = this.id_map[event.target.id];
+                const target_key = event.target.id;
+                const checked = event.target.checked;
+                
+
+                if(!checked) {
+
+                    // Need to search for new index, because modifications may change default
+                    let id_index = 0;
+                    for(let i = 0; i < this.axesDomain.length; i++) {
+                        console.log(this.dissatisfied_v_satisfied_filtered_data[0][i].axis, target_key);
+                        if(this.dissatisfied_v_satisfied_filtered_data[0][i].axis == target_key) {
+                            console.log("Found @: ", i);
+                            id_index = i;
+                            break;
+                        }
+                    }
+
+                    delete this.dissatisfied_v_satisfied_filtered_data[0][id_index];
+                    delete this.dissatisfied_v_satisfied_filtered_data[1][id_index];
+                    this.dissatisfied_v_satisfied_filtered_data[0] = this.dissatisfied_v_satisfied_filtered_data[0].filter(function(){return true;});
+                    this.dissatisfied_v_satisfied_filtered_data[1] = this.dissatisfied_v_satisfied_filtered_data[1].filter(function(){return true;});
+
+                    delete this.disloyal_v_loyal_filtered_data[0][id_index];
+                    delete this.disloyal_v_loyal_filtered_data[1][id_index];
+                    this.disloyal_v_loyal_filtered_data[0] = this.disloyal_v_loyal_filtered_data[0].filter(function(){return true;});
+                    this.disloyal_v_loyal_filtered_data[1] = this.disloyal_v_loyal_filtered_data[1].filter(function(){return true;});
+
+                    // Adjust the radar slice angles
+                    const active_params = this.dissatisfied_v_satisfied_filtered_data[0].length;
+                    this.angleSlice = Math.PI * 2 / active_params;
+                    
+                    // Remove from domain
+                    delete this.axesDomain[id_index];
+                    this.axesDomain = this.axesDomain.filter(function(){return true;});
+
+                } else {
+                    
+                    // Will be in default location in full data
+                    const id_index = this.id_map[event.target.id];
+
+                    // Insert [value1] @ index [id_index] deleting [0] values
+                    let value = this.dissatisfied_v_satisfied_data[0][id_index];
+                    this.dissatisfied_v_satisfied_filtered_data[0].splice(id_index, 0, value); 
+
+                    value = this.dissatisfied_v_satisfied_data[1][id_index];
+                    this.dissatisfied_v_satisfied_filtered_data[1].splice(id_index, 0, value);
+
+                    value = this.disloyal_v_loyal_data[0][id_index];
+                    this.disloyal_v_loyal_filtered_data[0].splice(id_index, 0, value);
+
+                    value = this.disloyal_v_loyal_data[1][id_index];
+                    this.disloyal_v_loyal_filtered_data[1].splice(id_index, 0, value);
+
+                    // Adjust the radar slice angles
+                    const active_params = this.dissatisfied_v_satisfied_filtered_data[0].length;
+                    this.angleSlice = Math.PI * 2 / active_params;
+
+                    // Add to domain
+                    this.axesDomain.splice(id_index, 0, event.target.id);
+                }
+                this.updatePlot();
+                
             }
-        }
+        },
+        
     }
 
 </script>
 
 
 <style>
-#check-box-selection {
-    margin-bottom: -75px;
-    padding-left: 10px;
+
+#checkbox-selection{
+    padding-top: 10px;
+    position: absolute;
+    z-index: 10;
+    
 }
-#radar {
-    background-color: red;
+
+#radar svg {
+    position: absolute;
+    z-index: 9;
+    color: blue;
+}
+
+.dropdown-check-list {
+  display: inline-block;
+}
+
+.dropdown-check-list .anchor {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 50px 5px 48px;
+  border: 1px solid #ccc;
+}
+
+.dropdown-check-list .anchor:after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  padding: 5px;
+  right: 10px;
+  top: 20%;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.dropdown-check-list .anchor:active:after {
+  right: 8px;
+  top: 21%;
+}
+
+.dropdown-check-list ul.items {
+  padding: 2px;
+  display: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.dropdown-check-list ul.items li {
+  list-style: none;
+}
+
+.dropdown-check-list.visible .anchor {
+  color: #0094ff;
+}
+
+.dropdown-check-list.visible .items {
+  display: block;
+}
+
+g[data-name="Not Satisfied"] circle {
+  stroke: orange;
+}
+g[data-name="Satisfied"] circle {
+  stroke: blue;
 }
 </style>
