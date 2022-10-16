@@ -12,20 +12,73 @@
             return {
                 name: 'Hello',
                 someLocalValues: [1, 2, 3, 4, 5],
-
+                prepared_data: {},
             }
         },
         props:{ // received data from others
             myBarchartData: Array,
+            mySelection: String
+        },
+        watch: { 
+            mySelection: function(newVal, oldVal) { // watch it
+                console.log('Prop changed: ', newVal, ' | was: ', oldVal)
+                this.prepareData(this.myBarchartData, this.mySelection);
+            }
         },
         mounted(){ // actually drawing
-            console.log(testData);
+            // console.log(testData);
             let localData = testData['data'];
+            this.prepareData(this.myBarchartData, this.mySelection);
             this.drawBarChart(localData, "#bar") /* Example of reading data from a json file */
             // this.drawBarChart(this.myBarchartData, "#bar") // draw data passed from others.
-            console.log("Data Passed down as a Prop  ", this.myBarchartData)
+            // console.log("Data Passed down as a Prop  ", this.myBarchartData)
         },
         methods: {
+            prepareData(data, selection) {
+                console.log("prepareData: ", selection);
+                let sorted_data = [];
+                data.forEach(element => {
+                    let artist = element.artists.split('\'');
+                    // console.log(artist);
+                    // if (artist.length>5){
+                    //     console.log(artist);
+                        
+                    // }
+                    let musician_log = [];
+                    let flag = false;
+                    for (let i=0; i<artist.length; i++){
+                        if (artist[i][0]!='[' && artist[i][0]!=']' && artist[i][0]!=','){
+                            musician_log.push(artist[i]);
+                        }
+                        if (artist[i]=="Vladimir Horowitz"){
+                            flag = true;
+                            // if (artist[i] in sorted_data);
+                            // else {
+                            //     sorted_data[artist[i]] = 0;
+                            // }
+                        }
+                    }
+                    if (flag == true){
+                        // console.log(musician_log);
+                        let piano_tmp = {
+                            acousticness: element.acousticness,
+                            danceability: element.danceability,
+                            energy: element.energy,
+                            instrumentalness: element.instrumentalness,
+                            liveness: element.liveness,
+                            speechiness: element.speechiness,
+                            valence: element.valence,
+                            name: element.name,
+                            year: element.year,
+                            artists: musician_log,
+                            popularity: element.popularity
+                        };
+                        sorted_data.push(piano_tmp);
+                    }
+                });
+                console.log(sorted_data.length, sorted_data); //614
+            },
+
             drawBarChart(data, id) {
 
                 const margin = { top: 40, right: 40, bottom: 120, left: 100 };
