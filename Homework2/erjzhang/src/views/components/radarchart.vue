@@ -74,6 +74,8 @@ export default {
             svg.append("g").attr("id", "radar_number");
             svg.append("g").attr("id", "radar_axis");
             svg.append("path").attr("id", "radar_path")
+            svg.append("path").attr("id", "radar_legend_path");
+            svg.append("text").attr("id", "radar_legend_text")
         },
 
         draw_radarchart(data, id) {
@@ -148,6 +150,7 @@ export default {
             const color = "orange"
 
             let axis = svg.select("#radar_axis");
+            let legend_path_positions = []
             let positions = []      //Position array for data
             let line_coords = []
             let label_coords = []
@@ -158,6 +161,7 @@ export default {
                 line_coords.push(angleToCoordinate(angle, interval[interval.length - 1]));
                 label_coords.push(angleToCoordinate(angle, interval[interval.length - 1] * 1.1));
                 positions.push(angleToCoordinate(angle, data[i]["emission"] / data[i]["count"]))
+                legend_path_positions.push(angleToCoordinate(angle, data[i]["emission"] / data[i]["count"]/5))
             }
 
             // Draw Axis
@@ -189,6 +193,7 @@ export default {
 
             // In addition we have to connect the head and tail of the path
             positions.push(positions[0])
+            legend_path_positions.push(legend_path_positions[0])
 
             // Draw Radar Graph on the panel
             let radar_path = svg.select("#radar_path")
@@ -199,6 +204,28 @@ export default {
                 .attr("fill", color)
                 .attr("stroke-opacity", 1)
                 .attr("fill-opacity", 0.5);
+            
+            // Add a legend
+            const legend_coord = [0, 0]
+
+            svg.select("#radar_legend_path")
+                .datum(legend_path_positions)
+                .attr("d", line)
+                .attr("transform", `translate(${-width/2 + margin.left * 2}, ${-height/2-15})`)
+                .attr("stroke-width", 3)
+                .attr("stroke", color)
+                .attr("fill", color)
+                .attr("stroke-opacity", 1)
+                .attr("fill-opacity", 0.5)
+                ;
+
+            svg.select("#radar_legend_text")
+            .attr("text-anchor", "start")
+                    .attr("x", 60)
+                    .attr("y", 10-15)
+                    .attr("font-weight", "bold")
+                    .attr("font-size", "20px")
+                    .text("Year " + this.curr_year)
         },
     }
 }

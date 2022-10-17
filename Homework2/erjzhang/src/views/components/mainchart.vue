@@ -35,6 +35,10 @@ export default {
         initialize_map(id) {
             let svg = d3.select(id).append("svg")
             svg.append("g").attr("id", "map_group");
+            svg.append("g").attr("id", "map_legend");
+
+            // Add a legend
+            svg.append("g").attr("id", "map_legend")
         },
         draw_map(geoData, chartData, year, id) {
             const margin = { top: 20, right: 20, bottom: 20, left: 20 };
@@ -42,7 +46,7 @@ export default {
             const width = 960 * 0.65;
 
             const max_emission = this.history_max
-
+            const unknown_color = "#949494"
             let svg = d3.select(id).select("svg")
                 .attr("viewBox", [0, 0, width, height])
                 .attr("width", width + margin.left + margin.right)
@@ -52,10 +56,13 @@ export default {
             let g = svg.select("#map_group");
 
             // Let's have different color...
-            const color = d3.interpolateYlOrRd
-            // d3.scaleLinear()
-            //     .domain([0, max_emission])
-            //     .range(["#ffddcc", "#993300"]);
+            const color = d3.interpolateHsl("#ffa366", "#000000")
+
+            // const color = (d) => {
+            //     let c = d3.scaleLinear().domain([0, 1]).range(["#ffd1b3","#4d1f00"])
+            //     return d3.color(c(d)).formatHex()
+            // };
+            //     console.log(color(23.5))
 
             const countries = topojson.feature(geoData, geoData.objects.countries);
 
@@ -78,14 +85,54 @@ export default {
                             return c["country_code"] == country_code
                         })
                         if (country && country[year]) {
-                            return color(country[year] / max_emission * 2 / 3 + 1 / 3)
+                            return color(country[year] / max_emission)
                         }
                     }
 
-                    return "#949494" // unknown data color
+                    return unknown_color // unknown data color
                 })
                 .attr("class", "countries")
                 .attr("d", path)
+            let legend = svg.select("#map_legend")
+
+            const interval = []
+            const legend_count = 6      // Last legend will be unknown data
+            const legend_width = 10
+            const legend_height = 10
+            const legend_coord = [25, 220]
+            const padding = 5
+            for (let i = 0; i < legend_count + 1; i++) {
+                interval.push(i)
+            }
+            
+            legend.selectAll("rect").data(interval)
+                .join("rect")
+                .attr('width', legend_width)
+                .attr('height', legend_height)
+                .style('fill', d => {
+                    if (d == legend_count) {
+                        return unknown_color
+                    }
+                    return color(d / (legend_count-1))
+                })
+                .attr("x", legend_coord[0])
+                .attr("y", d => (padding + legend_height) * d + legend_coord[1])
+
+            legend.selectAll("text").data(interval)
+                .join("text")
+                .attr("x", legend_coord[0] + legend_width + padding)
+                .attr("y", d => (padding + legend_height) * d + legend_coord[1] + legend_height)
+                .text(d => {
+                    if (d == legend_count) {
+                        return "Unknown"
+                    }
+                    return max_emission / (legend_count-1) * d
+                })
+            legend.append("text").attr("id", "map_legend_unit")
+                .attr("x", legend_coord[0] )
+                .attr("y", legend_coord[1] - padding)
+                .text("Unit: ton per capita")
+                .attr("font-weight", "bold")
         },
 
 

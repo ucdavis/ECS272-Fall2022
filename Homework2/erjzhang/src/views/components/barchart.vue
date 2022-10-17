@@ -48,9 +48,10 @@ export default {
             return data
         },
         draw_barchart(data, id, year, x_key) {
-            const margin = { top: 20, right: 20, bottom: 20, left: 20 };
-            const height = 300;
+            const margin = { top: 30, right: 40, bottom: 40, left: 40 };
+            const height = 260;
             const width = 600;
+            const bar_color = "#b3754d"
 
             let svg = d3.select(id).select("svg")
                 .attr("viewBox", [0, 0, width, height])
@@ -64,14 +65,14 @@ export default {
             const y = d3.scaleLinear().domain([0, d3.max(data, d => d[year])]).nice()
                 .rangeRound([height - margin.bottom, margin.top]);
 
-            svg.selectAll("rect")
+            svg.select("#b1_bars").selectAll("rect")
                 .data(data)
                 .join("rect")
                 .attr("x", d => x(d[x_key]))
                 .attr("y", d => y(d[year]))
                 .attr("width", x.bandwidth())
                 .attr("height", d => y(0) - y(d[year]))
-                .attr("fill", "#949494");
+                .attr("fill", bar_color);
 
             const xAxis = g => g
                 .attr("transform", `translate(0,${height - margin.bottom})`)
@@ -81,35 +82,96 @@ export default {
                 .attr("transform", `translate(${margin.left},0)`)
                 .call(d3.axisLeft(y))
 
+                const font_size = 10
             svg.select("#b1_x")
                 .attr("class", "x axis")
                 .attr("transform", "translate(0," + height + ")")
                 .call(xAxis)
                 .selectAll("text")
                 .style("text-anchor", "middle")
-                .attr("dx", "0em")
+                .attr("dx", "0")
                 .attr("dy", "1em")
-                .attr("font-weight", "bold");
+                .attr("font-weight", "bold")
+                .attr("font-size", d => {
+                    if (d.length <= 12)
+                        return 10
+                    else 
+                        return 9.4
+                })
+                
 
             svg.select("#b1_y")
                 .call(yAxis)
                 .call(g => g.select(".tick:last-of-type text")
                     .clone()
-                    .attr("transform", `rotate(-90)`)
-                    .attr("text-anchor", "middle")
-                    .attr("x", -(15 - margin.top - margin.bottom) / 2)
-                    .attr("y", -80)
-                    .attr("font-weight", "bold"))
+                    // .attr("transform", `rotate(-90)`)
+                    .attr("text-anchor", "start")
+                    .attr("x", -20)
+                    .attr("y", -20)
+                    .attr("font-weight", "bold")
+                    .attr("font-size", "15px")
+                    // .text("Emission: ton per capita")
+                )
+
+            // Add tags to axis
+            svg.select("#b1_x_tag")
+                .attr("x", width/2)
+                .attr("y", height)
+                .text("Countries")
+                .attr("text-anchor", "middle")
+                .attr("font-weight", "bold")
+                .attr("font-size", "15px")
+
+            svg.select("#b1_y_tag")
+                .attr("x", 20)
+                .attr("y", 20)
+                .text("Emission: ton per capita")
+                .attr("text-anchor", "start")
+                .attr("font-weight", "bold")
+                .attr("font-size", "15px")
+
+            // Add legends to axis
+            // let legend = svg.select("#b1_legend")
+
+            const legend_width = 20
+            const legend_height = 20
+            const legend_coord = [width - 200, 20]
+            const padding = 30
+            svg.select("#b1_legend_rect")
+                .attr('width', legend_width)
+                .attr('height', legend_height)
+                .style('fill', bar_color)
+                .attr("x", legend_coord[0])
+                .attr("y", legend_coord[1])
+
+            svg.select("#b1_legend_text")
+                // .style('fill', bar_color)
+                .attr("x", legend_coord[0] + padding)
+                .attr("y", legend_coord[1] + legend_width * 2 / 3)
+                .text("CO2 Emission by country")
         },
 
         initialize_barchart(id) {
             let svg = d3.select(id).append("svg")
 
             svg.append("g")
+                .attr("id", "b1_bars")
+            svg.append("g")
                 .attr("id", "b1_x")
 
             svg.append("g")
                 .attr("id", "b1_y")
+
+            // let legend = svg.append("g")
+            //     .attr("id", "b1_legend")
+            svg.append("rect").attr("id", "b1_legend_rect")
+            svg.append("text").attr("id", "b1_legend_text")
+
+            svg.append("text")
+                .attr("id", "b1_x_tag")
+
+            svg.append("text")
+                .attr("id", "b1_y_tag")
         },
 
     }

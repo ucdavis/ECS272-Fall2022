@@ -17,12 +17,12 @@
 
             <div class="col">
                 <div class="row border">
-                    <p>Chart 1: Top {{top_n}} CO2 Emission Countries in {{curr_year}}</p>
+                    <h3>Chart 1: Top {{top_n}} CO2 Emission Countries in {{curr_year}}</h3>
                     <BarChart v-if="dataExists" :myBarchartData="myCsvData" :curr_year="parseInt(curr_year)"
                         :x_key="x_key" :top_n="top_n" />
                 </div>
                 <div class="row border">
-                    <p>Chart 2: Radar Chart on Emission by Regions in {{curr_year}}</p>
+                    <h3>Chart 2: Emission by Regions</h3>
                     <RadarChart v-if="dataExists" :myCsvData="myCsvData" :curr_year="parseInt(curr_year)" />
 
                 </div>
