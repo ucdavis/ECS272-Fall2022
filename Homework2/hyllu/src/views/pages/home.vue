@@ -44,7 +44,7 @@ export default {
         handleChange(selected) {
             // handle here
             console.log('parent noticed change ' + selected.id + selected.text);
-            this.selected = selected.id + selected.text;
+            this.selected = selected;
         },
     }
 }

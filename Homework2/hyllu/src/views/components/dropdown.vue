@@ -14,16 +14,17 @@
         name: 'Dropdown',
         data() { // pass data to others
             return {
-                selected: '',
+                selected: {id: 0, text: 'Popularity All'},
                 popularities: [
-                    {id: 1, name: 'A'},
-                    {id: 2, name: 'B'},
-                    {id: 3, name: 'C'}
+                    {id: 0, name: 'Popularity All'},
+                    {id: 1, name: 'Popularity 40-60'},
+                    {id: 2, name: 'Popularity 60-80'},
+                    {id: 3, name: 'Popularity 80-100'}
                 ]
             }
         },
         mounted(){ 
-            console.log(this.selected.id, this.selected.value);
+            // console.log(this.selected.id, this.selected.text);
             // this.selectedCompound(this.selected);
         },
         methods: {
