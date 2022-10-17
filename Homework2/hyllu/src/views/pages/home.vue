@@ -1,21 +1,31 @@
 <template>
-    <div>
-        <!-- <h1>Welcome Home</h1> -->
-        <Dropdown @selectedChange="handleChange" />
-        <BarChart v-if="dataExists" :myBarchartData="myData" :mySelection="selected" />
+    <div id="home">
+        <div>
+            <Dropdown_Network @selectedChange="handleChange_network"/>
+            <Network v-if="dataExists" :myData="myData" :mySelection="selected_network" />
+        </div>
+        <div>
+            <div>
+                <Dropdown @selectedChange="handleChange" />
+                <BarChart v-if="dataExists" :myBarchartData="myData" :mySelection="selected" />
+            </div>
+            <div>
+                <Dropdown_Beeswarm @selectedChange="handleChange_beeswarm"/>
+                <Beeswarm v-if="dataExists" :myData="myData" :mySelection="selected_beeswarm" />
+            </div>
+        </div>
     </div>
-    <div>
-        <Dropdown_Beeswarm @selectedChange="handleChange_beeswarm"/>
-        <Beeswarm v-if="dataExists" :myData="myData" :mySelection="selected_beeswarm" />
-    </div>
+    
 </template>
 
 <script>
-import BarChart from "../components/barchart.vue"
-import Dropdown from "../components/dropdown.vue"
 import * as d3 from "d3";
-import Dropdown_Beeswarm from '../components/dropdown_beeswarm.vue';
+import BarChart from "../components/barchart.vue";
 import Beeswarm from '../components/beeswarm.vue';
+import Network from '../components/network.vue';
+import Dropdown from "../components/dropdown.vue";
+import Dropdown_Beeswarm from '../components/dropdown_beeswarm.vue';
+import Dropdown_Network from '../components/dropdown_network.vue';
 import csvPath from '../../assets/data/spotify.csv';
 
 export default {
@@ -24,14 +34,17 @@ export default {
             dataExists: false,
             myData: [],
             selected: {id: 0, text: 'Popularity All'},
-            selected_beeswarm: {id: 0, text: 'acousticness'}
+            selected_beeswarm: {id: 0, text: 'acousticness'},
+            selected_network: {id: 0, text: 'Taylor Swift'}
         }
     },
     components: {
     BarChart,
     Dropdown,
     Dropdown_Beeswarm,
-    Beeswarm
+    Beeswarm,
+    Dropdown_Network,
+    Network
 },
     created(){
         /* Fetch via CSV */
@@ -59,6 +72,18 @@ export default {
             console.log('parent noticed change beeswarm ' + selected.id + selected.text);
             this.selected_beeswarm = selected;
         },
+        handleChange_network(selected) {
+            // handle here
+            console.log('parent noticed change network ' + selected.id + selected.text);
+            this.selected_network = selected;
+        },
     }
 }
 </script>
+
+<style>
+
+    #home {
+        display: flex;
+    }
+</style>
