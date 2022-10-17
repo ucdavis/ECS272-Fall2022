@@ -1,5 +1,5 @@
 # UPDATED Portion of README For Assignment 2
-1. Change directory into the Vue-Skeleton template
+1. Change directory into the Vue-Skeleton template under Homework 2
 2. Run `npm i` to install node modules as needed
 3. Run `npm run start` to start the sever.
 
