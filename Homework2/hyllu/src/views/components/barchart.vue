@@ -27,7 +27,7 @@ import { object } from "vue-types";
                 this.prepareData(this.myBarchartData, this.mySelection);
                 if (this.mySelection.id===1 || this.mySelection.id===2 || this.mySelection.id===3){
                     console.log(this.mySelection.id, "bar");
-                    this.drawBarChart(this.prepared_data, "#bar")
+                    this.drawBarChart(this.prepared_data, "#bar", this.mySelection)
                 }
                 else{
                     console.log(this.mySelection.id, "stacked");
@@ -42,7 +42,7 @@ import { object } from "vue-types";
             this.prepareData(this.myBarchartData, this.mySelection);
             if (this.mySelection.id===1 || this.mySelection.id===2 || this.mySelection.id===3){
                 console.log(this.mySelection.id, "bar");
-                this.drawBarChart(this.prepared_data, "#bar")
+                this.drawBarChart(this.prepared_data, "#bar", this.mySelection)
             }
             else{
                 console.log(this.mySelection.id, "stacked");
@@ -92,121 +92,121 @@ import { object } from "vue-types";
                         };
                         if (element.year < 2008){
                             if (element.popularity < 20){
-                                year_composer["A"]["A"] += 1;
+                                year_composer["A"]["A"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 40){
-                                year_composer["A"]["B"] += 1;
+                                year_composer["A"]["B"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 60){
-                                year_composer["A"]["C"] += 1;
+                                year_composer["A"]["C"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 80){
-                                year_composer["A"]["D"] += 1;
+                                year_composer["A"]["D"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 101){
-                                year_composer["A"]["E"] += 1;
+                                year_composer["A"]["E"] += parseInt(element.popularity);
                             }
                         }
                         else if (element.year < 2010){
                             if (element.popularity < 20){
-                                year_composer["B"]["A"] += 1;
+                                year_composer["B"]["A"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 40){
-                                year_composer["B"]["B"] += 1;
+                                year_composer["B"]["B"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 60){
-                                year_composer["B"]["C"] += 1;
+                                year_composer["B"]["C"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 80){
-                                year_composer["B"]["D"] += 1;
+                                year_composer["B"]["D"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 101){
-                                year_composer["B"]["E"] += 1;
+                                year_composer["B"]["E"] += parseInt(element.popularity);
                             }
                         }
                         else if (element.year < 2012){
                             if (element.popularity < 20){
-                                year_composer["C"]["A"] += 1;
+                                year_composer["C"]["A"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 40){
-                                year_composer["C"]["B"] += 1;
+                                year_composer["C"]["B"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 60){
-                                year_composer["C"]["C"] += 1;
+                                year_composer["C"]["C"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 80){
-                                year_composer["C"]["D"] += 1;
+                                year_composer["C"]["D"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 101){
-                                year_composer["C"]["E"] += 1;
+                                year_composer["C"]["E"] += parseInt(element.popularity);
                             }
                         }
                         else if (element.year < 2014){
                             if (element.popularity < 20){
-                                year_composer["D"]["A"] += 1;
+                                year_composer["D"]["A"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 40){
-                                year_composer["D"]["B"] += 1;
+                                year_composer["D"]["B"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 60){
-                                year_composer["D"]["C"] += 1;
+                                year_composer["D"]["C"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 80){
-                                year_composer["D"]["D"] += 1;
+                                year_composer["D"]["D"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 101){
-                                year_composer["D"]["E"] += 1;
+                                year_composer["D"]["E"] += parseInt(element.popularity);
                             }
                         }
                         else if (element.year < 2017){
                             if (element.popularity < 20){
-                                year_composer["E"]["A"] += 1;
+                                year_composer["E"]["A"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 40){
-                                year_composer["E"]["B"] += 1;
+                                year_composer["E"]["B"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 60){
-                                year_composer["E"]["C"] += 1;
+                                year_composer["E"]["C"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 80){
-                                year_composer["E"]["D"] += 1;
+                                year_composer["E"]["D"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 101){
-                                year_composer["E"]["E"] += 1;
+                                year_composer["E"]["E"] += parseInt(element.popularity);
                             }
                         }
                         else if (element.year < 2019){
                             if (element.popularity < 20){
-                                year_composer["F"]["A"] += 1;
+                                year_composer["F"]["A"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 40){
-                                year_composer["F"]["B"] += 1;
+                                year_composer["F"]["B"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 60){
-                                year_composer["F"]["C"] += 1;
+                                year_composer["F"]["C"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 80){
-                                year_composer["F"]["D"] += 1;
+                                year_composer["F"]["D"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 101){
-                                year_composer["F"]["E"] += 1;
+                                year_composer["F"]["E"] += parseInt(element.popularity);
                             }
                         }
                         else if (element.year < 2020){
                             if (element.popularity < 20){
-                                year_composer["G"]["A"] += 1;
+                                year_composer["G"]["A"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 40){
-                                year_composer["G"]["B"] += 1;
+                                year_composer["G"]["B"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 60){
-                                year_composer["G"]["C"] += 1;
+                                year_composer["G"]["C"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 80){
-                                year_composer["G"]["D"] += 1;
+                                year_composer["G"]["D"] += parseInt(element.popularity);
                             }
                             else if (element.popularity < 101){
-                                year_composer["G"]["E"] += 1;
+                                year_composer["G"]["E"] += parseInt(element.popularity);
                             }
                         }
                     }
@@ -215,6 +215,7 @@ import { object } from "vue-types";
                 let year_popularity_C = [];
                 let year_popularity_D = [];
                 let year_popularity_E = [];
+                console.log(year_composer);
                 Object.keys(year_composer).forEach(key => {
                     Object.keys(year_composer[key]).forEach(k => {
                         if (key=='A'){
@@ -437,18 +438,44 @@ import { object } from "vue-types";
                 // this.prepared_data = year_popularity;
             },
 
-            drawBarChart(data, id) {
+            drawBarChart(data, id, selection) {
 
-                const margin = { top: 40, right: 40, bottom: 120, left: 100 };
-                const height = 300;
-                const width = 500;
+                const margin = { top: 20, right: 40, bottom: 60, left: 60 };
+                // const height = 300;
+                // const width = 500;
 
-                const x = d3.scaleBand().domain(data.map(d => d.album))
-                    .rangeRound([margin.left, width - margin.right])
-                    .padding(0.1);
+                let width  = 600;
+                let height = 300;
 
-                const y = d3.scaleLinear().domain([0, d3.max(data, d => d.popularity)]).nice()
-                    .rangeRound([height - margin.bottom, margin.top]);
+                // Compute values.
+                const X = d3.map(data, d => d.album);
+                const Y = d3.map(data, d => d.songs);
+
+                // Compute default domains, and unique the x-domain.
+                let xDomain = X;
+                let yDomain = [0, d3.max(Y)];
+                xDomain = new d3.InternSet(xDomain);
+
+                // Omit any data not present in the x-domain.
+                const I = d3.range(X.length).filter(i => xDomain.has(X[i]));
+
+                const xRange = [margin.left, width - margin.right];
+                const yRange = [height - margin.bottom, margin.top];
+                // Construct scales, axes, and formats.
+                const xScale = d3.scaleBand(xDomain, xRange).padding(0.1);
+                const yScale = d3.scaleLinear(yDomain, yRange);
+                const xAxis = d3.axisBottom(xScale).tickSizeOuter(0);
+                const yAxis = d3.axisLeft(yScale).ticks(height / 40, "");
+
+                // // Compute titles.
+                // if (title === undefined) {
+                //     const formatValue = yScale.tickFormat(100, yFormat);
+                //     title = i => `${X[i]}\n${formatValue(Y[i])}`;
+                // } else {
+                //     const O = d3.map(data, d => d);
+                //     const T = title;
+                //     title = i => T(O[i], i, data);
+                // }
 
                 d3.selectAll(".barchart").remove();
                 let svg = d3.select(id).append("svg")
@@ -457,47 +484,103 @@ import { object } from "vue-types";
                     .attr("width", width + margin.left + margin.right)
                     .attr("height", height + margin.top + margin.bottom);
 
-                svg.selectAll("rect")
-                    .data(data)
-                    .join("rect")
-                    .attr("x", d => x(d.y))
-                    .attr("y", d => y(d.x))
-                    .attr("width", x.bandwidth())
-                    .attr("height", d => y(0) - y(d.x))
-                    .attr("fill", "green");
+                // const svg = d3.create('svg')
+                //     .attr('id', svgId)
+                //     .attr('width', width)
+                //     .attr('height', height)
+                //     .attr('viewBox', [0, 0, width, height])
+                //     .attr('style', 'max-width: 100%; height: auto; height: intrinsic;');
 
-                const xAxis = g => g
-                    .attr("transform", `translate(0,${height - margin.bottom})`)
-                    .call(d3.axisBottom(x))
+                const bar = svg.append('g')
+                    .attr('fill', this.colorScale(selection.id-1))
+                    .selectAll('rect')
+                    .data(I)
+                    .join('rect')
+                    .attr('x', i => xScale(X[i]))
+                    .attr('y', i => yScale(Y[i]))
+                    .attr('height', i => yScale(0) - yScale(Y[i]))
+                    .attr('width', xScale.bandwidth());
+                
+                
+                // add lengend for chosen colors.
+                svg.append("circle")
+                    .attr("cx", margin.left + 95)
+                    .attr("cy", height -15)
+                    .attr("r", 4)
+                    .style("fill", this.colorScale(0))
+                svg.append("circle")
+                    .attr("cx", margin.left + 145)
+                    .attr("cy", height -15)
+                    .attr("r", 4)
+                    .style("fill", this.colorScale(1))
+                svg.append("circle")
+                    .attr("cx", margin.left + 195)
+                    .attr("cy", height -15)
+                    .attr("r", 4)
+                    .style("fill", this.colorScale(2))
+                
+                svg.append("text")
+                    .attr("x", margin.left)
+                    .attr("y", height -15)
+                    .text("Song Popularity:")
+                    .style("font-size", "9px")
+                    .attr("alignment-baseline","middle")
+                svg.append("text")
+                    .attr("x", margin.left + 100)
+                    .attr("y", height -15)
+                    .text("40-60")
+                    .style("font-size", "9px")
+                    .attr("alignment-baseline","middle")
+                svg.append("text")
+                    .attr("x", margin.left + 150)
+                    .attr("y", height -15)
+                    .text("60-80")
+                    .style("font-size", "9px")
+                    .attr("alignment-baseline","middle")
+                svg.append("text")
+                    .attr("x", margin.left + 200)
+                    .attr("y", height -15)
+                    .text("80-100")
+                    .style("font-size", "9px")
+                    .attr("alignment-baseline","middle")
 
-                const yAxis = g => g
-                    .attr("transform", `translate(${margin.left},0)`)
-                    .call(d3.axisLeft(y))
 
+                // add labels for axes.
                 svg.append("g")
-                    .attr("class", "x axis")
-                    .attr("transform", "translate(0," + height + ")")
+                    .attr('transform', `translate(0,${height - margin.bottom})`)
                     .call(xAxis)
-                    .selectAll("text")
-                    .style("text-anchor", "end")
-                    .attr("dx", "-.8em")
-                    .attr("dy", ".15em")
-                    .attr("transform", "rotate(-65)")
-                    .attr("font-weight", "bold");
+                    .style("font-size", "8px")
+                    .call(g =>
+                        g .select(".tick:last-of-type text")
+                        .clone()
+                        .attr("text-anchor", "middle")
+                        .attr("x", -(width - margin.left - margin.right) / 2)
+                        .attr("y", margin.bottom - 35)
+                        .attr("font-weight", "bold")
+                        .text("Album (Release year)")
+                        );
 
                 svg.append("g")
+                    .attr('transform', `translate(${margin.left}, 0)`)
                     .call(yAxis)
-                    .call(g => g.select(".tick:last-of-type text")
+                    .style("font-size", "8px")
+                    .call(g =>
+                        g
+                        .select(".tick:last-of-type text")
                         .clone()
                         .attr("transform", `rotate(-90)`)
                         .attr("text-anchor", "middle")
-                        .attr("x", -(15 - margin.top - margin.bottom) / 2)
-                        .attr("y", -80)
-                        .attr("font-weight", "bold"))
+                        .attr("y", -margin.left +10)
+                        .attr("x", -((height - margin.bottom - margin.top)/2))
+                        .attr("font-weight", "bold")
+                        .text("Song Popularity Sum")
+                        );
+
+                return svg.node();
             },
             drawStackedBarChart(data, id) {
 
-                const margin = { top: 20, right: 80, bottom: 30, left: 40 };
+                const margin = { top: 20, right: 40, bottom: 60, left: 60 };
                 // const height = 300;
                 // const width = 500;
 
@@ -566,42 +649,42 @@ import { object } from "vue-types";
                 
                 // add lengend for chosen colors.
                 svg.append("circle")
-                    .attr("cx", width-margin.right + 10)
-                    .attr("cy", margin.top + 15)
+                    .attr("cx", margin.left + 95)
+                    .attr("cy", height -15)
                     .attr("r", 4)
                     .style("fill", color(0))
                 svg.append("circle")
-                    .attr("cx", width-margin.right + 10)
-                    .attr("cy", margin.top + 30)
+                    .attr("cx", margin.left + 145)
+                    .attr("cy", height -15)
                     .attr("r", 4)
                     .style("fill", color(1))
                 svg.append("circle")
-                    .attr("cx", width-margin.right + 10)
-                    .attr("cy", margin.top + 45)
+                    .attr("cx", margin.left + 195)
+                    .attr("cy", height -15)
                     .attr("r", 4)
                     .style("fill", color(2))
                 
                 svg.append("text")
-                    .attr("x", width-margin.right)
-                    .attr("y", margin.top)
-                    .text("Popularity of Songs")
+                    .attr("x", margin.left)
+                    .attr("y", height -15)
+                    .text("Song Popularity:")
                     .style("font-size", "9px")
                     .attr("alignment-baseline","middle")
                 svg.append("text")
-                    .attr("x", width-margin.right + 15)
-                    .attr("y", margin.top + 16)
+                    .attr("x", margin.left + 100)
+                    .attr("y", height -15)
                     .text("40-60")
                     .style("font-size", "9px")
                     .attr("alignment-baseline","middle")
                 svg.append("text")
-                    .attr("x", width-margin.right + 15)
-                    .attr("y", margin.top + 31)
+                    .attr("x", margin.left + 150)
+                    .attr("y", height -15)
                     .text("60-80")
                     .style("font-size", "9px")
                     .attr("alignment-baseline","middle")
                 svg.append("text")
-                    .attr("x", width-margin.right + 15)
-                    .attr("y", margin.top + 46)
+                    .attr("x", margin.left + 200)
+                    .attr("y", height -15)
                     .text("80-100")
                     .style("font-size", "9px")
                     .attr("alignment-baseline","middle")
@@ -617,9 +700,9 @@ import { object } from "vue-types";
                         .clone()
                         .attr("text-anchor", "middle")
                         .attr("x", -(width - margin.left - margin.right) / 2)
-                        .attr("y", margin.bottom - 8)
+                        .attr("y", margin.bottom - 35)
                         .attr("font-weight", "bold")
-                        .text("Album")
+                        .text("Album (Release year)")
                         );
 
                 svg.append("g")
@@ -635,7 +718,7 @@ import { object } from "vue-types";
                         .attr("y", -margin.left +10)
                         .attr("x", -((height - margin.bottom - margin.top)/2))
                         .attr("font-weight", "bold")
-                        .text("#Song")
+                        .text("Song Popularity Sum")
                         );
 
                 return Object.assign(svg.node(), {scales: {color}});
