@@ -1,3 +1,11 @@
+# UPDATED Portion of README For Assignment 2
+1. Change directory into the Vue-Skeleton template
+2. Run `npm i` to install node modules as needed
+3. Run `npm run start` to start the sever.
+
+DIMENSIONS: For optimal scaling and dimensions, I developed and tested on a standard 24" 1080p monitor. You can also try to resize the scale to 1920 x 929 in case the current view is off. You can however feel free to use whatever you'd like, if when running `npm run start` and the view looks fine as is then no need to change it. Otherwise, try to adjust it to the dimensions I've given and hopefully it should look a little better.
+
+
 # Homework 2: Visualization Dashboard: Layout Design + Visual Encoding
 For homework 2, you will create a dashboard with three visualization views. This homework will not be using Observable. Instead, you will be developing a visualization dashboard system in JavaScript with [D3.js](https://d3js.org/)
 
