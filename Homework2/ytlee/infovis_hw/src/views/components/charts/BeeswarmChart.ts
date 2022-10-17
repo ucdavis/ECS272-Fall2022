@@ -1,0 +1,171 @@
+import * as d3 from "d3"
+
+interface Margin {
+    top: number,
+    bottom: number,
+    left: number,
+    right: number
+}
+class Config {
+	vbWidth: number = 700  
+	vbHeight: number = 700
+	margin: Margin = {top: 20, right: 20, bottom: 50, left: 0}
+    radius = 3; // (fixed) radius of the circles
+    value = d => d; // convenience alias for x
+    label="unknown"; // convenience alias for xLabel
+    type = d3.scaleLinear; // convenience alias for xType
+    domain; // convenience alias for xDomain
+    x = d=>d.value; // given d in data, returns the quantitative x value
+    title = null; // given d in data, returns the title
+    group=null; // given d in data, returns an (ordinal) value for color
+    groups=null; // an array of ordinal values representing the data groups
+    colors = d3.schemeTableau10; // an array of color strings, for the dots
+    xScale;
+    xMin = 0;
+    xMax = 1;
+    padding=1.5;
+    xLabel = "unknown"; // a label for the x-axis
+}
+
+export class BeeswarmChart {
+    id: String;
+    cfg: Config;
+    options: any;
+    width: number;
+    height: number;
+    T:any;
+    tooltip:any;
+
+    public constructor(id: String, options:any) {
+        this.id = id
+        this.cfg = new Config()
+        this.options = options
+        this.width = this.cfg.vbWidth - this.cfg.margin.left - this.cfg.margin.right
+        this.height = this.cfg.vbHeight - this.cfg.margin.top - this.cfg.margin.bottom
+    }
+
+  init() {
+    if('undefined' !== typeof this.options){
+        for(var i in this.options){
+            if('undefined' !== typeof this.options[i]){ (this.cfg as any)[i] = this.options[i]; }
+        }
+    }
+
+    const svg = d3.select(`${this.id}`).append("svg")
+        .attr("viewBox", `0 0 ${this.cfg.vbWidth} ${this.cfg.vbHeight}`)
+        .attr("width", "100%")
+        .attr("height", "100%")
+        // .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
+    const canvas = svg.append("g").attr("class", "canvas")
+				.attr("transform", "translate(" + (this.cfg.margin.left) + "," + (this.cfg.margin.top) + ")");
+    this.tooltip = d3.select(`${this.id}`).select(".tooltip")
+    console.log(this.cfg.xMin, this.cfg.xMax)
+    // this.cfg.xScale = d3.scaleLinear()
+    this.cfg.xScale = d3.scaleLog()
+        .domain([this.cfg.xMin, this.cfg.xMax])
+        .range([0, this.width])
+    const xAxis = d3.axisBottom(this.cfg.xScale).tickSizeOuter(0);
+    // x axis
+    canvas.append("g")
+        .attr("transform", `translate(0,${this.height})`)
+        .call(xAxis)
+        .call(g => g.append("text")
+            .attr("x", this.width )
+            .attr("y", 30)
+            .attr("fill", "currentColor")
+            .attr("text-anchor", "end")
+            .text(this.cfg.xLabel));
+    }
+    update(data, emit) {
+        console.log("update: ", data)
+        const canvas = d3.select(`${this.id}`).select("svg").select("g.canvas")
+        // Compute values.
+        const X = d3.map(data, this.cfg.x).map(x => x == null ? NaN : +x);
+        const T = this.cfg.title == null ? null : d3.map(data, this.cfg.title);
+        this.T = T
+        const G = this.cfg.group == null ? null : d3.map(data, this.cfg.group);
+
+        // Compute which data points are considered defined.
+        const I = d3.range(X.length).filter(i => !isNaN(X[i]));
+
+        // Compute the y-positions.
+        const Y = dodge(I.map(i => this.cfg.xScale(X[i])), this.cfg.radius * 2 + this.cfg.padding);
+
+        // Given an array of x-values and a separation radius, returns an array of y-values.
+        function dodge(X, radius) {
+            const Y = new Float64Array(X.length);
+            const radius2 = radius ** 2;
+            const epsilon = 1e-3;
+            let head:any = null, tail:any = null;
+
+            // Returns true if circle ⟨x,y⟩ intersects with any circle in the queue.
+            function intersects(x, y) {
+                let a:any = head;
+                while (a) {
+                    const ai = a.index;
+                    if (radius2 - epsilon > (X[ai] - x) ** 2 + (Y[ai] - y) ** 2) return true;
+                    a = a.next;
+                }
+                return false;
+            }
+
+            // Place each circle sequentially.
+            for (const bi of d3.range(X.length).sort((i, j) => X[i] - X[j])) {
+
+            // Remove circles from the queue that can’t intersect the new circle b.
+            while (head && X[head.index] < X[bi] - radius2) head = head.next;
+
+            // Choose the minimum non-intersecting tangent.
+            if (intersects(X[bi], Y[bi] = 0)) {
+                let a = head;
+                Y[bi] = Infinity;
+                do {
+                const ai = a.index;
+                let y = Y[ai] + Math.sqrt(radius2 - (X[ai] - X[bi]) ** 2);
+                if (y < Y[bi] && !intersects(X[bi], y)) Y[bi] = y;
+                a = a.next;
+                } while (a);
+            }
+        
+            // Add b to the queue.
+            const b = {index: bi, next: null};
+            if (head === null) head = tail = b;
+            else tail = tail.next = b;
+            }
+        
+            return Y;
+        }
+        var self = this
+        const dot = canvas
+            .selectAll("circle")
+            .data(I)
+            .join("circle")
+            .attr("cx", i => this.cfg.xScale(X[i]))
+            .attr("cy", i => this.height -  this.cfg.radius - Y[i])
+            .attr("r", this.cfg.radius)
+            .attr("cursor", "pointer")
+            .on("mousemove", function(e) {
+                self.tooltip
+                    .style("left", e.offsetX + 20 + "px")
+                    .style("top", e.offsetY - 5 + "px")
+            })
+            .on("mouseover", function(e, i) {
+               d3.select(this)
+                .attr("r", self.cfg.radius + 2) 
+                .attr("stroke", "white")
+                .attr("stroke-width", 2)
+                self.tooltip.style("opacity", 1)
+                            .html(self.T[i])
+            })
+            .on("mouseout", function(e, i) {
+               d3.select(this)
+                .attr("r", self.cfg.radius) 
+                .attr("stroke", "none")
+                .attr("stroke-width", 2)
+                self.tooltip.style("opacity", 0)
+            })
+            .on("click", function(e, i){
+                emit("node-clicked", self.T[i])
+            })
+    }
+}  

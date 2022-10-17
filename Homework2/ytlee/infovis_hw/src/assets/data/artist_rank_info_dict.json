@@ -1,0 +1,3198 @@
+{
+    "Robert Schumann": {
+        "mse": 0.030433499299921868,
+        "num_songs": 253
+    },
+    "Vladimir Horowitz": {
+        "mse": 0.026221196333151574,
+        "num_songs": 614
+    },
+    "Seweryn Goszczy\u0144ski": {
+        "mse": 0.020197457920188847,
+        "num_songs": 76
+    },
+    "Felix Mendelssohn": {
+        "mse": 0.035928233843288186,
+        "num_songs": 111
+    },
+    "Franz Liszt": {
+        "mse": 0.026454886400511357,
+        "num_songs": 136
+    },
+    "Charlo": {
+        "mse": 0.033752905112411864,
+        "num_songs": 466
+    },
+    "Sergei Rachmaninoff": {
+        "mse": 0.03360832893257103,
+        "num_songs": 220
+    },
+    "Samuel Barber": {
+        "mse": 0.048938033062513875,
+        "num_songs": 66
+    },
+    "Ludwig van Beethoven": {
+        "mse": 0.03538158284177539,
+        "num_songs": 976
+    },
+    "Staatskapelle Berlin": {
+        "mse": 0.03846504778990932,
+        "num_songs": 70
+    },
+    "Richard Strauss": {
+        "mse": 0.03787648186643545,
+        "num_songs": 172
+    },
+    "Alexander Scriabin": {
+        "mse": 0.02468666706154847,
+        "num_songs": 122
+    },
+    "Ignacio Corsini": {
+        "mse": 0.037820727030184145,
+        "num_songs": 620
+    },
+    "Stellakis Perpiniadis": {
+        "mse": 0.0351858926233888,
+        "num_songs": 88
+    },
+    "Giorgos Papasideris": {
+        "mse": 0.03445034670633385,
+        "num_songs": 220
+    },
+    "Roberto Maida": {
+        "mse": 0.02741165446205912,
+        "num_songs": 181
+    },
+    "Roza Eskenazi": {
+        "mse": 0.03087487141491072,
+        "num_songs": 173
+    },
+    "Dimitris Arapakis": {
+        "mse": 0.0293578614237359,
+        "num_songs": 69
+    },
+    "ANTONIS NTALGKAS": {
+        "mse": 0.02996353264128432,
+        "num_songs": 51
+    },
+    "Kostas Roukounas": {
+        "mse": 0.03564215729496313,
+        "num_songs": 76
+    },
+    "Ernesto Fama": {
+        "mse": 0.02880609011689869,
+        "num_songs": 233
+    },
+    "Jack Payne": {
+        "mse": 0.031924662190143456,
+        "num_songs": 52
+    },
+    "Andr\u00e9s Segovia": {
+        "mse": 0.02314143847924639,
+        "num_songs": 152
+    },
+    "Rita Ampatzi": {
+        "mse": 0.038339423946556976,
+        "num_songs": 145
+    },
+    "Sinclair Lewis": {
+        "mse": 0.01761902942552588,
+        "num_songs": 212
+    },
+    "Frank Arnold": {
+        "mse": 0.01761902942552588,
+        "num_songs": 212
+    },
+    "Franz Joseph Haydn": {
+        "mse": 0.03719638172817157,
+        "num_songs": 177
+    },
+    "Pro Arte Quartet": {
+        "mse": 0.031959034201178266,
+        "num_songs": 128
+    },
+    "Cristian Vasile": {
+        "mse": 0.019880557634313213,
+        "num_songs": 65
+    },
+    "Karl B\u00f6hm": {
+        "mse": 0.039092954734881,
+        "num_songs": 197
+    },
+    "Staatskapelle Dresden": {
+        "mse": 0.0352898216527476,
+        "num_songs": 139
+    },
+    "Johannes Brahms": {
+        "mse": 0.03356282939790828,
+        "num_songs": 313
+    },
+    "Stratos Pagioumtzis": {
+        "mse": 0.03536644721038001,
+        "num_songs": 75
+    },
+    "Jean Moscopol": {
+        "mse": 0.02750455002156384,
+        "num_songs": 54
+    },
+    "Jascha Heifetz": {
+        "mse": 0.037995404256346885,
+        "num_songs": 442
+    },
+    "London Philharmonic Orchestra": {
+        "mse": 0.035659077969585874,
+        "num_songs": 100
+    },
+    "K.C.Dey": {
+        "mse": 0.03460805441381698,
+        "num_songs": 73
+    },
+    "Carmen Miranda": {
+        "mse": 0.025806837814513584,
+        "num_songs": 127
+    },
+    "Richard Wagner": {
+        "mse": 0.04004995107965312,
+        "num_songs": 273
+    },
+    "Wolfgang Amadeus Mozart": {
+        "mse": 0.042441017353330654,
+        "num_songs": 938
+    },
+    "Lead Belly": {
+        "mse": 0.03448999318701802,
+        "num_songs": 342
+    },
+    "New York Philharmonic": {
+        "mse": 0.03890776280314244,
+        "num_songs": 582
+    },
+    "Arturo Toscanini": {
+        "mse": 0.042023667257153736,
+        "num_songs": 632
+    },
+    "Leonard Bernstein": {
+        "mse": 0.04703233935728366,
+        "num_songs": 465
+    },
+    "Columbia Symphony Orchestra": {
+        "mse": 0.04376900922569086,
+        "num_songs": 427
+    },
+    "Bruno Walter": {
+        "mse": 0.03659691815575614,
+        "num_songs": 268
+    },
+    "Wiener Philharmoniker": {
+        "mse": 0.043040465906323,
+        "num_songs": 345
+    },
+    "Herbert von Karajan": {
+        "mse": 0.04346302840911997,
+        "num_songs": 198
+    },
+    "Concertgebouworkest": {
+        "mse": 0.03801524647109441,
+        "num_songs": 151
+    },
+    "Berliner Philharmoniker": {
+        "mse": 0.03406828190101247,
+        "num_songs": 106
+    },
+    "Wilhelm Furtw\u00e4ngler": {
+        "mse": 0.04755353721874934,
+        "num_songs": 113
+    },
+    "Philharmonia Orchestra": {
+        "mse": 0.04674100560833038,
+        "num_songs": 214
+    },
+    "Chicago Symphony Orchestra": {
+        "mse": 0.02644493491691123,
+        "num_songs": 53
+    },
+    "Fritz Reiner": {
+        "mse": 0.04572881202493622,
+        "num_songs": 181
+    },
+    "Elisabeth Schwarzkopf": {
+        "mse": 0.04240550078677895,
+        "num_songs": 74
+    },
+    "NBC Symphony Orchestra": {
+        "mse": 0.03417912887962357,
+        "num_songs": 69
+    },
+    "London Symphony Orchestra": {
+        "mse": 0.037256917594343915,
+        "num_songs": 275
+    },
+    "Royal Philharmonic Orchestra": {
+        "mse": 0.04826629777874035,
+        "num_songs": 78
+    },
+    "Klarino": {
+        "mse": 0.03572448515061167,
+        "num_songs": 81
+    },
+    "Markos Vamvakaris": {
+        "mse": 0.036773049204614765,
+        "num_songs": 111
+    },
+    "Surendra": {
+        "mse": 0.04238370536439746,
+        "num_songs": 51
+    },
+    "Charlie Chaplin": {
+        "mse": 0.04592368058569611,
+        "num_songs": 103
+    },
+    "Orchestra Studio 7": {
+        "mse": 0.05108227421114914,
+        "num_songs": 238
+    },
+    "Carlo Buti": {
+        "mse": 0.022041044784304936,
+        "num_songs": 64
+    },
+    "Rudolf Serkin": {
+        "mse": 0.028991498947295226,
+        "num_songs": 151
+    },
+    "Claudio Villa": {
+        "mse": 0.030043027633180907,
+        "num_songs": 69
+    },
+    "Lata Mangeshkar": {
+        "mse": 0.042687591373715215,
+        "num_songs": 502
+    },
+    "Asha Bhosle": {
+        "mse": 0.04134751292211326,
+        "num_songs": 191
+    },
+    "Mohammed Rafi": {
+        "mse": 0.040283018026839285,
+        "num_songs": 291
+    },
+    "Johann Sebastian Bach": {
+        "mse": 0.03907246342167314,
+        "num_songs": 868
+    },
+    "Claudio Arrau": {
+        "mse": 0.025950219343171085,
+        "num_songs": 244
+    },
+    "Giuseppe Verdi": {
+        "mse": 0.030769341877281208,
+        "num_songs": 691
+    },
+    "Gino Marinuzzi": {
+        "mse": 0.03165514075726767,
+        "num_songs": 52
+    },
+    "Orchestra Sinfonica dellEIAR di Torino": {
+        "mse": 0.03165514075726767,
+        "num_songs": 52
+    },
+    "Mina": {
+        "mse": 0.03716750909008241,
+        "num_songs": 87
+    },
+    "Maurice Ravel": {
+        "mse": 0.03361837076571285,
+        "num_songs": 148
+    },
+    "Oscar Levant": {
+        "mse": 0.028452012036692093,
+        "num_songs": 131
+    },
+    "George Gershwin": {
+        "mse": 0.04351204566810948,
+        "num_songs": 83
+    },
+    "Wilhelm Kempff": {
+        "mse": 0.029820695236710503,
+        "num_songs": 62
+    },
+    "Noor Jehan": {
+        "mse": 0.046974153958191905,
+        "num_songs": 60
+    },
+    "Claude Debussy": {
+        "mse": 0.03849660662209785,
+        "num_songs": 325
+    },
+    "Carlos Rold\u00e1n": {
+        "mse": 0.025170821286331857,
+        "num_songs": 84
+    },
+    "Sir John Barbirolli": {
+        "mse": 0.03568971334801926,
+        "num_songs": 56
+    },
+    "Stan Kenton": {
+        "mse": 0.04617865477814144,
+        "num_songs": 84
+    },
+    "William Kapell": {
+        "mse": 0.035295866946833995,
+        "num_songs": 320
+    },
+    "Modest Mussorgsky": {
+        "mse": 0.03823491442950437,
+        "num_songs": 98
+    },
+    "Sonny Boy Williamson I": {
+        "mse": 0.0232163481329345,
+        "num_songs": 93
+    },
+    "\u042d\u0440\u0438\u0445 \u041c\u0430\u0440\u0438\u044f \u0420\u0435\u043c\u0430\u0440\u043a": {
+        "mse": 0.024080377363768914,
+        "num_songs": 781
+    },
+    "Sergei Prokofiev": {
+        "mse": 0.04077221581439973,
+        "num_songs": 83
+    },
+    "Gioachino Rossini": {
+        "mse": 0.03503787770852404,
+        "num_songs": 52
+    },
+    "\u7d2b\u8587": {
+        "mse": 0.029128746096934374,
+        "num_songs": 55
+    },
+    "Gustav Mahler": {
+        "mse": 0.04082324455754926,
+        "num_songs": 129
+    },
+    "Pierre Monteux": {
+        "mse": 0.0368289661020069,
+        "num_songs": 158
+    },
+    "M. S. Subbulakshmi": {
+        "mse": 0.038225228617623744,
+        "num_songs": 56
+    },
+    "Shamshad Begum": {
+        "mse": 0.04111290156568052,
+        "num_songs": 265
+    },
+    "Igor Stravinsky": {
+        "mse": 0.04826457785971099,
+        "num_songs": 739
+    },
+    "Khursheed Bano": {
+        "mse": 0.03218535372793973,
+        "num_songs": 53
+    },
+    "Traditional": {
+        "mse": 0.032485390286468,
+        "num_songs": 62
+    },
+    "Yehudi Menuhin": {
+        "mse": 0.031619140356475166,
+        "num_songs": 83
+    },
+    "John Williams": {
+        "mse": 0.03698580192856812,
+        "num_songs": 261
+    },
+    "Hemant Kumar": {
+        "mse": 0.044111942606539715,
+        "num_songs": 99
+    },
+    "Benny Goodman": {
+        "mse": 0.07132695295226449,
+        "num_songs": 164
+    },
+    "Eugene Istomin": {
+        "mse": 0.02584209329722377,
+        "num_songs": 96
+    },
+    "Arthur Rubinstein": {
+        "mse": 0.027636278220585748,
+        "num_songs": 332
+    },
+    "Franz Schubert": {
+        "mse": 0.03831970579682027,
+        "num_songs": 186
+    },
+    "George Frideric Handel": {
+        "mse": 0.03838885313093604,
+        "num_songs": 111
+    },
+    "Sir Malcolm Sargent": {
+        "mse": 0.029418503521641454,
+        "num_songs": 84
+    },
+    "Maryla Jonas": {
+        "mse": 0.021171521042702222,
+        "num_songs": 86
+    },
+    "Pyotr Ilyich Tchaikovsky": {
+        "mse": 0.03197019451461698,
+        "num_songs": 159
+    },
+    "Georges Bizet": {
+        "mse": 0.040574581048164964,
+        "num_songs": 90
+    },
+    "Metropolitan Opera Orchestra": {
+        "mse": 0.02887664890093202,
+        "num_songs": 86
+    },
+    "Bernard Herrmann": {
+        "mse": 0.041774049821730816,
+        "num_songs": 58
+    },
+    "Geeta Dutt": {
+        "mse": 0.041611545572493025,
+        "num_songs": 200
+    },
+    "Giacomo Puccini": {
+        "mse": 0.03198050825393533,
+        "num_songs": 403
+    },
+    "Zohrabai Ambalawali": {
+        "mse": 0.04341161075425936,
+        "num_songs": 67
+    },
+    "LOrchestre de la Suisse Romande": {
+        "mse": 0.0351566658527004,
+        "num_songs": 66
+    },
+    "Ernest Ansermet": {
+        "mse": 0.04091453059183733,
+        "num_songs": 80
+    },
+    "Robert Casadesus": {
+        "mse": 0.026306766774952778,
+        "num_songs": 196
+    },
+    "Isaac Stern": {
+        "mse": 0.03354754385481608,
+        "num_songs": 275
+    },
+    "Gaetano Donizetti": {
+        "mse": 0.0345551813019087,
+        "num_songs": 69
+    },
+    "George Szell": {
+        "mse": 0.0305509326855828,
+        "num_songs": 168
+    },
+    "Suraiya": {
+        "mse": 0.0349305814150945,
+        "num_songs": 115
+    },
+    "Cleveland Orchestra": {
+        "mse": 0.03217755343420829,
+        "num_songs": 165
+    },
+    "Gene Autry": {
+        "mse": 0.03851532483894813,
+        "num_songs": 62
+    },
+    "Antonio Vivaldi": {
+        "mse": 0.03932578166721115,
+        "num_songs": 61
+    },
+    "Eugene Ormandy": {
+        "mse": 0.036682299076000985,
+        "num_songs": 257
+    },
+    "Philadelphia Orchestra": {
+        "mse": 0.03344819073194814,
+        "num_songs": 251
+    },
+    "Gaby Casadesus": {
+        "mse": 0.02779904350300555,
+        "num_songs": 72
+    },
+    "Rajkumari": {
+        "mse": 0.043511730026570807,
+        "num_songs": 98
+    },
+    "Amirbai Karnataki": {
+        "mse": 0.03925628586928046,
+        "num_songs": 125
+    },
+    "Richard Rodgers": {
+        "mse": 0.03231995172545505,
+        "num_songs": 140
+    },
+    "Eduard van Beinum": {
+        "mse": 0.035009976116518224,
+        "num_songs": 97
+    },
+    "Yves Montand": {
+        "mse": 0.03742639855249273,
+        "num_songs": 68
+    },
+    "Doris Day": {
+        "mse": 0.0335465503754945,
+        "num_songs": 293
+    },
+    "Paul Weston And His Orchestra": {
+        "mse": 0.028568316842246835,
+        "num_songs": 119
+    },
+    "Ghantasala": {
+        "mse": 0.03985860692629653,
+        "num_songs": 84
+    },
+    "Umm Kulthum": {
+        "mse": 0.038588234986907895,
+        "num_songs": 81
+    },
+    "Budapest String Quartet": {
+        "mse": 0.031139281235731953,
+        "num_songs": 97
+    },
+    "Anton\u00edn Dvo\u0159\u00e1k": {
+        "mse": 0.032529438191927475,
+        "num_songs": 61
+    },
+    "M. K. Thyagaraja Bhagavathar": {
+        "mse": 0.036498166785038276,
+        "num_songs": 52
+    },
+    "Mukesh": {
+        "mse": 0.03925380662443001,
+        "num_songs": 127
+    },
+    "G. M. Durrani": {
+        "mse": 0.043559642388058026,
+        "num_songs": 60
+    },
+    "Camille Saint-Sa\u00ebns": {
+        "mse": 0.036442420677347466,
+        "num_songs": 99
+    },
+    "Charles M\u00fcnch": {
+        "mse": 0.02618958760929222,
+        "num_songs": 61
+    },
+    "Mario Lanza": {
+        "mse": 0.02375371924171584,
+        "num_songs": 88
+    },
+    "Pietro Mascagni": {
+        "mse": 0.043478818338610156,
+        "num_songs": 51
+    },
+    "Richard Tucker": {
+        "mse": 0.024825418508490692,
+        "num_songs": 158
+    },
+    "Aaron Copland": {
+        "mse": 0.04671598929181605,
+        "num_songs": 115
+    },
+    "Lehman Engel": {
+        "mse": 0.03224589311232374,
+        "num_songs": 67
+    },
+    "Fausto Cleva": {
+        "mse": 0.028607880477497356,
+        "num_songs": 63
+    },
+    "Charles Mingus": {
+        "mse": 0.04654179190731563,
+        "num_songs": 189
+    },
+    "Andr\u00e9 Previn": {
+        "mse": 0.0471860811796304,
+        "num_songs": 111
+    },
+    "Manna Dey": {
+        "mse": 0.036996241862878046,
+        "num_songs": 53
+    },
+    "Bing Crosby": {
+        "mse": 0.038442573296089584,
+        "num_songs": 126
+    },
+    "Erik Satie": {
+        "mse": 0.037810839838245756,
+        "num_songs": 189
+    },
+    "Percy Faith & His Orchestra": {
+        "mse": 0.048773834091695674,
+        "num_songs": 131
+    },
+    "St\u00e9lios Kazantz\u00eddis": {
+        "mse": 0.026440650686306525,
+        "num_songs": 53
+    },
+    "Talat Mahmood": {
+        "mse": 0.037650140994907766,
+        "num_songs": 76
+    },
+    "Unspecified": {
+        "mse": 0.06633812349025647,
+        "num_songs": 228
+    },
+    "Johann Strauss II": {
+        "mse": 0.0433338624570249,
+        "num_songs": 64
+    },
+    "Clemens Krauss": {
+        "mse": 0.037633746973856415,
+        "num_songs": 59
+    },
+    "Mario Rossi": {
+        "mse": 0.031664399729153116,
+        "num_songs": 106
+    },
+    "Orchestra Sinfonica di Roma della RAI": {
+        "mse": 0.02673723844648187,
+        "num_songs": 173
+    },
+    "Orchestra dellAccademia Nazionale di Santa Cecilia": {
+        "mse": 0.027535083615336412,
+        "num_songs": 81
+    },
+    "Alberto Erede": {
+        "mse": 0.023653102688397123,
+        "num_songs": 78
+    },
+    "Orchestra Sinfonica e Coro di Torino della RAI": {
+        "mse": 0.024723708362374128,
+        "num_songs": 61
+    },
+    "Vittorio Gui": {
+        "mse": 0.030700573370709344,
+        "num_songs": 97
+    },
+    "Orchestra Sinfonica Di Torino Della Rai": {
+        "mse": 0.02850006967683992,
+        "num_songs": 79
+    },
+    "Fernando Previtali": {
+        "mse": 0.02731275034440336,
+        "num_songs": 127
+    },
+    "Vincenzo Bellini": {
+        "mse": 0.02969013714712819,
+        "num_songs": 100
+    },
+    "MGM Studio Orchestra": {
+        "mse": 0.04969405738001593,
+        "num_songs": 177
+    },
+    "Johnny Green": {
+        "mse": 0.051072274252777876,
+        "num_songs": 90
+    },
+    "Patricia St. John": {
+        "mse": 0.023731259469989944,
+        "num_songs": 84
+    },
+    "Maria Callas": {
+        "mse": 0.028467848709585318,
+        "num_songs": 214
+    },
+    "Pablo Casals": {
+        "mse": 0.023322731386989808,
+        "num_songs": 71
+    },
+    "Alfred Newman": {
+        "mse": 0.03887970956864354,
+        "num_songs": 59
+    },
+    "Giuseppe Di Stefano": {
+        "mse": 0.030598087316312167,
+        "num_songs": 73
+    },
+    "Coro Del Teatro Alla Scala Di Milano": {
+        "mse": 0.03399297925198354,
+        "num_songs": 56
+    },
+    "Orchestra Del Teatro Alla Scala": {
+        "mse": 0.03282860571120064,
+        "num_songs": 212
+    },
+    "Milano": {
+        "mse": 0.03288227035845802,
+        "num_songs": 217
+    },
+    "Tullio Serafin": {
+        "mse": 0.03232839030015376,
+        "num_songs": 129
+    },
+    "Orchestra Del Teatro Alla Scala Di Milan": {
+        "mse": 0.03124848325889689,
+        "num_songs": 69
+    },
+    "Engelbert Humperdinck": {
+        "mse": 0.04130920430339528,
+        "num_songs": 86
+    },
+    "Antonino Votto": {
+        "mse": 0.024367154584213263,
+        "num_songs": 68
+    },
+    "Lefty Frizzell": {
+        "mse": 0.023487325472865046,
+        "num_songs": 111
+    },
+    "Daniel Barenboim": {
+        "mse": 0.03022325080179978,
+        "num_songs": 53
+    },
+    "Arthur Lyman": {
+        "mse": 0.04577791157281029,
+        "num_songs": 71
+    },
+    "Count Basie": {
+        "mse": 0.03885548543068565,
+        "num_songs": 301
+    },
+    "Charlie Parker": {
+        "mse": 0.042161766596214394,
+        "num_songs": 112
+    },
+    "Oscar Peterson": {
+        "mse": 0.03572034051585328,
+        "num_songs": 248
+    },
+    "Jackie Gleason": {
+        "mse": 0.03803891830984002,
+        "num_songs": 132
+    },
+    "Judy Garland": {
+        "mse": 0.04649805628154714,
+        "num_songs": 189
+    },
+    "Odetta": {
+        "mse": 0.03269329996288315,
+        "num_songs": 62
+    },
+    "Louis Armstrong": {
+        "mse": 0.04262469953087519,
+        "num_songs": 298
+    },
+    "Pete Seeger": {
+        "mse": 0.02797633206963163,
+        "num_songs": 81
+    },
+    "Django Reinhardt": {
+        "mse": 0.037604347890466676,
+        "num_songs": 84
+    },
+    "Chet Baker": {
+        "mse": 0.047137970379678575,
+        "num_songs": 164
+    },
+    "Harry James": {
+        "mse": 0.05006666013741431,
+        "num_songs": 51
+    },
+    "Thelonious Monk": {
+        "mse": 0.04966512781627127,
+        "num_songs": 277
+    },
+    "Erroll Garner": {
+        "mse": 0.04238232588910706,
+        "num_songs": 98
+    },
+    "Dinah Washington": {
+        "mse": 0.038618883278753395,
+        "num_songs": 122
+    },
+    "Clifford Brown": {
+        "mse": 0.045770420796962995,
+        "num_songs": 87
+    },
+    "La Sonora Matancera": {
+        "mse": 0.02464461830874515,
+        "num_songs": 115
+    },
+    "Harry Belafonte": {
+        "mse": 0.0423849419875454,
+        "num_songs": 106
+    },
+    "Ella Fitzgerald": {
+        "mse": 0.03406744269923232,
+        "num_songs": 500
+    },
+    "Bud Powell": {
+        "mse": 0.04240336182961213,
+        "num_songs": 75
+    },
+    "Stan Getz": {
+        "mse": 0.04073013928367947,
+        "num_songs": 196
+    },
+    "Nelson Riddle": {
+        "mse": 0.04985369476279747,
+        "num_songs": 61
+    },
+    "Les Paul": {
+        "mse": 0.054222635378092604,
+        "num_songs": 91
+    },
+    "Sammy Davis Jr.": {
+        "mse": 0.03236746693012424,
+        "num_songs": 71
+    },
+    "Cannonball Adderley": {
+        "mse": 0.039030987830993014,
+        "num_songs": 86
+    },
+    "Miles Davis": {
+        "mse": 0.04798578718506131,
+        "num_songs": 456
+    },
+    "The Modern Jazz Quartet": {
+        "mse": 0.032031939929358655,
+        "num_songs": 55
+    },
+    "Peggy Lee": {
+        "mse": 0.031865730555621245,
+        "num_songs": 167
+    },
+    "Gerry Mulligan": {
+        "mse": 0.042946808343204516,
+        "num_songs": 92
+    },
+    "Carmen McRae": {
+        "mse": 0.028474395349977515,
+        "num_songs": 53
+    },
+    "Charles Aznavour": {
+        "mse": 0.03348232556543165,
+        "num_songs": 69
+    },
+    "Dave Brubeck": {
+        "mse": 0.04670841779774574,
+        "num_songs": 93
+    },
+    "Glenn Gould": {
+        "mse": 0.03134101798194794,
+        "num_songs": 439
+    },
+    "Sarah Vaughan": {
+        "mse": 0.03562478647402301,
+        "num_songs": 200
+    },
+    "Tony Bennett": {
+        "mse": 0.032935049005351484,
+        "num_songs": 93
+    },
+    "Nat King Cole": {
+        "mse": 0.03964379082246642,
+        "num_songs": 192
+    },
+    "Anita ODay": {
+        "mse": 0.0286569442338098,
+        "num_songs": 103
+    },
+    "The Platters": {
+        "mse": 0.024814340954157285,
+        "num_songs": 75
+    },
+    "Duke Ellington": {
+        "mse": 0.05438611221662281,
+        "num_songs": 312
+    },
+    "Julie London": {
+        "mse": 0.026259217858472215,
+        "num_songs": 147
+    },
+    "Donald Byrd": {
+        "mse": 0.04586108492877162,
+        "num_songs": 65
+    },
+    "Art Pepper": {
+        "mse": 0.04081646274567395,
+        "num_songs": 68
+    },
+    "Celia Cruz": {
+        "mse": 0.02971489997889784,
+        "num_songs": 80
+    },
+    "Tommy Makem": {
+        "mse": 0.04009512037217453,
+        "num_songs": 50
+    },
+    "Ray Price": {
+        "mse": 0.021292129362902455,
+        "num_songs": 70
+    },
+    "Cal Tjader": {
+        "mse": 0.038356957319945456,
+        "num_songs": 68
+    },
+    "John Coltrane": {
+        "mse": 0.03924095806126362,
+        "num_songs": 262
+    },
+    "Mahalia Jackson": {
+        "mse": 0.03679052134193861,
+        "num_songs": 91
+    },
+    "Lester Young": {
+        "mse": 0.04536704579442208,
+        "num_songs": 71
+    },
+    "Dean Martin": {
+        "mse": 0.030022104331341157,
+        "num_songs": 446
+    },
+    "Tennessee Ernie Ford": {
+        "mse": 0.04023750006948253,
+        "num_songs": 50
+    },
+    "Bill Evans": {
+        "mse": 0.034396264845176834,
+        "num_songs": 160
+    },
+    "Ant\u00f4nio Carlos Jobim": {
+        "mse": 0.04429587980227655,
+        "num_songs": 126
+    },
+    "Billie Holiday": {
+        "mse": 0.027918325984897935,
+        "num_songs": 685
+    },
+    "Johnny Cash": {
+        "mse": 0.03942257057928972,
+        "num_songs": 589
+    },
+    "Louis Prima": {
+        "mse": 0.039218608799621246,
+        "num_songs": 123
+    },
+    "Sam Butera & The Witnesses": {
+        "mse": 0.04056728021341414,
+        "num_songs": 87
+    },
+    "Keely Smith": {
+        "mse": 0.03872455708590517,
+        "num_songs": 73
+    },
+    "Sonny Rollins": {
+        "mse": 0.03981928213010227,
+        "num_songs": 173
+    },
+    "The Chordettes": {
+        "mse": 0.032123301720260226,
+        "num_songs": 54
+    },
+    "The Dave Brubeck Quartet": {
+        "mse": 0.04103419024984681,
+        "num_songs": 115
+    },
+    "Fred Astaire": {
+        "mse": 0.04160412722563521,
+        "num_songs": 72
+    },
+    "Miles Davis Quintet": {
+        "mse": 0.03315194133323085,
+        "num_songs": 83
+    },
+    "Julie Andrews": {
+        "mse": 0.032127739265078566,
+        "num_songs": 81
+    },
+    "B.B. King": {
+        "mse": 0.04077715067509108,
+        "num_songs": 138
+    },
+    "Ricky Nelson": {
+        "mse": 0.03693896190922007,
+        "num_songs": 88
+    },
+    "The Everly Brothers": {
+        "mse": 0.03385496901540338,
+        "num_songs": 67
+    },
+    "Frank Sinatra": {
+        "mse": 0.03672230199728134,
+        "num_songs": 732
+    },
+    "Henry Mancini": {
+        "mse": 0.04578452983529435,
+        "num_songs": 133
+    },
+    "Martin Denny": {
+        "mse": 0.04460916031644708,
+        "num_songs": 98
+    },
+    "Johnny Mathis": {
+        "mse": 0.028603895488143547,
+        "num_songs": 98
+    },
+    "Javier Sol\u00eds": {
+        "mse": 0.02619944720231526,
+        "num_songs": 219
+    },
+    "Bobby Darin": {
+        "mse": 0.03394540227041421,
+        "num_songs": 65
+    },
+    "Ray Charles": {
+        "mse": 0.04758943034711865,
+        "num_songs": 100
+    },
+    "Jerry Lee Lewis": {
+        "mse": 0.03377220492204978,
+        "num_songs": 69
+    },
+    "Stephen Sondheim": {
+        "mse": 0.02799107135270958,
+        "num_songs": 52
+    },
+    "Sons of the Pioneers": {
+        "mse": 0.024188685862991072,
+        "num_songs": 52
+    },
+    "Nina Simone": {
+        "mse": 0.04266157640750806,
+        "num_songs": 286
+    },
+    "Oscar Peterson Trio": {
+        "mse": 0.04168568910513556,
+        "num_songs": 114
+    },
+    "Harry Nilsson": {
+        "mse": 0.04333579432590334,
+        "num_songs": 77
+    },
+    "Mormon Tabernacle Choir": {
+        "mse": 0.03225325797604888,
+        "num_songs": 107
+    },
+    "The Isley Brothers": {
+        "mse": 0.040299270878629424,
+        "num_songs": 123
+    },
+    "Richard P. Condie": {
+        "mse": 0.030852306171143328,
+        "num_songs": 50
+    },
+    "Conway Twitty": {
+        "mse": 0.03094270054445655,
+        "num_songs": 66
+    },
+    "Bo Diddley": {
+        "mse": 0.03159529590687652,
+        "num_songs": 54
+    },
+    "Serge Gainsbourg": {
+        "mse": 0.03926946332932669,
+        "num_songs": 56
+    },
+    "Bill Evans Trio": {
+        "mse": 0.03353306858741227,
+        "num_songs": 164
+    },
+    "Sam Cooke": {
+        "mse": 0.03583364378445462,
+        "num_songs": 209
+    },
+    "Chuck Berry": {
+        "mse": 0.039235487809795556,
+        "num_songs": 110
+    },
+    "Muddy Waters": {
+        "mse": 0.04826387203665055,
+        "num_songs": 102
+    },
+    "Etta James": {
+        "mse": 0.03956410977898978,
+        "num_songs": 58
+    },
+    "Ahmad Jamal": {
+        "mse": 0.0353304977887031,
+        "num_songs": 76
+    },
+    "Connie Francis": {
+        "mse": 0.03971311477358531,
+        "num_songs": 58
+    },
+    "Wes Montgomery": {
+        "mse": 0.04614390471397372,
+        "num_songs": 108
+    },
+    "La Sonora Santanera": {
+        "mse": 0.023662573772053993,
+        "num_songs": 80
+    },
+    "Mel Torm\u00e9": {
+        "mse": 0.03942624431504441,
+        "num_songs": 73
+    },
+    "John Lee Hooker": {
+        "mse": 0.04105651398152663,
+        "num_songs": 81
+    },
+    "Dion": {
+        "mse": 0.03499306188976499,
+        "num_songs": 64
+    },
+    "Aretha Franklin": {
+        "mse": 0.04273640673158995,
+        "num_songs": 219
+    },
+    "Little Richard": {
+        "mse": 0.039684325857483646,
+        "num_songs": 98
+    },
+    "Philippe Entremont": {
+        "mse": 0.03458675683966641,
+        "num_songs": 92
+    },
+    "Yo-Yo Ma": {
+        "mse": 0.033800517339916535,
+        "num_songs": 100
+    },
+    "Elvis Presley": {
+        "mse": 0.04362013132731085,
+        "num_songs": 501
+    },
+    "The Ventures": {
+        "mse": 0.04765937209395161,
+        "num_songs": 103
+    },
+    "Stevie Wonder": {
+        "mse": 0.04223622511308875,
+        "num_songs": 272
+    },
+    "The Supremes": {
+        "mse": 0.031018724205166368,
+        "num_songs": 62
+    },
+    "James Brown": {
+        "mse": 0.039356555584499804,
+        "num_songs": 111
+    },
+    "Herbie Hancock": {
+        "mse": 0.04720458174029913,
+        "num_songs": 83
+    },
+    "Jr.": {
+        "mse": 0.04262197187547472,
+        "num_songs": 210
+    },
+    "Bob Dylan": {
+        "mse": 0.0462430902278015,
+        "num_songs": 553
+    },
+    "Frankie Valli & The Four Seasons": {
+        "mse": 0.03271827264119567,
+        "num_songs": 77
+    },
+    "Peter": {
+        "mse": 0.02704325336838248,
+        "num_songs": 75
+    },
+    "Paul and Mary": {
+        "mse": 0.02704325336838248,
+        "num_songs": 75
+    },
+    "The Beach Boys": {
+        "mse": 0.046875250266114686,
+        "num_songs": 503
+    },
+    "Ben Webster": {
+        "mse": 0.034046135424991304,
+        "num_songs": 50
+    },
+    "Marvin Gaye": {
+        "mse": 0.045129202264469835,
+        "num_songs": 292
+    },
+    "George Jones": {
+        "mse": 0.03414185396781164,
+        "num_songs": 140
+    },
+    "Patsy Cline": {
+        "mse": 0.028882441092218037,
+        "num_songs": 88
+    },
+    "Andy Williams": {
+        "mse": 0.03697320975017445,
+        "num_songs": 84
+    },
+    "Roy Orbison": {
+        "mse": 0.03296297938493478,
+        "num_songs": 94
+    },
+    "The Rolling Stones": {
+        "mse": 0.04464564458390004,
+        "num_songs": 522
+    },
+    "Dionne Warwick": {
+        "mse": 0.03839555500444764,
+        "num_songs": 59
+    },
+    "Tammy Wynette": {
+        "mse": 0.027194777395309403,
+        "num_songs": 72
+    },
+    "The Temptations": {
+        "mse": 0.03450920705856094,
+        "num_songs": 108
+    },
+    "Flatt & Scruggs": {
+        "mse": 0.044183100190511256,
+        "num_songs": 78
+    },
+    "The Kinks": {
+        "mse": 0.03324050385468012,
+        "num_songs": 221
+    },
+    "Los Panchos": {
+        "mse": 0.019331057793665837,
+        "num_songs": 87
+    },
+    "Bobby Vinton": {
+        "mse": 0.02136326338350149,
+        "num_songs": 52
+    },
+    "Nancy Wilson": {
+        "mse": 0.03536477469794066,
+        "num_songs": 59
+    },
+    "Donovan": {
+        "mse": 0.04221267748524675,
+        "num_songs": 99
+    },
+    "The Who": {
+        "mse": 0.03754981000557524,
+        "num_songs": 264
+    },
+    "The Animals": {
+        "mse": 0.031409461089541624,
+        "num_songs": 92
+    },
+    "Otis Redding": {
+        "mse": 0.042304338809821554,
+        "num_songs": 167
+    },
+    "Van Morrison": {
+        "mse": 0.03961103357550966,
+        "num_songs": 213
+    },
+    "Vince Guaraldi Trio": {
+        "mse": 0.04371474140993422,
+        "num_songs": 53
+    },
+    "Ennio Morricone": {
+        "mse": 0.03681383283551273,
+        "num_songs": 103
+    },
+    "The Byrds": {
+        "mse": 0.03043458027354758,
+        "num_songs": 131
+    },
+    "Paul Simon": {
+        "mse": 0.03781608273208156,
+        "num_songs": 108
+    },
+    "Astrud Gilberto": {
+        "mse": 0.031835803551807575,
+        "num_songs": 74
+    },
+    "Waylon Jennings": {
+        "mse": 0.03750607111576441,
+        "num_songs": 248
+    },
+    "Rosemary Clooney": {
+        "mse": 0.035795466803344014,
+        "num_songs": 67
+    },
+    "Eric Clapton": {
+        "mse": 0.048569425056086635,
+        "num_songs": 205
+    },
+    "The Monkees": {
+        "mse": 0.03801296674969429,
+        "num_songs": 101
+    },
+    "Jefferson Airplane": {
+        "mse": 0.035710829479844754,
+        "num_songs": 73
+    },
+    "Love": {
+        "mse": 0.03339267548915234,
+        "num_songs": 51
+    },
+    "Howlin Wolf": {
+        "mse": 0.03258140194729101,
+        "num_songs": 56
+    },
+    "Frank Zappa": {
+        "mse": 0.04302221588355525,
+        "num_songs": 154
+    },
+    "The Mothers Of Invention": {
+        "mse": 0.04006864314916105,
+        "num_songs": 73
+    },
+    "Hank Williams": {
+        "mse": 0.039403791305261296,
+        "num_songs": 231
+    },
+    "Vicente Fern\u00e1ndez": {
+        "mse": 0.033405423282374544,
+        "num_songs": 248
+    },
+    "The Beatles": {
+        "mse": 0.04149403980656655,
+        "num_songs": 413
+    },
+    "David Bowie": {
+        "mse": 0.045242222543708875,
+        "num_songs": 231
+    },
+    "The Moody Blues": {
+        "mse": 0.04779726916256129,
+        "num_songs": 160
+    },
+    "The Mamas & The Papas": {
+        "mse": 0.03324494909309511,
+        "num_songs": 68
+    },
+    "Buffalo Springfield": {
+        "mse": 0.04075853610648377,
+        "num_songs": 52
+    },
+    "Glen Campbell": {
+        "mse": 0.03472773597458265,
+        "num_songs": 60
+    },
+    "The Velvet Underground": {
+        "mse": 0.045309845615039035,
+        "num_songs": 105
+    },
+    "Dolly Parton": {
+        "mse": 0.037318733287670124,
+        "num_songs": 138
+    },
+    "Kishore Kumar": {
+        "mse": 0.034086176398135076,
+        "num_songs": 88
+    },
+    "Willie Nelson": {
+        "mse": 0.040153723845077545,
+        "num_songs": 277
+    },
+    "Grateful Dead": {
+        "mse": 0.04523753413005579,
+        "num_songs": 258
+    },
+    "Fleetwood Mac": {
+        "mse": 0.049442551528480795,
+        "num_songs": 398
+    },
+    "Janis Joplin": {
+        "mse": 0.0427120915449049,
+        "num_songs": 66
+    },
+    "Four Tops": {
+        "mse": 0.02600968032794386,
+        "num_songs": 54
+    },
+    "Neil Diamond": {
+        "mse": 0.04931793678575377,
+        "num_songs": 133
+    },
+    "Joni Mitchell": {
+        "mse": 0.03532108636439259,
+        "num_songs": 115
+    },
+    "Sly & The Family Stone": {
+        "mse": 0.04105887229302769,
+        "num_songs": 84
+    },
+    "James Taylor": {
+        "mse": 0.03600889650634557,
+        "num_songs": 155
+    },
+    "Barbra Streisand": {
+        "mse": 0.041707363373343916,
+        "num_songs": 119
+    },
+    "Leonard Cohen": {
+        "mse": 0.02990541225234596,
+        "num_songs": 73
+    },
+    "The Band": {
+        "mse": 0.03985429451874905,
+        "num_songs": 114
+    },
+    "Bee Gees": {
+        "mse": 0.03912195975253155,
+        "num_songs": 135
+    },
+    "Linda Ronstadt": {
+        "mse": 0.043257341108576514,
+        "num_songs": 119
+    },
+    "Jethro Tull": {
+        "mse": 0.040542868909414366,
+        "num_songs": 90
+    },
+    "Pink Floyd": {
+        "mse": 0.057107607767734,
+        "num_songs": 207
+    },
+    "Townes Van Zandt": {
+        "mse": 0.03694691644937925,
+        "num_songs": 100
+    },
+    "Neil Young": {
+        "mse": 0.04414868738301834,
+        "num_songs": 173
+    },
+    "Crosby": {
+        "mse": 0.04340176834351106,
+        "num_songs": 111
+    },
+    "Stills & Nash": {
+        "mse": 0.03685901774072024,
+        "num_songs": 57
+    },
+    "Buddy Holly": {
+        "mse": 0.03704634736297647,
+        "num_songs": 57
+    },
+    "The Allman Brothers Band": {
+        "mse": 0.04569769552439617,
+        "num_songs": 126
+    },
+    "Al Green": {
+        "mse": 0.029856783113458366,
+        "num_songs": 79
+    },
+    "Chicago": {
+        "mse": 0.04539196171647518,
+        "num_songs": 115
+    },
+    "Quincy Jones": {
+        "mse": 0.046133778763656534,
+        "num_songs": 83
+    },
+    "Yes": {
+        "mse": 0.04621897933545429,
+        "num_songs": 109
+    },
+    "Deep Purple": {
+        "mse": 0.036941092300784524,
+        "num_songs": 73
+    },
+    "Led Zeppelin": {
+        "mse": 0.045504326834540684,
+        "num_songs": 338
+    },
+    "John Denver": {
+        "mse": 0.036671668603052404,
+        "num_songs": 128
+    },
+    "Elton John": {
+        "mse": 0.04129032611091324,
+        "num_songs": 288
+    },
+    "Merle Haggard": {
+        "mse": 0.03352782596061808,
+        "num_songs": 107
+    },
+    "Three Dog Night": {
+        "mse": 0.03329823705479684,
+        "num_songs": 69
+    },
+    "The Jackson 5": {
+        "mse": 0.03335718244456003,
+        "num_songs": 62
+    },
+    "Kris Kristofferson": {
+        "mse": 0.03728081363746397,
+        "num_songs": 54
+    },
+    "Curtis Mayfield": {
+        "mse": 0.03629056143153999,
+        "num_songs": 89
+    },
+    "Donny Hathaway": {
+        "mse": 0.039168506298203704,
+        "num_songs": 50
+    },
+    "Genesis": {
+        "mse": 0.045723797733041895,
+        "num_songs": 165
+    },
+    "Yusuf / Cat Stevens": {
+        "mse": 0.03770851060035974,
+        "num_songs": 103
+    },
+    "The Doors": {
+        "mse": 0.04945375859736391,
+        "num_songs": 123
+    },
+    "Bread": {
+        "mse": 0.03603988420750326,
+        "num_songs": 82
+    },
+    "Funkadelic": {
+        "mse": 0.03613567571345087,
+        "num_songs": 53
+    },
+    "Jimi Hendrix": {
+        "mse": 0.04363481695244324,
+        "num_songs": 107
+    },
+    "Paul McCartney": {
+        "mse": 0.05278243881750524,
+        "num_songs": 96
+    },
+    "Stills": {
+        "mse": 0.04593346871864948,
+        "num_songs": 54
+    },
+    "Nash & Young": {
+        "mse": 0.04593346871864948,
+        "num_songs": 54
+    },
+    "Alice Cooper": {
+        "mse": 0.03466881945325961,
+        "num_songs": 81
+    },
+    "Santana": {
+        "mse": 0.0427499431844229,
+        "num_songs": 134
+    },
+    "Billy Joel": {
+        "mse": 0.04731332823571399,
+        "num_songs": 198
+    },
+    "Loggins & Messina": {
+        "mse": 0.043263347886758355,
+        "num_songs": 57
+    },
+    "John Prine": {
+        "mse": 0.03785363506441971,
+        "num_songs": 163
+    },
+    "Blue \u00d6yster Cult": {
+        "mse": 0.028142004213006583,
+        "num_songs": 67
+    },
+    "Michael Jackson": {
+        "mse": 0.04071764358520136,
+        "num_songs": 198
+    },
+    "Diana Ross": {
+        "mse": 0.03780997814167277,
+        "num_songs": 57
+    },
+    "ZZ Top": {
+        "mse": 0.036103917367063795,
+        "num_songs": 107
+    },
+    "Tito Puente": {
+        "mse": 0.03298739946077081,
+        "num_songs": 58
+    },
+    "The Doobie Brothers": {
+        "mse": 0.027908157096063584,
+        "num_songs": 92
+    },
+    "The OJays": {
+        "mse": 0.0335691840116339,
+        "num_songs": 54
+    },
+    "Randy Newman": {
+        "mse": 0.041090338981454075,
+        "num_songs": 52
+    },
+    "The J. Geils Band": {
+        "mse": 0.04024404742913591,
+        "num_songs": 54
+    },
+    "Roxy Music": {
+        "mse": 0.0375058977096982,
+        "num_songs": 57
+    },
+    "America": {
+        "mse": 0.0364700639801485,
+        "num_songs": 59
+    },
+    "Wings": {
+        "mse": 0.045950376994456636,
+        "num_songs": 133
+    },
+    "Jim Croce": {
+        "mse": 0.03059257660683894,
+        "num_songs": 53
+    },
+    "Lynyrd Skynyrd": {
+        "mse": 0.04010319736353094,
+        "num_songs": 99
+    },
+    "Electric Light Orchestra": {
+        "mse": 0.041872035610424206,
+        "num_songs": 132
+    },
+    "Earth": {
+        "mse": 0.0404061209515183,
+        "num_songs": 98
+    },
+    "Wind & Fire": {
+        "mse": 0.0404061209515183,
+        "num_songs": 98
+    },
+    "The Charlie Daniels Band": {
+        "mse": 0.03355803258646928,
+        "num_songs": 53
+    },
+    "George Harrison": {
+        "mse": 0.04101553643280133,
+        "num_songs": 98
+    },
+    "REO Speedwagon": {
+        "mse": 0.03594830854159808,
+        "num_songs": 91
+    },
+    "Fall Out Boy": {
+        "mse": 0.02614541588987755,
+        "num_songs": 101
+    },
+    "Camilo Sesto": {
+        "mse": 0.032931354586054076,
+        "num_songs": 55
+    },
+    "Queen": {
+        "mse": 0.04232215520822565,
+        "num_songs": 431
+    },
+    "Jackson Browne": {
+        "mse": 0.035488448863506605,
+        "num_songs": 72
+    },
+    "Jimmy Buffett": {
+        "mse": 0.03255764887874318,
+        "num_songs": 192
+    },
+    "Tom Waits": {
+        "mse": 0.04374555000082675,
+        "num_songs": 118
+    },
+    "John Lennon": {
+        "mse": 0.05030699941746719,
+        "num_songs": 92
+    },
+    "Gordon Lightfoot": {
+        "mse": 0.026988322197083418,
+        "num_songs": 84
+    },
+    "Dan Fogelberg": {
+        "mse": 0.03529527880687627,
+        "num_songs": 58
+    },
+    "The Marshall Tucker Band": {
+        "mse": 0.02912610136878168,
+        "num_songs": 52
+    },
+    "David Allan Coe": {
+        "mse": 0.029408919683299038,
+        "num_songs": 81
+    },
+    "Brian Eno": {
+        "mse": 0.06626813812147937,
+        "num_songs": 123
+    },
+    "Barry Manilow": {
+        "mse": 0.031065518789045926,
+        "num_songs": 50
+    },
+    "Jerry Garcia": {
+        "mse": 0.046477605877157734,
+        "num_songs": 76
+    },
+    "Kansas": {
+        "mse": 0.03177597792764368,
+        "num_songs": 61
+    },
+    "Thin Lizzy": {
+        "mse": 0.034340660205112,
+        "num_songs": 78
+    },
+    "KISS": {
+        "mse": 0.0400256566195012,
+        "num_songs": 191
+    },
+    "Bill Withers": {
+        "mse": 0.05133082200750715,
+        "num_songs": 89
+    },
+    "Little Feat": {
+        "mse": 0.04908905622426226,
+        "num_songs": 91
+    },
+    "Lou Reed": {
+        "mse": 0.04801676549120758,
+        "num_songs": 65
+    },
+    "Bob Marley & The Wailers": {
+        "mse": 0.03768722546344516,
+        "num_songs": 312
+    },
+    "Emmylou Harris": {
+        "mse": 0.040641724774869825,
+        "num_songs": 80
+    },
+    "Crazy Horse": {
+        "mse": 0.042595983489154894,
+        "num_songs": 52
+    },
+    "Bad Company": {
+        "mse": 0.029636117274320282,
+        "num_songs": 89
+    },
+    "Chaka Khan": {
+        "mse": 0.032003459453333064,
+        "num_songs": 57
+    },
+    "Rod Stewart": {
+        "mse": 0.038344687720646566,
+        "num_songs": 93
+    },
+    "Eagles": {
+        "mse": 0.04803781827096436,
+        "num_songs": 156
+    },
+    "George Benson": {
+        "mse": 0.04483094305691227,
+        "num_songs": 54
+    },
+    "Rush": {
+        "mse": 0.03699254223337214,
+        "num_songs": 153
+    },
+    "Ted Nugent": {
+        "mse": 0.042073827669198136,
+        "num_songs": 54
+    },
+    "ABBA": {
+        "mse": 0.03646426783543041,
+        "num_songs": 121
+    },
+    "Ramones": {
+        "mse": 0.03192528704332878,
+        "num_songs": 148
+    },
+    "The Alan Parsons Project": {
+        "mse": 0.043265028308821674,
+        "num_songs": 77
+    },
+    "Steve Miller Band": {
+        "mse": 0.050040935074246354,
+        "num_songs": 69
+    },
+    "Eddie Money": {
+        "mse": 0.025377141380311663,
+        "num_songs": 50
+    },
+    "Mot\u00f6rhead": {
+        "mse": 0.03246406124899962,
+        "num_songs": 64
+    },
+    "Cheap Trick": {
+        "mse": 0.04023103552193405,
+        "num_songs": 60
+    },
+    "Raffi": {
+        "mse": 0.03516893242578399,
+        "num_songs": 114
+    },
+    "Talking Heads": {
+        "mse": 0.0318151879047067,
+        "num_songs": 194
+    },
+    "Heart": {
+        "mse": 0.0424741900831449,
+        "num_songs": 60
+    },
+    "Kool & The Gang": {
+        "mse": 0.036631225347770364,
+        "num_songs": 60
+    },
+    "Donna Summer": {
+        "mse": 0.030086093399628335,
+        "num_songs": 73
+    },
+    "Judas Priest": {
+        "mse": 0.03272641328153875,
+        "num_songs": 121
+    },
+    "Prince": {
+        "mse": 0.043376348042742895,
+        "num_songs": 152
+    },
+    "Ramon Ayala Y Sus Bravos Del Norte": {
+        "mse": 0.03000224053301679,
+        "num_songs": 60
+    },
+    "Julio Iglesias": {
+        "mse": 0.028573152662097985,
+        "num_songs": 74
+    },
+    "Elvis Costello & The Attractions": {
+        "mse": 0.031225653471818944,
+        "num_songs": 55
+    },
+    "DEVO": {
+        "mse": 0.03627241824171139,
+        "num_songs": 64
+    },
+    "Juan Gabriel": {
+        "mse": 0.04185934248621492,
+        "num_songs": 129
+    },
+    "Teddy Pendergrass": {
+        "mse": 0.03387948273690513,
+        "num_songs": 51
+    },
+    "AC/DC": {
+        "mse": 0.03631735018862208,
+        "num_songs": 150
+    },
+    "Kate Bush": {
+        "mse": 0.03226210644534336,
+        "num_songs": 74
+    },
+    "Peter Gabriel": {
+        "mse": 0.04508779652056248,
+        "num_songs": 68
+    },
+    "Journey": {
+        "mse": 0.035942658588153494,
+        "num_songs": 135
+    },
+    "Carpenters": {
+        "mse": 0.03539927214321728,
+        "num_songs": 86
+    },
+    "The Cure": {
+        "mse": 0.05047929747061921,
+        "num_songs": 184
+    },
+    "J.J. Cale": {
+        "mse": 0.04448085649838259,
+        "num_songs": 56
+    },
+    "Blondie": {
+        "mse": 0.03157875001623939,
+        "num_songs": 74
+    },
+    "Joy Division": {
+        "mse": 0.04848664330433141,
+        "num_songs": 71
+    },
+    "Scorpions": {
+        "mse": 0.03897684721063011,
+        "num_songs": 78
+    },
+    "Supertramp": {
+        "mse": 0.037749292895538376,
+        "num_songs": 94
+    },
+    "Tom Petty and the Heartbreakers": {
+        "mse": 0.032606113787088734,
+        "num_songs": 123
+    },
+    "Bruce Springsteen": {
+        "mse": 0.045987354866671035,
+        "num_songs": 160
+    },
+    "The Clash": {
+        "mse": 0.03952931272267095,
+        "num_songs": 131
+    },
+    "Creedence Clearwater Revival": {
+        "mse": 0.039719568330558674,
+        "num_songs": 121
+    },
+    "U2": {
+        "mse": 0.044004055066904926,
+        "num_songs": 230
+    },
+    "The Cramps": {
+        "mse": 0.03920881090053822,
+        "num_songs": 52
+    },
+    "Kenny Rogers": {
+        "mse": 0.037217840027112904,
+        "num_songs": 68
+    },
+    "Alabama": {
+        "mse": 0.03531693424228471,
+        "num_songs": 109
+    },
+    "Aerosmith": {
+        "mse": 0.0326976871769751,
+        "num_songs": 132
+    },
+    "Def Leppard": {
+        "mse": 0.03288043249078807,
+        "num_songs": 105
+    },
+    "Black Sabbath": {
+        "mse": 0.04114275201256754,
+        "num_songs": 110
+    },
+    "Depeche Mode": {
+        "mse": 0.05012665557353937,
+        "num_songs": 140
+    },
+    "George Strait": {
+        "mse": 0.030474488499856123,
+        "num_songs": 214
+    },
+    "Styx": {
+        "mse": 0.034438551330202065,
+        "num_songs": 78
+    },
+    "Phil Collins": {
+        "mse": 0.047558704352748955,
+        "num_songs": 117
+    },
+    "Luther Vandross": {
+        "mse": 0.035199307849109775,
+        "num_songs": 69
+    },
+    "New Order": {
+        "mse": 0.03421230226592206,
+        "num_songs": 69
+    },
+    "Rick James": {
+        "mse": 0.027660866819153394,
+        "num_songs": 51
+    },
+    "Simon & Garfunkel": {
+        "mse": 0.044632696312197365,
+        "num_songs": 108
+    },
+    "R.E.M.": {
+        "mse": 0.03593447682117842,
+        "num_songs": 162
+    },
+    "Bad Religion": {
+        "mse": 0.023101124370734107,
+        "num_songs": 92
+    },
+    "Kenny Loggins": {
+        "mse": 0.04635049308373917,
+        "num_songs": 52
+    },
+    "Peter Tosh": {
+        "mse": 0.0263562741908003,
+        "num_songs": 56
+    },
+    "Oingo Boingo": {
+        "mse": 0.02577066587378691,
+        "num_songs": 61
+    },
+    "Stevie Ray Vaughan": {
+        "mse": 0.048190800239403614,
+        "num_songs": 121
+    },
+    "Stevie Nicks": {
+        "mse": 0.034838374369367035,
+        "num_songs": 58
+    },
+    "Duran Duran": {
+        "mse": 0.026423534201940383,
+        "num_songs": 96
+    },
+    "Andrew Lloyd Webber": {
+        "mse": 0.037533956250561114,
+        "num_songs": 102
+    },
+    "Madonna": {
+        "mse": 0.03212770859146005,
+        "num_songs": 122
+    },
+    "Los Bukis": {
+        "mse": 0.03156183065653566,
+        "num_songs": 113
+    },
+    "Metallica": {
+        "mse": 0.042118434867586214,
+        "num_songs": 238
+    },
+    "The Cars": {
+        "mse": 0.02774357084736214,
+        "num_songs": 63
+    },
+    "Bryan Adams": {
+        "mse": 0.03989103678930367,
+        "num_songs": 68
+    },
+    "Los Tigres Del Norte": {
+        "mse": 0.030498364541292698,
+        "num_songs": 148
+    },
+    "Cocteau Twins": {
+        "mse": 0.0600808171301802,
+        "num_songs": 78
+    },
+    "The Replacements": {
+        "mse": 0.037326648606975446,
+        "num_songs": 72
+    },
+    "Queensr\u00ffche": {
+        "mse": 0.0318128673671656,
+        "num_songs": 62
+    },
+    "Antonio Aguilar": {
+        "mse": 0.030327542629288114,
+        "num_songs": 113
+    },
+    "Foreigner": {
+        "mse": 0.029645532168390533,
+        "num_songs": 69
+    },
+    "Jos\u00e9 Alfredo Jimenez": {
+        "mse": 0.038737094336622015,
+        "num_songs": 105
+    },
+    "Red Hot Chili Peppers": {
+        "mse": 0.03404813951488448,
+        "num_songs": 219
+    },
+    "LL Cool J": {
+        "mse": 0.036861383120594365,
+        "num_songs": 59
+    },
+    "Slayer": {
+        "mse": 0.024957321983810885,
+        "num_songs": 84
+    },
+    "Whitney Houston": {
+        "mse": 0.03890816978057931,
+        "num_songs": 73
+    },
+    "Steely Dan": {
+        "mse": 0.029556564534571075,
+        "num_songs": 103
+    },
+    "Weird Al Yankovic": {
+        "mse": 0.027950696083715726,
+        "num_songs": 66
+    },
+    "Jos\u00e9 Jos\u00e9": {
+        "mse": 0.036368795594023486,
+        "num_songs": 64
+    },
+    "Tears For Fears": {
+        "mse": 0.04157184680384068,
+        "num_songs": 59
+    },
+    "Luis Miguel": {
+        "mse": 0.037362324870181145,
+        "num_songs": 108
+    },
+    "Soda Stereo": {
+        "mse": 0.03866115699019536,
+        "num_songs": 65
+    },
+    "John Mellencamp": {
+        "mse": 0.027161092943550222,
+        "num_songs": 61
+    },
+    "Janet Jackson": {
+        "mse": 0.037239793275062,
+        "num_songs": 62
+    },
+    "Misfits": {
+        "mse": 0.0463651158563072,
+        "num_songs": 96
+    },
+    "Joe Hisaishi": {
+        "mse": 0.05090089924043368,
+        "num_songs": 75
+    },
+    "The Smiths": {
+        "mse": 0.03816447235550523,
+        "num_songs": 121
+    },
+    "Guns N Roses": {
+        "mse": 0.04322915902079773,
+        "num_songs": 86
+    },
+    "Los Temerarios": {
+        "mse": 0.02600614394311286,
+        "num_songs": 99
+    },
+    "Enya": {
+        "mse": 0.043127652899945405,
+        "num_songs": 74
+    },
+    "Public Enemy": {
+        "mse": 0.030182171031344095,
+        "num_songs": 55
+    },
+    "Roc\u00edo D\u00farcal": {
+        "mse": 0.036980830879146234,
+        "num_songs": 60
+    },
+    "Bon Jovi": {
+        "mse": 0.02462036010205714,
+        "num_songs": 69
+    },
+    "Ozzy Osbourne": {
+        "mse": 0.031207855622583432,
+        "num_songs": 91
+    },
+    "Willie Col\u00f3n": {
+        "mse": 0.022920946256565305,
+        "num_songs": 71
+    },
+    "Alan Jackson": {
+        "mse": 0.03492055205201629,
+        "num_songs": 121
+    },
+    "N.W.A.": {
+        "mse": 0.025685943715938735,
+        "num_songs": 59
+    },
+    "Too $hort": {
+        "mse": 0.030530599407921136,
+        "num_songs": 58
+    },
+    "M\u00f6tley Cr\u00fce": {
+        "mse": 0.03157766962053424,
+        "num_songs": 85
+    },
+    "Nirvana": {
+        "mse": 0.03887687394757344,
+        "num_songs": 156
+    },
+    "Mariah Carey": {
+        "mse": 0.036494041545396844,
+        "num_songs": 115
+    },
+    "Dwight Yoakam": {
+        "mse": 0.028044046656393862,
+        "num_songs": 54
+    },
+    "Ice Cube": {
+        "mse": 0.029371855880731778,
+        "num_songs": 100
+    },
+    "Megadeth": {
+        "mse": 0.035081044106388085,
+        "num_songs": 89
+    },
+    "The Smashing Pumpkins": {
+        "mse": 0.04103600595884708,
+        "num_songs": 78
+    },
+    "2Pac": {
+        "mse": 0.030369710392482496,
+        "num_songs": 182
+    },
+    "Pixies": {
+        "mse": 0.03504302786173832,
+        "num_songs": 63
+    },
+    "Green Day": {
+        "mse": 0.03442022314874037,
+        "num_songs": 141
+    },
+    "Bonnie Raitt": {
+        "mse": 0.037934467546827076,
+        "num_songs": 63
+    },
+    "Alan Menken": {
+        "mse": 0.037903333763680463,
+        "num_songs": 50
+    },
+    "Soundgarden": {
+        "mse": 0.031459182621645966,
+        "num_songs": 62
+    },
+    "Sublime": {
+        "mse": 0.04365589858580883,
+        "num_songs": 130
+    },
+    "Cypress Hill": {
+        "mse": 0.038938124179383304,
+        "num_songs": 50
+    },
+    "Iron Maiden": {
+        "mse": 0.03637736158289805,
+        "num_songs": 101
+    },
+    "Wu-Tang Clan": {
+        "mse": 0.033300304142162965,
+        "num_songs": 54
+    },
+    "Beastie Boys": {
+        "mse": 0.04425096443839506,
+        "num_songs": 124
+    },
+    "Kenny G": {
+        "mse": 0.04384871354932014,
+        "num_songs": 52
+    },
+    "Rage Against The Machine": {
+        "mse": 0.02853951754889509,
+        "num_songs": 76
+    },
+    "Nine Inch Nails": {
+        "mse": 0.053152253265991795,
+        "num_songs": 69
+    },
+    "A Tribe Called Quest": {
+        "mse": 0.02592934392217606,
+        "num_songs": 77
+    },
+    "Joan Sebastian": {
+        "mse": 0.034098688607697464,
+        "num_songs": 107
+    },
+    "Reba McEntire": {
+        "mse": 0.034736585176481725,
+        "num_songs": 52
+    },
+    "R. Kelly": {
+        "mse": 0.028191094578783337,
+        "num_songs": 76
+    },
+    "Dr. Dre": {
+        "mse": 0.034665935473288265,
+        "num_songs": 95
+    },
+    "Radiohead": {
+        "mse": 0.05079003199739473,
+        "num_songs": 100
+    },
+    "Shania Twain": {
+        "mse": 0.028322345418627177,
+        "num_songs": 53
+    },
+    "Joe Cocker": {
+        "mse": 0.04788988954269652,
+        "num_songs": 62
+    },
+    "311": {
+        "mse": 0.02796539993245375,
+        "num_songs": 61
+    },
+    "Cake": {
+        "mse": 0.02540287988714143,
+        "num_songs": 54
+    },
+    "Dave Matthews Band": {
+        "mse": 0.037196964514281776,
+        "num_songs": 89
+    },
+    "Ween": {
+        "mse": 0.045354003997701536,
+        "num_songs": 66
+    },
+    "Bob Seger": {
+        "mse": 0.042911793879655415,
+        "num_songs": 115
+    },
+    "Banda El Recodo": {
+        "mse": 0.02583817784125056,
+        "num_songs": 69
+    },
+    "OutKast": {
+        "mse": 0.04436556275253026,
+        "num_songs": 98
+    },
+    "Korn": {
+        "mse": 0.03651216529047366,
+        "num_songs": 85
+    },
+    "The Notorious B.I.G.": {
+        "mse": 0.03276868059567994,
+        "num_songs": 143
+    },
+    "Mary J. Blige": {
+        "mse": 0.03573782800380562,
+        "num_songs": 76
+    },
+    "Pantera": {
+        "mse": 0.02849505135813369,
+        "num_songs": 53
+    },
+    "Foo Fighters": {
+        "mse": 0.03814901327052303,
+        "num_songs": 72
+    },
+    "Elliott Smith": {
+        "mse": 0.03367544350141329,
+        "num_songs": 57
+    },
+    "Man\u00e1": {
+        "mse": 0.03066996227385764,
+        "num_songs": 68
+    },
+    "Selena": {
+        "mse": 0.044192555194411946,
+        "num_songs": 64
+    },
+    "Bone Thugs-N-Harmony": {
+        "mse": 0.03409125483350024,
+        "num_songs": 50
+    },
+    "blink-182": {
+        "mse": 0.03744380714561129,
+        "num_songs": 112
+    },
+    "Alice In Chains": {
+        "mse": 0.033592767556914004,
+        "num_songs": 72
+    },
+    "Shakira": {
+        "mse": 0.032880622963601926,
+        "num_songs": 80
+    },
+    "Deftones": {
+        "mse": 0.03698578183020467,
+        "num_songs": 62
+    },
+    "Glenn Miller": {
+        "mse": 0.05080590684323451,
+        "num_songs": 56
+    },
+    "Marty Robbins": {
+        "mse": 0.026684740615925334,
+        "num_songs": 142
+    },
+    "Van Halen": {
+        "mse": 0.03578925950465181,
+        "num_songs": 111
+    },
+    "Weezer": {
+        "mse": 0.026082499779993166,
+        "num_songs": 58
+    },
+    "Stone Temple Pilots": {
+        "mse": 0.03205766806498729,
+        "num_songs": 50
+    },
+    "Diddy": {
+        "mse": 0.027390408713743705,
+        "num_songs": 70
+    },
+    "The Offspring": {
+        "mse": 0.02643214736505283,
+        "num_songs": 76
+    },
+    "Modest Mouse": {
+        "mse": 0.046053118036427435,
+        "num_songs": 78
+    },
+    "Rammstein": {
+        "mse": 0.028218526511684213,
+        "num_songs": 51
+    },
+    "Erykah Badu": {
+        "mse": 0.040244157631586584,
+        "num_songs": 70
+    },
+    "Three 6 Mafia": {
+        "mse": 0.02921235132747175,
+        "num_songs": 55
+    },
+    "Incubus": {
+        "mse": 0.032100762418031406,
+        "num_songs": 57
+    },
+    "Usher": {
+        "mse": 0.02606007866974656,
+        "num_songs": 80
+    },
+    "DMX": {
+        "mse": 0.03477799889154789,
+        "num_songs": 77
+    },
+    "Busta Rhymes": {
+        "mse": 0.030759341816270075,
+        "num_songs": 56
+    },
+    "Primus": {
+        "mse": 0.029988905104710535,
+        "num_songs": 55
+    },
+    "Godsmack": {
+        "mse": 0.029140501160521578,
+        "num_songs": 58
+    },
+    "Queens of the Stone Age": {
+        "mse": 0.04350281248830612,
+        "num_songs": 56
+    },
+    "Dire Straits": {
+        "mse": 0.04416652768337182,
+        "num_songs": 63
+    },
+    "Brooks & Dunn": {
+        "mse": 0.024091001494370528,
+        "num_songs": 79
+    },
+    "Slipknot": {
+        "mse": 0.027337762589347565,
+        "num_songs": 93
+    },
+    "JAY-Z": {
+        "mse": 0.03242496307742219,
+        "num_songs": 264
+    },
+    "Dixie Chicks": {
+        "mse": 0.03828198492946656,
+        "num_songs": 51
+    },
+    "South Park Mexican": {
+        "mse": 0.02982087358108321,
+        "num_songs": 57
+    },
+    "Nas": {
+        "mse": 0.029819919203810653,
+        "num_songs": 90
+    },
+    "Hans Zimmer": {
+        "mse": 0.0368574532691769,
+        "num_songs": 53
+    },
+    "Grupo Laberinto": {
+        "mse": 0.024649147175513832,
+        "num_songs": 93
+    },
+    "Disturbed": {
+        "mse": 0.030755561131696703,
+        "num_songs": 73
+    },
+    "Los Invasores De Nuevo Le\u00f3n": {
+        "mse": 0.028900120295011465,
+        "num_songs": 75
+    },
+    "Jay Chou": {
+        "mse": 0.029991337071448916,
+        "num_songs": 51
+    },
+    "Coldplay": {
+        "mse": 0.038137538030769934,
+        "num_songs": 79
+    },
+    "Grupo Bryndis": {
+        "mse": 0.028667209989230516,
+        "num_songs": 72
+    },
+    "John Mayer": {
+        "mse": 0.04257565142848597,
+        "num_songs": 119
+    },
+    "TOOL": {
+        "mse": 0.04851235210849803,
+        "num_songs": 58
+    },
+    "Gorillaz": {
+        "mse": 0.04898829006811252,
+        "num_songs": 66
+    },
+    "Eminem": {
+        "mse": 0.03999778716624822,
+        "num_songs": 303
+    },
+    "Marc Anthony": {
+        "mse": 0.03637412744951553,
+        "num_songs": 77
+    },
+    "Daryl Hall & John Oates": {
+        "mse": 0.033125372125182094,
+        "num_songs": 103
+    },
+    "Howard Shore": {
+        "mse": 0.030008920789122078,
+        "num_songs": 50
+    },
+    "Britney Spears": {
+        "mse": 0.02494743224323593,
+        "num_songs": 57
+    },
+    "My Chemical Romance": {
+        "mse": 0.034466447957410565,
+        "num_songs": 65
+    },
+    "Maroon 5": {
+        "mse": 0.03349552979753767,
+        "num_songs": 77
+    },
+    "50 Cent": {
+        "mse": 0.031726212164415055,
+        "num_songs": 101
+    },
+    "System Of A Down": {
+        "mse": 0.034554639721287736,
+        "num_songs": 77
+    },
+    "Linkin Park": {
+        "mse": 0.03312035936815651,
+        "num_songs": 114
+    },
+    "Keith Urban": {
+        "mse": 0.027043402730638478,
+        "num_songs": 58
+    },
+    "Avenged Sevenfold": {
+        "mse": 0.018932062242911128,
+        "num_songs": 62
+    },
+    "Beyonc\u00e9": {
+        "mse": 0.03887703907243928,
+        "num_songs": 123
+    },
+    "Ludacris": {
+        "mse": 0.03160423493178084,
+        "num_songs": 78
+    },
+    "T.I.": {
+        "mse": 0.03586262818724615,
+        "num_songs": 87
+    },
+    "Jack Johnson": {
+        "mse": 0.03660306028012179,
+        "num_songs": 100
+    },
+    "Conjunto Primavera": {
+        "mse": 0.02722681971559467,
+        "num_songs": 52
+    },
+    "Aventura": {
+        "mse": 0.025177879903461133,
+        "num_songs": 50
+    },
+    "Kanye West": {
+        "mse": 0.03896114679698338,
+        "num_songs": 223
+    },
+    "Kenny Chesney": {
+        "mse": 0.029606626944771067,
+        "num_songs": 116
+    },
+    "Toby Keith": {
+        "mse": 0.02630426803445504,
+        "num_songs": 61
+    },
+    "Daddy Yankee": {
+        "mse": 0.028561152820332072,
+        "num_songs": 96
+    },
+    "Breaking Benjamin": {
+        "mse": 0.02741986851553607,
+        "num_songs": 62
+    },
+    "The Black Keys": {
+        "mse": 0.03611570057687347,
+        "num_songs": 60
+    },
+    "Akon": {
+        "mse": 0.028519259061209425,
+        "num_songs": 70
+    },
+    "Pearl Jam": {
+        "mse": 0.03882902412456496,
+        "num_songs": 89
+    },
+    "Don Omar": {
+        "mse": 0.03412868316047562,
+        "num_songs": 53
+    },
+    "Lil Wayne": {
+        "mse": 0.0335111390527802,
+        "num_songs": 253
+    },
+    "Pitbull": {
+        "mse": 0.02364407467725697,
+        "num_songs": 68
+    },
+    "Nelly": {
+        "mse": 0.03460544227983419,
+        "num_songs": 56
+    },
+    "Banda Machos": {
+        "mse": 0.02942081456702431,
+        "num_songs": 57
+    },
+    "Kings of Leon": {
+        "mse": 0.032084139907943024,
+        "num_songs": 52
+    },
+    "Nate Dogg": {
+        "mse": 0.030204037994919563,
+        "num_songs": 50
+    },
+    "Tim McGraw": {
+        "mse": 0.033388997094673814,
+        "num_songs": 74
+    },
+    "Jeezy": {
+        "mse": 0.030825801932282425,
+        "num_songs": 62
+    },
+    "Paramore": {
+        "mse": 0.02920035416926484,
+        "num_songs": 52
+    },
+    "Justin Timberlake": {
+        "mse": 0.032175388719848916,
+        "num_songs": 69
+    },
+    "Gucci Mane": {
+        "mse": 0.027180312351266896,
+        "num_songs": 50
+    },
+    "Arctic Monkeys": {
+        "mse": 0.03359686825816964,
+        "num_songs": 60
+    },
+    "Snoop Dogg": {
+        "mse": 0.028188247053341456,
+        "num_songs": 107
+    },
+    "Brad Paisley": {
+        "mse": 0.035239643904214774,
+        "num_songs": 51
+    },
+    "Five Finger Death Punch": {
+        "mse": 0.02639021766339236,
+        "num_songs": 78
+    },
+    "Shinedown": {
+        "mse": 0.02881980734386137,
+        "num_songs": 58
+    },
+    "Katy Perry": {
+        "mse": 0.023716651845128597,
+        "num_songs": 62
+    },
+    "Nickelback": {
+        "mse": 0.0240664907481998,
+        "num_songs": 55
+    },
+    "Lady Gaga": {
+        "mse": 0.02964730148903199,
+        "num_songs": 100
+    },
+    "Tame Impala": {
+        "mse": 0.03705119067245354,
+        "num_songs": 54
+    },
+    "Taylor Swift": {
+        "mse": 0.030982354070056766,
+        "num_songs": 207
+    },
+    "Drake": {
+        "mse": 0.03684645080204075,
+        "num_songs": 317
+    },
+    "Glee Cast": {
+        "mse": 0.03369610989059929,
+        "num_songs": 52
+    },
+    "Kid Cudi": {
+        "mse": 0.04207884526465397,
+        "num_songs": 83
+    },
+    "Wiz Khalifa": {
+        "mse": 0.03100654432783071,
+        "num_songs": 106
+    },
+    "Jason Aldean": {
+        "mse": 0.023995781893811515,
+        "num_songs": 66
+    },
+    "J. Cole": {
+        "mse": 0.03710708947452453,
+        "num_songs": 101
+    },
+    "Daft Punk": {
+        "mse": 0.0535869810128796,
+        "num_songs": 83
+    },
+    "Blake Shelton": {
+        "mse": 0.03170088720949474,
+        "num_songs": 50
+    },
+    "Nicki Minaj": {
+        "mse": 0.03465768219295197,
+        "num_songs": 134
+    },
+    "Frank Ocean": {
+        "mse": 0.04692699727823392,
+        "num_songs": 67
+    },
+    "The Strokes": {
+        "mse": 0.04205859312420163,
+        "num_songs": 56
+    },
+    "Childish Gambino": {
+        "mse": 0.04171162957399947,
+        "num_songs": 65
+    },
+    "Trey Songz": {
+        "mse": 0.03166112134425543,
+        "num_songs": 51
+    },
+    "Kendrick Lamar": {
+        "mse": 0.03649090639071778,
+        "num_songs": 135
+    },
+    "Chris Brown": {
+        "mse": 0.029403189054880034,
+        "num_songs": 144
+    },
+    "Bruno Mars": {
+        "mse": 0.035418221760520216,
+        "num_songs": 52
+    },
+    "Ed Sheeran": {
+        "mse": 0.03395295937507003,
+        "num_songs": 85
+    },
+    "A Day To Remember": {
+        "mse": 0.029276212862196234,
+        "num_songs": 54
+    },
+    "Sade": {
+        "mse": 0.042783313980311946,
+        "num_songs": 76
+    },
+    "Lana Del Rey": {
+        "mse": 0.03665489865924321,
+        "num_songs": 105
+    },
+    "The Weeknd": {
+        "mse": 0.03394895990060501,
+        "num_songs": 133
+    },
+    "Rick Ross": {
+        "mse": 0.03209246830519776,
+        "num_songs": 70
+    },
+    "Big Sean": {
+        "mse": 0.03403476839039706,
+        "num_songs": 78
+    },
+    "Muse": {
+        "mse": 0.03578847914686708,
+        "num_songs": 50
+    },
+    "Machine Gun Kelly": {
+        "mse": 0.029381880721872335,
+        "num_songs": 54
+    },
+    "Future": {
+        "mse": 0.028507067668331866,
+        "num_songs": 150
+    },
+    "Chance the Rapper": {
+        "mse": 0.038192279967644564,
+        "num_songs": 62
+    },
+    "Jhen\u00e9 Aiko": {
+        "mse": 0.031324741086089826,
+        "num_songs": 53
+    },
+    "Ariana Grande": {
+        "mse": 0.034386018704604886,
+        "num_songs": 92
+    },
+    "Mac Miller": {
+        "mse": 0.04124474546007568,
+        "num_songs": 140
+    },
+    "Tyler": {
+        "mse": 0.038830822876316645,
+        "num_songs": 89
+    },
+    "The Creator": {
+        "mse": 0.038830822876316645,
+        "num_songs": 89
+    },
+    "Tyga": {
+        "mse": 0.03286689266098064,
+        "num_songs": 58
+    },
+    "Kevin Gates": {
+        "mse": 0.02622718593913265,
+        "num_songs": 68
+    },
+    "The 1975": {
+        "mse": 0.043249032189034024,
+        "num_songs": 56
+    },
+    "2 Chainz": {
+        "mse": 0.027694373222663576,
+        "num_songs": 64
+    },
+    "Imagine Dragons": {
+        "mse": 0.032154982702715953,
+        "num_songs": 61
+    },
+    "Rihanna": {
+        "mse": 0.03530716072925656,
+        "num_songs": 119
+    },
+    "T-Pain": {
+        "mse": 0.03342518203167716,
+        "num_songs": 73
+    },
+    "Halsey": {
+        "mse": 0.029820058541914808,
+        "num_songs": 57
+    },
+    "Travis Scott": {
+        "mse": 0.0274886984026922,
+        "num_songs": 121
+    },
+    "A$AP Rocky": {
+        "mse": 0.034957382838529366,
+        "num_songs": 74
+    },
+    "Young Thug": {
+        "mse": 0.024578474913855758,
+        "num_songs": 92
+    },
+    "Ty Dolla $ign": {
+        "mse": 0.031073665739264837,
+        "num_songs": 56
+    },
+    "Demi Lovato": {
+        "mse": 0.034550790919140144,
+        "num_songs": 56
+    },
+    "Kygo": {
+        "mse": 0.02223932374610951,
+        "num_songs": 57
+    },
+    "Logic": {
+        "mse": 0.0320429053088034,
+        "num_songs": 56
+    },
+    "YoungBoy Never Broke Again": {
+        "mse": 0.03079467593745525,
+        "num_songs": 84
+    },
+    "Quavo": {
+        "mse": 0.025622674475145265,
+        "num_songs": 53
+    },
+    "XXXTENTACION": {
+        "mse": 0.03985170517257485,
+        "num_songs": 73
+    },
+    "Kehlani": {
+        "mse": 0.027454089445296325,
+        "num_songs": 51
+    },
+    "Khalid": {
+        "mse": 0.03050786328682079,
+        "num_songs": 71
+    },
+    "Lil Peep": {
+        "mse": 0.03264665334274551,
+        "num_songs": 51
+    },
+    "NF": {
+        "mse": 0.028195127124254576,
+        "num_songs": 72
+    },
+    "$uicideBoy$": {
+        "mse": 0.029486468289494947,
+        "num_songs": 67
+    },
+    "Bad Bunny": {
+        "mse": 0.03315017286017116,
+        "num_songs": 101
+    },
+    "Ozuna": {
+        "mse": 0.033216856605493866,
+        "num_songs": 59
+    },
+    "Lil Uzi Vert": {
+        "mse": 0.027152366020929717,
+        "num_songs": 134
+    },
+    "J Balvin": {
+        "mse": 0.03351246980093728,
+        "num_songs": 73
+    },
+    "BTS": {
+        "mse": 0.029538501243126722,
+        "num_songs": 129
+    },
+    "Lil Baby": {
+        "mse": 0.026271627999336078,
+        "num_songs": 105
+    },
+    "Gunna": {
+        "mse": 0.02618055913330897,
+        "num_songs": 71
+    },
+    "Anuel AA": {
+        "mse": 0.032983469887824815,
+        "num_songs": 61
+    },
+    "Trippie Redd": {
+        "mse": 0.03108153472053336,
+        "num_songs": 67
+    },
+    "Juice WRLD": {
+        "mse": 0.03252153783048046,
+        "num_songs": 79
+    },
+    "Panic! At The Disco": {
+        "mse": 0.035578420263132474,
+        "num_songs": 75
+    },
+    "DaBaby": {
+        "mse": 0.0254563785159985,
+        "num_songs": 61
+    },
+    "Justin Bieber": {
+        "mse": 0.03537724787208817,
+        "num_songs": 99
+    },
+    "G-Eazy": {
+        "mse": 0.03464981055104728,
+        "num_songs": 71
+    },
+    "A Boogie Wit da Hoodie": {
+        "mse": 0.02992899412582758,
+        "num_songs": 61
+    },
+    "Teddy Wilson": {
+        "mse": 0.027588152673485862,
+        "num_songs": 228
+    },
+    "Coleman Hawkins": {
+        "mse": 0.031640515860988094,
+        "num_songs": 51
+    },
+    "Francis Poulenc": {
+        "mse": 0.0440661657597195,
+        "num_songs": 89
+    },
+    "Dizzy Gillespie": {
+        "mse": 0.04792105126454007,
+        "num_songs": 141
+    },
+    "Ray Conniff": {
+        "mse": 0.041892222196480026,
+        "num_songs": 78
+    },
+    "Lester Flatt": {
+        "mse": 0.03160875300465008,
+        "num_songs": 63
+    },
+    "Earl Scruggs": {
+        "mse": 0.03352788321811867,
+        "num_songs": 63
+    },
+    "Jack Teagarden": {
+        "mse": 0.045345156893031,
+        "num_songs": 64
+    },
+    "Mary Ford": {
+        "mse": 0.04444609956256817,
+        "num_songs": 53
+    },
+    "The Kingston Trio": {
+        "mse": 0.03447098042122519,
+        "num_songs": 67
+    },
+    "\u971c\u83ef\u96ea\u83ef": {
+        "mse": 0.024770869157874274,
+        "num_songs": 52
+    },
+    "Herb Alpert & The Tijuana Brass": {
+        "mse": 0.04340929479806787,
+        "num_songs": 79
+    },
+    "Todd Rundgren": {
+        "mse": 0.04127531528020896,
+        "num_songs": 60
+    },
+    "Academy of St. Martin in the Fields": {
+        "mse": 0.03088578228427129,
+        "num_songs": 53
+    },
+    "H\u00e9ctor Lavoe": {
+        "mse": 0.028199337376693435,
+        "num_songs": 67
+    },
+    "Joan Baez": {
+        "mse": 0.03875149032659446,
+        "num_songs": 58
+    },
+    "Parliament": {
+        "mse": 0.030359200630040203,
+        "num_songs": 50
+    },
+    "Chalino Sanchez": {
+        "mse": 0.03260455267995361,
+        "num_songs": 86
+    },
+    "Marilyn Manson": {
+        "mse": 0.03433210362542188,
+        "num_songs": 73
+    },
+    "The Police": {
+        "mse": 0.03974192419466441,
+        "num_songs": 61
+    },
+    "Tommy Dorsey": {
+        "mse": 0.05643786556420176,
+        "num_songs": 64
+    },
+    "Zac Brown Band": {
+        "mse": 0.03329079089706772,
+        "num_songs": 50
+    },
+    "Eric Church": {
+        "mse": 0.03408798139086974,
+        "num_songs": 63
+    },
+    "Three Days Grace": {
+        "mse": 0.024314116049382817,
+        "num_songs": 57
+    },
+    "Luke Bryan": {
+        "mse": 0.024322527282766654,
+        "num_songs": 59
+    },
+    "Meek Mill": {
+        "mse": 0.03464550767703236,
+        "num_songs": 52
+    },
+    "Florida Georgia Line": {
+        "mse": 0.026562064051149206,
+        "num_songs": 63
+    },
+    "YG": {
+        "mse": 0.034248860421557774,
+        "num_songs": 51
+    },
+    "Los Tucanes De Tijuana": {
+        "mse": 0.03149901552537592,
+        "num_songs": 52
+    },
+    "Twenty One Pilots": {
+        "mse": 0.02803488580220041,
+        "num_songs": 57
+    },
+    "Johnny Horton": {
+        "mse": 0.03335079418438988,
+        "num_songs": 62
+    },
+    "Blossom Dearie": {
+        "mse": 0.02288468437597451,
+        "num_songs": 59
+    },
+    "C\u00e9line Dion": {
+        "mse": 0.04081617717675815,
+        "num_songs": 52
+    },
+    "One Direction": {
+        "mse": 0.024806896307619137,
+        "num_songs": 97
+    },
+    "Robert Johnson": {
+        "mse": 0.01638631939048015,
+        "num_songs": 66
+    },
+    "Fats Waller": {
+        "mse": 0.032631381298063936,
+        "num_songs": 65
+    },
+    "Louis Armstrong & His Hot Five": {
+        "mse": 0.03831091552413045,
+        "num_songs": 97
+    },
+    "Louis Armstrong & His Hot Seven": {
+        "mse": 0.03795272639516594,
+        "num_songs": 56
+    },
+    "Bix Beiderbecke": {
+        "mse": 0.03780046447770494,
+        "num_songs": 66
+    },
+    "Georges Thill": {
+        "mse": 0.023159143586624128,
+        "num_songs": 54
+    },
+    "Agust\u00edn Irusta": {
+        "mse": 0.028972688727447668,
+        "num_songs": 70
+    },
+    "Zofia Dromlewiczowa": {
+        "mse": 0.022246365794760123,
+        "num_songs": 96
+    },
+    "Robert Lortat": {
+        "mse": 0.022160202560201184,
+        "num_songs": 72
+    },
+    "Richard Himber and his Orchestra": {
+        "mse": 0.02567808678394782,
+        "num_songs": 50
+    },
+    "Roy Fox": {
+        "mse": 0.031097186395721992,
+        "num_songs": 75
+    },
+    "Alfred Cortot": {
+        "mse": 0.021451065782386244,
+        "num_songs": 62
+    },
+    "Ernst H. Gombrich": {
+        "mse": 0.014788800389565704,
+        "num_songs": 109
+    },
+    "Christoph Waltz": {
+        "mse": 0.014788800389565704,
+        "num_songs": 109
+    },
+    "Dale Carnegie": {
+        "mse": 0.02372142668246255,
+        "num_songs": 128
+    },
+    "Till Hagen": {
+        "mse": 0.02372142668246255,
+        "num_songs": 128
+    },
+    "Stefan Kaminski": {
+        "mse": 0.02372142668246255,
+        "num_songs": 128
+    },
+    "Roger Desormi\u00e8re/Choeurs Yvonne Gouvern\u00e9/Orchestre Symphonique de Paris": {
+        "mse": 0.030506055541754812,
+        "num_songs": 65
+    },
+    "Roger Desormiere": {
+        "mse": 0.030506055541754812,
+        "num_songs": 65
+    },
+    "Orchestre Symphonique De Paris": {
+        "mse": 0.030506055541754812,
+        "num_songs": 65
+    },
+    "Glyndebourne Festival Orchestra": {
+        "mse": 0.02968128097729882,
+        "num_songs": 58
+    }
+}
