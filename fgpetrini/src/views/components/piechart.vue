@@ -1,5 +1,4 @@
 <template>
-    <title>Percent Satisfied Vs. Unsatisfied</title>
     <div id="pie"></div>
 </template>
 
@@ -14,8 +13,8 @@
                 id : "#pie",
                 satisfaction_data : [],
                 loyalty_data : [],
-                color_dict : {"default" : ["green", "yellow"],
-                                "cb_accessible" : ["orange", "blue"] },
+                color_dict : {"default" : ["#999999", "#ef8a62"],
+                                "cb_accessible" : ["#67a9cf", "#ef8a62"] },
             }
         },
         props:{
@@ -96,12 +95,9 @@
                 }
 
                 // Construct arcs.
-                console.log(innerRadius, outerRadius);
                 const arcs = d3.pie().padAngle(padAngle).sort(null).value(i => V[i])(I);
                 const arc = d3.arc().innerRadius(innerRadius).outerRadius(outerRadius);
                 const arcLabel = d3.arc().innerRadius(labelRadius).outerRadius(labelRadius);
-                console.log(width);
-                console.log(height);
                 let svg = d3.select(this.id).append("svg")
                     .attr("viewBox", [-width*0.5, -height*0.5, width, height])
                     .attr("width", width-20)
@@ -114,7 +110,6 @@
                     .selectAll("path")
                     .data(arcs)
                     .join("path")
-                    .attr("text", d=>console.log(d.data))
                     .attr("fill", d => color[d.data])
                     .attr("fill-opacity", 0.8)
                     .attr("d", arc)
@@ -143,11 +138,9 @@
                     .attr("transform", d => `translate(${arcLabel.centroid(d)})`)
                     .selectAll("tspan")
                     .data(d => {
-                    //return lines[1]+"%"
-                    const lines = `${title(d.data)}`.split(/\n/);
-                    console.log(lines)
-                    lines[1] = String(Number(lines[1])*100)+"%"
-                    return (d.endAngle - d.startAngle) > 0.25 ? lines : lines.slice(0, 1);
+                        const lines = `${title(d.data)}`.split(/\n/);
+                        lines[1] = String(Number(lines[1])*100)+"%"
+                        return (d.endAngle - d.startAngle) > 0.25 ? lines : lines.slice(0, 1);
                     })
                     .join("tspan")
                     .attr("x", 0)

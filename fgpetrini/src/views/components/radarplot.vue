@@ -54,7 +54,7 @@
                 maxValue : 5,
                 angleSlice : Math.PI * 2 / 14,
                 axisLabelFactor : 1.12,
-                category : d => ["Not Satisfied", "Satisfied", "Disloyal", "Loyal"][d],
+                category : d => ["Dissatisfied", "Satisfied", "Disloyal", "Loyal"][d],
                 dissatisfied_v_satisfied_data : [],
                 dissatisfied_v_satisfied_filtered_data : [],
                 disloyal_v_loyal_data : [],
@@ -76,8 +76,8 @@
                     "Inflight Service" : 12,
                     "Cleanliness" : 13,
                 },
-                color_dict : {"default" : ["green", "yellow"],
-                                "cb_accessible" : ["orange", "blue"] },
+                color_dict : {"default" : ["#999999", "#ef8a62"],
+                                "cb_accessible" : ["#67a9cf", "#ef8a62"] },
                 satisfaction_data : [],
                 loyalty_data : [],
 
@@ -190,10 +190,15 @@
                     .data(radar_data)
                     .join('g')
                         .attr("data-name", (d, i) => {
-                            if(this.dd_option != "Dis_Vs_Sat")
-                                return this.category(i+2);
-                            else
-                                return this.category(i)
+                            if(this.radio_option != "cb_accessible" && i == 0) {
+                                return "default0";
+                            } else if(this.radio_option != "cb_accessible" && i == 1) {
+                                return "default1";
+                            } else if(this.radio_option == "cb_accessible" && i == 0) {
+                                return "cb0";
+                            } else {
+                                return "cb1";
+                            }
                         })
                         .attr("fill", "none")
                         .attr("stroke", "steelblue");
@@ -227,7 +232,6 @@
                         .attr("r", dotRadius)
                         .attr("cx", (d,i) => rScale(d.value) * Math.cos(this.angleSlice*i - Math.PI/2))
                         .attr("cy", (d,i) => rScale(d.value) * Math.sin(this.angleSlice*i - Math.PI/2))
-                        .style("fill-opacity", 0.8)
                     .on("mouseover", function(d) {
                         d3.select(this)
                         .attr("r", dotRadius+2)
@@ -235,7 +239,11 @@
                     .on("mouseout", function(d) {
                         d3.select(this)
                         .attr("r", dotRadius)
-                    });
+                    })
+                    .append("title")
+                        .text((d, i) => {
+                            return Math.round(d.value*100)/100;
+                        });
             },
             groupBy(objectArray, property) {
                 return objectArray.reduce(function (acc, obj) {
@@ -362,61 +370,72 @@
 }
 
 .dropdown-check-list {
-  display: inline-block;
+    display: inline-block;
 }
 
 .dropdown-check-list .anchor {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  padding: 5px 50px 5px 48px;
-  border: 1px solid #ccc;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 50px 5px 48px;
+    border: 1px solid #ccc;
 }
 
 .dropdown-check-list .anchor:after {
-  position: absolute;
-  content: "";
-  border-left: 2px solid black;
-  border-top: 2px solid black;
-  padding: 5px;
-  right: 10px;
-  top: 20%;
-  -moz-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-  transform: rotate(-135deg);
+    position: absolute;
+    content: "";
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    padding: 5px;
+    right: 10px;
+    top: 20%;
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
 }
 
 .dropdown-check-list .anchor:active:after {
-  right: 8px;
-  top: 21%;
+    right: 8px;
+    top: 21%;
 }
 
 .dropdown-check-list ul.items {
-  padding: 2px;
-  display: none;
-  margin: 0;
-  border: 1px solid #ccc;
-  border-top: none;
+    padding: 2px;
+    display: none;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
 }
 
 .dropdown-check-list ul.items li {
-  list-style: none;
+    list-style: none;
 }
 
 .dropdown-check-list.visible .anchor {
-  color: #0094ff;
+    color: #0094ff;
 }
 
 .dropdown-check-list.visible .items {
-  display: block;
+    display: block;
 }
 
-g[data-name="Not Satisfied"] circle {
-  stroke: orange;
+g[data-name="default0"] circle {
+    fill:   #999999;
+    stroke: #999999;
 }
-g[data-name="Satisfied"] circle {
-  stroke: blue;
+g[data-name="default1"] circle {
+    fill: #ef8a62;
+    stroke: #ef8a62;
+}
+
+g[data-name="cb0"] circle {
+    fill:   #67a9cf;
+    stroke: #67a9cf;
+}
+g[data-name="cb1"] circle {
+    fill: #ef8a62;
+    stroke: #ef8a62;
 }
 </style>

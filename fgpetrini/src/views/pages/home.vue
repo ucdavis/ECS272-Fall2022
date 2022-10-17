@@ -26,8 +26,8 @@
             <PieChart  ref="pie_component" v-if="dataExists" :myPieChartData="data_" :height="pie_h" :width="pie_w" :dd_option="current_dd_option" :radio_option="current_radio_option"/>
         </div>
         <div class="column">
-            <div class="row" id="quad2">
-                
+            <div class="row" id="bar_quad">
+                <StackedBar  ref="bar_component" v-if="dataExists" :myStackedBarData="data_" :height="radar_h" :width="radar_w" :dd_option="current_dd_option" :radio_option="current_radio_option"/>
             </div>
             <div class="row" id="radar_quad">
                 <RadarPlot  ref="radar_component" v-if="dataExists" :myRadarPlotData="data_" :height="radar_h" :width="radar_w" :dd_option="current_dd_option" :radio_option="current_radio_option"/>
@@ -39,6 +39,7 @@
 <script>
 import RadarPlot from "../components/radarplot.vue"
 import PieChart from "../components/piechart.vue"
+import StackedBar from "../components/stackedbar.vue"
 import * as d3 from "d3";
 import csvPath from '../../assets/data/AirlineSatisfaction.csv';
 
@@ -55,13 +56,14 @@ export default {
             current_radio_option: "default",
             lenged_titles : {"Dis_Vs_Sat" : ["Dissatisfied Respondents", "Satisfied Respondents"],
                                      "Di_Vs_Loy" : ["Disloyal Respondents", "Loyal Respondents"] },
-            color : {"default" : ["green", "yellow"],
-                                "cb_accessible" : ["orange", "blue"] },
+            color : {"default" : ["#999999", "#ef8a62"],
+                    "cb_accessible" : ["#67a9cf", "#ef8a62"] },
         }
     },
     components: {
         RadarPlot,
-        PieChart
+        PieChart,
+        StackedBar
     },
     created(){
         /* Fetch via CSV */
@@ -94,6 +96,7 @@ export default {
             this.sleep(50).then(() => {
                 console.log("Complete");
                 this.$refs.pie_component.updatePlot();
+                this.$refs.bar_component.updatePlot();
                 this.$refs.radar_component.updatePlot();
                 d3.selectAll("#legend svg").remove();
                 this.drawLegend();
@@ -134,6 +137,7 @@ export default {
             this.sleep(50).then(() => {
                 console.log("Complete");
                 this.$refs.pie_component.updatePlot();
+                this.$refs.bar_component.updatePlot();
                 this.$refs.radar_component.updatePlot();
                 d3.selectAll("#legend svg").remove();
                 this.drawLegend();
@@ -155,23 +159,11 @@ export default {
     width: 50%;
     border-style: solid;
     border-width: 2px;
-    border-color: black;
+    border-color: #ccc;
 }
 
 .row {
     height: 50%;
-}
-
-#quad1{
-    background-color: aqua;
-}
-
-#quad2{
-    background-color: peru;
-}
-
-#quad3{
-    background-color: plum;
 }
 
 #filter_column {
@@ -185,7 +177,7 @@ export default {
     height: 33%;
     border-style: solid;
     border-width: 2px;
-    border-color: black;
+    border-color: #ccc;
 }
 
 #dataDropdown {
