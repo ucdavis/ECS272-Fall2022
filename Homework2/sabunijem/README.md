@@ -5,7 +5,7 @@
 In the project directory, you can run:
 
 ### `npm install`
-Installes required packages
+Installs required packages
 
 ### `npm start`
 
