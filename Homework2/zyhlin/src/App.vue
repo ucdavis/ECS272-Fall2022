@@ -5,8 +5,8 @@
         <div id="split" class="row">
           <div class="col-1">
             <div class="chart1-radio">
-              <input type="radio" name="x-axis" value="year" checked>x - year<br>
-              <input type="radio" name="x-axis" value="region">x - region<br>
+              <input type="radio" name="x-axis" value="xyear" checked>x - year<br>
+              <input type="radio" name="x-axis" value="xregion">x - region<br>
             </div>
             <BarChart v-if="dataExists" :myBarChartData="myBarData"/>
           </div>

@@ -26,13 +26,14 @@ import { forEach } from "shelljs/commands";
             console.log("Data Passed down as a Prop  ", this.myBarchartData)
         },
         methods: {
-            drawBarChart(dset, id) {
+            drawBarChart(dset, id, name) {
 
                 const margin = { top: 40, right: 100, bottom: 120, left: 40 };
                 const height = 450;
                 const width = 500;              
                 console.log(2333333334, dset)
-                const data = dset.data
+
+                const data = dset['data']
 
                 var groups = d3.map(data, d => d.year)
                 var subgroups = dset.regions
@@ -65,7 +66,7 @@ import { forEach } from "shelljs/commands";
                     .append("text")
                     .style("position", "absolute")
                     .attr('x', width / 2)
-                    .attr('y', height - height / 6)
+                    .attr('y', height / 2)
                     .style("visibility", "hidden")
                     .style("background", "#fff")
                     .attr('font-size', 12)
@@ -150,7 +151,7 @@ import { forEach } from "shelljs/commands";
                     .text(d => d)
 
                 svg.append('text')
-                    .text('# of terrorist attacks / decades')
+                    .text('# of terrorist attacks / ' + name)
                     .attr('x', 10)
                     .attr('y', 10)
                     .attr('font-size', 9)
@@ -160,24 +161,23 @@ import { forEach } from "shelljs/commands";
             },
 
             data_pick(dset, id, cb) {
-                var selectedOption = 'year'
+                var option = 'xyear'
+                var op_name = {'xyear': 'decades', 'xregion': 'region'}
+                var filtered_data = dset[option]
                 
                 d3.selectAll('input').on("change", function(event, d) {
                     const selectedOption = d3.select(this).property("value")
-                    console.log(33334, dset)
-                    console.log(selectedOption); 
                     update(selectedOption)
                 })
 
                 function update(option) {
-                    const filtered_data = dset[option]
-
-                    cb(dset[option], id)
+                    filtered_data = dset[option]
+                    d3.select('#bar').selectAll('g').remove()
+                    d3.select('#bar').selectAll('text').remove()
+                    cb(filtered_data, id, op_name[option])
                     
-                    // legend_rect.attr('fill', colors(selectedGroup))
-                    // title_txt.text('# of terrorist attacks in ' + selectedGroup)
-                    // legend_text.text(selectedGroup)
                 }
+                cb(dset[option], id, op_name[option])
             }
 
         }
