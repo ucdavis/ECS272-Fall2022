@@ -15,7 +15,7 @@ In this assignment, I have used the CO2 emission dataset. This dashboard is buil
 
 # Screenshot 
 
-![Screen](/screenshot.png)
+![Screen](./screenshot.png)
 
 # Setup 
 
