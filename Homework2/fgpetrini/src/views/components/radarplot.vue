@@ -383,7 +383,7 @@
     position: relative;
     cursor: pointer;
     display: inline-block;
-    padding: 5px 50px 5px 48px;
+    padding: 5px 50px 5px 10px;
     border: 1px solid #ccc;
 }
 
