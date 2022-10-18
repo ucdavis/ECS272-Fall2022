@@ -4,21 +4,18 @@ In this assignment, I have used the CO2 emission dataset. This dashboard is buil
 
 # Requirements
 
-Your task is to create a visualization dashboard. The design of this dashboard should facilitate the exploration of a dataset in an effective or interesting way.
+* This dashboard has three visualization views.
+* The visualization includes at least one advanced visualization method - **sunburst chart**.
+* The visualizations depict different dimensions or aspects of the dataset to be examined.
+* The three visualizations fit on a fullscreen browser.
+* Legends for each view is provided as well as labels for axis.
+* One of the three views serves as an overview of the data.
+* Chosen appropriate visual encodings.
+* The design paradigm followed is focus + context.
 
-This dashboard must have three visualization views.
-Your visualizations should include at least one advanced visualization method.
-The visualizations should depict different dimensions or aspects of the dataset to be examined.
-The three visualizations should fit on a fullscreen browser. Consider where each view should be placed while designing the layout of your dashboard.
-Legends for each view need to be provided as well as labels for axis.
-One of your three views should serve as an overview of the data.
-Choose appropriate visual encodings.
-Color choice matters and has an effect on the interpretability of the visualization. Depending on the data the type of color scale you will use will change (categorical, linear, etc).
-Carefully consider the design for each encoding that you will use and its effectiveness for portraying the data. Depending on the data you are visualizing, certain pairings of marks and channels will be more effective.
-The design paradigm you will be following is referred to as focus + context.
+# Screenshot 
 
-A focus view is where the data of most interest is displayed at full size or with full details.
-A context view is a peripheral zone, an overview, where elements are displayed at reduced size or in a simplified way. For each view, you need to provide one or more visual interface widgets (e.g., a dropdown menu or slider) for changing the parameters of the visualization. For example, a drop-down menu can be provided for selecting the data dimension that maps to the x-axis of a scatter plot or the color encoding used in a 2D heatmap.
+![Screen](/screenshot.png)
 
 # Setup 
 
