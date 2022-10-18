@@ -40,10 +40,6 @@ Start the server and use the link served to view the dashboard:
 ```
 http-server -p 3000
 ```
-Install other npm dependences by changing directory to the same directory as package.json. 
 
-```
-npm i
-```
 
 
