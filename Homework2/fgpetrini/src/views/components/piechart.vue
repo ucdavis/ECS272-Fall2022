@@ -29,7 +29,10 @@
             radio_option: String,
         },
         mounted(){
-            
+
+            let pixels = String(Math.round(this.width / 40));
+            document.getElementById("pie_title").style.fontSize = pixels+"px";
+
             this.satisfaction_data = this.SatisfactionBreakdown(this.myPieChartData);
             this.drawPieChart(this.satisfaction_data);
 

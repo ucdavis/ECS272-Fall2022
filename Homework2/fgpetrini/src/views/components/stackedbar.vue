@@ -30,6 +30,8 @@
             radio_option: String,
         },
         mounted(){
+            let pixels = String(Math.round(this.width / 40));
+            document.getElementById("bar_title").style.fontSize = pixels+"px";
             this.satisfaction_data = this.getStackedClassBins(this.myStackedBarData, "satisfaction");
             this.drawStackedBar(this.satisfaction_data);
             this.loyalty_data = this.getStackedClassBins(this.myStackedBarData, "Customer Type");

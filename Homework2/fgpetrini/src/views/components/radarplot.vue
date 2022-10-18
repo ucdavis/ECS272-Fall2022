@@ -96,6 +96,8 @@
         mounted(){
             this.color = d3.scaleOrdinal().range(this.color_dict[this.radio_option]);
             document.getElementById("checkbox-selection").style.marginBottom = -1 * this.height * 0.2;
+            let pixels = String(Math.round(this.width / 40));
+            document.getElementById("radar_title").style.fontSize = pixels+"px";
             this.radius = this.height * 0.38;
             this.satisfaction_data = this.groupBy(this.myRadarPlotData, "satisfaction");
             const satisfied = this.getSpiderPlotData(this.satisfaction_data["satisfied"]);
@@ -451,7 +453,6 @@ g[data-name="cb1"] circle {
     padding-top: 10px;
     padding-left: 100px;
     position: relative;
-    font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
     text-align: center;
