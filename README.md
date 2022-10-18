@@ -1,3 +1,10 @@
+# UPDATED Portion of README For Assignment 2
+1. Change directory into the Vue-Skeleton template under Homework 2
+2. Run `npm i` to install node modules as needed
+3. Run `npm run start` to start the sever.
+
+DIMENSIONS: For optimal scaling and dimensions, I developed and tested on a standard 24" 1080p monitor. You can also try to resize the scale to 1920 x 929 in case the current view is off. You can however feel free to use whatever you'd like, if when running `npm run start` and the view looks fine as is then no need to change it. Otherwise, try to adjust it to the dimensions I've given and hopefully it should look a little better.
+
 # Welcome to ECS272 Information Visualization
 This repository contains class materials for ECS 272 in Fall 2022.
 
