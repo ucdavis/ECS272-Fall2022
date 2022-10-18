@@ -1,43 +1,218 @@
 Region,Year,Emissions Per Capita
-South Asia,1990,0.19
-South Asia,1991,0.21
-South Asia,1992,0.45
-South Asia,1993,0.99
-South Asia,1994,0.19
-South Asia,1995,0.3
-Sub-Saharan Africa,1990,0.2
-Sub-Saharan Africa,1991,0.12
-Sub-Saharan Africa,1992,0.45
-Sub-Saharan Africa,1993,0.90
-Sub-Saharan Africa,1994,0.2
-Sub-Saharan Africa,1995,0.34
-Europe & Central Asia,1990,0.43
-Europe & Central Asia,1991,0.45
-Europe & Central Asia,1992,0.5
-Europe & Central Asia,1993,0.23
-Europe & Central Asia,1994,0.90
-Europe & Central Asia,1995,0.90
-Middle East & North Africa,1990,0.3
-Middle East & North Africa,1991,0.12
-Middle East & North Africa,1992,0.56
-Middle East & North Africa,1993,0.23
-Middle East & North Africa,1994,0.90
-Middle East & North Africa,1995,0.78
-Latin America & Caribbean,1990,0.09
-Latin America & Caribbean,1991,0.01
-Latin America & Caribbean,1992,0.34
-Latin America & Caribbean,1993,0.05
-Latin America & Caribbean,1994,0.9
-Latin America & Caribbean,1995,0.19
-Europe & Central Asia,1990,0.76
-Europe & Central Asia,1991,0.90
-Europe & Central Asia,1992,0.76
-Europe & Central Asia,1993,0.86
-Europe & Central Asia,1994,0.90
-Europe & Central Asia,1995,0.56
-Latin America & Caribbean,1990,0.6
-Latin America & Caribbean,1991,0.16
-Latin America & Caribbean,1992,0.26
-Latin America & Caribbean,1993,0.24
-Latin America & Caribbean,1994,0.25
-Latin America & Caribbean,1995,0.10
+South Asia,1990,0.329522021375
+South Asia,1991,0.34048666800000005
+South Asia,1992,0.37972720325000003
+South Asia,1993,0.3690158565
+South Asia,1994,0.37798171475000003
+South Asia,1995,0.421938701625
+South Asia,1996,0.457635750625
+South Asia,1997,0.48707760862500005
+South Asia,1998,0.47153899325
+South Asia,1999,0.5426853061250001
+South Asia,2000,0.562898313625
+South Asia,2001,0.5720335145
+South Asia,2002,0.630709978375
+South Asia,2003,0.59942948375
+South Asia,2004,0.7026054996250001
+South Asia,2005,0.703775281375
+South Asia,2006,0.7556393781249998
+South Asia,2007,0.7746006505
+South Asia,2008,0.77050517975
+South Asia,2009,0.7990440615
+South Asia,2010,0.842525579125
+South Asia,2011,0.9115894418749999
+South Asia,2012,0.968635932375
+South Asia,2013,0.93474725475
+South Asia,2014,1.0301428645
+South Asia,2015,1.0514413513749998
+South Asia,2016,1.193404551125
+South Asia,2017,1.2384079637499998
+South Asia,2018,1.29765150675
+South Asia,2019,1.2880856244999999
+South Asia,2019,1.2880856244999999
+Sub-Saharan Africa,1990,0.5895434164565218
+Sub-Saharan Africa,1991,0.6039451052127661
+Sub-Saharan Africa,1992,0.6340703256875
+Sub-Saharan Africa,1993,0.6316932235208333
+Sub-Saharan Africa,1994,0.6280888580624998
+Sub-Saharan Africa,1995,0.6487981361458334
+Sub-Saharan Africa,1996,0.6791044530208334
+Sub-Saharan Africa,1997,0.7043888960208334
+Sub-Saharan Africa,1998,0.757906012680851
+Sub-Saharan Africa,1999,0.8012954459148935
+Sub-Saharan Africa,2000,0.7388161178958333
+Sub-Saharan Africa,2001,0.8025263233958331
+Sub-Saharan Africa,2002,0.8264972070208333
+Sub-Saharan Africa,2003,0.8480485167083334
+Sub-Saharan Africa,2004,0.893665145916667
+Sub-Saharan Africa,2005,0.9541775842500001
+Sub-Saharan Africa,2006,0.9673103206875
+Sub-Saharan Africa,2007,0.9310291824791669
+Sub-Saharan Africa,2008,0.9684564021666665
+Sub-Saharan Africa,2009,0.9598159912083335
+Sub-Saharan Africa,2010,0.9700094518958333
+Sub-Saharan Africa,2011,0.9557870647708334
+Sub-Saharan Africa,2012,0.9505286208541666
+Sub-Saharan Africa,2013,0.9533192787708331
+Sub-Saharan Africa,2014,0.9561021916458333
+Sub-Saharan Africa,2015,0.9326083699583331
+Sub-Saharan Africa,2016,0.9433306308541666
+Sub-Saharan Africa,2017,0.9185978472083333
+Sub-Saharan Africa,2018,0.9241967052083334
+Sub-Saharan Africa,2019,0.9154658306875008
+Sub-Saharan Africa,2019,0.9154658306875008
+Europe & Central Asia,1990,8.53160283822
+Europe & Central Asia,1991,8.216745430539998
+Europe & Central Asia,1992,7.633785182820003
+Europe & Central Asia,1993,7.221486559579998
+Europe & Central Asia,1994,6.903651517199998
+Europe & Central Asia,1995,6.7095518103400025
+Europe & Central Asia,1996,6.867239979440004
+Europe & Central Asia,1997,6.7177241834000005
+Europe & Central Asia,1998,6.708455841719999
+Europe & Central Asia,1999,6.549769420700001
+Europe & Central Asia,2000,6.575384110700003
+Europe & Central Asia,2001,6.681314191839997
+Europe & Central Asia,2002,6.732190201140001
+Europe & Central Asia,2003,7.0177908680600005
+Europe & Central Asia,2004,7.086732486979998
+Europe & Central Asia,2005,7.0405275706399975
+Europe & Central Asia,2006,7.116536682980001
+Europe & Central Asia,2007,7.123275878980001
+Europe & Central Asia,2008,7.049412661379998
+Europe & Central Asia,2009,6.461394771920002
+Europe & Central Asia,2010,6.721170236360003
+Europe & Central Asia,2011,6.6140203187600015
+Europe & Central Asia,2012,6.423799057179998
+Europe & Central Asia,2013,6.3246233834600005
+Europe & Central Asia,2014,5.991869193860001
+Europe & Central Asia,2015,5.93594253288
+Europe & Central Asia,2016,5.941425738040001
+Europe & Central Asia,2017,5.99203200128
+Europe & Central Asia,2018,5.941024312679999
+Europe & Central Asia,2019,5.724887650560001
+Europe & Central Asia,2019,5.724887650560001
+Middle East & North Africa,1990,7.252766791157893
+Middle East & North Africa,1991,7.568550996210526
+Middle East & North Africa,1992,7.567304098947368
+Middle East & North Africa,1993,8.04073565373684
+Middle East & North Africa,1994,8.410728900421054
+Middle East & North Africa,1995,8.549587195421052
+Middle East & North Africa,1996,8.75852288394737
+Middle East & North Africa,1997,9.183793180368422
+Middle East & North Africa,1998,9.143693736526314
+Middle East & North Africa,1999,9.255544964631577
+Middle East & North Africa,2000,9.11054657405263
+Middle East & North Africa,2001,9.250120726105262
+Middle East & North Africa,2002,9.451472685631579
+Middle East & North Africa,2003,9.509383734315788
+Middle East & North Africa,2004,9.310701306315789
+Middle East & North Africa,2005,9.125409702263159
+Middle East & North Africa,2006,9.112496266157894
+Middle East & North Africa,2007,8.909513042526315
+Middle East & North Africa,2008,8.81034691968421
+Middle East & North Africa,2009,8.433200968894736
+Middle East & North Africa,2010,8.515655894947368
+Middle East & North Africa,2011,8.374220408736843
+Middle East & North Africa,2012,8.766614077947368
+Middle East & North Africa,2013,8.599968383473685
+Middle East & North Africa,2014,8.656712055947368
+Middle East & North Africa,2015,8.515673125
+Middle East & North Africa,2016,8.342997632157896
+Middle East & North Africa,2017,8.236672187736842
+Middle East & North Africa,2018,7.9230819902631575
+Middle East & North Africa,2019,8.056954386578946
+Middle East & North Africa,2019,8.056954386578946
+Latin America & Caribbean,1990,2.2383016133939386
+Latin America & Caribbean,1991,2.270151184727273
+Latin America & Caribbean,1992,2.4952624946060604
+Latin America & Caribbean,1993,2.3120835158181814
+Latin America & Caribbean,1994,2.310857652818182
+Latin America & Caribbean,1995,2.386696911727273
+Latin America & Caribbean,1996,2.41154581669697
+Latin America & Caribbean,1997,2.5048320936666673
+Latin America & Caribbean,1998,2.6557291401515153
+Latin America & Caribbean,1999,2.6228672512424245
+Latin America & Caribbean,2000,2.5547893382424243
+Latin America & Caribbean,2001,2.64526278830303
+Latin America & Caribbean,2002,2.6716994561818184
+Latin America & Caribbean,2003,2.7538778126363637
+Latin America & Caribbean,2004,2.7891861203030306
+Latin America & Caribbean,2005,2.8456459670303023
+Latin America & Caribbean,2006,2.9664575785757576
+Latin America & Caribbean,2007,3.03155765269697
+Latin America & Caribbean,2008,3.0524170114848483
+Latin America & Caribbean,2009,4.944513577909092
+Latin America & Caribbean,2010,3.0570420634545457
+Latin America & Caribbean,2011,3.258401627969697
+Latin America & Caribbean,2012,3.6149984066363636
+Latin America & Caribbean,2013,3.1815714992121205
+Latin America & Caribbean,2014,3.1255975956363637
+Latin America & Caribbean,2015,3.1136276864545454
+Latin America & Caribbean,2016,3.050388645121212
+Latin America & Caribbean,2017,2.9562136376969694
+Latin America & Caribbean,2018,3.0114382821818184
+Latin America & Caribbean,2019,3.034810004
+Latin America & Caribbean,2019,3.034810004
+East Asia & Pacific,1990,3.7835772716923093
+East Asia & Pacific,1991,3.8385488936538454
+East Asia & Pacific,1992,3.9209553915172406
+East Asia & Pacific,1993,3.9586932643448276
+East Asia & Pacific,1994,3.9925592308965507
+East Asia & Pacific,1995,4.0579454447241385
+East Asia & Pacific,1996,4.049508715482759
+East Asia & Pacific,1997,4.09678092262069
+East Asia & Pacific,1998,3.9280816302068975
+East Asia & Pacific,1999,3.9486554976896553
+East Asia & Pacific,2000,4.092695623344827
+East Asia & Pacific,2001,4.116882068517241
+East Asia & Pacific,2002,4.115751041344828
+East Asia & Pacific,2003,4.187588619689654
+East Asia & Pacific,2004,4.276346559551724
+East Asia & Pacific,2005,4.351360451241378
+East Asia & Pacific,2006,4.522213753206898
+East Asia & Pacific,2007,4.466542305172414
+East Asia & Pacific,2008,4.444125303448275
+East Asia & Pacific,2009,4.364323290862071
+East Asia & Pacific,2010,4.40804869337931
+East Asia & Pacific,2011,4.457967446517243
+East Asia & Pacific,2012,4.497508560827587
+East Asia & Pacific,2013,4.531520330103448
+East Asia & Pacific,2014,4.499174451827588
+East Asia & Pacific,2015,4.475693269689655
+East Asia & Pacific,2016,4.691372718931033
+East Asia & Pacific,2017,4.871775933586207
+East Asia & Pacific,2018,4.83986062913793
+East Asia & Pacific,2019,4.815972635310346
+East Asia & Pacific,2019,4.815972635310346
+North America,1990,17.278118075
+North America,1991,16.872208695
+North America,1992,17.025547275
+North America,1993,16.96585961
+North America,1994,17.158278595
+North America,1995,17.253755745
+North America,1996,17.583985335
+North America,1997,18.137420355
+North America,1998,18.171406134999998
+North America,1999,18.179827600000003
+North America,2000,18.613716545
+North America,2001,18.25154978
+North America,2002,18.082925245
+North America,2003,18.35740053
+North America,2004,18.19595023
+North America,2005,18.248373875
+North America,2006,17.770631825
+North America,2007,18.211741815
+North America,2008,17.417708715
+North America,2009,16.155421825
+North America,2010,16.61193986
+North America,2011,16.300081235
+North America,2012,15.7621283
+North America,2013,15.97482235
+North America,2014,15.945413219999999
+North America,2015,15.604310285
+North America,2016,15.285243455
+North America,2017,15.183915955
+North America,2018,15.436563345
+North America,2019,15.05201172
+North America,2019,15.05201172
