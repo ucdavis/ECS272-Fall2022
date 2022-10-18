@@ -112,7 +112,7 @@ d3.queue()
           "Data Not Available";
         tooltip 
             .html(`
-              <p>Country: ${data.country}</p>
+              <p>Region: ${data.region}</p>
               <p>${formatDataType(dataType)}: ${dataValue}</p>
               <p>Year: ${data.year || d3.select("#year").property("value")}</p>
               ${percentage}

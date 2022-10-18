@@ -39,8 +39,6 @@ function createPie(width, height) {
         regions.push(region);
       }
     }
-
-  
     var colorScale = d3.scaleOrdinal()
                        .domain(regions)
                        .range(['#f95d6a', 

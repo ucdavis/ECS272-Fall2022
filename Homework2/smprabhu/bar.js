@@ -74,8 +74,6 @@ var bar = d3.select("#bar")
   
     d3.select(".y-axis")
         .attr("transform", "translate(" + (padding.left - barWidth / 2) + ",0)")
-        .transition()
-        .duration(1000)
         .call(yAxis);
   
     var axisLabel = dataType === "emissions" ?
@@ -97,9 +95,9 @@ var bar = d3.select("#bar")
     d3.select(".x-axis-label")
         .text(xaxisLabel);
   
-    var t = d3.transition()
-              .duration(1000)
-              .ease(d3.easeBounceOut);
+    // var t = d3.transition()
+    //           .duration(1000)
+    //           .ease(d3.easeBounceOut);
   
     var update = bar 
                    .selectAll(".bar")
@@ -107,8 +105,6 @@ var bar = d3.select("#bar")
   
     update
       .exit()
-      .transition(t)
-        .delay((d, i, nodes) => (nodes.length - i - 1) * 100)
         .attr("y", height - padding.bottom)
         .attr("height", 0)
         .remove();
@@ -122,8 +118,6 @@ var bar = d3.select("#bar")
       .merge(update)
         .attr("x", d => (xScale(d.year) + xScale(d.year - 1)) / 2)
         .attr("width", barWidth - barPadding)
-        .transition(t)
-        .delay((d, i) => i * 100)
           .attr("y", d => yScale(d[dataType]))
           .attr("height", d => height - padding.bottom - yScale(d[dataType]));
   }
