@@ -1,0 +1,52 @@
+{
+"data":[
+  {
+    "STAT_CAUSE": "Lightning",
+    "fire_Totalsize": 4216264.6,
+    "fire_count": 27000,
+    "fire_avgSize": 156.1579
+  },
+  {
+    "STAT_CAUSE": "Miscellaneous",
+    "fire_Totalsize": 2812105.151,
+    "fire_count": 51943,
+    "fire_avgSize": 54.1383
+  },
+  {
+    "STAT_CAUSE": "Equipment Use",
+    "fire_Totalsize": 1561226.71,
+    "fire_count": 39407,
+    "fire_avgSize": 39.618
+  },
+  {
+    "STAT_CAUSE": "Arson",
+    "fire_Totalsize": 1396071.81,
+    "fire_count": 19635,
+    "fire_avgSize": 71.1012
+  },
+  {
+    "STAT_CAUSE": "Campfire/Children/Smoking/Fireworks",
+    "fire_Totalsize": 1215369.31,
+    "fire_count": 22601,
+    "fire_avgSize": 53.775
+  },
+  {
+    "STAT_CAUSE": "Missing/Undefined",
+    "fire_Totalsize": 795722.2,
+    "fire_count": 12605,
+    "fire_avgSize": 63.1275
+  },
+  {
+    "STAT_CAUSE": "Debris Burning",
+    "fire_Totalsize": 397575.281,
+    "fire_count": 14318,
+    "fire_avgSize": 27.7675
+  },
+  {
+    "STAT_CAUSE": "Powerline/Railroad/Structure",
+    "fire_Totalsize": 351523.51,
+    "fire_count": 2041,
+    "fire_avgSize": 172.231
+  }
+]
+}
