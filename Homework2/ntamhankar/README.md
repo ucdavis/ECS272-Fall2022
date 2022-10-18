@@ -11,6 +11,7 @@ To install additional packages based on your needs
 
 ## Run application
 cd ECS272-Fall2022/Homework2/ntamhankar
+
 `npm start`
 
 ## How to view
