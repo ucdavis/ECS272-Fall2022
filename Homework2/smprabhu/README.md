@@ -4,14 +4,14 @@ In this assignment, I have used the CO2 emission dataset. This dashboard is buil
 
 # Requirements
 
-* This dashboard has three visualization views.
-* The visualization includes at least one advanced visualization method - **sunburst chart**.
-* The visualizations depict different dimensions or aspects of the dataset to be examined.
+* This dashboard has three visualization views - **1. Bar Chart 2. Pie Chart 3. Sunburst Chart.**.
+* The visualization includes at least one advanced visualization method - **Sunburst Chart.**.
+* The visualizations depict different dimensions or aspects of the dataset to be examined - **1. Bar Chart - depicts the yearwise distribution for the countries 2. Pie Chart - displays the regionwise average for each year 3. Sunburst Chart - an overall view of the data with each country's 30 year average (1990-2019)**..
 * The three visualizations fit on a fullscreen browser.
 * Legends for each view is provided as well as labels for axis.
-* One of the three views serves as an overview of the data.
-* Chosen appropriate visual encodings.
-* The design paradigm followed is focus + context.
+* One of the three views serves as an overview of the data - **The sunburst chart serves as an overview of the data. To simplify the chart and abstarct the complexity, I have taken the 30 year average for each country to show the contribution of each country.**..
+* Chosen appropriate visual encodings - **The colors for the pie chart have been chosen based on the share of each of the region. The colors for barchart and sunchart were chosen to show the distribution**..
+* The design paradigm followed is focus + context - **The year selected on the pie chart shows up on the bar chart as a highlighted area.**..
 
 # Screenshot 
 
@@ -19,26 +19,25 @@ In this assignment, I have used the CO2 emission dataset. This dashboard is buil
 
 # Setup 
 
-Run This Commands To View The Dashboard Locally : 
+Run These Commands To View The Dashboard Locally: 
 
-Change the current working directory to the location where you want the cloned directory to be made : 
+Change the working directory to the location where you want to clone the repository: 
 ```
 cd <your_directory>
 ```
-Clone the repository and install http-server module : 
+Clone the repository and install http-server module using npm: 
 ```
 git clone <this_repository>
 npm install -g http-server
+```
+Start the server and use the link served to view the dashboard: 
+```
 http-server -p 3000
 ```
-Install the list of packages specified in requirements.txt.
-
-Once you are at the same directory as package.json run the following command. 
+Install other npm dependences by changing directory to the same directory as package.json. 
 
 ```
 npm i
 ```
-
-Now You Can view the dashboard on http://localhost:3000
 
 

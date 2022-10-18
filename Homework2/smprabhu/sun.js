@@ -38,7 +38,6 @@ var svg = d3.select("#sun").append("svg")
 
 d3.json("./data/co2_sun.json", function(error, root) {
 
-
 root = d3.hierarchy(root);
 root.sum(function(d) { return d.size; });
 svg.selectAll("path")
@@ -49,7 +48,7 @@ svg.selectAll("path")
     .on("click", click)
     .append("title")
     
-    .text(d => `${d.ancestors().map(d => d.data.name).reverse().join("/")}\n${formatNumber(d.data.size)}`);
+    .text(d => `${d.ancestors().map(d => d.data.name).reverse().join("/")}\n${formatNumber(d.value)}`);
 });
 
 
