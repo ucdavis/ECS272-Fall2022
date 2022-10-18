@@ -48,16 +48,6 @@
                 return years
             },
 
-            comparator( a, b ) {
-                if ( a.popularity < b.popularity ){
-                    return -1;
-                }
-                if ( a.popularity > b.popularity ){
-                    return 1;
-                }
-                return 0;
-            },
-
             preprocess(artists) {
                 var artistMap = new Map()
                 artists.forEach(d => {
@@ -111,9 +101,8 @@
                     temp.push(d)
                     i += 1
                     if (i % 10 == 0) {
-                        temp.sort(this.comparator)
-                        // temp = temp.slice(5, 10)
-                        temp = temp.slice(7, 10)
+                        temp.sort((a,b) => b.popularity - a.popularity);
+                        temp = temp.slice(0, 3)
                         result = result.concat(temp)
                         temp = []
                     }
@@ -125,7 +114,6 @@
                 const map = new Map()
                 let i = 0
                 years.forEach(a => {
-                    // map.set(a, data.slice(i, i += 5))
                     map.set(a, data.slice(i, i += 3))  
                 })
                 return map
@@ -138,7 +126,6 @@
                 artists.forEach(d => {
                     temp.push(d.name)
                     j += 1
-                    // if (j % 5 == 0) {
                     if (j % 3 == 0) {
                         map.set(i, temp)
                         temp = []
@@ -173,6 +160,7 @@
 
                 const color = d3.scaleOrdinal()
                     .range(["#1f77b4", "#ff7f0e", "#2ca02c"])
+                // const color = d3.scaleOrdinal().range(d3.schemeCategory10);
 
                 //legend
                 var Svg2 = d3.select("#radarLegend")
@@ -320,6 +308,7 @@
 
                     const color = d3.scaleOrdinal()
                     .range(["#1f77b4", "#ff7f0e", "#2ca02c"])
+                    // const color = d3.scaleOrdinal().range(d3.schemeCategory10);
 
                         var Svg2 = d3.select("#radarLegend")
                         .attr("preserveAspectRatio", "xMidYMid meet")

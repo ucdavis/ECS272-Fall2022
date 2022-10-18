@@ -94,13 +94,24 @@
                 slice.forEach(d => {
                     data[d.song] = d.popularity
                 })
+
+                const sorted = Object.entries(data)
+                .sort(([, a], [, b]) => b - a)
+                .reduce(
+                    (r, [k, v]) => ({
+                    ...r,
+                    [k]: v
+                    }),
+                    {}
+                )
                 
                 const color = d3.scaleOrdinal().range(d3.schemeCategory10);
                 
                   // Compute the position of each group on the pie:
                 var pie = d3.pie()
                 .value(function(d) {return d[1]})
-                var data_ready = pie(Object.entries(data))
+                var data_ready = pie(Object.entries(sorted))
+                console.log('data_ready: ', data_ready)
 
                   // shape helper to build arcs:
                 var arcGenerator = d3.arc()
@@ -129,7 +140,7 @@
                 .style("font-size", 17)
 
                 //legend
-                const keys = Object.keys(data)
+                const keys = Object.keys(sorted)
 
                 var Svg2 = d3.select("#pie_legend")
                 .attr("preserveAspectRatio", "xMidYMid meet")
@@ -167,12 +178,22 @@
                         slice.forEach(d => {
                         data[d.song] = d.popularity
                         })
-                        console.log(data)
+
+                        const sorted = Object.entries(data)
+                        .sort(([, a], [, b]) => b - a)
+                        .reduce(
+                            (r, [k, v]) => ({
+                            ...r,
+                            [k]: v
+                            }),
+                            {}
+                        )
 
                         // Compute the position of each group on the pie:
                     var pie = d3.pie()
                         .value(function(d) {return d[1]})
-                    var data_ready = pie(Object.entries(data))    
+                    // var data_ready = pie(Object.entries(data))
+                    var data_ready = pie(Object.entries(sorted))
                     // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
                     svg
                         .selectAll('mySlices')
@@ -196,7 +217,7 @@
                     .style("font-size", 17)
 
 
-                const keys = Object.keys(data)
+                const keys = Object.keys(sorted)
 
                 d3.select('#pie_legend').selectAll('text').remove();
                 d3.select('#pie_legend').selectAll('circle').remove();
