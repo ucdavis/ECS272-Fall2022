@@ -1,10 +1,15 @@
 
 # CO2-Dashboard
-In this assignment, I have used the CO2 emission dataset. This dashboard is built with the simple skeleton - a very barebones framework for web development as it is not using any of the modern frameworks.
+In this assignment, I have used the CO2 emission dataset. This dashboard is built with the simple skeleton - a very barebones framework for web development.
 
-# Requirements
+## Requirements
 
-* This dashboard has three visualization views - **1. Bar Chart 2. Pie Chart 3. Sunburst Chart.**.
+* This dashboard has three visualization views - 
+**
+1. Bar Chart 
+2. Pie Chart 
+3. Sunburst Chart
+**.
 * The visualization includes at least one advanced visualization method - **Sunburst Chart.**.
 * The visualizations depict different dimensions or aspects of the dataset to be examined - **1. Bar Chart - depicts the yearwise distribution for the countries 2. Pie Chart - displays the regionwise average for each year 3. Sunburst Chart - an overall view of the data with each country's 30 year average (1990-2019)**..
 * The three visualizations fit on a fullscreen browser.
@@ -13,11 +18,11 @@ In this assignment, I have used the CO2 emission dataset. This dashboard is buil
 * Chosen appropriate visual encodings - **The colors for the pie chart have been chosen based on the share of each of the region. The colors for barchart and sunchart were chosen to show the distribution**..
 * The design paradigm followed is focus + context - **The year selected on the pie chart shows up on the bar chart as a highlighted area.**..
 
-# Screenshot 
+## Screenshot 
 
 ![Screen](./screenshot.png)
 
-# Setup 
+## Setup 
 
 Run These Commands To View The Dashboard Locally: 
 
