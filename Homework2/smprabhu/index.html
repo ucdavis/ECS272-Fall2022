@@ -16,7 +16,11 @@
   </div>
   <section class="container">
     <div class="chart-container">
-    <svg 
+      <p style="text-align: center; font-size: 30px;">CO2 Dashboard</p>
+      <p style="text-align: center;">Sunburst chart for the overall view of data</p>
+      <p>Click on each slice to unravel the data on three levels - Region, Country, Year. Click on the center to roll up a level.</p>
+      <p>Hover to reveal titles.</p>
+      <svg 
       version="1.1"
       baseProfile="full"
       xmlns="http://www.w3.org/2000/svg" 
@@ -25,6 +29,7 @@
     </svg>
   </div>
   <div class="chart-container right">
+    <p style="text-align: center;">Pie chart and bar chart serving as focus + context views.</p>
     <p>
       Choose a year to display the region wise data: <span id="year-val"></span>
       <input id="year" type="range" step="1">

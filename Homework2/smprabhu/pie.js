@@ -39,15 +39,16 @@ function createPie(width, height) {
         regions.push(region);
       }
     }
-    var colorScale = d3.scaleOrdinal()
-                       .domain(regions)
-                       .range(['#f95d6a', 
-                        '#ff7c43',
-                        '#003f5c',   
-                        '#a05195', 
-                        '#665191', 
-                        '#ffa600',
-                        '#d45087']); 
+    var colorScale = d3.scaleOrdinal(d3.schemeCategory20);
+    // var colorScale = d3.scaleOrdinal()
+    //                    .domain(regions)
+    //                    .range(['#f95d6a', 
+    //                     '#ff7c43',
+    //                     '#003f5c',   
+    //                     '#a05195', 
+    //                     '#665191', 
+    //                     '#ffa600',
+    //                     '#d45087']); 
   //5,6,1,3,2,7,4
     var update = pie
                    .select(".chart")

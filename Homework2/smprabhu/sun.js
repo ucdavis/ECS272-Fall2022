@@ -26,6 +26,14 @@ var svg = d3.select("#sun").append("svg")
   .attr("height", height)
 .append("g")
   .attr("transform", "translate(" + width / 3 + "," + (height / 2) + ")");
+
+  svg.append("text")
+  .attr("x", width / 2)
+  .attr("y", "1em")
+  .attr("font-size", "1.5em")
+  .style("text-anchor", "middle")
+  .classed("sun-title", true);
+
 d3.json("./data/co2_sun.json", function(error, root) {
 
 
@@ -39,7 +47,7 @@ svg.selectAll("path")
     .on("click", click)
     .append("title")
     
-    .text(d => `${d.ancestors().map(d => d.data.name).reverse().join("/")}\n${formatNumber(d.value)}`);
+    .text(d => `${d.ancestors().map(d => d.data.name).reverse().join("/")}\n`);
 });
 
 
@@ -57,4 +65,9 @@ svg.transition()
 }
 
 d3.select(self.frameElement).style("height", height + "px");
+
+var sunTitle = "Hello";
+
+d3.select(".sun-title")
+        .text(sunTitle);
 }

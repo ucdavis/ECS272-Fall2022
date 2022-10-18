@@ -20,7 +20,7 @@ var bar = d3.select("#bar")
     bar.append("text")
         .attr("x", width / 2)
         .attr("y", "1em")
-        .attr("font-size", "1.5em")
+        .attr("font-size", "1em")
         .style("text-anchor", "middle")
         .classed("bar-title", true);
 
