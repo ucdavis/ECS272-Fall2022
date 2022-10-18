@@ -187,9 +187,11 @@
             updatePlot() {
                 d3.selectAll("#pie svg").remove();
                 if(this.dd_option == "Dis_Vs_Sat") {
+                    this.plot_title = "Percent of Respondents Dissatisfied Vs. Satisfied";
                     this.drawPieChart(this.satisfaction_data);
                 }
                 else {
+                    this.plot_title = "Percent of Respondents Disloyal Vs. Loyal";
                     this.drawPieChart(this.loyalty_data);
                 }
             },

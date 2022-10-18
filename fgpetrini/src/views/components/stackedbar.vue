@@ -230,9 +230,11 @@
             updatePlot() {
                 d3.selectAll("#stacked-bar svg").remove();
                 if(this.dd_option == "Dis_Vs_Sat") {
+                    this.plot_title = "Respondent Satisfaction By Travel Class";
                     this.drawStackedBar(this.satisfaction_data);
                 }
                 else {
+                    this.plot_title = "Respondent Loyalty By Travel Class";
                     this.drawStackedBar(this.loyalty_data);
                 }
             },
