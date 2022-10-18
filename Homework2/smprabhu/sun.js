@@ -47,7 +47,7 @@ svg.selectAll("path")
     .on("click", click)
     .append("title")
     
-    .text(d => `${d.ancestors().map(d => d.data.name).reverse().join("/")}\n`);
+    .text(d => `${d.ancestors().map(d => d.data.name).reverse().join("/")}\n${formatNumber(d.data.size)}`);
 });
 
 
