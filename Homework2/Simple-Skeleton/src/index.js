@@ -1,15 +1,17 @@
-import testData from "./assets/data/test.json"; /* Example of reading in data */
 import './css/style.scss';
 import './css/styles.css'; /* Example of connecting a style-sheet */
-import {drawBarChart, drawBarFromCsvAsync} from "./js/barchart"; /* Example of importing one function from a js file for multiple {f(x), f(y), f(z)}*/
+import * as d3 from "d3";
+import histoData from "./assets/data/comediesPerYear.json"
+import { drawHisto } from "./js/histogram"
+import radarData from "./assets/data/countOtherGenresOut.json"
+import { drawRadarChart } from "./js/radar"
+import { drawBoxFromCsvAsync } from "./js/boxPlotFocus"
+
+console.log(histoData);
+drawHisto(histoData["data"], "#histo");
+
+console.log(radarData)
+drawRadarChart("#radar",[radarData[0]], 'undefined');
 
 
-let x = 2;
-console.log(testData);
-drawBarChart(testData["data"], "#bar");
-drawBarFromCsvAsync();
-
-/* 
-    TODO: all the other logic for implementing your charts + adding in some basic filters 
-    (e.g. dropdown menus for seeing different aspects of the data)
-*/
+drawBoxFromCsvAsync()

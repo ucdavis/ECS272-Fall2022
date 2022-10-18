@@ -1,0 +1,49 @@
+[
+    
+    [
+        {
+            "axis": "action",
+            "value": 46
+        },
+        {
+            "axis": "animation",
+            "value": 16
+        },
+        {
+            "axis": "crime",
+            "value": 39
+        },
+        {
+            "axis": "documentation",
+            "value": 111
+        },
+        {
+            "axis": "drama",
+            "value": 228
+        },
+        {
+            "axis": "european",
+            "value": 46
+        },
+        {
+            "axis": "family",
+            "value": 60
+        },
+        {
+            "axis": "fantasy",
+            "value": 30
+        },
+        {
+            "axis": "music",
+            "value": 27
+        },
+        {
+            "axis": "romance",
+            "value": 166
+        },
+        {
+            "axis": "thriller",
+            "value": 17
+        }
+    ]
+]
