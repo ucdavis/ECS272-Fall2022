@@ -1,5 +1,8 @@
 <template>
-    <div id="pie"></div>
+    <div class="pie_container">
+        <h1 id="pie_title"> {{ plot_title }} </h1>
+        <div id="pie"></div>
+    </div>
 </template>
 
 <script>
@@ -15,6 +18,7 @@
                 loyalty_data : [],
                 color_dict : {"default" : ["#999999", "#ef8a62"],
                                 "cb_accessible" : ["#67a9cf", "#ef8a62"] },
+                plot_title : "Percent of Respondents Dissatisfied Vs. Satisfied",
             }
         },
         props:{
@@ -117,7 +121,7 @@
                     d3.select(this)
                         .attr("stroke", "black")
                         .attr("stroke-width", 2)
-                        .attr("transform", "scale(1.1)")
+                        .attr("transform", "scale(1.05)")
                     })
                     .on("mouseout", function(d) {
                     d3.select(this)
@@ -196,7 +200,26 @@
 
 
 <style>
+
+.pie_container {
+    width: 100%;
+    height: 100%;
+}
 #pie {
-    background-color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 90;
+}
+
+#pie_title {
+    position: relative;
+    top: 40px;
+    left: 0;
+    z-index: 100;
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
 }
 </style>

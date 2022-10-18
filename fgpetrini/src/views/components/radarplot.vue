@@ -1,24 +1,26 @@
 <template>
-    <div id="checkbox-selection" class="dropdown-check-list">
-        <span class="anchor">Filter Data</span>
-        <ul id="checkbox-selection-items" class="items">
-            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Inflight Wifi"/> Inflight Wifi</li>
-            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Departure/Arrival Time"/> Departure/Arrival Time</li>
-            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Ease of Booking"/> Ease of Booking</li>
-            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Gate Location"/> Gate Location</li>
-            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Food and Drink"/> Food and Drink</li>
-            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Online Boarding"/> Online Boarding</li>
-            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Seat Comfort"/> Seat Comfort</li>
-            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Inflight Entertainment"/> Inflight Entertainment</li>
-            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="On-board Service"/> On-board Service</li>
-            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Leg Room"/> Leg Room</li>
-            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Baggage Handling"/> Baggage Handling</li>
-            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Checkin"/> Checkin</li>
-            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Inflight Service"/> Inflight Service</li>
-            <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Cleanliness"/> Cleanliness</li>
-        </ul>
-    </div>
-    <div id="radar"> 
+    <div class="radar_container">
+        <div id="checkbox-selection" class="dropdown-check-list">
+            <span class="anchor">Filter Data</span>
+            <ul id="checkbox-selection-items" class="items">
+                <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Inflight Wifi"/> Inflight Wifi</li>
+                <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Departure/Arrival Time"/> Departure/Arrival Time</li>
+                <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Ease of Booking"/> Ease of Booking</li>
+                <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Gate Location"/> Gate Location</li>
+                <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Food and Drink"/> Food and Drink</li>
+                <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Online Boarding"/> Online Boarding</li>
+                <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Seat Comfort"/> Seat Comfort</li>
+                <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Inflight Entertainment"/> Inflight Entertainment</li>
+                <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="On-board Service"/> On-board Service</li>
+                <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Leg Room"/> Leg Room</li>
+                <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Baggage Handling"/> Baggage Handling</li>
+                <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Checkin"/> Checkin</li>
+                <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Inflight Service"/> Inflight Service</li>
+                <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Cleanliness"/> Cleanliness</li>
+            </ul>
+        </div>
+        <div id="radar"> </div>
+        <h1 id="radar_title">Average Respondent Rating By Service Category</h1>
     </div>
 </template>
 
@@ -80,6 +82,7 @@
                                 "cb_accessible" : ["#67a9cf", "#ef8a62"] },
                 satisfaction_data : [],
                 loyalty_data : [],
+                plot_title : "Average Respondent Rating By Service Category"
 
             }
         },
@@ -93,7 +96,7 @@
         mounted(){
             this.color = d3.scaleOrdinal().range(this.color_dict[this.radio_option]);
             document.getElementById("checkbox-selection").style.marginBottom = -1 * this.height * 0.2;
-            this.radius = this.height * 0.4;
+            this.radius = this.height * 0.38;
             this.satisfaction_data = this.groupBy(this.myRadarPlotData, "satisfaction");
             const satisfied = this.getSpiderPlotData(this.satisfaction_data["satisfied"]);
             const dissatisfied = this.getSpiderPlotData(this.satisfaction_data["neutral or dissatisfied"]);
@@ -136,7 +139,7 @@
                 const dotRadius = this.dotRadius;
 
                 let svg = d3.select(id).append("svg")
-                    .attr("viewBox", [-30, 30, this.width, this.height])
+                    .attr("viewBox", [-30, 15, this.width, this.height])
                     .attr("width", this.width)
                     .attr("height", this.height);
                 
@@ -242,7 +245,7 @@
                     })
                     .append("title")
                         .text((d, i) => {
-                            return Math.round(d.value*100)/100;
+                            return String(Math.round(d.value*100)/100)+"/5";
                         });
             },
             groupBy(objectArray, property) {
@@ -358,6 +361,7 @@
 
 #checkbox-selection{
     padding-top: 10px;
+    padding-left: 10px;
     position: absolute;
     z-index: 10;
     
@@ -437,5 +441,19 @@ g[data-name="cb0"] circle {
 g[data-name="cb1"] circle {
     fill: #ef8a62;
     stroke: #ef8a62;
+}
+.radar_container {
+    width: 100%;
+    height: 100%;
+}
+
+#radar_title {
+    padding-top: 10px;
+    padding-left: 100px;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
 }
 </style>

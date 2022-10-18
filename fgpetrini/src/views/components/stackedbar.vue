@@ -1,5 +1,8 @@
 <template>
-    <div id="stacked-bar"></div>
+    <div class="bar_container">
+        <h1 id="bar_title"> {{ plot_title }} </h1>
+        <div id="stacked-bar"></div>
+    </div>
 </template>
 
 <script>
@@ -16,6 +19,7 @@
                 satisfaction_bins : ["Dissatisfied Customers", "Satisfied Customers"],
                 color_dict : {"default" : ["#999999", "#ef8a62"],
                                 "cb_accessible" : ["#67a9cf", "#ef8a62"] },
+                plot_title : "Respondent Satisfaction By Travel Class",
             }
         },
         props:{
@@ -65,7 +69,7 @@
                 y = d => d, // given d in data, returns the (quantitative) y-value
                 z = () => 1, // given d in data, returns the (categorical) z-value
                 title, // given d in data, returns the title text
-                marginTop = 30, // top margin, in pixels
+                marginTop = 50, // top margin, in pixels
                 marginRight = 0, // right margin, in pixels
                 marginBottom = 30, // bottom margin, in pixels
                 marginLeft = 40, // left margin, in pixels
@@ -145,7 +149,7 @@
                         .attr("stroke-opacity", 0.1))
                     .call(g => g.append("text")
                         .attr("x", -marginLeft)
-                        .attr("y", 10)
+                        .attr("y", 40)
                         .attr("fill", "currentColor")
                         .attr("text-anchor", "start")
                         .text(yLabel));
@@ -238,6 +242,27 @@
 </script>
 
 
-<style>
+<style scoped>
+.bar_container {
+    width: 100%;
+    height: 100%;
+}
+#stacked-bar {
+    position: relative;
+    top: -41px;
+    left: 0;
+    z-index: 90;
+}
 
+#bar_title {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 50px;
+    z-index: 100;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
 </style>
