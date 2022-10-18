@@ -2,18 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Data Dashboard</title>
+  <title>CO2 Dashboard</title>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="input.css">
+  <link rel="shortcut icon" href="#">
 </head>
 <body>
   <div id="nav">
-    <!-- <p>
-      Explore CO<sub>2</sub> emissions by year. 
-      Current year: <span id="year-val"></span>
-      <input id="year" type="range" step="1">
-    </p> -->
     <p>
       <input type="radio" name="data-type" value="emissionsPerCapita" checked style="display: none;"> 
     </p>
@@ -24,7 +20,7 @@
       version="1.1"
       baseProfile="full"
       xmlns="http://www.w3.org/2000/svg" 
-      id="map"
+      id="sun"
       style="height: 600;width: 400;">
     </svg>
   </div>
@@ -56,7 +52,6 @@
   <script src="pie.js"></script>
   <script src="bar.js"></script>
   <script src="sun.js"></script>
-  <!-- <script src="map.js"></script> -->
   <script src="app.js"></script>
 </body>
 </html>

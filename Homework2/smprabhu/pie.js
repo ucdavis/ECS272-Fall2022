@@ -40,7 +40,6 @@ function createPie(width, height) {
       }
     }
 
-    console.log(regions);
   
     var colorScale = d3.scaleOrdinal()
                        .domain(regions)

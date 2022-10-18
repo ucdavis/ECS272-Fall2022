@@ -1,7 +1,6 @@
 
 d3.queue()
-  .defer(d3.json, "//unpkg.com/world-atlas@1.1.4/world/50m.json")
-  .defer(d3.csv, "./data/output.csv", function(row) {
+  .defer(d3.csv, "./data/bar.csv", function(row) {
     return {
       continent: row.Continent,
       country: row.Country,
@@ -12,7 +11,7 @@ d3.queue()
       year: +row.Year
     }
   })
-  .await(function(error, mapData, data) {
+  .await(function(error, data) {
     if (error) throw error;
 
     var extremeYears = d3.extent(data, d => d.year);
@@ -21,7 +20,6 @@ d3.queue()
     
     var currentDataType = d3.select('input[name="data-type"]:checked')
                             .attr("value");
-    // var geoData = topojson.feature(mapData, mapData.objects.countries).features;
 
     var width = +d3.select(".chart-container")
                    .node().offsetWidth;
@@ -30,9 +28,7 @@ d3.queue()
 
     
 
-    // createMap(width, width * 4 / 5);
     createBar(width, height);
-    // drawMap(geoData, data, currentYear, currentDataType);
     drawBar(data, currentDataType, "");
 
     var countryMap = {};
@@ -41,7 +37,6 @@ d3.queue()
         var country = d.country;
         countryMap[country] = [];
 
-        // { cerealName: [ bar1Val, bar2Val, ... ] }
         yearFields.forEach(function(field) {
           countryMap[country].push( +d[field] );
         });
@@ -49,7 +44,6 @@ d3.queue()
 
     var countries = Object.keys(countryMap).sort();
 
-    // var values = ["dog", "cat", "parrot", "rabbit"];
 
     var select = document.createElement("select");
     select.name = "countries";
@@ -74,9 +68,6 @@ d3.queue()
   
       currentDataType = 'emissionsPerCapita';
       drawBar(data, currentDataType, selected);
-      // currentDataType = d3.event.target.value;
-      //     drawMap(geoData, data, currentYear, currentDataType);
-      //     drawBar(data, currentDataType, country);
   })
 
 
@@ -88,7 +79,6 @@ d3.queue()
           var country = active ? active.properties.country : "";
 
           currentDataType = d3.event.target.value;
-          // drawMap(geoData, data, currentYear, currentDataType);
           drawBar(data, currentDataType, country);
         });
 
@@ -109,7 +99,7 @@ d3.queue()
       if (isCountry) data = tgt.data()[0].properties;
       if (isArc) {
         data = tgt.data()[0].data;
-        // percentage = `<p>Percentage of total: ${getPercentage(tgt.data()[0])}</p>`;
+        percentage = `<p>Percentage of total: ${getPercentage(tgt.data()[0])}</p>`;
       }
       if (isBar) data = tgt.data()[0];
       tooltip
@@ -132,15 +122,14 @@ d3.queue()
   });
 
   d3.queue()
-  .defer(d3.json, "//unpkg.com/world-atlas@1.1.4/world/50m.json")
-  .defer(d3.csv, "./data/output-2.csv", function(row) {
+  .defer(d3.csv, "./data/pie.csv", function(row) {
     return {
       emissionsPerCapita: +row["Emissions Per Capita"],
       region: row.Region,
       year: +row.Year
     }
   })
-  .await(function(error, mapData, data) {
+  .await(function(error, data) {
     if (error) throw error;
 
     var extremeYears = d3.extent(data, d => d.year);
@@ -149,17 +138,13 @@ d3.queue()
     
     var currentDataType = d3.select('input[name="data-type"]:checked')
                             .attr("value");
-    // var geoData = topojson.feature(mapData, mapData.objects.countries).features;
 
     var width = +d3.select(".chart-container")
                    .node().offsetWidth;
     var height = 300;
 
     
-
-    // createMap(width, width * 4 / 5);
     createPie(width, height);
-    // drawMap(geoData, data, currentYear, currentDataType);
     drawPie(data, currentYear);
 
     
@@ -172,7 +157,6 @@ d3.queue()
         .property("value", currentYear)
         .on("input", () => {
           currentYear = +d3.event.target.value;
-          // drawMap(geoData, data, currentYear, currentDataType);
           drawPie(data, currentYear);
           highlightBars(currentYear);
         });

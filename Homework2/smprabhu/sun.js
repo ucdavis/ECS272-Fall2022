@@ -21,12 +21,12 @@ var arc = d3.arc()
   .innerRadius(function(d) { return Math.max(0, y(d.y0)); })
   .outerRadius(function(d) { return Math.max(0, y(d.y1)); });
 
-var svg = d3.select("#map").append("svg")
+var svg = d3.select("#sun").append("svg")
   .attr("width", width)
   .attr("height", height)
 .append("g")
   .attr("transform", "translate(" + width / 3 + "," + (height / 2) + ")");
-d3.json("./data/flare-2.json", function(error, root) {
+d3.json("./data/co2_sun.json", function(error, root) {
 
 
 root = d3.hierarchy(root);

@@ -1,25 +1,5 @@
 function createBar(width, height) {
-
-  // var values = ["dog", "cat", "parrot", "rabbit"];
-
-  // var select = document.createElement("select");
-  // select.name = "pets";
-  // select.id = "pets"
-
-  // for (const val of values) {
-  //   var option = document.createElement("option");
-  //   option.value = val;
-  //   option.text = val.charAt(0).toUpperCase() + val.slice(1);
-  //   select.appendChild(option);
-  // }
-
-  // var label = document.createElement("label");
-  // label.innerHTML = "Select a country to display yearwise data"
-  // label.htmlFor = "pets";
-
-  // document.getElementById("dropdown").appendChild(label).appendChild(select);
-
-    var bar = d3.select("#bar")
+var bar = d3.select("#bar")
                     .attr("width", width)
                     .attr("height", height);
   
