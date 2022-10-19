@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>CO2 Emissions Dashboard</title>
+  </head>
+  
+  <body>
+    
+      <h3 style = "font-family: Arial; position: absolute; left: 750px; top: 10px;">CO2 Emissions 1990-2019</h3>
+      <b style = "font-family: Arial; position: absolute; left: 100px; top: 900px;">**CO2 emissions are measured in metric tons per capita throughout this dashboard</b>
+
+      <!--Line chart-->
+      <div id="line" style = "position: absolute; left: 20px; top: 530px;"></div>
+      <p style = "font-family: Arial; position: absolute; left: 70px; top: 510px;">Select a country:</p>
+      <select id="selectbutton" style = "position: absolute; left: 195px; top: 512px; font-family: Arial; font-size: 16;"></select>
+      <b style = "font-family: Arial; font-size: 18px; position: absolute; left: 370px; top: 500px;">CO2 Emissions Overtime</b>
+
+      <!--Countries Legend-->
+      <div>
+        <svg id="legend1" height=500 width=400 style = "position: absolute; left: 1500px; top: 50px;"></svg>
+      </div>
+      <b style = "font-family: Arial; font-size: 15px; position: absolute; left: 1760px; top: 120px;">Countries</b>
+
+      <!--Regions Legend-->
+      <!--
+      <div>
+        <svg id="legend2" height=500 width=400 style = "position: absolute; left: 1500px; top: 350px;"></svg>
+      </div>
+      <b style = "font-family: Arial; font-size: 15px; position: absolute; left: 1750px; top: 415px;">Regions</b>
+      -->
+
+      <!--Bar chart-->
+      <div  style = "position: absolute; left: 20px; top: 30px;">
+         <svg id="bar"></svg>
+      </div>
+      <b style = "font-family: Arial; font-size: 18px; position: absolute; left: 330px; top: 55px;">Aggregated CO2 Emissions Since 1990</b>
+      <p style = "font-family: Arial; position: absolute; left: 20px; top: 15px;">Click on a metric:</p>
+      
+      <button id="button-mean" style = "font-family: Arial; position: absolute; left: 150px; top: 12px; height: 30px;
+      width: 60px;">Mean</button>
+      <button id="button-max" style = "font-family: Arial; position: absolute; left: 215px; top: 12px; height: 30px;
+      width: 60px;">Max</button>
+      <button id="button-min" style = "font-family: Arial; position: absolute; left: 280px; top: 12px; height: 30px;
+      width: 60px;">Min</button>
+
+
+      <!--Small multiples-->
+      <div id="smallmultiples" style = "position: absolute; left: 910px; top: 60px;"></div>
+
+      <p style = "font-family: Arial; font-size: 18px; position: absolute; left: 860px; top: 450px; transform: rotate(-90deg);">CO2 Emissions</p>
+      <p style = "font-family: Arial; font-size: 18px; position: absolute; left: 1350px; top: 900px;">Year</p>
+
+      <button id="button-country" style = "font-family: Arial; position: absolute; left: 1700px; top: 12px; height: 30px;
+      width: 75px;">Country</button>
+      <button id="button-region" style = "font-family: Arial; position: absolute; left: 1780px; top: 12px; height: 30px;
+      width: 75px;">Region</button>
+      <p style = "font-family: Arial; position: absolute; left: 1555px; top: 15px;">Choose granularity:</p>
+
+      <b style = "font-family: Arial; font-size: 18px; position: absolute; left: 1150px; top: 30px;">CO2 Emissions Since 2010 Side-by-Side</b>
+    
+    <script src="./bundle.js"></script>
+  </body>
+</html>
