@@ -1,9 +1,9 @@
 <template>
     <a-layout class="main-page">
-        <Navigation />
+        <!-- <Navigation /> -->
         <a-layout>
-            <a-layout style="padding: 0 24px 24px">
-                <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
+            <a-layout >
+                <a-layout-content>
                     <router-view></router-view>
                 </a-layout-content>
             </a-layout>
@@ -14,6 +14,7 @@
 <script setup lang="ts">
 // import Navigation from "./views/components/navbar.vue"
 // import SideBar from "./views/components/sidebar.vue"
+
 
 </script>
 

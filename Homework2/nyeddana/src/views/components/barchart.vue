@@ -21,6 +21,7 @@
         mounted(){
             console.log(testData);
             let localData = testData['data'];
+            console.log(localData);
             this.drawBarChart(localData, "#bar") /* Example of reading data from a json file */
             // this.drawBarChart(this.myBarchartData, "#bar")
             console.log("Data Passed down as a Prop  ", this.myBarchartData)
