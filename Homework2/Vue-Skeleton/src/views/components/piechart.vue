@@ -127,7 +127,7 @@
                     .attr('fill', function(d){ return(color(d.data[0])) })
                     .attr("stroke", "black")
                     .style("stroke-width", "2px")
-                    .style("opacity", 0.7)
+                    .style("opacity", 1)
 
                 // Now add the annotation. Use the centroid method to get the best coordinates
                 svg
@@ -207,6 +207,7 @@
                         .style("stroke-width", "2px")
                         .style("opacity", 1)
                     
+                    // Now add the annotation
                     svg
                     .selectAll('mySlices')
                     .data(data_ready)
