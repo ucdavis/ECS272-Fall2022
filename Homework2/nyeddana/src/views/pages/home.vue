@@ -7,7 +7,7 @@
       <div class="charts-left">
         <div class="radarChart">
           <div class="radar-dd">
-            Choose Data Type:
+            Filter By:
             <a-select
               ref="select"
               style="width: 160px"

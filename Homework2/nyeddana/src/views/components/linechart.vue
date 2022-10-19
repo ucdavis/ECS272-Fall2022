@@ -89,7 +89,7 @@ export default {
           .select(id)
           .append("svg")
           .attr("width", width + margin.left + margin.right)
-          .attr("height", height + 50)
+          .attr("height", height + 80)
           .append("g")
           .attr("transform", `translate(${margin.left},${margin.top})`);
 

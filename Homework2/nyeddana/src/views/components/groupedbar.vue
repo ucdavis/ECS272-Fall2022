@@ -64,7 +64,7 @@ export default {
   methods: {
     drawGroupBarChart(localData, id, type) {
       const margin = { top: 40, right: 0, bottom: 120, left: 200 };
-      const height = 178;
+      const height = 148;
       const width = 500;
 
       //remove chart to recreate upon dropdown change
