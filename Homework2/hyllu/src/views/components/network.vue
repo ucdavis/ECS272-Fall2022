@@ -138,12 +138,12 @@
 
             drawNetwork(nodes, links, id, selection) {
 
-                const margin = { top: 50, right: 50, bottom: 20, left: 5 };
+                const margin = { top: 20, right: 5, bottom: 50, left: 5 };
                 // const height = 300;
                 // const width = 500;
 
-                let width  = 400;
-                let height = 400;
+                let width  = d3.select(id).node().getBoundingClientRect().width;
+                let height = d3.select(id).node().getBoundingClientRect().width;
 
                 const intern = (value) => value !== null && typeof value === 'object' ? value.valueOf() : value;
 
@@ -176,7 +176,7 @@
                 const forceNode = d3.forceManyBody();
                 const forceLink = d3.forceLink(links).id(({
                     index: i
-                }) => N[i]).distance(100);
+                }) => N[i]).distance(120);
 
                 d3.selectAll(".layout").remove();
                 let svg = d3.select(id).append("svg")

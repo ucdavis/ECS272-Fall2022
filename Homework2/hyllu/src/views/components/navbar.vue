@@ -5,14 +5,14 @@
         :selectedKeys="selectedKey"
         theme="dark"
         mode="horizontal"
-        :style="{ lineHeight: '64px' }"
+        class="header_button"
       >
-        <a-menu-item key="1"> 
-             <router-link to="/">Home</router-link>
+        <a-menu-item key="1" > 
+             <router-link to="/" >Home</router-link>
         </a-menu-item>
-        <a-menu-item key="2">
+        <!-- <a-menu-item key="2">
              <router-link to="/about">About</router-link>
-        </a-menu-item>
+        </a-menu-item> -->
       </a-menu>
     </a-layout-header>
 </template>
@@ -24,6 +24,14 @@
 
 </script>
 
-<style scoped>
-
+<style>
+    .header{
+        height:5%;
+        width:100%;
+    }
+    .header_button{
+        height:100%;
+        width:10%;
+        justify-content: center;
+    }
 </style>

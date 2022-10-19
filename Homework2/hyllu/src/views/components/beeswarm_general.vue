@@ -85,7 +85,7 @@
             },
 
             drawBeeswarm(data, id, selection) {
-                const width = 600;
+                const width = d3.select(id).node().getBoundingClientRect().width;
                 const margin = { top: 20, right: 40, bottom: 60, left: 60 };
 
                 // Compute values.
@@ -113,7 +113,8 @@
                 const Y = dodge(I.map(i => xScale(X[i])), radius * 2 + padding);
 
                 // Compute the default height;
-                let height = d3.max(Y) + (radius + padding) * 2 + margin.top + margin.bottom;
+                // let height = d3.max(Y) + (radius + padding) * 2 + margin.top + margin.bottom;
+                let height = d3.select(id).node().getBoundingClientRect().height;
 
                 // Given an array of x-values and a separation radius, returns an array of y-values.
                 function dodge(X, radius) {
@@ -264,5 +265,9 @@
 
 
 <style>
-
+    #beeswarm {
+        width: 100%;
+        height: 80%;
+        position: relative;
+    }
 </style>

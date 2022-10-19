@@ -198,8 +198,8 @@ import { object } from "vue-types";
                 // const height = 300;
                 // const width = 500;
 
-                let width  = 600;
-                let height = 300;
+                let width  = d3.select(id).node().getBoundingClientRect().width;
+                let height = d3.select(id).node().getBoundingClientRect().height;
 
                 // Compute values.
                 const X = d3.map(data, d => d.album);
@@ -360,8 +360,8 @@ import { object } from "vue-types";
                 // const height = 300;
                 // const width = 500;
 
-                let width  = 600;
-                let height = 300;
+                let width  = d3.select(id).node().getBoundingClientRect().width;
+                let height = d3.select(id).node().getBoundingClientRect().height;
                 console.log(data);
                 const chartData = data;
                 const X = d3.map(chartData, d => d.album);
@@ -528,5 +528,8 @@ import { object } from "vue-types";
 
 
 <style>
-
+    #bar {
+        width: 100%;
+        height: 80%;
+    }
 </style>
