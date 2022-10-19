@@ -75,12 +75,7 @@ export default {
         break;
     }
     console.log(labels, localData);
-    this.drawRadarChart(
-      "#radar",
-      labels,
-      localData,
-      options
-    ); 
+    this.drawRadarChart("#radar", labels, localData, options);
   },
   watch: {
     RadartestData() {
@@ -159,7 +154,7 @@ export default {
       var svg = d3
         .select(id)
         .append("svg")
-        .attr("width", cfg.w + 50 +cfg.margin.right)
+        .attr("width", cfg.w + 50 + cfg.margin.right)
         .attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom)
         .attr("class", "radar" + id);
       //Append a g element
@@ -386,12 +381,10 @@ export default {
         .on("mouseover", function (d, i) {
           var newX = parseFloat(d3.select(this).attr("cx")) - 10;
           var newY = parseFloat(d3.select(this).attr("cy")) - 10;
-          console.log(d);
-
           tooltip
             .attr("x", newX)
             .attr("y", newY)
-            .text(d.value)
+            .text(d.toElement.__data__.value)
             .transition()
             .duration(200)
             .style("opacity", 1);
