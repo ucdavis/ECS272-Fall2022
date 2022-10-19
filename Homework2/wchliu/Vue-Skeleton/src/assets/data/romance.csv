@@ -1,0 +1,684 @@
+id,title,release_year,runtime,genres,production_country,imdb_score,imdb_votes
+tm98978,The Blue Lagoon,1980,104,"['romance', 'action', 'drama']",['US'],5.8,69844.0
+tm16479,White Christmas,1954,115,"['romance', 'comedy']",['US'],7.5,42488.0
+tm94651,Dostana,1980,161,"['drama', 'comedy', 'crime', 'romance', 'action']",['IN'],2.1,25.0
+tm27298,Saladin the Victorious,1963,186,"['action', 'drama', 'war', 'history', 'romance']",['EG'],7.6,2508.0
+tm100027,Alibaba Aur 40 Chor,1979,146,"['drama', 'romance', 'action', 'fantasy', 'family']","['SU', 'IN']",6.2,565.0
+tm19608,The Blazing Sun,1954,100,"['crime', 'romance', 'drama']",['EG'],7.4,1219.0
+tm204541,Dark Waters,1956,120,"['action', 'drama', 'romance', 'thriller']",['EG'],6.7,610.0
+tm107372,Manoranjan,1974,162,"['romance', 'drama', 'comedy']",['IN'],6.5,237.0
+tm358653,Ujala,1959,142,"['romance', 'crime', 'drama']",['IN'],6.6,78.0
+tm403346,Chadi Jawani Budhe Nu,1976,135,['romance'],['IN'],4.6,14.0
+tm16812,Bandie,1978,141,"['drama', 'action', 'romance']",['IN'],4.4,35.0
+tm138875,When Harry Met Sally...,1989,96,"['comedy', 'romance', 'drama']",['US'],7.7,216199.0
+tm133087,Steel Magnolias,1989,119,"['comedy', 'drama', 'romance']",['US'],7.3,54946.0
+tm117580,She's Gotta Have It,1986,84,"['romance', 'comedy']",['US'],6.7,14472.0
+tm130586,Endless Love,1981,116,"['romance', 'drama']",['US'],4.9,8524.0
+tm52815,Disco Dancer,1982,106,"['drama', 'romance']",['IN'],6.4,1476.0
+tm157603,Dil,1990,172,"['drama', 'comedy', 'romance']",['IN'],6.6,5316.0
+tm172482,Sohni Mahiwal,1984,160,"['romance', 'drama', 'action']",['IN'],6.1,297.0
+tm419052,Ek Jaan Hain Hum,1983,151,"['family', 'romance']",['IN'],6.3,70.0
+tm122434,Forrest Gump,1994,142,"['drama', 'romance']",['US'],8.8,2021343.0
+tm191110,Titanic,1997,194,"['drama', 'romance']",['US'],7.9,1146825.0
+tm192405,Gattaca,1997,106,"['scifi', 'thriller', 'romance', 'drama']",['US'],7.8,300701.0
+tm11556,The Quick and the Dead,1995,107,"['action', 'thriller', 'western', 'romance']","['JP', 'US']",6.5,93767.0
+tm56574,You've Got Mail,1998,119,"['comedy', 'romance', 'drama']",['US'],6.7,211635.0
+tm6859,My Girl,1991,103,"['drama', 'family', 'romance', 'comedy', 'european']",['US'],6.9,80590.0
+tm113576,Little Women,1994,115,"['drama', 'romance', 'family']",['US'],7.3,58178.0
+tm55369,Edge of Seventeen,1998,104,"['romance', 'drama', 'comedy']",['US'],6.8,6549.0
+tm117488,The Next Karate Kid,1994,107,"['action', 'drama', 'family', 'sport', 'romance']",['US'],4.5,30422.0
+tm10811,Heavy,1995,105,"['drama', 'romance']",['US'],6.8,5047.0
+tm67635,Kuch Kuch Hota Hai,1998,185,"['romance', 'comedy', 'drama']",['IN'],7.6,52036.0
+tm117873,Hum Aapke Hain Koun..!,1994,206,"['drama', 'romance', 'comedy']",['IN'],7.5,21123.0
+tm55100,Dil Se..,1998,163,"['drama', 'romance']",['IN'],7.5,28586.0
+tm189171,Wild Tango,1993,124,"['drama', 'music', 'romance']","['ES', 'AR']",6.7,1584.0
+tm12876,Bombay,1995,141,"['drama', 'romance']",['IN'],8.1,12629.0
+tm62176,Mann,1999,174,"['drama', 'romance']",['IN'],6.1,5451.0
+tm52871,Soldier,1998,156,"['thriller', 'action', 'drama', 'romance']",['IN'],6.2,3063.0
+tm62385,Hum Saath Saath Hain,1999,177,"['romance', 'family', 'fantasy', 'drama']",['IN'],6.2,8552.0
+tm191614,Destiny,1997,136,"['drama', 'history', 'comedy', 'romance']","['FR', 'EG']",7.1,2857.0
+tm9898,Muthu,1995,165,"['comedy', 'drama', 'action', 'romance']",['IN'],7.6,3056.0
+tm47530,Jeans,1998,175,"['comedy', 'drama', 'romance']",['IN'],6.4,3604.0
+tm192301,Minsara Kanavu,1997,145,"['comedy', 'romance', 'drama']",['IN'],6.7,1226.0
+tm118438,Anjaam,1994,137,"['romance', 'crime', 'thriller', 'drama']",['IN'],6.6,6532.0
+tm27601,Phir Bhi Dil Hai Hindustani,2000,160,"['comedy', 'romance', 'drama']",['IN'],6.1,7610.0
+tm52083,West Beirut,1998,105,"['romance', 'drama', 'comedy', 'war', 'european']","['FR', 'NO', 'LB', 'BE']",7.6,4221.0
+tm25389,Fiza,2000,170,"['romance', 'action', 'crime', 'drama', 'thriller']",['IN'],6.0,4213.0
+tm44776,The Other,1999,106,"['romance', 'european', 'drama']","['FR', 'EG']",5.9,997.0
+tm42397,Hello Brother,1999,131,"['comedy', 'romance', 'fantasy', 'action']",['IN'],4.6,4262.0
+tm314602,Dushmani,1995,156,"['romance', 'action', 'drama']",['IN'],5.0,249.0
+tm89677,The Terminal,2004,128,"['drama', 'comedy', 'romance']",['US'],7.4,441752.0
+tm139658,Big Fish,2003,125,"['action', 'fantasy', 'drama', 'romance']",['US'],8.0,437650.0
+tm133767,Love Actually,2003,135,"['drama', 'comedy', 'romance']","['GB', 'US']",7.6,476101.0
+tm85811,The Girl Next Door,2004,110,"['comedy', 'romance', 'drama']",['US'],6.7,223380.0
+tm148270,Something's Gotta Give,2003,128,"['drama', 'comedy', 'romance']",['US'],6.7,121364.0
+tm150260,Cloudy with a Chance of Meatballs,2009,90,"['animation', 'comedy', 'family', 'fantasy', 'scifi', 'romance', 'drama']",['US'],6.9,229274.0
+tm23935,The Lake House,2006,99,"['drama', 'thriller', 'fantasy', 'romance', 'documentation']",['US'],6.8,149070.0
+tm169949,Just Like Heaven,2005,95,"['romance', 'drama', 'comedy', 'fantasy']",['US'],6.7,108029.0
+tm111600,The Sweetest Thing,2002,84,"['comedy', 'romance']",['US'],5.1,58884.0
+tm88045,How Do You Know,2010,121,"['comedy', 'drama', 'romance']",['US'],5.4,50383.0
+tm86189,Good Luck Chuck,2007,101,"['comedy', 'romance']","['US', 'CA']",5.6,90212.0
+tm89684,New York Minute,2004,87,"['comedy', 'crime', 'family', 'romance']",['US'],4.9,23476.0
+tm165593,Rumor Has It...,2005,97,"['romance', 'comedy', 'drama']","['DE', 'US']",5.5,58247.0
+tm39487,Catch and Release,2006,111,"['drama', 'romance', 'comedy']",['US'],5.9,26528.0
+tm43399,Lagaan: Once Upon a Time in India,2001,224,"['romance', 'drama', 'action', 'sport']",['IN'],8.1,111053.0
+tm29555,Friends with Money,2006,88,"['comedy', 'drama', 'romance']",['US'],5.8,30468.0
+tm97070,Life As We Know It,2010,114,"['comedy', 'romance', 'drama']",['US'],6.5,131623.0
+tm86924,Soul Plane,2004,86,"['romance', 'comedy']",['US'],4.5,23048.0
+tm130574,Did You Hear About the Morgans?,2009,103,"['comedy', 'drama', 'romance']",['US'],4.9,40551.0
+tm97544,Alpha and Omega,2010,88,"['animation', 'family', 'comedy', 'action', 'romance']","['CA', 'US', 'IN']",5.1,14362.0
+tm164557,Initial D,2005,107,"['crime', 'thriller', 'drama', 'action', 'animation', 'romance', 'comedy']","['JP', 'HK']",6.3,8678.0
+tm85549,Tito,2004,120,"['documentation', 'crime', 'drama', 'romance', 'action']",['EG'],7.2,3214.0
+tm73058,Om Shanti Om,2007,162,"['thriller', 'drama', 'action', 'comedy', 'fantasy', 'romance']",['IN'],6.7,43052.0
+tm36475,Kabhi Khushi Kabhie Gham,2001,210,"['drama', 'romance']",['IN'],7.4,49273.0
+tm144345,Kal Ho Naa Ho,2003,186,"['drama', 'romance', 'comedy']",['IN'],7.9,68551.0
+tm76835,Jab We Met,2007,144,"['romance', 'comedy', 'drama']",['IN'],7.9,52531.0
+tm29269,Jodhaa Akbar,2008,214,"['romance', 'history', 'war', 'action', 'drama']",['IN'],7.5,32440.0
+tm72587,Guru,2007,166,"['romance', 'documentation', 'drama', 'european']",['IN'],7.7,23708.0
+tm83175,Welcome,2007,160,"['drama', 'action', 'comedy', 'romance', 'crime']",['IN'],7.0,22243.0
+tm61056,Dil Chahta Hai,2001,184,"['romance', 'comedy', 'drama']",['IN'],8.1,71586.0
+tm110923,Divine Intervention,2002,92,"['romance', 'comedy', 'drama', 'war']","['FR', 'MA', 'DE', 'PS']",6.6,3598.0
+tm29731,Chup Chup Ke,2006,165,"['comedy', 'drama', 'romance']",['IN'],6.9,10810.0
+tm44530,Fashion,2008,167,"['drama', 'romance']",['IN'],6.9,12533.0
+tm155761,Ajab Prem Ki Ghazab Kahani,2009,150,"['comedy', 'action', 'romance']",['IN'],6.3,14603.0
+tm105278,Inuyasha the Movie 2: The Castle Beyond the Looking Glass,2002,100,"['fantasy', 'action', 'animation', 'romance', 'comedy']",['JP'],7.3,2148.0
+tm98975,Guzaarish,2010,126,"['romance', 'drama']",['IN'],7.4,18603.0
+tm39557,Jaane Tu... Ya Jaane Na,2008,146,"['drama', 'comedy', 'romance']",['IN'],7.4,26894.0
+tm141117,Chalte Chalte,2003,167,"['drama', 'romance']",['IN'],6.5,15468.0
+tm145243,Wake Up Sid,2009,138,"['comedy', 'drama', 'romance']",['IN'],7.6,31167.0
+tm23441,Kabhi Alvida Naa Kehna,2006,184,"['drama', 'romance']",['IN'],6.0,19947.0
+tm92977,Ishqiya,2010,115,"['thriller', 'comedy', 'drama', 'romance']",['IN'],7.3,10469.0
+tm77348,Life in a Metro,2007,124,"['drama', 'romance', 'comedy']",['IN'],7.4,12036.0
+tm91323,I Hate Luv Storys,2010,129,"['comedy', 'drama', 'romance']",['IN'],5.6,8042.0
+tm88366,Main Hoon Na,2004,179,"['drama', 'action', 'comedy', 'romance', 'thriller']",['IN'],7.0,35484.0
+tm164389,Paheli,2005,141,"['romance', 'drama', 'fantasy', 'comedy']",['IN'],6.3,13263.0
+tm106625,"LSD: Love, Sex aur Dhokha",2010,108,"['drama', 'comedy', 'crime', 'romance']",['IN'],7.2,5684.0
+tm99450,Break Ke Baad,2010,120,"['comedy', 'drama', 'romance']",['IN'],5.1,4275.0
+tm129971,Luck by Chance,2009,155,"['romance', 'drama', 'comedy']",['IN'],7.1,10272.0
+tm77863,Honeymoon Travels Pvt. Ltd.,2007,118,"['comedy', 'drama', 'romance']",['IN'],6.1,2648.0
+tm134407,Dev.D,2009,141,"['comedy', 'drama', 'romance']",['IN'],7.9,30567.0
+tm103133,Karthik Calling Karthik,2010,135,"['thriller', 'romance', 'drama']",['IN'],7.1,12114.0
+tm54147,Dostana,2008,142,"['drama', 'romance', 'comedy']","['IN', 'US']",6.5,15063.0
+tm101684,Romantik Komedi,2010,95,"['comedy', 'romance']",['TR'],5.3,5111.0
+tm152724,Kurbaan,2009,161,"['thriller', 'action', 'drama', 'crime', 'romance', 'sport']",['IN'],5.7,5162.0
+tm96168,Once Upon a Time in Mumbaai,2010,132,"['thriller', 'crime', 'drama', 'romance', 'action']",['IN'],7.4,17642.0
+tm165809,Bluffmaster!,2005,137,"['drama', 'comedy', 'romance', 'thriller', 'crime']",['IN'],6.6,6370.0
+tm148041,What's Your Raashee?,2009,192,"['comedy', 'drama', 'romance']",['IN'],4.8,2732.0
+tm25029,Eternal Summer,2006,96,"['romance', 'drama']",['TW'],7.0,2706.0
+tm95434,Love in a Puff,2010,104,"['romance', 'comedy', 'drama']",['HK'],7.1,2625.0
+tm96595,Lakshya,2004,186,"['war', 'action', 'drama', 'romance']",['IN'],7.8,23262.0
+tm154375,Main Aurr Mrs Khanna,2009,115,"['drama', 'romance', 'comedy']",['IN'],3.4,3173.0
+tm134140,Ishq Vishk,2003,145,"['drama', 'comedy', 'romance']",['IN'],6.1,4255.0
+tm27484,Kismat Konnection,2008,153,"['romance', 'drama', 'comedy']",['IN'],5.3,5637.0
+tm29028,Salt of This Sea,2008,109,"['drama', 'romance', 'european']","['BE', 'FR', 'ES', 'CH', 'PS']",6.8,1235.0
+tm254052,Kucch To Hai,2003,142,"['thriller', 'horror', 'romance', 'drama']",['IN'],4.3,920.0
+tm91125,Fida,2004,122,"['romance', 'thriller', 'action', 'crime', 'drama']",['IN'],5.4,2638.0
+tm100106,My Amnesia Girl,2010,110,"['comedy', 'romance']",['PH'],6.7,432.0
+tm85689,Krishna Cottage,2004,124,"['thriller', 'horror', 'romance', 'drama']",['IN'],5.1,1178.0
+tm76029,Under the Bombs,2007,98,"['war', 'romance', 'drama', 'history', 'european']","['LB', 'GB', 'FR']",7.0,1655.0
+tm88343,Perazhagan,2004,148,"['comedy', 'thriller', 'drama', 'romance']",['IN'],6.4,1524.0
+tm95507,Chance Pe Dance,2010,121,"['drama', 'music', 'romance', 'comedy']",['IN'],4.8,2979.0
+tm85369,Hattrick,2007,110,"['drama', 'comedy', 'romance', 'sport']",['IN'],4.3,495.0
+tm140653,Look for a Star,2009,117,"['comedy', 'romance', 'drama']",['HK'],5.6,719.0
+tm311516,Koi Aap Sa,2005,142,"['romance', 'drama', 'comedy']",['IN'],5.5,262.0
+tm28024,A Very Special Love,2008,105,"['comedy', 'drama', 'romance']",['PH'],6.5,391.0
+tm76399,A Love Story,2007,117,"['drama', 'romance']",['PH'],6.4,142.0
+tm639940,Tango with Me,2010,104,"['drama', 'family', 'romance']",['US'],6.3,46.0
+tm32982,Les Misérables,2012,158,"['drama', 'history', 'romance', 'war']","['US', 'GB']",7.5,327017.0
+tm49592,LOL,2012,92,"['drama', 'comedy', 'romance']",['US'],4.3,55976.0
+tm106278,Everything Must Go,2011,97,"['romance', 'comedy', 'drama']",['US'],6.4,50792.0
+tm69386,Quartet,2012,98,"['drama', 'comedy', 'romance', 'music']",['GB'],6.8,20297.0
+tm174256,Red Riding Hood,2011,100,"['fantasy', 'thriller', 'horror', 'drama', 'romance']","['CA', 'US']",5.4,112015.0
+tm160371,A Very Harold & Kumar Christmas,2011,108,"['comedy', 'fantasy', 'romance']",['US'],6.2,69562.0
+tm182125,Zindagi Na Milegi Dobara,2011,166,"['romance', 'drama', 'comedy']",['IN'],8.1,76565.0
+tm160361,A Princess for Christmas,2011,89,"['family', 'romance', 'comedy', 'drama']",['US'],6.3,8268.0
+tm68436,Barfi!,2012,151,"['drama', 'romance', 'comedy']",['IN'],8.1,81198.0
+tm176128,Don't Go Breaking My Heart,2011,115,"['romance', 'comedy']",['HK'],6.5,1803.0
+tm177958,Pyaar Ka Punchnama,2011,149,"['romance', 'drama', 'comedy', 'european']",['IN'],7.6,21521.0
+tm176111,The Great Magician,2011,128,"['thriller', 'drama', 'romance', 'comedy']","['CN', 'HK']",5.9,1774.0
+tm48239,Ek Main Aur Ekk Tu,2012,110,"['drama', 'romance', 'comedy']",['IN'],5.7,6820.0
+tm160021,A Beautiful Life,2011,124,"['drama', 'romance']","['HK', 'CN']",6.7,927.0
+tm174518,Bodyguard,2011,134,"['drama', 'action', 'romance', 'comedy']",['IN'],4.6,25778.0
+tm42306,Aiyyaa,2012,146,"['romance', 'comedy']",['IN'],4.3,1889.0
+tm39606,Tere Naal Love Ho Gaya,2012,126,"['drama', 'comedy', 'romance']",['IN'],5.8,4381.0
+tm37573,"All's Well, Ends Well",2012,118,"['romance', 'comedy']",['HK'],5.1,338.0
+tm38331,The Mistress,2012,125,"['romance', 'drama']",['PH'],6.3,361.0
+tm159623,No Other Woman,2011,104,"['romance', 'drama', 'thriller']",['PH'],5.9,311.0
+tm224577,Phone Swap,2012,111,"['comedy', 'romance']",['NG'],6.2,174.0
+tm172504,"Darling, Something's Wrong with Your Head",2011,78,"['drama', 'romance', 'war', 'european']","['PS', 'NL', 'US', 'AE']",6.7,133.0
+tm148147,Big Eyes,2014,106,"['drama', 'documentation', 'romance', 'crime']","['CA', 'US']",7.2,51.0
+tm143227,Begin Again,2013,104,"['drama', 'comedy', 'music', 'romance']",['US'],7.4,155249.0
+tm151764,Barefoot,2014,90,"['romance', 'comedy', 'drama']",['US'],6.6,24167.0
+tm153284,The Giver,2014,97,"['drama', 'scifi', 'thriller', 'romance']",['US'],6.4,118877.0
+tm161029,Mr. Peabody & Sherman,2014,92,"['action', 'family', 'animation', 'romance', 'comedy', 'fantasy', 'history', 'scifi']",['US'],6.8,69669.0
+tm181081,The Railway Man,2013,116,"['drama', 'history', 'european', 'romance', 'war']","['AU', 'CH', 'GB']",7.1,40175.0
+tm147913,PK,2014,153,"['drama', 'comedy', 'scifi', 'romance', 'fantasy']",['IN'],8.1,181406.0
+tm161562,Copenhagen,2014,98,"['drama', 'romance']","['DK', 'US']",7.0,13233.0
+tm71148,Thanks for Sharing,2013,112,"['comedy', 'drama', 'romance']",['US'],6.4,28396.0
+tm171965,Mike Birbiglia: My Girlfriend's Boyfriend,2013,75,"['comedy', 'documentation', 'romance']",['US'],8.0,3331.0
+tm157085,Effie Gray,2014,104,"['drama', 'romance']",['GB'],6.0,5596.0
+tm182275,Omar,2013,96,"['romance', 'thriller', 'drama', 'crime', 'war']",['PS'],7.5,14318.0
+tm167944,Berserk: The Golden Age Arc III - The Advent,2013,110,"['drama', 'fantasy', 'animation', 'action', 'romance', 'horror']",['JP'],7.8,10173.0
+tm143363,2 States,2014,149,"['drama', 'comedy', 'romance']",['IN'],6.9,25656.0
+tm155291,Highway,2014,133,"['crime', 'romance', 'drama']",['IN'],7.6,28688.0
+tm185797,Fukrey,2013,137,"['drama', 'comedy', 'romance']",['IN'],6.9,11780.0
+tm148457,Hasee Toh Phasee,2014,141,"['comedy', 'romance']",['IN'],6.8,15152.0
+tm181550,Once Upon a Time in Mumbai Dobaara!,2013,160,"['action', 'crime', 'drama', 'romance']",['IN'],4.4,7204.0
+tm158980,Khoobsurat,2014,130,"['comedy', 'romance']",['IN'],6.4,8464.0
+tm159819,Bride for Rent,2014,115,"['romance', 'comedy']",['PH'],6.4,601.0
+tm178513,Bombay Talkies,2013,127,"['drama', 'romance']",['IN'],6.6,5402.0
+tm160034,Humpty Sharma Ki Dulhania,2014,133,"['drama', 'comedy', 'romance']",['IN'],6.0,12969.0
+tm176481,Chennai Express,2013,141,"['romance', 'drama', 'action', 'comedy']",['IN'],6.0,53939.0
+tm172027,The Butterfly's Dream,2013,138,"['drama', 'history', 'romance']",['TR'],7.7,22191.0
+tm348393,When Love Happens,2014,109,['romance'],['NG'],4.8,129.0
+tm157461,Coming Soon,2014,134,"['romance', 'drama', 'comedy']",['TR'],7.3,34137.0
+tm145658,The Amazing Praybeyt Benjamin,2014,105,"['drama', 'comedy', 'action', 'fantasy', 'romance']",['PH'],4.0,195.0
+tm184511,Inkaar,2013,133,"['drama', 'romance', 'thriller']",['IN'],6.1,2586.0
+tm154729,Dedh Ishqiya,2014,148,"['romance', 'thriller', 'comedy', 'drama']",['IN'],7.0,7236.0
+tm187505,She's The One,2013,110,"['romance', 'drama', 'comedy']",['PH'],6.3,210.0
+tm323262,Seven Souls in the Skull Castle,2013,179,"['drama', 'action', 'romance']",['JP'],7.3,49.0
+tm166723,It Takes a Man and a Woman,2013,120,"['romance', 'comedy', 'drama']",['PH'],6.7,363.0
+tm177224,Gori Tere Pyaar Mein,2013,150,"['comedy', 'drama', 'romance']",['IN'],4.9,3861.0
+tm159296,One by Two,2014,139,"['comedy', 'drama', 'romance']",['IN'],3.9,748.0
+tm179328,Romantik Komedi 2: Bekarlığa Veda,2013,105,"['comedy', 'romance']",['XX'],5.1,3383.0
+tm136036,That Thing Called Tadhana,2014,110,"['romance', 'comedy', 'drama']",['PH'],7.4,1050.0
+tm188290,Must Be... Love,2013,105,"['comedy', 'romance']",['PH'],6.4,531.0
+tm142852,She's Dating the Gangster,2014,105,"['drama', 'romance', 'comedy']",['PH'],7.0,1100.0
+tm176900,Theeya Velai Seiyyanum Kumaru,2013,125,"['comedy', 'drama', 'romance']",['IN'],5.3,30.0
+tm144557,Deliha,2014,107,"['family', 'comedy', 'romance']",['TR'],4.5,4315.0
+tm175577,Flower Girl,2013,94,"['comedy', 'romance']",['NG'],6.0,108.0
+tm150962,Mumbai Delhi Mumbai,2014,120,"['comedy', 'romance']",['IN'],5.7,357.0
+tm137693,Crimson Peak,2015,119,"['horror', 'thriller', 'romance', 'fantasy', 'drama']",['US'],6.5,146073.0
+tm233425,A Silent Voice: The Movie,2016,130,"['animation', 'drama', 'romance', 'family']",['JP'],8.1,77667.0
+tm212927,Mr. Right,2016,90,"['action', 'comedy', 'romance']",['US'],6.3,55955.0
+tm219233,Loving,2016,123,"['drama', 'romance']","['GB', 'US']",7.0,34326.0
+tm199700,The Danish Girl,2015,119,"['drama', 'romance', 'european']","['BE', 'DK', 'DE', 'GB', 'US']",7.1,183579.0
+tm136483,The DUFF,2015,101,"['comedy', 'romance']",['US'],6.4,93675.0
+tm196125,"Hello, My Name Is Doris",2015,95,"['drama', 'comedy', 'romance']",['US'],6.6,21105.0
+tm253083,Blue Jay,2016,81,"['romance', 'drama']",['US'],7.2,17346.0
+tm238722,Collateral Beauty,2016,97,"['romance', 'drama']",['US'],6.7,99712.0
+tm228677,The Space Between Us,2016,121,"['drama', 'romance', 'action', 'scifi']","['CN', 'US']",6.4,52698.0
+tm135543,By the Sea,2015,122,"['drama', 'romance', 'european']","['US', 'FR', 'MT']",5.3,20541.0
+tm142881,Jem and the Holograms,2015,118,"['fantasy', 'music', 'romance', 'scifi', 'drama', 'family']",['US'],4.1,7867.0
+tm205333,You're My Boss,2015,116,"['comedy', 'romance']",['PH'],6.3,278.0
+tm138672,Frank & Lola,2016,88,"['drama', 'romance', 'crime', 'thriller']",['US'],5.9,6083.0
+tm211302,Front Cover,2016,87,"['drama', 'romance', 'comedy']",['US'],6.4,1059.0
+tm244134,Tramps,2016,82,"['comedy', 'romance', 'documentation', 'european']",['US'],6.5,5605.0
+tm244915,Baaghi,2016,133,"['romance', 'action', 'thriller']",['IN'],5.3,8994.0
+tm219276,Tallulah,2016,111,"['drama', 'comedy', 'romance']",['US'],6.7,20208.0
+tm138792,Results,2015,105,"['comedy', 'romance']",['US'],5.4,7140.0
+tm239290,Always Be My Maybe,2016,112,"['comedy', 'romance']",['PH'],6.6,379.0
+tm195764,6 Years,2015,84,"['drama', 'romance']",['US'],5.6,12441.0
+tm217939,Un + une,2015,115,"['comedy', 'romance', 'drama', 'european']",['FR'],6.2,2336.0
+tm200454,Ok Kanmani,2015,139,"['romance', 'drama']",['IN'],7.4,5877.0
+tm275800,The Lighthouse of the Orcas,2016,110,"['drama', 'romance', 'european']","['AR', 'ES']",6.7,3910.0
+tm241998,Mohenjo Daro,2016,155,"['action', 'drama', 'history', 'romance']",['IN'],5.6,11693.0
+tm208628,Dil Dhadakne Do,2015,170,"['drama', 'family', 'romance', 'comedy']",['IN'],7.0,17581.0
+tm233843,Pyaar Ka Punchnama 2,2015,159,"['drama', 'romance', 'comedy']",['IN'],7.3,15216.0
+tm232710,A Second Chance,2015,130,"['drama', 'romance', 'family', 'documentation', 'sport']",['PH'],8.6,47.0
+tm197503,Hunterrr,2015,141,"['romance', 'drama', 'comedy']",['IN'],7.0,6262.0
+tm233344,Kapoor & Sons,2016,140,"['drama', 'romance', 'comedy', 'family']",['IN'],7.7,26130.0
+tm211478,Tamasha,2015,139,"['drama', 'comedy', 'romance']",['IN'],7.3,27331.0
+tm233015,Fitoor,2016,131,"['romance', 'drama']",['IN'],5.4,4840.0
+tm139590,Triumph in the Skies,2015,100,"['comedy', 'drama', 'romance']",['HK'],4.3,377.0
+tm193211,Mucize,2015,136,"['drama', 'comedy', 'romance', 'documentation', 'european']",['TR'],7.6,12593.0
+tm236999,Our Lovers,2016,88,"['romance', 'comedy', 'drama', 'european']",['ES'],6.7,4228.0
+tm234466,Jonah,2016,97,"['drama', 'thriller', 'romance', 'family']",['BR'],5.4,230.0
+tm311494,Slam,2016,100,"['comedy', 'romance', 'drama', 'european']",['IT'],6.1,1329.0
+tm227044,Shaandaar,2015,144,"['comedy', 'romance', 'drama']",['IN'],3.6,5723.0
+tm244577,Love O2O,2016,105,"['comedy', 'romance', 'drama']",['CN'],6.4,1039.0
+tm227523,Fifty,2015,101,"['drama', 'romance', 'sport', 'thriller']",['NG'],6.0,265.0
+tm283938,Selfie 69,2016,116,"['comedy', 'action', 'romance', 'european']",['RO'],6.1,1700.0
+tm252609,'76,2016,118,"['romance', 'drama']",['NG'],5.6,227.0
+tm234064,Halal Love,2016,95,"['romance', 'drama', 'comedy', 'european']","['LB', 'DE']",6.3,382.0
+tm149212,Olmo and the Seagull,2015,90,"['drama', 'european', 'romance', 'family', 'documentation']","['PT', 'SE', 'DK', 'BR', 'FR']",7.2,676.0
+tm244380,Barcelona: A Love Untold,2016,132,"['romance', 'drama']",['PH'],6.6,766.0
+tm267017,I Love You,2016,98,"['comedy', 'drama', 'romance', 'european']",['SE'],4.7,1008.0
+tm238717,Barakah Meets Barakah,2016,88,"['romance', 'comedy']",['SA'],6.3,1705.0
+tm201855,Katti Batti,2015,138,"['comedy', 'romance', 'drama']",['IN'],4.6,3157.0
+tm214589,The Breakup Playlist,2015,117,"['romance', 'drama', 'music']",['PH'],6.5,305.0
+tm219739,The Love Affair,2015,125,"['romance', 'drama']",['PH'],6.3,259.0
+tm231911,Everyday I Love You,2015,122,"['romance', 'drama']",['PH'],7.0,496.0
+tm279828,Vince & Kath & James,2016,116,['romance'],['PH'],6.8,373.0
+tm296203,A Chaster Marriage,2016,93,"['comedy', 'romance', 'family']",['TR'],5.4,874.0
+tm235232,Misunderstanding,2015,120,"['action', 'comedy', 'romance']",['EG'],4.3,780.0
+tm368725,Love Is a Story,2015,107,"['romance', 'european', 'comedy']",['RO'],6.0,365.0
+tm203056,Husband Factor,2015,108,"['comedy', 'romance', 'drama', 'fantasy']",['TR'],6.2,5092.0
+tm233463,Husband Factor: Resurrection,2016,108,"['comedy', 'family', 'romance', 'drama', 'fantasy']",['TR'],5.3,310.0
+tm247767,Kiss of Life,2015,102,"['romance', 'comedy', 'drama']",['TR'],5.9,1248.0
+tm247159,The Last Egg,2016,95,"['comedy', 'romance', 'drama']",['VN'],4.8,101.0
+tm198786,Crazy Beautiful You,2015,115,"['drama', 'romance', 'comedy']",['PH'],7.0,853.0
+tm212909,Just the Way You Are,2015,107,"['comedy', 'drama', 'romance']",['PH'],6.3,511.0
+tm272666,The Unmarried Wife,2016,130,"['drama', 'romance']",['PH'],5.9,189.0
+tm271333,The Third Party,2016,118,"['comedy', 'romance']",['PH'],6.1,275.0
+tm315174,Phantom Thread,2017,130,"['drama', 'romance']","['US', 'GB']",7.4,130006.0
+tm425889,The Ballad of Buster Scruggs,2018,132,"['western', 'comedy', 'drama', 'romance']",['US'],7.3,144294.0
+tm412550,Set It Up,2018,105,"['romance', 'comedy']",['US'],6.5,51861.0
+tm370212,Adrift,2018,96,"['action', 'thriller', 'romance', 'drama', 'european']","['HK', 'IS', 'US']",6.6,55597.0
+tm350,The Bad Batch,2017,119,"['drama', 'horror', 'scifi', 'romance', 'action']",['US'],5.2,31275.0
+tm357589,The Guernsey Literary & Potato Peel Pie Society,2018,124,"['drama', 'history', 'romance', 'war']","['GB', 'US', 'FR']",7.3,45626.0
+tm414887,Destination Wedding,2018,90,"['drama', 'romance', 'comedy']",['US'],6.0,29546.0
+tm410435,To All the Boys I've Loved Before,2018,100,"['comedy', 'romance', 'drama']",['US'],7.1,101175.0
+tm414220,Little Italy,2018,102,"['romance', 'comedy']","['CA', 'US']",5.7,14829.0
+tm433228,Red Joan,2018,101,"['thriller', 'history', 'romance', 'drama']",['GB'],6.4,12452.0
+tm233362,The Discovery,2017,102,"['scifi', 'thriller', 'romance', 'drama']",['US'],6.2,34092.0
+tm366567,When We First Met,2018,97,"['fantasy', 'comedy', 'romance']",['US'],6.4,48885.0
+tm298084,On Body and Soul,2017,116,"['drama', 'romance', 'fantasy']",['HU'],7.5,27504.0
+tm433381,Mirage,2018,129,"['fantasy', 'thriller', 'drama', 'romance', 'european']",['ES'],7.4,54188.0
+tm368241,Duck Butter,2018,94,"['comedy', 'drama', 'romance']",['US'],5.2,3978.0
+tm319882,Hampstead,2017,102,"['comedy', 'romance', 'drama']",['GB'],6.0,6449.0
+tm412623,The Kissing Booth,2018,105,"['comedy', 'romance']",['GB'],5.9,82858.0
+tm368040,The Titan,2018,97,"['scifi', 'thriller', 'fantasy', 'drama', 'romance']","['US', 'GB', 'ES']",4.8,30698.0
+tm289181,Newness,2017,112,"['romance', 'drama']",['US'],6.3,16654.0
+tm356742,Trolls Holiday,2017,26,"['fantasy', 'comedy', 'family', 'romance', 'animation']",[],6.1,2764.0
+tm298846,The Incredible Jessica James,2017,83,"['romance', 'comedy']",['US'],6.5,7667.0
+tm414709,Siberia,2018,104,"['romance', 'thriller', 'crime', 'european']","['CA', 'US', 'DE']",4.3,15369.0
+tm420797,Sierra Burgess Is a Loser,2018,105,"['romance', 'comedy', 'drama']",['US'],5.8,38841.0
+tm411958,Ibiza,2018,94,"['comedy', 'romance']",['US'],5.2,17517.0
+tm322243,Shimmer Lake,2017,83,"['thriller', 'crime', 'drama', 'action', 'history', 'horror', 'romance']","['CA', 'US']",6.3,14098.0
+tm244368,You Get Me,2017,89,"['thriller', 'romance', 'drama', 'crime']",['US'],4.7,12740.0
+tm270999,The Resurrection of Gavin Stone,2017,91,"['drama', 'comedy', 'family', 'romance']",['US'],6.2,2269.0
+tm282910,Fireworks,2017,90,"['drama', 'fantasy', 'documentation', 'animation', 'romance', 'scifi', 'family']",['JP'],5.6,3147.0
+tm307515,Amar,2017,105,"['romance', 'drama', 'european']","['US', 'ES']",5.1,4459.0
+tm369179,Irreplaceable You,2018,96,"['drama', 'romance', 'comedy']",['US'],6.4,9583.0
+tm409618,Alex Strangelove,2018,99,"['comedy', 'drama', 'romance']",['US'],6.3,17746.0
+tm407775,Lady J,2018,109,"['drama', 'romance', 'european']",['FR'],6.8,3306.0
+tm285295,Our Souls at Night,2017,101,"['drama', 'romance']",['US'],6.9,13519.0
+tm434917,I Am Jonas,2018,82,"['drama', 'romance', 'european']",['FR'],7.0,5896.0
+tm427293,Solo,2018,100,"['thriller', 'drama', 'romance', 'sport', 'european']",['ES'],5.0,2779.0
+tm326624,Unrest,2017,97,"['documentation', 'drama', 'history', 'romance', 'european']","['US', 'DK', 'GB']",7.6,2904.0
+tm441198,The Princess Switch,2018,101,"['romance', 'drama', 'family', 'comedy']",['US'],6.0,27852.0
+tm285649,The Ottoman Lieutenant,2017,111,"['war', 'romance', 'drama']","['TR', 'US']",6.4,25674.0
+tm446424,Christmas with a Prince,2018,90,"['drama', 'romance']",['CA'],5.2,1643.0
+tm300054,Orbiter 9,2017,95,"['drama', 'romance', 'scifi', 'european']",['ES'],5.9,7738.0
+tm371630,How to Be Really Bad,2018,100,"['comedy', 'fantasy', 'romance', 'family', 'european']",['DE'],6.2,1152.0
+tm404690,Happy Anniversary,2018,78,"['romance', 'comedy']",['US'],5.7,4265.0
+tm266702,The Climb,2017,103,"['comedy', 'romance', 'action', 'drama', 'european']",['FR'],6.9,7505.0
+tm414447,Dear Ex,2018,99,"['drama', 'comedy', 'romance']",['TW'],7.3,6317.0
+tm405849,Flavors of Youth,2018,68,"['romance', 'drama', 'animation']","['JP', 'CN']",6.6,7359.0
+tm301024,Wedding Unplanned,2017,94,"['romance', 'comedy', 'drama', 'european']",['FR'],5.7,1707.0
+tm419496,Lust Stories,2018,120,"['drama', 'romance']",['IN'],6.4,10830.0
+tm299504,Holy Camp!,2017,109,"['comedy', 'romance', 'european']",['ES'],6.2,4052.0
+tm365824,Zero,2018,180,"['romance', 'drama', 'comedy', 'scifi', 'thriller', 'fantasy', 'european']",['IN'],5.2,27346.0
+tm438995,A Christmas Prince: The Royal Wedding,2018,92,"['romance', 'drama']",['US'],5.3,10698.0
+tm363329,Christmas Wedding Planner,2017,86,['romance'],['CA'],4.3,5978.0
+tm344173,All I Wish,2018,94,"['romance', 'comedy', 'drama']",['US'],5.2,1600.0
+tm406098,Battle,2018,95,"['drama', 'romance', 'music', 'european']","['NO', 'SE', 'DK', 'NL']",5.9,4248.0
+tm359714,Christmas Inheritance,2017,105,"['romance', 'drama', 'comedy']",['US'],5.7,11720.0
+tm372662,The Skin of the Wolf,2018,110,"['romance', 'thriller', 'drama', 'action', 'european']",['ES'],5.8,3108.0
+tm438994,The Holiday Calendar,2018,94,"['romance', 'comedy', 'family', 'drama', 'fantasy']",['US'],5.7,10060.0
+tm270987,Sahara,2017,86,"['animation', 'comedy', 'family', 'action', 'romance', 'drama', 'european']","['CA', 'FR']",5.5,2802.0
+tm285298,Naked,2017,96,"['comedy', 'fantasy', 'romance']",['US'],5.4,19482.0
+tm444043,Hometown Holiday,2018,84,"['comedy', 'drama', 'romance']",['CA'],5.0,1003.0
+tm440946,Christmas with a View,2018,90,"['romance', 'family', 'drama']",['CA'],5.1,4574.0
+tm321627,Ali's Wedding,2017,110,"['romance', 'comedy', 'drama']",['AU'],6.9,5008.0
+tm307761,Toilet: A Love Story,2017,155,"['comedy', 'drama', 'romance']",['IN'],7.2,20896.0
+tm409942,Shéhérazade,2018,111,"['thriller', 'drama', 'romance', 'european']",['FR'],7.0,2242.0
+tm408890,Yucatán,2018,129,"['comedy', 'romance', 'european']",['ES'],5.5,2143.0
+tm375729,Us and Them,2018,120,"['drama', 'romance']",['CN'],7.3,4198.0
+tm275437,Coin Heist,2017,97,"['family', 'crime', 'drama', 'romance', 'thriller']",['US'],4.7,2743.0
+tm307774,Jagga Jasoos,2017,180,"['comedy', 'thriller', 'romance', 'action']",['IN'],6.3,10283.0
+tm307751,Jab Harry Met Sejal,2017,200,"['drama', 'romance', 'comedy']",['IN'],5.0,20593.0
+tm353247,Qarib Qarib Singlle,2017,125,"['comedy', 'drama', 'romance']",['IN'],7.1,8327.0
+tm477838,Disconnect,2018,107,"['romance', 'comedy', 'scifi']",['KE'],5.3,118.0
+tm355724,A Christmas Prince,2017,92,"['romance', 'comedy', 'family']",['US'],5.7,19514.0
+tm347850,SPF-18,2017,75,"['romance', 'drama', 'sport']",['US'],3.2,5173.0
+tm327708,Bareilly Ki Barfi,2017,123,"['romance', 'comedy']",['IN'],7.5,23336.0
+tm313118,"Love, Surreal and Odd",2017,95,"['comedy', 'romance']",['TR'],5.6,3240.0
+tm409817,Sir,2018,98,"['drama', 'romance', 'european']","['IN', 'FR']",7.7,7109.0
+tm244287,Half Girlfriend,2017,135,"['drama', 'romance']",['IN'],4.5,7233.0
+tm283559,The Art of Loving: Story of Michalina Wislocka,2017,121,"['comedy', 'romance', 'drama', 'european']",['PL'],7.1,3690.0
+tm372969,Love per Square Foot,2018,133,"['comedy', 'romance']",['IN'],7.2,8273.0
+tm319512,The Girl from the Song,2017,102,"['romance', 'drama', 'music', 'european']",['ES'],5.6,1775.0
+tm326089,Mubarakan,2017,156,"['drama', 'comedy', 'romance']",['IN'],5.6,3961.0
+tm445255,Qismat,2018,140,"['drama', 'romance', 'comedy']",['IN'],8.1,3101.0
+tm434883,Been So Long,2018,100,"['music', 'romance', 'drama']",['GB'],5.4,1108.0
+tm244277,Pa Paandi,2017,125,"['comedy', 'action', 'romance', 'drama', 'family']",['IN'],7.4,1734.0
+tm444799,Christmas Catch,2018,80,"['romance', 'comedy', 'crime']",['CA'],5.3,1439.0
+tm320206,#realityhigh,2017,99,"['comedy', 'drama', 'romance']",['US'],5.1,6357.0
+tm358949,A Very Country Christmas,2017,83,"['drama', 'romance', 'family', 'comedy']","['CA', 'US']",6.0,1640.0
+tm413955,A Fortunate Man,2018,162,"['drama', 'romance', 'european']",['DK'],7.2,6194.0
+tm449262,Ascharya Fuck It,2018,90,"['thriller', 'drama', 'romance']",['IN'],5.1,914.0
+tm429382,Nappily Ever After,2018,98,"['comedy', 'romance', 'drama']",['US'],6.4,9224.0
+tm321073,Judwaa 2,2017,150,"['action', 'comedy', 'romance']",['IN'],3.6,10740.0
+tm428483,The Girl Allergic to Wi-Fi,2018,104,"['comedy', 'romance']",['PH'],6.2,308.0
+tm319310,CIA: Comrade In America,2017,134,"['action', 'romance', 'drama']",['IN'],6.4,3088.0
+tm279017,"Michael Bolton's Big, Sexy Valentine's Day Special",2017,54,"['comedy', 'music', 'romance']",['US'],6.8,2126.0
+tm353875,All the Reasons to Forget,2017,90,"['romance', 'comedy', 'drama']",['BR'],6.2,526.0
+tm369433,Awe!,2018,115,"['romance', 'drama', 'fantasy', 'horror', 'scifi', 'thriller']",['IN'],7.7,5054.0
+tm444564,Tattoo of Revenge,2018,150,"['comedy', 'romance', 'thriller']",['MX'],4.9,117.0
+tm446574,Love Jacked,2018,100,"['comedy', 'romance']","['ZA', 'US', 'CA']",5.8,2215.0
+tm858471,The Bridge,2017,115,"['drama', 'romance']",['CA'],5.6,38.0
+tm425748,Cook Off,2017,116,"['romance', 'comedy']",['ZW'],6.0,354.0
+tm138667,Taramani,2017,150,"['drama', 'romance']",['IN'],7.5,1639.0
+tm314272,Love.com,2017,92,"['romance', 'comedy']",['BR'],5.8,757.0
+tm432313,Manu,2018,182,"['thriller', 'romance']",['IN'],7.6,1081.0
+tm433215,Exes Baggage,2018,104,"['drama', 'romance']",['PH'],6.4,269.0
+tm408781,Teefa in Trouble,2018,155,"['drama', 'comedy', 'action', 'crime', 'romance']",['PK'],7.0,3659.0
+tm481188,Isoken,2017,100,"['romance', 'comedy', 'drama']",['NG'],6.4,322.0
+tm344562,Listen,2017,109,"['drama', 'romance']",['LB'],6.6,230.0
+tm317274,Can't Help Falling in Love,2017,119,"['romance', 'comedy', 'drama']",['PH'],6.9,902.0
+tm430059,The Hows of Us,2018,117,"['drama', 'romance', 'comedy']",['PH'],6.7,2708.0
+tm332500,Finally Found Someone,2017,118,"['comedy', 'romance']",['PH'],5.7,233.0
+tm423593,Aruna & Her Palate,2018,106,"['drama', 'romance']",['ID'],7.2,770.0
+tm439678,Solo el amor,2018,93,"['drama', 'romance', 'music', 'comedy']",['AR'],4.8,71.0
+tm311193,Seeking a Man,2017,100,"['romance', 'comedy', 'drama']",['EG'],6.3,631.0
+tm426238,Pulang,2018,120,"['romance', 'drama', 'action']",['MY'],6.7,594.0
+tm371188,#FriendButMarried,2018,102,"['romance', 'comedy', 'drama']",['ID'],6.8,714.0
+tm363181,Ladies First,2017,39,"['documentation', 'comedy', 'romance']",['IN'],3.9,25.0
+tm476959,What Did I Mess,2018,100,"['comedy', 'romance']",['LB'],7.1,701.0
+tm246330,Pandigai,2017,150,"['romance', 'action', 'thriller']",['IN'],6.3,285.0
+tm312738,Jindua,2017,140,"['romance', 'family']",['IN'],6.3,283.0
+tm420311,Ana e Vitória,2018,115,"['romance', 'comedy', 'music']",['BR'],6.4,610.0
+tm307698,My Ex & Whys,2017,120,"['romance', 'drama']",['PH'],6.0,573.0
+tm336227,Catching Feelings,2017,115,"['romance', 'comedy', 'drama']",['ZA'],5.8,552.0
+tm242887,Sei,2018,128,"['drama', 'romance', 'thriller', 'action', 'crime']",['IN'],4.2,67.0
+tm1063790,A Man for The Weekend,2017,94,"['romance', 'comedy']",['CM'],4.5,13.0
+tm445852,Three Words to Forever,2018,106,"['drama', 'family', 'comedy', 'romance']",['XX'],6.8,110.0
+tm438005,First Love,2018,122,"['drama', 'romance']",['PH'],5.9,150.0
+tm348191,Love You to the Stars and Back,2017,111,"['drama', 'romance', 'comedy']",['PH'],7.4,542.0
+tm469399,Music Teacher,2018,101,"['romance', 'drama', 'music']",['IN'],6.2,693.0
+tm349418,The Royal Hibiscus Hotel,2018,90,"['comedy', 'romance']",['NG'],5.4,290.0
+tm362878,Dilan 1990,2018,109,"['drama', 'romance']",['ID'],7.0,3332.0
+tm358370,Love and Shukla,2017,117,"['romance', 'comedy', 'drama']",['IN'],7.3,960.0
+tm478701,Lara and the Beat,2018,137,"['drama', 'music', 'romance']",['NG'],5.8,149.0
+tm367613,Mr. Chandramouli,2018,122,"['romance', 'comedy', 'sport']",['IN'],5.1,236.0
+tm350945,Posesif,2017,102,"['drama', 'comedy', 'romance']",['ID'],7.4,920.0
+tm452767,Next Enti?,2018,157,"['comedy', 'drama', 'romance']",['XX'],4.5,163.0
+tm430748,Neevevaro,2018,130,"['thriller', 'action', 'drama', 'romance']",['IN'],6.9,809.0
+tm360763,Verses of Love 2,2017,125,"['drama', 'romance']",['ID'],5.5,609.0
+tm368697,Unexpectedly Yours,2017,120,"['comedy', 'romance']",['PH'],6.7,180.0
+tm426260,Si Doel the Movie,2018,85,"['family', 'romance', 'drama', 'comedy']",['ID'],6.8,417.0
+tm403709,Marriage Story,2019,136,"['drama', 'romance', 'comedy']",['GB'],7.9,298303.0
+tm417392,The King,2019,140,"['history', 'war', 'drama', 'romance']","['US', 'AU']",7.2,124438.0
+tm943790,Summerland,2020,102,"['romance', 'war', 'drama']",['GB'],7.0,6827.0
+tm239927,Official Secrets,2019,112,"['drama', 'thriller', 'history', 'crime', 'war', 'romance']","['GB', 'US']",7.3,46901.0
+tm460948,Always Be My Maybe,2019,102,"['romance', 'comedy']",['US'],6.8,55686.0
+tm494295,Straight Up,2019,95,"['comedy', 'romance']",['US'],6.8,2445.0
+tm813695,After We Collided,2020,105,"['drama', 'romance']",['US'],5.0,30522.0
+tm832345,365 Days,2020,114,"['romance', 'drama', 'european']",['PL'],3.3,84940.0
+tm824331,Can You Keep a Secret?,2019,94,"['romance', 'comedy']",['US'],5.3,16421.0
+tm441231,Murder Mystery,2019,90,"['comedy', 'crime', 'romance', 'action']","['IT', 'MC', 'US', 'CA']",6.0,124599.0
+tm886464,The Wrong Missy,2020,90,"['romance', 'comedy']",['US'],5.7,39237.0
+tm417416,Five Feet Apart,2019,116,"['romance', 'drama']",['US'],7.2,63916.0
+tm426428,After,2019,102,"['drama', 'romance']",['US'],5.2,53460.0
+tm441232,Someone Great,2019,92,"['romance', 'comedy']",['US'],6.1,22277.0
+tm443615,Rebecca,2020,123,"['romance', 'drama', 'thriller']",['GB'],6.0,41232.0
+tm470240,The Half of It,2020,104,"['comedy', 'romance', 'drama']",['US'],6.9,36576.0
+tm678022,The Prom,2020,130,"['comedy', 'drama', 'music', 'romance']",['US'],5.9,26197.0
+tm361746,Ophelia,2019,114,"['drama', 'romance', 'history', 'war', 'thriller']","['GB', 'US']",6.6,10357.0
+tm469991,I Lost My Body,2019,81,"['fantasy', 'drama', 'romance', 'animation', 'european']",['FR'],7.5,32380.0
+tm884511,The Lost Husband,2020,109,"['romance', 'drama']",['US'],6.1,4739.0
+tm285317,IO,2019,96,"['scifi', 'romance', 'drama']",['US'],4.7,34180.0
+tm824477,Over the Moon,2020,95,"['comedy', 'family', 'fantasy', 'scifi', 'romance', 'animation']","['CN', 'US']",6.3,22034.0
+tm469193,Atlantics,2019,106,"['fantasy', 'drama', 'romance']","['BE', 'FR', 'SN']",6.7,9405.0
+tm914535,2 Hearts,2020,100,"['drama', 'romance']",['US'],6.2,3801.0
+tm443179,All the Bright Places,2020,108,"['romance', 'drama']",['US'],6.5,28355.0
+tm426638,Vita & Virginia,2019,110,"['drama', 'romance', 'european']","['GB', 'IE']",5.7,3823.0
+tm464557,The Perfect Date,2019,93,"['romance', 'comedy']",['US'],5.8,38796.0
+tm554944,Love Wedding Repeat,2020,100,"['comedy', 'romance']","['GB', 'IT']",5.5,20412.0
+tm497383,Sergio,2020,118,"['drama', 'history', 'romance', 'documentation']","['JO', 'TH', 'US', 'AL']",6.2,9698.0
+tm852097,A Whisker Away,2020,104,"['fantasy', 'drama', 'romance', 'animation', 'family']",['JP'],6.7,9818.0
+tm858954,Nobody Sleeps in the Woods Tonight,2020,102,"['horror', 'thriller', 'drama', 'romance', 'fantasy', 'european']",['PL'],4.9,11603.0
+tm432022,Violet Evergarden: The Movie,2020,140,"['fantasy', 'animation', 'drama', 'romance']",['JP'],8.3,6099.0
+tm827501,Tall Girl,2019,101,"['comedy', 'drama', 'romance', 'family']",['US'],5.2,23452.0
+tm120072,Let It Snow,2019,93,"['romance', 'comedy']",['US'],5.8,21828.0
+tm936396,Holidate,2020,104,"['romance', 'comedy']",['US'],6.1,63070.0
+tm885775,Unbreakable Kimmy Schmidt: Kimmy vs. the Reverend,2020,80,"['comedy', 'scifi', 'romance']",['US'],6.9,5376.0
+tm459512,To All the Boys: P.S. I Still Love You,2020,102,"['romance', 'comedy', 'drama']",['US'],6.0,37471.0
+tm503508,Earthquake Bird,2019,107,"['romance', 'thriller', 'crime', 'drama']","['GB', 'JP']",5.9,14519.0
+tm824165,Falling Inn Love,2019,98,"['romance', 'comedy']",['US'],5.6,19559.0
+tm938793,I Am Woman,2020,116,"['drama', 'music', 'romance', 'history']",['AU'],6.5,2296.0
+tm450478,Under the Eiffel Tower,2019,87,"['romance', 'comedy']",['US'],5.4,1031.0
+tm826563,A Cinderella Story: Christmas Wish,2019,93,"['music', 'romance', 'fantasy', 'comedy']",['US'],5.3,
+tm893816,Desperados,2020,105,"['comedy', 'romance']",['US'],5.2,10269.0
+tm493511,The Sky Is Pink,2019,143,"['family', 'drama', 'romance']",['IN'],7.5,8664.0
+tm472195,Almost Love,2019,94,"['comedy', 'drama', 'romance']",['US'],5.7,1133.0
+tm838687,Holiday in the Wild,2019,85,"['romance', 'comedy', 'drama']",['US'],6.1,15216.0
+tm670553,Your Name Engraved Herein,2020,118,"['drama', 'romance']",['TW'],7.2,5938.0
+tm454824,Silver Skates,2020,136,"['history', 'romance', 'action', 'drama', 'family']",['RU'],7.1,5946.0
+tm453903,Elisa & Marcela,2019,118,"['drama', 'romance', 'european']",['ES'],6.6,4780.0
+tm868777,"Love, Guaranteed",2020,90,"['comedy', 'romance']",['US'],5.6,17352.0
+tm483997,The Kissing Booth 2,2020,134,"['comedy', 'romance']",['GB'],5.7,31123.0
+tm467848,NiNoKuni,2019,106,"['family', 'fantasy', 'romance', 'animation', 'action']",['JP'],6.1,3338.0
+tm848443,World Famous Lover,2020,156,"['romance', 'drama']",['IN'],5.0,3206.0
+tm454156,In Family I Trust,2019,94,"['romance', 'comedy', 'european']",['ES'],6.2,3194.0
+tm889679,Roped,2020,90,"['drama', 'romance', 'family', 'comedy']",['US'],5.4,1436.0
+tm319139,Saaho,2019,171,"['thriller', 'action', 'crime', 'drama', 'romance']",['IN'],5.0,19610.0
+tm485801,So My Grandma's a Lesbian!,2019,94,"['comedy', 'romance', 'european']","['ES', 'PT']",4.3,1122.0
+tm458893,"Oh, Ramona!",2019,109,"['comedy', 'romance', 'european']",['RO'],4.8,8895.0
+tm884581,Rich in Love,2020,104,"['comedy', 'romance', 'music']",['BR'],6.0,2687.0
+tm462611,Ready to Mingle,2019,97,"['romance', 'comedy']",['MX'],5.9,2370.0
+tm854876,Out of My League,2020,90,"['romance', 'comedy', 'drama', 'european']",['IT'],6.1,2734.0
+tm462660,Inhuman Kiss,2019,122,"['horror', 'drama', 'romance']",['TH'],6.4,1783.0
+tm464888,Love Aaj Kal,2020,141,"['romance', 'comedy', 'drama']",['IN'],6.8,16075.0
+tm823302,Alice Júnior,2019,90,"['romance', 'comedy', 'drama', 'animation']",['BR'],6.8,541.0
+tm895839,Under the Riccione Sun,2020,101,"['romance', 'comedy', 'drama']",['IT'],5.5,2463.0
+tm474548,Good Sam,2019,90,"['romance', 'drama', 'comedy']",['US'],5.7,2951.0
+tm832903,Airplane Mode,2020,96,"['comedy', 'drama', 'romance']",['BR'],5.1,2603.0
+tm960414,A California Christmas,2020,106,"['romance', 'comedy', 'drama']",['US'],5.8,9831.0
+tm679284,The Knight Before Christmas,2019,92,"['comedy', 'drama', 'fantasy', 'romance']",['US'],5.5,17862.0
+tm494847,Made in China,2019,128,"['comedy', 'drama', 'romance', 'thriller', 'crime', 'european']",['IN'],6.2,4382.0
+tm943718,Operation Christmas Drop,2020,95,"['romance', 'family', 'comedy']",['US'],5.8,11444.0
+tm946360,Really Love,2020,95,"['romance', 'drama']",['US'],6.1,847.0
+tm675154,Malaal,2019,136,"['drama', 'romance', 'action']",['IN'],5.8,1066.0
+tm460815,Luka Chuppi,2019,126,"['comedy', 'romance', 'drama']",['IN'],6.3,11345.0
+tm856424,Bheeshma,2020,151,"['comedy', 'romance', 'action']",['IN'],6.5,4028.0
+tm455161,Panipat,2019,171,"['history', 'war', 'romance', 'action', 'drama']",['IN'],5.2,5615.0
+tm452440,Cinderela Pop,2019,94,"['romance', 'comedy', 'family', 'music']",['BR'],4.5,1061.0
+tm849407,Isi & Ossi,2020,113,"['romance', 'comedy']",['DE'],6.4,8309.0
+tm819497,"Berlin, Berlin",2020,80,"['comedy', 'drama', 'romance']",['DE'],3.8,543.0
+tm373452,Kannum Kannum Kollaiyadithaal,2020,162,"['comedy', 'romance', 'drama', 'thriller']",['IN'],7.7,6851.0
+tm948607,Midnight at the Magnolia,2020,87,"['comedy', 'romance']",['CA'],5.8,5373.0
+tm483602,Malang,2020,135,"['romance', 'action', 'crime', 'drama', 'thriller']",['IN'],6.5,10490.0
+tm830795,Happy Old Year,2019,113,"['drama', 'romance']",['TH'],7.2,2245.0
+tm458418,Tune in for Love,2019,122,"['romance', 'drama']",['KR'],7.1,4102.0
+tm838765,A Christmas Prince: The Royal Baby,2019,84,"['romance', 'family']",['US'],5.4,6764.0
+tm818588,All the Freckles in the World,2019,90,"['comedy', 'sport', 'romance']",['MX'],5.2,1290.0
+tm845850,Out of the Clear Blue Sky,2019,112,"['drama', 'music', 'comedy', 'romance']","['MX', 'US']",6.5,1447.0
+tm677746,Bombay Rose,2019,97,"['drama', 'romance', 'animation']","['FR', 'IN', 'QA']",6.2,608.0
+tm492043,Motichoor Chaknachoor,2019,150,"['comedy', 'romance']",['IN'],5.8,2856.0
+tm929630,A New York Christmas Wedding,2020,88,"['drama', 'romance']",['US'],5.3,1123.0
+tm455197,Kabir Singh,2019,172,"['drama', 'romance', 'crime', 'action']",['IN'],7.0,31918.0
+tm908529,Tell Me When,2020,95,"['romance', 'documentation', 'comedy']",['MX'],5.7,1002.0
+tm817284,Bridezilla,2019,93,"['romance', 'drama', 'comedy']",['ID'],6.1,53.0
+tm423624,Ek Ladki Ko Dekha Toh Aisa Laga,2019,121,"['drama', 'comedy', 'romance', 'crime']",['IN'],5.6,4378.0
+tm937265,You've Got This,2020,111,"['romance', 'comedy']",['MX'],5.8,1297.0
+tm822596,Into the Beat,2020,102,"['music', 'romance', 'drama', 'european']",['DE'],5.3,1345.0
+tm824858,Cuddle Weather,2019,95,"['drama', 'romance', 'comedy']",['PH'],6.0,413.0
+tm511991,99 Songs,2019,128,"['romance', 'drama']",['IN'],6.6,2275.0
+tm849323,Shikara,2020,118,"['drama', 'romance', 'history']",['IN'],3.3,15092.0
+tm838705,Holiday Rush,2019,94,"['drama', 'comedy', 'romance', 'family']",['US'],4.9,2723.0
+tm234980,A Choo,2020,101,"['romance', 'comedy', 'action', 'fantasy']",['TW'],5.5,378.0
+tm850382,Sillu Karupatti,2019,138,"['drama', 'romance']",['IN'],8.0,1748.0
+tm810642,Manmadhudu 2,2019,155,"['comedy', 'romance', 'drama']",['IN'],4.8,708.0
+tm431769,Once Again,2019,101,"['drama', 'romance', 'european']","['DE', 'IN', 'AT']",7.0,980.0
+tm849102,Shimla Mirchi,2020,129,"['romance', 'comedy']",['IN'],4.6,1537.0
+tm854454,Varane Avashyamund,2020,145,"['comedy', 'family', 'romance', 'drama']",['IN'],6.9,2803.0
+tm863611,Kappela,2020,113,"['romance', 'comedy']",['IN'],7.5,3289.0
+tm115973,Guna 369,2019,146,"['romance', 'action', 'drama']",['IN'],6.7,19.0
+tm843143,Whipped,2020,97,"['drama', 'romance', 'comedy']",['ID'],4.0,642.0
+tm881984,Maska,2020,111,"['comedy', 'drama', 'romance']",['IN'],5.9,1451.0
+tm451584,Too Handsome To Handle,2019,106,"['comedy', 'drama', 'romance']",['ID'],6.7,564.0
+tm935388,Ginny Weds Sunny,2020,125,"['comedy', 'drama', 'romance']",['IN'],5.7,4776.0
+tm819841,Isa Pa with Feelings,2019,102,"['comedy', 'romance', 'drama']",['PH'],7.8,344.0
+tm866782,One-Way to Tomorrow,2020,90,"['comedy', 'romance', 'drama']",['TR'],5.6,4819.0
+tm483190,Time Out,2019,93,"['comedy', 'drama', 'romance']",[],5.9,47.0
+tm813634,Dorasani,2019,130,"['drama', 'romance']",['IN'],5.8,199.0
+tm877746,Krishna and His Leela,2020,125,"['comedy', 'romance']",[],5.6,1579.0
+tm455715,Dilan 1991,2019,118,"['drama', 'romance']",['ID'],6.5,1071.0
+tm1000551,Namaste Wahala,2020,106,"['comedy', 'drama', 'romance']",['NG'],5.1,1557.0
+tm373471,90 ML,2019,125,"['drama', 'romance', 'comedy']",['IN'],3.3,577.0
+tm1004219,Who's the Boss,2020,105,"['comedy', 'romance']",[],5.7,39.0
+tm938434,All Because of You,2020,101,"['romance', 'comedy', 'action']",['MY'],3.9,218.0
+tm483511,Jai Mummy Di,2020,103,"['comedy', 'drama', 'romance']",['IN'],3.7,946.0
+tm873357,Mariposa,2020,117,"['comedy', 'drama', 'romance']",[],6.9,725.0
+tm840236,Milea,2020,99,"['drama', 'romance']",['ID'],6.1,564.0
+tm862830,Seriously Single,2020,107,"['comedy', 'romance']",['ZA'],4.4,1266.0
+tm881575,Velvet Colección: Grand Finale,2020,82,"['comedy', 'romance']","['US', 'ES']",7.2,8.0
+tm832463,Mundina Nildana,2019,106,"['drama', 'romance', 'comedy']",['IN'],6.2,364.0
+tm475815,The Zoya Factor,2019,134,"['romance', 'sport', 'comedy', 'drama']",['IN'],4.3,2451.0
+tm683841,"Hello, Love, Goodbye",2019,118,"['drama', 'romance']","['HK', 'PH']",7.3,1050.0
+tm474647,Hot Gimmick: Girl Meets Boy,2019,119,"['drama', 'romance']",['JP'],4.4,454.0
+tm676905,Hire a Woman,2019,109,"['romance', 'comedy']",[],7.1,32.0
+tm461532,Kill Me If You Dare,2019,104,"['romance', 'comedy']",['TR'],4.4,1764.0
+tm474496,Mujeres arriba,2020,100,"['comedy', 'romance']",['CL'],3.8,471.0
+tm677904,2 Weeks in Lagos,2019,107,"['romance', 'drama', 'comedy']",['NG'],6.5,36.0
+tm822210,Eggnoid: Love & Time Portal,2019,102,"['romance', 'scifi', 'drama', 'fantasy']",[],6.1,86.0
+tm477403,Kaake Da Viyah,2019,133,"['comedy', 'romance']",['IN'],5.1,74.0
+tm818499,Revenge of the Pontianak,2019,92,"['horror', 'romance']","['SG', 'MY']",5.3,273.0
+tm822272,Love for Sale 2,2019,92,"['drama', 'romance']",['ID'],7.0,558.0
+tm846354,#FriendButMarried 2,2020,104,"['drama', 'comedy', 'romance']",['ID'],6.9,311.0
+tm822167,The Panti Sisters,2019,108,"['comedy', 'drama', 'romance']",['PH'],5.5,272.0
+tm461427,15 August,2019,124,"['romance', 'drama']",['IN'],5.7,273.0
+tm1041549,Dear Affy,2020,126,"['romance', 'comedy']",['NG'],5.2,5.0
+tm866495,Love Like the Falling Rain,2020,86,"['drama', 'romance', 'fantasy']",['ID'],4.7,205.0
+tm483103,Ali & Alia,2019,105,"['drama', 'romance']",['EG'],5.0,33.0
+tm924556,Maniyarayile Ashokan,2020,110,"['drama', 'comedy', 'romance']",['IN'],4.7,1261.0
+tm873354,Si Doel the Movie 3,2020,93,"['drama', 'romance']",[],6.5,132.0
+tm510525,RK Nagar,2019,110,"['comedy', 'romance']",['IN'],5.1,137.0
+tm679270,Evvarikee Cheppoddu,2019,133,"['drama', 'romance']",['IN'],7.2,412.0
+tm435295,Ave Maryam,2019,74,"['romance', 'drama']",['ID'],6.9,489.0
+tm878495,Kambili: The Whole 30 Yards,2020,119,"['romance', 'comedy']",[],6.8,43.0
+tm474405,Between Maybes,2019,107,"['drama', 'romance']","['PH', 'JP']",6.2,173.0
+tm454338,Alone/Together,2019,103,"['romance', 'drama']",['PH'],6.6,466.0
+tm472231,Si Doel the Movie 2,2019,95,"['romance', 'drama']",['ID'],6.8,183.0
+tm462809,The Wedding Shaman,2019,111,"['drama', 'romance']",['ID'],7.1,161.0
+tm811954,Nenjamundu Nermaiyundu Odu Raja,2019,128,"['comedy', 'romance', 'drama']",['IN'],6.1,376.0
+tm921230,Story of Kale: When Someone's in Love,2020,77,"['drama', 'romance']",['ID'],6.4,279.0
+tm450129,Sakaling Maging Tayo,2019,90,"['romance', 'comedy']",['PH'],7.0,76.0
+tm460199,High End Yaariyaan,2019,140,"['romance', 'comedy', 'drama', 'family']",['IN'],5.4,1525.0
+tm852360,The Man from Toronto,2022,110,"['action', 'thriller', 'drama', 'romance', 'comedy']",['US'],5.8,31497.0
+tm674063,The Power of the Dog,2021,126,"['drama', 'romance', 'western']","['GB', 'AU', 'CA', 'GR', 'NZ']",6.8,164844.0
+tm1221677,"Hello, Goodbye, and Everything in Between",2022,83,"['drama', 'comedy', 'romance']",['US'],4.9,1842.0
+tm1201262,Love & Gelato,2022,111,"['romance', 'comedy', 'drama']",['IT'],5.1,3980.0
+tm852172,Apollo 10½:  A Space Age Childhood,2022,98,"['animation', 'scifi', 'action', 'comedy', 'romance', 'family', 'horror', 'drama']","['NL', 'US']",7.3,6681.0
+tm1001097,Beauty,2022,95,"['drama', 'music', 'romance']",['US'],3.9,492.0
+tm1137051,Bubble,2022,101,"['scifi', 'fantasy', 'romance', 'sport', 'thriller', 'animation', 'action', 'drama']",['JP'],6.3,4597.0
+tm1048362,Army of Thieves,2021,127,"['comedy', 'crime', 'thriller', 'scifi', 'horror', 'romance', 'action']","['DE', 'US']",6.4,73790.0
+tm1196705,A Perfect Pairing,2022,101,"['comedy', 'romance']","['US', 'AU']",6.1,9742.0
+tm993838,Long Story Short,2021,90,"['fantasy', 'comedy', 'romance']",['AU'],6.5,4995.0
+tm1227918,Under the Amalfi Sun,2022,90,"['romance', 'comedy', 'drama']",['IT'],5.2,502.0
+tm1191224,365 Days: This Day,2022,111,"['romance', 'drama']",['PL'],2.5,16587.0
+tm1094217,Chickenhare and the Hamster of Darkness,2022,91,"['animation', 'comedy', 'family', 'romance', 'fantasy']","['BE', 'FR']",6.3,1303.0
+tm1199146,Toscana,2022,90,"['drama', 'romance']",['DK'],5.7,5826.0
+tm1120855,Along for the Ride,2022,106,"['drama', 'romance']",['US'],6.1,5347.0
+tm1003630,After We Fell,2021,99,"['romance', 'drama']","['FR', 'US']",4.6,13221.0
+tm1166046,Ante... Sundaraniki!,2022,173,"['comedy', 'romance', 'family']",['IN'],8.0,2538.0
+tm981945,The Last Letter From Your Lover,2021,109,"['drama', 'romance']","['GB', 'CA']",6.6,17099.0
+tm976166,Malcolm & Marie,2021,106,"['romance', 'drama']",['US'],6.6,36395.0
+tm1141594,Brazen,2022,94,"['thriller', 'romance', 'crime', 'drama']",['US'],4.1,11753.0
+tm459789,The Lovebirds,2021,87,"['romance', 'comedy', 'action', 'thriller', 'crime']",['US'],6.0,25697.0
+tm1107225,Through My Window,2022,116,"['drama', 'romance', 'comedy']",['ES'],5.4,9082.0
+tm1049265,My Wonderful Life,2021,99,"['romance', 'comedy', 'drama']",['PL'],5.8,626.0
+tm1093099,Love Hard,2021,104,"['romance', 'comedy']",['US'],6.3,49784.0
+tm1158704,Tyler Perry's A Madea Homecoming,2022,105,"['comedy', 'drama', 'romance']",['US'],5.6,3697.0
+tm1121707,Dangerous Liaisons,2022,109,"['romance', 'drama']",['FR'],3.9,1040.0
+tm1028298,He's All That,2021,91,"['comedy', 'romance']",['US'],4.3,24253.0
+tm1141923,The Royal Treatment,2022,96,"['romance', 'comedy', 'family']",['US'],5.2,8803.0
+tm996676,Viraata Parvam,2022,150,"['romance', 'action', 'drama']",['IN'],8.0,2343.0
+tm434625,Wish Dragon,2021,99,"['fantasy', 'animation', 'family', 'comedy', 'romance']","['US', 'CN']",7.2,25743.0
+tm1221280,Jaadugar,2022,167,"['drama', 'fantasy', 'romance', 'sport', 'comedy']",['IN'],7.3,2563.0
+tm1038369,Good on Paper,2021,92,"['comedy', 'romance']",['US'],5.6,11987.0
+tm1066826,Diana: The Musical,2021,117,"['history', 'music', 'romance', 'drama']",['US'],4.2,1266.0
+tm1087956,Afterlife of the Party,2021,109,"['fantasy', 'romance', 'comedy', 'drama']",['US'],5.8,8728.0
+tm1019885,F3: Fun and Frustration,2022,148,"['comedy', 'romance', 'family']",['IN'],5.5,1199.0
+tm1177856,Without Saying Goodbye,2022,96,"['romance', 'comedy']","['ES', 'PE']",5.7,2446.0
+tm1107063,Love and Leashes,2022,118,"['comedy', 'romance']",['KR'],6.3,4273.0
+tm998188,More the Merrier,2021,112,"['romance', 'comedy']",['ES'],5.4,3302.0
+tm166973,Mixtape,2021,94,"['comedy', 'family', 'drama', 'romance']",['US'],6.6,3329.0
+tm1213009,Dear Friend,2022,118,"['comedy', 'drama', 'romance']",['IN'],5.9,251.0
+tm921206,The Kissing Booth 3,2021,112,"['romance', 'comedy']","['ZA', 'GB', 'US']",4.7,16307.0
+tm881587,"Vengeance Is Mine, All Others Pay Cash",2021,114,"['romance', 'drama', 'action', 'comedy']",['ID'],7.0,559.0
+tm860261,To All the Boys: Always and Forever,2021,115,"['romance', 'comedy', 'drama']",['US'],6.3,25191.0
+tm1150256,Tall Girl 2,2022,97,"['comedy', 'romance', 'drama', 'family']",['US'],4.7,4356.0
+tm872108,A Week Away,2021,94,"['drama', 'family', 'romance']",['US'],5.7,4608.0
+tm1110389,Single All the Way,2021,99,"['romance', 'comedy', 'drama']",['CA'],6.1,15190.0
+tm1219931,Heart Parade,2022,108,"['comedy', 'romance']",['PL'],4.9,477.0
+tm1137862,Four to Dinner,2022,104,"['comedy', 'romance']",['IT'],6.3,3130.0
+tm876997,Most Eligible Bachelor,2021,170,"['drama', 'romance']",['IN'],6.1,3261.0
+tm880822,Mobile Suit Gundam Hathaway,2021,96,"['scifi', 'animation', 'action', 'drama', 'romance']",['JP'],6.6,1400.0
+tm1160424,AI Love You,2022,95,"['scifi', 'comedy', 'romance', 'drama']",['TH'],4.4,572.0
+tm833467,Hurdang,2022,122,"['drama', 'romance']",['IN'],4.9,499.0
+tm1203307,F*ck Love Too,2022,92,"['comedy', 'romance']",['NL'],3.8,1052.0
+tm1119136,Game Changer,2021,102,"['crime', 'comedy', 'drama', 'romance', 'thriller']",['TH'],4.1,113.0
+tm1000619,Radhe Shyam,2022,138,"['drama', 'romance']",['IN'],5.3,28633.0
+tm1185506,The Taming of the Shrewd,2022,112,"['romance', 'comedy']",['PL'],4.5,836.0
+tm1127479,Cobalt Blue,2022,112,"['romance', 'drama']",['IN'],6.6,1531.0
+tm972519,Don't Kill Me,2021,90,"['fantasy', 'horror', 'romance']",['IT'],4.3,1769.0
+tm1003725,A Castle for Christmas,2021,98,"['romance', 'comedy', 'drama', 'family']","['GB', 'US']",5.5,11894.0
+tm876608,Sounds Like Love,2021,110,"['comedy', 'music', 'romance', 'drama']",['ES'],5.4,2135.0
+tm1000797,Ride or Die,2021,142,"['thriller', 'romance', 'drama']",['JP'],5.6,1900.0
+tm858287,Jersey,2022,175,"['drama', 'sport', 'romance']",['IN'],7.3,10878.0
+tm1218702,Doom of Love,2022,100,"['romance', 'drama']",['TR'],4.7,1222.0
+tm1132325,Don,2022,164,"['romance', 'comedy', 'drama', 'action']",['IN'],7.0,6667.0
+tm890013,Lulli,2021,90,"['fantasy', 'comedy', 'romance']",['BR'],4.8,1452.0
+tm1000037,Je suis Karl,2021,126,"['drama', 'thriller', 'european', 'romance']","['CZ', 'DE']",5.4,1077.0
+tm1129394,The Princess Switch 3: Romancing the Star,2021,106,"['comedy', 'romance', 'drama', 'family']",['US'],5.5,5728.0
+tm949382,Looop Lapeta,2022,131,"['romance', 'thriller', 'action', 'comedy', 'crime']",['IN'],5.2,4327.0
+tm1129217,Anonymously Yours,2021,101,"['drama', 'romance']",['MX'],5.7,1718.0
+tm1188819,Rumspringa,2022,102,"['drama', 'comedy', 'romance']",['DE'],5.3,822.0
+tm919869,And Tomorrow the Entire World,2021,111,"['romance', 'crime', 'drama']","['FR', 'DE']",6.0,3172.0
+tm1025318,Ajeeb Daastaans,2021,142,"['drama', 'romance']",['IN'],6.7,5743.0
+tm985550,Crazy About Her,2021,102,"['romance', 'comedy']",['ES'],6.6,5435.0
+tm1178876,Battle: Freestyle,2022,88,"['drama', 'music', 'romance']",['NO'],4.3,382.0
+tm1143258,Hey! Sinamika,2022,150,"['drama', 'romance']",['IN'],6.0,3246.0
+tm1027712,This Little Love of Mine,2021,91,"['romance', 'comedy']",['AU'],5.3,2514.0
+tm1065788,Last Summer,2021,101,"['drama', 'romance']",['TR'],6.3,2878.0
+tm1152224,Love Tactics,2022,97,"['comedy', 'romance']",['TR'],5.2,3774.0
+tm1037704,Resort to Love,2021,101,"['romance', 'comedy']",['US'],5.7,5771.0
+tm1165118,UFO,2022,109,"['drama', 'romance', 'documentation']",['TR'],4.7,784.0
+tm954297,The Secret Diary of an Exchange Student,2021,96,"['comedy', 'romance']",['BR'],5.3,890.0
+tm1001619,Man in Love,2021,115,"['romance', 'drama']",['TW'],6.9,1744.0
+tm1087383,JJ+E,2021,90,"['drama', 'romance']",['SE'],5.3,1724.0
+tm886188,Caught by a Wave,2021,99,"['romance', 'drama', 'sport']",['IT'],5.7,1289.0
+tm1102856,The Four of Us,2021,88,"['romance', 'drama', 'comedy']",['DE'],5.3,1036.0
+tm1000185,Squared Love,2021,102,"['comedy', 'romance']",['PL'],5.1,3158.0
+tm990972,The Last Paradiso,2021,107,"['drama', 'romance']",['IT'],5.6,1350.0
+tm996040,Forever Out of My League,2022,104,"['romance', 'comedy', 'drama']",['IT'],5.3,463.0
+tm904862,Just Say Yes,2021,97,"['comedy', 'romance']",['NL'],4.5,1968.0
+tm963023,Chandigarh Kare Aashiqui,2021,117,"['romance', 'comedy', 'crime', 'drama']",['IN'],6.8,13203.0
+tm872496,Autumn Girl,2021,105,"['drama', 'romance']",['PL'],5.4,560.0
+tm861018,Sweet & Sour,2021,102,"['comedy', 'romance']",['KR'],6.7,2508.0
+tm867681,Haseen Dillruba,2021,135,"['romance', 'thriller', 'crime', 'drama']",['IN'],6.9,26194.0
+tm1127511,Only You,2021,110,"['comedy', 'romance', 'drama']",['PH'],6.5,73.0
+tm1165244,Into the Wind,2022,108,"['comedy', 'drama', 'romance', 'sport']",['PL'],5.2,864.0
+tm1111595,A California Christmas: City Lights,2021,105,"['comedy', 'drama', 'romance']",['US'],5.5,2231.0
+tm989502,Wish You,2021,101,"['drama', 'romance', 'music']",['KR'],6.4,900.0
+tm1011188,Meskina,2021,98,"['comedy', 'romance']",['NL'],5.6,913.0
+tm1023388,Madame Claude,2021,112,"['crime', 'drama', 'romance']",['FR'],5.4,3402.0
+tm1116525,Just Short of Perfect,2021,94,"['comedy', 'romance']",['BR'],5.3,1007.0
+tm1041329,One Second,2021,88,"['comedy', 'romance']",['EG'],4.7,378.0
+tm1013111,1000 Miles from Christmas,2021,102,"['comedy', 'romance', 'fantasy', 'family']",['ES'],5.7,1502.0
+tm1179579,In Good Hands,2022,104,"['drama', 'comedy', 'romance', 'family']",['TR'],5.6,2618.0
+tm1109843,Meenakshi Sundareshwar,2021,141,"['romance', 'comedy']",['IN'],7.1,17366.0
+tm1092309,We Couldn't Become Adults,2021,124,"['drama', 'romance']",['JP'],6.4,706.0
+tm1119015,Love Like the Falling Petals,2022,128,"['drama', 'romance']",['JP'],6.3,424.0
+tm1091284,Ankahi Kahaniya,2021,110,"['drama', 'romance']",['IN'],5.5,876.0
+tm1114350,Story of Dinda: Second Chance of Happiness,2021,59,"['romance', 'drama']",['ID'],5.6,46.0
+tm996010,Still Out of My League,2021,113,"['romance', 'comedy', 'drama']",['IT'],5.5,810.0
+tm1036797,Sardar Ka Grandson,2021,140,"['comedy', 'drama', 'romance']",['IN'],4.2,4539.0
+tm1027177,Sarbath,2021,112,"['romance', 'drama', 'comedy']",['IN'],5.6,266.0
+tm1115392,Shyam Singha Roy,2021,155,"['drama', 'romance', 'thriller', 'horror']",['IN'],7.7,11655.0
+tm1121098,Will You Marry?,2021,86,"['romance', 'drama']",['PH'],4.9,58.0
+tm998544,Here and There,2021,98,"['drama', 'romance']",['PH'],6.7,52.0
+tm1004011,Time to Dance,2021,2,"['romance', 'drama']",['IN'],2.2,963.0
+tm1131895,Love Is Color Blind,2021,115,"['comedy', 'romance']",['PH'],6.1,661.0
+tm1018592,A Perfect Fit,2021,112,"['comedy', 'drama', 'romance']",['ID'],5.3,585.0
+tm1045883,Trippin’ with the Kandasamys,2021,93,"['romance', 'comedy']",['ZA'],4.9,376.0
+tm1038025,Slay,2021,93,"['romance', 'comedy']",['ZA'],3.2,103.0
+tm986017,Gatao: The Last Stray,2021,120,"['action', 'crime', 'drama', 'romance']",['TW'],5.9,266.0
+tm1204412,"Let's Tie the Knot, Honey!",2022,99,"['comedy', 'romance']",['PE'],4.4,26.0
+tm1110212,Little Big Mouth,2021,94,"['comedy', 'music', 'romance']",['ZA'],3.9,178.0
+tm1122095,A Naija Christmas,2021,121,"['comedy', 'drama', 'romance']",['NG'],4.7,342.0
+tm918777,Geez & Ann,2021,105,"['drama', 'romance']",['ID'],5.0,290.0
+tm851599,Tersanjung: The Movie,2021,114,"['drama', 'romance']",['ID'],5.8,216.0
+tm878575,The Heartbreak Club,2021,101,"['comedy', 'drama', 'romance']",['ID'],6.3,196.0
+tm846586,Layla Majnun,2021,119,"['romance', 'drama']",['ID'],6.0,277.0
+tm996479,Tuesdays And Fridays,2021,106,"['romance', 'comedy']","['GB', 'IN']",4.4,792.0
+tm985747,I Missed You,2021,96,"['drama', 'romance']",['TW'],5.7,250.0
+tm959213,My Amanda,2021,89,"['drama', 'romance']",['PH'],5.7,308.0
+tm1053409,Happiness Ever After,2021,99,"['drama', 'romance']",['ZA'],4.2,163.0
+tm985215,Princess 'Daya'Reese,2021,115,"['comedy', 'romance']",['PH'],7.1,50.0
+tm1097142,My Bride,2021,93,"['romance', 'comedy', 'drama']",['EG'],5.0,327.0
+tm1014599,Fine Wine,2021,100,"['romance', 'drama']",['NG'],6.8,45.0

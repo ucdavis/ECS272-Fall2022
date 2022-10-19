@@ -1,0 +1,174 @@
+id,title,release_year,runtime,genres,production_country,imdb_score,imdb_votes
+tm156453,FTA,1972,97,"['war', 'documentation', 'music', 'comedy']",['US'],6.2,418.0
+tm90896,The Return of the Prodigal Son,1976,124,"['music', 'drama', 'crime']","['DZ', 'EG']",7.2,780.0
+tm189171,Wild Tango,1993,124,"['drama', 'music', 'romance']","['ES', 'AR']",6.7,1584.0
+tm21911,Sam Kinison: Live in Vegas,1991,72,"['comedy', 'music', 'documentation']",['US'],6.6,276.0
+tm92641,Inception,2010,148,"['action', 'scifi', 'music', 'thriller']","['US', 'GB']",8.8,2294231.0
+tm44378,Tony Manero,2008,97,"['drama', 'music']",['CL'],6.8,4255.0
+tm37945,Rock On!!,2008,144,"['drama', 'music']",['IN'],7.7,22092.0
+tm23977,Fuga,2006,110,"['music', 'drama', 'thriller']","['CL', 'AR']",6.2,1129.0
+tm52352,This Is the Life,2008,97,"['music', 'documentation']",['US'],6.3,264.0
+tm241875,Frank & Cindy,2007,73,"['documentation', 'music', 'drama']",['US'],6.9,348.0
+tm95507,Chance Pe Dance,2010,121,"['drama', 'music', 'romance', 'comedy']",['IN'],4.8,2979.0
+tm69386,Quartet,2012,98,"['drama', 'comedy', 'romance', 'music']",['GB'],6.8,20297.0
+tm56296,The History of Future Folk,2012,86,"['music', 'comedy', 'scifi']",['US'],7.1,3478.0
+tm40860,Big Time Movie,2012,68,"['comedy', 'music', 'family']",['US'],6.1,1962.0
+tm143227,Begin Again,2013,104,"['drama', 'comedy', 'music', 'romance']",['US'],7.4,155249.0
+tm171228,Metallica: Through the Never,2013,93,['music'],['US'],7.1,17513.0
+tm237143,Shrek the Musical,2013,130,"['music', 'comedy', 'fantasy', 'family']",['US'],6.9,3695.0
+tm144121,Get on Up,2014,139,"['drama', 'music']",['US'],6.9,24613.0
+tm139922,"The Other One: The Long, Strange Trip of Bob Weir",2014,85,"['music', 'documentation']",['US'],7.3,1677.0
+tm148597,Monty Python: Live (Mostly),2014,138,"['documentation', 'comedy', 'music']",['GB'],7.6,2623.0
+tm186054,ABCD,2013,136,"['music', 'drama']",['IN'],6.3,6960.0
+tm145791,Miss Granny,2014,124,"['drama', 'comedy', 'music', 'family', 'fantasy']",['KR'],7.2,3508.0
+tm185736,SampleThis,2013,85,"['documentation', 'music']",['US'],6.4,471.0
+tm120609,"Hail, Caesar!",2016,106,"['comedy', 'drama', 'music']",['US'],6.3,133837.0
+tm147082,"What Happened, Miss Simone?",2015,101,"['music', 'documentation']",['US'],7.6,13872.0
+tm242736,Bo Burnham: Make Happy,2016,60,"['comedy', 'music', 'documentation']",['US'],8.4,14356.0
+tm142881,Jem and the Holograms,2015,118,"['fantasy', 'music', 'romance', 'scifi', 'drama', 'family']",['US'],4.1,7867.0
+tm221225,David Brent: Life on the Road,2016,96,"['comedy', 'music', 'action']",['GB'],6.3,20005.0
+tm228242,A Very Murray Christmas,2015,56,"['comedy', 'music']",['US'],5.5,15455.0
+tm225693,Keith Richards: Under the Influence,2015,82,"['documentation', 'music']",['US'],7.1,3383.0
+tm242755,Ordinary World,2016,86,"['comedy', 'drama', 'family', 'music']",['US'],5.5,3106.0
+tm245297,Justin Timberlake + The Tennessee Kids,2016,90,"['music', 'documentation']",['US'],7.6,2191.0
+tm207668,ABCD 2,2015,154,"['music', 'drama']",['IN'],5.4,6424.0
+tm239774,XOXO,2016,92,"['music', 'drama']",['US'],5.3,7021.0
+tm246056,Garfunkel and Oates: Trying to be Special,2016,62,"['comedy', 'music']",['US'],7.3,919.0
+tm214589,The Breakup Playlist,2015,117,"['romance', 'drama', 'music']",['PH'],6.5,305.0
+tm273933,Reggie Watts: Spatial,2016,61,"['comedy', 'music']",['US'],6.0,515.0
+tm234735,Time Out,2015,98,"['drama', 'animation', 'family', 'music']",['IN'],6.0,414.0
+tm300280,Rumble: The Indians Who Rocked the World,2017,103,"['music', 'documentation']",['CA'],7.7,830.0
+tm320281,"Can't Stop, Won't Stop: A Bad Boy Story",2017,80,"['music', 'documentation']",['US'],5.3,735.0
+tm435916,The Perfection,2018,90,"['horror', 'thriller', 'drama', 'music']",['US'],6.1,42403.0
+tm427308,Falls Around Her,2018,100,"['drama', 'music', 'thriller']",['CA'],6.3,127.0
+tm426274,The After Party,2018,89,"['comedy', 'horror', 'music']",['US'],5.7,4405.0
+tm423373,Andhadhun,2018,139,"['thriller', 'drama', 'comedy', 'crime', 'music']",['IN'],8.2,90237.0
+tm411415,If I Leave Here Tomorrow: A Film About Lynyrd Skynyrd,2018,94,"['documentation', 'music']",['US'],7.9,1285.0
+tm406881,Bathtubs Over Broadway,2018,87,"['comedy', 'music', 'documentation']",['US'],7.6,1089.0
+tm437608,Adam Sandler: 100% Fresh,2018,73,"['comedy', 'music']",['US'],7.5,5178.0
+tm326723,The Polka King,2017,95,"['comedy', 'music', 'drama']",['US'],5.9,10568.0
+tm448122,Taylor Swift: Reputation Stadium Tour,2018,125,"['music', 'documentation']",['US'],8.3,5435.0
+tm298779,Lu Over the Wall,2017,117,"['animation', 'family', 'fantasy', 'action', 'comedy', 'music']",['JP'],6.8,2269.0
+tm347530,Gaga: Five Foot Two,2017,100,"['music', 'documentation']",['US'],7.0,12937.0
+tm318200,Clive Davis: The Soundtrack of Our Lives,2017,123,"['documentation', 'music']",['US'],7.4,991.0
+tm427465,Quincy,2018,124,"['music', 'documentation']",['US'],7.6,4551.0
+tm445735,Springsteen On Broadway,2018,153,"['music', 'documentation']",['US'],8.5,2199.0
+tm327540,Gnome Alone,2017,85,"['family', 'action', 'animation', 'comedy', 'fantasy', 'music', 'thriller', 'drama']","['CA', 'GB', 'US']",5.6,3488.0
+tm307776,Secret Superstar,2017,150,"['drama', 'music']",['IN'],7.8,24832.0
+tm233485,Charming,2018,90,"['comedy', 'family', 'fantasy', 'music', 'animation', 'action']",['US'],5.6,3518.0
+tm441060,ReMastered: Tricky Dick & The Man in Black,2018,58,"['documentation', 'music']",['US'],7.1,1519.0
+tm370628,Fred Armisen: Standup for Drummers,2018,65,"['music', 'comedy']",['US'],5.8,1294.0
+tm406098,Battle,2018,95,"['drama', 'romance', 'music', 'european']","['NO', 'SE', 'DK', 'NL']",5.9,4248.0
+tm327652,"Roxanne, Roxanne",2017,98,"['drama', 'music']",['US'],6.2,3222.0
+tm416620,Quién te cantará,2018,125,"['drama', 'thriller', 'music', 'european']","['ES', 'FR']",6.9,2915.0
+tm414676,Paradise Lost,2018,110,"['drama', 'music', 'documentation']",['BR'],6.9,689.0
+tm319512,The Girl from the Song,2017,102,"['romance', 'drama', 'music', 'european']",['ES'],5.6,1775.0
+tm434883,Been So Long,2018,100,"['music', 'romance', 'drama']",['GB'],5.4,1108.0
+tm233345,Love Beats Rhymes,2017,105,"['music', 'drama']",['US'],5.3,1072.0
+tm357272,Barbra: The Music ... The Mem'ries ... The Magic!,2017,108,"['documentation', 'music']",['US'],7.5,448.0
+tm334949,Right Here Right Now,2018,89,"['drama', 'comedy', 'music', 'european']",['DE'],5.4,311.0
+tm370440,Paradox,2018,73,"['western', 'fantasy', 'music']",['US'],3.9,713.0
+tm436171,El Potro: lo mejor del amor,2018,122,"['drama', 'music']",['AR'],5.2,723.0
+tm443283,Loudon Wainwright III: Surviving Twin,2018,91,"['music', 'documentation']",['US'],7.1,95.0
+tm279017,"Michael Bolton's Big, Sexy Valentine's Day Special",2017,54,"['comedy', 'music', 'romance']",['US'],6.8,2126.0
+tm437159,ReMastered: Who Shot the Sheriff,2018,57,"['documentation', 'crime', 'history', 'music']",['US'],6.9,1430.0
+tm439678,Solo el amor,2018,93,"['drama', 'romance', 'music', 'comedy']",['AR'],4.8,71.0
+tm420311,Ana e Vitória,2018,115,"['romance', 'comedy', 'music']",['BR'],6.4,610.0
+tm413266,Pup Star: World Tour,2018,87,"['music', 'comedy', 'family']","['JP', 'US', 'CA']",3.8,208.0
+tm447328,ReMastered: Who Killed Jam Master Jay?,2018,58,"['music', 'documentation']",['US'],6.5,786.0
+tm469399,Music Teacher,2018,101,"['romance', 'drama', 'music']",['IN'],6.2,693.0
+tm478701,Lara and the Beat,2018,137,"['drama', 'music', 'romance']",['NG'],5.8,149.0
+tm840936,Zoé: Panoramas,2017,89,"['documentation', 'music']",['XX'],6.8,78.0
+tm849004,Eurovision Song Contest: The Story of Fire Saga,2020,123,"['music', 'comedy']",['US'],6.5,92086.0
+tm455636,The Dirt,2019,108,"['drama', 'comedy', 'music']",['US'],6.9,48445.0
+tm678022,The Prom,2020,130,"['comedy', 'drama', 'music', 'romance']",['US'],5.9,26197.0
+tm821143,Ma Rainey's Black Bottom,2020,94,"['drama', 'music']",['US'],6.9,50988.0
+tm433462,We Summon the Darkness,2020,91,"['thriller', 'horror', 'comedy', 'music']",['US'],5.2,10483.0
+tm447788,Fyre,2019,98,"['documentation', 'crime', 'music']",['US'],7.2,45728.0
+tm453099,Rolling Thunder Revue: A Bob Dylan Story by Martin Scorsese,2019,142,"['documentation', 'music', 'history']",['US'],7.6,6730.0
+tm919864,The Disciple,2020,128,"['drama', 'music']",['IN'],7.1,2567.0
+tm845415,Miss Americana,2020,85,"['music', 'documentation']",['US'],7.4,19482.0
+tm822246,The Forty-Year-Old Version,2020,123,"['comedy', 'drama', 'music']",['US'],7.2,5003.0
+tm822907,Patsy & Loretta,2019,88,"['music', 'drama']",['US'],6.8,1062.0
+tm493175,ZZ Top: That Little Ol' Band from Texas,2019,91,"['music', 'documentation']",['GB'],7.5,1732.0
+tm446625,Miles Davis: Birth of the Cool,2019,116,"['documentation', 'music']",['US'],7.4,1771.0
+tm938793,I Am Woman,2020,116,"['drama', 'music', 'romance', 'history']",['AU'],6.5,2296.0
+tm826563,A Cinderella Story: Christmas Wish,2019,93,"['music', 'romance', 'fantasy', 'comedy']",['US'],5.3,
+tm848995,Jingle Jangle: A Christmas Journey,2020,122,"['fantasy', 'music', 'family']",['US'],6.4,18374.0
+tm470836,The Show Must Go On: The Queen + Adam Lambert Story,2019,81,"['music', 'documentation']",['US'],7.8,1979.0
+tm467467,Homecoming: A Film by Beyoncé,2019,137,"['documentation', 'music']",['US'],7.5,7085.0
+tm889018,Nobody Knows I'm Here,2020,91,"['drama', 'music']",['CL'],6.5,4148.0
+tm847629,Dolly Parton: Here I Am,2019,89,"['documentation', 'music']",['GB'],7.3,1502.0
+tm916997,Work It,2020,93,"['comedy', 'music']",['US'],6.1,13242.0
+tm461159,Trouble,2019,88,"['action', 'family', 'comedy', 'music', 'animation']",['CA'],5.8,3281.0
+tm457856,ReMastered: The Two Killings of Sam Cooke,2019,74,"['documentation', 'music']",[],7.2,2269.0
+tm931330,BLACKPINK: Light Up the Sky,2020,79,"['documentation', 'music']",['US'],7.3,6427.0
+tm470378,ReMastered: Devil at the Crossroads,2019,48,"['documentation', 'music']",['US'],7.0,2748.0
+tm884581,Rich in Love,2020,104,"['comedy', 'romance', 'music']",['BR'],6.0,2687.0
+tm421560,Let's Dance,2019,109,"['drama', 'comedy', 'music', 'family']","['BE', 'FR']",5.9,1412.0
+tm675171,The Black Godfather,2019,118,"['documentation', 'music']",['US'],7.4,1363.0
+tm944331,Shawn Mendes: In Wonder,2020,83,"['documentation', 'music']",['US'],6.4,2049.0
+tm817542,Hikaru Utada Laughter in the Dark Tour 2018,2019,141,"['music', 'documentation', 'comedy']",['JP'],8.2,92.0
+tm483420,Ella Fitzgerald: Just One of Those Things,2019,89,"['documentation', 'music']",['GB'],6.9,447.0
+tm814894,Parchís: the Documentary,2019,105,"['documentation', 'music']",['ES'],6.8,542.0
+tm452440,Cinderela Pop,2019,94,"['romance', 'comedy', 'family', 'music']",['BR'],4.5,1061.0
+tm982100,"ariana grande: excuse me, i love you",2020,97,"['documentation', 'music']",['US'],6.3,2591.0
+tm845850,Out of the Clear Blue Sky,2019,112,"['drama', 'music', 'comedy', 'romance']","['MX', 'US']",6.5,1447.0
+tm464527,ReMastered: The Miami Showband Massacre,2019,70,"['documentation', 'crime', 'music']",[],7.0,1400.0
+tm937044,Bigflo & Oli: Hip Hop Frenzy,2020,100,"['documentation', 'music']",['FR'],6.7,122.0
+tm827640,Travis Scott: Look Mom I Can Fly,2019,85,"['documentation', 'music']",['US'],6.3,4629.0
+tm975765,Emicida: AmarElo - It's All for Yesterday,2020,89,"['music', 'documentation']",['BR'],8.5,1510.0
+tm977782,Shawn Mendes: Live in Concert,2020,87,"['music', 'documentation']",['CA'],7.1,327.0
+tm977952,Fierce,2020,118,"['comedy', 'music']",['PL'],5.5,1234.0
+tm938227,Dolly Parton's Christmas on the Square,2020,98,"['comedy', 'music', 'family']",['US'],5.2,2686.0
+tm832684,Los Tigres del Norte at Folsom Prison,2019,64,"['documentation', 'music']",['US'],7.0,174.0
+tm822596,Into the Beat,2020,102,"['music', 'romance', 'drama', 'european']",['DE'],5.3,1345.0
+tm540277,Nasha Natasha,2020,83,"['documentation', 'music']",['UY'],6.3,305.0
+tm474263,Still Laugh-In: The Stars Celebrate,2019,60,"['comedy', 'music']",[],5.2,590.0
+tm473647,ReMastered: The Lion's Share,2019,84,"['music', 'documentation']",['US'],6.9,637.0
+tm907704,Dark City Beneath the Beat,2020,65,"['documentation', 'music']",['US'],6.6,141.0
+tm484173,Bhangra Paa Le,2020,131,"['music', 'comedy', 'drama']",['IN'],6.2,361.0
+tm830151,One Day We'll Talk About Today,2020,121,"['drama', 'family', 'music', 'documentation']",['ID'],7.4,1155.0
+tm1026240,Perfume Imaginary Museum “Time Warp”,2020,53,['music'],['JP'],6.5,24.0
+tm373655,Sarvam Thaala Mayam,2019,133,"['drama', 'music']",['IN'],7.6,1231.0
+tm843345,Pinkfong & Baby Shark's Space Adventure,2019,66,"['animation', 'family', 'music', 'fantasy']","['KR', 'US']",5.1,74.0
+tm901961,One Take,2020,85,"['documentation', 'music', 'drama']",['DE'],5.9,52.0
+tm893510,What are the Odds?,2019,92,"['drama', 'documentation', 'music']",['IN'],5.2,840.0
+tm907872,Sky Tour: The Movie,2020,94,"['music', 'documentation']",[],5.5,1041.0
+tm507191,Mayday Life,2019,112,"['music', 'documentation']",['TW'],6.7,129.0
+tm929614,GIMS: On the Record,2020,96,"['music', 'documentation']",['FR'],6.8,209.0
+tm842976,Go! The Unforgettable Party,2019,60,"['music', 'family']",['AR'],5.1,144.0
+tm452578,Miranda Sings Live... Your Welcome,2019,61,"['comedy', 'music']",['US'],5.4,424.0
+tm305129,Sing 2,2021,110,"['comedy', 'family', 'fantasy', 'music', 'drama', 'animation']",['US'],7.4,58423.0
+tm1075698,Metal Lords,2022,97,"['music', 'comedy', 'drama']",['US'],6.7,24672.0
+tm1195971,Jennifer Lopez:  Halftime,2022,95,"['music', 'documentation']",['US'],6.5,3980.0
+tm1001097,Beauty,2022,95,"['drama', 'music', 'romance']",['US'],3.9,492.0
+tm1038686,Bo Burnham: Inside,2021,87,"['comedy', 'drama', 'music', 'reality']",['US'],8.7,44074.0
+tm983723,The Sparks Brothers,2021,140,"['documentation', 'music', 'comedy', 'history']","['GB', 'US']",7.8,4663.0
+tm841825,My Little Pony: A New Generation,2021,91,"['music', 'action', 'animation', 'family', 'fantasy', 'comedy', 'drama', 'scifi']","['IE', 'US', 'CA']",6.8,3657.0
+tm1082974,Count Me In,2021,81,"['documentation', 'music']",[],6.8,1805.0
+tm977704,Robin Robin,2021,30,"['animation', 'action', 'family', 'music', 'comedy']",['GB'],7.2,1533.0
+tm1018427,Moxie,2021,111,"['music', 'comedy', 'drama']",['US'],6.7,24720.0
+tm1066826,Diana: The Musical,2021,117,"['history', 'music', 'romance', 'drama']",['US'],4.2,1266.0
+tm1144897,My Father's Violin,2022,112,"['drama', 'music']",['TR'],6.4,3216.0
+tm1104532,Britney vs. Spears,2021,93,"['documentation', 'music']",['US'],6.4,6924.0
+tm319224,The Loud House Movie,2021,83,"['comedy', 'action', 'family', 'animation', 'fantasy', 'drama', 'music', 'thriller']",['US'],6.1,2027.0
+tm1207096,Snoop Dogg's F*cn Around Comedy Special,2022,67,"['documentation', 'comedy', 'music']",[],5.2,371.0
+tm876608,Sounds Like Love,2021,110,"['comedy', 'music', 'romance', 'drama']",['ES'],5.4,2135.0
+tm1001108,Biggie: I Got a Story to Tell,2021,97,"['documentation', 'music']",['US'],6.8,5028.0
+tm1130995,Jonas Brothers Family Roast,2021,68,"['comedy', 'music']",['US'],5.2,1647.0
+tm1080406,"Barbie: Big City, Big Dreams",2021,62,"['animation', 'music', 'family']",['US'],5.7,305.0
+tm1178876,Battle: Freestyle,2022,88,"['drama', 'music', 'romance']",['NO'],4.3,382.0
+tm1031186,Heroes: Silence and Rock & Roll,2021,94,"['documentation', 'music']",['ES'],7.5,668.0
+tm1107848,Making Malinche: A Documentary by Nacho Cano,2021,89,"['documentation', 'music']",[],5.1,34.0
+tm1101878,Honey Girls,2021,90,"['family', 'music', 'comedy']",['US'],4.7,173.0
+tm1068692,Emicida AmarElo Live in Sao Paulo,2021,99,"['documentation', 'music']",['BR'],7.6,44.0
+tm989502,Wish You,2021,101,"['drama', 'romance', 'music']",['KR'],6.4,900.0
+tm1092075,Forever Rich,2021,90,"['crime', 'comedy', 'drama', 'music', 'thriller']",['NL'],5.5,1025.0
+tm1024535,The Guardian,2021,127,"['drama', 'horror', 'music', 'thriller', 'crime']",['VN'],5.7,347.0
+tm1029279,Dolly Parton: A MusiCares Tribute,2021,55,"['music', 'documentation']",['US'],6.6,234.0
+tm1146635,Daiki Tsuneta: Tokyo Chaotic,2021,89,"['documentation', 'music']",['JP'],7.5,19.0
+tm1120766,Angèle,2021,84,"['documentation', 'music']","['FR', 'BE']",7.0,518.0
+tm1160938,Adam by Eve: A Live in Animation,2022,58,"['drama', 'animation', 'music']",['JP'],6.1,378.0
+tm1046969,Myriam Fares: The Journey,2021,72,"['documentation', 'music']",['LB'],2.3,167.0
+tm1110212,Little Big Mouth,2021,94,"['comedy', 'music', 'romance']",['ZA'],3.9,178.0

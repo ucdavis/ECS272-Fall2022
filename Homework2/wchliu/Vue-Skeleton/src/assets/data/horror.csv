@@ -1,0 +1,250 @@
+id,title,release_year,runtime,genres,production_country,imdb_score,imdb_votes
+tm2386,A Nightmare on Elm Street,1984,91,['horror'],"['GB', 'US']",7.4,234068.0
+tm54450,Christine,1983,110,"['horror', 'thriller', 'european']",['US'],6.7,81922.0
+tm49178,Vampires,1998,104,"['fantasy', 'action', 'horror', 'thriller']",['US'],6.1,58670.0
+tm191387,Anaconda,1997,89,"['horror', 'thriller', 'action']","['PE', 'US', 'BR']",4.8,104213.0
+tm192199,Spawn,1997,96,"['scifi', 'action', 'drama', 'horror']",['US'],5.2,68184.0
+tm74402,The Mist,2007,126,"['horror', 'scifi', 'thriller']",['US'],7.1,305346.0
+tm88465,Insidious,2010,103,"['horror', 'thriller']","['CA', 'US']",6.8,303820.0
+tm46436,Thir13en Ghosts,2001,91,"['horror', 'thriller', 'fantasy']","['CA', 'US']",5.6,87083.0
+tm79895,Halloween,2007,109,['horror'],['US'],6.0,119606.0
+tm78067,The Girl Next Door,2007,91,"['crime', 'drama', 'horror', 'thriller']",['US'],6.5,26293.0
+tm141390,Friday the 13th,2009,97,"['horror', 'thriller']",['US'],5.5,106970.0
+tm94606,Let Me In,2010,116,"['drama', 'horror', 'thriller', 'fantasy', 'european']","['GB', 'US']",7.1,121008.0
+tm102337,A Nightmare on Elm Street,2010,95,"['horror', 'thriller', 'crime', 'drama']",['US'],5.2,99894.0
+tm24088,Scary Movie 4,2006,83,"['comedy', 'horror']",['US'],5.1,120997.0
+tm137362,The Texas Chainsaw Massacre,2003,98,"['horror', 'crime']",['US'],6.2,141736.0
+tm150214,Freddy vs. Jason,2003,97,"['horror', 'action']","['IT', 'US']",5.7,118925.0
+tm161263,The Cave,2005,97,"['horror', 'thriller', 'action', 'scifi', 'european']","['DE', 'US']",5.1,38734.0
+tm26638,The Texas Chainsaw Massacre: The Beginning,2006,91,"['thriller', 'horror', 'documentation']",['US'],5.8,72845.0
+tm38896,From Within,2008,89,"['horror', 'thriller', 'documentation', 'war', 'european']",['US'],5.6,7650.0
+tm95238,The Boy Who Cried Werewolf,2010,97,"['fantasy', 'horror', 'family', 'comedy']","['US', 'CA']",5.9,3315.0
+tm170169,Kaal,2005,127,"['action', 'thriller', 'horror', 'scifi']",['IN'],4.7,5370.0
+tm237621,The Figurine (Araromire),2009,122,"['horror', 'thriller', 'drama']",['NG'],4.4,251.0
+tm154802,Agyaat,2009,98,"['horror', 'thriller', 'drama']",['IN'],2.9,680.0
+tm254052,Kucch To Hai,2003,142,"['thriller', 'horror', 'romance', 'drama']",['IN'],4.3,920.0
+tm85689,Krishna Cottage,2004,124,"['thriller', 'horror', 'romance', 'drama']",['IN'],5.1,1178.0
+tm39896,Dark Shadows,2012,113,"['comedy', 'fantasy', 'horror']",['US'],6.2,265626.0
+tm60844,Berserk: The Golden Age Arc I - The Egg of the King,2012,76,"['action', 'fantasy', 'animation', 'horror', 'war', 'drama']",['JP'],7.5,12548.0
+tm173195,The Rite,2011,114,"['drama', 'thriller', 'horror']","['US', 'HU', 'IT']",6.0,97585.0
+tm174256,Red Riding Hood,2011,100,"['fantasy', 'thriller', 'horror', 'drama', 'romance']","['CA', 'US']",5.4,112015.0
+tm38064,Berserk: The Golden Age Arc II - The Battle for Doldrey,2012,98,"['action', 'drama', 'fantasy', 'animation', 'horror']",['JP'],7.7,10470.0
+tm177044,Naruto Shippuden the Movie: Blood Prison,2011,108,"['action', 'comedy', 'horror', 'thriller', 'animation', 'fantasy']",['JP'],7.1,5104.0
+tm167241,Ragini MMS,2011,93,"['drama', 'horror', 'thriller']",['IN'],5.1,2654.0
+tm150928,It Follows,2014,101,"['horror', 'thriller']",['US'],6.8,236513.0
+tm160621,The Conjuring,2013,112,"['horror', 'thriller']",['US'],7.5,496484.0
+tm175843,Dark Skies,2013,97,"['scifi', 'thriller', 'horror', 'documentation']",['US'],6.3,75663.0
+tm180572,Insidious: Chapter 2,2013,106,"['horror', 'thriller']",['US'],6.5,169039.0
+tm151807,Creep,2014,82,"['horror', 'thriller']",['US'],6.3,53408.0
+tm161525,The Green Inferno,2013,100,"['thriller', 'horror']","['US', 'CA', 'CL']",5.3,44016.0
+tm171042,The Call,2013,94,"['thriller', 'crime', 'drama', 'horror', 'action', 'european']",['US'],6.7,121843.0
+tm178712,Scary Movie 5,2013,89,"['comedy', 'horror']",['US'],3.5,71405.0
+tm184608,Texas Chainsaw 3D,2013,87,"['thriller', 'horror']",['US'],4.8,49312.0
+tm140342,"I, Frankenstein",2014,92,"['thriller', 'scifi', 'horror', 'action', 'fantasy']","['AU', 'US']",5.1,80985.0
+tm180599,The Haunting in Connecticut 2: Ghosts of Georgia,2013,101,"['thriller', 'horror', 'drama']",['US'],5.2,17264.0
+tm167944,Berserk: The Golden Age Arc III - The Advent,2013,110,"['drama', 'fantasy', 'animation', 'action', 'romance', 'horror']",['JP'],7.8,10173.0
+tm182969,Dabbe: The Possession,2013,120,['horror'],['TR'],6.8,5831.0
+tm145627,Pizza,2014,107,"['horror', 'thriller']",['IN'],6.2,1313.0
+tm142630,Ragini MMS 2,2014,120,['horror'],['IN'],3.9,2903.0
+tm145216,Dabbe 5: Curse of the Jinn,2014,132,['horror'],['TR'],5.9,3788.0
+tm169294,Pagpag: Siyam na Buhay,2013,105,['horror'],['PH'],5.4,326.0
+tm681614,Grandmother's Farm,2013,71,"['comedy', 'horror']",[],2.9,78.0
+tm239760,Blair Witch,2016,89,"['thriller', 'horror']","['US', 'CA']",5.0,44716.0
+tm242705,Raw,2016,99,"['horror', 'drama', 'fantasy', 'european']","['FR', 'BE']",7.0,72460.0
+tm137693,Crimson Peak,2015,119,"['horror', 'thriller', 'romance', 'fantasy', 'drama']",['US'],6.5,146073.0
+tm206698,Ouija: Origin of Evil,2016,99,"['drama', 'horror', 'thriller']",['US'],5.3,6.0
+tm139841,Sinister 2,2015,97,"['horror', 'thriller']","['US', 'CA', 'GB']",5.3,54305.0
+tm239676,Hush,2016,82,"['horror', 'thriller']",['US'],6.6,123667.0
+tm194792,The Boy,2016,97,"['horror', 'thriller']",['US'],6.0,90853.0
+tm138297,The Conjuring 2,2016,134,"['horror', 'thriller', 'drama']",['US'],7.3,264195.0
+tm245271,Gantz:O,2016,95,"['scifi', 'action', 'animation', 'fantasy', 'thriller', 'horror', 'drama']",['JP'],7.1,14950.0
+tm233214,Under the Shadow,2016,84,"['war', 'drama', 'horror', 'thriller', 'fantasy']","['GB', 'IR', 'JO', 'QA']",6.8,27337.0
+tm134791,Unfriended,2015,82,"['thriller', 'horror', 'drama']",['US'],5.5,73854.0
+tm206512,Circle,2015,87,"['thriller', 'drama', 'horror', 'scifi', 'european']",['US'],6.0,52925.0
+tm200126,He Never Died,2015,99,"['fantasy', 'horror', 'comedy', 'drama', 'thriller']","['US', 'CA']",6.3,20376.0
+tm139532,Before I Wake,2016,97,"['drama', 'fantasy', 'horror', 'thriller']",['US'],6.2,46334.0
+tm200690,The Forest,2016,95,"['horror', 'thriller', 'scifi', 'drama', 'fantasy']",['US'],4.8,42561.0
+tm233465,The Bye Bye Man,2016,96,"['thriller', 'horror', 'fantasy', 'drama']",['US'],4.3,23960.0
+tm155102,Demonic,2015,83,"['thriller', 'horror']","['US', 'GB']",5.3,14882.0
+tm244880,I Am the Pretty Thing That Lives in the House,2016,89,"['horror', 'thriller', 'drama']","['CA', 'US']",4.6,14580.0
+tm233533,White Girl,2016,88,"['drama', 'horror', 'crime']",['US'],5.7,10646.0
+tm238748,The Darkness,2016,92,"['thriller', 'horror']",['US'],4.5,16090.0
+tm211510,Incarnate,2016,19,"['horror', 'thriller']",['US'],5.2,13090.0
+tm219699,Phantom,2015,136,"['thriller', 'action', 'drama', 'crime', 'horror', 'european']",['IN'],5.9,9281.0
+tm263743,The Doll,2016,106,"['thriller', 'horror']",['ID'],5.2,764.0
+tm246485,U Turn,2016,121,"['horror', 'thriller', 'crime', 'drama']",['IN'],7.5,3310.0
+tm215911,Ludo,2015,90,"['horror', 'thriller', 'fantasy']",['IN'],2.8,852.0
+tm562821,Grandmother's Farm Part 2,2015,80,"['horror', 'thriller', 'comedy']",['AE'],5.4,61.0
+tm244208,It,2017,135,"['horror', 'fantasy', 'thriller']",['US'],7.3,527626.0
+tm287684,The Ritual,2017,94,"['thriller', 'horror']","['CA', 'GB']",6.3,95551.0
+tm244364,The Nightingale,2018,136,"['thriller', 'drama', 'horror']",['AU'],7.3,29758.0
+tm359978,Forgotten,2017,109,"['thriller', 'horror', 'scifi']",['KR'],7.4,31208.0
+tm239286,The Cloverfield Paradox,2018,102,"['horror', 'thriller', 'scifi', 'drama', 'action']",['US'],5.5,104068.0
+tm266666,Gerald's Game,2017,104,"['horror', 'thriller', 'drama']",['US'],6.5,106451.0
+tm350379,Ghostland,2018,91,"['thriller', 'horror', 'drama', 'european']","['CA', 'FR']",6.4,31379.0
+tm350,The Bad Batch,2017,119,"['drama', 'horror', 'scifi', 'romance', 'action']",['US'],5.2,31275.0
+tm374132,Bird Box,2018,124,"['thriller', 'drama', 'scifi', 'horror']",['US'],6.6,331070.0
+tm280828,The Babysitter,2017,85,"['comedy', 'horror']",['US'],6.4,86953.0
+tm420348,Cam,2018,95,"['thriller', 'horror', 'drama']",['US'],5.9,31542.0
+tm271951,Apostle,2018,130,"['thriller', 'drama', 'horror', 'fantasy']","['US', 'GB']",6.3,51890.0
+tm227940,Berlin Syndrome,2017,116,"['horror', 'thriller', 'drama']",['AU'],6.2,25149.0
+tm317542,1922,2017,101,"['horror', 'drama', 'documentation', 'crime', 'thriller']",['US'],6.2,62508.0
+tm313683,Veronica,2017,105,['horror'],['ES'],6.2,41284.0
+tm299677,Hold the Dark,2018,126,"['thriller', 'crime', 'horror', 'action', 'drama']",['US'],5.6,36928.0
+tm435916,The Perfection,2018,90,"['horror', 'thriller', 'drama', 'music']",['US'],6.1,42403.0
+tm317566,Creep 2,2017,80,"['thriller', 'horror', 'crime', 'drama']",['US'],6.4,25671.0
+tm307283,Cargo,2017,105,"['drama', 'thriller', 'scifi', 'horror']",['AU'],6.3,43232.0
+tm316414,Hell Fest,2018,88,"['horror', 'thriller']",['US'],5.5,16976.0
+tm434202,Malevolent,2018,89,"['horror', 'thriller']",['GB'],4.8,13772.0
+tm349278,Ravenous,2017,103,"['drama', 'scifi', 'horror', 'thriller', 'action']",['CA'],5.8,9205.0
+tm352588,Tau,2018,97,"['scifi', 'thriller', 'horror']",['US'],5.8,31218.0
+tm217228,Death Note,2017,101,"['horror', 'thriller', 'crime', 'fantasy', 'drama', 'action']",['US'],4.5,84119.0
+tm426274,The After Party,2018,89,"['comedy', 'horror', 'music']",['US'],5.7,4405.0
+tm211554,Beyond Skyline,2017,105,"['scifi', 'thriller', 'action', 'horror']","['GB', 'ID', 'CA', 'CN', 'SG', 'US']",5.3,21834.0
+tm292837,The Bar,2017,102,"['horror', 'thriller', 'comedy', 'fantasy', 'european']",['ES'],6.3,26370.0
+tm351101,Errementari: The Blacksmith and the Devil,2018,98,"['drama', 'fantasy', 'horror', 'thriller', 'european']","['ES', 'FR']",6.4,11653.0
+tm439484,Welcome Home,2018,97,"['thriller', 'horror', 'drama', 'comedy']",['US'],5.2,7597.0
+tm306301,Piercing,2018,82,"['thriller', 'horror']","['US', 'FR']",5.5,7598.0
+tm436470,No Escape Room,2018,85,"['thriller', 'horror']",['US'],5.0,4403.0
+tm414962,May the Devil Take You,2018,110,"['thriller', 'horror']",['ID'],5.9,4249.0
+tm322243,Shimmer Lake,2017,83,"['thriller', 'crime', 'drama', 'action', 'history', 'horror', 'romance']","['CA', 'US']",6.3,14098.0
+tm425138,Godzilla: The Planet Eater,2018,91,"['scifi', 'fantasy', 'horror', 'animation', 'action']",['JP'],5.0,4196.0
+tm357820,The Open House,2018,94,"['thriller', 'horror']",['US'],3.3,34156.0
+tm260272,Little Evil,2017,94,"['horror', 'comedy', 'fantasy']",['US'],5.6,21421.0
+tm357479,Day of the Dead: Bloodline,2017,90,"['horror', 'action', 'scifi', 'thriller', 'drama', 'european']","['US', 'BG']",3.4,11909.0
+tm285171,Clinical,2017,104,"['thriller', 'horror']",['US'],5.1,8030.0
+tm327053,The Killer,2017,99,"['western', 'horror', 'action']",['BR'],6.0,2664.0
+tm444469,Eerie,2018,101,"['horror', 'crime', 'thriller', 'drama']","['PH', 'SG']",4.6,2324.0
+tm309903,The Little Vampire 3D,2017,83,"['family', 'fantasy', 'comedy', 'animation', 'horror', 'european']","['DE', 'DK', 'NL', 'GB']",5.4,1721.0
+tm362121,Time Share,2018,96,"['horror', 'thriller', 'drama', 'european']","['NL', 'MX']",5.9,2793.0
+tm376234,The Warning,2018,93,"['thriller', 'fantasy', 'crime', 'drama', 'action', 'horror', 'european']",['ES'],5.9,6356.0
+tm428073,When Angels Sleep,2018,94,"['thriller', 'drama', 'horror', 'action', 'crime', 'fantasy', 'european']",['ES'],5.5,3684.0
+tm300440,The Mansion,2017,100,"['comedy', 'horror', 'european']",['FR'],4.6,2645.0
+tm345767,The Maus,2017,90,"['fantasy', 'horror', 'drama', 'european']",['ES'],4.7,6422.0
+tm405901,Family Blood,2018,92,"['thriller', 'horror', 'drama']",['US'],4.2,2955.0
+tm463827,Paranormal Investigation,2018,92,"['thriller', 'horror']",['FR'],3.7,1671.0
+tm359658,The 3rd Eye,2017,107,"['horror', 'thriller', 'animation', 'drama', 'fantasy', 'european']",['ID'],5.1,1405.0
+tm371619,Sabrina,2018,98,"['horror', 'thriller']","['ID', 'MY', 'SG']",4.1,1757.0
+tm435487,Suzzanna: Buried Alive,2018,125,"['drama', 'comedy', 'horror', 'thriller']",['ID'],5.5,914.0
+tm422715,Stree,2018,128,"['horror', 'comedy']",['IN'],7.5,33455.0
+tm422359,Aurora,2018,110,"['horror', 'thriller']",['PH'],4.3,608.0
+tm416121,Kuntilanak,2018,105,"['horror', 'comedy', 'family']",['ID'],4.6,672.0
+tm407730,Target,2018,93,"['horror', 'comedy', 'thriller']",['ID'],4.0,509.0
+tm369433,Awe!,2018,115,"['romance', 'drama', 'fantasy', 'horror', 'scifi', 'thriller']",['IN'],7.7,5054.0
+tm327951,The Doll 2,2017,116,"['horror', 'thriller']",['ID'],5.1,550.0
+tm430660,Munafik 2,2018,104,['horror'],['MY'],5.5,1685.0
+tm424162,Secrets in the Hot Spring,2018,109,"['horror', 'comedy']",['TW'],6.0,774.0
+tm430666,Hantu Kak Limah,2018,111,"['horror', 'comedy']",['MY'],5.6,678.0
+tm430459,La Leyenda del Diamante,2018,87,"['action', 'fantasy', 'horror', 'western', 'family', 'scifi']",['MX'],3.3,51.0
+tm336084,Echcharikkai,2018,134,"['thriller', 'horror', 'crime', 'drama']",['IN'],6.3,312.0
+tm681578,The Rental,2020,88,"['drama', 'horror', 'thriller']",['US'],5.7,30613.0
+tm827638,Synchronic,2019,102,"['crime', 'drama', 'horror', 'scifi', 'thriller']",['US'],6.2,29455.0
+tm824398,The Platform,2019,95,"['scifi', 'thriller', 'horror', 'european']",['ES'],7.0,213699.0
+tm845489,His House,2020,93,"['thriller', 'drama', 'horror']",['GB'],6.5,39988.0
+tm362198,Scary Stories to Tell in the Dark,2019,108,"['horror', 'thriller']","['US', 'CA', 'CN']",6.2,74754.0
+tm368699,The Devil All the Time,2020,138,"['crime', 'drama', 'thriller', 'horror']",['US'],7.1,122321.0
+tm817504,1BR,2019,90,"['thriller', 'drama', 'horror']",['US'],5.8,12397.0
+tm456156,Sweetheart,2019,82,"['horror', 'thriller', 'drama', 'fantasy', 'scifi']",['US'],5.8,8191.0
+tm428856,I Am Mother,2019,114,"['scifi', 'horror', 'drama', 'thriller']",['AU'],6.7,89926.0
+tm439163,Brahms: The Boy II,2020,86,"['thriller', 'horror', 'drama']","['CN', 'US', 'AU', 'CA']",4.7,17048.0
+tm432765,The Wind,2019,86,"['western', 'thriller', 'horror']",['US'],5.5,8242.0
+tm453862,The Call,2020,112,"['scifi', 'thriller', 'drama', 'crime', 'horror']",['KR'],7.1,30772.0
+tm433462,We Summon the Darkness,2020,91,"['thriller', 'horror', 'comedy', 'music']",['US'],5.2,10483.0
+tm332071,Velvet Buzzsaw,2019,113,"['thriller', 'horror', 'comedy']",['US'],5.7,60629.0
+tm943774,The Old Ways,2020,90,"['fantasy', 'horror', 'thriller', 'drama']",['US'],5.4,6035.0
+tm413660,In the Tall Grass,2019,102,"['drama', 'thriller', 'scifi', 'horror']","['CA', 'US']",5.4,55276.0
+tm820190,#Alive,2020,98,"['horror', 'thriller', 'action', 'drama']",['KR'],6.3,38313.0
+tm418847,The Silence,2019,90,"['drama', 'thriller', 'fantasy', 'horror', 'scifi', 'european']",['DE'],5.3,44818.0
+tm411750,Doom: Annihilation,2019,96,"['action', 'scifi', 'thriller', 'horror']",['US'],3.7,9281.0
+tm355783,Eli,2019,98,"['horror', 'thriller', 'drama']",['US'],5.8,35214.0
+tm458467,Girl on the Third Floor,2019,93,"['horror', 'thriller', 'drama']",['US'],4.7,10005.0
+tm952590,What Lies Below,2020,87,"['horror', 'thriller', 'scifi']",['US'],4.3,8290.0
+tm898474,The Swarm,2020,101,"['horror', 'drama', 'fantasy', 'european']",['FR'],5.3,6892.0
+tm858954,Nobody Sleeps in the Woods Tonight,2020,102,"['horror', 'thriller', 'drama', 'romance', 'fantasy', 'european']",['PL'],4.9,11603.0
+tm922788,The Babysitter: Killer Queen,2020,101,"['comedy', 'horror']",['US'],5.8,38684.0
+tm936236,Cadaver,2020,86,"['thriller', 'horror', 'drama']","['FI', 'NO']",5.1,9860.0
+tm847998,Hubie Halloween,2020,103,"['horror', 'comedy', 'thriller', 'fantasy']",['US'],5.2,48575.0
+tm931686,Vampires vs. the Bronx,2020,86,"['comedy', 'horror']",['US'],5.6,9815.0
+tm524282,Invader ZIM: Enter the Florpus,2019,71,"['drama', 'animation', 'action', 'family', 'fantasy', 'comedy', 'scifi', 'thriller', 'horror']",['US'],7.4,5796.0
+tm924991,Death of Me,2020,95,"['horror', 'thriller']","['US', 'TH']",4.4,6176.0
+tm902330,Ghosts of War,2020,94,"['war', 'fantasy', 'horror', 'thriller']",['GB'],5.5,9953.0
+tm857430,The Occupant,2020,103,"['thriller', 'european', 'horror', 'drama']",['ES'],6.4,17289.0
+tm883189,Dangerous Lies,2020,96,"['thriller', 'horror', 'drama', 'comedy', 'crime']",['US'],5.3,16943.0
+tm495609,Game Over,2019,102,"['drama', 'thriller', 'horror', 'scifi']",['IN'],7.0,7402.0
+tm833638,The Forest of Love,2019,151,"['drama', 'crime', 'horror', 'thriller']",['JP'],6.3,2522.0
+tm451502,Kolaiyuthir Kaalam,2019,109,"['horror', 'thriller', 'drama']",['IN'],2.6,411.0
+tm981863,Ammar,2020,90,['horror'],[],2.6,71.0
+tm897170,Furie,2019,98,"['thriller', 'drama', 'horror']",['FR'],5.6,2766.0
+tm449590,Rattlesnake,2019,85,"['horror', 'thriller', 'crime', 'drama']",['US'],4.6,8629.0
+tm898262,Coven,2020,92,"['drama', 'history', 'thriller', 'horror', 'action']","['ES', 'FR', 'AR']",6.4,4754.0
+tm462660,Inhuman Kiss,2019,122,"['horror', 'drama', 'romance']",['TH'],6.4,1783.0
+tm453098,Svaha: The Sixth Finger,2019,122,"['thriller', 'crime', 'horror']",['KR'],6.2,3947.0
+tm972010,Hospital,2020,89,"['horror', 'thriller']",['TW'],3.1,383.0
+tm932609,The Binding,2020,93,"['horror', 'thriller', 'drama']",['IT'],4.8,4203.0
+tm484989,The Influence,2019,99,"['documentation', 'horror', 'european']",['ES'],4.6,3738.0
+tm948916,The Scary House,2020,100,"['thriller', 'family', 'fantasy', 'drama', 'horror', 'european']","['AT', 'DE']",5.4,3787.0
+tm351938,Girls with Balls,2019,77,"['horror', 'comedy', 'european']","['FR', 'BE']",3.9,3272.0
+tm818786,Menendez: The Day of the Lord,2020,93,"['drama', 'horror', 'thriller']","['ES', 'MX']",4.9,1008.0
+tm898773,Bulbbul,2020,94,"['fantasy', 'horror', 'drama']",['IN'],6.5,11844.0
+tm957792,The Rope Curse 2,2020,104,['horror'],[],4.7,354.0
+tm501222,Twin Murders: The Silence of the White City,2019,110,"['action', 'crime', 'drama', 'horror', 'thriller', 'european']",['ES'],5.3,5307.0
+tm822099,The Blue Elephant 2,2019,130,"['horror', 'thriller', 'crime', 'drama']",[],8.2,9475.0
+tm1013697,Nneka the Pretty Serpent,2020,140,"['horror', 'thriller', 'fantasy']",['NG'],3.7,126.0
+tm1226722,U-Turn,2020,120,"['thriller', 'horror']","['PS', 'PH']",4.4,272.0
+tm451852,The 3rd Eye 2,2019,115,"['thriller', 'horror', 'drama', 'fantasy']",['ID'],5.4,596.0
+tm452237,The Car: Road to Revenge,2019,89,"['action', 'horror', 'thriller', 'scifi']",['US'],4.0,1096.0
+tm940566,Kaali Khuhi,2020,90,"['thriller', 'horror', 'drama']",['IN'],3.5,1230.0
+tm925785,Dark Forces,2020,81,"['horror', 'thriller', 'action']",['MX'],2.7,597.0
+tm405637,122,2019,95,"['horror', 'thriller']",['EG'],6.0,5563.0
+tm938333,A Go! Go! Cory Carson Halloween,2020,21,"['animation', 'family', 'horror']",[],6.4,51.0
+tm973704,Andhaghaaram,2020,171,"['thriller', 'horror']",['IN'],7.6,3746.0
+tm818499,Revenge of the Pontianak,2019,92,"['horror', 'romance']","['SG', 'MY']",5.3,273.0
+tm976168,Gone,2020,15,"['horror', 'drama']",['AU'],7.4,19.0
+tm678035,Uncle Naji in UAE,2019,95,"['comedy', 'horror']",['AE'],5.0,60.0
+tm461907,Rakkhosh,2019,113,['horror'],['IN'],4.8,184.0
+tm1143265,Incantation,2022,111,['horror'],['TW'],6.2,5660.0
+tm957290,Umma,2022,83,"['horror', 'drama']",['US'],4.6,4583.0
+tm928497,Valley of the Dead,2022,101,"['comedy', 'horror', 'war', 'fantasy', 'thriller', 'action']",['ES'],6.5,114.0
+tm852172,Apollo 10½:  A Space Age Childhood,2022,98,"['animation', 'scifi', 'action', 'comedy', 'romance', 'family', 'horror', 'drama']","['NL', 'US']",7.3,6681.0
+tm946869,Texas Chainsaw Massacre,2022,83,"['horror', 'thriller', 'crime']",['US'],4.8,48828.0
+tm525645,Fear Street: Part One - 1994,2021,107,"['drama', 'horror', 'fantasy']",['US'],6.2,77401.0
+tm1048362,Army of Thieves,2021,127,"['comedy', 'crime', 'thriller', 'scifi', 'horror', 'romance', 'action']","['DE', 'US']",6.4,73790.0
+tm456513,Army of the Dead,2021,148,"['horror', 'thriller', 'crime', 'scifi', 'action']",['US'],5.7,169348.0
+tm1166024,Choose or Die,2022,85,"['scifi', 'thriller', 'drama', 'horror']",['GB'],4.7,18307.0
+tm1033470,Till Death,2021,89,"['horror', 'thriller']",['US'],5.8,20256.0
+tm824160,Fear Street: Part Two - 1978,2021,109,"['drama', 'horror', 'fantasy']",['US'],6.7,60682.0
+tm983784,Coming Home in the Dark,2021,93,"['thriller', 'crime', 'horror']",['NZ'],5.7,5114.0
+tm1092958,No One Gets Out Alive,2021,85,"['horror', 'thriller', 'drama']","['RO', 'US']",5.3,15031.0
+tm347095,Oxygen,2021,100,"['scifi', 'thriller', 'horror', 'drama', 'fantasy']","['FR', 'US']",6.5,37871.0
+tm1046026,The Trip,2021,114,"['action', 'thriller', 'comedy', 'horror']",['NO'],6.9,20921.0
+tm1075215,Aftermath,2021,114,"['horror', 'thriller', 'drama']",['US'],5.3,15646.0
+tm1046627,Hypnotic,2021,88,"['thriller', 'horror', 'drama']",['CA'],5.3,15690.0
+tm1227853,Bhool Bhulaiyaa 2,2022,142,"['horror', 'comedy']",['IN'],5.9,27244.0
+tm833216,Things Heard & Seen,2021,121,"['horror', 'drama', 'thriller']",['US'],5.3,30703.0
+tm1027081,Blood Red Sky,2021,121,"['thriller', 'action', 'fantasy', 'horror']","['GB', 'DE']",6.1,44006.0
+tm1002815,Nightbooks,2021,103,"['family', 'fantasy', 'horror']","['CA', 'US']",5.7,8573.0
+tm922429,The Block Island Sound,2021,98,"['scifi', 'horror', 'thriller']",['US'],5.3,7778.0
+tm1020820,Night Teeth,2021,107,"['crime', 'drama', 'fantasy', 'horror', 'thriller', 'comedy', 'action']","['GB', 'US']",5.6,17526.0
+tm1180123,The House,2022,31,"['thriller', 'animation', 'comedy', 'drama', 'horror', 'fantasy']",['GB'],6.9,9535.0
+tm1110150,There's Someone Inside Your House,2021,96,"['horror', 'thriller']",['US'],4.8,15380.0
+tm1108648,The Wasteland,2022,91,"['thriller', 'horror', 'drama']",['ES'],4.6,3993.0
+tm1005109,Kingdom: Ashin of the North,2021,92,"['fantasy', 'horror', 'thriller', 'action', 'drama']",['KR'],7.2,4890.0
+tm1120902,The Privilege,2022,107,"['scifi', 'thriller', 'drama', 'horror']",['DE'],4.6,4293.0
+tm1087160,Fever Dream,2021,93,"['drama', 'horror', 'thriller']","['CL', 'PE']",5.4,1906.0
+tm984155,The Devil Below,2021,89,"['horror', 'thriller']",['US'],4.2,4366.0
+tm984204,The Seventh Day,2021,87,['horror'],['US'],4.5,4403.0
+tm1052498,Aileen Wuornos: American Boogeywoman,2021,85,"['thriller', 'drama', 'horror']",['US'],3.7,1538.0
+tm1102868,Nobody Sleeps in the Woods Tonight 2,2021,97,"['horror', 'thriller', 'comedy']",['PL'],3.9,3641.0
+tm810494,The 8th Night,2021,115,"['thriller', 'horror']",['KR'],5.3,3332.0
+tm972519,Don't Kill Me,2021,90,"['fantasy', 'horror', 'romance']",['IT'],4.3,1769.0
+tm1125844,The Whole Truth,2021,125,"['drama', 'horror', 'thriller']",['TH'],5.1,3323.0
+tm1001095,Roohi,2021,134,"['comedy', 'horror']",['IN'],4.3,10025.0
+tm979182,Red Dot,2021,86,"['thriller', 'horror', 'drama']",['SE'],5.5,13322.0
+tm948681,Below Zero,2021,106,"['action', 'crime', 'thriller', 'horror', 'drama']",['ES'],6.2,19201.0
+tm1104252,Escape the Undertaker,2021,31,"['thriller', 'family', 'horror', 'comedy']",['US'],4.2,926.0
+tm1038364,Ghost Lab,2021,117,"['thriller', 'drama', 'horror', 'scifi']",['TH'],5.1,1424.0
+tm998238,The Humans & the Mongoose,2021,120,"['comedy', 'fantasy', 'horror']",['EG'],5.4,995.0
+tm1024535,The Guardian,2021,127,"['drama', 'horror', 'music', 'thriller', 'crime']",['VN'],5.7,347.0
+tm1115392,Shyam Singha Roy,2021,155,"['drama', 'romance', 'thriller', 'horror']",['IN'],7.7,11655.0
+tm1091823,Boomika,2021,122,"['thriller', 'horror']",['IN'],5.5,2553.0
+tm1121084,Izla,2021,85,"['horror', 'comedy']",['PH'],3.7,115.0

@@ -1,0 +1,305 @@
+id,title,release_year,runtime,genres,production_country,imdb_score,imdb_votes
+tm127384,Monty Python and the Holy Grail,1975,91,"['fantasy', 'action', 'comedy']",['GB'],8.2,534486.0
+tm100027,Alibaba Aur 40 Chor,1979,146,"['drama', 'romance', 'action', 'fantasy', 'family']","['SU', 'IN']",6.2,565.0
+tm47673,An Egyptian Story,1982,129,"['drama', 'fantasy']",['EG'],7.3,1126.0
+tm49178,Vampires,1998,104,"['fantasy', 'action', 'horror', 'thriller']",['US'],6.1,58670.0
+tm187187,Last Action Hero,1993,131,"['action', 'fantasy', 'comedy', 'family']",['US'],6.4,150498.0
+tm190835,Neon Genesis Evangelion: The End of Evangelion,1997,87,"['action', 'drama', 'animation', 'scifi', 'fantasy']",['JP'],8.0,53152.0
+tm62385,Hum Saath Saath Hain,1999,177,"['romance', 'family', 'fantasy', 'drama']",['IN'],6.2,8552.0
+tm42397,Hello Brother,1999,131,"['comedy', 'romance', 'fantasy', 'action']",['IN'],4.6,4262.0
+tm42877,Wanted,2008,110,"['action', 'thriller', 'crime', 'fantasy']","['DE', 'US']",6.7,384995.0
+tm139658,Big Fish,2003,125,"['action', 'fantasy', 'drama', 'romance']",['US'],8.0,437650.0
+tm30603,Hancock,2008,92,"['fantasy', 'action', 'crime', 'drama']",['US'],6.4,476593.0
+tm46436,Thir13en Ghosts,2001,91,"['horror', 'thriller', 'fantasy']","['CA', 'US']",5.6,87083.0
+tm150260,Cloudy with a Chance of Meatballs,2009,90,"['animation', 'comedy', 'family', 'fantasy', 'scifi', 'romance', 'drama']",['US'],6.9,229274.0
+tm23935,The Lake House,2006,99,"['drama', 'thriller', 'fantasy', 'romance', 'documentation']",['US'],6.8,149070.0
+tm169949,Just Like Heaven,2005,95,"['romance', 'drama', 'comedy', 'fantasy']",['US'],6.7,108029.0
+tm30205,Ip Man,2008,106,"['drama', 'fantasy', 'comedy', 'history', 'action']",['HK'],8.0,222372.0
+tm94606,Let Me In,2010,116,"['drama', 'horror', 'thriller', 'fantasy', 'european']","['GB', 'US']",7.1,121008.0
+tm148379,The Cat in the Hat,2003,82,"['family', 'fantasy', 'comedy', 'action']",['US'],4.0,82684.0
+tm81030,The Golden Compass,2007,113,"['action', 'fantasy', 'family']","['GB', 'US']",6.1,187485.0
+tm27268,Monster House,2006,91,"['animation', 'comedy', 'family', 'fantasy']",['US'],6.6,117008.0
+tm700,"10,000 BC",2008,109,"['action', 'drama', 'fantasy', 'history', 'thriller']","['US', 'ZA']",5.1,130813.0
+tm183963,Dreamer: Inspired By a True Story,2005,106,"['family', 'drama', 'sport', 'fantasy']",['US'],6.8,13205.0
+tm77649,Premonition,2007,96,"['thriller', 'drama', 'fantasy']",['US'],5.9,78494.0
+tm114476,Stuart Little 2,2002,78,"['animation', 'comedy', 'family', 'action', 'fantasy']",['US'],5.5,54193.0
+tm80059,Naruto Shippuden the Movie,2007,94,"['animation', 'action', 'fantasy', 'family']",['JP'],6.7,4090.0
+tm71558,The Legend of the Nahuala,2007,80,"['fantasy', 'animation', 'family']",['MX'],6.1,511.0
+tm134235,One Piece: Strong World,2009,114,"['fantasy', 'action', 'animation']",['JP'],7.5,5467.0
+tm73058,Om Shanti Om,2007,162,"['thriller', 'drama', 'action', 'comedy', 'fantasy', 'romance']",['IN'],6.7,43052.0
+tm49405,Inuyasha the Movie: Affections Touching Across Time,2001,99,"['action', 'animation', 'fantasy']",['JP'],7.2,2593.0
+tm95238,The Boy Who Cried Werewolf,2010,97,"['fantasy', 'horror', 'family', 'comedy']","['US', 'CA']",5.9,3315.0
+tm34846,Bleach the Movie: Fade to Black,2008,94,"['fantasy', 'action', 'drama', 'animation']",['JP'],7.1,2207.0
+tm96037,Naruto Shippuden the Movie: The Lost Tower,2010,85,"['animation', 'action', 'fantasy']",['JP'],6.8,3650.0
+tm93612,Bleach the Movie: Hell Verse,2010,94,"['fantasy', 'animation', 'action']",['JP'],7.4,2416.0
+tm36164,Naruto Shippuden the Movie: Bonds,2008,90,"['fantasy', 'animation', 'action']",['JP'],6.8,4551.0
+tm147494,Naruto Shippuden the Movie: The Will of Fire,2009,95,"['action', 'comedy', 'drama', 'fantasy', 'animation']",['JP'],7.0,3702.0
+tm89936,Arahan,2004,114,"['fantasy', 'action', 'comedy', 'thriller']",['KR'],6.6,3841.0
+tm105278,Inuyasha the Movie 2: The Castle Beyond the Looking Glass,2002,100,"['fantasy', 'action', 'animation', 'romance', 'comedy']",['JP'],7.3,2148.0
+tm80339,Naruto: Ninja Clash in the Land of Snow,2004,90,"['comedy', 'fantasy', 'animation', 'action']",['JP'],6.6,6866.0
+tm34524,"One Piece: Episode of Chopper Plus: Bloom in the Winter, Miracle Cherry Blossom",2008,95,"['action', 'comedy', 'animation', 'drama', 'fantasy']",['JP'],7.0,1233.0
+tm166293,The Blue Umbrella,2005,90,"['drama', 'family', 'fantasy', 'comedy']",['IN'],7.3,2097.0
+tm164389,Paheli,2005,141,"['romance', 'drama', 'fantasy', 'comedy']",['IN'],6.3,13263.0
+tm177687,Naruto: Legend of the Stone of Gelel,2005,96,"['fantasy', 'action', 'comedy', 'drama', 'animation']",['JP'],6.4,4380.0
+tm89764,Inuyasha the Movie 4: Fire on the Mystic Island,2004,88,"['fantasy', 'animation', 'action', 'comedy']",['JP'],7.2,1845.0
+tm138902,Inuyasha the Movie 3: Swords of an Honorable Ruler,2003,99,"['animation', 'fantasy', 'action', 'thriller']",['JP'],7.6,2226.0
+tm598375,Chhota Bheem Aur Krishna,2008,69,"['fantasy', 'animation', 'action']",['IN'],6.4,327.0
+tm42831,Kyo Kii... Main Jhuth Nahin Bolta,2001,149,"['comedy', 'action', 'drama', 'fantasy']",['IN'],5.3,2232.0
+tm44730,The Amazing Spider-Man,2012,136,"['action', 'fantasy', 'scifi']",['US'],6.9,646119.0
+tm171885,Kung Fu Panda 2,2011,90,"['animation', 'family', 'comedy', 'fantasy', 'drama', 'action']",['US'],7.2,280433.0
+tm39896,Dark Shadows,2012,113,"['comedy', 'fantasy', 'horror']",['US'],6.2,265626.0
+tm168921,The Smurfs,2011,103,"['animation', 'family', 'action', 'comedy', 'fantasy']",['US'],5.4,90097.0
+tm38980,Rise of the Guardians,2012,97,"['fantasy', 'action', 'family', 'animation', 'thriller', 'scifi', 'comedy', 'drama', 'european']",['US'],7.2,173157.0
+tm60844,Berserk: The Golden Age Arc I - The Egg of the King,2012,76,"['action', 'fantasy', 'animation', 'horror', 'war', 'drama']",['JP'],7.5,12548.0
+tm174683,Arthur Christmas,2011,97,"['drama', 'animation', 'family', 'comedy', 'fantasy']","['GB', 'US']",7.1,58635.0
+tm170758,Hop,2011,101,"['animation', 'comedy', 'family', 'fantasy']",['US'],5.4,34363.0
+tm174256,Red Riding Hood,2011,100,"['fantasy', 'thriller', 'horror', 'drama', 'romance']","['CA', 'US']",5.4,112015.0
+tm160371,A Very Harold & Kumar Christmas,2011,108,"['comedy', 'fantasy', 'romance']",['US'],6.2,69562.0
+tm59590,One Piece Film: Z,2012,108,"['action', 'animation', 'fantasy']",['JP'],7.8,7243.0
+tm44165,"Chaos, Disorder",2012,76,"['drama', 'family', 'fantasy']",['EG'],6.2,109.0
+tm38064,Berserk: The Golden Age Arc II - The Battle for Doldrey,2012,98,"['action', 'drama', 'fantasy', 'animation', 'horror']",['JP'],7.7,10470.0
+tm177044,Naruto Shippuden the Movie: Blood Prison,2011,108,"['action', 'comedy', 'horror', 'thriller', 'animation', 'fantasy']",['JP'],7.1,5104.0
+tm57610,Talaash,2012,139,"['crime', 'thriller', 'drama', 'fantasy']",['IN'],7.2,42188.0
+tm47171,OMG: Oh My God!,2012,125,"['drama', 'fantasy', 'comedy']",['IN'],8.1,58017.0
+tm166740,Chhota Bheem & Krishna in Mayanagari,2011,66,"['animation', 'action', 'fantasy']",['IN'],8.7,13.0
+tm169128,An Elf's Story,2011,24,"['scifi', 'animation', 'family', 'fantasy']",['US'],5.1,510.0
+tm182026,Zokkomon,2011,109,"['fantasy', 'drama', 'family', 'action']",['IN'],4.0,411.0
+tm140389,Paddington,2014,95,"['comedy', 'family', 'fantasy', 'animation', 'european']","['US', 'FR', 'GB']",7.2,113735.0
+tm134967,How to Train Your Dragon 2,2014,102,"['action', 'animation', 'comedy', 'family', 'fantasy']",['US'],7.8,330975.0
+tm141648,Seventh Son,2014,102,"['action', 'fantasy']","['US', 'GB', 'CN', 'CA']",5.5,76939.0
+tm187979,Cloudy with a Chance of Meatballs 2,2013,95,"['animation', 'scifi', 'drama', 'comedy', 'family', 'fantasy']",['US'],6.3,102071.0
+tm161029,Mr. Peabody & Sherman,2014,92,"['action', 'family', 'animation', 'romance', 'comedy', 'fantasy', 'history', 'scifi']",['US'],6.8,69669.0
+tm237143,Shrek the Musical,2013,130,"['music', 'comedy', 'fantasy', 'family']",['US'],6.9,3695.0
+tm166628,The Smurfs 2,2013,105,"['comedy', 'animation', 'fantasy', 'family']",['US'],5.3,42011.0
+tm140342,"I, Frankenstein",2014,92,"['thriller', 'scifi', 'horror', 'action', 'fantasy']","['AU', 'US']",5.1,80985.0
+tm147913,PK,2014,153,"['drama', 'comedy', 'scifi', 'romance', 'fantasy']",['IN'],8.1,181406.0
+tm143372,Stand by Me Doraemon,2014,90,"['scifi', 'fantasy', 'drama', 'family', 'animation', 'comedy']",['JP'],7.3,7989.0
+tm167944,Berserk: The Golden Age Arc III - The Advent,2013,110,"['drama', 'fantasy', 'animation', 'action', 'romance', 'horror']",['JP'],7.8,10173.0
+tm145791,Miss Granny,2014,124,"['drama', 'comedy', 'music', 'family', 'fantasy']",['KR'],7.2,3508.0
+tm145658,The Amazing Praybeyt Benjamin,2014,105,"['drama', 'comedy', 'action', 'fantasy', 'romance']",['PH'],4.0,195.0
+tm250364,Chhota Bheem in the Incan Adventure,2013,64,"['fantasy', 'animation']",['XX'],7.5,32.0
+tm186408,The Land of Cards,2013,110,['fantasy'],['IN'],5.5,412.0
+tm175364,Chhota Bheem Aur Hanuman,2013,67,"['animation', 'fantasy']",['IN'],7.3,36.0
+tm158671,A Fairly Odd Summer,2014,66,"['fantasy', 'comedy', 'family', 'animation']",['US'],3.8,564.0
+tm242705,Raw,2016,99,"['horror', 'drama', 'fantasy', 'european']","['FR', 'BE']",7.0,72460.0
+tm140391,Pan,2015,111,"['action', 'fantasy', 'family', 'comedy']","['US', 'GB']",5.7,63788.0
+tm137693,Crimson Peak,2015,119,"['horror', 'thriller', 'romance', 'fantasy', 'drama']",['US'],6.5,146073.0
+tm137002,Bāhubali: The Beginning,2015,158,"['action', 'drama', 'fantasy']",['IN'],8.0,120110.0
+tm120108,Kung Fu Panda 3,2016,95,"['action', 'animation', 'family', 'fantasy', 'drama', 'comedy']","['US', 'CN']",7.1,155678.0
+tm132273,Home,2015,94,"['family', 'fantasy', 'comedy', 'animation', 'scifi']",['US'],6.6,101975.0
+tm245271,Gantz:O,2016,95,"['scifi', 'action', 'animation', 'fantasy', 'thriller', 'horror', 'drama']",['JP'],7.1,14950.0
+tm196296,A Monster Calls,2016,108,"['drama', 'animation', 'family', 'fantasy', 'thriller', 'european']","['US', 'GB', 'ES']",7.4,87806.0
+tm233214,Under the Shadow,2016,84,"['war', 'drama', 'horror', 'thriller', 'fantasy']","['GB', 'IR', 'JO', 'QA']",6.8,27337.0
+tm221740,Closet Monster,2016,90,"['drama', 'fantasy']",['CA'],7.0,8239.0
+tm200126,He Never Died,2015,99,"['fantasy', 'horror', 'comedy', 'drama', 'thriller']","['US', 'CA']",6.3,20376.0
+tm139532,Before I Wake,2016,97,"['drama', 'fantasy', 'horror', 'thriller']",['US'],6.2,46334.0
+tm200690,The Forest,2016,95,"['horror', 'thriller', 'scifi', 'drama', 'fantasy']",['US'],4.8,42561.0
+tm233465,The Bye Bye Man,2016,96,"['thriller', 'horror', 'fantasy', 'drama']",['US'],4.3,23960.0
+tm142881,Jem and the Holograms,2015,118,"['fantasy', 'music', 'romance', 'scifi', 'drama', 'family']",['US'],4.1,7867.0
+tm134516,"Crouching Tiger, Hidden Dragon: Sword of Destiny",2016,103,"['drama', 'action', 'fantasy']",['CN'],6.1,19500.0
+tm139194,Ratchet & Clank,2016,94,"['animation', 'family', 'action', 'comedy', 'scifi', 'fantasy']","['CA', 'US']",5.5,10919.0
+tm123789,The Young Messiah,2016,120,"['history', 'drama', 'fantasy']",['US'],5.6,3576.0
+tm271070,The Warriors Gate,2016,108,"['action', 'family', 'fantasy', 'comedy', 'european']","['CN', 'FR', 'CA']",5.4,5098.0
+tm138584,Hawaizaada,2015,157,"['history', 'drama', 'fantasy']",['IN'],5.5,1942.0
+tm282915,Fate/Grand Order: First Order,2016,72,"['action', 'fantasy', 'animation']",['JP'],5.7,896.0
+tm233157,The Guardian Brothers,2016,103,"['animation', 'family', 'fantasy', 'comedy']",['CN'],5.4,2121.0
+tm245155,The Worthy,2016,95,"['thriller', 'action', 'scifi', 'fantasy', 'family', 'european']",['AE'],5.1,2004.0
+tm211424,Dharam Sankat Mein,2015,129,"['comedy', 'drama', 'family', 'fantasy', 'thriller']",['IN'],6.3,2262.0
+tm271974,Pettson and Findus: The Best Christmas Ever,2016,82,"['family', 'animation', 'comedy', 'fantasy', 'european']",['DE'],5.5,356.0
+tm215911,Ludo,2015,90,"['horror', 'thriller', 'fantasy']",['IN'],2.8,852.0
+tm203056,Husband Factor,2015,108,"['comedy', 'romance', 'drama', 'fantasy']",['TR'],6.2,5092.0
+tm233463,Husband Factor: Resurrection,2016,108,"['comedy', 'family', 'romance', 'drama', 'fantasy']",['TR'],5.3,310.0
+tm244208,It,2017,135,"['horror', 'fantasy', 'thriller']",['US'],7.3,527626.0
+tm310953,Sorry to Bother You,2018,111,"['scifi', 'fantasy', 'comedy', 'drama']",['US'],6.9,77407.0
+tm244174,Okja,2017,122,"['scifi', 'fantasy', 'action', 'drama']","['KR', 'US']",7.3,116305.0
+tm272060,What Happened to Monday,2017,123,"['scifi', 'thriller', 'drama', 'action', 'crime', 'fantasy']","['FR', 'RO', 'GB', 'BE', 'DE']",6.8,121772.0
+tm226948,The Shack,2017,132,"['drama', 'fantasy']",['US'],6.2,35748.0
+tm271951,Apostle,2018,130,"['thriller', 'drama', 'horror', 'fantasy']","['US', 'GB']",6.3,51890.0
+tm362881,Mirai,2018,94,"['fantasy', 'animation', 'drama', 'family']",['JP'],7.0,14983.0
+tm221953,Bāhubali 2: The Conclusion,2017,168,"['fantasy', 'drama', 'action']",['IN'],8.2,94421.0
+tm244307,Bright,2017,117,"['fantasy', 'thriller', 'scifi', 'crime', 'action']",['US'],6.3,185996.0
+tm449070,Black Mirror: Bandersnatch,2018,90,"['drama', 'thriller', 'scifi', 'fantasy']","['GB', 'US']",7.1,125229.0
+tm366567,When We First Met,2018,97,"['fantasy', 'comedy', 'romance']",['US'],6.4,48885.0
+tm410742,Happy as Lazzaro,2018,125,"['fantasy', 'drama', 'european']","['IT', 'CH', 'FR']",7.5,18006.0
+tm298084,On Body and Soul,2017,116,"['drama', 'romance', 'fantasy']",['HU'],7.5,27504.0
+tm433381,Mirage,2018,129,"['fantasy', 'thriller', 'drama', 'romance', 'european']",['ES'],7.4,54188.0
+tm314477,Skins,2017,78,"['drama', 'comedy', 'fantasy', 'european']",['ES'],6.1,5892.0
+tm368040,The Titan,2018,97,"['scifi', 'thriller', 'fantasy', 'drama', 'romance']","['US', 'GB', 'ES']",4.8,30698.0
+tm244148,Mowgli: Legend of the Jungle,2018,105,"['action', 'drama', 'fantasy']","['GB', 'US']",6.5,61622.0
+tm217228,Death Note,2017,101,"['horror', 'thriller', 'crime', 'fantasy', 'drama', 'action']",['US'],4.5,84119.0
+tm292837,The Bar,2017,102,"['horror', 'thriller', 'comedy', 'fantasy', 'european']",['ES'],6.3,26370.0
+tm351101,Errementari: The Blacksmith and the Devil,2018,98,"['drama', 'fantasy', 'horror', 'thriller', 'european']","['ES', 'FR']",6.4,11653.0
+tm349800,Unicorn Store,2017,92,"['drama', 'comedy', 'fantasy']",['US'],5.5,19444.0
+tm312767,Monster High: Electrified,2017,72,"['family', 'animation', 'fantasy']",['US'],5.3,320.0
+tm356742,Trolls Holiday,2017,26,"['fantasy', 'comedy', 'family', 'romance', 'animation']",[],6.1,2764.0
+tm305437,Hey Arnold! The Jungle Movie,2017,81,"['animation', 'comedy', 'family', 'fantasy', 'thriller']",['US'],7.5,3183.0
+tm312577,Fullmetal Alchemist,2017,135,"['fantasy', 'scifi', 'action']",['JP'],5.2,19493.0
+tm413049,Animal World,2018,125,"['thriller', 'fantasy', 'drama', 'action', 'scifi', 'comedy']",['CN'],6.4,4447.0
+tm266652,Bleach,2018,108,"['fantasy', 'action']",['JP'],6.4,11406.0
+tm317110,Psychokinesis,2018,101,"['fantasy', 'action', 'comedy']",['KR'],5.9,5643.0
+tm282910,Fireworks,2017,90,"['drama', 'fantasy', 'documentation', 'animation', 'romance', 'scifi', 'family']",['JP'],5.6,3147.0
+tm425138,Godzilla: The Planet Eater,2018,91,"['scifi', 'fantasy', 'horror', 'animation', 'action']",['JP'],5.0,4196.0
+tm298779,Lu Over the Wall,2017,117,"['animation', 'family', 'fantasy', 'action', 'comedy', 'music']",['JP'],6.8,2269.0
+tm1883,Animal Crackers,2017,105,"['animation', 'action', 'comedy', 'family', 'fantasy']","['CN', 'US', 'ES']",5.8,3422.0
+tm436844,The Christmas Chronicles,2018,104,"['comedy', 'family', 'fantasy']",['US'],7.0,71740.0
+tm299761,Toc Toc,2017,90,"['comedy', 'family', 'fantasy', 'european']",['ES'],6.8,18865.0
+tm413557,Okko's Inn,2018,94,"['fantasy', 'animation', 'drama', 'family']",['JP'],7.0,1856.0
+tm350607,Escape from Mr. Lemoncello's Library,2017,69,"['fantasy', 'family']","['CA', 'US']",5.3,465.0
+tm260272,Little Evil,2017,94,"['horror', 'comedy', 'fantasy']",['US'],5.6,21421.0
+tm327540,Gnome Alone,2017,85,"['family', 'action', 'animation', 'comedy', 'fantasy', 'music', 'thriller', 'drama']","['CA', 'GB', 'US']",5.6,3488.0
+tm371630,How to Be Really Bad,2018,100,"['comedy', 'fantasy', 'romance', 'family', 'european']",['DE'],6.2,1152.0
+tm406831,Modest Heroes,2018,18,"['fantasy', 'animation', 'drama', 'family', 'comedy']",['JP'],6.6,2705.0
+tm374845,The Seven Deadly Sins: Prisoners of the Sky,2018,99,"['fantasy', 'animation', 'action']",['JP'],7.1,4768.0
+tm309903,The Little Vampire 3D,2017,83,"['family', 'fantasy', 'comedy', 'animation', 'horror', 'european']","['DE', 'DK', 'NL', 'GB']",5.4,1721.0
+tm365824,Zero,2018,180,"['romance', 'drama', 'comedy', 'scifi', 'thriller', 'fantasy', 'european']",['IN'],5.2,27346.0
+tm376234,The Warning,2018,93,"['thriller', 'fantasy', 'crime', 'drama', 'action', 'horror', 'european']",['ES'],5.9,6356.0
+tm407714,I Am Not an Easy Man,2018,98,"['fantasy', 'comedy', 'european']",['FR'],6.3,14432.0
+tm233485,Charming,2018,90,"['comedy', 'family', 'fantasy', 'music', 'animation', 'action']",['US'],5.6,3518.0
+tm244292,Bibi & Tina: Perfect Pandemonium,2017,110,"['fantasy', 'action', 'family', 'comedy', 'drama', 'european']",['DE'],4.0,470.0
+tm376015,LEGO Marvel Super Heroes: Guardians of the Galaxy - The Thanos Threat,2017,22,"['scifi', 'animation', 'family', 'action', 'comedy', 'fantasy']",['US'],5.8,451.0
+tm438994,The Holiday Calendar,2018,94,"['romance', 'comedy', 'family', 'drama', 'fantasy']",['US'],5.7,10060.0
+tm285298,Naked,2017,96,"['comedy', 'fantasy', 'romance']",['US'],5.4,19482.0
+tm428073,When Angels Sleep,2018,94,"['thriller', 'drama', 'horror', 'action', 'crime', 'fantasy', 'european']",['ES'],5.5,3684.0
+tm244321,Sun Dogs,2017,93,"['comedy', 'drama', 'fantasy']","['MX', 'US']",6.2,2322.0
+tm418039,LEGO Marvel Super Heroes: Black Panther - Trouble in Wakanda,2018,22,"['fantasy', 'animation', 'action', 'comedy', 'scifi']",['US'],5.6,572.0
+tm345767,The Maus,2017,90,"['fantasy', 'horror', 'drama', 'european']",['ES'],4.7,6422.0
+tm359658,The 3rd Eye,2017,107,"['horror', 'thriller', 'animation', 'drama', 'fantasy', 'european']",['ID'],5.1,1405.0
+tm361505,48 Christmas Wishes,2017,84,"['family', 'comedy', 'fantasy']",['CA'],3.9,1105.0
+tm429984,Pachamama,2018,72,"['fantasy', 'family', 'animation', 'european']","['FR', 'LU', 'CA']",6.8,864.0
+tm370440,Paradox,2018,73,"['western', 'fantasy', 'music']",['US'],3.9,713.0
+tm357708,The Bros,2017,102,"['comedy', 'fantasy']",['KR'],6.1,664.0
+tm324204,Monster Island,2017,80,"['comedy', 'animation', 'action', 'family', 'fantasy']","['IN', 'MX']",4.7,739.0
+tm369433,Awe!,2018,115,"['romance', 'drama', 'fantasy', 'horror', 'scifi', 'thriller']",['IN'],7.7,5054.0
+tm361312,A StoryBots Christmas,2017,25,"['animation', 'comedy', 'family', 'fantasy']",['US'],5.8,160.0
+tm446104,Fantastica,2018,114,"['comedy', 'fantasy']",['PH'],3.6,212.0
+tm358746,A Witches' Ball,2017,90,"['fantasy', 'comedy', 'family']",['CA'],5.1,386.0
+tm368350,Jonaki,2018,96,"['fantasy', 'drama', 'european']","['FR', 'IN', 'SG']",6.8,255.0
+tm361161,DreamWorks Home: For the Holidays,2017,45,"['scifi', 'fantasy', 'animation', 'comedy', 'family']",['GB'],4.8,149.0
+tm815509,Mrs. Miracle Animals: An Squirrel's Princess Bride,2017,28,"['comedy', 'fantasy', 'animation', 'family']",[],4.7,98.0
+tm441915,Elf Pets: Santa's St. Bernards Save Christmas,2018,26,"['animation', 'family', 'comedy', 'fantasy']",['US'],5.3,95.0
+tm430459,La Leyenda del Diamante,2018,87,"['action', 'fantasy', 'horror', 'western', 'family', 'scifi']",['MX'],3.3,51.0
+tm493814,Satria Heroes: Revenge of the Darkness,2017,92,"['scifi', 'action', 'drama', 'fantasy']",['ID'],4.4,69.0
+tm369594,I'm Thinking of Ending Things,2020,134,"['drama', 'thriller', 'fantasy']",['US'],6.6,83093.0
+tm849003,The Old Guard,2020,125,"['fantasy', 'action', 'thriller']",['US'],6.6,158247.0
+tm456156,Sweetheart,2019,82,"['horror', 'thriller', 'drama', 'fantasy', 'scifi']",['US'],5.8,8191.0
+tm832916,The Midnight Sky,2020,118,"['drama', 'scifi', 'thriller', 'fantasy']",['US'],5.6,82362.0
+tm358770,Paradise Hills,2019,95,"['scifi', 'thriller', 'fantasy', 'european']","['US', 'ES']",5.3,22454.0
+tm943774,The Old Ways,2020,90,"['fantasy', 'horror', 'thriller', 'drama']",['US'],5.4,6035.0
+tm878333,Pokémon the Movie: Secrets of the Jungle,2020,99,"['family', 'fantasy', 'animation', 'action', 'scifi']",['JP'],6.4,1942.0
+tm451078,Pokemon the Movie: Mewtwo Strikes Back - Evolution,2019,98,"['animation', 'action', 'fantasy', 'family']",['JP'],5.7,5475.0
+tm418847,The Silence,2019,90,"['drama', 'thriller', 'fantasy', 'horror', 'scifi', 'european']",['DE'],5.3,44818.0
+tm469991,I Lost My Body,2019,81,"['fantasy', 'drama', 'romance', 'animation', 'european']",['FR'],7.5,32380.0
+tm927037,The Water Man,2020,92,"['action', 'thriller', 'drama', 'family', 'fantasy']",['US'],5.4,3880.0
+tm824477,Over the Moon,2020,95,"['comedy', 'family', 'fantasy', 'scifi', 'romance', 'animation']","['CN', 'US']",6.3,22034.0
+tm925486,Jiu Jitsu,2020,102,"['action', 'scifi', 'fantasy', 'thriller', 'comedy']","['US', 'CY']",2.9,8693.0
+tm469193,Atlantics,2019,106,"['fantasy', 'drama', 'romance']","['BE', 'FR', 'SN']",6.7,9405.0
+tm348403,A Shaun the Sheep Movie: Farmageddon,2019,87,"['family', 'comedy', 'animation', 'fantasy', 'scifi']","['GB', 'FR']",6.8,13485.0
+tm375883,Klaus,2019,96,"['fantasy', 'comedy', 'family', 'animation', 'european']",['ES'],8.1,143737.0
+tm974366,We Can Be Heroes,2020,97,"['fantasy', 'drama', 'family', 'action', 'comedy']",['US'],4.7,14759.0
+tm852996,Captain Underpants: Epic Choice-o-rama,2020,37,"['comedy', 'fantasy', 'family', 'animation', 'action', 'scifi']",['US'],6.4,80.0
+tm898474,The Swarm,2020,101,"['horror', 'drama', 'fantasy', 'european']",['FR'],5.3,6892.0
+tm852097,A Whisker Away,2020,104,"['fantasy', 'drama', 'romance', 'animation', 'family']",['JP'],6.7,9818.0
+tm858954,Nobody Sleeps in the Woods Tonight,2020,102,"['horror', 'thriller', 'drama', 'romance', 'fantasy', 'european']",['PL'],4.9,11603.0
+tm432022,Violet Evergarden: The Movie,2020,140,"['fantasy', 'animation', 'drama', 'romance']",['JP'],8.3,6099.0
+tm849005,The Willoughbys,2020,92,"['comedy', 'fantasy', 'animation', 'drama', 'family']",['CA'],6.3,18662.0
+tm460829,Children of the Sea,2019,110,"['thriller', 'animation', 'fantasy', 'action', 'scifi', 'drama', 'family']",['JP'],6.5,2850.0
+tm847998,Hubie Halloween,2020,103,"['horror', 'comedy', 'thriller', 'fantasy']",['US'],5.2,48575.0
+tm524282,Invader ZIM: Enter the Florpus,2019,71,"['drama', 'animation', 'action', 'family', 'fantasy', 'comedy', 'scifi', 'thriller', 'horror']",['US'],7.4,5796.0
+tm816038,Violet Evergarden: Eternity and the Auto Memories Doll,2019,90,"['family', 'animation', 'drama', 'fantasy']",['JP'],7.4,4692.0
+tm846964,A Fall from Grace,2020,120,"['thriller', 'drama', 'fantasy']",['US'],5.8,15341.0
+tm902330,Ghosts of War,2020,94,"['war', 'fantasy', 'horror', 'thriller']",['GB'],5.5,9953.0
+tm826563,A Cinderella Story: Christmas Wish,2019,93,"['music', 'romance', 'fantasy', 'comedy']",['US'],5.3,
+tm922532,Freaks – You're One of Us,2020,93,"['fantasy', 'thriller', 'drama', 'action', 'scifi']",['DE'],5.4,5809.0
+tm848995,Jingle Jangle: A Christmas Journey,2020,122,"['fantasy', 'music', 'family']",['US'],6.4,18374.0
+tm853113,Thomas & Friends: Marvelous Machinery,2020,59,"['fantasy', 'animation', 'action', 'family']",[],6.1,16.0
+tm467848,NiNoKuni,2019,106,"['family', 'fantasy', 'romance', 'animation', 'action']",['JP'],6.1,3338.0
+tm932595,A Babysitter's Guide to Monster Hunting,2020,94,"['fantasy', 'family', 'comedy']",['US'],5.4,4172.0
+tm305433,Rocko's Modern Life: Static Cling,2019,45,"['animation', 'comedy', 'family', 'fantasy', 'scifi', 'action']",['US'],6.9,3865.0
+tm816992,Double World,2020,110,"['fantasy', 'action']","['CN', 'HK']",6.1,4160.0
+tm814150,How I Became a Super Hero,2020,97,"['action', 'comedy', 'drama', 'fantasy', 'thriller']",['FR'],5.8,5194.0
+tm518467,Dragon Rider,2020,91,"['animation', 'comedy', 'family', 'fantasy', 'action', 'european']","['ES', 'BE', 'DE']",5.6,1597.0
+tm941382,Stand by Me Doraemon 2,2020,96,"['scifi', 'animation', 'comedy', 'drama', 'family', 'fantasy']",['JP'],7.5,3791.0
+tm933639,Wish Upon a Unicorn,2020,93,"['fantasy', 'family']",['US'],5.3,183.0
+tm679284,The Knight Before Christmas,2019,92,"['comedy', 'drama', 'fantasy', 'romance']",['US'],5.5,17862.0
+tm925858,Black Beach,2020,115,"['drama', 'fantasy', 'action', 'thriller']","['US', 'BE', 'ES']",5.6,1572.0
+tm925218,Monster Run,2020,104,"['fantasy', 'scifi', 'thriller', 'action', 'drama']","['CN', 'HK']",5.2,417.0
+tm917325,Dragons: Rescue Riders: Secrets of the Songwing,2020,45,"['animation', 'action', 'comedy', 'family', 'fantasy']",['US'],5.0,181.0
+tm843938,18 Presents,2020,110,"['drama', 'fantasy', 'european']",['IT'],6.9,3791.0
+tm948916,The Scary House,2020,100,"['thriller', 'family', 'fantasy', 'drama', 'horror', 'european']","['AT', 'DE']",5.4,3787.0
+tm910999,Xico's Journey,2020,85,"['family', 'fantasy', 'animation']",['MX'],5.1,544.0
+tm836674,The Main Event,2020,102,"['family', 'comedy', 'action', 'fantasy', 'sport']",['US'],4.8,2327.0
+tm885669,The Christmas Chronicles: Part Two,2020,112,"['fantasy', 'family', 'comedy']",['US'],6.0,29538.0
+tm836638,The Man Without Gravity,2019,107,"['fantasy', 'drama', 'comedy']","['BE', 'FR', 'IT']",5.8,2547.0
+tm466832,Dragon Quest: Your Story,2019,102,"['action', 'fantasy', 'animation', 'family', 'comedy']",['JP'],6.5,2831.0
+tm849937,Jungle Beat: The Movie,2020,84,"['family', 'animation', 'scifi', 'comedy', 'fantasy']",['MU'],5.4,1029.0
+tm912190,Cargo,2019,113,"['fantasy', 'scifi', 'drama']",['IN'],5.6,2929.0
+tm873159,The Yin-Yang Master: Dream of Eternity,2020,132,"['drama', 'fantasy', 'scifi', 'action']",['CN'],6.4,4751.0
+tm898773,Bulbbul,2020,94,"['fantasy', 'horror', 'drama']",['IN'],6.5,11844.0
+tm234980,A Choo,2020,101,"['romance', 'comedy', 'action', 'fantasy']",['TW'],5.5,378.0
+tm910612,The Claus Family,2020,96,"['comedy', 'family', 'fantasy']",['BE'],5.5,2022.0
+tm878995,Dragons: Rescue Riders: Hunt for the Golden Dragon,2020,46,"['animation', 'action', 'comedy', 'family', 'fantasy']",['US'],5.1,155.0
+tm1013697,Nneka the Pretty Serpent,2020,140,"['horror', 'thriller', 'fantasy']",['NG'],3.7,126.0
+tm451852,The 3rd Eye 2,2019,115,"['thriller', 'horror', 'drama', 'fantasy']",['ID'],5.4,596.0
+tm834653,The Knight and the Princess,2019,97,"['comedy', 'family', 'fantasy', 'history', 'animation', 'action']","['EG', 'SA']",5.5,394.0
+tm454464,Pegasus,2019,98,"['comedy', 'action', 'fantasy', 'sport']",['CN'],6.3,1813.0
+tm468824,Super Monsters Furever Friends,2019,58,"['fantasy', 'animation']",[],5.7,70.0
+tm844201,Super Monsters Save Christmas,2019,24,"['family', 'animation', 'fantasy']",['US'],4.8,57.0
+tm820338,The 9th Precinct,2019,94,"['crime', 'fantasy', 'thriller', 'drama', 'action']",['TW'],5.6,535.0
+tm822210,Eggnoid: Love & Time Portal,2019,102,"['romance', 'scifi', 'drama', 'fantasy']",[],6.1,86.0
+tm866495,Love Like the Falling Rain,2020,86,"['drama', 'romance', 'fantasy']",['ID'],4.7,205.0
+tm843345,Pinkfong & Baby Shark's Space Adventure,2019,66,"['animation', 'family', 'music', 'fantasy']","['KR', 'US']",5.1,74.0
+tm816983,In Paradox,2019,95,"['thriller', 'fantasy']",['KW'],5.0,147.0
+tm305129,Sing 2,2021,110,"['comedy', 'family', 'fantasy', 'music', 'drama', 'animation']",['US'],7.4,58423.0
+tm1067148,The Sea Beast,2022,115,"['comedy', 'family', 'fantasy', 'scifi', 'animation']",['US'],7.1,18852.0
+tm928497,Valley of the Dead,2022,101,"['comedy', 'horror', 'war', 'fantasy', 'thriller', 'action']",['ES'],6.5,114.0
+tm525645,Fear Street: Part One - 1994,2021,107,"['drama', 'horror', 'fantasy']",['US'],6.2,77401.0
+tm1137051,Bubble,2022,101,"['scifi', 'fantasy', 'romance', 'sport', 'thriller', 'animation', 'action', 'drama']",['JP'],6.3,4597.0
+tm851128,Bigbug,2022,111,"['comedy', 'scifi', 'fantasy']",['FR'],5.4,7483.0
+tm824160,Fear Street: Part Two - 1978,2021,109,"['drama', 'horror', 'fantasy']",['US'],6.7,60682.0
+tm993838,Long Story Short,2021,90,"['fantasy', 'comedy', 'romance']",['AU'],6.5,4995.0
+tm1046264,The Vault,2021,118,"['crime', 'action', 'thriller', 'fantasy']",['ES'],6.4,21511.0
+tm347095,Oxygen,2021,100,"['scifi', 'thriller', 'horror', 'drama', 'fantasy']","['FR', 'US']",6.5,37871.0
+tm1094217,Chickenhare and the Hamster of Darkness,2022,91,"['animation', 'comedy', 'family', 'romance', 'fantasy']","['BE', 'FR']",6.3,1303.0
+tm1021871,The Starling,2021,102,"['comedy', 'drama', 'fantasy']",['US'],6.3,12309.0
+tm413169,Peter Rabbit 2: The Runaway,2021,93,"['fantasy', 'action', 'family', 'comedy', 'animation', 'crime', 'drama']","['AU', 'US']",6.2,11233.0
+tm841825,My Little Pony: A New Generation,2021,91,"['music', 'action', 'animation', 'family', 'fantasy', 'comedy', 'drama', 'scifi']","['IE', 'US', 'CA']",6.8,3657.0
+tm1159163,Fistful of Vengeance,2022,94,"['fantasy', 'action', 'crime', 'drama']",['US'],4.4,6341.0
+tm1027081,Blood Red Sky,2021,121,"['thriller', 'action', 'fantasy', 'horror']","['GB', 'DE']",6.1,44006.0
+tm1003034,The Witcher: Nightmare of the Wolf,2021,83,"['action', 'drama', 'fantasy', 'scifi', 'animation']","['US', 'PL', 'KR']",7.2,42484.0
+tm458292,Space Sweepers,2021,136,"['scifi', 'drama', 'fantasy', 'action']",['KR'],6.5,25178.0
+tm1002815,Nightbooks,2021,103,"['family', 'fantasy', 'horror']","['CA', 'US']",5.7,8573.0
+tm1020820,Night Teeth,2021,107,"['crime', 'drama', 'fantasy', 'horror', 'thriller', 'comedy', 'action']","['GB', 'US']",5.6,17526.0
+tm1038363,America: The Motion Picture,2021,98,"['action', 'animation', 'war', 'comedy', 'fantasy', 'history', 'scifi']",['US'],5.6,6349.0
+tm1020073,Thunder Force,2021,107,"['scifi', 'comedy', 'fantasy', 'action']",['US'],4.4,41508.0
+tm1180123,The House,2022,31,"['thriller', 'animation', 'comedy', 'drama', 'horror', 'fantasy']",['GB'],6.9,9535.0
+tm1086874,Minnal Murali,2021,158,"['comedy', 'action', 'drama', 'fantasy', 'scifi']",['IN'],8.1,24681.0
+tm434625,Wish Dragon,2021,99,"['fantasy', 'animation', 'family', 'comedy', 'romance']","['US', 'CN']",7.2,25743.0
+tm1221280,Jaadugar,2022,167,"['drama', 'fantasy', 'romance', 'sport', 'comedy']",['IN'],7.3,2563.0
+tm999817,Green Snake,2021,131,"['fantasy', 'animation', 'action']",['CN'],6.8,2348.0
+tm1131061,Hilda and the Mountain King,2021,85,"['fantasy', 'family', 'animation', 'comedy', 'drama']","['CA', 'GB']",7.7,2408.0
+tm1161601,Ben & Jody,2022,114,"['action', 'thriller', 'drama', 'fantasy']",['ID'],5.4,222.0
+tm1087956,Afterlife of the Party,2021,109,"['fantasy', 'romance', 'comedy', 'drama']",['US'],5.8,8728.0
+tm1042481,Riverdance: The Animated Adventure,2021,86,"['animation', 'comedy', 'fantasy']",['CA'],5.4,1815.0
+tm1005109,Kingdom: Ashin of the North,2021,92,"['fantasy', 'horror', 'thriller', 'action', 'drama']",['KR'],7.2,4890.0
+tm319224,The Loud House Movie,2021,83,"['comedy', 'action', 'family', 'animation', 'fantasy', 'drama', 'music', 'thriller']",['US'],6.1,2027.0
+tm983270,Outside the Wire,2021,116,"['action', 'scifi', 'thriller', 'fantasy']",['US'],5.4,42078.0
+tm675820,A Boy Called Christmas,2021,106,"['drama', 'family', 'fantasy', 'action']",['GB'],6.7,21085.0
+tm1111717,L.O.L. Surprise: The Movie,2021,47,"['animation', 'family', 'fantasy', 'scifi', 'western', 'action']",['US'],3.8,129.0
+tm972519,Don't Kill Me,2021,90,"['fantasy', 'horror', 'romance']",['IT'],4.3,1769.0
+tm1002869,Fate: The Winx Saga - The Afterparty,2021,50,"['fantasy', 'reality', 'comedy']","['GB', 'IT']",6.2,72.0
+tm1001267,Secret Magic Control Agency,2021,103,"['comedy', 'family', 'fantasy', 'animation']","['RU', 'US']",6.2,4086.0
+tm1065041,The Seven Deadly Sins: Cursed by Light,2021,79,"['animation', 'fantasy', 'action']",['JP'],6.4,970.0
+tm890013,Lulli,2021,90,"['fantasy', 'comedy', 'romance']",['BR'],4.8,1452.0
+tm963182,Trollhunters: Rise of the Titans,2021,104,"['animation', 'action', 'comedy', 'drama', 'family', 'fantasy']",['US'],6.7,4818.0
+tm475430,Super Me,2021,102,"['action', 'drama', 'fantasy', 'scifi']",['CN'],5.8,1605.0
+tm1022893,Dynasty Warriors,2021,118,"['action', 'fantasy']","['NZ', 'HK']",4.7,2146.0
+tm1102151,Bright: Samurai Soul,2021,80,"['fantasy', 'thriller', 'animation', 'action']",['JP'],5.5,830.0
+tm960430,Child of Kamiari Month,2021,99,"['fantasy', 'animation', 'drama', 'family']",['JP'],5.8,751.0
+tm876083,Xtreme,2021,111,"['action', 'crime', 'drama', 'thriller', 'fantasy']",['ES'],5.8,4351.0
+tm979688,Homunculus,2021,119,"['thriller', 'drama', 'fantasy']",['JP'],5.5,2749.0
+tm1000296,New Gods: Nezha Reborn,2021,116,"['animation', 'action', 'fantasy']",['CN'],6.8,3150.0
+tm1089593,Breaded Life,2021,120,"['comedy', 'drama', 'fantasy']",['NG'],7.7,65.0
+tm1013111,1000 Miles from Christmas,2021,102,"['comedy', 'romance', 'fantasy', 'family']",['ES'],5.7,1502.0
+tm998238,The Humans & the Mongoose,2021,120,"['comedy', 'fantasy', 'horror']",['EG'],5.4,995.0
+tm1107850,Sharkdog’s Fintastic Halloween,2021,24,"['animation', 'fantasy', 'family', 'comedy']",[],6.5,37.0
+tm1111616,David and the Elves,2021,106,"['fantasy', 'comedy', 'family']",['PL'],5.2,695.0

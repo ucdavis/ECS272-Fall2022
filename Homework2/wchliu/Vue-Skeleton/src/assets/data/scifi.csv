@@ -1,0 +1,201 @@
+id,title,release_year,runtime,genres,production_country,imdb_score,imdb_votes
+tm40103,Mobile Suit Gundam: Char's Counterattack,1988,119,"['scifi', 'animation', 'action', 'drama', 'war']",['JP'],7.3,1693.0
+tm125985,Mobile Suit Gundam II: Soldiers of Sorrow,1981,133,"['animation', 'scifi', 'action', 'drama', 'war']",['JP'],7.2,1274.0
+tm49037,Mobile Suit Gundam III: Encounters in Space,1982,144,"['action', 'drama', 'war', 'animation', 'scifi']",['JP'],7.6,1236.0
+tm192037,Starship Troopers,1997,129,"['scifi', 'action', 'thriller']",['US'],7.3,291452.0
+tm192405,Gattaca,1997,106,"['scifi', 'thriller', 'romance', 'drama']",['US'],7.8,300701.0
+tm190835,Neon Genesis Evangelion: The End of Evangelion,1997,87,"['action', 'drama', 'animation', 'scifi', 'fantasy']",['JP'],8.0,53152.0
+tm10739,Johnny Mnemonic,1995,97,"['action', 'drama', 'scifi', 'thriller']","['CA', 'US']",5.6,71563.0
+tm192199,Spawn,1997,96,"['scifi', 'action', 'drama', 'horror']",['US'],5.2,68184.0
+tm191431,Double Team,1997,93,"['action', 'scifi', 'comedy', 'thriller']","['HK', 'US']",4.8,34396.0
+tm7073,Knight Rider 2000,1991,91,"['action', 'scifi']",['US'],4.5,3207.0
+tm74402,The Mist,2007,126,"['horror', 'scifi', 'thriller']",['US'],7.1,305346.0
+tm92641,Inception,2010,148,"['action', 'scifi', 'music', 'thriller']","['US', 'GB']",8.8,2294231.0
+tm172683,War of the Worlds,2005,117,"['action', 'thriller', 'scifi']",['US'],6.5,444229.0
+tm70807,I Am Legend,2007,101,"['scifi', 'thriller', 'action', 'drama']",['US'],7.2,745093.0
+tm150260,Cloudy with a Chance of Meatballs,2009,90,"['animation', 'comedy', 'family', 'fantasy', 'scifi', 'romance', 'drama']",['US'],6.9,229274.0
+tm95252,The Book of Eli,2010,118,"['scifi', 'action', 'thriller', 'drama', 'european']",['US'],6.8,314920.0
+tm57190,The One,2001,87,"['thriller', 'action', 'scifi']",['US'],5.9,92007.0
+tm161263,The Cave,2005,97,"['horror', 'thriller', 'action', 'scifi', 'european']","['DE', 'US']",5.1,38734.0
+tm33981,Bon Cop Bad Cop,2006,116,"['comedy', 'crime', 'action', 'scifi', 'drama', 'thriller']",['CA'],6.5,61.0
+tm82718,G.O.R.A.,2004,127,"['action', 'comedy', 'scifi']",['TR'],8.0,62386.0
+tm170169,Kaal,2005,127,"['action', 'thriller', 'horror', 'scifi']",['IN'],4.7,5370.0
+tm44730,The Amazing Spider-Man,2012,136,"['action', 'fantasy', 'scifi']",['US'],6.9,646119.0
+tm158304,Contagion,2011,106,"['drama', 'thriller', 'scifi', 'action']","['AE', 'US']",6.8,301531.0
+tm74848,Total Recall,2012,118,"['scifi', 'thriller', 'action', 'crime']","['CA', 'US']",6.2,253352.0
+tm38980,Rise of the Guardians,2012,97,"['fantasy', 'action', 'family', 'animation', 'thriller', 'scifi', 'comedy', 'drama', 'european']",['US'],7.2,173157.0
+tm56296,The History of Future Folk,2012,86,"['music', 'comedy', 'scifi']",['US'],7.1,3478.0
+tm183547,Escape from Planet Earth,2012,89,"['scifi', 'comedy', 'family', 'animation']","['CA', 'US']",5.8,25734.0
+tm54780,Tiger & Bunny: The Beginning,2012,88,"['scifi', 'animation', 'action']",['JP'],6.6,264.0
+tm169128,An Elf's Story,2011,24,"['scifi', 'animation', 'family', 'fantasy']",['US'],5.1,510.0
+tm175843,Dark Skies,2013,97,"['scifi', 'thriller', 'horror', 'documentation']",['US'],6.3,75663.0
+tm153284,The Giver,2014,97,"['drama', 'scifi', 'thriller', 'romance']",['US'],6.4,118877.0
+tm161282,Penguins of Madagascar,2014,92,"['family', 'animation', 'action', 'comedy', 'scifi']",['US'],6.6,89930.0
+tm187979,Cloudy with a Chance of Meatballs 2,2013,95,"['animation', 'scifi', 'drama', 'comedy', 'family', 'fantasy']",['US'],6.3,102071.0
+tm161029,Mr. Peabody & Sherman,2014,92,"['action', 'family', 'animation', 'romance', 'comedy', 'fantasy', 'history', 'scifi']",['US'],6.8,69669.0
+tm143642,Who Am I,2014,105,"['thriller', 'european', 'scifi', 'crime', 'drama']",['DE'],7.5,55044.0
+tm140342,"I, Frankenstein",2014,92,"['thriller', 'scifi', 'horror', 'action', 'fantasy']","['AU', 'US']",5.1,80985.0
+tm147913,PK,2014,153,"['drama', 'comedy', 'scifi', 'romance', 'fantasy']",['IN'],8.1,181406.0
+tm143372,Stand by Me Doraemon,2014,90,"['scifi', 'fantasy', 'drama', 'family', 'animation', 'comedy']",['JP'],7.3,7989.0
+tm174289,Free Birds,2013,91,"['animation', 'comedy', 'family', 'scifi']",['US'],5.8,24140.0
+tm144021,LEGO DC Comics Super Heroes: Batman Be-Leaguered,2014,22,"['action', 'animation', 'family', 'comedy', 'scifi']",['US'],6.5,1340.0
+tm152273,Tiger & Bunny: The Rising,2014,108,"['scifi', 'action', 'animation']",['JP'],6.7,334.0
+tm132273,Home,2015,94,"['family', 'fantasy', 'comedy', 'animation', 'scifi']",['US'],6.6,101975.0
+tm143085,Chappie,2015,120,"['crime', 'action', 'scifi', 'drama', 'thriller']","['MX', 'ZA', 'US']",6.8,249345.0
+tm245271,Gantz:O,2016,95,"['scifi', 'action', 'animation', 'fantasy', 'thriller', 'horror', 'drama']",['JP'],7.1,14950.0
+tm140843,Self/less,2015,118,"['thriller', 'action', 'scifi', 'drama']",['US'],6.5,98837.0
+tm204035,Spectral,2016,109,"['thriller', 'action', 'scifi']",['US'],6.3,59040.0
+tm206512,Circle,2015,87,"['thriller', 'drama', 'horror', 'scifi', 'european']",['US'],6.0,52925.0
+tm208622,American Ultra,2015,96,"['action', 'comedy', 'scifi']","['CH', 'US']",6.1,89912.0
+tm136321,Advantageous,2015,92,"['drama', 'scifi', 'family']",['US'],6.2,5378.0
+tm244403,ARQ,2016,88,"['scifi', 'thriller', 'action']",['US'],6.3,39108.0
+tm200690,The Forest,2016,95,"['horror', 'thriller', 'scifi', 'drama', 'fantasy']",['US'],4.8,42561.0
+tm228677,The Space Between Us,2016,121,"['drama', 'romance', 'action', 'scifi']","['CN', 'US']",6.4,52698.0
+tm142881,Jem and the Holograms,2015,118,"['fantasy', 'music', 'romance', 'scifi', 'drama', 'family']",['US'],4.1,7867.0
+tm232953,Sleight,2016,89,"['drama', 'thriller', 'action', 'scifi', 'crime']",['US'],5.9,8644.0
+tm139194,Ratchet & Clank,2016,94,"['animation', 'family', 'action', 'comedy', 'scifi', 'fantasy']","['CA', 'US']",5.5,10919.0
+tm233616,LEGO Marvel Super Heroes: Avengers Reassembled!,2015,22,"['family', 'animation', 'action', 'comedy', 'scifi']",['US'],6.1,862.0
+tm245155,The Worthy,2016,95,"['thriller', 'action', 'scifi', 'fantasy', 'family', 'european']",['AE'],5.1,2004.0
+tm234136,MindGamers,2015,97,"['action', 'scifi', 'thriller', 'european']",['AT'],3.6,1111.0
+tm549892,Aerials,2016,90,"['thriller', 'drama', 'scifi']",['AE'],1.5,388.0
+tm239091,Blade Runner 2049,2017,164,"['scifi', 'action', 'drama', 'thriller']","['CA', 'HU', 'MX', 'ES', 'GB', 'US']",8.0,549712.0
+tm310953,Sorry to Bother You,2018,111,"['scifi', 'fantasy', 'comedy', 'drama']",['US'],6.9,77407.0
+tm244174,Okja,2017,122,"['scifi', 'fantasy', 'action', 'drama']","['KR', 'US']",7.3,116305.0
+tm359978,Forgotten,2017,109,"['thriller', 'horror', 'scifi']",['KR'],7.4,31208.0
+tm239286,The Cloverfield Paradox,2018,102,"['horror', 'thriller', 'scifi', 'drama', 'action']",['US'],5.5,104068.0
+tm272060,What Happened to Monday,2017,123,"['scifi', 'thriller', 'drama', 'action', 'crime', 'fantasy']","['FR', 'RO', 'GB', 'BE', 'DE']",6.8,121772.0
+tm350,The Bad Batch,2017,119,"['drama', 'horror', 'scifi', 'romance', 'action']",['US'],5.2,31275.0
+tm374132,Bird Box,2018,124,"['thriller', 'drama', 'scifi', 'horror']",['US'],6.6,331070.0
+tm244197,Replicas,2018,94,"['scifi', 'thriller', 'drama']","['PR', 'US', 'GB', 'CN']",5.5,37340.0
+tm435086,Level 16,2018,102,"['scifi', 'thriller', 'drama', 'european']",['CA'],6.0,11823.0
+tm244325,Mute,2018,126,"['scifi', 'thriller', 'drama']","['GB', 'DE']",5.4,35158.0
+tm244307,Bright,2017,117,"['fantasy', 'thriller', 'scifi', 'crime', 'action']",['US'],6.3,185996.0
+tm233362,The Discovery,2017,102,"['scifi', 'thriller', 'romance', 'drama']",['US'],6.2,34092.0
+tm310706,Extinction,2018,96,"['scifi', 'thriller', 'action', 'drama']",['US'],5.8,52635.0
+tm449070,Black Mirror: Bandersnatch,2018,90,"['drama', 'thriller', 'scifi', 'fantasy']","['GB', 'US']",7.1,125229.0
+tm307283,Cargo,2017,105,"['drama', 'thriller', 'scifi', 'horror']",['AU'],6.3,43232.0
+tm243326,Anon,2018,100,"['scifi', 'thriller', 'action', 'drama', 'crime', 'european']","['US', 'GB']",6.1,42608.0
+tm323634,A-X-L,2018,98,"['scifi', 'thriller', 'action', 'drama', 'family']",['US'],5.3,11920.0
+tm349278,Ravenous,2017,103,"['drama', 'scifi', 'horror', 'thriller', 'action']",['CA'],5.8,9205.0
+tm352588,Tau,2018,97,"['scifi', 'thriller', 'horror']",['US'],5.8,31218.0
+tm368040,The Titan,2018,97,"['scifi', 'thriller', 'fantasy', 'drama', 'romance']","['US', 'GB', 'ES']",4.8,30698.0
+tm420745,How It Ends,2018,113,"['scifi', 'thriller', 'action', 'drama']","['US', 'CA']",5.0,52709.0
+tm211554,Beyond Skyline,2017,105,"['scifi', 'thriller', 'action', 'horror']","['GB', 'ID', 'CA', 'CN', 'SG', 'US']",5.3,21834.0
+tm328443,Illang: The Wolf Brigade,2018,139,"['action', 'thriller', 'drama', 'scifi']",['KR'],5.9,5138.0
+tm300184,iBoy,2017,90,"['scifi', 'action', 'crime', 'thriller']",['GB'],6.0,22594.0
+tm312577,Fullmetal Alchemist,2017,135,"['fantasy', 'scifi', 'action']",['JP'],5.2,19493.0
+tm413049,Animal World,2018,125,"['thriller', 'fantasy', 'drama', 'action', 'scifi', 'comedy']",['CN'],6.4,4447.0
+tm241990,Blame!,2017,106,"['scifi', 'animation', 'action', 'drama', 'thriller']",['JP'],6.6,8044.0
+tm324820,MFKZ,2018,95,"['scifi', 'comedy', 'thriller', 'animation', 'action', 'european']","['FR', 'JP']",6.7,4412.0
+tm315584,Godzilla: Planet of the Monsters,2017,89,"['scifi', 'action', 'animation']",['JP'],6.0,8548.0
+tm282910,Fireworks,2017,90,"['drama', 'fantasy', 'documentation', 'animation', 'romance', 'scifi', 'family']",['JP'],5.6,3147.0
+tm425138,Godzilla: The Planet Eater,2018,91,"['scifi', 'fantasy', 'horror', 'animation', 'action']",['JP'],5.0,4196.0
+tm357479,Day of the Dead: Bloodline,2017,90,"['horror', 'action', 'scifi', 'thriller', 'drama', 'european']","['US', 'BG']",3.4,11909.0
+tm300054,Orbiter 9,2017,95,"['drama', 'romance', 'scifi', 'european']",['ES'],5.9,7738.0
+tm363231,Godzilla: City on the Edge of Battle,2018,105,"['animation', 'action', 'scifi']",['JP'],5.8,4896.0
+tm365824,Zero,2018,180,"['romance', 'drama', 'comedy', 'scifi', 'thriller', 'fantasy', 'european']",['IN'],5.2,27346.0
+tm429208,Next Gen,2018,105,"['action', 'animation', 'family', 'scifi', 'comedy']","['CA', 'CN']",6.6,17445.0
+tm376015,LEGO Marvel Super Heroes: Guardians of the Galaxy - The Thanos Threat,2017,22,"['scifi', 'animation', 'family', 'action', 'comedy', 'fantasy']",['US'],5.8,451.0
+tm428453,Cities of Last Things,2018,106,"['drama', 'scifi', 'crime']","['CN', 'FR', 'TW', 'US']",6.2,1669.0
+tm299730,Lucid Dream,2017,101,"['thriller', 'scifi']",['KR'],6.1,3680.0
+tm418039,LEGO Marvel Super Heroes: Black Panther - Trouble in Wakanda,2018,22,"['fantasy', 'animation', 'action', 'comedy', 'scifi']",['US'],5.6,572.0
+tm477838,Disconnect,2018,107,"['romance', 'comedy', 'scifi']",['KE'],5.3,118.0
+tm322200,Superlopez,2018,108,"['comedy', 'scifi', 'action', 'european']",['ES'],5.4,3635.0
+tm359030,F.R.E.D.I.,2018,89,"['scifi', 'family']",['XX'],4.9,1018.0
+tm369433,Awe!,2018,115,"['romance', 'drama', 'fantasy', 'horror', 'scifi', 'thriller']",['IN'],7.7,5054.0
+tm431214,Back to Q82,2017,105,"['scifi', 'action', 'comedy']",['KW'],6.1,104.0
+tm361161,DreamWorks Home: For the Holidays,2017,45,"['scifi', 'fantasy', 'animation', 'comedy', 'family']",['GB'],4.8,149.0
+tm430459,La Leyenda del Diamante,2018,87,"['action', 'fantasy', 'horror', 'western', 'family', 'scifi']",['MX'],3.3,51.0
+tm493814,Satria Heroes: Revenge of the Darkness,2017,92,"['scifi', 'action', 'drama', 'fantasy']",['ID'],4.4,69.0
+tm827638,Synchronic,2019,102,"['crime', 'drama', 'horror', 'scifi', 'thriller']",['US'],6.2,29455.0
+tm824398,The Platform,2019,95,"['scifi', 'thriller', 'horror', 'european']",['ES'],7.0,213699.0
+tm456156,Sweetheart,2019,82,"['horror', 'thriller', 'drama', 'fantasy', 'scifi']",['US'],5.8,8191.0
+tm427335,Freaks,2019,105,"['scifi', 'thriller', 'drama']","['US', 'CA']",6.7,35021.0
+tm423666,The Wandering Earth,2019,126,"['scifi', 'action', 'drama', 'thriller']",['CN'],5.9,30297.0
+tm448792,In the Shadow of the Moon,2019,115,"['scifi', 'crime', 'thriller']","['US', 'CA']",6.2,52206.0
+tm1121246,Code 8,2019,99,"['scifi', 'action', 'crime', 'thriller', 'drama']","['CA', 'GB', 'US']",6.1,39469.0
+tm428856,I Am Mother,2019,114,"['scifi', 'horror', 'drama', 'thriller']",['AU'],6.7,89926.0
+tm832916,The Midnight Sky,2020,118,"['drama', 'scifi', 'thriller', 'fantasy']",['US'],5.6,82362.0
+tm453862,The Call,2020,112,"['scifi', 'thriller', 'drama', 'crime', 'horror']",['KR'],7.1,30772.0
+tm358770,Paradise Hills,2019,95,"['scifi', 'thriller', 'fantasy', 'european']","['US', 'ES']",5.3,22454.0
+tm372066,Fast Color,2019,102,"['scifi', 'thriller', 'drama']",['US'],6.0,6276.0
+tm499045,Occupation: Rainfall,2020,128,"['scifi', 'action']",['AU'],5.2,14219.0
+tm878333,Pokémon the Movie: Secrets of the Jungle,2020,99,"['family', 'fantasy', 'animation', 'action', 'scifi']",['JP'],6.4,1942.0
+tm893480,Project Power,2020,113,"['crime', 'scifi', 'action', 'thriller']",['US'],6.0,86407.0
+tm413660,In the Tall Grass,2019,102,"['drama', 'thriller', 'scifi', 'horror']","['CA', 'US']",5.4,55276.0
+tm361998,The Wolf's Call,2019,115,"['thriller', 'action', 'scifi', 'war', 'drama', 'european']",['FR'],6.9,17468.0
+tm418847,The Silence,2019,90,"['drama', 'thriller', 'fantasy', 'horror', 'scifi', 'european']",['DE'],5.3,44818.0
+tm411750,Doom: Annihilation,2019,96,"['action', 'scifi', 'thriller', 'horror']",['US'],3.7,9281.0
+tm285317,IO,2019,96,"['scifi', 'romance', 'drama']",['US'],4.7,34180.0
+tm824477,Over the Moon,2020,95,"['comedy', 'family', 'fantasy', 'scifi', 'romance', 'animation']","['CN', 'US']",6.3,22034.0
+tm925486,Jiu Jitsu,2020,102,"['action', 'scifi', 'fantasy', 'thriller', 'comedy']","['US', 'CY']",2.9,8693.0
+tm420455,Rim of the World,2019,99,"['scifi', 'action', 'comedy']",['US'],5.2,23987.0
+tm348403,A Shaun the Sheep Movie: Farmageddon,2019,87,"['family', 'comedy', 'animation', 'fantasy', 'scifi']","['GB', 'FR']",6.8,13485.0
+tm935309,Skylines,2020,113,"['scifi', 'action']","['FR', 'LT', 'GB']",4.7,8139.0
+tm852996,Captain Underpants: Epic Choice-o-rama,2020,37,"['comedy', 'fantasy', 'family', 'animation', 'action', 'scifi']",['US'],6.4,80.0
+tm952590,What Lies Below,2020,87,"['horror', 'thriller', 'scifi']",['US'],4.3,8290.0
+tm465724,See You Yesterday,2019,86,"['scifi', 'thriller', 'action', 'crime', 'drama']",['US'],5.2,10725.0
+tm885775,Unbreakable Kimmy Schmidt: Kimmy vs. the Reverend,2020,80,"['comedy', 'scifi', 'romance']",['US'],6.9,5376.0
+tm460829,Children of the Sea,2019,110,"['thriller', 'animation', 'fantasy', 'action', 'scifi', 'drama', 'family']",['JP'],6.5,2850.0
+tm850723,Altered Carbon: Resleeved,2020,75,"['scifi', 'animation', 'crime', 'drama', 'thriller', 'action']",['JP'],6.5,6127.0
+tm524282,Invader ZIM: Enter the Florpus,2019,71,"['drama', 'animation', 'action', 'family', 'fantasy', 'comedy', 'scifi', 'thriller', 'horror']",['US'],7.4,5796.0
+tm922532,Freaks – You're One of Us,2020,93,"['fantasy', 'thriller', 'drama', 'action', 'scifi']",['DE'],5.4,5809.0
+tm453850,Time to Hunt,2020,135,"['thriller', 'drama', 'action', 'scifi', 'crime']",['KR'],6.3,5621.0
+tm888080,The Last Days of American Crime,2020,149,"['action', 'crime', 'thriller', 'scifi', 'drama']",['US'],3.7,11465.0
+tm495609,Game Over,2019,102,"['drama', 'thriller', 'horror', 'scifi']",['IN'],7.0,7402.0
+tm305433,Rocko's Modern Life: Static Cling,2019,45,"['animation', 'comedy', 'family', 'fantasy', 'scifi', 'action']",['US'],6.9,3865.0
+tm980097,Holiday on Mars,2020,93,"['scifi', 'comedy']",['IT'],2.7,583.0
+tm941382,Stand by Me Doraemon 2,2020,96,"['scifi', 'animation', 'comedy', 'drama', 'family', 'fantasy']",['JP'],7.5,3791.0
+tm466954,Alien Warfare,2019,88,"['action', 'scifi', 'thriller']",['US'],2.6,3527.0
+tm925218,Monster Run,2020,104,"['fantasy', 'scifi', 'thriller', 'action', 'drama']","['CN', 'HK']",5.2,417.0
+tm849937,Jungle Beat: The Movie,2020,84,"['family', 'animation', 'scifi', 'comedy', 'fantasy']",['MU'],5.4,1029.0
+tm442199,Shanghai Fortress,2019,107,"['scifi', 'war', 'action']",['CN'],4.3,2383.0
+tm912190,Cargo,2019,113,"['fantasy', 'scifi', 'drama']",['IN'],5.6,2929.0
+tm873159,The Yin-Yang Master: Dream of Eternity,2020,132,"['drama', 'fantasy', 'scifi', 'action']",['CN'],6.4,4751.0
+tm918960,The Magic School Bus Rides Again: Kids in Space,2020,45,"['action', 'family', 'animation', 'comedy', 'scifi']",['CA'],6.1,86.0
+tm847630,The App,2019,79,"['drama', 'scifi', 'thriller']",['IT'],2.7,1347.0
+tm918962,Fearless,2020,89,"['animation', 'family', 'scifi', 'documentation', 'comedy']",['CA'],4.9,1735.0
+tm452237,The Car: Road to Revenge,2019,89,"['action', 'horror', 'thriller', 'scifi']",['US'],4.0,1096.0
+tm822210,Eggnoid: Love & Time Portal,2019,102,"['romance', 'scifi', 'drama', 'fantasy']",[],6.1,86.0
+tm1020438,Spiderhead,2022,106,"['scifi', 'thriller', 'drama', 'action', 'crime']",['US'],5.4,43239.0
+tm1067148,The Sea Beast,2022,115,"['comedy', 'family', 'fantasy', 'scifi', 'animation']",['US'],7.1,18852.0
+tm1082564,The Adam Project,2022,106,"['drama', 'action', 'comedy', 'scifi']",['US'],6.7,183489.0
+tm856378,Don't Look Up,2021,138,"['comedy', 'drama', 'scifi']",['US'],7.2,515337.0
+tm1072066,Blasted,2022,114,"['action', 'comedy', 'scifi']",['NO'],4.8,1528.0
+tm852172,Apollo 10½:  A Space Age Childhood,2022,98,"['animation', 'scifi', 'action', 'comedy', 'romance', 'family', 'horror', 'drama']","['NL', 'US']",7.3,6681.0
+tm370144,The Mitchells vs. the Machines,2021,109,"['comedy', 'family', 'scifi', 'animation']",['US'],7.6,103825.0
+tm1019177,The Colony,2021,104,"['scifi', 'thriller', 'action']","['CH', 'DE']",5.3,8495.0
+tm1137051,Bubble,2022,101,"['scifi', 'fantasy', 'romance', 'sport', 'thriller', 'animation', 'action', 'drama']",['JP'],6.3,4597.0
+tm1048362,Army of Thieves,2021,127,"['comedy', 'crime', 'thriller', 'scifi', 'horror', 'romance', 'action']","['DE', 'US']",6.4,73790.0
+tm456513,Army of the Dead,2021,148,"['horror', 'thriller', 'crime', 'scifi', 'action']",['US'],5.7,169348.0
+tm1064065,Black Crab,2022,114,"['scifi', 'thriller', 'war', 'action', 'drama']",['SE'],5.6,19159.0
+tm851128,Bigbug,2022,111,"['comedy', 'scifi', 'fantasy']",['FR'],5.4,7483.0
+tm1166024,Choose or Die,2022,85,"['scifi', 'thriller', 'drama', 'horror']",['GB'],4.7,18307.0
+tm347095,Oxygen,2021,100,"['scifi', 'thriller', 'horror', 'drama', 'fantasy']","['FR', 'US']",6.5,37871.0
+tm1087461,Last Man Down,2021,87,"['thriller', 'action', 'scifi']","['SE', 'GB']",4.8,12850.0
+tm1110527,Captain Nova,2021,86,"['action', 'family', 'scifi']",['NL'],5.5,1391.0
+tm1000147,Zone 414,2021,98,"['scifi', 'thriller']",['GB'],4.9,4146.0
+tm841825,My Little Pony: A New Generation,2021,91,"['music', 'action', 'animation', 'family', 'fantasy', 'comedy', 'drama', 'scifi']","['IE', 'US', 'CA']",6.8,3657.0
+tm1003034,The Witcher: Nightmare of the Wolf,2021,83,"['action', 'drama', 'fantasy', 'scifi', 'animation']","['US', 'PL', 'KR']",7.2,42484.0
+tm458292,Space Sweepers,2021,136,"['scifi', 'drama', 'fantasy', 'action']",['KR'],6.5,25178.0
+tm922429,The Block Island Sound,2021,98,"['scifi', 'horror', 'thriller']",['US'],5.3,7778.0
+tm993670,Cosmic Sin,2021,88,"['action', 'scifi']",['US'],2.5,12517.0
+tm1038363,America: The Motion Picture,2021,98,"['action', 'animation', 'war', 'comedy', 'fantasy', 'history', 'scifi']",['US'],5.6,6349.0
+tm1020073,Thunder Force,2021,107,"['scifi', 'comedy', 'fantasy', 'action']",['US'],4.4,41508.0
+tm1038344,Awake,2021,96,"['drama', 'scifi', 'thriller', 'action']",['US'],4.9,21498.0
+tm858869,Stowaway,2021,117,"['thriller', 'action', 'scifi', 'drama']","['DE', 'US']",5.6,45090.0
+tm1086874,Minnal Murali,2021,158,"['comedy', 'action', 'drama', 'fantasy', 'scifi']",['IN'],8.1,24681.0
+tm1120902,The Privilege,2022,107,"['scifi', 'thriller', 'drama', 'horror']",['DE'],4.6,4293.0
+tm983270,Outside the Wire,2021,116,"['action', 'scifi', 'thriller', 'fantasy']",['US'],5.4,42078.0
+tm880822,Mobile Suit Gundam Hathaway,2021,96,"['scifi', 'animation', 'action', 'drama', 'romance']",['JP'],6.6,1400.0
+tm1160424,AI Love You,2022,95,"['scifi', 'comedy', 'romance', 'drama']",['TH'],4.4,572.0
+tm1111717,L.O.L. Surprise: The Movie,2021,47,"['animation', 'family', 'fantasy', 'scifi', 'western', 'action']",['US'],3.8,129.0
+tm1064532,Deep,2021,101,"['scifi', 'thriller', 'drama']",['TH'],4.8,1441.0
+tm475430,Super Me,2021,102,"['action', 'drama', 'fantasy', 'scifi']",['CN'],5.8,1605.0
+tm980657,The Soul,2021,130,"['scifi', 'thriller', 'drama']","['TW', 'CN']",6.6,2791.0
+tm1021689,The Door Into Summer,2021,118,['scifi'],[],6.3,696.0
+tm1049290,In for a Murder,2021,105,"['comedy', 'thriller', 'drama', 'crime', 'scifi']",['PL'],5.3,1484.0
+tm1038364,Ghost Lab,2021,117,"['thriller', 'drama', 'horror', 'scifi']",['TH'],5.1,1424.0
+tm1106900,A World Without,2021,106,"['thriller', 'drama', 'scifi']",['ID'],3.8,357.0
+tm1068720,D.O.D.: Day of Destiny,2021,110,"['scifi', 'comedy', 'drama']",['NG'],5.0,42.0
+tm1141346,StarBeam: Beaming in the New Year,2021,47,"['animation', 'family', 'scifi']",[],5.5,36.0
