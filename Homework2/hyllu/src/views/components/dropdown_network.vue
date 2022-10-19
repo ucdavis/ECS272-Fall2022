@@ -14,11 +14,17 @@
         name: 'Dropdown_Network',
         data() { // pass data to others
             return {
-                selected: {id: 0, text: 'Taylor Swift'},
-                popularities: [
-                    {id: 0, name: 'Taylor Swift'},
-                    {id: 1, name: 'Ed Sheeran'}
-                ]
+                selected: this.myData[0],
+                popularities: this.myData
+            }
+        },
+        props:{ // received data from others
+            myData: Array
+        },
+        watch: { 
+            myData: function(newVal, oldVal) { // watch it
+                console.log(this.myData);
+                this.popularities = this.myData;
             }
         },
         mounted(){ 

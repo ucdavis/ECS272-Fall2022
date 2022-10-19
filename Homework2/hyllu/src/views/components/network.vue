@@ -96,6 +96,12 @@
                 // console.log(hop_1_weight);
                 // console.log(hop_1_size);
 
+                let dropdown_update = []
+                let update_count = 1
+                dropdown_update.push({
+                    id: 0,
+                    name: selection.text
+                });
                 node.push({
                     id: 0,
                     size: Object.keys(hop_1_weight).length,
@@ -114,23 +120,30 @@
                         target: hop_1[element],
                         weight: hop_1_weight[element]
                     }
+                    const update_tmp = {
+                        id: update_count,
+                        name: element
+                    }
                     node.push(node_tmp);
                     link.push(link_tmp);
+                    dropdown_update.push(update_tmp);
+                    update_count += 1;
                 });
                 // console.log(node);
                 // console.log(link);
                 this.nodes = node;
                 this.links = link;
+                this.$emit('dropdownChange', dropdown_update);
             },
 
             drawNetwork(nodes, links, id, selection) {
 
-                const margin = { top: 20, right: 50, bottom: 20, left: 5 };
+                const margin = { top: 50, right: 50, bottom: 20, left: 5 };
                 // const height = 300;
                 // const width = 500;
 
-                let width  = 700;
-                let height = 700;
+                let width  = 400;
+                let height = 400;
 
                 const intern = (value) => value !== null && typeof value === 'object' ? value.valueOf() : value;
 
@@ -163,14 +176,15 @@
                 const forceNode = d3.forceManyBody();
                 const forceLink = d3.forceLink(links).id(({
                     index: i
-                }) => N[i]);
+                }) => N[i]).distance(100);
 
                 d3.selectAll(".layout").remove();
                 let svg = d3.select(id).append("svg")
                     .attr("class", "layout")
-                    .attr('viewBox', [-width / 2, -height / 2, width, height])
+                    .attr('viewBox', [-width / 2 - margin.left, -height / 2 - margin.top, width, height])
                     .attr("width", width + margin.left + margin.right)
                     .attr("height", height + margin.top + margin.bottom);
+                
 
                 const link = svg.append('g')
                     .attr('stroke', '#999')
@@ -186,11 +200,24 @@
                     .attr('stroke-width', 1.5)
                     .selectAll('circle')
                     .data(nodes)
-                    .join('circle');
+                    .join('circle')
+                    .on("dblclick", nodeclick);
+
+                function nodeclick(){
+                    // console.log(this);
+                    // d3.select(this).transition()
+                    //     .duration('50')
+                    //     .attr('stroke', '#ff0');
+                    // svg.append("text")
+                    //     .attr("x", -width/2 + 100)
+                    //     .attr("y", -height/2)
+                    //     .attr("class", "doubleclick")
+                    //     .style("font-size", "12px")
+                    //     .style("opacity", 1);
+                };
 
                 const simulation = d3.forceSimulation(nodes)
                     .force('link', forceLink)
-                    .force("link", d3.forceLink().distance(5).strength(0.8))
                     .force('charge', forceNode)
                     .force('center', d3.forceCenter())
                     .on('tick', () => {
@@ -208,25 +235,25 @@
                     const dragstarted = event => {
                     if (!event.active) simulation.alphaTarget(0.3).restart();
                     if (invalidation != null) invalidation.then(() => simulation.stop());
-                    event.subject.fx = event.subject.x;
-                    event.subject.fy = event.subject.y;
+                        event.subject.fx = event.subject.x;
+                        event.subject.fy = event.subject.y;
                     }
 
                     const dragged = event => {
-                    event.subject.fx = event.x;
-                    event.subject.fy = event.y;
+                        event.subject.fx = event.x;
+                        event.subject.fy = event.y;
                     }
 
                     const dragended = event => {
-                    if (!event.active) simulation.alphaTarget(0);
-                    event.subject.fx = null;
-                    event.subject.fy = null;
+                        if (!event.active) simulation.alphaTarget(0);
+                        event.subject.fx = null;
+                        event.subject.fy = null;
                     }
 
                     return d3.drag()
-                    .on('start', dragstarted)
-                    .on('drag', dragged)
-                    .on('end', dragended);
+                        .on('start', dragstarted)
+                        .on('drag', dragged)
+                        .on('end', dragended);
                 }
 
                 node.call(drag(simulation));
@@ -236,11 +263,14 @@
                 }) => W[i]);
                 if (G) node.attr('fill', ({
                     index: i
-                }) => color(G[i]+7));
-                if (S) node.attr('r', ({
+                }) => color(G[i]+5));
+                if (S && d3.max(S)<30) node.attr('r', ({
                     index: i
-                }) => S[i]);
-                if (T) node.append('title').text(({
+                }) => S[i]+3);
+                else if (S) node.attr('r', ({
+                    index: i
+                }) => S[i]/10+3);
+                if (T) node.append('svg:title').text(({
                     index: i
                 }) => T[i]);
 
@@ -250,6 +280,37 @@
                     }, 8000) // simulation will be stopped after 8 sec
                 });
                 if (invalidation != null) invalidation.then(() => simulation.stop());
+
+                // add lengend for chosen colors.
+                svg.append("circle")
+                    .attr("cx", -width/2 + 10)
+                    .attr("cy", -height/2 - 15)
+                    .attr("r", 8)
+                    .style("fill", color(5))
+                svg.append("circle")
+                    .attr("cx", -width/2 + 120)
+                    .attr("cy", -height/2 - 15)
+                    .attr("r", 8)
+                    .style("fill", color(6))
+
+                svg.append("text")
+                    .attr("x", -width/2 + 20)
+                    .attr("y", -height/2 - 35)
+                    .text("Center: " + selection.text)
+                    .style("font-size", "12px")
+                    .attr("alignment-baseline","middle")
+                svg.append("text")
+                    .attr("x", -width/2 + 20)
+                    .attr("y", -height/2 - 14)
+                    .text("Center Singer")
+                    .style("font-size", "12px")
+                    .attr("alignment-baseline","middle")
+                svg.append("text")
+                    .attr("x", -width/2 + 130)
+                    .attr("y", -height/2 - 14)
+                    .text("Collaborated Singers with Center")
+                    .style("font-size", "12px")
+                    .attr("alignment-baseline","middle")
 
                 return Object.assign(svg.node(), {scales: {color}});
             }

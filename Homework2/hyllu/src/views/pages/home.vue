@@ -1,17 +1,17 @@
 <template>
     <div id="home">
         <div>
-            <Dropdown_Network @selectedChange="handleChange_network"/>
-            <Network v-if="dataExists" :myData="myData" :mySelection="selected_network" />
+            <Dropdown_Network :myData="hop_1" @selectedChange="handleChange_network"/>
+            <Network v-if="dataExists" :myData="myData" :mySelection="selected_network" @dropdownChange="handledropdown_network"/>
         </div>
         <div>
             <div>
                 <Dropdown @selectedChange="handleChange" />
-                <BarChart v-if="dataExists" :myBarchartData="myData" :mySelection="selected" />
+                <BarChart v-if="dataExists" :myBarchartData="myData" :mySelection="selected" :mySinger="selected_network.text" @colorChange="handlecolor_views" />
             </div>
             <div>
                 <Dropdown_Beeswarm @selectedChange="handleChange_beeswarm"/>
-                <Beeswarm v-if="dataExists" :myData="myData" :mySelection="selected_beeswarm" />
+                <Beeswarm v-if="colorExists" :myData="myData" :mySelection="selected_beeswarm" :mySinger="selected_network.text" :myColor="color" />
             </div>
         </div>
     </div>
@@ -20,8 +20,8 @@
 
 <script>
 import * as d3 from "d3";
-import BarChart from "../components/barchart.vue";
-import Beeswarm from '../components/beeswarm.vue';
+import BarChart from "../components/barchart_general.vue";
+import Beeswarm from '../components/beeswarm_general.vue';
 import Network from '../components/network.vue';
 import Dropdown from "../components/dropdown.vue";
 import Dropdown_Beeswarm from '../components/dropdown_beeswarm.vue';
@@ -35,7 +35,10 @@ export default {
             myData: [],
             selected: {id: 0, text: 'Popularity All'},
             selected_beeswarm: {id: 0, text: 'acousticness'},
-            selected_network: {id: 0, text: 'Taylor Swift'}
+            selected_network: {id: 0, text: 'Taylor Swift'},
+            hop_1: [{id: 0, text: 'Taylor Swift'}],
+            color: undefined,
+            colorExists: false
         }
     },
     components: {
@@ -77,6 +80,15 @@ export default {
             console.log('parent noticed change network ' + selected.id + selected.text);
             this.selected_network = selected;
         },
+        handledropdown_network(dropdown_update){
+            console.log('parent noticed change dropdown ' + dropdown_update);
+            this.hop_1 = dropdown_update;
+        },
+        handlecolor_views(color){
+            console.log('parent noticed change color ' + color);
+            this.color = color;
+            this.colorExists = true;
+        }
     }
 }
 </script>

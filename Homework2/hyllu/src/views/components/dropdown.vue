@@ -17,9 +17,11 @@
                 selected: {id: 0, text: 'Popularity All'},
                 popularities: [
                     {id: 0, name: 'Popularity All'},
-                    {id: 1, name: 'Popularity 40-60'},
-                    {id: 2, name: 'Popularity 60-80'},
-                    {id: 3, name: 'Popularity 80-100'}
+                    {id: 1, name: 'Popularity 0-20'},
+                    {id: 2, name: 'Popularity 20-40'},
+                    {id: 3, name: 'Popularity 40-60'},
+                    {id: 4, name: 'Popularity 60-80'},
+                    {id: 5, name: 'Popularity 80-100'}
                 ]
             }
         },

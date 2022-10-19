@@ -19,7 +19,8 @@ import { object } from "vue-types";
         },
         props:{ // received data from others
             myBarchartData: Array,
-            mySelection: Object
+            mySelection: Object,
+            mySinger: String
         },
         watch: { 
             mySelection: function(newVal, oldVal) { // watch it
@@ -72,24 +73,11 @@ import { object } from "vue-types";
                         if (artist[i][0]!='[' && artist[i][0]!=']' && artist[i][0]!=','){
                             musician_log.push(artist[i]);
                         }
-                        if (artist[i]=="Taylor Swift"){
+                        if (artist[i]==this.mySinger){
                             flag = true;
                         }
                     }
                     if (flag == true){
-                        let piano_tmp = {
-                            acousticness: element.acousticness,
-                            danceability: element.danceability,
-                            energy: element.energy,
-                            instrumentalness: element.instrumentalness,
-                            liveness: element.liveness,
-                            speechiness: element.speechiness,
-                            valence: element.valence,
-                            name: element.name,
-                            year: element.year,
-                            artists: musician_log,
-                            popularity: element.popularity
-                        };
                         if (element.year < 2008){
                             if (element.popularity < 20){
                                 year_composer["A"]["A"] += parseInt(element.popularity);
