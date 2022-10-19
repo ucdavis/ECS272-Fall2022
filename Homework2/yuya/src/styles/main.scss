@@ -1,0 +1,88 @@
+@import "~animate.css/animate.css";
+
+
+/* Example of using SCSS */
+$font-size: 1rem;
+$font-color: lch(53 105 40);
+
+html {
+  font-size: $font-size;
+  color: $font-color;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+info{
+    height: 10%;
+    width: 100%;
+    font-size: 2vh;
+    text-align: center;
+    vertical-align: baseline;
+    display: inline-block;
+}
+
+
+#pitch_list span{
+    display: block;
+    float: left;
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 3px;
+    border: 1px solid #999;
+}
+#pitch_list {
+    list-style: none;
+}
+
+#pitch_list li{
+    list-style: none;
+}
+
+.home{
+  height: 100%;
+  width: 100%;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+#app{
+  height: 100%;
+  width: 100%;
+}
+
+#scene{
+  height: 90%;
+  width: 100%;
+}
+
+#chart{
+  height: 90%;
+  width: 100%;
+}
+
+#chart2{
+  height: 90%;
+  width: 100%;
+}
+
+#legend{
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+
+#legend2{
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+
+
