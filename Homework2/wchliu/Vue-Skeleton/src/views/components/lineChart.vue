@@ -85,7 +85,7 @@ export default {
                 title: d => d.year + ": " + d.num_movies,
                 xDomain: [1954, 2022],
                 yDomain: [0, 500],
-                yLabel: "↑ Avg IMDB Score",
+                yLabel: "↑ Number of Movies",
                 xLabel: "Release Year →",
                 width: 300,
                 height: 175,
