@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    body{width:100%;}
+    div.relative1 { 
+      position: relative;
+      top : 50px;  
+    }  
+
+    div.absolute1 {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 50%;
+      height: 50%;
+      border: 1px solid #73AD21;
+    }
+
+    div.absolute2 {
+      position: absolute;
+      top: 50%;
+      left: 0px;
+      width: 50%;
+      height: 50%;
+      border: 1px solid #73AD21;
+    }
+
+    div.absolute3 {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 50%;
+      height: 100%;
+      border: 1px solid #73AD21;
+    }
+    </style>
+
+    <title>Homework 2 - Airline Passenger Satisfaction</title>
+  </head>
+  <body>
+    <div>
+
+      <div>
+
+        <div id="radar" class="absolute1" > 
+          <h5 align="center">Average satisfaction with each service in different classes</h5> 
+          <select id="bar_dropdown">
+            <option value="Eco">Eco</option>
+            <option value="Eco Plus">Eco Plus</option>
+            <option value="Business">Business</option>
+            <option value="All">All</option>
+          </select>
+        </div>
+
+        <div id="bar" class="absolute2">
+          <h5 align="center">The distribution of each class in the rating range of 1~5 for leg room service </h5>
+          <input type="range" value="1" min="1" max="5" name="barSlider" id="barSlider" oninput="this.nextElementSibling.value = this.value">
+          <output>1</output>
+        </div>
+
+        <div id="pie" class="absolute3">
+          <h5 align="center">Overview of the dataset(data distribution in different dimensions)</h5> 
+          <select id="pie_dropdown">
+            <option value="gender">Gender</option>
+            <option value="customerType">Customer Type</option>
+            <option value="travelType">Travel Type</option>
+            <option value="fligtClass">Fligt Class</option>
+            <option value="wifiService">Inflight Wifi Service</option>
+            <option value="timeConvenient">Time Convenient</option>
+            <option value="booking">Ease of Booking</option>
+            <option value="gateLocation">Gate Location</option>
+            <option value="food">Food and Drink</option>
+            <option value="onlineBoarding">Online Boarding</option>
+            <option value="seat">Seat Comfort</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="onboard">On-board Service</option>
+            <option value="legRoom">Leg Room Service</option>
+            <option value="baggage">Baggage Handling</option>
+            <option value="checkin">Checkin Service</option>
+            <option value="inflight">Inflight Service</option>
+            <option value="cleanliness">Cleanliness</option>
+            <option value="satisfaction">Satisfaction</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+    <script src="./bundle.js"></script>
+  </body>
+</html>
