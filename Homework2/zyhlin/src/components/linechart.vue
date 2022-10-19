@@ -170,11 +170,6 @@
                     title_txt.text('# of terrorist attacks in ' + selectedGroup)
                     legend_text.text(selectedGroup)
                 }
-                
-
-
-
-                
 
             },
         }

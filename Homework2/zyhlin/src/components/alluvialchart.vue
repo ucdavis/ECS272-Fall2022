@@ -20,17 +20,19 @@
             myAlluvialchartData: Array,
         },
         mounted(){
-            let localData = testData['data'];
-            this.drawAlluvialChart(localData, "#alluvial") /* Example of reading data from a json file */
+            let localData = testData;
+            this.pick_data(localData, "#alluvial", this.drawAlluvialChart)
             // this.drawAlluvialChart(this.myAlluvialchartData, "#alluvial")
             console.log("Data Passed down as a Prop  ", this.myAlluvialchartData)
         },
         methods: {
-            drawAlluvialChart(data, id) {
+            drawAlluvialChart(dset, id) {
 
-                const margin = { top: 20, right: 40, bottom: 20, left: 100 };
-                const height = 340;
-                const width = 600;
+                const margin = { top: 20, right: 20, bottom: 20, left: 20 };
+                const height = 350;
+                const width = 700;
+
+                const data = dset['data']
 
                 const sk = d3Sankey
                     .sankey()
@@ -97,14 +99,36 @@
                     .attr('font-size', 8)
                     .attr("text-anchor", d => d.x0 < width / 2 ? "start" : "end")
                     .text(d => d.id);
-
-                svg.append('text')
-                    .text('Sum of Attck type, Weapons, Success between 1970 and 2017')
-                    .attr('y', 10)
-                    .attr('x', 10)
-                    .attr('font-size', 9)
                     
             },
+
+            pick_data(dset, id, cb) {
+                var input_option = 400
+                var filtered_data = dset[input_option]
+
+                const select_button = d3.select('#selectButton_chart3')
+                    .selectAll('myOptions')
+                    .data(dset.thresholds)
+                    .enter()
+                    .append('option')
+                    .text(d => d)
+                    .attr('value', d => d)
+
+                d3.select("#selectButton_chart3").on("change", function(event,d) {
+                    const input_option = d3.select(this).property("value")
+                    update(input_option)
+                })
+                
+                function update(input_option) {
+                    filtered_data = dset[input_option]
+                    d3.select('#alluvial').selectAll('g').remove()
+                    d3.select('#alluvial').selectAll('text').remove()
+                    cb(filtered_data, id)
+                    
+                }
+                cb(dset[input_option], id)
+            }
+
         }
     }
 
@@ -115,7 +139,7 @@
 svg {
     position: inherit;
     margin: 20px 20px 20px 20px;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
 }
 </style>

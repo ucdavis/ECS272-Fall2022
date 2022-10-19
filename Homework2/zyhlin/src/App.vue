@@ -12,10 +12,14 @@
           </div>
           <div id="two-views" class="col-2">
             <div class="col-2 row-1 detail-view-1">
+              <label>region:</label>
               <select id="selectButton"></select>
               <LineChart v-if="dataExists" :myLineChartData="myLineData" />
             </div>
             <div class="col-2 row-2 detail-view-2">
+              <label>granularity:</label>
+              <select id="selectButton_chart3"></select>
+              <p>Sum of Attck type, Weapons, Success between 1970 and 2017</p>
               <AlluvialChart v-if="dataExists" :myAlluvialChartData="myAlluvialData" />
             </div>
 
@@ -92,6 +96,18 @@ body{
   left: 0;
   right: 0;
 }
+  label{
+    position: relative;
+    left: 5px;
+    top: 5px;
+    font-size: 0.8em;
+  }
+  p{
+    position:relative;
+    font-size: 0.3em;
+    left: 10px;
+    top: 10px;
+  }
   .dashboard{
     position:fixed;
     top: 0;
@@ -127,7 +143,7 @@ body{
           position: relative;
           float: top;
           width: 100%;
-          height: 50%;
+          height: 40%;
           border-bottom-style: solid;
         }
           #selectButton {
@@ -140,5 +156,10 @@ body{
           float: top;
           width: 100%;
           height: 50%;
+        }
+        #selectButton_chart3 {
+          position: relative;
+          top: 10px;
+          left: 10px;
         }
 </style>

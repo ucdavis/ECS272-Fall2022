@@ -21,7 +21,7 @@ import { forEach } from "shelljs/commands";
         },
         mounted(){
             let localData = testData;
-            this.data_pick(localData, "#bar", this.drawBarChart) /* Example of reading data from a json file */
+            this.pick_data(localData, "#bar", this.drawBarChart) /* Example of reading data from a json file */
             // this.drawBarChart(this.myBarchartData, "#bar")
             console.log("Data Passed down as a Prop  ", this.myBarchartData)
         },
@@ -31,14 +31,11 @@ import { forEach } from "shelljs/commands";
                 const margin = { top: 40, right: 100, bottom: 120, left: 40 };
                 const height = 450;
                 const width = 500;              
-                console.log(2333333334, dset)
 
                 const data = dset['data']
 
                 var groups = d3.map(data, d => d.year)
                 var subgroups = dset.regions
-                console.log(233333, dset.regions)
-                
 
                 const x = d3.scaleBand()
                     .domain(groups)
@@ -160,7 +157,7 @@ import { forEach } from "shelljs/commands";
 
             },
 
-            data_pick(dset, id, cb) {
+            pick_data(dset, id, cb) {
                 var option = 'xyear'
                 var op_name = {'xyear': 'decades', 'xregion': 'region'}
                 var filtered_data = dset[option]
