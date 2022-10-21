@@ -1,8 +1,12 @@
 <template>
-    <select @change="changeData">
-       <option v-for="item in myBarchartData">{{item.y}}</option>
+    <div>Start From: {{ start }}</div>
+    <select v-model="start">
+        <option v-for="item in myBarchartData" :value="item.y">
+            {{ item.y }}
+        </option>
     </select>
-    <div class="card" :id="myChartID"></div>
+    <div class="card" :id="myChartID">
+    </div>
 </template>
 
 <script>
@@ -13,8 +17,8 @@
         name: 'BarChart',
         data() {
             return {
-                name: 'Hello',
-                someLocalValues: [1, 2, 3, 4, 5],
+                //name: 'Hello',
+                //someLocalValues: [1, 2, 3, 4, 5],
                 start: 1945,
                 end: 2022
             }
@@ -31,25 +35,38 @@
             //let localData = testData['data'];
             this.drawBarChart(localData, this.myChartID) /* Example of reading data from a json file */
             //this.drawBarChart(this.myBarchartData, "#bar")
-            console.log("Data Passed down as a Prop  ", this.myBarchartData)
+            console.log("Data Passed down as a Prop  ", localData)
         },
         watch: {
             start(val, oldval){
+                //this.start = this.lower;
                 console.log("start year changed into"+this.start)
-                let localData = this.myBarchartData;
-                this.drawBarChart(localData, this.myChartID)
-                console.log("Data Passed down as a Prop  ", this.myBarchartData)
+                let localData = [];
+                Object.keys(this.myBarchartData).forEach(item=>{
+                    let thiskey = parseInt(this.myBarchartData[item].y);
+                    if ((thiskey>this.start) & (thiskey<this.end)){
+                        localData.push(this.myBarchartData[item]);
+                    }
+                    //console.log(item, thiskey, this.start, this.end)
+                    //console.log(this.myBarchartData[item])
+                });
+                //let localData = testData['data'];
+                this.drawBarChart(localData, this.myChartID) /* Example of reading data from a json file */
+                //this.drawBarChart(this.myBarchartData, "#bar")
+                console.log("Data Passed down as a Prop  ", localData)
             }
         },
         methods: {
             changeData(){
-                return 
+                this.start = this.lower
+                console.log("Data Changed!")
+                console.log(this.start)
             },
             drawBarChart(data, id) {
                 id = '#'+id
-                const margin = { top: 40, right: 40, bottom: 120, left: 100 };
-                const height = 300;
-                const width = 800;
+                const margin = { top: 40, right: 40, bottom: 60, left: 60 };
+                const height = 250;
+                const width = 1000;
 
                 const x = d3.scaleBand().domain(data.map(d => d.y))
                     .rangeRound([margin.left, width - margin.right])
@@ -57,7 +74,9 @@
 
                 const y = d3.scaleLinear().domain([0, d3.max(data, d => d.x)]).nice()
                     .rangeRound([height - margin.bottom, margin.top]);
+                
 
+                d3.select(id).select("svg").remove();
                 let svg = d3.select(id).append("svg")
                     .attr("viewBox", [0, 0, width, height])
                     .attr("width", width + margin.left + margin.right)

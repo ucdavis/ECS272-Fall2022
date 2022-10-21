@@ -11,10 +11,10 @@
             <h2>Chart UpperRight</h2>
             
         </div>
-        <div class="card">
-            <h2>Chart LowerRight</h2>
-            <BarChart v-if="dataExists" :myBarchartData=myBarData myChartID="barbottom"/>
-        </div>
+    </div>
+    <div class="bottombar">
+        <BarChart v-if="dataExists" :myBarchartData=myBarData myChartID="barbottom"/>
+        <center><h3>Barchart of number of products each year </h3></center>
     </div>
 </template>
 
@@ -261,17 +261,21 @@ export default {
 
     .column.side {
     width: 40%;
-    height: 45%;
+    height: 50%;
     }
 
     .column.middle {
     width: 60%;
-    height: 100%;
+    height: 50%;
+    }
+    .bottombar{
+        width: 100%;
+        height: 30%;
     }
     .card {
     background-color: white;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 10px;
+    margin-top: 10px;
     }
 
     .row:after {
