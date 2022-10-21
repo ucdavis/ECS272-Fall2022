@@ -35,7 +35,7 @@
             //let localData = testData['data'];
             this.drawBarChart(localData, this.myChartID) /* Example of reading data from a json file */
             //this.drawBarChart(this.myBarchartData, "#bar")
-            console.log("Data Passed down as a Prop  ", localData)
+            //console.log("Data Passed down as a Prop  ", localData)
         },
         watch: {
             start(val, oldval){
@@ -66,7 +66,7 @@
                 id = '#'+id
                 const margin = { top: 40, right: 40, bottom: 60, left: 60 };
                 const height = 250;
-                const width = 1000;
+                const width = 500;
 
                 const x = d3.scaleBand().domain(data.map(d => d.y))
                     .rangeRound([margin.left, width - margin.right])

@@ -4,24 +4,27 @@
             <h2>Chart UpperLeft</h2>
 
         </div>
+        <div class="card">
+            <BarChart v-if="dataExists" :myBarchartData=myBarData myChartID="barbottom"/>
+            <center><h3>Barchart of number of products each year </h3></center>
+        </div>
         
     </div>
     <div class="column middle">
         <div class="card">
-            <h2>Chart UpperRight</h2>
-            
+            <h2>Sunburst Chart showing all titles</h2>
+            <Sunburst v-if="dataExists" myChartID="upperright" :mysundata=titleGroups></Sunburst>
         </div>
     </div>
     <div class="bottombar">
-        <BarChart v-if="dataExists" :myBarchartData=myBarData myChartID="barbottom"/>
-        <center><h3>Barchart of number of products each year </h3></center>
+        
     </div>
 </template>
 
 <script setup>
 import BarChart from "../components/barchart.vue";
 import Piechart from '../components/piechart.vue';
-import SunBurst from "../components/sunburst.vue";
+import Sunburst from "../components/sunburst.vue";
 </script>
 
 <script>
@@ -31,9 +34,6 @@ import * as d3 from "d3";
 import person_csvPath from '../../assets/data/credits.csv';
 import title_csvPath from '../../assets/data/titles.csv';
 
-import { integer } from "vue-types";
-
-
 export default {
     data(){
         return {
@@ -42,14 +42,15 @@ export default {
             //data_person = d3.csvParse(FileAttachment().text(), d3.autoType)
             //data_title = d3.csvParse(FileAttachment().text(), d3.autoType)
             //actorGroups : Array,
-            titleGroups : Array,
+            titleGroups : [],
             //fdata_person : Array,
             //fdata_title : Array
         }
     },
     components: {
     BarChart,
-    Piechart
+    Piechart,
+    Sunburst
 },
     created(){
         /* Fetch via CSV */
@@ -82,6 +83,7 @@ export default {
                     //this.myBarData = data; // updates the prop value to be the recieved data, which we hand in to our bar-chart
                     //this.data_title = data_title;
                     this.processAllData(data_person,data_title);
+
                 });
             });
             
@@ -116,9 +118,9 @@ export default {
                 })
             });
             this.myBarData = titlebarArray;
-            console.log("Bardata Complete");
-            //console.log(this.titleGroups);
-            console.log(this.myBarData);
+            //console.log("Bardata Complete");
+            console.log(this.titleGroups);
+            //console.log(this.myBarData);
             this.dataExists = true;
         },
         drawBarChart(){
@@ -267,12 +269,12 @@ export default {
     }
 
     .column.side {
-    width: 40%;
+    width: 50%;
     height: 50%;
     }
 
     .column.middle {
-    width: 60%;
+    width: 50%;
     height: 50%;
     }
     .bottombar{

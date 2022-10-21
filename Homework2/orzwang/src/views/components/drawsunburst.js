@@ -1,4 +1,4 @@
-export function sunburst(data, id) {
+export function drawsunburst(data, id) {
     const arc = d3.arc()
     .startAngle(d => d.x0)
     .endAngle(d => d.x1)
@@ -15,11 +15,13 @@ export function sunburst(data, id) {
     const root = partition(data);
   
     root.each(d => d.current = d);
-  
+
+    d3.select('#'+id).select("svg").remove();
+    
     const svg = d3.select('#'+id).create("svg")
         .attr("viewBox", [0, 0, width, width])
         .style("font", "10px sans-serif");
-  
+
     const g = svg.append("g")
         .attr("transform", `translate(${width / 2},${width / 2})`);
   
