@@ -1,5 +1,5 @@
 <template>
-    <div class="card" :id="myChartID"></div>
+    <div class="card" :id="myChartID" :data="myBarChartData"></div>
 </template>
 
 <script>
@@ -20,10 +20,11 @@
             myChartID: String,
         },
         mounted(){
-            console.log(testData);
-            let localData = testData['data'];
+            console.log(this.myBarchartData);
+            let localData = this.myBarchartData['data'];
+            //let localData = testData['data'];
             this.drawBarChart(localData, this.myChartID) /* Example of reading data from a json file */
-            // this.drawBarChart(this.myBarchartData, "#bar")
+            //this.drawBarChart(this.myBarchartData, "#bar")
             console.log("Data Passed down as a Prop  ", this.myBarchartData)
         },
         methods: {
@@ -90,7 +91,7 @@
 
 
 <style>
-/*div.static
+/*div.
 {
     width:220px;
     padding:10px;
