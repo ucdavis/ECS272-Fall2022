@@ -2,18 +2,19 @@
     <div class="column side">
         <div class="card">
             <h2>Chart UpperLeft</h2>
-            <BarChart v-if="dataExists" :myBarchartData="myBarData" myChartID="bar1"/>
+
         </div>
-        <div class="card">
-            <h2>Chart LowerLeft</h2>
-            <BarChart v-if="dataExists" :myBarchartData="myBarData" myChartID="bar2"/>
-        </div>
+        
     </div>
     <div class="column middle">
-    <div class="card">
-        <h2>Chart Right</h2>
-        <BarChart myChartID="bar3"/>
-    </div>
+        <div class="card">
+            <h2>Chart UpperRight</h2>
+            
+        </div>
+        <div class="card">
+            <h2>Chart LowerRight</h2>
+            <BarChart v-if="dataExists" :myBarchartData=myBarData myChartID="barbottom"/>
+        </div>
     </div>
 </template>
 
@@ -33,10 +34,10 @@ export default {
             myBarData: [],
             //data_person = d3.csvParse(FileAttachment().text(), d3.autoType)
             //data_title = d3.csvParse(FileAttachment().text(), d3.autoType)
-            actorGroups : Array,
-            titleGroups : Array,
-            fdata_person : Array,
-            fdata_title : Array
+            //actorGroups : Array,
+            //titleGroups : Array,
+            //fdata_person : Array,
+            //fdata_title : Array
         }
     },
     components: {
@@ -73,50 +74,58 @@ export default {
                     //this.dataExists = true; // updates the v-if to conditionally show the barchart only if our data is here.
                     //this.myBarData = data; // updates the prop value to be the recieved data, which we hand in to our bar-chart
                     //this.data_title = data_title;
-                    this.fdata_person = this.processpersonData(data_person,data_title);
-                    this.fdata_title = this.processtitleData(data_person,data_title);
-                    console.log(this.fdata_person.length);
-                    //console.log(this.fdata_person);
-                    console.log(this.fdata_title.length);
-                    //console.log(this.fdata_title);
-                    this.dataExists = true;
-                    this.actorGroups = this.groupBy(this.fdata_person, 'role')
-                    this.titleGroups = this.groupBy(this.fdata_title, 'year')
-                    //console.log(this.actorGroups.length)
-                    //console.log(Object.keys(this.actorGroups))
-                    //console.log(this.titleGroups.length)
-                    //console.log(Object.keys(this.titleGroups))
-                    const titlebarArray = [];
-                    const actorbarArray = [];
-                    Object.keys(this.titleGroups).forEach(d => {
-                        let year = {
-                            x: d,
-                            y: this.titleGroups[d].length
-                        }
-                        titlebarArray.push(year);
-                        this.titleGroups[d] = this.groupBy(this.titleGroups[d],'type');
-                        //console.log(Object.keys(this.titleGroups[d]))
-                        Object.keys(this.titleGroups[d]).forEach(itemkey =>{
-                            this.titleGroups[d][itemkey] = this.groupBy(this.titleGroups[d][itemkey], 'first_country')
-                            //console.log(Object.keys(this.titleGroups[d][itemkey]))
-                        })
-                    });
-                    console.log(this.titleGroups);
-                    console.log(titlebarArray)
+                    this.processAllData(data_person,data_title);
                 });
             });
             
         },
+        processAllData(data_person,data_title){
+            this.fdata_person = this.processpersonData(data_person,data_title);
+            this.fdata_title = this.processtitleData(data_person,data_title);
+            console.log(this.fdata_person.length);
+            //console.log(this.fdata_person);
+            console.log(this.fdata_title.length);
+            //console.log(this.fdata_title);
+            this.dataExists = true;
+            this.actorGroups = this.groupBy(this.fdata_person, 'role')
+            this.titleGroups = this.groupBy(this.fdata_title, 'year')
+            //console.log(this.actorGroups.length)
+            //console.log(Object.keys(this.actorGroups))
+            //console.log(this.titleGroups.length)
+            //console.log(Object.keys(this.titleGroups))
+            const titlebarArray = [];
+            const actorbarArray = [];
+            Object.keys(this.titleGroups).forEach(d => {
+                let year = {
+                    y: d,
+                    x: this.titleGroups[d].length
+                }
+                titlebarArray.push(year);
+                this.titleGroups[d] = this.groupBy(this.titleGroups[d],'type');
+                //console.log(Object.keys(this.titleGroups[d]))
+                Object.keys(this.titleGroups[d]).forEach(itemkey =>{
+                    this.titleGroups[d][itemkey] = this.groupBy(this.titleGroups[d][itemkey], 'first_country')
+                    //console.log(Object.keys(this.titleGroups[d][itemkey]))
+                })
+            });
+            this.myBarData = titlebarArray;
+            console.log("Bardata Complete");
+            //console.log(this.titleGroups);
+            console.log(this.myBarData);
+            this.dataExists = true;
+        },
         drawBarChart(){
             
-            Object.keys(this.titleGroups).forEach(d => {
+            //Object.keys(this.titleGroups).forEach(d => {
                 
-            });
+            //});
             //this.myBarData = barArray;
-            console.log("Bardata Complete");
+            
             //console.log(barArray.length);
             //console.log(barArray);
             //console.log(this.myBarData);
+            //let Filesaver = require('file-saver');
+            //Filesaver.saveAs(this.myBarData,"../assets/data/myBarData.json")
         },
         levelGroup(){
             console.log("levelGroup running!")
@@ -219,10 +228,10 @@ export default {
             const formattedData = []
             Object.keys(titleGroups).forEach(d => {
                 data_person.forEach(e =>{
-                if (e.id == titleGroups[d].id){
-                    titleGroups[d].num_person+=1;
-                    titleGroups[d].involve.push(personGroups[e.person_id]);
-                }
+                    if (e.id == titleGroups[d].id){
+                        titleGroups[d].num_person+=1;
+                        titleGroups[d].involve.push(personGroups[e.person_id]);
+                    }
                 })
                 formattedData.push(titleGroups[d]);
             });

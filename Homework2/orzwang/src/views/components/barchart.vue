@@ -1,5 +1,8 @@
 <template>
-    <div class="card" :id="myChartID" :data="myBarChartData"></div>
+    <select @change="changeData">
+       <option v-for="item in myBarchartData">{{item.y}}</option>
+    </select>
+    <div class="card" :id="myChartID"></div>
 </template>
 
 <script>
@@ -12,7 +15,8 @@
             return {
                 name: 'Hello',
                 someLocalValues: [1, 2, 3, 4, 5],
-
+                start: 1945,
+                end: 2022
             }
         },
         props:{
@@ -20,19 +24,32 @@
             myChartID: String,
         },
         mounted(){
-            console.log(this.myBarchartData);
-            let localData = this.myBarchartData['data'];
+            console.log("Drawing Barchart");
+            console.log(this.myChartID)
+            //console.log(this.myBarchartData);
+            let localData = this.myBarchartData;
             //let localData = testData['data'];
             this.drawBarChart(localData, this.myChartID) /* Example of reading data from a json file */
             //this.drawBarChart(this.myBarchartData, "#bar")
             console.log("Data Passed down as a Prop  ", this.myBarchartData)
         },
+        watch: {
+            start(val, oldval){
+                console.log("start year changed into"+this.start)
+                let localData = this.myBarchartData;
+                this.drawBarChart(localData, this.myChartID)
+                console.log("Data Passed down as a Prop  ", this.myBarchartData)
+            }
+        },
         methods: {
+            changeData(){
+                return 
+            },
             drawBarChart(data, id) {
-                id = '#'+id;
+                id = '#'+id
                 const margin = { top: 40, right: 40, bottom: 120, left: 100 };
                 const height = 300;
-                const width = 400;
+                const width = 800;
 
                 const x = d3.scaleBand().domain(data.map(d => d.y))
                     .rangeRound([margin.left, width - margin.right])
