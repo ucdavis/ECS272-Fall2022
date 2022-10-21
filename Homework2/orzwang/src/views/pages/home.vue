@@ -18,14 +18,21 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import BarChart from "../components/barchart.vue";
+import Piechart from '../components/piechart.vue';
+import SunBurst from "../components/sunburst.vue";
+</script>
+
+<script>
+
 import * as d3 from "d3";
 //import csvPath from '../../assets/data/SF_Historical_Ballot_Measures.csv';
 import person_csvPath from '../../assets/data/credits.csv';
 import title_csvPath from '../../assets/data/titles.csv';
-import Piechart from '../components/piechart.vue';
+
 import { integer } from "vue-types";
+
 
 export default {
     data(){
@@ -35,7 +42,7 @@ export default {
             //data_person = d3.csvParse(FileAttachment().text(), d3.autoType)
             //data_title = d3.csvParse(FileAttachment().text(), d3.autoType)
             //actorGroups : Array,
-            //titleGroups : Array,
+            titleGroups : Array,
             //fdata_person : Array,
             //fdata_title : Array
         }

@@ -11,12 +11,13 @@
 <script>
 import * as d3 from "d3";
 import { setEnvironmentData } from "worker_threads";
-import {sunburst} from "./sunburst"
+import {sunburst} from "./sunburst.js"
 export default{
     name : 'SunBurst',
     data(){
         return{
             sundata : Array,
+            year : 2000
         }
     },
     props:{
