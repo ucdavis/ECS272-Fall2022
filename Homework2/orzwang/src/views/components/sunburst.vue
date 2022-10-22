@@ -136,7 +136,7 @@ export default{
                 .attr("dy", "0.35em")
                 .attr("fill-opacity", d => +labelVisible(d.current))
                 .attr("transform", d => labelTransform(d.current))
-                .text(d => d.data.name);
+                .text(d => d.data.name + ':'+d.value);
         
             const parent = g.append("circle")
                 .datum(root)
