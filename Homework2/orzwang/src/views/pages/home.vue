@@ -1,22 +1,24 @@
 <template>
+    <h2>Netflix Movie and Shows Dataset</h2>
     <div class="column side">
         <div class="card">
-            <h2>Chart UpperLeft</h2>
-
+            <h3>Staff of the Movie</h3>
+            <NodeTree v-if="dataExists" :myNodeData=title_nameindex myChartID="upperleft"></NodeTree>
         </div>
-        <div class="card">
-            <BarChart v-if="dataExists" :myBarchartData=myBarData myChartID="barbottom"/>
-            <center><h3>Barchart of number of products each year </h3></center>
-        </div>
-        
+      
     </div>
     <div class="column middle">
         <div class="card">
-            <h2>Sunburst Chart showing all titles</h2>
+            <h3>Sunburst Chart showing all titles</h3>
             <Sunburst v-if="dataExists" myChartID="upperright" :mysundata=titleGroups></Sunburst>
         </div>
     </div>
     <div class="bottombar">
+        <div class="card">
+            <h3 align="left">Barchart of number of products each year </h3>
+            <BarChart v-if="dataExists" :myBarchartData=myBarData myChartID="barbottom"/>
+            
+        </div>
         
     </div>
 </template>
@@ -25,6 +27,7 @@
 import BarChart from "../components/barchart.vue";
 import Piechart from '../components/piechart.vue';
 import Sunburst from "../components/sunburst.vue";
+import NodeTree from "../components/nodetree.vue";
 </script>
 
 <script>
@@ -44,13 +47,15 @@ export default {
             //actorGroups : Array,
             titleGroups : [],
             //fdata_person : Array,
-            //fdata_title : Array
+            fdata_title : Array,
+            title_nameindex : Object
         }
     },
     components: {
     BarChart,
     Piechart,
-    Sunburst
+    Sunburst,
+    NodeTree
 },
     created(){
         /* Fetch via CSV */
@@ -83,7 +88,8 @@ export default {
                     //this.myBarData = data; // updates the prop value to be the recieved data, which we hand in to our bar-chart
                     //this.data_title = data_title;
                     this.processAllData(data_person,data_title);
-
+                    this.title_nameindex = this.groupBy(this.fdata_title,"name")
+                    this.dataExists = true;
                 });
             });
             
@@ -119,9 +125,8 @@ export default {
             });
             this.myBarData = titlebarArray;
             //console.log("Bardata Complete");
-            console.log(this.titleGroups);
+            //console.log(this.titleGroups);
             //console.log(this.myBarData);
-            this.dataExists = true;
         },
         drawBarChart(){
             

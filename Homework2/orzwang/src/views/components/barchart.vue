@@ -1,5 +1,5 @@
 <template>
-    <div>Start From: {{ start }}</div>
+    <div>Start From Year: {{ start }}</div>
     <select v-model="start">
         <option v-for="item in myBarchartData" :value="item.y">
             {{ item.y }}
@@ -28,14 +28,17 @@
             myChartID: String,
         },
         mounted(){
-            console.log("Drawing Barchart");
-            console.log(this.myChartID)
-            //console.log(this.myBarchartData);
-            let localData = this.myBarchartData;
+            let localData = [];
+            Object.keys(this.myBarchartData).forEach(item=>{
+                let thiskey = parseInt(this.myBarchartData[item].y);
+                if ((thiskey>this.start) & (thiskey<this.end)){
+                    localData.push(this.myBarchartData[item]);
+                }
+                //console.log(item, thiskey, this.start, this.end)
+                //console.log(this.myBarchartData[item])
+            });
             //let localData = testData['data'];
-            this.drawBarChart(localData, this.myChartID) /* Example of reading data from a json file */
-            //this.drawBarChart(this.myBarchartData, "#bar")
-            //console.log("Data Passed down as a Prop  ", localData)
+            this.drawBarChart(localData, this.myChartID) 
         },
         watch: {
             start(val, oldval){
@@ -53,7 +56,7 @@
                 //let localData = testData['data'];
                 this.drawBarChart(localData, this.myChartID) /* Example of reading data from a json file */
                 //this.drawBarChart(this.myBarchartData, "#bar")
-                console.log("Data Passed down as a Prop  ", localData)
+                console.log()
             }
         },
         methods: {
@@ -64,7 +67,7 @@
             },
             drawBarChart(data, id) {
                 id = '#'+id
-                const margin = { top: 40, right: 40, bottom: 60, left: 60 };
+                const margin = { top: 20, right: 40, bottom: 60, left: 60 };
                 const height = 250;
                 const width = 500;
 

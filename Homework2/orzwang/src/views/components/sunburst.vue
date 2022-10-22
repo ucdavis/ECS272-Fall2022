@@ -16,7 +16,7 @@ export default{
     name : 'SunBurst',
     data(){
         return{
-            year : 2000
+            year : 2020
         }
     },
     props:{
@@ -24,20 +24,20 @@ export default{
         myChartID : String
     },
     created(){
-        console.log("data passed:")
-        console.log(this.mysundata)
+        //console.log("data passed:")
+        //console.log(this.mysundata)
     },
     mounted(){
         console.log("Chart ID:", this.myChartID)
         let sundata = this.dataProcess(this.mysundata[this.year])
-        console.log("Data Passed down as a Prop  ", sundata)
+        //console.log("Data Passed down as a Prop  ", sundata)
         this.drawChart(sundata, this.myChartID)
     },
     watch:{
         year(oldval, newval){
             console.log("Year for sunburn changed into", this.year)
             let sundata = this.dataProcess(this.mysundata[this.year])
-            console.log("Data Passed down as a Prop  ", sundata)
+            //console.log("Data Passed down as a Prop  ", sundata)
             this.drawChart(sundata, this.myChartID)
         }
     },
@@ -69,8 +69,8 @@ export default{
                 })
                 formattedData.children.push(thistype);
             })
-            console.log("Data Processed")
-            console.log(formattedData)
+            //console.log("Data Processed")
+            //console.log(formattedData)
             return formattedData;
         },
         drawsunburst(data, id) {
@@ -97,7 +97,7 @@ export default{
                                             (root);
                                         }
             const root = partition(data);
-            console.log("Root is", root);
+            //console.log("Root is", root);
             root.each(d => d.current = d);
 
             d3.select(id).select("svg").remove();
