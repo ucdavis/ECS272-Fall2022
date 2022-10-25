@@ -447,7 +447,7 @@
 
                 plots.selectAll("#path1")
                     .data(currentData)
-                    .join()
+                    .join('path')
                     .transition()
                     .duration(1000)
                     .attr("d", d => radarLine(d.map(v => v.value)))
@@ -640,7 +640,7 @@
 
                 plots.selectAll("#path2")
                     .data(currentData)
-                    .join()
+                    .join('path')
                     .transition()
                     .duration(1000)
                     .attr("d", d => radarLine(d.map(v => v.value)))

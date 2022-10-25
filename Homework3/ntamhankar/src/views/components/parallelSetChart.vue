@@ -280,7 +280,7 @@
                 
                 let temp = this.svg.selectAll("#lines")
                     .data(filtered_songs)
-                    .join()
+                    .join("path")
                     .transition()
                     .duration(1000)
                     .attr("d", path)
