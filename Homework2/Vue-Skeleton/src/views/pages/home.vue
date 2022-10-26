@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Welcome Home</h1>
+        <h1>Welcome to my world!</h1>
         <BarChart v-if="dataExists" :myBarchartData="myBarData" />
     </div>
 </template>

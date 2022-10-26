@@ -5,10 +5,9 @@
 <script>
     import * as d3 from "d3";
     import {legendColor} from "d3-svg-legend";
-    import mapData from "../../assets/data/map_data.csv";
 
     export default {
-        name: 'Map',
+        name: 'MapChart',
         data() {
             return {
                 name: 'Hello',
@@ -28,8 +27,8 @@
             drawMap(data, id) {
 
                 const margin = { top: 0, right: 0, bottom: 0, left: 0 };
-                const height = 550;
-                const width = 600;
+                const height = 500;
+                const width = 550;
 
                 var svg = d3.select(id).append("svg")
                     .attr("viewBox", [0, 0, width, height])

@@ -1,21 +1,21 @@
 <template>
     <div>
         <a-row type="flex">
-            <a-col :flex="2">
-                <a-card title="Overview: Total CO2 Emission Percentage Of The Whole World By Countries" style="width: 95%">
-                    <Map />
+            <a-col :flex="1">
+                <a-card title="Overview: CO2 Emission By Years" style="width: 95%">
+                    <MapChart v-if="dataExistsMap" :myMapChartData="myMapData"/>
                 </a-card>
             </a-col>
-            <a-col :flex="3" type="flex">
+            <a-col :flex="1" type="flex">
                 <a-row :flex="1">
                     <a-card title="CO2 Emission Changes In Years By Countries" style="width:95%">
-                        <BarChart />
+                        <LineChart v-if="dataExistsLine" :myLineChartData="myLineData"/>
                     </a-card>
                 </a-row>
                 <br />
                 <a-row :flex="1">
                     <a-card title="CO2 Emission Changes Comparison Between Regions" style="width:95%">
-                        <RadarChart />
+                        <RadarChart v-if="dataExistsRadar" :myRadarChartData="myRadarData"/>
                     </a-card>
                 </a-row>    
             </a-col>
@@ -25,41 +25,73 @@
 </template>
 
 <script>
-import Map from "../components/map.vue"
-import LineChart from "../components/barchart.vue"
-import RadarChart from "../components/radarchart.vue"
+import MapChart from "../components/mapchart.vue";
+import LineChart from "../components/linechart.vue";
+import RadarChart from "../components/radarchart.vue";
+import * as d3 from "d3";
+import MapcsvPath from "../../assets/data/map_data.csv";
+import LinecsvPath from "../../assets/data/line_data.csv";
+import RadarcsvPath from "../../assets/data/radar_data.csv";
 
 export default {
     data(){
         return {
-            dataExists: false,
-            myBarData: [],
+            dataExistsMap: false,
+            dataExistsLine: false,
+            dataExistsRadar: false,
+            myMapData: [],
+            myLineData: [],
+            myRadarData: [],
         }
     },
     components: {
-        Map,
+        MapChart,
         LineChart,
         RadarChart
     },
     
-    // created(){
-    //     /* Fetch via CSV */
-    //     this.drawMapFromCsv()
-    // },
-    // mounted(){},
-    // methods: {
-    //     drawMapFromCsv(){
-    //         //async method
-    //         d3.csv(csvPath).then((data) => {
-    //             // array of objects
-    //             console.log(data.length);
-    //             console.log(data);
-    //             this.dataExists = true; // updates the v-if to conditionally show the barchart only if our data is here.
-    //             this.myBarData = data; // updates the prop value to be the recieved data, which we hand in to our bar-chart
+    created(){
+        /* Fetch via Path */
+        this.drawMapFromCsv();
+        this.drawLineFromCsv();
+        this.drawRadarFromCsv();
+    },
+    mounted(){},
+    methods: {
+        drawMapFromCsv(){
+            //async method
+            d3.csv(MapcsvPath).then((data) => {
+                // array of objects
+                console.log(data.length);
+                console.log(data);
+                this.dataExistsMap = true;
+                this.myMapData = data;
 
-    //         });
-    //     }
-    // }
+            });
+        },
+        drawLineFromCsv(){
+            //async method
+            d3.csv(LinecsvPath).then((data) => {
+                // array of objects
+                console.log(data.length);
+                console.log(data);
+                this.dataExistsLine = true;
+                this.myLineData = data;
+
+            });
+        },
+        drawRadarFromCsv(){
+            //async method
+            d3.csv(RadarcsvPath).then((data) => {
+                // array of objects
+                console.log(data.length);
+                console.log(data);
+                this.dataExistsRadar = true;
+                this.myRadarData = data;
+
+            });
+        }
+    }
 }
 
 </script>

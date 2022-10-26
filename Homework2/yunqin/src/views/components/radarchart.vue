@@ -114,6 +114,7 @@ export default {
 
             function getPathCoordinates(data_point){
                 let attrs = ["first", "second", "third"];
+                let coordinates = [];
                 for (var i = 0; i < features.length; i++){
                     let idx = attrs[i];
                     let angle = (Math.PI / 2) + (2 * Math.PI * i / features.length);
