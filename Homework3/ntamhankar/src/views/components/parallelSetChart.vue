@@ -14,6 +14,7 @@
 
     export default {
         name: 'ParallelSetChart',
+        emits: ['updateBrushedData'],
         data() {
             return {
                 name: 'Hello',
@@ -34,12 +35,19 @@
                 // map of each singer and their songs
                 map: null,
 
+                // use this to get the songs currently viewing and filter data
+                currentSelectedSinger: "Top 10 Artists of 2020",
+
+                // things needed for brushing
                 axes: null,
                 lines: null,
 
                 brushes: null,
                 brush: null,
                 dblclicked: null,
+
+                // this is the brushed data we compute so that we can trigger an event with it
+                brushedData: null,
 
             }
         },
@@ -123,6 +131,7 @@
                 // first put top 10 artists into a set
                 let set = new Set()
 
+                // we want the songs just of these artists
                 for(let i = 0; i < artists.length; i++){
                     set.add(artists[i].artist);
                 }
@@ -135,11 +144,11 @@
                     if(artists.length > 1){continue;}
 
                     for(let j = 0; j < artists.length; j++){
-                    if(set.has(artists[j])){
-                        arr.push(data[i]);
-                        break;
+                        if(set.has(artists[j])){
+                            arr.push(data[i]);
+                            break;
 
-                    }
+                        }
 
                     }
 
@@ -293,10 +302,10 @@
                                 if(value == null){
                                     // do nothing
                                 }else{
-                                    var y0 = value[0];
-                                    var y1 = value[1];
+                                    let y0 = value[0];
+                                    let y1 = value[1];
                                     //check if car value is inside an active brush
-                                    var value_y = y[key](d[key]);
+                                    let value_y = y[key](d[key]);
                                     if (value_y <= y1 && value_y >= y0 && is_valid) {
                                         d3.select(this).attr("opacity", 0.5);
                                     }
@@ -312,14 +321,49 @@
                     }
                 }
 
+                // how we actually get the brushed data
+                const setBrushedData = () => {
+                    let data = this.map.get(this.currentSelectedSinger);
+                    console.log(this.currentSelectedSinger);
+                    console.log(this.map);
+
+                    activeBrushes.forEach((value, key) =>{
+                        if(value != null){
+                            let y0 = value[0];
+                            let y1 = value[1];
+
+                            data = data.filter(d => {
+                                // console.log(y0);
+                                // console.log(y1);
+                                // console.log(y[key](d[key]));
+
+                                return y[key](d[key]) <= y1 && y[key](d[key]) >= y0;
+                            })
+                            // console.log(y0);
+                            // console.log(y1);
+                            // console.log(y[key](data[0][key]));
+                        }
+
+
+                    });
+
+                    this.brushedData = data;
+
+                    // emit event to send brushedData
+                    this.$emit('updateBrushedData', this.brushedData);
+
+                    console.log("FILTERED THE BRUSHED DATA");
+                    console.log(this.brushedData);
+                }
+
                 const brushed = (event, attribute) => {
-                    console.log("brushed");
-                    console.log(attribute);
-                    console.log(event);
+                    //console.log("brushed");
+                    //console.log(attribute);
+                    //console.log(event);
                     activeBrushes.set(attribute, event.selection);
 
-                    console.log("finished selection")
-                    console.log(event.selection);
+                    //console.log("finished selection")
+                    //console.log(event.selection);
                     updateBrushing(this.lines);
                 }
 
@@ -331,9 +375,11 @@
                         // this is where we can update data
                         console.log("END")
                         console.log(event);
+                        setBrushedData();
                         return
                     }
                     activeBrushes.delete(attribute);
+                    setBrushedData();
                     updateBrushing(this.lines);
                 }
 
@@ -353,6 +399,7 @@
                     console.log(activeBrushes);
                     console.log("Finished deleting");
                     //updateBrushing(); //Deleting the key from activeBrushes, so no need to update
+                    setBrushedData();
                     console.log(this.brush);
                 }
 
@@ -372,6 +419,10 @@
                 d3.select(button).on("change", (event, d) =>
                 {
                     let selectedSinger = event.currentTarget.value
+
+                    // set current singer to be selectedSinger
+                    // this is needed so that we filter correct data for brushing
+                    this.currentSelectedSinger = selectedSinger;
 
                     this.updateChart(selectedSinger, color, path)
                 })
@@ -403,6 +454,9 @@
 
                 console.log(this.lines)
 
+
+                // start of with just the current artist
+                this.$emit('updateBrushedData', filtered_songs);
 
 
             },

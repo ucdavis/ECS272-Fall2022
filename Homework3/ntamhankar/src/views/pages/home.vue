@@ -1,14 +1,16 @@
 <template>
     <div id="dashboard">
         <div class="column1" id="left">
-            <ParallelSetChart v-if="dataExists" :myData="myCsvData" />
+            <ParallelSetChart v-if="dataExists" :myData="myCsvData"
+            @updateBrushedData="updateBrushedData"/>
         </div>
         <div class="column2" id="right">
             <div class="row" id="top">
-                <SpiderChart v-if="dataExists" :myData="myCsvData" />
+                <SpiderChart v-if="dataExists" :myData='myCsvData' :brushedData='myBrushedData'/>
+
             </div>
             <div class="row" id="bottom">
-                <ScatterChart v-if="dataExists" :myData="myCsvData" />
+                <ScatterChart v-if="dataExists" :myData="myCsvData" :brushedData='myBrushedData' />
             </div>
         </div>
     </div>
@@ -26,7 +28,9 @@ export default {
     data(){
         return {
             dataExists: false,
+
             myCsvData: [],
+            myBrushedData: []
         }
     },
     components: {
@@ -47,9 +51,22 @@ export default {
                 console.log(data.length);
                 console.log(data);
                 this.dataExists = true; // updates the v-if to conditionally show the barchart only if our data is here.
+
                 this.myCsvData = data; // updates the prop value to be the recieved data, which we hand in to our bar-chart
 
+                this.myBrushedData = data;
+
+                console.log("Initial myBrushedData")
+                console.log(this.myBrushedData);
+
             });
+        },
+
+        updateBrushedData(data){
+            console.log("Updating brushed data in home.vue")
+            this.myBrushedData = data;
+
+            console.log(this.myBrushedData);
         }
 
     }

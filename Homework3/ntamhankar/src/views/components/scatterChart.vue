@@ -26,12 +26,29 @@
                 //maroon, red, purple, fuschia, green, navy, blue, teal, darkorange, darkgoldenrod
                 colorsBySinger: ['#800000','#FF0000','#800080','#FF00FF','#008000','#000080','#0000FF', '#008080', '#ff8c00', '#b8860b'],
                 // grey
-                generalColor: ["#808080"]
+                generalColor: ["#808080"],
+
+                // making these part of data as they are accessed by other functions
+                svg: null, // the svg that we are trying to draw
+                color: null, // function used to assign color to the dots
+                x: null, // function used to determine the x-coordinate
+                y: null, // function used to determine the y-coordinate
+                opacityFlag: null,
 
             }
         },
         props:{
-            myData: Array,
+            myData: Array, // original data received from CSV
+            brushedData: Array, // the brushed data received when event is triggered by parallel Set
+        },
+        watch:{
+            brushedData: function(value){
+                console.log("Got the updated brushed Data in scatter watch");
+                console.log(value);
+
+                this.updateChart(value);
+
+            }
         },
         mounted(){
 
@@ -43,7 +60,7 @@
             }
             this.topSongs = this.getSongs(this.filteredData, this.topArtists);
 
-            this.drawScatter(".switch", "#my_datavizScatter");
+            this.init(".switch", "#my_datavizScatter");
 
             
             
@@ -140,7 +157,7 @@
                 
 
             },
-            drawScatter(button, viz){
+            init(button, viz){
                 let margin = {top : 10, right : 150, bottom : 60, left : 40};
 
                 let width = 500 - margin.left - margin.right;
@@ -155,23 +172,17 @@
                 }
 
 
-                let color = d3.scaleOrdinal().domain([this.generalName].concat(artistNames)).range(this.generalColor.concat(this.colorsBySinger));
+                this.color = d3.scaleOrdinal().domain([this.generalName].concat(artistNames)).range(this.generalColor.concat(this.colorsBySinger));
 
 
                 // Needed for svg
-                let svg = null;
                 let annotations = null;
-                let x = null;
-                let y = null;
                 let line = null;
 
                 // Needed for switch
-                let opacityFlag = 1;
+                this.opacityFlag = 1;
 
-
-                const createChart = () =>{
-
-                    svg = d3.select(viz)
+                this.svg = d3.select(viz)
                         .append("svg")
                             .attr("preserveAspectRatio", "xMidYMid meet")
                             .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom])
@@ -179,121 +190,135 @@
                         .append("g")
                             .attr("transform", `translate(${margin.left},${margin.top})`);
 
-                    // annotation layer to keep labels on top of data
-                    annotations = svg.append("g").attr("id", "annotation");
-                    
-                    // add X-axis
-                    x = d3.scaleLinear()
-                        .domain([0, 1.0])
-                        .range([margin.left, width]);
+                // annotation layer to keep labels on top of data
+                annotations = this.svg.append("g").attr("id", "annotation");
 
-                    svg.append("g")
-                        .attr("transform", `translate(0, ${height})`)
-                        .call(d3.axisBottom(x))
+                // add X-axis
+                this.x = d3.scaleLinear()
+                    .domain([0, 1.0])
+                    .range([margin.left, width]);
 
-                    // add Y-axis
-                    y = d3.scaleLinear()
-                        .domain([0, 1.0])
-                        .range([height, 0]);
-                    
-                    svg.append("g")
-                        .attr("transform", `translate(${margin.left}, 0)`)
-                        .call(d3.axisLeft(y));
+                this.svg.append("g")
+                    .attr("transform", `translate(0, ${height})`)
+                    .call(d3.axisBottom(this.x))
 
+                // add Y-axis
+                this.y = d3.scaleLinear()
+                    .domain([0, 1.0])
+                    .range([height, 0]);
 
-                    // add the lines using the x and y scale linear functions
-                    line = d3.line()
-                        .x(function(d) {return x(d.instrumentalness);})
-                        .y(function(d) {return y(d.liveness);})
+                this.svg.append("g")
+                    .attr("transform", `translate(${margin.left}, 0)`)
+                    .call(d3.axisLeft(this.y));
 
 
-                    // add dots
-                    svg.selectAll("dots")
-                        .data(this.topSongs)
-                        .join("circle")
-                        .attr("cx", d => x(d.instrumentalness))
-                        .attr("cy", d => y(d.liveness))
-                        .attr("id", "dots")
-                        .style("fill", (d) => {return color(this.getArtists(d.artists)[0]);})
-                        .attr("r", 4)
-                        .attr("stroke", "white")
-                        .on("mouseover.highlight", function(event, d){
-                            d3.select(this)
-                            .raise() // bring to front
-                            .style("stroke", "black")
-                            .style("stroke-width", 2);
+                // add the lines using the x and y scale linear functions
+                line = d3.line()
+                    .x((d) => {return this.x(d.instrumentalness);})
+                    .y((d) => {return this.y(d.liveness);})
 
-                            
-                        })
-                        .on("mouseout.highlight", function(event, d) {
-                            d3.select(this).style("stroke", null);
-                        });
 
-                        // Create legend and labels
+                // add dots
+                this.svg.selectAll("dots")
+                    .data(this.topSongs)
+                    .join("circle")
+                    .attr("cx", d => this.x(d.instrumentalness))
+                    .attr("cy", d => this.y(d.liveness))
+                    .attr("id", "dots")
+                    .style("fill", (d) => {return this.color(this.getArtists(d.artists)[0]);})
+                    .attr("r", 4)
+                    .attr("stroke", "white")
+                    .on("mouseover.highlight", function(event, d){
+                        d3.select(this)
+                        .raise() // bring to front
+                        .style("stroke", "black")
+                        .style("stroke-width", 2);
 
-                        // x - axis label
-                        annotations.insert("text")
-                            .attr("x", width / 2)
-                            .attr("y", height + margin.bottom / 2)
-                            .attr("text-anchor", "middle")
-                            .text("Instrumentalness")
-                            .attr("font-weight", "bold");
-
-                        // y - axis label
-                        annotations.insert("text")
-                            .attr("x", 0)
-                            .attr("y", height / 2)
-                            .attr("transform", "rotate(-90)")
-                            .attr("dx", -60)
-                            .attr("dy", -60)
-                            .attr("text-anchor", "middle")
-                            .text("Liveness")
-                            .attr("font-weight", "bold");
-
-                        // add legend
-
-                        // Add in the legend for each name.
-                        annotations.selectAll("labels")
-                            .data(artistNames)
-                            .enter()
-                            .append("text")
-                            .attr("x", 325)
-                            .attr("y", function(d,i){ return 5 + i*10})
-                            .style("fill", function(d, i){ return color(d)})
-                            .style("font", "10px times")
-                            .text(function(d){ return d})
-                            .attr("text-anchor", "left")
-                            .style("alignment-baseline", "middle")
-                    
-
-                    }
-
-                    
-                    const updateChart = () =>{
-                        if(opacityFlag == 0){
-                            svg.selectAll("#dots")
-                                .attr("opacity", 1.0)
-                            
-                            opacityFlag = 1;
-                        }else{
-                            svg.selectAll("#dots")
-                                .attr("opacity", 0.5)
-                            opacityFlag = 0;
-                        }
                         
-                    }
+                    })
+                    .on("mouseout.highlight", function(event, d) {
+                        d3.select(this).style("stroke", null);
+                    });
 
-                    // create chart
-                    createChart();
+                // Create legend and labels
+
+                // x - axis label
+                annotations.insert("text")
+                    .attr("x", width / 2)
+                    .attr("y", height + margin.bottom / 2)
+                    .attr("text-anchor", "middle")
+                    .text("Instrumentalness")
+                    .attr("font-weight", "bold");
+
+                // y - axis label
+                annotations.insert("text")
+                    .attr("x", 0)
+                    .attr("y", height / 2)
+                    .attr("transform", "rotate(-90)")
+                    .attr("dx", -60)
+                    .attr("dy", -60)
+                    .attr("text-anchor", "middle")
+                    .text("Liveness")
+                    .attr("font-weight", "bold");
+
+                // add legend
+
+                // Add in the legend for each name.
+                annotations.selectAll("labels")
+                    .data(artistNames)
+                    .enter()
+                    .append("text")
+                    .attr("x", 325)
+                    .attr("y", function(d,i){ return 5 + i*10})
+                    .style("fill", (d, i) => { return this.color(d)})
+                    .style("font", "10px times")
+                    .text(function(d){ return d})
+                    .attr("text-anchor", "left")
+                    .style("alignment-baseline", "middle")
 
                     // Listen to the slider?
-                    d3.select(button).on("change", function(d){
-                        updateChart()
+                    d3.select(button).on("change", (d) => {
+                        this.updateChart()
                     })
 
                 
                 
-                },
+            },
+            updateChart(data){
+                /*
+                if(this.opacityFlag == 0){
+                    this.svg.selectAll("#dots")
+                        .attr("opacity", 1.0)
+
+                    this.opacityFlag = 1;
+                }else{
+                    this.svg.selectAll("#dots")
+                        .attr("opacity", 0.5)
+                    this.opacityFlag = 0;
+                }*/
+                console.log("trying to update scatter chart")
+                this.svg.selectAll("#dots")
+                    .data(data)
+                    .join("circle")
+                    .attr("cx", d => this.x(d.instrumentalness))
+                    .attr("cy", d => this.y(d.liveness))
+                    .attr("id", "dots")
+                    .style("fill", (d) => {return this.color(this.getArtists(d.artists)[0]);})
+                    .attr("r", 4)
+                    .attr("stroke", "white")
+                    .on("mouseover.highlight", function(event, d){
+                        d3.select(this)
+                        .raise() // bring to front
+                        .style("stroke", "black")
+                        .style("stroke-width", 2);
+
+
+                    })
+                    .on("mouseout.highlight", function(event, d) {
+                        d3.select(this).style("stroke", null);
+                    });
+
+            }
         }
 
     }
@@ -307,65 +332,65 @@
 
     /* The switch - the box around the slider */
     .switch {
-    position: relative;
-    display: inline-block;
-    width: 30px;
-    height: 17px;
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 17px;
     }
 
     /* Hide default HTML checkbox */
     .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+        opacity: 0;
+        width: 0;
+        height: 0;
     }
 
     /* The slider */
     .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
     }
 
     .slider:before {
-    position: absolute;
-    content: "";
-    height: 13px;
-    width: 13px;
-    left: 2px;
-    bottom: 2px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+        position: absolute;
+        content: "";
+        height: 13px;
+        width: 13px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
     }
 
     input:checked + .slider {
-    background-color: #2196F3;
+        background-color: #2196F3;
     }
 
     input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+        box-shadow: 0 0 1px #2196F3;
     }
 
     input:checked + .slider:before {
-    -webkit-transform: translateX(13px);
-    -ms-transform: translateX(13px);
-    transform: translateX(13px);
+        -webkit-transform: translateX(13px);
+        -ms-transform: translateX(13px);
+        transform: translateX(13px);
     }
 
     /* Rounded sliders */
     .slider.round {
-    border-radius: 17px;
+        border-radius: 17px;
     }
 
     .slider.round:before {
-    border-radius: 50%;
+        border-radius: 50%;
     }
 
 </style>

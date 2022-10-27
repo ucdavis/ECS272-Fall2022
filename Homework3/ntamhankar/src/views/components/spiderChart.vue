@@ -1,8 +1,6 @@
 <template>
     <meta charset="utf-8">
-    <h1> Median of Important Features for All 2020 Songs by Artist </h1> 
-    <!-- Initialize a select button -->
-    <select id="selectButtonSpider"></select>
+    <h1> Average of Important Features for All 2020 Songs by Artist </h1>
 
     <!-- Create a div where the graph will take place -->
     <div id="my_datavizSpider"></div>
@@ -15,29 +13,52 @@
         name: 'SpiderChart',
         data() {
             return {
+                // data used by both plots
                 filteredData: [],
                 topArtists: [],
                 artistNames: [],
                 topSongs: [],
                 generalName: "Top 10 Artists of 2020",
-                spiderData1: [],
-                container1: null,
-                container2: null,
-                spiderData2: [],
                 svg: null,
                 //maroon, red, purple, fuschia, green, navy, blue, teal, darkorange, darkgoldenrod
                 colorsBySinger: ['#800000','#FF0000','#800080','#FF00FF','#008000','#000080','#0000FF', '#008080', '#ff8c00', '#b8860b'],
                 // grey
                 generalColor: ["#808080"],
 
-                // functions and data used by both vis charts
                 dotRadius: 4,
+
+                // specific to chart 1 for updating
+                spiderData1: [], // array with data for spiderChart1
+                container1: null, // container which has spiderChart1
+                color1: null, // function to assign color for chart1
+                radarLine1: null, // function to determine radarLine for chart1
+
+                // specific to chart 2 for updating
+                container2: null, // array with data for spiderChart2
+                spiderData2: [], // container which has spiderChart2
+                color2: null, // function to assign color for chart2
+                radarLine2: null, // function to determine radarLine for chart2
+
 
 
             }
         },
         props:{
             myData: Array,
+            brushedData: Array,
+        },
+        watch:{
+            brushedData: function(value){
+                console.log("Got the updated brushed Data in spider watch");
+                console.log(value);
+
+                this.spiderData1 = this.processSpider(value, ["acousticness", "instrumentalness", "liveness", "speechiness"]);
+                this.spiderData2 = this.processSpider(value, ["danceability", "energy", "loudness"]);
+
+                this.updateSpiderChart1(this.radarLine1, this.color1)
+                this.updateSpiderChart2(this.radarLine2, this.color2)
+
+            }
         },
 
         mounted(){
@@ -50,6 +71,17 @@
             for(let i = 0; i < this.topArtists.length; i++){
                 this.artistNames.push(this.topArtists[i].artist)
             }
+
+            console.log("Inside spider what is brushedData");
+
+            console.log(this.brushedData)
+
+            console.log("Inside spider what is myData");
+
+            console.log(this.myData)
+
+
+
             this.topSongs = this.getSongs(this.filteredData, this.topArtists)
 
             this.spiderData1 = this.processSpider(this.topSongs, ["acousticness", "instrumentalness", "liveness", "speechiness"]);
@@ -62,15 +94,15 @@
                     .classed("svg-content-responsive", true)
 
 
-            this.createbutton("#selectButtonSpider")
-            this.initSpiderChart1("#selectButtonSpider", "#my_datavizSpider")
-            this.initSpiderChart2("#selectButtonSpider", "#my_datavizSpider")
+            this.initSpiderChart1("#my_datavizSpider")
+            this.initSpiderChart2("#my_datavizSpider")
 
             
         },
         methods: {
             getFilteredData(){
                 this.filteredData = this.myData.filter(function (d) {return d.year >= 2020});
+
             },
 
             getArtists(s){
@@ -145,11 +177,11 @@
                     if(artists.length > 1){continue;}
 
                     for(let j = 0; j < artists.length; j++){
-                    if(set.has(artists[j])){
-                        arr.push(data[i]);
-                        break;
+                        if(set.has(artists[j])){
+                            arr.push(data[i]);
+                            break;
 
-                    }
+                        }
 
                     }
 
@@ -160,10 +192,24 @@
 
             },
             sortAndGetMedian(arr){
+                //FIXME. Trying out average instead of median
                 arr.sort();
+
 
                 return arr[Math.floor(arr.length / 2)];
 
+            },
+            getAverage(arr){
+                if(arr == null){
+                    return 0;
+                }
+                let sum = 0;
+
+                arr.forEach((d) =>{
+                    sum += d;
+                })
+
+                return sum / arr.length;
             },
             processSpider(arr, features){
 
@@ -210,12 +256,12 @@
 
                 let data = [];
                 let singers = [];
-                // now get the medians for each of the singers and the values
+                // now get the averages for each of the singers and the values
                 map.forEach((value, key) => {
                     // singer is key, value is other map
                     let singerData = [];
                     value.forEach((innerValue, innerKey) => {
-                        let med = this.sortAndGetMedian(innerValue);
+                        let med = this.getAverage(innerValue);
                         singerData.push({axis: innerKey, value: med});
                     });
 
@@ -231,20 +277,8 @@
 
 
             },
-            createbutton(button){
-                // create button
-                d3.select(button).selectAll('myOptions').remove()
 
-                // add the options to the button
-                d3.select(button)
-                    .selectAll('myOptions')
-                    .data([this.generalName].concat(this.artistNames))
-                    .enter()
-                    .append('option')
-                    .text(function (d) { return d; }) // text showed in the menu
-                    .attr("value", function (d) { return d; }) // corresponding value returned by the button
-            },
-            initSpiderChart1(button, viz){
+            initSpiderChart1(viz){
                 // set the dimensions and margins of the graph
                 const margin = {top: 20, right: 5, bottom: 5, left: 0};
                 let width = 350 - margin.left - margin.right;
@@ -253,7 +287,7 @@
                 const axisCircles = 3;
                 const radius = 120;
                 const dotRadius = 4;
-                const maxValue = 0.4;
+                const maxValue = 1.0;
                 const axesLength = 4;
                 const axisLabelFactor = 1.12;
                 const angleSlice = Math.PI * 2 / axesLength;
@@ -265,11 +299,10 @@
                 let axesDomain = ["acousticness", "instrumentalness", "liveness", "speechiness"];
 
                 // concact this.artistNames to keep same ordering as parallelSetChart
-                let color = d3.scaleOrdinal().domain([this.generalName].concat(this.artistNames)).range(this.generalColor.concat(this.colorsBySinger));
+                this.color1 = d3.scaleOrdinal().domain([this.generalName].concat(this.artistNames)).range(this.generalColor.concat(this.colorsBySinger));
 
                 let annotations = null;
                 let rScale = null;
-                let radarLine = null;
                 let axis = null;
                 let axisGrid = null;
                 let plots = null;
@@ -289,7 +322,7 @@
                     .domain([0, maxValue])
                     .range([0, radius])
 
-                radarLine = d3.lineRadial()
+                this.radarLine1 = d3.lineRadial()
                     .curve(d3["curveCardinalClosed"])
                     .radius(d => rScale(d))
                     .angle((d, i) => i * angleSlice)
@@ -363,22 +396,12 @@
                     .attr("stroke", "steelblue")
 
                 plots.append('path')
-                    .attr("d", d => radarLine(d.map(v => v.value)))
-                    .attr("fill", (d, i) => color(origSingers[i]))
+                    .attr("d", d => this.radarLine1(d.map(v => v.value)))
+                    .attr("fill", (d, i) => this.color1(origSingers[i]))
                     .attr("fill-opacity", 0.1)
-                    .attr("stroke", (d, i) => color(origSingers[i]))
+                    .attr("stroke", (d, i) => this.color1(origSingers[i]))
                     .attr("stroke-width", 2)
                     .attr("id", "path1")
-
-                /*
-                plots.selectAll("#circles1")
-                    .data(d => d)
-                    .join("circle")
-                    .attr("r", dotRadius)
-                    .attr("cx", (d,i) => rScale(d.value) * Math.cos(angleSlice*i - Math.PI/2))
-                    .attr("cy", (d,i) => rScale(d.value) * Math.sin(angleSlice*i - Math.PI/2))
-                    .style("fill-opacity", 0.8)
-                    .attr("id", "circles1")*/
 
 
                 // if we are viewing all singers create a legend
@@ -391,47 +414,20 @@
                     .append("text")
                     .attr("x", 300)
                     .attr("y", function(d,i){ return 15 + i*10})
-                    .style("fill", function(d, i){ return color(d)})
+                    .style("fill", (d, i) => this.color1(d))
                     .style("font", "10px times")
                     .text(function(d){ return d})
                     .attr("text-anchor", "left")
                     .style("alignment-baseline", "middle")
 
-                // initialize caller to updateChart1FromButton
-                this.updateChart1FromButton(button, radarLine, color, rScale, angleSlice)
 
 
 
             },
-            updateChart1FromButton(button, radarLine, color, rScale, angleSlice){
-                // Listen to the slider?
-                let selectedSinger = null
-                d3.select(button).on("change.1", (event, d) => {
-                    selectedSinger = event.currentTarget.value
-                    this.updateSpiderChart1(selectedSinger, radarLine, color, rScale, angleSlice)
-                })
+            updateSpiderChart1(radarLine, color){
 
-
-
-            },
-            updateSpiderChart1(selectedSinger, radarLine, color, rScale, angleSlice){
-                let data = (this.spiderData1[0])
-                let singers = (this.spiderData1[1])
-
-                let currentData = null;
-                let currentSinger = null;
-
-                if(selectedSinger != this.generalName){
-                    let index = singers.indexOf(selectedSinger);
-
-                    currentData = [data[index]];
-                    currentSinger = [selectedSinger];
-
-                }else{
-                    currentData = data;
-                    currentSinger = singers;
-                }
-
+                let currentData = (this.spiderData1[0])
+                let currentSinger = (this.spiderData1[1])
 
                 let plots = this.container1.select("#plot1")
 
@@ -457,17 +453,8 @@
                     .attr("stroke-width", 2)
                     .attr("id", "path1")
 
-                /*
-                plots.selectAll("#circles1")
-                    .data(currentData)
-                    .join()
-                    .attr("r", this.dotRadius)
-                    .attr("cx", (d,i) => rScale(d.value) * Math.cos(angleSlice*i - Math.PI/2))
-                    .attr("cy", (d,i) => rScale(d.value) * Math.sin(angleSlice*i - Math.PI/2))
-                    .style("fill-opacity", 0.8);*/
-
             },
-            initSpiderChart2(button, viz){
+            initSpiderChart2(viz){
                 // set the dimensions and margins of the graph
                 const margin = {top: 20, right: 5, bottom: 5, left: 10};
                 let width = 350 - margin.left - margin.right;
@@ -490,10 +477,9 @@
                 let axesDomain = ["danceability", "energy", "loudness"];
 
                 // concact this.artistNames to keep same ordering as parallelSetChart
-                let color = d3.scaleOrdinal().domain([this.generalName].concat(this.artistNames)).range(this.generalColor.concat(this.colorsBySinger));
+                this.color2 = d3.scaleOrdinal().domain([this.generalName].concat(this.artistNames)).range(this.generalColor.concat(this.colorsBySinger));
 
                 let rScale = null;
-                let radarLine = null;
                 let axis = null;
                 let axisGrid = null;
                 let plots = null;
@@ -508,7 +494,7 @@
                     .domain([0, maxValue])
                     .range([0, radius])
 
-                radarLine = d3.lineRadial()
+                this.radarLine2 = d3.lineRadial()
                     .curve(d3["curveCardinalClosed"])
                     .radius(d => rScale(d))
                     .angle((d, i) => i * angleSlice)
@@ -577,53 +563,19 @@
                     .attr("stroke", "steelblue");
 
                 plots.append('path')
-                    .attr("d", d => radarLine(d.map(v => v.value)))
-                    .attr("fill", (d, i) => color(origSingers[i]))
+                    .attr("d", d => this.radarLine2(d.map(v => v.value)))
+                    .attr("fill", (d, i) => this.color2(origSingers[i]))
                     .attr("fill-opacity", 0.1)
-                    .attr("stroke", (d, i) => color(origSingers[i]))
+                    .attr("stroke", (d, i) => this.color2(origSingers[i]))
                     .attr("stroke-width", 2)
                     .attr("id", "path2")
 
-                /*
-                plots.selectAll("circle")
-                    .data(d => d)
-                .join("circle")
-                    .attr("r", dotRadius)
-                    .attr("cx", (d,i) => rScale(d.value) * Math.cos(angleSlice*i - Math.PI/2))
-                    .attr("cy", (d,i) => rScale(d.value) * Math.sin(angleSlice*i - Math.PI/2))
-                    .style("fill-opacity", 0.8);*/
-
-                
-                // initialize caller to updateChart2FromButton
-                this.updateChart2FromButton(button, radarLine, color, rScale, angleSlice)
 
             },
-            updateChart2FromButton(button, radarLine, color, rScale, angleSlice){
-                // Listen to the slider?
-                let selectedSinger = null
-                d3.select(button).on("change.2", (event, d) => {
-                    selectedSinger = event.currentTarget.value
-                    this.updateSpiderChart2(selectedSinger, radarLine, color, rScale, angleSlice)
-                })
-            },
-            updateSpiderChart2(selectedSinger, radarLine, color, rScale, angleSlice){
+            updateSpiderChart2(radarLine, color){
 
-                let data = (this.spiderData2[0])
-                let singers = (this.spiderData2[1])
-
-                let currentData = null;
-                let currentSinger = null;
-
-                if(selectedSinger != this.generalName){
-                    let index = singers.indexOf(selectedSinger);
-
-                    currentData = [data[index]];
-                    currentSinger = [selectedSinger];
-
-                }else{
-                    currentData = data;
-                    currentSinger = singers;
-                }
+                let currentData = (this.spiderData2[0]);
+                let currentSinger = (this.spiderData2[1]);
 
 
                 let plots = this.container2.select("#plot2")
@@ -649,18 +601,9 @@
                     .attr("stroke", (d, i) => color(currentSinger[i]))
                     .attr("stroke-width", 2)
                     .attr("id", "path2")
-
-                /*
-                plots.selectAll("#circles1")
-                    .data(currentData)
-                    .join()
-                    .attr("r", this.dotRadius)
-                    .attr("cx", (d,i) => rScale(d.value) * Math.cos(angleSlice*i - Math.PI/2))
-                    .attr("cy", (d,i) => rScale(d.value) * Math.sin(angleSlice*i - Math.PI/2))
-                    .style("fill-opacity", 0.8);*/
             },
 
-        }
+        },
     }
 
 
