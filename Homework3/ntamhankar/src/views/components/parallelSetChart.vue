@@ -34,6 +34,13 @@
                 // map of each singer and their songs
                 map: null,
 
+                axes: null,
+                lines: null,
+
+                brushes: null,
+                brush: null,
+                dblclicked: null,
+
             }
         },
         props:{
@@ -156,6 +163,16 @@
                 .append("g")
                 .attr("transform", `translate(${margin.left},${margin.top})`);
 
+                // set the style of hidden data items
+                // Don't need this anymore as instead dealing with each DOM element
+                /*
+                this.svg
+                    .append("style")
+                    .text("#lines.hidden { stroke: #000; stroke-opacity: 0.01;}");*/
+
+                // a map that holds any active brush per attribute
+                let activeBrushes = new Map();
+
 
                 // group by artist Name
                 // this will be used to determine the color for each artist
@@ -219,7 +236,7 @@
 
 
                 // Draw the initial set of lines
-                let lines = this.svg
+                this.lines = this.svg
                     .selectAll("#lines")
                     .append("g")
                     .data(this.map.get(this.generalName))
@@ -233,21 +250,115 @@
 
 
                 // Draw the axis:
-                let axis = this.svg.selectAll("myAxis")
+                this.axes = this.svg
+                    .append('g')
+                    .selectAll('g')
                     // For each dimension of the dataset I add a 'g' element:
-                    .data(this.g1Dimensions).enter()
-                    .append("g")
+                    .data(this.g1Dimensions)
+                    .join("g")
                     // I translate this element to its right position on the x axis
                     .attr("transform", function(d) { return "translate(" + x(d) + ")"; })
                     // And I build the axis with the call function
                     .each(function(d) { d3.select(this).call(d3.axisLeft().scale(y[d])); })
                     // Add axis title
-                    .append("text")
-                    .style("text-anchor", "middle")
-                    .attr("y", -10)
-                    .text(function(d) { return d; })
-                    .style("fill", "black")
-                    .attr("font-weight", 500)
+                    .call(g => g.append("text")
+                        .style("text-anchor", "middle")
+                        .attr("y", -10)
+                        .text(function(d) { return d; })
+                        .style("fill", "black")
+                        .attr("font-weight", 500))
+
+
+
+                // Functionality for brushing
+                function updateBrushing(myLines) {
+                    console.log("Trying brushing");
+
+                    let number_brushes = activeBrushes.size;
+
+                    if (number_brushes == 0) {
+                        // myLines.classed("hidden", d => {return false}); // replaced with the following functionality instead
+                        // https://api.jquery.com/each/
+                        myLines.each(function(d){
+                            d3.select(this).attr("opacity", 0.5);
+                        });
+                    }
+                    else {
+                        myLines.each(function(d){
+                        //this.svg.selectAll("#lines").classed("hidden", d => {
+                            let is_valid = true;  // this flag checks that data is within range for all brushes
+                            //iterate over Map and get y-values
+                            activeBrushes.forEach((value, key) => {
+                                // Need to add this here because when deleting a brush this function gets called on a null entry
+                                if(value == null){
+                                    // do nothing
+                                }else{
+                                    var y0 = value[0];
+                                    var y1 = value[1];
+                                    //check if car value is inside an active brush
+                                    var value_y = y[key](d[key]);
+                                    if (value_y <= y1 && value_y >= y0 && is_valid) {
+                                        d3.select(this).attr("opacity", 0.5);
+                                    }
+                                    else {
+                                        is_valid=false;
+                                        d3.select(this).attr("opacity", 0.0);
+                                    }
+                            }
+                            });
+                            //variable to see the active polylines in this scope
+                            //return return_value;
+                        });
+                    }
+                }
+
+                const brushed = (event, attribute) => {
+                    console.log("brushed");
+                    console.log(attribute);
+                    console.log(event);
+                    activeBrushes.set(attribute, event.selection);
+
+                    console.log("finished selection")
+                    console.log(event.selection);
+                    updateBrushing(this.lines);
+                }
+
+                const brushEnd = (event, attribute) => {
+                    console.log("brush end");
+                    if (event.selection !== null){
+                        updateBrushing(this.lines);
+
+                        // this is where we can update data
+                        console.log("END")
+                        console.log(event);
+                        return
+                    }
+                    activeBrushes.delete(attribute);
+                    updateBrushing(this.lines);
+                }
+
+
+                this.brush = d3
+                            .brushY()
+                            .extent([[-10, -5], [10, height]])
+                            .on("brush", brushed)
+                            .on("end", brushEnd)
+
+                this.dblclicked = (event, attribute) => {
+                    const selection = null
+                    d3.select(event.srcElement).call(this.brush.move, selection);
+                    console.log("deleting attribute")
+                    console.log(attribute);
+                    activeBrushes.delete(attribute);
+                    console.log(activeBrushes);
+                    console.log("Finished deleting");
+                    //updateBrushing(); //Deleting the key from activeBrushes, so no need to update
+                    console.log(this.brush);
+                }
+
+                this.brushes = this.axes.append("g").call(
+                    this.brush
+                ).on("dblclick", this.dblclicked)
 
 
 
@@ -261,6 +372,7 @@
                 d3.select(button).on("change", (event, d) =>
                 {
                     let selectedSinger = event.currentTarget.value
+
                     this.updateChart(selectedSinger, color, path)
                 })
 
@@ -278,7 +390,7 @@
                     console.log(filtered_songs)
                 }
                 
-                let temp = this.svg.selectAll("#lines")
+                this.lines = this.svg.selectAll("#lines")
                     .data(filtered_songs)
                     .join("path")
                     .transition()
@@ -286,10 +398,10 @@
                     .attr("d", path)
                     .attr("id", "lines")
                     .style("fill", "none")
-                    .style("opacity", 0.5)
+                    //.style("opacity", 0.5)   // FIXME: for some reason commenting this out fixed issue where brush wasn't working
                     .style("stroke", d => color(selectedSinger))
 
-                console.log(temp)
+                console.log(this.lines)
 
 
 
