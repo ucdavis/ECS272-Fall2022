@@ -11,6 +11,7 @@ import * as d3 from "d3";
 export default {
     name: 'RadarChart',
     data() {
+        let processed_data = []
         return {
             name: 'Hello',
             someLocalValues: [1, 2, 3, 4, 5],
@@ -23,31 +24,38 @@ export default {
     },
     mounted() {
         console.log("Mounted My radar data");
+        this.processed_data = this.process_data()
         this.initialize_radarchart("#radar")
-        this.draw_radarchart(this.process_data(), "#radar")
+        this.draw_radarchart(this.processed_data[this.curr_year], "#radar")
     },
 
     updated() {
         console.log("Updated My radar data");
-        this.draw_radarchart(this.process_data(), "#radar")
+        this.draw_radarchart(this.processed_data[this.curr_year], "#radar")
     },
     methods: {
         process_data() {
+            const year_min = 1990
+            const year_max = 2019
+            let data = this.myCsvData
+            let new_data = {}
+            for (let year = year_min; year < year_max + 1; year++) {
+
             let group_by_region = {}
             this.myCsvData.forEach(country => {
-                if (!country[this.curr_year]) {
+                if (!country[year]) {
                     // If no data in current year for this country
                     return;
                 }
                 if (country["Region"] in group_by_region) {
                     group_by_region[country["Region"]].count += 1;
-                    group_by_region[country["Region"]]["emission"] += parseFloat(country[this.curr_year])
+                    group_by_region[country["Region"]]["emission"] += parseFloat(country[year])
                 } else {
                     let new_region = {
                         region: country["Region"],
-                        year: this.curr_year,
+                        year: year,
                         count: 1,
-                        emission: parseFloat(country[this.curr_year]),
+                        emission: parseFloat(country[year]),
                     }
                     group_by_region[country["Region"]] = new_region
                 }
@@ -64,8 +72,10 @@ export default {
                 return d3.descending(a["region"], b["region"])
             })
 
-            console.log("Mounted My radar data", group_by_region_array);
-            return group_by_region_array
+            // console.log("Mounted My radar data", group_by_region_array);
+            new_data[year] = group_by_region_array
+        }
+            return new_data
         },
 
         initialize_radarchart(id) {
@@ -198,6 +208,7 @@ export default {
             // Draw Radar Graph on the panel
             let radar_path = svg.select("#radar_path")
             radar_path.datum(positions)
+            .transition()
                 .attr("d", line)
                 .attr("stroke-width", 3)
                 .attr("stroke", color)

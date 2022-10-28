@@ -4,12 +4,16 @@
             <div class="col">
                 <div class="container border">
                     <h1 class="">World CO2 Emission Per Capita</h1>
-                    <h2>Year: {{curr_year}}</h2>
+
+                    <LineChart v-if="dataExists" :myLineChartData="myCsvData" :curr_year="parseInt(curr_year)"
+                        :history_max="history_max" />
+                    
                     <div class="slidecontainer">
                         <input type="range" v-bind:min="first_year" v-bind:max="last_year" class="slider"
-                            id="year_slider" v-model.lazy="curr_year">
+                            id="year_slider" v-model="curr_year">
+                           
                     </div>
-
+                    <h2>Year: {{ curr_year }}</h2>
                     <MainChart v-if="geoDataExists" :myGeoData="myGeoData" :myMainChartData="myCsvData"
                         :curr_year="parseInt(curr_year)" :history_max="history_max" />
                 </div>
@@ -17,7 +21,7 @@
 
             <div class="col">
                 <div class="row border">
-                    <h3>Chart 1: Top {{top_n}} CO2 Emission Countries in {{curr_year}}</h3>
+                    <h3>Chart 1: Top {{ top_n }} CO2 Emission Countries in {{ curr_year }}</h3>
                     <BarChart v-if="dataExists" :myBarchartData="myCsvData" :curr_year="parseInt(curr_year)"
                         :x_key="x_key" :top_n="top_n" />
                 </div>
@@ -37,6 +41,7 @@
 import MainChart from "../components/mainchart.vue"
 import BarChart from "../components/barchart.vue"
 import RadarChart from "../components/radarchart.vue"
+import LineChart from "../components/overview.vue"
 import * as d3 from "d3";
 import csvPath from "../../../dataset/CO2_emission.csv";
 
@@ -73,6 +78,7 @@ export default {
         MainChart,
         BarChart,
         RadarChart,
+        LineChart,
     },
     created() {
         /* Fetch via CSV */

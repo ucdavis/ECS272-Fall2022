@@ -8,12 +8,14 @@ import * as d3 from "d3";
 export default {
     name: 'BarChart',
     data() {
+        let processed_data = []
         return {
             name: 'Hello',
         }
     },
     props: {
         myBarchartData: Array,
+        
         curr_year: Number,
         top_n: Number,
         x_key: String,
@@ -21,31 +23,42 @@ export default {
     mounted() {
         console.log("Mounted: My bar chart data")
         this.initialize_barchart("#bar")
-        this.draw_barchart(this.process_data(), "#bar", this.curr_year, this.x_key, this.top_n)
+        this.processed_data = this.process_data()
+        // console.log(this.processed_data[this.curr_year])
+        this.draw_barchart(this.processed_data[this.curr_year], "#bar", this.curr_year, this.x_key, this.top_n)
     },
 
     updated() {
         console.log("Updated: My bar chart data")
-        this.draw_barchart(this.process_data(), "#bar", this.curr_year, this.x_key, this.top_n)
+        console.log(this.processed_data[this.curr_year])
+        this.draw_barchart(this.processed_data[this.curr_year], "#bar", this.curr_year, this.x_key, this.top_n)
     },
     methods: {
         process_data() {
+            const year_min = 1990
+            const year_max = 2019
             let data = this.myBarchartData
-            data.sort((d1, d2) => {
-                let a = toNumber(d1[this.curr_year])
-                let b = toNumber(d2[this.curr_year])
-                return d3.descending(a, b)
-            })
-            data = data.slice(0, this.top_n)
+            let new_data = {}
+            for (let year = year_min; year < year_max + 1; year++) {
 
-            // If the country name is too long
-            // we will use country code instead
-            data.forEach(country => {
-                if (country[this.x_key].split(' ').length > 2) {
-                    country[this.x_key] = country["country_code"]
-                }
-            });
-            return data
+                data.sort((d1, d2) => {
+                    let a = toNumber(d1[year])
+                    let b = toNumber(d2[year])
+                    return d3.descending(a, b)
+                })
+                let temp = data.slice(0, this.top_n)
+
+                // If the country name is too long
+                // we will use country code instead
+                temp.forEach(country => {
+                    if (country[this.x_key].split(' ').length > 2) {
+                        country[this.x_key] = country["country_code"]
+                    }
+                });
+                new_data[year] = temp
+            }
+
+            return new_data
         },
         draw_barchart(data, id, year, x_key) {
             const margin = { top: 30, right: 40, bottom: 40, left: 40 };
@@ -68,7 +81,9 @@ export default {
             svg.select("#b1_bars").selectAll("rect")
                 .data(data)
                 .join("rect")
+                // .transition()
                 .attr("x", d => x(d[x_key]))
+                .transition()
                 .attr("y", d => y(d[year]))
                 .attr("width", x.bandwidth())
                 .attr("height", d => y(0) - y(d[year]))
@@ -82,11 +97,12 @@ export default {
                 .attr("transform", `translate(${margin.left},0)`)
                 .call(d3.axisLeft(y))
 
-                const font_size = 10
+            const font_size = 10
             svg.select("#b1_x")
                 .attr("class", "x axis")
                 .attr("transform", "translate(0," + height + ")")
                 .call(xAxis)
+                .transition()
                 .selectAll("text")
                 .style("text-anchor", "middle")
                 .attr("dx", "0")
@@ -95,10 +111,10 @@ export default {
                 .attr("font-size", d => {
                     if (d.length <= 12)
                         return 10
-                    else 
+                    else
                         return 9.4
                 })
-                
+
 
             svg.select("#b1_y")
                 .call(yAxis)
@@ -115,7 +131,7 @@ export default {
 
             // Add tags to axis
             svg.select("#b1_x_tag")
-                .attr("x", width/2)
+                .attr("x", width / 2)
                 .attr("y", height)
                 .text("Countries")
                 .attr("text-anchor", "middle")

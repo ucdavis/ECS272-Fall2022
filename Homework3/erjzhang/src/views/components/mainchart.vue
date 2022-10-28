@@ -35,10 +35,63 @@ export default {
         initialize_map(id) {
             let svg = d3.select(id).append("svg")
             svg.append("g").attr("id", "map_group");
-            svg.append("g").attr("id", "map_legend");
+            // svg.append("g").attr("id", "map_legend");
 
             // Add a legend
+            const interval = []
+            const legend_count = 6      // Last legend will be unknown data
+            const legend_width = 10
+            const legend_height = 10
+            const legend_coord = [25, 220]
+            const padding = 5
+            svg.append("rect")
+                .attr("id", "map_legend_box")
+                .attr("x", legend_coord[0]-padding)
+                .attr("y", legend_coord[1]-padding*4)
+                .attr("width", legend_width * 13)
+                .attr("height", legend_height * 13)
+                .attr("fill", "white")
+                .attr("stroke", "black")
+                .attr("stroke-width","1")
+            
             svg.append("g").attr("id", "map_legend")
+
+            let legend = svg.select("#map_legend")
+            for (let i = 0; i < legend_count + 1; i++) {
+                interval.push(i)
+            }
+
+            const color = d3.interpolateHsl("#ffa366", "#000000")
+            const unknown_color = "#949494"
+            legend.selectAll("rect").data(interval)
+                .join("rect")
+                .attr('width', legend_width)
+                .attr('height', legend_height)
+                .style('fill', d => {
+                    if (d == legend_count) {
+                        return unknown_color
+                    }
+                    return color(d / (legend_count - 1))
+                })
+                .attr("x", legend_coord[0])
+                .attr("y", d => (padding + legend_height) * d + legend_coord[1])
+
+            legend.selectAll("text").data(interval)
+                .join("text")
+                .attr("x", legend_coord[0] + legend_width + padding)
+                .attr("y", d => (padding + legend_height) * d + legend_coord[1] + legend_height)
+                .text(d => {
+                    if (d == legend_count) {
+                        return "Unknown"
+                    }
+                    return this.history_max / (legend_count - 1) * d
+                })
+            legend.append("text").attr("id", "map_legend_unit")
+                .attr("x", legend_coord[0])
+                .attr("y", legend_coord[1] - padding)
+                .text("Unit: ton per capita")
+                .attr("font-size", "13")
+                .attr("font-weight", "bold")
         },
         draw_map(geoData, chartData, year, id) {
             const margin = { top: 20, right: 20, bottom: 20, left: 20 };
@@ -78,6 +131,7 @@ export default {
 
             g.selectAll("path").data(countries.features)
                 .join("path")
+                .transition()
                 .attr("fill", (d, i) => {
                     let country_code = getCountryISO3(d.properties["countryCode"])
                     if (country_code) {
@@ -93,46 +147,6 @@ export default {
                 })
                 .attr("class", "countries")
                 .attr("d", path)
-            let legend = svg.select("#map_legend")
-
-            const interval = []
-            const legend_count = 6      // Last legend will be unknown data
-            const legend_width = 10
-            const legend_height = 10
-            const legend_coord = [25, 220]
-            const padding = 5
-            for (let i = 0; i < legend_count + 1; i++) {
-                interval.push(i)
-            }
-            
-            legend.selectAll("rect").data(interval)
-                .join("rect")
-                .attr('width', legend_width)
-                .attr('height', legend_height)
-                .style('fill', d => {
-                    if (d == legend_count) {
-                        return unknown_color
-                    }
-                    return color(d / (legend_count-1))
-                })
-                .attr("x", legend_coord[0])
-                .attr("y", d => (padding + legend_height) * d + legend_coord[1])
-
-            legend.selectAll("text").data(interval)
-                .join("text")
-                .attr("x", legend_coord[0] + legend_width + padding)
-                .attr("y", d => (padding + legend_height) * d + legend_coord[1] + legend_height)
-                .text(d => {
-                    if (d == legend_count) {
-                        return "Unknown"
-                    }
-                    return max_emission / (legend_count-1) * d
-                })
-            legend.append("text").attr("id", "map_legend_unit")
-                .attr("x", legend_coord[0] )
-                .attr("y", legend_coord[1] - padding)
-                .text("Unit: ton per capita")
-                .attr("font-weight", "bold")
         },
 
 
