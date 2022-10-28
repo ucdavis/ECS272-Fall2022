@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CO2 Dashboard</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="input.css">
+  <link rel="shortcut icon" href="#">
+</head>
+<body>
+  <div id="nav">
+    <p>
+      <input type="radio" name="data-type" value="emissionsPerCapita" checked style="display: none;"> 
+    </p>
+  </div>
+  <section class="container">
+    <div class="chart-container">
+      <p style="text-align: center; font-size: 30px;">CO2 Dashboard</p>
+      <p style="text-align: center;">Sunburst chart for the overall view of data</p>
+      <p>Click on each slice to unravel the data on three levels - Region, Country, Year. Click on the center to roll up a level.</p>
+      <p>Hover to reveal titles.</p>
+      <svg 
+      version="1.1"
+      baseProfile="full"
+      xmlns="http://www.w3.org/2000/svg" 
+      id="sun"
+      style="height: 600;width: 400;">
+    </svg>
+  </div>
+  <div class="chart-container right">
+    <p style="text-align: center;">Pie chart and bar chart serving as focus + context views.</p>
+    <p>
+      Choose a year to display the region wise data: <span id="year-val"></span>
+      <input id="year" type="range" step="1">
+    </p>
+    <svg 
+      version="1.1"
+      baseProfile="full"
+      xmlns="http://www.w3.org/2000/svg" 
+      id="pie">
+    </svg>
+    <div id="dropdown"></div>
+    <svg 
+      version="1.1"
+      baseProfile="full"
+      xmlns="http://www.w3.org/2000/svg" 
+      id="bar"
+      style="height: 600;width: 800;">
+    </svg>
+  </div>
+  </section>
+  <div class="tooltip"></div>
+  <div class="tooltip2"></div>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="pie.js"></script>
+  <script src="bar.js"></script>
+  <script src="sun.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
