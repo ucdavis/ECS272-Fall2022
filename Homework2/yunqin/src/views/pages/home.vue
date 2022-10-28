@@ -1,26 +1,21 @@
 <template>
-    <div>
-        <a-row type="flex">
-            <a-col :flex="1">
-                <a-card title="Overview: CO2 Emission By Years" style="width: 95%">
-                    <MapChart v-if="dataExistsMap" :myMapChartData="myMapData"/>
-                </a-card>
-            </a-col>
-            <a-col :flex="1" type="flex">
-                <a-row :flex="1">
-                    <a-card title="CO2 Emission Changes In Years By Countries" style="width:95%">
-                        <LineChart v-if="dataExistsLine" :myLineChartData="myLineData"/>
-                    </a-card>
-                </a-row>
-                <br />
-                <a-row :flex="1">
-                    <a-card title="CO2 Emission Changes Comparison Between Regions" style="width:95%">
-                        <RadarChart v-if="dataExistsRadar" :myRadarChartData="myRadarData"/>
-                    </a-card>
-                </a-row>    
-            </a-col>
-        </a-row>
-        <br />
+    <div class="dashboardContainer">
+        <div class="row">
+            <div class="column">
+                <h1 class="overviewTitle">Overview: World CO2 Emission By Years</h1>
+                <MapChart v-if="dataExistsMap" :myMapChartData="myMapData"/>
+            </div>
+            <div class="column">
+                <div class="half-row">
+                    <h1 class="focusviewTitle">CO2 Emission Changes In Years By Countries</h1>
+                    <LineChart v-if="dataExistsLine" :myLineChartData="myLineData"/>
+                </div>
+                <div class="half-row">
+                    <h1 class="focusviewTitle">CO2 Emission Changes Comparison Between Regions</h1>
+                    <RadarChart v-if="dataExistsRadar" :myRadarChartData="myRadarData"/>
+                </div>    
+            </div>
+        </div>
     </div>
 </template>
 
@@ -29,7 +24,7 @@ import MapChart from "../components/mapchart.vue";
 import LineChart from "../components/linechart.vue";
 import RadarChart from "../components/radarchart.vue";
 import * as d3 from "d3";
-import MapcsvPath from "../../assets/data/map_data.csv";
+import MapcsvPath from "../../assets/data/CO2_emission.csv";
 import LinecsvPath from "../../assets/data/line_data.csv";
 import RadarcsvPath from "../../assets/data/radar_data.csv";
 
@@ -95,3 +90,49 @@ export default {
 }
 
 </script>
+<style scoped>
+    .dashboardContainer{
+        height: 100%;
+        display: flex;
+    }
+
+    .row{
+        width: 100%;
+        height: 100%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+    }
+
+    .half-row{
+        width: 100%;
+        height: 50%;
+        background-color: #ffffff;
+    }
+
+    .column{
+        width: 50%;
+        height: 100%;
+        background-color: #ffffff;
+    }
+
+    .overviewTitle{
+        font-size: 1.5em;
+        width: 100%;
+        background-color: #ffffff;
+        color: #1a1919;
+        text-align: center;
+        margin: 0;
+        height: 5%;
+    }
+
+    .focusviewTitle{
+        font-size: 1.5em;
+        width: 100%;
+        background-color: #ffffff;
+        color: #1a1919;
+        text-align: center;
+        margin: 0;
+        height: 10%;
+    }
+</style>
