@@ -1,5 +1,14 @@
 <template>
-    <div class="overview">
+
+<div class="container">
+  <div class="Overview"></div>
+  <div class="Details">
+    <div class="Detail1"></div>
+    <div class="Detail2"></div>
+  </div>
+</div>
+
+    <!-- <div class="overview">
         <OverviewChart :terrorismData="terrorismDataFiltered" />
 
         <div id="filterContainer">
@@ -27,7 +36,7 @@
     <div class="detail2">
         <Detail2Chart :terrorismData="terrorismDataFiltered" />
 
-    </div>
+    </div> -->
 </template>
 
 <script>

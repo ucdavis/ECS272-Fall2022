@@ -1,0 +1,16 @@
+// @import "~animate.css/animate.css";
+
+#addInfo{
+  width: 300px; 
+  height: 250px;
+  overflow: auto;
+}
+
+.Country {
+  fill: grey;
+  cursor: pointer;
+}
+
+.Country.active {
+  fill: lightblue;
+}
