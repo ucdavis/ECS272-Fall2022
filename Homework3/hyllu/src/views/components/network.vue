@@ -138,8 +138,11 @@
 
             drawNetwork(nodes, links, id, selection) {
 
+                const forEmitThis = this;
+
                 let flag_dbclick_node = false;
                 let select_node = "rgb(255, 255, 255)";
+                let select_singer = undefined;
                 const margin = { top: 20, right: 5, bottom: 50, left: 5 };
                 // const height = 300;
                 // const width = 500;
@@ -214,6 +217,7 @@
                 };
 
                 function nodedbclick(){
+                    console.log(d3.select(this).select('title').text());
                     if (flag_dbclick_node==false){
                         flag_dbclick_node = true;
                         let cx_tmp = this.getAttribute('cx');
@@ -225,11 +229,13 @@
                             .attr("x", cx_tmp)
                             .attr("y", cy_tmp)
                             .attr("class", "click_select")
-                            .text("JUST TEST")
+                            .text(d3.select(this).select('title').text())
                             .style("font-size", "12px")
                             .style("opacity", 1);
                         select_node = "rgb(0, 255, 0)";
-                        console.log(select_node);
+                        select_singer = d3.select(this).select('title').text();
+                        console.log(select_node, select_singer);
+                        forEmitThis.$emit('selectSingerChange', select_singer);
                     }
                     else if (this.getAttribute('stroke')===select_node){
                         d3.select(this).transition()
@@ -238,7 +244,9 @@
                         d3.selectAll(".click_select").remove();
                         select_node = "rgb(255, 255, 255)";
                         flag_dbclick_node = false;
-                        console.log(select_node);
+                        select_singer = undefined;
+                        console.log(select_node, select_singer);
+                        forEmitThis.$emit('selectSingerChange', select_singer);
                     }
                 };
 
@@ -296,7 +304,7 @@
                 else if (S) node.attr('r', ({
                     index: i
                 }) => S[i]/10+3);
-                if (T) node.append('svg:title').text(({
+                if (T) node.append('title').text(({
                     index: i
                 }) => T[i]);
 

@@ -12,7 +12,7 @@
             </div>
             <div id="network_view">
                 <Dropdown_Network :myData="hop_1" @selectedChange="handleChange_network"/>
-                <Network v-if="dataExists" :myData="myData" :mySelection="selected_network" @dropdownChange="handledropdown_network"/>
+                <Network v-if="dataExists" :myData="myData" :mySelection="selected_network" @dropdownChange="handledropdown_network" @selectSingerChange="handleselectSinger_network"/>
             </div>
         </div>
         
@@ -49,6 +49,7 @@ export default {
             selected_beeswarm: {id: 0, text: 'acousticness'},
             selected_network: {id: 0, text: 'Taylor Swift'},
             hop_1: [{id: 0, text: 'Taylor Swift'}],
+            selectSinger: undefined,
             color: undefined,
             colorExists: false
         }
@@ -95,6 +96,10 @@ export default {
         handledropdown_network(dropdown_update){
             console.log('parent noticed change dropdown ' + dropdown_update);
             this.hop_1 = dropdown_update;
+        },
+        handleselectSinger_network(select_singer){
+            console.log('parent noticed change selectSinger ' + select_singer);
+            this.selectSinger = select_singer;
         },
         handlecolor_views(color){
             console.log('parent noticed change color ' + color);
