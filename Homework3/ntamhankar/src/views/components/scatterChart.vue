@@ -1,11 +1,8 @@
 <template>
     <meta charset="utf-8">
     <h1> Instrumentalness vs Liveness </h1>
-    <!-- Initialize a Switch -->
-    <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-    </label>
+    <!-- Initialize a Button -->
+    <button type="button" id="reset">Reset</button>
 
     <!-- Create a div where the graph will take place -->
     <div id="my_datavizScatter"></div>
@@ -34,6 +31,9 @@
                 x: null, // function used to determine the x-coordinate
                 y: null, // function used to determine the y-coordinate
                 opacityFlag: null,
+                dots: null,
+
+                zoom: null,
 
             }
         },
@@ -60,7 +60,7 @@
             }
             this.topSongs = this.getSongs(this.filteredData, this.topArtists);
 
-            this.init(".switch", "#my_datavizScatter");
+            this.init("#reset", "#my_datavizScatter");
 
             
             
@@ -198,18 +198,18 @@
                     .domain([0, 1.0])
                     .range([margin.left, width]);
 
-                this.svg.append("g")
+                let xAxis = (g, x) => g
                     .attr("transform", `translate(0, ${height})`)
-                    .call(d3.axisBottom(this.x))
+                    .call(d3.axisBottom(x))
 
                 // add Y-axis
                 this.y = d3.scaleLinear()
                     .domain([0, 1.0])
                     .range([height, 0]);
 
-                this.svg.append("g")
+                let yAxis = (g, y) => g
                     .attr("transform", `translate(${margin.left}, 0)`)
-                    .call(d3.axisLeft(this.y));
+                    .call(d3.axisLeft(y));
 
 
                 // add the lines using the x and y scale linear functions
@@ -219,7 +219,7 @@
 
 
                 // add dots
-                this.svg.selectAll("dots")
+                this.dots = this.svg.selectAll("#dots")
                     .data(this.topSongs)
                     .join("circle")
                     .attr("cx", d => this.x(d.instrumentalness))
@@ -227,7 +227,6 @@
                     .attr("id", "dots")
                     .style("fill", (d) => {return this.color(this.getArtists(d.artists)[0]);})
                     .attr("r", 4)
-                    .attr("stroke", "white")
                     .on("mouseover.highlight", function(event, d){
                         d3.select(this)
                         .raise() // bring to front
@@ -276,12 +275,31 @@
                     .attr("text-anchor", "left")
                     .style("alignment-baseline", "middle")
 
-                    // Listen to the slider?
-                    d3.select(button).on("change", (d) => {
-                        this.updateChart()
-                    })
+                // Listen to the button
+                d3.select(button).on("click", (d) => {
+                    this.resetChart();
+                })
 
+
+                // added in zoom functionality
+                const gx = this.svg.append("g");
+
+                const gy = this.svg.append("g");
+
+                const zoomed = ({transform}) => {
+                    const zx = transform.rescaleX(this.x).interpolate(d3.interpolateRound);
+                    const zy = transform.rescaleY(this.y).interpolate(d3.interpolateRound);
+                    this.dots.attr("transform", transform).attr("stroke-width", 5);
+                    gx.call(xAxis, zx);
+                    gy.call(yAxis, zy);
+                }
+
+                this.zoom = d3.zoom()
+                    .scaleExtent([0.5, 32])
+                    .on("zoom", zoomed);
                 
+
+                this.svg.call(this.zoom).call(this.zoom.transform, d3.zoomIdentity);
                 
             },
             updateChart(data){
@@ -296,8 +314,12 @@
                         .attr("opacity", 0.5)
                     this.opacityFlag = 0;
                 }*/
+
+                this.resetChart();
+
                 console.log("trying to update scatter chart")
-                this.svg.selectAll("#dots")
+
+                this.dots = this.svg.selectAll("#dots")
                     .data(data)
                     .join("circle")
                     .attr("cx", d => this.x(d.instrumentalness))
@@ -305,7 +327,6 @@
                     .attr("id", "dots")
                     .style("fill", (d) => {return this.color(this.getArtists(d.artists)[0]);})
                     .attr("r", 4)
-                    .attr("stroke", "white")
                     .on("mouseover.highlight", function(event, d){
                         d3.select(this)
                         .raise() // bring to front
@@ -318,6 +339,10 @@
                         d3.select(this).style("stroke", null);
                     });
 
+            },
+            resetChart(){
+                console.log("resetting data");
+                this.svg.call(this.zoom).call(this.zoom.transform, d3.zoomIdentity);
             }
         }
 
@@ -325,72 +350,3 @@
 
 
 </script>
-
-
-
-<style>
-
-    /* The switch - the box around the slider */
-    .switch {
-        position: relative;
-        display: inline-block;
-        width: 30px;
-        height: 17px;
-    }
-
-    /* Hide default HTML checkbox */
-    .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-
-    /* The slider */
-    .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 13px;
-        width: 13px;
-        left: 2px;
-        bottom: 2px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-
-    input:checked + .slider {
-        background-color: #2196F3;
-    }
-
-    input:focus + .slider {
-        box-shadow: 0 0 1px #2196F3;
-    }
-
-    input:checked + .slider:before {
-        -webkit-transform: translateX(13px);
-        -ms-transform: translateX(13px);
-        transform: translateX(13px);
-    }
-
-    /* Rounded sliders */
-    .slider.round {
-        border-radius: 17px;
-    }
-
-    .slider.round:before {
-        border-radius: 50%;
-    }
-
-</style>
