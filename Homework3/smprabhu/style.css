@@ -2,6 +2,17 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.area {
+  fill: steelblue;
+  clip-path: url(#clip);
+}
+
+.zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
+
 body {
   margin: 0;
   background: #ecf0f1;

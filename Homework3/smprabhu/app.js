@@ -1,22 +1,16 @@
 
 d3.queue()
-  .defer(d3.csv, "./data/bar.csv", function(row) {
+  .defer(d3.csv, "./data/data.csv", function(row) {
     return {
-      continent: row.Continent,
-      country: row.Country,
-      countryCode: row["Country Code"],
-      emissions: +row["Emissions"],
-      emissionsPerCapita: +row["Emissions Per Capita"],
-      region: row.Region,
-      year: +row.Year
+      region: row.date,
+      year: row.price
     }
   })
   .await(function(error, data) {
     if (error) throw error;
 
-    var extremeYears = d3.extent(data, d => d.year);
     
-    var currentYear = extremeYears[0];
+    // var currentYear = extremeYears[0];
     
     var currentDataType = d3.select('input[name="data-type"]:checked')
                             .attr("value");
@@ -28,97 +22,98 @@ d3.queue()
 
     
 
-    createBar(width, height);
-    drawBar(data, currentDataType, "");
+    // createBar(width, height);
+    // drawBar(data, currentDataType, "");
+    drawBar(width, height, data);
 
-    var countryMap = {};
-    var yearFields = ["1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019"];
-    data.forEach(function(d) {
-        var country = d.country;
-        countryMap[country] = [];
+    // var regionMap = {};
+    // var yearFields = ["1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019"];
+    // data.forEach(function(d) {
+    //     var region = d.region;
+    //     regionMap[region] = [];
 
-        yearFields.forEach(function(field) {
-          countryMap[country].push( +d[field] );
-        });
-    });
+    //     yearFields.forEach(function(field) {
+    //       regionMap[region].push( +d[field] );
+    //     });
+    // });
 
-    var countries = Object.keys(countryMap).sort();
+    // var regions = Object.keys(regionMap).sort();
 
 
-    var select = document.createElement("select");
-    select.name = "countries";
-    select.id = "countries"
+    // var select = document.createElement("select");
+    // select.name = "regions";
+    // select.id = "regions"
 
-    for (const val of countries) {
-      var option = document.createElement("option");
-      option.value = val;
-      option.text = val.charAt(0).toUpperCase() + val.slice(1);
-      select.appendChild(option);
-    }
+    // for (const val of regions) {
+    //   var option = document.createElement("option");
+    //   option.value = val;
+    //   option.text = val.charAt(0).toUpperCase() + val.slice(1);
+    //   select.appendChild(option);
+    // }
 
-    var label = document.createElement("label");
-    label.innerHTML = "Select a country to display yearwise data"
-    label.htmlFor = "countries";
+    // var label = document.createElement("label");
+    // label.innerHTML = "Select a region to display yearwise data"
+    // label.htmlFor = "regions";
 
-    document.getElementById("dropdown").appendChild(label).appendChild(select);
+  //   document.getElementById("dropdown").appendChild(label).appendChild(select);
     
-    d3.select("select")
-    .on("change",function(d){
-      var selected = d3.select("#countries").node().value;
+  //   d3.select("select")
+  //   .on("change",function(d){
+  //     var selected = d3.select("#regions").node().value;
   
-      currentDataType = 'emissionsPerCapita';
-      drawBar(data, currentDataType, selected);
-  })
+  //     currentDataType = 'emissionsPerCapita';
+  //     drawBar(data, currentDataType, selected);
+  // })
 
 
 
-    d3.selectAll('input[name="data-type"]')
-        .on("change", () => {
-          var active = d3.select(".active").data()[0];
+    // d3.selectAll('input[name="data-type"]')
+    //     .on("change", () => {
+    //       var active = d3.select(".active").data()[0];
           
-          var country = active ? active.properties.country : "";
+    //       var region = active ? active.properties.region : "";
 
-          currentDataType = d3.event.target.value;
-          drawBar(data, currentDataType, country);
-        });
+    //       currentDataType = d3.event.target.value;
+    //       drawBar(data, currentDataType, region);
+    //     });
 
-    d3.selectAll("svg")
-        .on("mousemove touchmove", updateTooltip);
+    // d3.selectAll("svg")
+    //     .on("mousemove touchmove", updateTooltip);
 
-    function updateTooltip() {
-      var tooltip = d3.select(".tooltip");
-      var tgt = d3.select(d3.event.target);
-      var isCountry = tgt.classed("country");
-      var isBar = tgt.classed("bar");
-      var isArc = tgt.classed("arc");
-      var dataType = d3.select("input:checked")
-                       .property("value");
-      var units = dataType === "emissions" ? "thousand metric tons" : "metric tons per capita";
-      var data;
-      var percentage = "";
-      if (isCountry) data = tgt.data()[0].properties;
-      if (isArc) {
-        data = tgt.data()[0].data;
-        percentage = `<p>Percentage of total: ${getPercentage(tgt.data()[0])}</p>`;
-      }
-      if (isBar) data = tgt.data()[0];
-      tooltip
-          .style("opacity", +(isCountry || isArc || isBar))
-          .style("left", (d3.event.pageX - tooltip.node().offsetWidth / 2) + "px")
-          .style("top", (d3.event.pageY - tooltip.node().offsetHeight - 10) + "px");
-      if (data) {
-        var dataValue = data[dataType] ?
-          data[dataType].toLocaleString() + " " + units :
-          "Data Not Available";
-        tooltip 
-            .html(`
-              <p>Region: ${data.region}</p>
-              <p>${formatDataType(dataType)}: ${dataValue}</p>
-              <p>Year: ${data.year || d3.select("#year").property("value")}</p>
-              ${percentage}
-            `)
-      }
-    }
+    // function updateTooltip() {
+    //   var tooltip = d3.select(".tooltip");
+    //   var tgt = d3.select(d3.event.target);
+    //   var isCountry = tgt.classed("country");
+    //   var isBar = tgt.classed("bar");
+    //   var isArc = tgt.classed("arc");
+    //   var dataType = d3.select("input:checked")
+    //                    .property("value");
+    //   var units = dataType === "emissions" ? "thousand metric tons" : "metric tons per capita";
+    //   var data;
+    //   var percentage = "";
+    //   if (isCountry) data = tgt.data()[0].properties;
+    //   if (isArc) {
+    //     data = tgt.data()[0].data;
+    //     percentage = `<p>Percentage of total: ${getPercentage(tgt.data()[0])}</p>`;
+    //   }
+    //   if (isBar) data = tgt.data()[0];
+    //   tooltip
+    //       .style("opacity", +(isCountry || isArc || isBar))
+    //       .style("left", (d3.event.pageX - tooltip.node().offsetWidth / 2) + "px")
+    //       .style("top", (d3.event.pageY - tooltip.node().offsetHeight - 10) + "px");
+    //   if (data) {
+    //     var dataValue = data[dataType] ?
+    //       data[dataType].toLocaleString() + " " + units :
+    //       "Data Not Available";
+    //     tooltip 
+    //         .html(`
+    //           <p>Region: ${data.region}</p>
+    //           <p>${formatDataType(dataType)}: ${dataValue}</p>
+    //           <p>Year: ${data.year || d3.select("#year").property("value")}</p>
+    //           ${percentage}
+    //         `)
+    //   }
+    // }
   });
 
   d3.queue()
@@ -158,7 +153,7 @@ d3.queue()
         .on("input", () => {
           currentYear = +d3.event.target.value;
           drawPie(data, currentYear);
-          highlightBars(currentYear);
+          // highlightBars(currentYear);
         });
 
  
@@ -178,6 +173,7 @@ d3.queue()
       var percentage = "";
       if (isCountry) data = tgt.data()[0].properties;
       if (isArc) {
+        
         data = tgt.data()[0].data;
         percentage = `<p>Percentage of total: ${getPercentage(tgt.data()[0])}</p>`;
       }
@@ -187,6 +183,7 @@ d3.queue()
           .style("left", (d3.event.pageX - tooltip.node().offsetWidth / 2) + "px")
           .style("top", (d3.event.pageY - tooltip.node().offsetHeight - 10) + "px");
       if (data) {
+        
         var dataValue = data[dataType] ?
           data[dataType].toLocaleString() + " " + units :
           "Data Not Available";

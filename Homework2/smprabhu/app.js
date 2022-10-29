@@ -28,8 +28,9 @@ d3.queue()
 
     
 
-    createBar(width, height);
-    drawBar(data, currentDataType, "");
+    // createBar(width, height);
+    // drawBar(data, currentDataType, "");
+    trychart();
 
     var countryMap = {};
     var yearFields = ["1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019"];
@@ -67,7 +68,8 @@ d3.queue()
       var selected = d3.select("#countries").node().value;
   
       currentDataType = 'emissionsPerCapita';
-      drawBar(data, currentDataType, selected);
+      // drawBar(data, currentDataType, selected);
+      trychart();
   })
 
 
@@ -79,7 +81,8 @@ d3.queue()
           var country = active ? active.properties.country : "";
 
           currentDataType = d3.event.target.value;
-          drawBar(data, currentDataType, country);
+          // drawBar(data, currentDataType, country);
+          trychart();
         });
 
     d3.selectAll("svg")
@@ -158,7 +161,7 @@ d3.queue()
         .on("input", () => {
           currentYear = +d3.event.target.value;
           drawPie(data, currentYear);
-          highlightBars(currentYear);
+          // highlightBars(currentYear);
         });
 
  
