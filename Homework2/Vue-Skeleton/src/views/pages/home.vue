@@ -1,32 +1,47 @@
 <template>
-    <div>
-        <h1>Welcome Home</h1>
-        <BarChart v-if="dataExists" :myBarchartData="myBarData" />
-    </div>
+    <Header>Welcome To Home Page</Header>
+    <a-row type="flex" justify="center">
+        <a-col :span="12">
+            Advanced Visualization
+        </a-col>
+        <a-col :span="12">
+            <a-row class="height-50">
+                <Histogram />
+            </a-row>
+
+        </a-col>
+        <!-- <a-col :span="4">Sider2</a-col> -->
+    </a-row>
+    <Footer>Footer</Footer>
 </template>
 
 <script>
 import BarChart from "../components/barchart.vue"
 import * as d3 from "d3";
 import csvPath from '../../assets/data/SF_Historical_Ballot_Measures.csv';
+import { Layout } from "ant-design-vue";
+import Histogram from "../components/histogram.vue"
+import { Space } from 'ant-design-vue';
 
 export default {
-    data(){
+    data() {
         return {
             dataExists: false,
             myBarData: [],
+            simpleValue: 50
         }
     },
     components: {
-        BarChart
+        BarChart,
+        Histogram
     },
-    created(){
+    created() {
         /* Fetch via CSV */
         this.drawBarFromCsv()
     },
-    mounted(){},
+    mounted() { },
     methods: {
-        drawBarFromCsv(){
+        drawBarFromCsv() {
             //async method
             d3.csv(csvPath).then((data) => {
                 // array of objects

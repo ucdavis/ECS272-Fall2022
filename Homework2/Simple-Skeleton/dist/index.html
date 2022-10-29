@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Homework 2</title>
-  </head>
-  <body>
-    <div>
-      <h1>Homework 2 Starter</h1>
-      <p>Edit this :)</p>
-      <div id="bar"></div>
+
+<head>
+  <title>Homework 3</title>
+  <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+  <div>
+    <h1>Netflix Comedy Movies: A Look At The Most Prolific Directors</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="text-center">
+            <h3>Genres Overlapping With Comedies</h3>
+          </div>
+          <p1>Select To See Directors That Overlap With Selected Genre</p1>
+          <div id="dropdown"></div>
+          <div id="radar"></div>
+        </div>
+        <div class="col">
+          <div class="text-center">
+            <h3>Comedy Movies IMDB Ratings</h3>
+          </div>
+          <div class="text-center">
+            <form id="form2" class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="toggle" value="No" checked>Hide Points<br>
+              </label>
+              <label class="btn btn-secondary ">
+                <input type="radio" name="toggle" value="Yes" >Show Points<br>
+              </label>
+            </form>
+          </div>
+          <div id="box"></div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- <h4 style="padding-left:500px">Movies By Release Year</h4> -->
+        <div class="col-md-auto d-flex align-items-center" style = "padding:1em 0 0 0">
+          <div id="histo"></div>
+        </div>
+        <div class="d-flex align-items-center">
+          <form id="form">
+            <button type="button" id="reset" value="reset">Reset</button><br>
+            <p1>Select Director To See</p1><br>
+            <p1>Number Of Movies They</p1><br>
+            <p1>Directed Each Year</p1><br>
+            <input type="radio" name="stack" value="Ryan Polito">Ryan Polito<br>
+            <input type="radio" name="stack" value="Jay Karas">Jay Karas<br>
+            <input type="radio" name="stack" value="Jay Chapman">Jay Chapman<br>
+            <input type="radio" name="stack" value="Marcus Raboy">Marcus Raboy<br>
+            <input type="radio" name="stack" value="Raúl Campos">Raúl Campos<br>
+            <input type="radio" name="stack" value="Jan Suter">Jan Suter
+          </form>
+        </div>
+      </div>
     </div>
     <script src="./bundle.js"></script>
-  </body>
+</body>
+
 </html>
