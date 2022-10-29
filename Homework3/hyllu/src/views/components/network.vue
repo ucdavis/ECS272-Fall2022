@@ -140,9 +140,11 @@
 
                 const forEmitThis = this;
 
-                let flag_dbclick_node = false;
+                let flag_dbclick = false;
                 let select_node = "rgb(255, 255, 255)";
                 let select_singer = undefined;
+                let select_link = "rgb(255, 255, 255)";
+                let select_collab = undefined;
                 const margin = { top: 20, right: 5, bottom: 50, left: 5 };
                 // const height = 300;
                 // const width = 500;
@@ -196,7 +198,9 @@
                     .attr('stroke-linecap', 'round')
                     .selectAll('line')
                     .data(links)
-                    .join('line');
+                    .join('line')
+                    .on("click", linkclick)
+                    .on("dblclick", linkdbclick);
 
                 const node = svg.append('g')
                     .attr('stroke', '#fff')
@@ -208,8 +212,51 @@
                     .on("click", nodeclick)
                     .on("dblclick", nodedbclick);
 
+                function linkclick(){
+                    if (flag_dbclick==false && select_link==="rgb(0, 255, 0)"){
+                        d3.select(this).transition()
+                            .duration('50')
+                            .attr('stroke', "rgb(255, 255, 255)");
+                    }
+                };
+
+                function linkdbclick(){
+                    if (flag_dbclick==false){
+                        flag_dbclick = true;
+                        // console.log(this.getAttribute('x1'), this.getAttribute('x2'), this.getAttribute('y1'), this.getAttribute('y2'));
+                        select_collab = [selection.text, T[this.getAttribute('index')]];
+                        console.log(select_collab);
+                        let cx_tmp = this.getAttribute('x2');
+                        let cy_tmp = this.getAttribute('y2');
+                        d3.select(this).transition()
+                            .duration('50')
+                            .attr('stroke', '#0f0');
+                        svg.append("text")
+                            .attr("x", cx_tmp)
+                            .attr("y", cy_tmp)
+                            .attr("class", "click_select")
+                            .text(String(select_collab))
+                            .style("font-size", "12px")
+                            .style("opacity", 1);
+                        select_link = "rgb(0, 255, 0)";
+                        forEmitThis.$emit('selectSingerChange', select_collab);
+                    }
+                    else if (this.getAttribute('stroke')===select_link){
+                        d3.select(this).transition()
+                            .duration('50')
+                        .attr('stroke', '#999')
+                        .attr('stroke-opacity', 0.6);
+                        d3.selectAll(".click_select").remove();
+                        select_link = "rgb(255, 255, 255)";
+                        flag_dbclick = false;
+                        select_collab = undefined;
+                        console.log(select_link, select_collab);
+                        forEmitThis.$emit('selectSingerChange', select_collab);
+                    }
+                };
+
                 function nodeclick(){
-                    if (flag_dbclick_node==false && select_node==="rgb(0, 255, 0)"){
+                    if (flag_dbclick==false && select_node==="rgb(0, 255, 0)"){
                         d3.select(this).transition()
                             .duration('50')
                             .attr('stroke', "rgb(255, 255, 255)");
@@ -218,8 +265,8 @@
 
                 function nodedbclick(){
                     console.log(d3.select(this).select('title').text());
-                    if (flag_dbclick_node==false){
-                        flag_dbclick_node = true;
+                    if (flag_dbclick==false){
+                        flag_dbclick = true;
                         let cx_tmp = this.getAttribute('cx');
                         let cy_tmp = this.getAttribute('cy');
                         d3.select(this).transition()
@@ -243,7 +290,7 @@
                             .attr('stroke', '#fff');
                         d3.selectAll(".click_select").remove();
                         select_node = "rgb(255, 255, 255)";
-                        flag_dbclick_node = false;
+                        flag_dbclick = false;
                         select_singer = undefined;
                         console.log(select_node, select_singer);
                         forEmitThis.$emit('selectSingerChange', select_singer);
@@ -259,7 +306,8 @@
                         .attr('x1', d => d.source.x)
                         .attr('y1', d => d.source.y)
                         .attr('x2', d => d.target.x)
-                        .attr('y2', d => d.target.y);
+                        .attr('y2', d => d.target.y)
+                        .attr('index', d => d.target.index);
                     node
                         .attr('cx', d => d.x)
                         .attr('cy', d => d.y);
