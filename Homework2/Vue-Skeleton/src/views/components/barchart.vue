@@ -30,7 +30,7 @@
 
                 const margin = { top: 40, right: 40, bottom: 120, left: 100 };
                 const height = 300;
-                const width = 500;
+                const width = 400;
 
                 const x = d3.scaleBand().domain(data.map(d => d.y))
                     .rangeRound([margin.left, width - margin.right])

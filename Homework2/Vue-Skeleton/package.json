@@ -21,13 +21,16 @@
     "@vue/composition-api": "^1.4.9",
     "animate.css": "^4.1.1",
     "ant-design-vue": "^2.2.8",
+    "bootstrap": "^5.2.2",
     "core-js": "^3.18.1",
-    "d3": "^6.6.2",
+    "d3": "^7.6.1",
+    "heatmap.js": "^2.0.5",
     "pinia": "^2.0.13",
     "stats.js": "^0.17.0",
     "util": "^0.12.4",
     "vue": "^3.2.31",
-    "vue-router": "^4.1.1"
+    "vue-router": "^4.1.1",
+    "vue-slide-bar": "^1.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",

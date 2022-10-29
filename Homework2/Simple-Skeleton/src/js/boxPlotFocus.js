@@ -10,8 +10,8 @@ export async function drawBoxFromCsvAsync() {
     console.log(data);
 
     const margin = { top: 20, right: 90, bottom: 50, left: 90 };
-    const width = 720 - margin.left - margin.right;
-    const height = 220 - margin.top - margin.bottom;
+    const width = 700 - margin.left - margin.right;
+    const height = 215 - margin.top - margin.bottom;
 
 
 
@@ -22,7 +22,7 @@ export async function drawBoxFromCsvAsync() {
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform",
-            "translate(" + margin.left + "," + margin.top + ")");
+            "translate(" + margin.left + "," + margin.top + ")")
 
     var svg2 = d3.select("#box")
         .append("svg")
