@@ -322,6 +322,8 @@
                 this.dots = this.svg.selectAll("#dots")
                     .data(data)
                     .join("circle")
+                    .transition()
+                    .duration(1000)
                     .attr("cx", d => this.x(d.instrumentalness))
                     .attr("cy", d => this.y(d.liveness))
                     .attr("id", "dots")
