@@ -3,12 +3,12 @@
         <div id="left_view">
             <div id="intro">
                 Overview: <br>
-                Find the interested singer to focus on using the dropdown menu. <br>
+                <!-- Find the interested singer to focus on using the dropdown menu. <br>
                 The network layout shows the focused singer (center) and the singers he or she has collaborated with. <br>
                 The size of a node (singer) encodes the collaboration count. <br>
                 The edge thickness encodes how many times they have collaboraed with each other. <br>
                 Hover over nodes to check the singers' names. <br>
-                The center singer's collaborators will show up in the dopdown menu. <br>
+                The center singer's collaborators will show up in the dopdown menu. <br> -->
             </div>
             <div id="network_view">
                 <Dropdown_Network :myData="hop_1" @selectedChange="handleChange_network"/>
@@ -19,7 +19,7 @@
         <div id="right_view">
             <div id="bar_view">
                 <Dropdown @selectedChange="handleChange" />
-                <BarChart v-if="dataExists" :myBarchartData="myData" :mySelection="selected" :mySinger="selected_network.text" @colorChange="handlecolor_views" />
+                <BarChart v-if="BarExists" :myBarchartData="myData" :mySelection="selected" :mySinger="selectSinger" @colorChange="handlecolor_views" />
             </div>
             <div id="beeswarm_view">
                 <Dropdown_Beeswarm @selectedChange="handleChange_beeswarm"/>
@@ -44,6 +44,7 @@ export default {
     data(){
         return {
             dataExists: false,
+            BarExists: false,
             myData: [],
             selected: {id: 0, text: 'Popularity All'},
             selected_beeswarm: {id: 0, text: 'acousticness'},
@@ -100,6 +101,12 @@ export default {
         handleselectSinger_network(select_singer){
             console.log('parent noticed change selectSinger ' + select_singer);
             this.selectSinger = select_singer;
+            if (this.selectSinger !== undefined){
+                this.BarExists = true;
+            }
+            else {
+                this.BarExists = false;
+            }
         },
         handlecolor_views(color){
             console.log('parent noticed change color ' + color);

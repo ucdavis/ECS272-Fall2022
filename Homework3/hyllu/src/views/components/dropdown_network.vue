@@ -25,6 +25,7 @@
             myData: function(newVal, oldVal) { // watch it
                 console.log(this.myData);
                 this.popularities = this.myData;
+                this.selected = this.myData[0];
             }
         },
         mounted(){ 

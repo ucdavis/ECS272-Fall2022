@@ -148,6 +148,7 @@
                 const margin = { top: 20, right: 5, bottom: 50, left: 5 };
                 // const height = 300;
                 // const width = 500;
+                forEmitThis.$emit('selectSingerChange', select_singer);
 
                 let width  = d3.select(id).node().getBoundingClientRect().width;
                 let height = d3.select(id).node().getBoundingClientRect().width;
