@@ -19,8 +19,8 @@
                 <li><input type="checkbox" @click="checkboxChanged($event)" checked=true id="Cleanliness"/> Cleanliness</li>
             </ul>
         </div>
-        <div id="radar"> </div>
         <h1 id="radar_title">Average Respondent Rating By Service Category</h1>
+        <div id="radar"> </div>
     </div>
 </template>
 
@@ -205,6 +205,11 @@
                                 return "cb1";
                             }
                         });
+
+                const transitionPath = d3
+                    .transition()
+                    .ease(d3.easeSin)
+                    .duration(2500);
                 
                 plots.append('path')
                     .attr("d", d => radarLine(d.map(v => v.value)))
@@ -236,6 +241,7 @@
                         .attr("cx", (d,i) => rScale(d.value) * Math.cos(this.angleSlice*i - Math.PI/2))
                         .attr("cy", (d,i) => rScale(d.value) * Math.sin(this.angleSlice*i - Math.PI/2))
                     .on("mouseover", function(d) {
+                        console.log(d.clientX, d.clientY);
                         d3.select(this)
                         .attr("r", dotRadius+2)
                     })
@@ -249,15 +255,30 @@
                             return String(Math.round(d.value*100)/100)+"/5";
                         });
 
-                svg.call(d3.zoom()
+                var zoom = d3.zoom()
                     .extent([[0, 0], [this.width, this.height]])
                     .scaleExtent([1, 8])
-                    .on("zoom", zoomed));
+                    .on("zoom", zoomed).on("zoom", zoomed);
 
                 function zoomed({transform}) {
-                    svg.selectAll("circle, path, .levels, .axis").attr("transform", transform);
-                    //svg.attr("transform", transform);
+                    d3.select("#radar svg g").attr("transform", transform);
+                    // Hide title when zooming in / restore when zooming out
+                    if(transform['k'] != 1) {
+                        d3.select("#radar_title")
+                            .style("transition", "opacity 0.8s")
+                            .style("opacity", 0.0);
+                    } else {
+                        d3.select("#radar_title")
+                            .style("transition", "opacity 0.8s")
+                            .style("opacity", 1.0);
+                    }
                 }
+
+                d3.select('#radar').select('svg').call(zoom);
+                // After initial zoom, recenter svg
+                d3.select('#radar').select('svg')
+                    .call(zoom.transform, d3.zoomIdentity.scale(1)
+                        .translate((this.width/2)+this.margin, (this.height/2)+this.margin));
 
             },
             groupBy(objectArray, property) {
@@ -376,7 +397,6 @@
     padding-left: 10px;
     position: absolute;
     z-index: 10;
-    
 }
 
 #radar svg {
@@ -384,6 +404,7 @@
     z-index: 9;
     color: blue;
     overflow: hidden;
+    margin-top: -5%;
 }
 
 .dropdown-check-list {
@@ -464,9 +485,9 @@ g[data-name="cb1"] circle {
 #radar_title {
     padding-top: 10px;
     padding-left: 100px;
-    position: relative;
     font-weight: bold;
     text-decoration: underline;
     text-align: center;
 }
+
 </style>

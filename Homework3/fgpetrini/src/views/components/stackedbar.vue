@@ -20,6 +20,8 @@
                 color_dict : {"default" : ["#999999", "#ef8a62"],
                                 "cb_accessible" : ["#67a9cf", "#ef8a62"] },
                 plot_title : "Respondent Satisfaction By Travel Class",
+                bar_clicked : true,
+                currently_clicked : "default",
             }
         },
         props:{
@@ -30,6 +32,7 @@
             radio_option: String,
         },
         mounted(){
+            console.log("HELLO", this.currently_clicked);
             let pixels = String(Math.round(this.width / 40));
             document.getElementById("bar_title").style.fontSize = pixels+"px";
             this.satisfaction_data = this.getStackedClassBins(this.myStackedBarData, "satisfaction");
@@ -168,15 +171,57 @@
                     .attr("y", ([y1, y2]) => Math.min(yScale(y1), yScale(y2)))
                     .attr("height", ([y1, y2]) => Math.abs(yScale(y1) - yScale(y2)))
                     .attr("width", xScale.bandwidth())
-                    .on("mouseover", function(d, i, node) {
-                            console.log(d, i);
+                    .attr("bar-category", (d) => {
+                        console.log(d['i']);
+                        if(d['i'] == 0 || d['i'] == 1) {
+                            return "Eco";
+                        } else if(d['i'] == 2 || d['i'] == 3) {
+                            return "Eco Plus";
+                        } else {
+                            return "Business";
+                        }
+                    })
+                    .on("mouseover", function(d,i) {
+                        //console.log(i);
+                        let target_param = i['data'][0];
                             d3.selectAll("rect")
-                            //.filter(function (x) { return !isInArray(this, node)})
+                                .filter(function() {
+                                    return d3.select(this).attr("bar-category") != target_param
+                                })
+                            .style("transition", "opacity 0.8s")
                             .attr('opacity', 0.5);
                         })
                     .on("mouseout", function(d) {
-                    d3.select(this)
-                        .attr("stroke", "none")
+                        d3.selectAll("rect")
+                            .style("transition", "opacity 0.8s")
+                            .attr('opacity', 1.0);
+                    })
+                    .on("click", function(d,i) {
+                        let target_param = i['data'][0];
+                        let all_rect = d3.selectAll("rect");
+                        let target_bar = all_rect.filter(function() {
+                            return d3.select(this).attr("bar-category") == target_param
+                        });
+                        // Clear any previous modifications
+                        all_rect.attr("stroke", "black")
+                                .attr("stroke-width", 0)
+                        
+                        console.log(this.currently_clicked, target_param);
+                        if(this.currently_clicked != target_param) {
+                            this.bar_clicked = true;
+                            this.currently_clicked = target_param;
+                        } else {
+                            this.bar_clicked = false;
+                            this.currently_clicked = "default";
+                        }
+                        if(this.bar_clicked) {
+                            target_bar.attr("stroke", "black")
+                                .attr("stroke-width", 2)
+                        } else {
+                            target_bar.attr("stroke", "black")
+                                .attr("stroke-width", 0)
+                        }
+                        console.log(this.bar_clicked,this.currently_clicked);
                     });
 
                 if (title) bar.append("title")
