@@ -247,10 +247,6 @@ function Dashboard({ data }) {
 }
 
 export default function App() {
-  useEffect(() => {
-    alert("")
-  });
-
   return (
     <Async promiseFn={fetchData}>
       {({ data, error, isLoading }) => {
