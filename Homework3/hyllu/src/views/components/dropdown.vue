@@ -25,6 +25,14 @@
                 ]
             }
         },
+        props:{ // received data from others
+            mySelection: Object 
+        },
+        watch: { 
+            mySelection: function(newVal, oldVal) { // watch it
+                this.selected = this.mySelection;
+            }
+        },
         mounted(){ 
             // console.log(this.selected.id, this.selected.text);
             // this.selectedCompound(this.selected);

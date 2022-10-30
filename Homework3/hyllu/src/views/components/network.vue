@@ -245,8 +245,8 @@
                     else if (this.getAttribute('stroke')===select_link){
                         d3.select(this).transition()
                             .duration('50')
-                        .attr('stroke', '#999')
-                        .attr('stroke-opacity', 0.6);
+                            .attr('stroke', '#999')
+                            .attr('stroke-opacity', 0.6);
                         d3.selectAll(".click_select").remove();
                         select_link = "rgb(255, 255, 255)";
                         flag_dbclick = false;

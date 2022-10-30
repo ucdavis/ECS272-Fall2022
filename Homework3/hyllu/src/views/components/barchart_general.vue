@@ -215,6 +215,10 @@ import { object } from "vue-types";
 
             drawBarChart(data, id, selection) {
 
+                let flag_dbclick = false;
+                let select_switch = "rgb(255, 255, 255)";
+                let select_item = undefined;
+
                 const margin = { top: 20, right: 40, bottom: 60, left: 60 };
                 // const height = 300;
                 // const width = 500;
@@ -274,8 +278,55 @@ import { object } from "vue-types";
                     .attr('x', i => xScale(X[i]))
                     .attr('y', i => yScale(Y[i]))
                     .attr('height', i => yScale(0) - yScale(Y[i]))
-                    .attr('width', xScale.bandwidth());
+                    .attr('width', xScale.bandwidth())
+                    .attr('index', i => i)
+                    .on("click", barclick)
+                    .on("dblclick", bardbclick);
                 
+                function barclick(){
+                    if (flag_dbclick==false && select_switch==="rgb(0, 255, 0)"){
+                        d3.select(this).transition()
+                            .duration('50')
+                            .attr('stroke', '#999')
+                            .attr('stroke-width', 0);
+                    }
+                };
+
+                function bardbclick(){
+                    if (flag_dbclick==false){
+                        flag_dbclick = true;
+                        // console.log(this.getAttribute('x1'), this.getAttribute('x2'), this.getAttribute('y1'), this.getAttribute('y2'));
+                        select_item = this.getAttribute('index');
+                        console.log(select_item);
+                        let cx_tmp = this.getAttribute('x');
+                        let cy_tmp = this.getAttribute('y');
+                        d3.select(this).transition()
+                            .duration('50')
+                            .attr('stroke', '#0f0')
+                            .attr('stroke-width', 2);
+                        svg.append("text")
+                            .attr("x", cx_tmp)
+                            .attr("y", cy_tmp)
+                            .attr("class", "click_select_bar")
+                            .text(String(select_item))
+                            .style("font-size", "12px")
+                            .style("opacity", 1);
+                            select_switch = "rgb(0, 255, 0)";
+                        // forEmitThis.$emit('selectSingerChange', select_item);
+                    }
+                    else if (this.getAttribute('stroke')===select_switch){
+                        d3.select(this).transition()
+                            .duration('50')
+                            .attr('stroke-width', 0);
+                        d3.selectAll(".click_select_bar").remove();
+                        select_switch = "rgb(255, 255, 255)";
+                        flag_dbclick = false;
+                        select_item = undefined;
+                        console.log(select_switch, select_item);
+                        // forEmitThis.$emit('selectSingerChange', select_item);
+                    }
+                };
+
                 
                 // add lengend for chosen colors.
                 svg.append("circle")

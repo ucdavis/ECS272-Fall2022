@@ -18,7 +18,7 @@
         
         <div id="right_view">
             <div id="bar_view">
-                <Dropdown @selectedChange="handleChange" />
+                <Dropdown :mySelection="selected" @selectedChange="handleChange" />
                 <BarChart v-if="BarExists" :myBarchartData="myData" :mySelection="selected" :mySinger="selectSinger" @colorChange="handlecolor_views" />
             </div>
             <div id="beeswarm_view">
@@ -106,6 +106,7 @@ export default {
             }
             else {
                 this.BarExists = false;
+                this.selected = {id: 0, text: 'Popularity All'};
             }
         },
         handlecolor_views(color){
