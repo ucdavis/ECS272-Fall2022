@@ -1,6 +1,6 @@
 
 d3.queue()
-  .defer(d3.csv, "./data/data.csv", function(row) {
+  .defer(d3.csv, "./data/East_Asia_&_Pacific.csv", function(row) {
     return {
       region: row.date,
       year: row.price
@@ -24,45 +24,72 @@ d3.queue()
 
     // createBar(width, height);
     // drawBar(data, currentDataType, "");
-    drawBar(width, height, data);
-
-    // var regionMap = {};
-    // var yearFields = ["1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019"];
-    // data.forEach(function(d) {
-    //     var region = d.region;
-    //     regionMap[region] = [];
-
-    //     yearFields.forEach(function(field) {
-    //       regionMap[region].push( +d[field] );
-    //     });
-    // });
-
-    // var regions = Object.keys(regionMap).sort();
-
-
-    // var select = document.createElement("select");
-    // select.name = "regions";
-    // select.id = "regions"
-
-    // for (const val of regions) {
-    //   var option = document.createElement("option");
-    //   option.value = val;
-    //   option.text = val.charAt(0).toUpperCase() + val.slice(1);
-    //   select.appendChild(option);
-    // }
-
-    // var label = document.createElement("label");
-    // label.innerHTML = "Select a region to display yearwise data"
-    // label.htmlFor = "regions";
-
-  //   document.getElementById("dropdown").appendChild(label).appendChild(select);
+    drawBar(width, height, 'East_Asia_&_Pacific');
     
-  //   d3.select("select")
-  //   .on("change",function(d){
-  //     var selected = d3.select("#regions").node().value;
+    var regionMap = {};
+    var yearFields = ["1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019"];
+    data.forEach(function(d) {
+        var region = d.region;
+        regionMap[region] = [];
+
+        yearFields.forEach(function(field) {
+          regionMap[region].push( +d[field] );
+        });
+    });
+    var regions = Object.keys(regionMap).sort();
+
+    regions = ['East_Asia_&_Pacific', 'Europe_&_Central_Asia', 'Latin_America_&_Caribbean', 'Middle_East_&_North_Africa', 'North_America', 'South_Asia', 'Sub-Saharan_Africa']
+    
+
+    var select = document.createElement("select");
+    select.name = "regions";
+    select.id = "regions"
+
+    for (const val of regions) {
+      var option = document.createElement("option");
+      option.value = val;
+      option.text = val.charAt(0).toUpperCase() + val.slice(1);
+      select.appendChild(option);
+    }
+
+    var label = document.createElement("label");
+    label.innerHTML = "Select a region to display yearwise data"
+    label.htmlFor = "regions";
+
+    document.getElementById("dropdown").appendChild(label).appendChild(select);
+
+    d3.select("select")
+    .on("change",function(d){
+      var selected = d3.select("#regions").node().value;
+      console.log("App.js selected",selected);
+      var svg = d3.select("#bar");
+      svg.selectAll("*").remove();
+      drawBar(width, height, selected);
+      // if (selected === 'South_Asia'){
+      //   var svg = d3.select("#bar");
+      //   svg.selectAll("*").remove();
   
-  //     currentDataType = 'emissionsPerCapita';
-  //     drawBar(data, currentDataType, selected);
+      //   drawBar(data, currentDataType, "./data/"+selected+".csv");
+      // }
+      
+
+  // //       d3.queue()
+  // // .defer(d3.csv, "./data/South_Asia.csv", function(row) {
+  // //   return {
+  // //     region: row.date,
+  // //     year: row.price
+  // //   }
+  // // })
+  // // .await(function(error, data) {
+  // //   if (error) throw error;
+  // //   var svg = d3.select("#bar");
+  // //   svg.selectAll("*").remove();
+  // //   console.log("asia");
+  // //   drawBar(width, height, data);
+  // // });
+        
+  //     // currentDataType = 'emissionsPerCapita';
+  //     // drawBar(data, currentDataType, selected);
   // })
 
 
@@ -207,21 +234,4 @@ function getPercentage(d) {
   var fraction = 100 * angle / (Math.PI * 2);
   return fraction.toFixed(2) + "%";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  });
