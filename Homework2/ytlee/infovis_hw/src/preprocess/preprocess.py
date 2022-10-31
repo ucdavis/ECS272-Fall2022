@@ -84,11 +84,11 @@ def further_preprocess(filepath=r'data.json'):
     artist_dict = generate_artist_song_dict(data)
     filtered_artist_dict = filter_artists_by_songs_number(artist_dict, 50,1000)
     artist_info_dict = generate_artist_ranking_info(filtered_artist_dict)
-    sorted_artist_list = list(artist_info_dict.keys())
-    sorted_artist_list.sort(reverse=True, key=lambda a:artist_info_dict[a]["mse"])
+    # sorted_artist_list = list(artist_info_dict.keys())
+    # sorted_artist_list.sort(reverse=True, key=lambda a:artist_info_dict[a]["mse"])
     save_json(filtered_artist_dict, filepath="artist_song_dict.json")
     save_json(artist_info_dict, filepath="artist_rank_info_dict.json")
-    save_json(sorted_artist_list, filepath="sorted_artist_list.json")
+    # save_json(sorted_artist_list, filepath="sorted_artist_list.json")
 
 
 def generate_artist_song_dict(data):
@@ -111,7 +111,7 @@ def filter_artists_by_songs_number(artist_dict, min, max):
             songs.sort(key=lambda song: song["year"])
     for filtered_artist in del_list:
         del artist_dict[filtered_artist]
-    print(len(artist_dict.keys()))
+    # print(len(artist_dict.keys()))
     return artist_dict
 
 def generate_artist_ranking_info(artist_dict):
@@ -137,8 +137,9 @@ def generate_artist_ranking_info(artist_dict):
         artist_mse = statistics.fmean([song_mse(song, dimension_keys, dimension_means) for song in songs])
         if(artist not in artist_info_dict.keys()):
             artist_info_dict[artist] = {}
-        artist_info_dict[artist]["mse"] = artist_mse
-        artist_info_dict[artist]["num_songs"] = len(songs)
+        # deprecated
+        # artist_info_dict[artist]["mse"] = artist_mse
+        artist_info_dict[artist]["songs"] = songs
     return artist_info_dict
 
 def song_mse(song, dimension_keys, dimension_means):

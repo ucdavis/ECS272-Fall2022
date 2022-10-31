@@ -35,6 +35,7 @@ export class BeeswarmChart {
     height: number;
     T:any;
     tooltip:any;
+    init_done:boolean;
 
     public constructor(id: String, options:any) {
         this.id = id
@@ -42,43 +43,38 @@ export class BeeswarmChart {
         this.options = options
         this.width = this.cfg.vbWidth - this.cfg.margin.left - this.cfg.margin.right
         this.height = this.cfg.vbHeight - this.cfg.margin.top - this.cfg.margin.bottom
+        this.init_done = false
     }
 
-  init() {
-    if('undefined' !== typeof this.options){
-        for(var i in this.options){
-            if('undefined' !== typeof this.options[i]){ (this.cfg as any)[i] = this.options[i]; }
+    init() {
+        if('undefined' !== typeof this.options){
+            for(var i in this.options){
+                if('undefined' !== typeof this.options[i]){ (this.cfg as any)[i] = this.options[i]; }
+            }
         }
+
+        const svg = d3.select(`${this.id}`).append("svg")
+            .attr("class", "beeswarm_svg")
+            .attr("viewBox", `0 0 ${this.cfg.vbWidth} ${this.cfg.vbHeight}`)
+            .attr("width", "100%")
+            .attr("height", "100%")
+            // .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
+        const canvas = svg.append("g").attr("class", "canvas")
+                    .attr("transform", "translate(" + (this.cfg.margin.left) + "," + (this.cfg.margin.top) + ")");
+        this.tooltip = d3.select(`${this.id}`).select(".tooltip")
+        this.updateXaxis(this.cfg.xMin, this.cfg.xMax)
+        const zoomed:any = ({transform}) => {
+            console.log("🚀 ~ file: BeeswarmChart.ts ~ line 68 ~ BeeswarmChart ~ init ~ transform", transform)
+            canvas.attr("transform", transform)
+            const xAxis = d3.axisBottom(this.cfg.xScale).tickSizeOuter(0);
+            canvas.select("g.x-axis").call(xAxis.scale(transform.reSacleX(this.cfg.xScale)))
+        }
+        const zoom: any = d3.zoom().scaleExtent([1, 3]).on("zoom", zoomed)
+        svg.call(zoom)
     }
 
-    const svg = d3.select(`${this.id}`).append("svg")
-        .attr("viewBox", `0 0 ${this.cfg.vbWidth} ${this.cfg.vbHeight}`)
-        .attr("width", "100%")
-        .attr("height", "100%")
-        // .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
-    const canvas = svg.append("g").attr("class", "canvas")
-				.attr("transform", "translate(" + (this.cfg.margin.left) + "," + (this.cfg.margin.top) + ")");
-    this.tooltip = d3.select(`${this.id}`).select(".tooltip")
-    console.log(this.cfg.xMin, this.cfg.xMax)
-    // this.cfg.xScale = d3.scaleLinear()
-    this.cfg.xScale = d3.scaleLog()
-        .domain([this.cfg.xMin, this.cfg.xMax])
-        .range([0, this.width])
-    const xAxis = d3.axisBottom(this.cfg.xScale).tickSizeOuter(0);
-    // x axis
-    canvas.append("g")
-        .attr("transform", `translate(0,${this.height})`)
-        .call(xAxis)
-        .call(g => g.append("text")
-            .attr("x", this.width )
-            .attr("y", 30)
-            .attr("fill", "currentColor")
-            .attr("text-anchor", "end")
-            .text(this.cfg.xLabel));
-    }
     update(data, emit) {
-        console.log("update: ", data)
-        const canvas = d3.select(`${this.id}`).select("svg").select("g.canvas")
+        const canvas = d3.select("svg.beeswarm_svg").select("g.canvas")
         // Compute values.
         const X = d3.map(data, this.cfg.x).map(x => x == null ? NaN : +x);
         const T = this.cfg.title == null ? null : d3.map(data, this.cfg.title);
@@ -139,11 +135,33 @@ export class BeeswarmChart {
         const dot = canvas
             .selectAll("circle")
             .data(I)
-            .join("circle")
-            .attr("cx", i => this.cfg.xScale(X[i]))
-            .attr("cy", i => this.height -  this.cfg.radius - Y[i])
-            .attr("r", this.cfg.radius)
-            .attr("cursor", "pointer")
+            .join(
+                enter => enter.append("circle")
+                        .attr("cx", i => this.cfg.xScale(X[i]))
+                        .attr("cy", 0)
+                        .attr("fill", this.init_done?"#01c401":"black")
+                        .attr("r", this.init_done?this.cfg.radius:0)
+                        .transition().duration(1000)
+                        .attr("cx", i => this.cfg.xScale(X[i]))
+                        .attr("cy", i => this.height -  this.cfg.radius - Y[i])
+                        .attr("r", this.cfg.radius)
+                        .transition().duration(100).delay(500)
+                        .attr("fill", this.init_done?"#01c401":"black")
+                        .attr("cursor", "pointer")
+                        .selection(),
+                update => update.attr("fill", "black")
+                    .transition().duration(1000).delay(800)
+                    .attr("cx", i => this.cfg.xScale(X[i]))
+                    .attr("cy", i => this.height -  this.cfg.radius - Y[i])
+                    .attr("fill", "black")
+                    .selection(),
+                exit => exit.transition().duration(500)
+                    .attr("fill", "red")
+                    .transition().duration(1000).delay(500)
+                    .attr("cy", -100)
+                    .style("opacity", -1)
+                    .remove()
+            )
             .on("mousemove", function(e) {
                 self.tooltip
                     .style("left", e.offsetX + 20 + "px")
@@ -167,5 +185,26 @@ export class BeeswarmChart {
             .on("click", function(e, i){
                 emit("node-clicked", self.T[i])
             })
+        if(!this.init_done) this.init_done = true
+    }
+    updateXaxis(xMin, xMax) {
+        const canvas = d3.select("svg.beeswarm_svg").select("g.canvas")
+        this.cfg.xScale = d3.scaleLog()
+            .domain([xMin, xMax])
+            .range([0, this.width])
+        const xAxis = d3.axisBottom(this.cfg.xScale).tickSizeOuter(0);
+        canvas.select("g.x-axis").remove()
+        // x axis
+        canvas.append("g")
+            .attr("class", "x-axis")
+            .attr("transform", `translate(0,${this.height})`)
+            .call(xAxis)
+            .call(g => g.append("text")
+                .attr("x", this.width )
+                .attr("y", 30)
+                .attr("fill", "currentColor")
+                .attr("text-anchor", "end")
+                .text(this.cfg.xLabel));
     }
 }  
+

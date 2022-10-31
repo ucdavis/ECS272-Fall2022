@@ -109,9 +109,7 @@ import { CaretRightOutlined, PauseOutlined } from '@ant-design/icons-vue';
 
 // import ArtistScatterPlot from "../components/ArtistScatterPlot.vue"
 
-import artist_rank_info_dict from "../../assets/data/artist_rank_info_dict.json" 
 import artist_song_dict from "../../assets/data/artist_song_dict.json" 
-// import sorted_artist_list from "../../assets/data/sorted_artist_list.json" 
 const intro_label: Ref<any> = ref(null)
 const radar_chart: Ref<any> = ref(null)
 const animate_step: Ref<number> = ref(0)
@@ -123,11 +121,9 @@ vue.watch(animate_step, (new_value, old_value) => {
 const selected_attribute = ref("acousticness")
 const barchart_data = vue.computed(() => {
     if(selected_artist.value === undefined) return undefined
-    console.log(artist_song_dict[selected_artist.value])
     return artist_song_dict[selected_artist.value].map((item: any) => {return {x:item["name"], y:item[selected_attribute.value], year:item["year"]}})
 })
 const radarchart_data = vue.computed(() => {
-    console.log(selected_artist.value)
     if(selected_artist.value === undefined) return undefined
     return artist_song_dict[selected_artist.value]
 })
@@ -135,12 +131,13 @@ const selected_artist = ref(undefined)
 
 const beeswarm_data = vue.computed(() => {
     let res: any[] = []
-    Object.keys(artist_rank_info_dict).forEach((artist: string) => {
+    Object.keys(artist_song_dict).forEach((artist: string) => {
         res.push({
             artist: artist,
-            value: artist_rank_info_dict[artist].num_songs
+            songs: artist_song_dict[artist]
         })
     })
+    console.log(res)
     return res
 })
 
