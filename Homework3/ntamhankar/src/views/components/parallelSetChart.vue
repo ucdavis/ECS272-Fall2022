@@ -260,11 +260,12 @@
 
                 // Draw the axis:
                 this.axes = this.svg
-                    .append('g')
-                    .selectAll('g')
+                    //.append('g')
+                    .selectAll('#axes')
                     // For each dimension of the dataset I add a 'g' element:
                     .data(this.g1Dimensions)
                     .join("g")
+                    .attr("id", "axes")
                     // I translate this element to its right position on the x axis
                     .attr("transform", function(d) { return "translate(" + x(d) + ")"; })
                     // And I build the axis with the call function
@@ -453,6 +454,8 @@
                     .style("stroke", d => color(selectedSinger))
 
                 console.log(this.lines)
+
+                this.svg.selectAll("#axes").raise();
 
 
                 // start of with just the current artist

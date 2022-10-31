@@ -30,8 +30,6 @@
                 color: null, // function used to assign color to the dots
                 x: null, // function used to determine the x-coordinate
                 y: null, // function used to determine the y-coordinate
-                opacityFlag: null,
-                dots: null,
 
                 zoom: null,
 
@@ -179,9 +177,6 @@
                 let annotations = null;
                 let line = null;
 
-                // Needed for switch
-                this.opacityFlag = 1;
-
                 this.svg = d3.select(viz)
                         .append("svg")
                             .attr("preserveAspectRatio", "xMidYMid meet")
@@ -219,7 +214,7 @@
 
 
                 // add dots
-                this.dots = this.svg.selectAll("#dots")
+                let dots = this.svg.selectAll("#dots")
                     .data(this.topSongs)
                     .join("circle")
                     .attr("cx", d => this.x(d.instrumentalness))
@@ -289,7 +284,7 @@
                 const zoomed = ({transform}) => {
                     const zx = transform.rescaleX(this.x).interpolate(d3.interpolateRound);
                     const zy = transform.rescaleY(this.y).interpolate(d3.interpolateRound);
-                    this.dots.attr("transform", transform).attr("stroke-width", 5);
+                    this.svg.selectAll("#dots").attr("transform", transform).attr("stroke-width", 5);
                     gx.call(xAxis, zx);
                     gy.call(yAxis, zy);
                 }
@@ -319,9 +314,12 @@
 
                 console.log("trying to update scatter chart")
 
-                this.dots = this.svg.selectAll("#dots")
+                let dots = this.svg.selectAll("#dots")
                     .data(data)
                     .join("circle")
+
+
+                dots
                     .transition()
                     .duration(1000)
                     .attr("cx", d => this.x(d.instrumentalness))
@@ -329,6 +327,8 @@
                     .attr("id", "dots")
                     .style("fill", (d) => {return this.color(this.getArtists(d.artists)[0]);})
                     .attr("r", 4)
+
+                dots
                     .on("mouseover.highlight", function(event, d){
                         d3.select(this)
                         .raise() // bring to front
@@ -339,7 +339,8 @@
                     })
                     .on("mouseout.highlight", function(event, d) {
                         d3.select(this).style("stroke", null);
-                    });
+                    })
+
 
             },
             resetChart(){
