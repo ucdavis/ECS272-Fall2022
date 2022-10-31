@@ -1,0 +1,4866 @@
+{"items": {
+"nodes":[
+  {
+    "node": "1",
+    "name": "Lightning",
+    "value": 4216.26,
+    "id": "Lightning"
+  },
+  {
+    "node": "2",
+    "name": "Miscellaneous",
+    "value": 2812.11,
+    "id": "Miscellaneous"
+  },
+  {
+    "node": "3",
+    "name": "Equipment Use",
+    "value": 1561.23,
+    "id": "Equipment-Use"
+  },
+  {
+    "node": "4",
+    "name": "Arson",
+    "value": 1396.07,
+    "id": "Arson"
+  },
+  {
+    "node": "5",
+    "name": "Campfire/Children/Smoking/Fireworks",
+    "value": 1215.37,
+    "id": "Campfire-Children-Smoking-Fireworks"
+  },
+  {
+    "node": "6",
+    "name": "Missing/Undefined",
+    "value": 795.72,
+    "id": "Missing-Undefined"
+  },
+  {
+    "node": "7",
+    "name": "Debris Burning",
+    "value": 397.58,
+    "id": "Debris-Burning"
+  },
+  {
+    "node": "8",
+    "name": "Powerline/Railroad/Structure",
+    "value": 351.52,
+    "id": "Powerline-Railroad-Structure"
+  },
+  {
+    "node": "9",
+    "name": "Summer",
+    "value": 8887.02,
+    "id": "Summer"
+  },
+  {
+    "node": "10",
+    "name": "Fall",
+    "value": 2373.47,
+    "id": "Fall"
+  },
+  {
+    "node": "11",
+    "name": "Winter",
+    "value": 103.73,
+    "id": "Winter"
+  },
+  {
+    "node": "12",
+    "name": "Spring",
+    "value": 1381.64,
+    "id": "Spring"
+  },
+  {
+    "node": "13",
+    "name": "1992",
+    "value": 296.44,
+    "id": "1992"
+  },
+  {
+    "node": "14",
+    "name": "1993",
+    "value": 321.5,
+    "id": "1993"
+  },
+  {
+    "node": "15",
+    "name": "1994",
+    "value": 407.94,
+    "id": "1994"
+  },
+  {
+    "node": "16",
+    "name": "1995",
+    "value": 216.07,
+    "id": "1995"
+  },
+  {
+    "node": "17",
+    "name": "1996",
+    "value": 707.11,
+    "id": "1996"
+  },
+  {
+    "node": "18",
+    "name": "1997",
+    "value": 324.57,
+    "id": "1997"
+  },
+  {
+    "node": "19",
+    "name": "1998",
+    "value": 160.01,
+    "id": "1998"
+  },
+  {
+    "node": "20",
+    "name": "1999",
+    "value": 804.12,
+    "id": "1999"
+  },
+  {
+    "node": "21",
+    "name": "2000",
+    "value": 252.68,
+    "id": "2000"
+  },
+  {
+    "node": "22",
+    "name": "2001",
+    "value": 350.18,
+    "id": "2001"
+  },
+  {
+    "node": "23",
+    "name": "2002",
+    "value": 514.94,
+    "id": "2002"
+  },
+  {
+    "node": "24",
+    "name": "2003",
+    "value": 1031.97,
+    "id": "2003"
+  },
+  {
+    "node": "25",
+    "name": "2004",
+    "value": 301.1,
+    "id": "2004"
+  },
+  {
+    "node": "26",
+    "name": "2005",
+    "value": 258.71,
+    "id": "2005"
+  },
+  {
+    "node": "27",
+    "name": "2006",
+    "value": 812.71,
+    "id": "2006"
+  },
+  {
+    "node": "28",
+    "name": "2007",
+    "value": 1045.29,
+    "id": "2007"
+  },
+  {
+    "node": "29",
+    "name": "2008",
+    "value": 1430.15,
+    "id": "2008"
+  },
+  {
+    "node": "30",
+    "name": "2009",
+    "value": 455.35,
+    "id": "2009"
+  },
+  {
+    "node": "31",
+    "name": "2010",
+    "value": 120.95,
+    "id": "2010"
+  },
+  {
+    "node": "32",
+    "name": "2011",
+    "value": 192.29,
+    "id": "2011"
+  },
+  {
+    "node": "33",
+    "name": "2012",
+    "value": 764.77,
+    "id": "2012"
+  },
+  {
+    "node": "34",
+    "name": "2013",
+    "value": 581.41,
+    "id": "2013"
+  },
+  {
+    "node": "35",
+    "name": "2014",
+    "value": 546.88,
+    "id": "2014"
+  },
+  {
+    "node": "36",
+    "name": "2015",
+    "value": 848.73,
+    "id": "2015"
+  }
+], 
+ "links":[
+  {
+    "source": "Lightning",
+    "target": "Summer",
+    "value": 3986.88,
+    "cause": ""
+  },
+  {
+    "source": "Lightning",
+    "target": "Fall",
+    "value": 22.58,
+    "cause": ""
+  },
+  {
+    "source": "Lightning",
+    "target": "Winter",
+    "value": 0.23,
+    "cause": ""
+  },
+  {
+    "source": "Lightning",
+    "target": "Spring",
+    "value": 206.57,
+    "cause": ""
+  },
+  {
+    "source": "Miscellaneous",
+    "target": "Summer",
+    "value": 1611.91,
+    "cause": ""
+  },
+  {
+    "source": "Miscellaneous",
+    "target": "Fall",
+    "value": 809.84,
+    "cause": ""
+  },
+  {
+    "source": "Miscellaneous",
+    "target": "Winter",
+    "value": 33.91,
+    "cause": ""
+  },
+  {
+    "source": "Miscellaneous",
+    "target": "Spring",
+    "value": 356.45,
+    "cause": ""
+  },
+  {
+    "source": "Equipment Use",
+    "target": "Summer",
+    "value": 1098.32,
+    "cause": ""
+  },
+  {
+    "source": "Equipment Use",
+    "target": "Fall",
+    "value": 255.23,
+    "cause": ""
+  },
+  {
+    "source": "Equipment Use",
+    "target": "Winter",
+    "value": 3.64,
+    "cause": ""
+  },
+  {
+    "source": "Equipment Use",
+    "target": "Spring",
+    "value": 204.04,
+    "cause": ""
+  },
+  {
+    "source": "Arson",
+    "target": "Summer",
+    "value": 843.06,
+    "cause": ""
+  },
+  {
+    "source": "Arson",
+    "target": "Fall",
+    "value": 422.93,
+    "cause": ""
+  },
+  {
+    "source": "Arson",
+    "target": "Winter",
+    "value": 2.86,
+    "cause": ""
+  },
+  {
+    "source": "Arson",
+    "target": "Spring",
+    "value": 127.23,
+    "cause": ""
+  },
+  {
+    "source": "Campfire/Children/Smoking/Fireworks",
+    "target": "Summer",
+    "value": 476.59,
+    "cause": ""
+  },
+  {
+    "source": "Campfire/Children/Smoking/Fireworks",
+    "target": "Fall",
+    "value": 549.36,
+    "cause": ""
+  },
+  {
+    "source": "Campfire/Children/Smoking/Fireworks",
+    "target": "Winter",
+    "value": 15.8,
+    "cause": ""
+  },
+  {
+    "source": "Campfire/Children/Smoking/Fireworks",
+    "target": "Spring",
+    "value": 173.62,
+    "cause": ""
+  },
+  {
+    "source": "Missing/Undefined",
+    "target": "Summer",
+    "value": 432.99,
+    "cause": ""
+  },
+  {
+    "source": "Missing/Undefined",
+    "target": "Fall",
+    "value": 195.68,
+    "cause": ""
+  },
+  {
+    "source": "Missing/Undefined",
+    "target": "Winter",
+    "value": 15.59,
+    "cause": ""
+  },
+  {
+    "source": "Missing/Undefined",
+    "target": "Spring",
+    "value": 151.46,
+    "cause": ""
+  },
+  {
+    "source": "Debris Burning",
+    "target": "Summer",
+    "value": 261.14,
+    "cause": ""
+  },
+  {
+    "source": "Debris Burning",
+    "target": "Fall",
+    "value": 63.33,
+    "cause": ""
+  },
+  {
+    "source": "Debris Burning",
+    "target": "Winter",
+    "value": 30.86,
+    "cause": ""
+  },
+  {
+    "source": "Debris Burning",
+    "target": "Spring",
+    "value": 42.24,
+    "cause": ""
+  },
+  {
+    "source": "Powerline/Railroad/Structure",
+    "target": "Summer",
+    "value": 176.13,
+    "cause": ""
+  },
+  {
+    "source": "Powerline/Railroad/Structure",
+    "target": "Fall",
+    "value": 54.52,
+    "cause": ""
+  },
+  {
+    "source": "Powerline/Railroad/Structure",
+    "target": "Winter",
+    "value": 0.84,
+    "cause": ""
+  },
+  {
+    "source": "Powerline/Railroad/Structure",
+    "target": "Spring",
+    "value": 120.03,
+    "cause": ""
+  },
+  {
+    "source": "Summer",
+    "target": "1992",
+    "value": 24.5,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "1992",
+    "value": 0.27,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "1992",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "1992",
+    "value": 1.97,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "1993",
+    "value": 12.02,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "1993",
+    "value": 0.47,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "1993",
+    "value": 17.24,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "1994",
+    "value": 141.78,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "1994",
+    "value": 1.11,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "1994",
+    "value": 0.06,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "1994",
+    "value": 1.04,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "1995",
+    "value": 15.04,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "1995",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "1995",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "1995",
+    "value": 0.07,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "1996",
+    "value": 115.72,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "1996",
+    "value": 4.97,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "1996",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "1996",
+    "value": 0.23,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "1997",
+    "value": 14.89,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "1997",
+    "value": 0.01,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "1997",
+    "value": 0.01,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "1997",
+    "value": 1.54,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "1998",
+    "value": 20.57,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "1998",
+    "value": 0.09,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "1998",
+    "value": 0.01,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "1999",
+    "value": 410.94,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "1999",
+    "value": 0.12,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "1999",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "1999",
+    "value": 14.15,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2000",
+    "value": 8.59,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2000",
+    "value": 0.01,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "2000",
+    "value": 0.16,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2000",
+    "value": 0.37,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2001",
+    "value": 149.63,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2001",
+    "value": 0.33,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "2001",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2001",
+    "value": 1,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2002",
+    "value": 32.12,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2002",
+    "value": 0.03,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "2002",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2002",
+    "value": 0.14,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2003",
+    "value": 172.13,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2003",
+    "value": 4.09,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "2003",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2003",
+    "value": 0.29,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2004",
+    "value": 19.96,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2004",
+    "value": 0.05,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "2004",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2004",
+    "value": 1.18,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2005",
+    "value": 97.84,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2005",
+    "value": 1.23,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "2005",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2005",
+    "value": 0.01,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2006",
+    "value": 318.84,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2006",
+    "value": 0.81,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "2006",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2006",
+    "value": 0.81,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2007",
+    "value": 68.97,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2007",
+    "value": 1.98,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "2007",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2007",
+    "value": 3.63,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2008",
+    "value": 914.34,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2008",
+    "value": 2.66,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2008",
+    "value": 135.42,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2009",
+    "value": 48.16,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2009",
+    "value": 0.03,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "2009",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2009",
+    "value": 5.37,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2010",
+    "value": 33.86,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2010",
+    "value": 0.15,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "2010",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2010",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2011",
+    "value": 82.12,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2011",
+    "value": 3.7,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "2011",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2011",
+    "value": 0.01,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2012",
+    "value": 534.94,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2012",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2012",
+    "value": 1.73,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2013",
+    "value": 41.86,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2013",
+    "value": 0.05,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "2013",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2013",
+    "value": 0.5,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2014",
+    "value": 269.98,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2014",
+    "value": 0.02,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "2014",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2014",
+    "value": 0.04,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "2015",
+    "value": 438.1,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Fall",
+    "target": "2015",
+    "value": 0.4,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Winter",
+    "target": "2015",
+    "value": 0,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Spring",
+    "target": "2015",
+    "value": 19.81,
+    "cause": "Lightning"
+  },
+  {
+    "source": "Summer",
+    "target": "1992",
+    "value": 48.73,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "1992",
+    "value": 26.78,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "1992",
+    "value": 0.15,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "1992",
+    "value": 7.82,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "1993",
+    "value": 13.65,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "1993",
+    "value": 49.22,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "1993",
+    "value": 0.29,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "1993",
+    "value": 12.76,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "1994",
+    "value": 44.28,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "1994",
+    "value": 2.76,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "1994",
+    "value": 0.21,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "1994",
+    "value": 9.12,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "1995",
+    "value": 18.61,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "1995",
+    "value": 4.15,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "1995",
+    "value": 0.02,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "1995",
+    "value": 7.6,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "1996",
+    "value": 39.62,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "1996",
+    "value": 7.59,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "1996",
+    "value": 3.57,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "1996",
+    "value": 21.93,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "1997",
+    "value": 60.79,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "1997",
+    "value": 47.1,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "1997",
+    "value": 1.71,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "1997",
+    "value": 10.94,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "1998",
+    "value": 13.63,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "1998",
+    "value": 29.59,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "1998",
+    "value": 0.3,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "1998",
+    "value": 0.34,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "1999",
+    "value": 95.81,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "1999",
+    "value": 111.06,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "1999",
+    "value": 6.42,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "1999",
+    "value": 4.64,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2000",
+    "value": 103.24,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2000",
+    "value": 1.14,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2000",
+    "value": 0.59,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2000",
+    "value": 2.46,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2001",
+    "value": 76.33,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2001",
+    "value": 10.08,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2001",
+    "value": 0.26,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2001",
+    "value": 10.86,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2002",
+    "value": 76.2,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2002",
+    "value": 2.14,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2002",
+    "value": 2.81,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2002",
+    "value": 58.84,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2003",
+    "value": 22.02,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2003",
+    "value": 49.84,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2003",
+    "value": 0.05,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2003",
+    "value": 4.37,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2004",
+    "value": 49.74,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2004",
+    "value": 39.76,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2004",
+    "value": 0.05,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2004",
+    "value": 23.1,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2005",
+    "value": 25.46,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2005",
+    "value": 36.34,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2005",
+    "value": 0.03,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2005",
+    "value": 4.19,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2006",
+    "value": 101.28,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2006",
+    "value": 10.46,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2006",
+    "value": 10.84,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2006",
+    "value": 19.69,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2007",
+    "value": 27.21,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2007",
+    "value": 301.68,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2007",
+    "value": 2.93,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2007",
+    "value": 15.66,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2008",
+    "value": 112.18,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2008",
+    "value": 60,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2008",
+    "value": 0.28,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2008",
+    "value": 15.57,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2009",
+    "value": 142.12,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2009",
+    "value": 8.54,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2009",
+    "value": 0.1,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2009",
+    "value": 5.51,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2010",
+    "value": 37.33,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2010",
+    "value": 0.89,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2010",
+    "value": 0.02,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2010",
+    "value": 4.39,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2011",
+    "value": 13.43,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2011",
+    "value": 2.99,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2011",
+    "value": 0.05,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2011",
+    "value": 9.28,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2012",
+    "value": 48.44,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2012",
+    "value": 1.19,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2012",
+    "value": 0.16,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2012",
+    "value": 8.16,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2013",
+    "value": 335.38,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2013",
+    "value": 5.28,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2013",
+    "value": 0.21,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2013",
+    "value": 39.12,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2014",
+    "value": 82.05,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2014",
+    "value": 0.19,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2014",
+    "value": 2.29,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2014",
+    "value": 4.48,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "2015",
+    "value": 24.38,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Fall",
+    "target": "2015",
+    "value": 1.11,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Winter",
+    "target": "2015",
+    "value": 0.55,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Spring",
+    "target": "2015",
+    "value": 55.64,
+    "cause": "Miscellaneous"
+  },
+  {
+    "source": "Summer",
+    "target": "1992",
+    "value": 31.47,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "1992",
+    "value": 15.42,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "1992",
+    "value": 0.15,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "1992",
+    "value": 11.69,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "1993",
+    "value": 18.66,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "1993",
+    "value": 15.22,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "1993",
+    "value": 0.08,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "1993",
+    "value": 12.6,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "1994",
+    "value": 38.93,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "1994",
+    "value": 1.67,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "1994",
+    "value": 0.04,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "1994",
+    "value": 9.32,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "1995",
+    "value": 44.95,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "1995",
+    "value": 5.17,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "1995",
+    "value": 0.01,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "1995",
+    "value": 3.92,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "1996",
+    "value": 148.39,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "1996",
+    "value": 9.28,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "1996",
+    "value": 0.42,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "1996",
+    "value": 44.14,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "1997",
+    "value": 15.18,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "1997",
+    "value": 6.94,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "1997",
+    "value": 0.05,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "1997",
+    "value": 11.66,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "1998",
+    "value": 32.57,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "1998",
+    "value": 21.56,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "1998",
+    "value": 0.01,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "1998",
+    "value": 1.57,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "1999",
+    "value": 52.69,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "1999",
+    "value": 6.47,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "1999",
+    "value": 0.21,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "1999",
+    "value": 4.95,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2000",
+    "value": 19.31,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2000",
+    "value": 6.82,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2000",
+    "value": 0.12,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2000",
+    "value": 8.21,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2001",
+    "value": 22.24,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2001",
+    "value": 0.68,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2001",
+    "value": 0.05,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2001",
+    "value": 8.74,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2002",
+    "value": 20.63,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2002",
+    "value": 8.21,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2002",
+    "value": 0.65,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2002",
+    "value": 6.93,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2003",
+    "value": 22.33,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2003",
+    "value": 75.57,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2003",
+    "value": 0.01,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2003",
+    "value": 10.18,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2004",
+    "value": 49.3,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2004",
+    "value": 25.26,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2004",
+    "value": 0.04,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2004",
+    "value": 7.17,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2005",
+    "value": 30.33,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2005",
+    "value": 2.34,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2005",
+    "value": 0.01,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2005",
+    "value": 10.79,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2006",
+    "value": 62.5,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2006",
+    "value": 3.12,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2006",
+    "value": 0.1,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2006",
+    "value": 10.65,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2007",
+    "value": 311.29,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2007",
+    "value": 46.06,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2007",
+    "value": 1.13,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2007",
+    "value": 4.54,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2008",
+    "value": 16.67,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2008",
+    "value": 1.06,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2008",
+    "value": 0.02,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2008",
+    "value": 9.18,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2009",
+    "value": 10.12,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2009",
+    "value": 0.45,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2009",
+    "value": 0.01,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2009",
+    "value": 10.6,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2010",
+    "value": 15.32,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2010",
+    "value": 0.99,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2010",
+    "value": 0.01,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2010",
+    "value": 7.77,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2011",
+    "value": 22.71,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2011",
+    "value": 0.87,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2011",
+    "value": 0.03,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2011",
+    "value": 1.45,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2012",
+    "value": 28.93,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2012",
+    "value": 0.64,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2012",
+    "value": 0.23,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2012",
+    "value": 1.82,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2013",
+    "value": 31.57,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2013",
+    "value": 0.63,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2013",
+    "value": 0.04,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2013",
+    "value": 3.8,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2014",
+    "value": 6.25,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2014",
+    "value": 0.35,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2014",
+    "value": 0.22,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2014",
+    "value": 0.97,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "2015",
+    "value": 45.99,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Fall",
+    "target": "2015",
+    "value": 0.43,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Winter",
+    "target": "2015",
+    "value": 0.01,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Spring",
+    "target": "2015",
+    "value": 1.4,
+    "cause": "Equipment Use"
+  },
+  {
+    "source": "Summer",
+    "target": "1992",
+    "value": 79.11,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "1992",
+    "value": 4.91,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "1992",
+    "value": 0.01,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "1992",
+    "value": 6.99,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "1993",
+    "value": 11.68,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "1993",
+    "value": 46.69,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "1993",
+    "value": 0.41,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "1993",
+    "value": 3.41,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "1994",
+    "value": 110.23,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "1994",
+    "value": 0.37,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "1994",
+    "value": 0.01,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "1994",
+    "value": 6.24,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "1995",
+    "value": 21.49,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "1995",
+    "value": 12.28,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "1995",
+    "value": 0.17,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "1995",
+    "value": 8.08,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "1996",
+    "value": 143.12,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "1996",
+    "value": 34.22,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "1996",
+    "value": 0.08,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "1996",
+    "value": 19.93,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "1997",
+    "value": 42.07,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "1997",
+    "value": 9.46,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "1997",
+    "value": 0.16,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "1997",
+    "value": 9.69,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "1998",
+    "value": 21.58,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "1998",
+    "value": 0.83,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "1998",
+    "value": 0,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "1998",
+    "value": 0.66,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "1999",
+    "value": 21.85,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "1999",
+    "value": 41.42,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "1999",
+    "value": 0.28,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "1999",
+    "value": 0.81,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2000",
+    "value": 16.28,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2000",
+    "value": 1.46,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2000",
+    "value": 0.08,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2000",
+    "value": 1.13,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2001",
+    "value": 15.38,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2001",
+    "value": 0.9,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2001",
+    "value": 0.15,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2001",
+    "value": 2.66,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2002",
+    "value": 46.76,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2002",
+    "value": 0.53,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2002",
+    "value": 0.14,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2002",
+    "value": 10.37,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2003",
+    "value": 9.52,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2003",
+    "value": 218.38,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2003",
+    "value": 0.16,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2003",
+    "value": 0.55,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2004",
+    "value": 29.97,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2004",
+    "value": 2.42,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2004",
+    "value": 0.06,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2004",
+    "value": 18.05,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2005",
+    "value": 14.23,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2005",
+    "value": 0.24,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2005",
+    "value": 0.01,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2005",
+    "value": 0.71,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2006",
+    "value": 6.26,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2006",
+    "value": 40.84,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2006",
+    "value": 0.03,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2006",
+    "value": 0.95,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2007",
+    "value": 3.56,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2007",
+    "value": 0.66,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2007",
+    "value": 0.76,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2007",
+    "value": 2.87,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2008",
+    "value": 4.52,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2008",
+    "value": 0.55,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2008",
+    "value": 0.06,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2008",
+    "value": 25.04,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2009",
+    "value": 167.88,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2009",
+    "value": 3.76,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2009",
+    "value": 0.01,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2009",
+    "value": 0.8,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2010",
+    "value": 3.21,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2010",
+    "value": 0.06,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2010",
+    "value": 0.01,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2010",
+    "value": 0.59,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2011",
+    "value": 16.43,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2011",
+    "value": 0.11,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2011",
+    "value": 0.08,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2011",
+    "value": 1.66,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2012",
+    "value": 25.03,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2012",
+    "value": 2.66,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2012",
+    "value": 0.03,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2012",
+    "value": 4.94,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2013",
+    "value": 24.53,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2013",
+    "value": 0.11,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2013",
+    "value": 0.05,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2013",
+    "value": 0.62,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2014",
+    "value": 0.87,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2014",
+    "value": 0.02,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2014",
+    "value": 0.1,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2014",
+    "value": 0.13,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "2015",
+    "value": 7.48,
+    "cause": "Arson"
+  },
+  {
+    "source": "Fall",
+    "target": "2015",
+    "value": 0.05,
+    "cause": "Arson"
+  },
+  {
+    "source": "Winter",
+    "target": "2015",
+    "value": 0.01,
+    "cause": "Arson"
+  },
+  {
+    "source": "Spring",
+    "target": "2015",
+    "value": 0.36,
+    "cause": "Arson"
+  },
+  {
+    "source": "Summer",
+    "target": "1992",
+    "value": 21.38,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "1992",
+    "value": 2.72,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "1992",
+    "value": 0.01,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "1992",
+    "value": 3.01,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "1993",
+    "value": 8.58,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "1993",
+    "value": 51.31,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "1993",
+    "value": 0.07,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "1993",
+    "value": 6.5,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "1994",
+    "value": 13.87,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "1994",
+    "value": 1.94,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "1994",
+    "value": 0.55,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "1994",
+    "value": 3.37,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "1995",
+    "value": 30.13,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "1995",
+    "value": 16.62,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "1995",
+    "value": 0.01,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "1995",
+    "value": 0.89,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "1996",
+    "value": 9.94,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "1996",
+    "value": 15.7,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "1996",
+    "value": 0.07,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "1996",
+    "value": 10.33,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "1997",
+    "value": 9.09,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "1997",
+    "value": 1.78,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "1997",
+    "value": 0.02,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "1997",
+    "value": 0.51,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "1998",
+    "value": 1.99,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "1998",
+    "value": 1.2,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "1998",
+    "value": 0.21,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "1998",
+    "value": 0.98,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "1999",
+    "value": 2.57,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "1999",
+    "value": 1.53,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "1999",
+    "value": 0.12,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "1999",
+    "value": 0.35,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2000",
+    "value": 4.56,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2000",
+    "value": 0.12,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2000",
+    "value": 0.05,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2000",
+    "value": 2.85,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2001",
+    "value": 4.85,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2001",
+    "value": 0.36,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2001",
+    "value": 10.37,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2001",
+    "value": 16.29,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2002",
+    "value": 154.95,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2002",
+    "value": 0.28,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2002",
+    "value": 0.49,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2002",
+    "value": 27.51,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2003",
+    "value": 1.88,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2003",
+    "value": 287.63,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2003",
+    "value": 0,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2003",
+    "value": 1.1,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2004",
+    "value": 1.34,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2004",
+    "value": 0.12,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2004",
+    "value": 0.02,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2004",
+    "value": 2.41,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2005",
+    "value": 6.75,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2005",
+    "value": 0.28,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2005",
+    "value": 0.01,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2005",
+    "value": 1.14,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2006",
+    "value": 19.36,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2006",
+    "value": 30.57,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2006",
+    "value": 0.55,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2006",
+    "value": 0.18,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2007",
+    "value": 61.38,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2007",
+    "value": 133.83,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2007",
+    "value": 0.17,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2007",
+    "value": 0.5,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2008",
+    "value": 0.67,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2008",
+    "value": 2.4,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2008",
+    "value": 0.01,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2008",
+    "value": 82.49,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2009",
+    "value": 20.85,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2009",
+    "value": 0.1,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2009",
+    "value": 0.02,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2009",
+    "value": 0.42,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2010",
+    "value": 2.43,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2010",
+    "value": 0.21,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2010",
+    "value": 0.02,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2010",
+    "value": 0.29,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2011",
+    "value": 1.79,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2011",
+    "value": 0.08,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2011",
+    "value": 0.05,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2011",
+    "value": 3.07,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2012",
+    "value": 81.67,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2012",
+    "value": 0.03,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2012",
+    "value": 0.03,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2012",
+    "value": 0.68,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2013",
+    "value": 1.84,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2013",
+    "value": 0.32,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2013",
+    "value": 0.05,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2013",
+    "value": 8.24,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2014",
+    "value": 14.42,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2014",
+    "value": 0.16,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2014",
+    "value": 2.87,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2014",
+    "value": 0.28,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "2015",
+    "value": 0.3,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Fall",
+    "target": "2015",
+    "value": 0.07,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Winter",
+    "target": "2015",
+    "value": 0.01,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Spring",
+    "target": "2015",
+    "value": 0.23,
+    "cause": "Campfire/Children/Smoking/Fireworks"
+  },
+  {
+    "source": "Summer",
+    "target": "1992",
+    "value": 0,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "1993",
+    "value": 0,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "1995",
+    "value": 0,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "1995",
+    "value": 0.09,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "1996",
+    "value": 0.02,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "1996",
+    "value": 0,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "1997",
+    "value": 0,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "1998",
+    "value": 0.02,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "1998",
+    "value": 0.13,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "1998",
+    "value": 0,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "1999",
+    "value": 3.96,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "1999",
+    "value": 1.6,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "1999",
+    "value": 0,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "1999",
+    "value": 0,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2000",
+    "value": 1.4,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2000",
+    "value": 0.01,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2000",
+    "value": 1.22,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2001",
+    "value": 8.34,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2001",
+    "value": 1.84,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2001",
+    "value": 2.4,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2001",
+    "value": 0.13,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2002",
+    "value": 27.11,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2002",
+    "value": 1.68,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2002",
+    "value": 0,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2002",
+    "value": 19.51,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2003",
+    "value": 4.63,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2003",
+    "value": 130.05,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2003",
+    "value": 0.24,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2003",
+    "value": 0.57,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2004",
+    "value": 15.23,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2004",
+    "value": 0.37,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2004",
+    "value": 0.12,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2004",
+    "value": 2.73,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2005",
+    "value": 5.84,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2005",
+    "value": 6.56,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2005",
+    "value": 0,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2005",
+    "value": 0.8,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2006",
+    "value": 3.63,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2006",
+    "value": 0.13,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2006",
+    "value": 0.01,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2006",
+    "value": 0.64,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2007",
+    "value": 9.14,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2007",
+    "value": 29.89,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2007",
+    "value": 2.25,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2007",
+    "value": 11.06,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2008",
+    "value": 1.97,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2008",
+    "value": 5.98,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2008",
+    "value": 0.01,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2008",
+    "value": 12.71,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2009",
+    "value": 12.75,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2009",
+    "value": 3.24,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2009",
+    "value": 0.18,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2009",
+    "value": 0.58,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2010",
+    "value": 9.51,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2010",
+    "value": 1.62,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2010",
+    "value": 0,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2010",
+    "value": 0.77,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2011",
+    "value": 14.49,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2011",
+    "value": 6.03,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2011",
+    "value": 0.94,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2011",
+    "value": 2.19,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2012",
+    "value": 9.33,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2012",
+    "value": 0.49,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2012",
+    "value": 0.2,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2012",
+    "value": 8.42,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2013",
+    "value": 29.6,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2013",
+    "value": 1.89,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2013",
+    "value": 0.92,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2013",
+    "value": 45.28,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2014",
+    "value": 115.62,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2014",
+    "value": 3.57,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2014",
+    "value": 0.42,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2014",
+    "value": 33.68,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "2015",
+    "value": 160.39,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Fall",
+    "target": "2015",
+    "value": 0.52,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Winter",
+    "target": "2015",
+    "value": 7.86,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Spring",
+    "target": "2015",
+    "value": 11.16,
+    "cause": "Missing/Undefined"
+  },
+  {
+    "source": "Summer",
+    "target": "1992",
+    "value": 1.58,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "1992",
+    "value": 1.8,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "1992",
+    "value": 1.98,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "1992",
+    "value": 2.17,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "1993",
+    "value": 4.72,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "1993",
+    "value": 1.31,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "1993",
+    "value": 0.05,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "1993",
+    "value": 2.58,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "1994",
+    "value": 11.82,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "1994",
+    "value": 0.46,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "1994",
+    "value": 0.39,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "1994",
+    "value": 2.67,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "1995",
+    "value": 2.11,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "1995",
+    "value": 8.17,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "1995",
+    "value": 0.03,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "1995",
+    "value": 1.35,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "1996",
+    "value": 16.4,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "1996",
+    "value": 1.55,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "1996",
+    "value": 0.07,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "1996",
+    "value": 3.53,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "1997",
+    "value": 19.54,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "1997",
+    "value": 7.11,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "1997",
+    "value": 0.35,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "1997",
+    "value": 1.24,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "1998",
+    "value": 4.81,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "1998",
+    "value": 0.89,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "1998",
+    "value": 0.56,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "1998",
+    "value": 0.25,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "1999",
+    "value": 3.84,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "1999",
+    "value": 13.65,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "1999",
+    "value": 0.46,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "1999",
+    "value": 0.85,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2000",
+    "value": 6.02,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2000",
+    "value": 8.68,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2000",
+    "value": 0.18,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2000",
+    "value": 1.76,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2001",
+    "value": 0.83,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2001",
+    "value": 0.11,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2001",
+    "value": 0.25,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2001",
+    "value": 3.14,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2002",
+    "value": 0.94,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2002",
+    "value": 6.86,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2002",
+    "value": 5.83,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2002",
+    "value": 1.86,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2003",
+    "value": 0.39,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2003",
+    "value": 1.88,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2003",
+    "value": 12.12,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2003",
+    "value": 0.85,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2004",
+    "value": 8.26,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2004",
+    "value": 0.5,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2004",
+    "value": 0.06,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2004",
+    "value": 1.59,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2005",
+    "value": 2.35,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2005",
+    "value": 4.66,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2005",
+    "value": 0.05,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2005",
+    "value": 0.24,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2006",
+    "value": 165.55,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2006",
+    "value": 1.33,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2006",
+    "value": 2.91,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2006",
+    "value": 0.27,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2007",
+    "value": 0.19,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2007",
+    "value": 0.29,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2007",
+    "value": 0.31,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2007",
+    "value": 2.81,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2008",
+    "value": 0.62,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2008",
+    "value": 0.18,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2008",
+    "value": 1.22,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2008",
+    "value": 2.93,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2009",
+    "value": 8.69,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2009",
+    "value": 0.16,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2009",
+    "value": 1.21,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2009",
+    "value": 1.2,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2010",
+    "value": 0.15,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2010",
+    "value": 0.33,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2010",
+    "value": 0.12,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2010",
+    "value": 0.73,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2011",
+    "value": 0.41,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2011",
+    "value": 2.3,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2011",
+    "value": 0.53,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2011",
+    "value": 0.46,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2012",
+    "value": 0.46,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2012",
+    "value": 0.23,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2012",
+    "value": 0.56,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2012",
+    "value": 0.6,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2013",
+    "value": 0.24,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2013",
+    "value": 0.57,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2013",
+    "value": 0.53,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2013",
+    "value": 7.98,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2014",
+    "value": 0.31,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2014",
+    "value": 0.06,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2014",
+    "value": 0.64,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2014",
+    "value": 0.58,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "2015",
+    "value": 0.89,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Fall",
+    "target": "2015",
+    "value": 0.28,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Winter",
+    "target": "2015",
+    "value": 0.44,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Spring",
+    "target": "2015",
+    "value": 0.62,
+    "cause": "Debris Burning"
+  },
+  {
+    "source": "Summer",
+    "target": "1992",
+    "value": 1.2,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "1992",
+    "value": 0.01,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "1992",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "1992",
+    "value": 0.61,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "1993",
+    "value": 0.49,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "1993",
+    "value": 24.4,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "1993",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "1993",
+    "value": 7.12,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "1994",
+    "value": 0.95,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "1994",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "1994",
+    "value": 4.77,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "1995",
+    "value": 6.03,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "1995",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "1995",
+    "value": 9.09,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "1996",
+    "value": 2.15,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "1996",
+    "value": 13.24,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "1996",
+    "value": 0.01,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "1996",
+    "value": 40.89,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "1997",
+    "value": 4.99,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "1997",
+    "value": 0.06,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "1997",
+    "value": 0.01,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "1997",
+    "value": 47.65,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "1998",
+    "value": 5.21,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "1998",
+    "value": 0.17,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "1998",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "1998",
+    "value": 0.27,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "1999",
+    "value": 0.98,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "1999",
+    "value": 0.25,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "1999",
+    "value": 0.01,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "1999",
+    "value": 2.13,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2000",
+    "value": 55.36,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2000",
+    "value": 0.09,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2000",
+    "value": 0.01,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2000",
+    "value": 0.41,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2001",
+    "value": 1.48,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2001",
+    "value": 0.19,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2001",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2001",
+    "value": 0.31,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2002",
+    "value": 0.21,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2002",
+    "value": 0.06,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2002",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2002",
+    "value": 1.13,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2003",
+    "value": 0.05,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2003",
+    "value": 0.17,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2003",
+    "value": 0.78,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2003",
+    "value": 0.13,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2004",
+    "value": 1.91,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2004",
+    "value": 0.03,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2004",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2004",
+    "value": 0.28,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2005",
+    "value": 5.37,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2005",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2005",
+    "value": 0.9,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2006",
+    "value": 0.36,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2006",
+    "value": 0.01,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2006",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2006",
+    "value": 0.05,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2007",
+    "value": 0.13,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2007",
+    "value": 0.03,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2007",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2007",
+    "value": 0.36,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2008",
+    "value": 6.25,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2008",
+    "value": 14.72,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2008",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2008",
+    "value": 0.49,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2009",
+    "value": 0.03,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2009",
+    "value": 0.09,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2009",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2009",
+    "value": 2.34,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2010",
+    "value": 0.12,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2010",
+    "value": 0.03,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2010",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2010",
+    "value": 0.03,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2011",
+    "value": 4.63,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2011",
+    "value": 0.07,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2011",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2011",
+    "value": 0.31,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2012",
+    "value": 2.64,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2012",
+    "value": 0.03,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2012",
+    "value": 0.01,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2012",
+    "value": 0.5,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2013",
+    "value": 0.01,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2013",
+    "value": 0.01,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2013",
+    "value": 0.01,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2013",
+    "value": 0.18,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2014",
+    "value": 6.23,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2014",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2014",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2014",
+    "value": 0.07,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Summer",
+    "target": "2015",
+    "value": 69.37,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Fall",
+    "target": "2015",
+    "value": 0.86,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Winter",
+    "target": "2015",
+    "value": 0,
+    "cause": "Powerline/Railroad/Structure"
+  },
+  {
+    "source": "Spring",
+    "target": "2015",
+    "value": 0.02,
+    "cause": "Powerline/Railroad/Structure"
+  }
+]}
+}

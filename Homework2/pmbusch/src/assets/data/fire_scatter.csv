@@ -1,0 +1,994 @@
+"OBJECTID","DISCOVERY_DOY","FIRE_YEAR","FIRE_DATE","SEASON","STAT_CAUSE","STAT_CAUSE_DESCR","STATE","FIRE_SIZE"
+1795357,109,2015,2015-04-19,"Spring","Miscellaneous","Miscellaneous","CA",0.2
+1879209,238,2010,2010-08-26,"Summer","Debris Burning","Debris Burning","CA",0.11
+1106035,203,1992,1992-07-21,"Summer","Equipment Use","Equipment Use","CA",20
+1094478,230,1998,1998-08-18,"Summer","Equipment Use","Equipment Use","CA",0.1
+1119362,325,1993,1993-11-21,"Fall","Debris Burning","Debris Burning","CA",0.1
+1138139,191,1993,1993-07-10,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.1
+1095166,264,1992,1992-09-20,"Summer","Equipment Use","Equipment Use","CA",0.3
+1103956,127,2006,2006-05-07,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+319461,206,2003,2003-07-25,"Summer","Lightning","Lightning","CA",10
+1779914,211,2014,2014-07-30,"Summer","Miscellaneous","Miscellaneous","CA",0.23
+1457054,254,2011,2011-09-11,"Summer","Lightning","Lightning","CA",0.1
+1625820,29,2012,2012-01-29,"Winter","Missing/Undefined","Missing/Undefined","CA",1
+1134408,23,2006,2006-01-23,"Winter","Equipment Use","Equipment Use","CA",0.1
+105496,187,1998,1998-07-06,"Summer","Lightning","Lightning","CA",0.1
+309119,9,2000,2000-01-09,"Winter","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+137130,163,2001,2001-06-12,"Spring","Debris Burning","Debris Burning","CA",0.1
+314921,155,2002,2002-06-04,"Spring","Equipment Use","Equipment Use","CA",1
+1143362,266,2005,2005-09-23,"Fall","Equipment Use","Equipment Use","CA",0.4
+1872095,332,2015,2015-11-28,"Fall","Debris Burning","Debris Burning","CA",0.25
+1083505,177,2001,2001-06-26,"Summer","Equipment Use","Equipment Use","CA",0.1
+1136165,107,2009,2009-04-17,"Spring","Miscellaneous","Miscellaneous","CA",1
+1062196,183,2003,2003-07-02,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1793074,157,2015,2015-06-06,"Spring","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1656730,234,2013,2013-08-22,"Summer","Miscellaneous","Miscellaneous","CA",2.5
+1067787,331,1992,1992-11-26,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+1094809,205,2000,2000-07-23,"Summer","Miscellaneous","Miscellaneous","CA",4
+1792907,194,2015,2015-07-13,"Summer","Miscellaneous","Miscellaneous","CA",1
+47518,178,1992,1992-06-26,"Summer","Lightning","Lightning","CA",0.7
+1870077,196,2015,2015-07-15,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+92519,163,1996,1996-06-11,"Spring","Equipment Use","Equipment Use","CA",0.2
+1086128,105,1997,1997-04-15,"Spring","Debris Burning","Debris Burning","CA",0.1
+1139764,225,1995,1995-08-13,"Summer","Equipment Use","Equipment Use","CA",1
+1136460,353,2009,2009-12-19,"Fall","Equipment Use","Equipment Use","CA",1
+1084382,191,2007,2007-07-10,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1512886,159,2011,2011-06-08,"Spring","Arson","Arson","CA",0.2
+1091801,162,2008,2008-06-10,"Spring","Equipment Use","Equipment Use","CA",0.1
+1626695,168,2012,2012-06-16,"Spring","Miscellaneous","Miscellaneous","CA",1.5
+154949,213,2003,2003-08-01,"Summer","Lightning","Lightning","CA",0.1
+244111,168,1996,1996-06-16,"Spring","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+244024,202,1994,1994-07-21,"Summer","Lightning","Lightning","CA",0.3
+133426,174,2000,2000-06-22,"Summer","Lightning","Lightning","CA",0.1
+69208,275,1994,1994-10-02,"Fall","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1876887,268,2010,2010-09-25,"Fall","Missing/Undefined","Missing/Undefined","CA",1
+1094564,280,1998,1998-10-07,"Fall","Debris Burning","Debris Burning","CA",2
+121351,270,1999,1999-09-27,"Fall","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1114920,223,1992,1992-08-10,"Summer","Arson","Arson","CA",4
+151299,193,2002,2002-07-12,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1567448,28,2012,2012-01-28,"Winter","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1127728,133,1996,1996-05-12,"Spring","Equipment Use","Equipment Use","CA",0.5
+1084287,134,2007,2007-05-14,"Spring","Equipment Use","Equipment Use","CA",1
+1069461,235,2003,2003-08-23,"Summer","Equipment Use","Equipment Use","CA",1
+191888,189,1996,1996-07-07,"Summer","Campfire/Children/Smoking/Fireworks","Fireworks","CA",0.1
+1133812,165,2004,2004-06-13,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+365887,180,2002,2002-06-29,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1627320,197,2012,2012-07-15,"Summer","Missing/Undefined","Missing/Undefined","CA",0.25
+310705,304,2002,2002-10-31,"Fall","Equipment Use","Equipment Use","CA",0.1
+1787582,174,2014,2014-06-23,"Summer","Missing/Undefined","Missing/Undefined","CA",0.06
+1090623,247,1997,1997-09-04,"Summer","Lightning","Lightning","CA",2
+14596,206,2006,2006-07-25,"Summer","Lightning","Lightning","CA",12
+1604859,292,2012,2012-10-18,"Fall","Debris Burning","Debris Burning","CA",0.1
+1142149,350,1998,1998-12-16,"Fall","Campfire/Children/Smoking/Fireworks","Children","CA",2
+48883,230,1992,1992-08-17,"Summer","Lightning","Lightning","CA",0.1
+19202,168,2007,2007-06-17,"Spring","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1127868,292,1996,1996-10-18,"Fall","Miscellaneous","Miscellaneous","CA",0.5
+1088320,244,2006,2006-09-01,"Summer","Arson","Arson","CA",1
+1773164,228,2014,2014-08-16,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+1135941,301,2008,2008-10-27,"Fall","Miscellaneous","Miscellaneous","CA",4
+192240,206,1996,1996-07-24,"Summer","Arson","Arson","CA",0.3
+1079000,134,1992,1992-05-13,"Spring","Arson","Arson","CA",0.1
+1094552,265,1998,1998-09-22,"Summer","Equipment Use","Equipment Use","CA",0.1
+1094250,282,1996,1996-10-08,"Fall","Miscellaneous","Miscellaneous","CA",2
+1129692,203,1992,1992-07-21,"Summer","Miscellaneous","Miscellaneous","CA",5
+75202,170,1994,1994-06-19,"Spring","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.2
+47190,169,1992,1992-06-17,"Spring","Lightning","Lightning","CA",0.1
+1124565,299,1995,1995-10-26,"Fall","Equipment Use","Equipment Use","CA",2
+364827,87,2001,2001-03-28,"Spring","Debris Burning","Debris Burning","CA",50
+1080272,242,1993,1993-08-30,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",1
+1133192,160,2002,2002-06-09,"Spring","Campfire/Children/Smoking/Fireworks","Children","CA",1
+1076746,117,2007,2007-04-27,"Spring","Equipment Use","Equipment Use","CA",2
+214684,251,1998,1998-09-08,"Summer","Equipment Use","Equipment Use","CA",0.1
+1749830,31,2014,2014-01-31,"Winter","Debris Burning","Debris Burning","CA",0.5
+36714,206,2009,2009-07-25,"Summer","Arson","Arson","CA",0.01
+1100999,232,2005,2005-08-20,"Summer","Arson","Arson","CA",0.7
+1078716,181,2010,2010-06-30,"Summer","Equipment Use","Equipment Use","CA",2
+214562,227,1998,1998-08-15,"Summer","Equipment Use","Equipment Use","CA",1
+1123505,201,2005,2005-07-20,"Summer","Debris Burning","Debris Burning","CA",4
+192066,158,1994,1994-06-07,"Spring","Debris Burning","Debris Burning","CA",0.3
+1511040,231,2011,2011-08-19,"Summer","Debris Burning","Debris Burning","CA",0.1
+213506,233,1997,1997-08-21,"Summer","Miscellaneous","Miscellaneous","CA",2
+1509688,246,2011,2011-09-03,"Summer","Missing/Undefined","Missing/Undefined","CA",0.02
+1139758,224,1995,1995-08-12,"Summer","Equipment Use","Equipment Use","CA",1
+57493,279,1993,1993-10-06,"Fall","Arson","Arson","CA",0.1
+1509124,180,2011,2011-06-29,"Summer","Missing/Undefined","Missing/Undefined","CA",0.11
+1141068,132,1997,1997-05-12,"Spring","Equipment Use","Equipment Use","CA",0.1
+313954,180,2009,2009-06-29,"Summer","Equipment Use","Equipment Use","CA",716
+1644239,250,2013,2013-09-07,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1092643,220,2000,2000-08-07,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+217822,294,1999,1999-10-21,"Fall","Equipment Use","Equipment Use","CA",0.1
+1871794,314,2015,2015-11-10,"Fall","Lightning","Lightning","CA",0.25
+1095030,131,2001,2001-05-11,"Spring","Equipment Use","Equipment Use","CA",10
+47997,197,1992,1992-07-15,"Summer","Lightning","Lightning","CA",6
+1067816,184,1993,1993-07-03,"Summer","Equipment Use","Equipment Use","CA",0.1
+3585,244,2005,2005-09-01,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1069546,188,2004,2004-07-06,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+8612,166,2006,2006-06-15,"Spring","Equipment Use","Equipment Use","CA",2
+95547,207,1996,1996-07-25,"Summer","Miscellaneous","Miscellaneous","CA",7
+312417,283,2005,2005-10-10,"Fall","Powerline/Railroad/Structure","Powerline","CA",1
+1088325,257,2006,2006-09-14,"Summer","Arson","Arson","CA",10
+1069919,181,2006,2006-06-30,"Summer","Equipment Use","Equipment Use","CA",50
+1509053,290,2011,2011-10-17,"Fall","Missing/Undefined","Missing/Undefined","CA",0.1
+1118527,143,1996,1996-05-22,"Spring","Miscellaneous","Miscellaneous","CA",0.5
+108517,226,1998,1998-08-14,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1481316,249,2011,2011-09-06,"Summer","Missing/Undefined","Missing/Undefined","CA",0.1
+243544,163,1996,1996-06-11,"Spring","Equipment Use","Equipment Use","CA",1
+1107242,226,2003,2003-08-14,"Summer","Equipment Use","Equipment Use","CA",0.2
+1138476,280,1993,1993-10-07,"Fall","Campfire/Children/Smoking/Fireworks","Children","CA",0.3
+143345,148,2001,2001-05-28,"Spring","Miscellaneous","Miscellaneous","CA",1
+1063462,245,2008,2008-09-01,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+166265,183,2004,2004-07-01,"Summer","Lightning","Lightning","CA",0.1
+1115687,279,1992,1992-10-05,"Fall","Arson","Arson","CA",0.1
+1080023,161,1993,1993-06-10,"Spring","Arson","Arson","CA",2.5
+1094376,223,1997,1997-08-11,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1081212,205,1995,1995-07-24,"Summer","Equipment Use","Equipment Use","CA",0.4
+1122705,222,1995,1995-08-10,"Summer","Powerline/Railroad/Structure","Railroad","CA",0.1
+1112134,207,1996,1996-07-25,"Summer","Miscellaneous","Miscellaneous","CA",5
+1139566,189,1995,1995-07-08,"Summer","Equipment Use","Equipment Use","CA",0.3
+1118188,331,2008,2008-11-26,"Fall","Debris Burning","Debris Burning","CA",1
+1089970,259,1995,1995-09-16,"Summer","Debris Burning","Debris Burning","CA",2
+216028,305,1993,1993-11-01,"Fall","Equipment Use","Equipment Use","CA",0.1
+1513781,219,2011,2011-08-07,"Summer","Missing/Undefined","Missing/Undefined","CA",5
+1066802,263,2003,2003-09-20,"Summer","Equipment Use","Equipment Use","CA",7
+1638584,230,2013,2013-08-18,"Summer","Lightning","Lightning","CA",0.4
+130069,95,2000,2000-04-04,"Spring","Debris Burning","Debris Burning","CA",0.3
+1141472,287,1997,1997-10-14,"Fall","Equipment Use","Equipment Use","CA",1
+1180558,247,2010,2010-09-04,"Summer","Miscellaneous","Miscellaneous","CA",1
+1128358,178,2000,2000-06-26,"Summer","Equipment Use","Equipment Use","CA",0.4
+1103949,126,2006,2006-05-06,"Spring","Debris Burning","Debris Burning","CA",0.1
+1494966,129,2011,2011-05-09,"Spring","Debris Burning","Debris Burning","CA",0.25
+1071710,126,1993,1993-05-06,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+191369,186,1997,1997-07-05,"Summer","Arson","Arson","CA",0.2
+1722991,201,2014,2014-07-20,"Summer","Lightning","Lightning","CA",0.1
+132201,94,2000,2000-04-03,"Spring","Equipment Use","Equipment Use","CA",0.1
+1113886,2,2008,2008-01-02,"Winter","Debris Burning","Debris Burning","CA",0.5
+1135034,61,2007,2007-03-02,"Winter","Equipment Use","Equipment Use","CA",0.1
+1215973,283,2010,2010-10-10,"Fall","Debris Burning","Debris Burning","CA",63
+1853789,105,2015,2015-04-15,"Spring","Missing/Undefined","Missing/Undefined","CA",1
+1111291,256,1993,1993-09-13,"Summer","Miscellaneous","Miscellaneous","CA",5
+1643907,122,2013,2013-05-02,"Spring","Missing/Undefined","Missing/Undefined","CA",3
+1096009,216,1995,1995-08-04,"Summer","Equipment Use","Equipment Use","CA",0.1
+1143535,15,2007,2007-01-15,"Winter","Debris Burning","Debris Burning","CA",40
+1100972,194,2005,2005-07-13,"Summer","Equipment Use","Equipment Use","CA",1
+1078351,224,2009,2009-08-12,"Summer","Miscellaneous","Miscellaneous","CA",20
+190854,248,1993,1993-09-05,"Summer","Miscellaneous","Miscellaneous","CA",1.5
+1102594,170,1994,1994-06-19,"Spring","Miscellaneous","Miscellaneous","CA",12
+166208,179,2004,2004-06-27,"Summer","Lightning","Lightning","CA",0.1
+48471,318,1992,1992-11-13,"Fall","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1129315,189,2007,2007-07-08,"Summer","Equipment Use","Equipment Use","CA",0.3
+319861,179,2004,2004-06-27,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.1
+24496,184,2007,2007-07-03,"Summer","Miscellaneous","Miscellaneous","CA",0.25
+1074077,238,2000,2000-08-25,"Summer","Equipment Use","Equipment Use","CA",0.2
+1614921,246,2012,2012-09-02,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+320387,267,2005,2005-09-24,"Fall","Campfire/Children/Smoking/Fireworks","Children","CA",0.2
+1073772,92,2000,2000-04-01,"Spring","Arson","Arson","CA",0.5
+1133820,178,2004,2004-06-26,"Summer","Arson","Arson","CA",0.3
+1654064,184,2013,2013-07-03,"Summer","Missing/Undefined","Missing/Undefined","CA",0.2
+8441,184,2006,2006-07-03,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+217103,187,1998,1998-07-06,"Summer","Equipment Use","Equipment Use","CA",0.1
+1090051,120,1996,1996-04-29,"Spring","Arson","Arson","CA",0.2
+1071569,187,1992,1992-07-05,"Summer","Equipment Use","Equipment Use","CA",0.5
+171,162,2005,2005-06-11,"Spring","Debris Burning","Debris Burning","CA",2
+1132586,294,2000,2000-10-20,"Fall","Campfire/Children/Smoking/Fireworks","Children","CA",1
+1103722,233,2005,2005-08-21,"Summer","Equipment Use","Equipment Use","CA",144
+1627406,295,2012,2012-10-21,"Fall","Missing/Undefined","Missing/Undefined","CA",0.5
+1111592,169,2010,2010-06-18,"Spring","Campfire/Children/Smoking/Fireworks","Campfire","CA",1
+1144710,147,1997,1997-05-27,"Spring","Equipment Use","Equipment Use","CA",15
+1101319,105,2007,2007-04-15,"Spring","Miscellaneous","Miscellaneous","CA",0.2
+1083948,242,2004,2004-08-29,"Summer","Equipment Use","Equipment Use","CA",1
+1877933,262,2014,2014-09-19,"Summer","Debris Burning","Debris Burning","CA",0.01
+1080839,205,1994,1994-07-24,"Summer","Miscellaneous","Miscellaneous","CA",1
+1068207,120,1996,1996-04-29,"Spring","Equipment Use","Equipment Use","CA",0.1
+1103773,237,2006,2006-08-25,"Summer","Arson","Arson","CA",2
+1092215,194,1994,1994-07-13,"Summer","Equipment Use","Equipment Use","CA",0.1
+1109309,257,1995,1995-09-14,"Summer","Debris Burning","Debris Burning","CA",20
+1136196,144,2009,2009-05-24,"Spring","Equipment Use","Equipment Use","CA",0.5
+1142946,161,2002,2002-06-10,"Spring","Equipment Use","Equipment Use","CA",20
+1626340,246,2012,2012-09-02,"Summer","Missing/Undefined","Missing/Undefined","CA",0.1
+367951,260,2004,2004-09-16,"Summer","Miscellaneous","Miscellaneous","CA",1
+10770,204,2006,2006-07-23,"Summer","Miscellaneous","Miscellaneous","CA",0.5
+1655272,231,2013,2013-08-19,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",22
+1118334,128,2007,2007-05-08,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1652599,118,2013,2013-04-28,"Spring","Debris Burning","Debris Burning","CA",0.1
+356558,190,2008,2008-07-08,"Summer","Lightning","Lightning","CA",0.5
+1113134,236,1994,1994-08-24,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+163068,232,2003,2003-08-20,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.5
+313135,23,2007,2007-01-23,"Winter","Miscellaneous","Miscellaneous","CA",0.1
+1126966,308,1992,1992-11-03,"Fall","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+152411,273,2002,2002-09-30,"Fall","Miscellaneous","Miscellaneous","CA",0.2
+1105099,310,1996,1996-11-05,"Fall","Debris Burning","Debris Burning","CA",0.5
+1107359,230,1994,1994-08-18,"Summer","Equipment Use","Equipment Use","CA",0.1
+1116595,215,1994,1994-08-03,"Summer","Equipment Use","Equipment Use","CA",0.1
+316273,16,2006,2006-01-16,"Winter","Campfire/Children/Smoking/Fireworks","Children","CA",0.2
+1110983,188,2002,2002-07-07,"Summer","Miscellaneous","Miscellaneous","CA",0.3
+1513824,246,2011,2011-09-03,"Summer","Missing/Undefined","Missing/Undefined","CA",1
+56870,276,1993,1993-10-03,"Fall","Equipment Use","Equipment Use","CA",0.1
+49033,277,1992,1992-10-03,"Fall","Lightning","Lightning","CA",0.3
+115428,151,1999,1999-05-31,"Spring","Campfire/Children/Smoking/Fireworks","Campfire","CA",1
+5647,339,2005,2005-12-05,"Fall","Lightning","Lightning","CA",0.1
+1125528,286,1995,1995-10-13,"Fall","Equipment Use","Equipment Use","CA",1
+1873842,163,2009,2009-06-12,"Spring","Miscellaneous","Miscellaneous","CA",23
+215815,282,1992,1992-10-08,"Fall","Equipment Use","Equipment Use","CA",265
+1181121,264,2010,2010-09-21,"Summer","Arson","Arson","CA",0.1
+1070839,284,2008,2008-10-10,"Fall","Campfire/Children/Smoking/Fireworks","Children","CA",100
+213899,236,1994,1994-08-24,"Summer","Arson","Arson","CA",300
+1093123,263,2003,2003-09-20,"Summer","Miscellaneous","Miscellaneous","CA",1
+1070838,260,2008,2008-09-16,"Summer","Miscellaneous","Miscellaneous","CA",1
+1874661,260,2012,2012-09-16,"Summer","Missing/Undefined","Missing/Undefined","CA",0.1
+1511106,199,2011,2011-07-18,"Summer","Equipment Use","Equipment Use","CA",0.01
+39417,257,2009,2009-09-14,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1116430,260,1992,1992-09-16,"Summer","Equipment Use","Equipment Use","CA",2
+369067,210,2005,2005-07-29,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+155681,217,2003,2003-08-05,"Summer","Lightning","Lightning","CA",0.1
+117177,65,1999,1999-03-06,"Winter","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1065135,298,2003,2003-10-25,"Fall","Missing/Undefined","Missing/Undefined","CA",0.5
+1074737,196,2002,2002-07-15,"Summer","Miscellaneous","Miscellaneous","CA",0.4
+1114853,118,2004,2004-04-27,"Spring","Debris Burning","Debris Burning","CA",0.2
+1797802,214,2015,2015-08-02,"Summer","Lightning","Lightning","CA",43
+316373,136,2006,2006-05-16,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1872487,87,2010,2010-03-28,"Spring","Debris Burning","Debris Burning","CA",0.5
+1788023,212,2014,2014-07-31,"Summer","Missing/Undefined","Missing/Undefined","CA",0.5
+1087042,130,2002,2002-05-10,"Spring","Equipment Use","Equipment Use","CA",60
+320522,175,2006,2006-06-24,"Summer","Lightning","Lightning","CA",90
+1479845,178,2011,2011-06-27,"Summer","Debris Burning","Debris Burning","CA",1
+1121172,293,1996,1996-10-19,"Fall","Equipment Use","Equipment Use","CA",0.1
+190818,214,1993,1993-08-02,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1871314,238,2015,2015-08-26,"Summer","Arson","Arson","CA",1
+1213888,206,2010,2010-07-25,"Summer","Debris Burning","Debris Burning","CA",0.1
+1876731,134,2010,2010-05-14,"Spring","Equipment Use","Equipment Use","CA",2
+1138011,176,1993,1993-06-25,"Summer","Equipment Use","Equipment Use","CA",0.5
+1181497,282,2010,2010-10-09,"Fall","Campfire/Children/Smoking/Fireworks","Children","CA",2
+1066513,221,2006,2006-08-09,"Summer","Equipment Use","Equipment Use","CA",0.1
+355326,217,2002,2002-08-05,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1138146,194,1993,1993-07-13,"Summer","Miscellaneous","Miscellaneous","CA",0.3
+1139946,281,1995,1995-10-08,"Fall","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+1131472,31,1997,1997-01-31,"Winter","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.3
+165573,126,2004,2004-05-05,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1128731,193,2003,2003-07-12,"Summer","Equipment Use","Equipment Use","CA",6
+310045,224,2001,2001-08-12,"Summer","Arson","Arson","CA",102
+1510026,216,2011,2011-08-04,"Summer","Miscellaneous","Miscellaneous","CA",6
+1607980,151,2012,2012-05-30,"Spring","Arson","Arson","CA",1
+1112830,175,2001,2001-06-24,"Summer","Debris Burning","Debris Burning","CA",1
+318004,189,2009,2009-07-08,"Summer","Miscellaneous","Miscellaneous","CA",6
+1072554,197,1995,1995-07-16,"Summer","Miscellaneous","Miscellaneous","CA",0.4
+125363,261,2000,2000-09-17,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1139098,244,1994,1994-09-01,"Summer","Arson","Arson","CA",0.1
+90314,196,1996,1996-07-14,"Summer","Lightning","Lightning","CA",13.2
+1059951,211,2000,2000-07-29,"Summer","Miscellaneous","Miscellaneous","CA",0.2
+314817,62,2002,2002-03-03,"Winter","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.2
+165256,143,2004,2004-05-22,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1871610,218,2015,2015-08-06,"Summer","Missing/Undefined","Missing/Undefined","CA",0.1
+133437,219,2000,2000-08-06,"Summer","Lightning","Lightning","CA",0.1
+155692,278,2003,2003-10-05,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+1070566,140,2008,2008-05-19,"Spring","Equipment Use","Equipment Use","CA",2
+101540,165,1997,1997-06-14,"Spring","Lightning","Lightning","CA",0.2
+321534,221,2008,2008-08-08,"Summer","Missing/Undefined","Missing/Undefined","CA",0.1
+47383,176,1992,1992-06-24,"Summer","Lightning","Lightning","CA",0.1
+12329,254,2006,2006-09-11,"Summer","Equipment Use","Equipment Use","CA",0.5
+1877619,213,2009,2009-08-01,"Summer","Lightning","Lightning","CA",0.2
+40492,212,2009,2009-07-31,"Summer","Miscellaneous","Miscellaneous","CA",2
+1142962,212,2002,2002-07-31,"Summer","Equipment Use","Equipment Use","CA",2
+1080647,166,1994,1994-06-15,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1614023,256,2012,2012-09-12,"Summer","Arson","Arson","CA",1.5
+1091624,167,2006,2006-06-16,"Spring","Equipment Use","Equipment Use","CA",0.1
+1070205,179,2007,2007-06-28,"Summer","Equipment Use","Equipment Use","CA",1
+1122802,251,2003,2003-09-08,"Summer","Miscellaneous","Miscellaneous","CA",1
+1660258,298,2013,2013-10-25,"Fall","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.1
+1092396,192,1996,1996-07-10,"Summer","Equipment Use","Equipment Use","CA",0.1
+1874324,67,2015,2015-03-08,"Winter","Debris Burning","Debris Burning","CA",0.01
+1878201,172,2010,2010-06-21,"Summer","Missing/Undefined","Missing/Undefined","CA",22
+1456880,266,2011,2011-09-23,"Fall","Miscellaneous","Miscellaneous","CA",0.5
+282907,305,2006,2006-11-01,"Fall","Arson","Arson","CA",0.2
+116421,236,1999,1999-08-24,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1625915,100,2012,2012-04-09,"Spring","Miscellaneous","Miscellaneous","CA",0.01
+215631,25,1992,1992-01-25,"Winter","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1879987,62,2009,2009-03-03,"Winter","Miscellaneous","Miscellaneous","CA",1
+1087540,116,2004,2004-04-25,"Spring","Arson","Arson","CA",0.3
+1481085,274,2011,2011-10-01,"Fall","Miscellaneous","Miscellaneous","CA",45
+319011,184,2002,2002-07-03,"Summer","Equipment Use","Equipment Use","CA",1
+1091584,214,2004,2004-08-01,"Summer","Equipment Use","Equipment Use","CA",1
+1106546,246,1992,1992-09-02,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+70497,208,1994,1994-07-27,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.4
+1123317,199,1995,1995-07-18,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.3
+1092245,214,1995,1995-08-02,"Summer","Equipment Use","Equipment Use","CA",0.1
+311750,230,2004,2004-08-17,"Summer","Miscellaneous","Miscellaneous","CA",1
+151100,133,2002,2002-05-13,"Spring","Miscellaneous","Miscellaneous","CA",1.5
+1180503,249,2010,2010-09-06,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1103756,271,2006,2006-09-28,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+362698,148,1999,1999-05-28,"Spring","Equipment Use","Equipment Use","CA",0.1
+1113544,233,2006,2006-08-21,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1105704,212,2003,2003-07-31,"Summer","Equipment Use","Equipment Use","CA",0.1
+316664,301,2006,2006-10-28,"Fall","Miscellaneous","Miscellaneous","CA",1
+1114208,173,1992,1992-06-21,"Summer","Debris Burning","Debris Burning","CA",0.1
+1098151,301,2005,2005-10-28,"Fall","Debris Burning","Debris Burning","CA",0.1
+49410,129,1992,1992-05-08,"Spring","Lightning","Lightning","CA",0.1
+1130832,237,1995,1995-08-25,"Summer","Miscellaneous","Miscellaneous","CA",2
+1067763,215,1993,1993-08-03,"Summer","Equipment Use","Equipment Use","CA",0.1
+1118195,229,2000,2000-08-16,"Summer","Miscellaneous","Miscellaneous","CA",1
+48426,258,1992,1992-09-14,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",0.5
+1075439,116,2004,2004-04-25,"Spring","Equipment Use","Equipment Use","CA",0.1
+48707,316,1992,1992-11-11,"Fall","Debris Burning","Debris Burning","CA",7
+1081551,144,1996,1996-05-23,"Spring","Equipment Use","Equipment Use","CA",200
+215313,221,1999,1999-08-09,"Summer","Powerline/Railroad/Structure","Powerline","CA",0.1
+1073710,188,2007,2007-07-07,"Summer","Miscellaneous","Miscellaneous","CA",2
+1178469,204,2010,2010-07-23,"Summer","Arson","Arson","CA",15
+1655729,156,2013,2013-06-05,"Spring","Campfire/Children/Smoking/Fireworks","Children","CA",0.5
+1119281,305,2006,2006-11-01,"Fall","Debris Burning","Debris Burning","CA",1
+218201,249,1998,1998-09-06,"Summer","Arson","Arson","CA",0.1
+1134652,227,2006,2006-08-15,"Summer","Equipment Use","Equipment Use","CA",0.1
+219094,161,1995,1995-06-10,"Spring","Debris Burning","Debris Burning","CA",0.1
+310632,254,2002,2002-09-11,"Summer","Miscellaneous","Miscellaneous","CA",8
+1757048,124,2014,2014-05-04,"Spring","Debris Burning","Debris Burning","CA",0.5
+1075911,135,2005,2005-05-15,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1090595,201,1997,1997-07-20,"Summer","Arson","Arson","CA",1
+1512402,149,2011,2011-05-29,"Spring","Missing/Undefined","Missing/Undefined","CA",0.11
+80006,244,1995,1995-09-01,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1109879,222,1998,1998-08-10,"Summer","Arson","Arson","CA",0.3
+1787825,195,2014,2014-07-14,"Summer","Missing/Undefined","Missing/Undefined","CA",0.1
+190831,224,1993,1993-08-12,"Summer","Arson","Arson","CA",0.5
+1779416,188,2014,2014-07-07,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+316183,268,2005,2005-09-25,"Fall","Equipment Use","Equipment Use","CA",0.1
+1090141,158,1996,1996-06-06,"Spring","Arson","Arson","CA",0.1
+1145012,291,1998,1998-10-18,"Fall","Arson","Arson","CA",0.1
+1089518,135,1994,1994-05-15,"Spring","Equipment Use","Equipment Use","CA",32
+1639293,258,2013,2013-09-15,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1103271,198,1997,1997-07-17,"Summer","Miscellaneous","Miscellaneous","CA",0.2
+47328,199,1992,1992-07-17,"Summer","Lightning","Lightning","CA",0.1
+116973,73,1999,1999-03-14,"Winter","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1105192,270,2006,2006-09-27,"Fall","Equipment Use","Equipment Use","CA",0.2
+1084441,243,2007,2007-08-31,"Summer","Miscellaneous","Miscellaneous","CA",1
+317715,301,2007,2007-10-28,"Fall","Arson","Arson","CA",0.1
+244212,291,1997,1997-10-18,"Fall","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+39893,279,2009,2009-10-06,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+1113287,196,2003,2003-07-15,"Summer","Equipment Use","Equipment Use","CA",0.1
+152685,212,2002,2002-07-31,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+202146,143,1992,1992-05-22,"Spring","Lightning","Lightning","CA",1
+166209,183,2004,2004-07-01,"Summer","Lightning","Lightning","CA",0.1
+1132151,196,1999,1999-07-15,"Summer","Equipment Use","Equipment Use","CA",0.1
+1143157,122,2004,2004-05-01,"Spring","Equipment Use","Equipment Use","CA",100
+131137,245,2000,2000-09-01,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",0.5
+120513,222,1999,1999-08-10,"Summer","Lightning","Lightning","CA",0.1
+1129961,140,1993,1993-05-20,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1144245,182,1994,1994-07-01,"Summer","Miscellaneous","Miscellaneous","CA",1
+1074593,139,2002,2002-05-19,"Spring","Equipment Use","Equipment Use","CA",0.1
+1513217,226,2011,2011-08-14,"Summer","Debris Burning","Debris Burning","CA",0.25
+365860,105,2002,2002-04-15,"Spring","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1139792,239,1995,1995-08-27,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1103124,144,1997,1997-05-24,"Spring","Miscellaneous","Miscellaneous","CA",5
+1101733,209,2008,2008-07-27,"Summer","Miscellaneous","Miscellaneous","CA",1
+1654694,256,2013,2013-09-13,"Summer","Lightning","Lightning","CA",1
+1137444,232,1992,1992-08-19,"Summer","Equipment Use","Equipment Use","CA",0.2
+1107458,280,2007,2007-10-07,"Fall","Miscellaneous","Miscellaneous","CA",1
+1457014,96,2011,2011-04-06,"Spring","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.1
+320607,189,2006,2006-07-08,"Summer","Lightning","Lightning","CA",0.1
+1870089,211,2015,2015-07-30,"Summer","Missing/Undefined","Missing/Undefined","CA",0.01
+53289,243,1992,1992-08-30,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+214754,278,1998,1998-10-05,"Fall","Powerline/Railroad/Structure","Powerline","CA",0.1
+97180,136,1997,1997-05-16,"Spring","Lightning","Lightning","CA",0.1
+1135155,142,2007,2007-05-22,"Spring","Miscellaneous","Miscellaneous","CA",1
+1107184,168,1997,1997-06-17,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+69610,202,1994,1994-07-21,"Summer","Lightning","Lightning","CA",0.2
+1071890,229,1993,1993-08-17,"Summer","Arson","Arson","CA",5
+101531,263,1997,1997-09-20,"Summer","Arson","Arson","CA",0.3
+191323,271,1996,1996-09-27,"Fall","Debris Burning","Debris Burning","CA",1
+319071,200,2002,2002-07-19,"Summer","Lightning","Lightning","CA",0.1
+1093227,216,2005,2005-08-04,"Summer","Equipment Use","Equipment Use","CA",1
+283907,191,2001,2001-07-10,"Summer","Arson","Arson","CA",2
+96912,132,1997,1997-05-12,"Spring","Equipment Use","Equipment Use","CA",0.1
+215127,178,1999,1999-06-27,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+131194,186,2000,2000-07-04,"Summer","Lightning","Lightning","CA",0.1
+319282,152,2003,2003-06-01,"Spring","Miscellaneous","Miscellaneous","CA",0.3
+116910,260,1999,1999-09-17,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+321619,213,2009,2009-08-01,"Summer","Lightning","Lightning","CA",0.1
+1076070,199,2005,2005-07-18,"Summer","Miscellaneous","Miscellaneous","CA",0.3
+1127404,296,1994,1994-10-23,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+95560,226,1996,1996-08-13,"Summer","Lightning","Lightning","CA",0.1
+1656402,168,2013,2013-06-17,"Spring","Missing/Undefined","Missing/Undefined","CA",27
+1078213,132,2009,2009-05-12,"Spring","Miscellaneous","Miscellaneous","CA",0.5
+46775,166,1992,1992-06-14,"Spring","Equipment Use","Equipment Use","CA",0.1
+1457323,167,2011,2011-06-16,"Spring","Equipment Use","Equipment Use","CA",1.5
+1071441,145,1992,1992-05-24,"Spring","Arson","Arson","CA",3
+1778060,136,2014,2014-05-16,"Spring","Miscellaneous","Miscellaneous","CA",0.5
+1457050,250,2011,2011-09-07,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.1
+1122767,212,1997,1997-07-31,"Summer","Powerline/Railroad/Structure","Railroad","CA",25
+1853954,117,2015,2015-04-27,"Spring","Missing/Undefined","Missing/Undefined","CA",0.1
+1091160,216,1999,1999-08-04,"Summer","Equipment Use","Equipment Use","CA",0.1
+70649,267,1994,1994-09-24,"Fall","Lightning","Lightning","CA",0.1
+80042,196,1995,1995-07-15,"Summer","Lightning","Lightning","CA",0.1
+309566,241,2000,2000-08-28,"Summer","Lightning","Lightning","CA",0.1
+1795180,141,2015,2015-05-21,"Spring","Lightning","Lightning","CA",0.1
+1140724,246,1996,1996-09-02,"Summer","Equipment Use","Equipment Use","CA",0.1
+1105318,220,2004,2004-08-07,"Summer","Arson","Arson","CA",0.5
+281709,277,2000,2000-10-03,"Fall","Arson","Arson","CA",0.1
+119699,348,1999,1999-12-14,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+131966,329,2000,2000-11-24,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+58142,177,1993,1993-06-26,"Summer","Arson","Arson","CA",125
+1604778,199,2012,2012-07-17,"Summer","Missing/Undefined","Missing/Undefined","CA",0.1
+168780,196,2004,2004-07-14,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.2
+314344,338,2000,2000-12-03,"Fall","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+213602,186,1992,1992-07-04,"Summer","Missing/Undefined","Missing/Undefined","CA",0.1
+1125642,2,2000,2000-01-02,"Winter","Miscellaneous","Miscellaneous","CA",0.1
+1124802,171,1993,1993-06-20,"Spring","Campfire/Children/Smoking/Fireworks","Children","CA",0.2
+217414,15,1999,1999-01-15,"Winter","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+363574,146,2000,2000-05-25,"Spring","Arson","Arson","CA",0.1
+1509658,185,2011,2011-07-04,"Summer","Arson","Arson","CA",0.2
+1105948,139,2007,2007-05-19,"Spring","Miscellaneous","Miscellaneous","CA",1
+152845,209,2002,2002-07-28,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1086189,213,1997,1997-08-01,"Summer","Equipment Use","Equipment Use","CA",0.5
+116969,53,1999,1999-02-22,"Winter","Miscellaneous","Miscellaneous","CA",1
+191258,181,1996,1996-06-29,"Summer","Arson","Arson","CA",0.1
+1643919,159,2013,2013-06-08,"Spring","Missing/Undefined","Missing/Undefined","CA",0.1
+1094198,163,1996,1996-06-11,"Spring","Equipment Use","Equipment Use","CA",1
+1879795,188,2013,2013-07-07,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1654525,228,2013,2013-08-16,"Summer","Missing/Undefined","Missing/Undefined","CA",70
+318835,258,2001,2001-09-15,"Summer","Lightning","Lightning","CA",0.1
+117225,213,1999,1999-08-01,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1112714,246,1997,1997-09-03,"Summer","Lightning","Lightning","CA",0.1
+57436,98,1993,1993-04-08,"Spring","Equipment Use","Equipment Use","CA",0.3
+1117373,234,2007,2007-08-22,"Summer","Miscellaneous","Miscellaneous","CA",88
+32889,275,2008,2008-10-01,"Fall","Miscellaneous","Miscellaneous","CA",0.25
+101513,245,1997,1997-09-02,"Summer","Lightning","Lightning","CA",0.1
+1626115,171,2012,2012-06-19,"Spring","Arson","Arson","CA",0.1
+1078985,129,1992,1992-05-08,"Spring","Equipment Use","Equipment Use","CA",0.1
+1125064,244,2010,2010-09-01,"Summer","Miscellaneous","Miscellaneous","CA",20
+1075816,201,2004,2004-07-19,"Summer","Miscellaneous","Miscellaneous","CA",0.5
+1654808,217,2013,2013-08-05,"Summer","Missing/Undefined","Missing/Undefined","CA",0.1
+1139303,332,1994,1994-11-28,"Fall","Miscellaneous","Miscellaneous","CA",100
+1084475,88,2008,2008-03-28,"Spring","Miscellaneous","Miscellaneous","CA",1
+1642723,233,2013,2013-08-21,"Summer","Lightning","Lightning","CA",0.1
+49421,198,1992,1992-07-16,"Summer","Lightning","Lightning","CA",0.1
+1788603,320,2014,2014-11-16,"Fall","Missing/Undefined","Missing/Undefined","CA",0.01
+1100031,200,2000,2000-07-18,"Summer","Arson","Arson","CA",0.1
+120455,210,1999,1999-07-29,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.2
+23930,277,2007,2007-10-04,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+315993,188,2005,2005-07-07,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1079183,156,1992,1992-06-04,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+321529,200,2008,2008-07-18,"Summer","Missing/Undefined","Missing/Undefined","CA",0.3
+319027,191,2002,2002-07-10,"Summer","Equipment Use","Equipment Use","CA",0.1
+8301,168,2006,2006-06-17,"Spring","Miscellaneous","Miscellaneous","CA",2
+1061474,221,2002,2002-08-09,"Summer","Equipment Use","Equipment Use","CA",0.2
+70409,218,1994,1994-08-06,"Summer","Miscellaneous","Miscellaneous","CA",0.2
+1653170,130,2013,2013-05-10,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1069049,207,2001,2001-07-26,"Summer","Arson","Arson","CA",0.1
+1102722,147,1995,1995-05-27,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+190645,167,1992,1992-06-15,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+369050,237,2005,2005-08-25,"Summer","Equipment Use","Equipment Use","CA",3
+1143515,279,2006,2006-10-06,"Fall","Equipment Use","Equipment Use","CA",0.1
+23931,205,2007,2007-07-24,"Summer","Lightning","Lightning","CA",0.1
+1779602,196,2014,2014-07-15,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1089452,119,1994,1994-04-29,"Spring","Debris Burning","Debris Burning","CA",0.1
+1102808,197,1995,1995-07-16,"Summer","Equipment Use","Equipment Use","CA",2
+1140059,329,1995,1995-11-25,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+369167,232,2005,2005-08-20,"Summer","Arson","Arson","CA",0.1
+98793,216,1997,1997-08-04,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1086642,200,2000,2000-07-18,"Summer","Arson","Arson","CA",1
+1108309,187,1994,1994-07-06,"Summer","Miscellaneous","Miscellaneous","CA",3
+1116609,252,1994,1994-09-09,"Summer","Equipment Use","Equipment Use","CA",1
+1086860,166,2001,2001-06-15,"Spring","Equipment Use","Equipment Use","CA",23
+1182021,199,2010,2010-07-18,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+243900,196,1992,1992-07-14,"Summer","Lightning","Lightning","CA",0.1
+1104233,213,1993,1993-08-01,"Summer","Miscellaneous","Miscellaneous","CA",0.3
+140646,191,2001,2001-07-10,"Summer","Lightning","Lightning","CA",0.1
+1843462,131,2015,2015-05-11,"Spring","Miscellaneous","Miscellaneous","CA",0.01
+1726083,10,2014,2014-01-10,"Winter","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+71212,221,1994,1994-08-09,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.1
+1091776,243,2007,2007-08-31,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",1
+1111911,156,2001,2001-06-05,"Spring","Equipment Use","Equipment Use","CA",0.1
+1114287,179,1997,1997-06-28,"Summer","Miscellaneous","Miscellaneous","CA",0.2
+310441,189,2002,2002-07-08,"Summer","Equipment Use","Equipment Use","CA",1
+1796980,255,2015,2015-09-12,"Summer","Equipment Use","Equipment Use","CA",0.1
+1879032,143,2009,2009-05-23,"Spring","Miscellaneous","Miscellaneous","CA",2
+316624,257,2006,2006-09-14,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.1
+1615242,109,2012,2012-04-18,"Spring","Debris Burning","Debris Burning","CA",0.25
+313992,216,2009,2009-08-04,"Summer","Missing/Undefined","Missing/Undefined","CA",0.1
+1179082,219,2010,2010-08-07,"Summer","Lightning","Lightning","CA",0.25
+1125788,285,2001,2001-10-12,"Fall","Arson","Arson","CA",4
+3794,149,2005,2005-05-29,"Spring","Lightning","Lightning","CA",2.5
+1112785,224,1996,1996-08-11,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+355451,269,2005,2005-09-26,"Fall","Lightning","Lightning","CA",0.1
+1111181,200,2008,2008-07-18,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1092921,308,2001,2001-11-04,"Fall","Campfire/Children/Smoking/Fireworks","Campfire","CA",3
+1142375,190,1999,1999-07-09,"Summer","Equipment Use","Equipment Use","CA",0.5
+1082451,235,1997,1997-08-23,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1120482,187,1997,1997-07-06,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",1
+1479989,260,2011,2011-09-17,"Summer","Equipment Use","Equipment Use","CA",1
+13283,220,2006,2006-08-08,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.5
+1137145,175,1992,1992-06-23,"Summer","Miscellaneous","Miscellaneous","CA",0.5
+1722802,231,2014,2014-08-19,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1875910,124,2015,2015-05-04,"Spring","Missing/Undefined","Missing/Undefined","CA",0.1
+48657,299,1992,1992-10-25,"Fall","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+311917,109,2005,2005-04-19,"Spring","Arson","Arson","CA",0.1
+282894,294,2006,2006-10-21,"Fall","Arson","Arson","CA",0.1
+1126732,116,1992,1992-04-25,"Spring","Equipment Use","Equipment Use","CA",0.1
+1080655,169,1994,1994-06-18,"Spring","Equipment Use","Equipment Use","CA",1
+1876661,265,2010,2010-09-22,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",1
+313359,153,2007,2007-06-02,"Spring","Arson","Arson","CA",0.3
+125253,205,2000,2000-07-23,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+309769,140,2001,2001-05-20,"Spring","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.3
+1780710,250,2014,2014-09-07,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1113675,185,2007,2007-07-04,"Summer","Miscellaneous","Miscellaneous","CA",0.3
+1074826,241,2002,2002-08-29,"Summer","Miscellaneous","Miscellaneous","CA",0.5
+1074136,112,2001,2001-04-22,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1072875,222,1996,1996-08-09,"Summer","Arson","Arson","CA",4
+1132764,176,2001,2001-06-25,"Summer","Equipment Use","Equipment Use","CA",1
+1659148,330,2013,2013-11-26,"Fall","Miscellaneous","Miscellaneous","CA",1
+1072926,268,1996,1996-09-24,"Fall","Equipment Use","Equipment Use","CA",0.3
+47363,170,1992,1992-06-18,"Spring","Lightning","Lightning","CA",0.1
+1182360,217,2010,2010-08-05,"Summer","Equipment Use","Equipment Use","CA",1
+1137177,185,1992,1992-07-03,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1083019,135,1999,1999-05-15,"Spring","Arson","Arson","CA",1
+1872537,287,2010,2010-10-14,"Fall","Lightning","Lightning","CA",1.63
+191778,199,1994,1994-07-18,"Summer","Equipment Use","Equipment Use","CA",0.1
+1061537,219,2003,2003-08-07,"Summer","Lightning","Lightning","CA",0.1
+1853843,107,2015,2015-04-17,"Spring","Missing/Undefined","Missing/Undefined","CA",0.5
+1637686,242,2013,2013-08-30,"Summer","Lightning","Lightning","CA",0.25
+141962,300,2001,2001-10-27,"Fall","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1811585,169,2015,2015-06-18,"Spring","Equipment Use","Equipment Use","CA",1
+1067871,290,1993,1993-10-17,"Fall","Equipment Use","Equipment Use","CA",3
+1122885,16,2008,2008-01-16,"Winter","Miscellaneous","Miscellaneous","CA",1
+1095297,190,1993,1993-07-09,"Summer","Equipment Use","Equipment Use","CA",0.3
+215924,189,1993,1993-07-08,"Summer","Equipment Use","Equipment Use","CA",0.1
+310304,143,2002,2002-05-23,"Spring","Equipment Use","Equipment Use","CA",0.1
+1079490,220,1992,1992-08-07,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",13
+141154,220,2001,2001-08-08,"Summer","Lightning","Lightning","CA",138
+1873123,171,2013,2013-06-20,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1614621,70,2012,2012-03-10,"Winter","Equipment Use","Equipment Use","CA",0.12
+1129480,247,2008,2008-09-03,"Summer","Miscellaneous","Miscellaneous","CA",1
+113180,200,1998,1998-07-19,"Summer","Arson","Arson","CA",75
+1871436,223,2015,2015-08-11,"Summer","Missing/Undefined","Missing/Undefined","CA",0.25
+112113,289,1998,1998-10-16,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+1121181,276,1997,1997-10-03,"Fall","Equipment Use","Equipment Use","CA",0.1
+1114407,209,1995,1995-07-28,"Summer","Lightning","Lightning","CA",10
+1875207,243,2013,2013-08-31,"Summer","Arson","Arson","CA",21
+1110206,210,2005,2005-07-29,"Summer","Equipment Use","Equipment Use","CA",7
+1097302,267,1999,1999-09-24,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+56991,248,1993,1993-09-05,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1510030,256,2011,2011-09-13,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",1
+1513497,191,2011,2011-07-10,"Summer","Arson","Arson","CA",0.25
+1087454,258,2003,2003-09-15,"Summer","Debris Burning","Debris Burning","CA",0.1
+1722856,334,2014,2014-11-30,"Fall","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.6
+1068932,222,2000,2000-08-09,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1059704,187,2000,2000-07-05,"Summer","Lightning","Lightning","CA",0.2
+1131091,123,1996,1996-05-02,"Spring","Arson","Arson","CA",10
+213575,152,1992,1992-05-31,"Spring","Lightning","Lightning","CA",0.1
+47598,192,1992,1992-07-10,"Summer","Equipment Use","Equipment Use","CA",290
+1805489,113,2015,2015-04-23,"Spring","Lightning","Lightning","CA",0.25
+1654413,251,2013,2013-09-08,"Summer","Missing/Undefined","Missing/Undefined","CA",1
+283054,221,2007,2007-08-09,"Summer","Arson","Arson","CA",0.2
+1793190,232,2015,2015-08-20,"Summer","Arson","Arson","CA",0.1
+192343,184,1999,1999-07-03,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",2
+1130930,298,1995,1995-10-25,"Fall","Equipment Use","Equipment Use","CA",0.3
+1085658,223,1995,1995-08-11,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.2
+1643909,140,2013,2013-05-20,"Spring","Debris Burning","Debris Burning","CA",0.2
+1074103,277,2000,2000-10-03,"Fall","Equipment Use","Equipment Use","CA",0.2
+1113490,189,2006,2006-07-08,"Summer","Miscellaneous","Miscellaneous","CA",0.5
+1114444,279,1993,1993-10-06,"Fall","Lightning","Lightning","CA",0.1
+215596,323,1999,1999-11-19,"Fall","Powerline/Railroad/Structure","Powerline","CA",2
+1136914,137,1992,1992-05-16,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1077259,259,2007,2007-09-16,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+4911,242,2005,2005-08-30,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1071164,119,2010,2010-04-29,"Spring","Campfire/Children/Smoking/Fireworks","Children","CA",1
+1098858,205,1992,1992-07-23,"Summer","Miscellaneous","Miscellaneous","CA",15
+319037,193,2002,2002-07-12,"Summer","Lightning","Lightning","CA",0.4
+1082511,260,1997,1997-09-17,"Summer","Arson","Arson","CA",0.1
+1110838,250,2008,2008-09-06,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",0.3
+1070861,330,2008,2008-11-25,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+127798,188,2000,2000-07-06,"Summer","Equipment Use","Equipment Use","CA",0.3
+1508049,227,2011,2011-08-15,"Summer","Debris Burning","Debris Burning","CA",0.01
+369066,262,2005,2005-09-19,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1145075,182,1999,1999-07-01,"Summer","Equipment Use","Equipment Use","CA",4
+1133313,265,2002,2002-09-22,"Summer","Equipment Use","Equipment Use","CA",0.3
+316455,171,2006,2006-06-20,"Spring","Equipment Use","Equipment Use","CA",0.3
+311159,243,2003,2003-08-31,"Summer","Lightning","Lightning","CA",0.1
+117483,143,1999,1999-05-23,"Spring","Debris Burning","Debris Burning","CA",0.3
+1075229,218,2003,2003-08-06,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1607912,294,2012,2012-10-20,"Fall","Arson","Arson","CA",0.05
+80888,247,1995,1995-09-04,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.2
+1074926,77,2003,2003-03-18,"Winter","Debris Burning","Debris Burning","CA",0.5
+1118687,231,1993,1993-08-19,"Summer","Lightning","Lightning","CA",0.1
+1093962,279,1994,1994-10-06,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+319744,73,2004,2004-03-13,"Winter","Arson","Arson","CA",0.5
+1098847,173,1992,1992-06-21,"Summer","Equipment Use","Equipment Use","CA",0.1
+116981,17,1999,1999-01-17,"Winter","Miscellaneous","Miscellaneous","CA",0.1
+94330,166,1996,1996-06-14,"Spring","Powerline/Railroad/Structure","Railroad","CA",55
+1102125,208,1992,1992-07-26,"Summer","Miscellaneous","Miscellaneous","CA",10
+70905,271,1994,1994-09-28,"Fall","Lightning","Lightning","CA",0.1
+1116546,268,1993,1993-09-25,"Fall","Equipment Use","Equipment Use","CA",0.1
+1094539,226,1998,1998-08-14,"Summer","Debris Burning","Debris Burning","CA",1
+1135658,138,2008,2008-05-17,"Spring","Equipment Use","Equipment Use","CA",1
+1112365,175,1992,1992-06-23,"Summer","Lightning","Lightning","CA",0.5
+1062277,39,2003,2003-02-08,"Winter","Debris Burning","Debris Burning","CA",0.25
+367979,253,2004,2004-09-09,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+48059,191,1992,1992-07-09,"Summer","Equipment Use","Equipment Use","CA",0.5
+1097164,155,2002,2002-06-04,"Spring","Equipment Use","Equipment Use","CA",0.8
+1137110,161,1992,1992-06-09,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1123877,248,1997,1997-09-05,"Summer","Arson","Arson","CA",1
+243779,177,1992,1992-06-25,"Summer","Arson","Arson","CA",0.2
+1111215,283,2008,2008-10-09,"Fall","Miscellaneous","Miscellaneous","CA",1.5
+1059902,36,2000,2000-02-05,"Winter","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1076291,150,2006,2006-05-30,"Spring","Miscellaneous","Miscellaneous","CA",2
+313807,304,2007,2007-10-31,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+1121525,197,2008,2008-07-15,"Summer","Lightning","Lightning","CA",1
+1114402,268,1994,1994-09-25,"Fall","Lightning","Lightning","CA",0.5
+1072065,133,1994,1994-05-13,"Spring","Equipment Use","Equipment Use","CA",2
+1083645,227,2002,2002-08-15,"Summer","Arson","Arson","CA",3
+1136373,234,2009,2009-08-22,"Summer","Equipment Use","Equipment Use","CA",0.5
+1135179,157,2007,2007-06-06,"Spring","Miscellaneous","Miscellaneous","CA",0.3
+281757,180,2001,2001-06-29,"Summer","Arson","Arson","CA",5
+1607671,148,2012,2012-05-27,"Spring","Debris Burning","Debris Burning","CA",0.1
+1508768,202,2011,2011-07-21,"Summer","Missing/Undefined","Missing/Undefined","CA",0.41
+1080911,226,1994,1994-08-14,"Summer","Miscellaneous","Miscellaneous","CA",0.2
+156013,170,2003,2003-06-19,"Spring","Debris Burning","Debris Burning","CA",0.1
+1132600,339,2000,2000-12-04,"Fall","Debris Burning","Debris Burning","CA",0.1
+16602,261,2006,2006-09-18,"Summer","Equipment Use","Equipment Use","CA",0.2
+1103100,298,1996,1996-10-24,"Fall","Equipment Use","Equipment Use","CA",0.1
+1070089,19,2007,2007-01-19,"Winter","Miscellaneous","Miscellaneous","CA",10
+314340,333,2000,2000-11-28,"Fall","Equipment Use","Equipment Use","CA",0.4
+33227,174,2008,2008-06-22,"Summer","Lightning","Lightning","CA",0.01
+1725600,278,2014,2014-10-05,"Fall","Lightning","Lightning","CA",0.25
+1878868,189,2014,2014-07-08,"Summer","Missing/Undefined","Missing/Undefined","CA",0.1
+1625951,126,2012,2012-05-05,"Spring","Miscellaneous","Miscellaneous","CA",1
+1496176,299,2011,2011-10-26,"Fall","Missing/Undefined","Missing/Undefined","CA",0.1
+361301,202,1997,1997-07-21,"Summer","Equipment Use","Equipment Use","CA",17
+1607779,36,2012,2012-02-05,"Winter","Miscellaneous","Miscellaneous","CA",0.01
+95899,145,1996,1996-05-24,"Spring","Lightning","Lightning","CA",0.1
+1067708,237,1992,1992-08-24,"Summer","Equipment Use","Equipment Use","CA",30
+81264,239,1995,1995-08-27,"Summer","Miscellaneous","Miscellaneous","CA",1
+311173,246,2003,2003-09-03,"Summer","Lightning","Lightning","CA",0.1
+360760,214,1996,1996-08-01,"Summer","Equipment Use","Equipment Use","CA",0.5
+1582971,217,2012,2012-08-04,"Summer","Missing/Undefined","Missing/Undefined","CA",1
+1567837,245,2012,2012-09-01,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.1
+284194,213,2008,2008-07-31,"Summer","Arson","Arson","CA",1
+1480174,216,2011,2011-08-04,"Summer","Debris Burning","Debris Burning","CA",0.1
+1511746,189,2011,2011-07-08,"Summer","Missing/Undefined","Missing/Undefined","CA",0.5
+157304,246,2003,2003-09-03,"Summer","Lightning","Lightning","CA",0.1
+1795220,214,2015,2015-08-02,"Summer","Lightning","Lightning","CA",0.1
+1130518,253,1994,1994-09-10,"Summer","Miscellaneous","Miscellaneous","CA",0.2
+1626196,195,2012,2012-07-13,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.1
+1088725,188,2008,2008-07-06,"Summer","Miscellaneous","Miscellaneous","CA",0.5
+1143368,275,2005,2005-10-02,"Fall","Equipment Use","Equipment Use","CA",0.1
+1098080,241,2005,2005-08-29,"Summer","Miscellaneous","Miscellaneous","CA",1
+284149,117,2008,2008-04-26,"Spring","Arson","Arson","CA",0.1
+281986,172,2002,2002-06-21,"Summer","Arson","Arson","CA",0.1
+1729861,157,2014,2014-06-06,"Spring","Missing/Undefined","Missing/Undefined","CA",0.1
+119137,235,1999,1999-08-23,"Summer","Lightning","Lightning","CA",0.1
+1795214,160,2015,2015-06-09,"Spring","Lightning","Lightning","CA",1.3
+1215950,239,2010,2010-08-27,"Summer","Missing/Undefined","Missing/Undefined","CA",0.1
+1100841,198,2004,2004-07-16,"Summer","Equipment Use","Equipment Use","CA",0.5
+156019,194,2003,2003-07-13,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+21522,244,2007,2007-09-01,"Summer","Lightning","Lightning","CA",0.1
+1095787,209,1994,1994-07-28,"Summer","Arson","Arson","CA",1
+1878009,121,2015,2015-05-01,"Spring","Missing/Undefined","Missing/Undefined","CA",0.25
+371764,268,2007,2007-09-25,"Fall","Arson","Arson","CA",0.1
+219298,310,1996,1996-11-05,"Fall","Debris Burning","Debris Burning","CA",0.1
+216398,110,1996,1996-04-19,"Spring","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+216447,133,1996,1996-05-12,"Spring","Miscellaneous","Miscellaneous","CA",0.2
+1635261,262,2012,2012-09-18,"Summer","Missing/Undefined","Missing/Undefined","CA",0.12
+150115,177,2002,2002-06-26,"Summer","Lightning","Lightning","CA",0.1
+309651,292,2000,2000-10-18,"Fall","Equipment Use","Equipment Use","CA",30
+1513774,158,2011,2011-06-07,"Spring","Miscellaneous","Miscellaneous","CA",1
+282869,264,2006,2006-09-21,"Summer","Arson","Arson","CA",0.1
+1101731,208,2008,2008-07-26,"Summer","Miscellaneous","Miscellaneous","CA",1
+314498,181,2001,2001-06-30,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+216608,190,1996,1996-07-08,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.5
+69660,271,1994,1994-09-28,"Fall","Lightning","Lightning","CA",0.1
+1112124,175,1993,1993-06-24,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+192138,186,1995,1995-07-05,"Summer","Arson","Arson","CA",0.3
+1133428,145,2003,2003-05-25,"Spring","Equipment Use","Equipment Use","CA",0.1
+120606,205,1999,1999-07-24,"Summer","Lightning","Lightning","CA",0.1
+38239,215,2009,2009-08-03,"Summer","Lightning","Lightning","CA",0.5
+1108443,182,2008,2008-06-30,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1132273,163,1995,1995-06-12,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+217047,174,1998,1998-06-23,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",3
+1118116,243,1992,1992-08-30,"Summer","Equipment Use","Equipment Use","CA",0.1
+1139715,220,1995,1995-08-08,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",3
+317905,171,2008,2008-06-19,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1572600,130,2012,2012-05-09,"Spring","Missing/Undefined","Missing/Undefined","CA",0.1
+1876099,235,2010,2010-08-23,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.01
+71275,211,1994,1994-07-30,"Summer","Arson","Arson","CA",0.1
+1854644,162,2015,2015-06-11,"Spring","Missing/Undefined","Missing/Undefined","CA",0.01
+283586,222,2005,2005-08-10,"Summer","Miscellaneous","Miscellaneous","CA",1
+1121092,184,1995,1995-07-03,"Summer","Equipment Use","Equipment Use","CA",0.1
+1620773,267,2012,2012-09-23,"Fall","Miscellaneous","Miscellaneous","CA",1
+191376,189,1997,1997-07-08,"Summer","Arson","Arson","CA",0.3
+190997,295,1994,1994-10-22,"Fall","Arson","Arson","CA",0.1
+48594,250,1992,1992-09-06,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",25
+1512967,140,2011,2011-05-20,"Spring","Missing/Undefined","Missing/Undefined","CA",0.01
+370542,210,2006,2006-07-29,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1652578,140,2013,2013-05-20,"Spring","Missing/Undefined","Missing/Undefined","CA",0.1
+191429,245,1997,1997-09-02,"Summer","Arson","Arson","CA",0.1
+129811,269,2000,2000-09-25,"Fall","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+25175,223,2007,2007-08-11,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1070898,168,2009,2009-06-17,"Spring","Equipment Use","Equipment Use","CA",0.3
+1655679,109,2013,2013-04-19,"Spring","Missing/Undefined","Missing/Undefined","CA",0.1
+1854839,173,2015,2015-06-22,"Summer","Missing/Undefined","Missing/Undefined","CA",0.1
+1788457,284,2014,2014-10-11,"Fall","Missing/Undefined","Missing/Undefined","CA",0.2
+48053,176,1992,1992-06-24,"Summer","Lightning","Lightning","CA",0.5
+113158,290,1998,1998-10-17,"Fall","Equipment Use","Equipment Use","CA",0.1
+1075765,203,2004,2004-07-21,"Summer","Equipment Use","Equipment Use","CA",0.1
+1094296,242,1996,1996-08-29,"Summer","Miscellaneous","Miscellaneous","CA",2
+1788855,137,2014,2014-05-17,"Spring","Missing/Undefined","Missing/Undefined","CA",0.25
+1086027,286,1996,1996-10-12,"Fall","Miscellaneous","Miscellaneous","CA",0.2
+1107123,74,1997,1997-03-15,"Winter","Miscellaneous","Miscellaneous","CA",0.1
+217140,194,1998,1998-07-13,"Summer","Equipment Use","Equipment Use","CA",1
+1142625,348,1999,1999-12-14,"Fall","Miscellaneous","Miscellaneous","CA",0.3
+1874565,240,2010,2010-08-28,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+155794,272,2003,2003-09-29,"Fall","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1090071,132,1996,1996-05-11,"Spring","Miscellaneous","Miscellaneous","CA",2
+1083708,347,2002,2002-12-13,"Fall","Debris Burning","Debris Burning","CA",0.1
+1097514,149,2001,2001-05-29,"Spring","Equipment Use","Equipment Use","CA",3
+1069305,139,2004,2004-05-18,"Spring","Miscellaneous","Miscellaneous","CA",4
+1140752,243,1996,1996-08-30,"Summer","Equipment Use","Equipment Use","CA",0.3
+1130052,190,1993,1993-07-09,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",0.3
+1722981,137,2014,2014-05-17,"Spring","Equipment Use","Equipment Use","CA",0.5
+113380,246,1998,1998-09-03,"Summer","Equipment Use","Equipment Use","CA",0.5
+1873111,228,2012,2012-08-15,"Summer","Missing/Undefined","Missing/Undefined","CA",0.12
+1114699,194,2001,2001-07-13,"Summer","Debris Burning","Debris Burning","CA",3
+121000,138,1999,1999-05-18,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1144372,210,1995,1995-07-29,"Summer","Miscellaneous","Miscellaneous","CA",0.3
+216257,224,1995,1995-08-12,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",3
+1107970,172,2006,2006-06-21,"Summer","Miscellaneous","Miscellaneous","CA",1.5
+370264,151,2006,2006-05-31,"Spring","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.1
+1871479,201,2015,2015-07-20,"Summer","Miscellaneous","Miscellaneous","CA",9
+29788,173,2008,2008-06-21,"Summer","Lightning","Lightning","CA",0.25
+319788,124,2004,2004-05-03,"Spring","Arson","Arson","CA",0.1
+1074750,187,2002,2002-07-06,"Summer","Equipment Use","Equipment Use","CA",10
+1087248,278,2002,2002-10-05,"Fall","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+192053,319,1993,1993-11-15,"Fall","Campfire/Children/Smoking/Fireworks","Children","CA",0.3
+154684,326,2002,2002-11-22,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+310334,155,2002,2002-06-04,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1844791,172,2015,2015-06-21,"Summer","Miscellaneous","Miscellaneous","CA",0.12
+147951,202,2002,2002-07-21,"Summer","Lightning","Lightning","CA",0.1
+319110,220,2002,2002-08-08,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1096330,267,2001,2001-09-24,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+165266,180,2004,2004-06-28,"Summer","Lightning","Lightning","CA",0.1
+1102474,108,1994,1994-04-18,"Spring","Debris Burning","Debris Burning","CA",1
+1722810,281,2014,2014-10-08,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+1093882,300,1993,1993-10-27,"Fall","Debris Burning","Debris Burning","CA",15
+192081,211,1994,1994-07-30,"Summer","Debris Burning","Debris Burning","CA",10
+1140192,117,1996,1996-04-26,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1763905,242,2014,2014-08-30,"Summer","Debris Burning","Debris Burning","CA",1
+1100341,238,2003,2003-08-26,"Summer","Equipment Use","Equipment Use","CA",4
+1653299,45,2013,2013-02-14,"Winter","Debris Burning","Debris Burning","CA",5
+1068341,267,1996,1996-09-23,"Fall","Campfire/Children/Smoking/Fireworks","Children","CA",4
+1111996,260,1996,1996-09-16,"Summer","Equipment Use","Equipment Use","CA",0.1
+1653928,243,2013,2013-08-31,"Summer","Missing/Undefined","Missing/Undefined","CA",0.08
+321608,211,2009,2009-07-30,"Summer","Lightning","Lightning","CA",0.3
+1481092,253,2011,2011-09-10,"Summer","Debris Burning","Debris Burning","CA",1
+1137635,316,1992,1992-11-11,"Fall","Miscellaneous","Miscellaneous","CA",2
+1572591,91,2012,2012-03-31,"Spring","Missing/Undefined","Missing/Undefined","CA",5
+1143097,168,2003,2003-06-17,"Spring","Equipment Use","Equipment Use","CA",0.1
+28496,180,2008,2008-06-28,"Summer","Lightning","Lightning","CA",7
+216911,90,1998,1998-03-31,"Spring","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1181927,277,2010,2010-10-04,"Fall","Lightning","Lightning","CA",0.5
+309791,148,2001,2001-05-28,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1653247,124,2013,2013-05-04,"Spring","Missing/Undefined","Missing/Undefined","CA",2.8
+1876738,312,2010,2010-11-08,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+58266,250,1993,1993-09-07,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+70614,267,1994,1994-09-24,"Fall","Lightning","Lightning","CA",0.2
+1625869,65,2012,2012-03-05,"Winter","Missing/Undefined","Missing/Undefined","CA",0.1
+321212,224,2007,2007-08-12,"Summer","Miscellaneous","Miscellaneous","CA",1
+1726038,200,2014,2014-07-19,"Summer","Lightning","Lightning","CA",0.1
+1797296,170,2015,2015-06-19,"Spring","Missing/Undefined","Missing/Undefined","CA",2.5
+1115566,265,2007,2007-09-22,"Summer","Arson","Arson","CA",0.1
+218850,307,1999,1999-11-03,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+1730314,186,2014,2014-07-05,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+313274,128,2007,2007-05-08,"Spring","Campfire/Children/Smoking/Fireworks","Children","CA",1
+1880443,87,2015,2015-03-28,"Spring","Miscellaneous","Miscellaneous","CA",1
+17709,287,2006,2006-10-14,"Fall","Lightning","Lightning","CA",0.1
+321106,189,2007,2007-07-08,"Summer","Miscellaneous","Miscellaneous","CA",1
+1644445,235,2013,2013-08-23,"Summer","Arson","Arson","CA",0.3
+1105596,261,1999,1999-09-18,"Summer","Arson","Arson","CA",10
+1457158,115,2011,2011-04-25,"Spring","Equipment Use","Equipment Use","CA",0.1
+1124630,262,1997,1997-09-19,"Summer","Equipment Use","Equipment Use","CA",0.5
+1653303,12,2013,2013-01-12,"Winter","Miscellaneous","Miscellaneous","CA",0.1
+1181653,281,2010,2010-10-08,"Fall","Lightning","Lightning","CA",115
+282989,185,2007,2007-07-04,"Summer","Arson","Arson","CA",0.3
+1084369,168,2007,2007-06-17,"Spring","Campfire/Children/Smoking/Fireworks","Children","CA",1
+215863,143,1993,1993-05-23,"Spring","Equipment Use","Equipment Use","CA",5
+1077168,228,2007,2007-08-16,"Summer","Arson","Arson","CA",1
+1091552,195,2003,2003-07-14,"Summer","Equipment Use","Equipment Use","CA",0.1
+1092039,236,1992,1992-08-23,"Summer","Miscellaneous","Miscellaneous","CA",0.2
+1872492,213,2010,2010-08-01,"Summer","Missing/Undefined","Missing/Undefined","CA",1
+1824206,105,2015,2015-04-15,"Spring","Debris Burning","Debris Burning","CA",0.01
+1137250,201,1992,1992-07-19,"Summer","Miscellaneous","Miscellaneous","CA",0.5
+1067093,267,2006,2006-09-24,"Fall","Equipment Use","Equipment Use","CA",1
+1130624,121,1995,1995-05-01,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1135328,208,2007,2007-07-27,"Summer","Miscellaneous","Miscellaneous","CA",1
+138975,190,2001,2001-07-09,"Summer","Lightning","Lightning","CA",0.1
+283840,262,2005,2005-09-19,"Summer","Arson","Arson","CA",0.1
+2145,245,2005,2005-09-02,"Summer","Arson","Arson","CA",20
+1072821,210,1996,1996-07-28,"Summer","Equipment Use","Equipment Use","CA",250
+1075563,142,2004,2004-05-21,"Spring","Miscellaneous","Miscellaneous","CA",1
+311089,228,2003,2003-08-16,"Summer","Arson","Arson","CA",1
+1874635,173,2010,2010-06-22,"Summer","Equipment Use","Equipment Use","CA",2.5
+170289,170,2004,2004-06-18,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1878270,235,2010,2010-08-23,"Summer","Equipment Use","Equipment Use","CA",1
+1180577,248,2010,2010-09-05,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.1
+23210,196,2007,2007-07-15,"Summer","Equipment Use","Equipment Use","CA",20
+365847,275,2002,2002-10-02,"Fall","Miscellaneous","Miscellaneous","CA",1
+283964,181,2003,2003-06-30,"Summer","Lightning","Lightning","CA",5
+1644389,209,2013,2013-07-28,"Summer","Equipment Use","Equipment Use","CA",12
+151342,230,2002,2002-08-18,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+11842,206,2006,2006-07-25,"Summer","Lightning","Lightning","CA",0.1
+1213893,223,2010,2010-08-11,"Summer","Lightning","Lightning","CA",0.3
+1567450,245,2012,2012-09-01,"Summer","Equipment Use","Equipment Use","CA",0.5
+1132207,275,1999,1999-10-02,"Fall","Miscellaneous","Miscellaneous","CA",135
+1071212,163,2010,2010-06-12,"Spring","Miscellaneous","Miscellaneous","CA",5
+1725715,155,2014,2014-06-04,"Spring","Lightning","Lightning","CA",0.1
+282570,198,2005,2005-07-17,"Summer","Arson","Arson","CA",0.5
+1113729,270,2007,2007-09-27,"Fall","Miscellaneous","Miscellaneous","CA",1
+1105827,133,2005,2005-05-13,"Spring","Equipment Use","Equipment Use","CA",0.2
+1118271,226,2004,2004-08-13,"Summer","Miscellaneous","Miscellaneous","CA",4
+1106935,236,2007,2007-08-24,"Summer","Miscellaneous","Miscellaneous","CA",0.3
+1123090,199,1998,1998-07-18,"Summer","Miscellaneous","Miscellaneous","CA",3
+371825,76,2007,2007-03-17,"Winter","Miscellaneous","Miscellaneous","CA",0.1
+1122936,168,2008,2008-06-16,"Spring","Miscellaneous","Miscellaneous","CA",0.4
+1614886,221,2012,2012-08-08,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",1
+1742221,137,2014,2014-05-17,"Spring","Equipment Use","Equipment Use","CA",1
+152145,287,2002,2002-10-14,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+1568583,236,2012,2012-08-23,"Summer","Lightning","Lightning","CA",0.1
+57411,232,1993,1993-08-20,"Summer","Lightning","Lightning","CA",0.1
+1874658,1,2012,2012-01-01,"Winter","Campfire/Children/Smoking/Fireworks","Children","CA",0.21
+1787475,165,2014,2014-06-14,"Spring","Missing/Undefined","Missing/Undefined","CA",4
+317935,222,2008,2008-08-09,"Summer","Equipment Use","Equipment Use","CA",0.1
+1655285,259,2013,2013-09-16,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1770635,184,2014,2014-07-03,"Summer","Arson","Arson","CA",1
+19684,191,2007,2007-07-10,"Summer","Lightning","Lightning","CA",0.1
+1062884,255,2004,2004-09-11,"Summer","Arson","Arson","CA",0.25
+1213838,284,2010,2010-10-11,"Fall","Arson","Arson","CA",0.1
+1144414,173,1995,1995-06-22,"Summer","Equipment Use","Equipment Use","CA",0.3
+1725700,211,2014,2014-07-30,"Summer","Lightning","Lightning","CA",0.1
+1876231,233,2010,2010-08-21,"Summer","Miscellaneous","Miscellaneous","CA",0.25
+1122925,147,2008,2008-05-26,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+46969,206,1992,1992-07-24,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.1
+1067601,231,1992,1992-08-18,"Summer","Equipment Use","Equipment Use","CA",1
+1653768,172,2013,2013-06-21,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1095792,218,1994,1994-08-06,"Summer","Equipment Use","Equipment Use","CA",0.5
+1122758,222,1995,1995-08-10,"Summer","Powerline/Railroad/Structure","Railroad","CA",0.1
+1101783,158,2004,2004-06-06,"Spring","Equipment Use","Equipment Use","CA",2
+1114937,309,2006,2006-11-05,"Fall","Debris Burning","Debris Burning","CA",0.3
+1067061,262,2005,2005-09-19,"Summer","Equipment Use","Equipment Use","CA",0.1
+1870335,182,2015,2015-07-01,"Summer","Lightning","Lightning","CA",0.1
+1089720,240,1994,1994-08-28,"Summer","Arson","Arson","CA",1
+1076428,192,2006,2006-07-11,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1088346,296,2006,2006-10-23,"Fall","Arson","Arson","CA",0.5
+1089327,194,1993,1993-07-13,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1118361,142,2008,2008-05-21,"Spring","Miscellaneous","Miscellaneous","CA",1
+1872515,227,2010,2010-08-15,"Summer","Missing/Undefined","Missing/Undefined","CA",1
+1872949,260,2009,2009-09-17,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",0.01
+1457799,257,2011,2011-09-14,"Summer","Lightning","Lightning","CA",0.1
+1090398,94,1997,1997-04-04,"Spring","Equipment Use","Equipment Use","CA",0.1
+1105587,339,2006,2006-12-05,"Fall","Equipment Use","Equipment Use","CA",1
+1510718,153,2011,2011-06-02,"Spring","Equipment Use","Equipment Use","CA",0.01
+1874233,233,2015,2015-08-21,"Summer","Missing/Undefined","Missing/Undefined","CA",2
+41172,223,2009,2009-08-11,"Summer","Miscellaneous","Miscellaneous","CA",0.25
+1111844,313,1996,1996-11-08,"Fall","Equipment Use","Equipment Use","CA",0.2
+93951,225,1996,1996-08-12,"Summer","Lightning","Lightning","CA",0.2
+314820,64,2002,2002-03-05,"Winter","Equipment Use","Equipment Use","CA",0.3
+111586,206,1998,1998-07-25,"Summer","Lightning","Lightning","CA",10
+1141920,244,1998,1998-09-01,"Summer","Miscellaneous","Miscellaneous","CA",1
+1082619,180,1998,1998-06-29,"Summer","Equipment Use","Equipment Use","CA",5
+1456765,247,2011,2011-09-04,"Summer","Lightning","Lightning","CA",0.7
+1466670,255,2011,2011-09-12,"Summer","Equipment Use","Equipment Use","CA",0.5
+1066435,264,2001,2001-09-21,"Summer","Arson","Arson","CA",0.3
+1105333,296,2007,2007-10-23,"Fall","Arson","Arson","CA",5
+57126,235,1993,1993-08-23,"Summer","Equipment Use","Equipment Use","CA",0.1
+1464221,132,2011,2011-05-12,"Spring","Arson","Arson","CA",3
+1788345,260,2014,2014-09-17,"Summer","Missing/Undefined","Missing/Undefined","CA",0.05
+162139,240,2003,2003-08-28,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1097167,158,2002,2002-06-07,"Spring","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+1136532,141,2010,2010-05-21,"Spring","Equipment Use","Equipment Use","CA",2
+1494899,150,2011,2011-05-30,"Spring","Equipment Use","Equipment Use","CA",1
+1615162,294,2012,2012-10-20,"Fall","Debris Burning","Debris Burning","CA",0.1
+1070081,341,2006,2006-12-07,"Fall","Equipment Use","Equipment Use","CA",1
+1112964,131,1997,1997-05-11,"Spring","Debris Burning","Debris Burning","CA",0.1
+1095110,251,1992,1992-09-07,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",35
+1644309,229,2013,2013-08-17,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.7
+1655531,126,2013,2013-05-06,"Spring","Equipment Use","Equipment Use","CA",195
+1875354,110,2010,2010-04-20,"Spring","Equipment Use","Equipment Use","CA",0.01
+1097431,175,2002,2002-06-24,"Summer","Equipment Use","Equipment Use","CA",4
+365776,227,2002,2002-08-15,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.1
+1797430,188,2015,2015-07-07,"Summer","Arson","Arson","CA",5
+1090450,129,1997,1997-05-09,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1130163,256,1993,1993-09-13,"Summer","Miscellaneous","Miscellaneous","CA",0.5
+315079,298,2002,2002-10-25,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+1132491,197,2000,2000-07-15,"Summer","Equipment Use","Equipment Use","CA",0.1
+1480713,251,2011,2011-09-08,"Summer","Miscellaneous","Miscellaneous","CA",0.01
+1635707,126,2013,2013-05-06,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+1129016,218,2005,2005-08-06,"Summer","Lightning","Lightning","CA",6
+1654401,190,2013,2013-07-09,"Summer","Missing/Undefined","Missing/Undefined","CA",3
+1219449,273,2010,2010-09-30,"Fall","Miscellaneous","Miscellaneous","CA",6
+1137124,169,1992,1992-06-17,"Spring","Miscellaneous","Miscellaneous","CA",1.5
+154960,204,2003,2003-07-23,"Summer","Lightning","Lightning","CA",0.1
+80767,302,1995,1995-10-29,"Fall","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1091012,139,1999,1999-05-19,"Spring","Arson","Arson","CA",2
+1635856,207,2013,2013-07-26,"Summer","Lightning","Lightning","CA",0.1
+217413,13,1999,1999-01-13,"Winter","Equipment Use","Equipment Use","CA",0.1
+1659973,295,2013,2013-10-22,"Fall","Equipment Use","Equipment Use","CA",2
+1508420,194,2011,2011-07-13,"Summer","Miscellaneous","Miscellaneous","CA",1
+1088983,240,1992,1992-08-27,"Summer","Equipment Use","Equipment Use","CA",0.1
+1088431,48,2007,2007-02-17,"Winter","Miscellaneous","Miscellaneous","CA",1
+1104417,247,1999,1999-09-04,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1788905,166,2014,2014-06-15,"Spring","Missing/Undefined","Missing/Undefined","CA",0.2
+214900,107,1999,1999-04-17,"Spring","Arson","Arson","CA",2
+320765,250,2006,2006-09-07,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+57805,189,1993,1993-07-08,"Summer","Miscellaneous","Miscellaneous","CA",30
+140488,220,2001,2001-08-08,"Summer","Miscellaneous","Miscellaneous","CA",0.1
+1568348,300,2012,2012-10-26,"Fall","Equipment Use","Equipment Use","CA",0.1
+1107506,272,2005,2005-09-29,"Fall","Equipment Use","Equipment Use","CA",0.1
+1608873,227,2012,2012-08-14,"Summer","Equipment Use","Equipment Use","CA",1
+370252,34,2006,2006-02-03,"Winter","Miscellaneous","Miscellaneous","CA",0.1
+1132912,248,2001,2001-09-05,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+26173,332,2007,2007-11-28,"Fall","Debris Burning","Debris Burning","CA",20
+1625909,98,2012,2012-04-07,"Spring","Missing/Undefined","Missing/Undefined","CA",1
+1144125,214,1993,1993-08-02,"Summer","Debris Burning","Debris Burning","CA",12
+19679,188,2007,2007-07-07,"Summer","Lightning","Lightning","CA",0.25
+1651198,143,2013,2013-05-23,"Spring","Arson","Arson","CA",0.5
+281558,179,2000,2000-06-27,"Summer","Arson","Arson","CA",0.2
+1090979,148,1999,1999-05-28,"Spring","Debris Burning","Debris Burning","CA",2
+1654266,224,2013,2013-08-12,"Summer","Arson","Arson","CA",0.25
+1070371,229,2007,2007-08-17,"Summer","Miscellaneous","Miscellaneous","CA",1
+1496927,340,2011,2011-12-06,"Fall","Miscellaneous","Miscellaneous","CA",0.1
+1178525,208,2010,2010-07-27,"Summer","Lightning","Lightning","CA",0.5
+80325,187,1995,1995-07-06,"Summer","Lightning","Lightning","CA",0.1
+365671,196,2002,2002-07-15,"Summer","Miscellaneous","Miscellaneous","CA",0.3
+1654482,195,2013,2013-07-14,"Summer","Arson","Arson","CA",2.5
+1079652,240,1992,1992-08-27,"Summer","Equipment Use","Equipment Use","CA",0.1
+314303,261,2000,2000-09-17,"Summer","Equipment Use","Equipment Use","CA",0.1
+1123574,128,2007,2007-05-08,"Spring","Debris Burning","Debris Burning","CA",1.2
+1791199,186,2015,2015-07-05,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1654023,188,2013,2013-07-07,"Summer","Equipment Use","Equipment Use","CA",1
+162637,204,2003,2003-07-23,"Summer","Lightning","Lightning","CA",0.1
+218591,220,1999,1999-08-08,"Summer","Arson","Arson","CA",0.3
+243112,245,1998,1998-09-02,"Summer","Lightning","Lightning","CA",1
+118344,145,1999,1999-05-25,"Spring","Equipment Use","Equipment Use","CA",0.1
+132203,122,2000,2000-05-01,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+164840,102,2004,2004-04-11,"Spring","Debris Burning","Debris Burning","CA",0.25
+33032,196,2008,2008-07-14,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.01
+1100326,145,2002,2002-05-25,"Spring","Equipment Use","Equipment Use","CA",2
+370496,188,2006,2006-07-07,"Summer","Debris Burning","Debris Burning","CA",0.2
+283667,150,2001,2001-05-30,"Spring","Powerline/Railroad/Structure","Railroad","CA",0.1
+23762,192,2007,2007-07-11,"Summer","Lightning","Lightning","CA",0.01
+1115400,177,2001,2001-06-26,"Summer","Arson","Arson","CA",0.2
+1741958,111,2014,2014-04-21,"Spring","Equipment Use","Equipment Use","CA",1
+1126629,216,2009,2009-08-04,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.3
+1870618,244,2015,2015-09-01,"Summer","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.2
+1875854,307,2009,2009-11-03,"Fall","Powerline/Railroad/Structure","Powerline","CA",0.1
+1104151,70,1993,1993-03-11,"Winter","Miscellaneous","Miscellaneous","CA",0.1
+1097289,240,1999,1999-08-28,"Summer","Equipment Use","Equipment Use","CA",0.1
+1878592,120,2009,2009-04-30,"Spring","Miscellaneous","Miscellaneous","CA",0.05
+192432,290,1997,1997-10-17,"Fall","Debris Burning","Debris Burning","CA",0.1
+81027,176,1995,1995-06-25,"Summer","Lightning","Lightning","CA",0.1
+310658,264,2002,2002-09-21,"Summer","Miscellaneous","Miscellaneous","CA",0.2
+317771,323,2007,2007-11-19,"Fall","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+1121324,174,2004,2004-06-22,"Summer","Miscellaneous","Miscellaneous","CA",0.6
+1456860,194,2011,2011-07-13,"Summer","Debris Burning","Debris Burning","CA",0.1
+107824,253,1998,1998-09-10,"Summer","Lightning","Lightning","CA",0.5
+1722223,230,2014,2014-08-18,"Summer","Lightning","Lightning","CA",0.4
+1115365,117,1998,1998-04-27,"Spring","Debris Burning","Debris Burning","CA",1
+1086176,186,1997,1997-07-05,"Summer","Miscellaneous","Miscellaneous","CA",1
+1144748,209,1997,1997-07-28,"Summer","Miscellaneous","Miscellaneous","CA",0.2
+1134233,205,2005,2005-07-24,"Summer","Arson","Arson","CA",0.1
+1127355,196,1994,1994-07-15,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",0.3
+1131016,5,1996,1996-01-05,"Winter","Equipment Use","Equipment Use","CA",0.1
+1112062,195,1998,1998-07-14,"Summer","Equipment Use","Equipment Use","CA",0.1
+1088700,134,2008,2008-05-13,"Spring","Equipment Use","Equipment Use","CA",1
+1480930,201,2011,2011-07-20,"Summer","Miscellaneous","Miscellaneous","CA",1
+119206,239,1999,1999-08-27,"Summer","Lightning","Lightning","CA",17
+1092794,185,2001,2001-07-04,"Summer","Campfire/Children/Smoking/Fireworks","Children","CA",0.1
+1097073,145,2002,2002-05-25,"Spring","Miscellaneous","Miscellaneous","CA",0.1
+215286,213,1999,1999-08-01,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1873050,200,2010,2010-07-19,"Summer","Equipment Use","Equipment Use","CA",0.1
+314055,87,2000,2000-03-27,"Spring","Campfire/Children/Smoking/Fireworks","Smoking","CA",0.1
+1072635,287,1995,1995-10-14,"Fall","Equipment Use","Equipment Use","CA",25
+1081324,257,1995,1995-09-14,"Summer","Equipment Use","Equipment Use","CA",0.1
+1093635,172,1992,1992-06-20,"Spring","Miscellaneous","Miscellaneous","CA",15
+317369,206,2007,2007-07-25,"Summer","Miscellaneous","Miscellaneous","CA",0.5
+108019,248,1998,1998-09-05,"Summer","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+312972,235,2006,2006-08-23,"Summer","Equipment Use","Equipment Use","CA",1
+190865,264,1993,1993-09-21,"Summer","Arson","Arson","CA",0.3
+1879662,143,2010,2010-05-23,"Spring","Arson","Arson","CA",0.1
+1626943,213,2012,2012-07-31,"Summer","Miscellaneous","Miscellaneous","CA",6
+1725582,137,2014,2014-05-17,"Spring","Campfire/Children/Smoking/Fireworks","Campfire","CA",0.1
+1108121,250,2009,2009-09-07,"Summer","Miscellaneous","Miscellaneous","CA",0.3
