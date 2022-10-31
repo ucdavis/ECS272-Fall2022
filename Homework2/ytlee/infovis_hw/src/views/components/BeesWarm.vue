@@ -8,14 +8,18 @@ import { Ref, ref } from "vue"
 let chart;
 const props = defineProps({
   data: Object as () => any,
+  selected_artist: String,
 })
 
 const class_name = "beeswarmChart"
 const min_year: Ref<number> = ref(0)
 
-const emit = defineEmits(["node-clicked"])
+const emit = defineEmits(["node-clicked", "data-filtered"])
+vue.watch(() => props.selected_artist, (new_value, old_value) => {
+  chart.highlight(new_value, old_value)
+})
+
 vue.onMounted(() => {
-  console.log(props.data)
   chart = new BeeswarmChart(`.${class_name}`,  {
     xLabel: "#songs →",
     xScale: d3.scaleLinear, // try d3.scaleLog
@@ -23,9 +27,11 @@ vue.onMounted(() => {
     xMax: Math.max(...props.data.map(datum => datum.songs.length)),
     title: d => `${d.artist}: ${d.songs.length} songs`,
     x: d=>d.songs.length,
+    tooltip_class:"beeswarm_tooltip",
   })
   chart.init()
   chart.update(props.data, emit)
+  chart.highlight(props.selected_artist)
 })
 
 function handleTimeRangeChange(value: number) {
@@ -41,20 +47,34 @@ function handleTimeRangeChange(value: number) {
     Math.max(...filtered_data.map(datum => datum.songs.length)),
   )
   chart.update(filtered_data, emit)
+  emit("data-filtered", filtered_data)
 }
+
 
 
 </script>
 <template>
     <div :class="class_name"> 
-      <div class="tooltip"></div>
-      <div class="controller-contaienr">
-        <a-input-number class="year-threshold" :value="min_year" :min="0" :max="9999" @change="handleTimeRangeChange" />
+      <div class="beeswarm_tooltip"></div>
+      <div class="controller-container">
+        <span> Release Year >  </span>
+        <a-input-number class="year-threshold" 
+        :value="min_year" 
+        :min="0" :max="9999" 
+        @pressEnter="handleTimeRangeChange($event.target.value)"
+        @step="handleTimeRangeChange"/>
+
+        <i class='pi pi-info-circle tooltip'>
+            <span class="tooltiptext right-tooltiptext" style="width: 250px">
+              Songs released before the specified year will be removed.
+              By setting a more recent year, you can see which artists are recently active.
+            </span>
+        </i>
       </div>
     </div>
 </template>
 <style scoped lang="scss">
-.tooltip {
+.beeswarm_tooltip {
   z-index: 1;
   background: white;
   border: 1px solid black;
@@ -65,5 +85,13 @@ function handleTimeRangeChange(value: number) {
 .beeswarmChart {
   height: 100%;
   overflow: hidden;
+}
+.controller-container {
+  position:absolute;
+  right: 53%;
+}
+.tooltip {
+    font-size:1rem;
+    margin-left:5px;
 }
 </style>

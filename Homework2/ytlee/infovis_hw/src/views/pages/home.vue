@@ -19,15 +19,67 @@
                 <BeesWarm
                     v-if="beeswarm_data" 
                     :data="beeswarm_data"
+                    :selected_artist="selected_artist"
                     @node-clicked="handleNodeClicked"
+                    @data-filtered="handleDataFiltered"
                 ></BeesWarm>
                 <div ref="intro_label" class="float-label" style="">
                     The system helps explore the 'diversity' of the songs released by an artist. <br/>
                     A beeswarm chart is used for user to choose an artist because the more songs an artist have released, the more likely they will be 'diverse'. <br/>
                     The RadarChart shows each song's attributes in animation. <br/>
                     Once observe any pattern, use the bar chart to confirm it. 
-                    <a-button class="float-label-close" @click="intro_label.style.opacity=0">Got it!</a-button>
+                    <a-button class="float-label-close" @click="intro_label.style.scale=0">Got it!</a-button>
                 </div>
+            </div>
+            <div class="artists-table-container">
+                <a-table
+                 :dataSource="artist_info_table_data" 
+                 :columns="artist_info_table_columns"
+                 :pagination="{pageSize:100}"
+                 :expandRowByClick="true"
+                 :scroll="{y:200}" >
+                    <template #customFilterDropdown="{ setSelectedKeys, selectedKeys, confirm, clearFilters, column }">
+                    <div style="padding: 8px">
+                        <a-input
+                            ref="searchInput"
+                            :placeholder="`Search ${column.dataIndex}`"
+                            :value="selectedKeys[0]"
+                            style="width: 188px; margin-bottom: 8px; display: block"
+                            @change="e => setSelectedKeys(e.target.value ? [e.target.value] : [])"
+                            @pressEnter="handleSearch(selectedKeys, confirm, column.dataIndex)"/>
+                        <a-button
+                        type="primary"
+                        size="small"
+                        style="width: 90px; margin-right: 8px"
+                        @click="handleSearch(selectedKeys, confirm, column.dataIndex)"
+                        >
+                        <template #icon><SearchOutlined /></template>
+                        Search
+                        </a-button>
+                        <a-button size="small" style="width: 90px" @click="handleReset(clearFilters)">
+                        Reset
+                        </a-button>
+                    </div>
+                    </template>
+                    <template #customFilterIcon="{ filtered }">
+                        <search-outlined :style="{ color: filtered ? '#108ee9' : 'black' }" />
+                    </template>
+                    <template #bodyCell="{ text, column, record }">
+                        <span v-if="searchText && searchedColumn === column.dataIndex ">
+                            <template 
+                                v-for="(fragment, i) in text.toString().split(new RegExp(`(?<=${searchText})|(?=${searchText})`, 'i'))" >
+                                <mark
+                                    v-if="fragment.toLowerCase() === searchText.toLowerCase()"
+                                    :key="i"
+                                    class="highlight"
+                                >
+                                    {{ fragment }}
+                                </mark>
+                                <template v-else>{{ fragment }}</template>
+                            </template>
+                        </span>
+                    </template>
+                </a-table>
             </div>
         </div>
         <div class="right-section">
@@ -105,11 +157,58 @@ import RadarChart from "../components/RadarChart.vue"
 import BarChart from "../components/BarChart.vue"
 import BeesWarm from "../components/BeesWarm.vue";
 import Dropdown from "../components/Dropdown.vue"
-import { CaretRightOutlined, PauseOutlined } from '@ant-design/icons-vue';
+import { CaretRightOutlined, PauseOutlined, SearchOutlined } from '@ant-design/icons-vue';
 
 // import ArtistScatterPlot from "../components/ArtistScatterPlot.vue"
 
 import artist_song_dict from "../../assets/data/artist_song_dict.json" 
+let artist_info_table_data: Ref<any[]> = ref([])
+Object.keys(artist_song_dict).forEach(artist => {
+    artist_info_table_data.value.push({
+        artist: artist,
+        songs: artist_song_dict[artist].length
+    })
+})
+
+const artist_info_table_columns = [
+    {
+        title: "Artist",
+        dataIndex: "artist",
+        key: "artist",
+        customFilterDropdown: true,
+        clickable: true,
+        onFilter: (value, record) =>
+          record.artist.toString().toLowerCase().includes(value.toLowerCase()),
+        onFilterDropdownVisibleChange: visible => {
+          if (visible) {
+            setTimeout(() => {
+              searchInput.value.focus();
+            }, 100);
+          }
+        }
+    },
+    {
+        title: "#Songs",
+        dataIndex: "songs",
+        key: "songs",
+        clickable: false,
+        defaultSortOrder: 'descend',
+        sorter: (a: TableDataType, b: TableDataType) => a.songs - b.songs,
+    }
+]
+const searchInput = ref();
+const searchText: Ref<string> = ref("")
+const searchedColumn: Ref<string> = ref("")
+const handleSearch = (selectedKeys, confirm, dataIndex) => {
+      confirm();
+      searchText.value = selectedKeys[0];
+      searchedColumn.value = dataIndex;
+    };
+
+const handleReset = clearFilters => {
+    clearFilters({ confirm: true });
+    searchText.value = '';
+};
 const intro_label: Ref<any> = ref(null)
 const radar_chart: Ref<any> = ref(null)
 const animate_step: Ref<number> = ref(0)
@@ -137,7 +236,6 @@ const beeswarm_data = vue.computed(() => {
             songs: artist_song_dict[artist]
         })
     })
-    console.log(res)
     return res
 })
 
@@ -154,22 +252,15 @@ const radar_key_list = [
         "tempo",
         "valence",
 ]
-// const scatter_data = vue.computed(() => {
-//     let res: any[] = []
-//     const x_max = Math.max(...Object.keys(artist_rank_info_dict).map(key => artist_rank_info_dict[key].mse))
-//     const x_min = Math.min(...Object.keys(artist_rank_info_dict).map(key => artist_rank_info_dict[key].mse))
-//     const y_max = Math.max(...Object.keys(artist_rank_info_dict).map(key => artist_rank_info_dict[key].num_songs))
-//     const y_min = Math.min(...Object.keys(artist_rank_info_dict).map(key => artist_rank_info_dict[key].num_songs))
-//     Object.keys(artist_rank_info_dict).forEach((artist: string) => {
-//         res.push({
-//             artist: artist,
-//             x: (artist_rank_info_dict[artist].mse-x_min)/(x_max-x_min),
-//             y: (artist_rank_info_dict[artist].num_songs)/(y_max)
-//         })
-//     })
-//     return res
-// })
 
+vue.onMounted(() => {
+    const rows = document.querySelectorAll(".ant-table-row")
+    rows.forEach(row => {
+        row.addEventListener("click", (e) => {
+            selected_artist.value = e.target.parentNode.firstElementChild.innerText
+        })
+    })
+})
 
 function idsToItems(ids: any, id_item_dict: any) {
     return ids.reduce(function(item_list:any[], id:any) { item_list.push(id_item_dict[id]); return item_list; }, [])
@@ -178,6 +269,10 @@ function idsToItems(ids: any, id_item_dict: any) {
 function handleNodeClicked(node) {
     selected_artist.value = node.split(":")[0]
     animate_step.value = 0
+}
+
+function handleDataFiltered(filtered_data) {
+    artist_info_table_data.value = filtered_data.map(datum => { return { artist: datum.artist, songs: datum.songs.length}})
 }
 </script>
 
@@ -215,7 +310,7 @@ border-right: solid 1px #b7b7b7;
 flex-direction: column;
 }
 .beeswarm-container {
-  height: 100%;
+  height: 60%;
   display: flex;
   flex-direction: column;
 }
@@ -263,4 +358,11 @@ font-family: Arial;
     position: absolute;
     margin-left: 45px;
 } 
+.highlight {
+  background-color: rgb(255, 192, 105);
+  padding: 0px;
+}
+:deep(.ant-table-row) {
+    cursor: pointer;
+}
 </style>

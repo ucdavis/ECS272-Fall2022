@@ -8,8 +8,8 @@ interface Margin {
 }
 class Config {
 	vbWidth: number = 700  
-	vbHeight: number = 700
-	margin: Margin = {top: 20, right: 20, bottom: 50, left: 0}
+	vbHeight: number = 400
+	margin: Margin = {top: 20, right: 20, bottom: 50, left: 10}
     radius = 3; // (fixed) radius of the circles
     value = d => d; // convenience alias for x
     label="unknown"; // convenience alias for xLabel
@@ -25,6 +25,7 @@ class Config {
     xMax = 1;
     padding=1.5;
     xLabel = "unknown"; // a label for the x-axis
+    tooltip_class="beeswarm_tooltip";
 }
 
 export class BeeswarmChart {
@@ -36,6 +37,7 @@ export class BeeswarmChart {
     T:any;
     tooltip:any;
     init_done:boolean;
+    old_node_color:string;
 
     public constructor(id: String, options:any) {
         this.id = id
@@ -44,6 +46,7 @@ export class BeeswarmChart {
         this.width = this.cfg.vbWidth - this.cfg.margin.left - this.cfg.margin.right
         this.height = this.cfg.vbHeight - this.cfg.margin.top - this.cfg.margin.bottom
         this.init_done = false
+        this.old_node_color = "black"
     }
 
     init() {
@@ -61,7 +64,7 @@ export class BeeswarmChart {
             // .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
         const canvas = svg.append("g").attr("class", "canvas")
                     .attr("transform", "translate(" + (this.cfg.margin.left) + "," + (this.cfg.margin.top) + ")");
-        this.tooltip = d3.select(`${this.id}`).select(".tooltip")
+        this.tooltip = d3.select(`${this.id}`).select(`.${this.cfg.tooltip_class}`)
         this.updateXaxis(this.cfg.xMin, this.cfg.xMax)
         const zoomed:any = ({transform}) => {
             console.log("🚀 ~ file: BeeswarmChart.ts ~ line 68 ~ BeeswarmChart ~ init ~ transform", transform)
@@ -165,7 +168,7 @@ export class BeeswarmChart {
             .on("mousemove", function(e) {
                 self.tooltip
                     .style("left", e.offsetX + 20 + "px")
-                    .style("top", e.offsetY - 5 + "px")
+                    .style("top", e.offsetY - 10 + "px")
             })
             .on("mouseover", function(e, i) {
                d3.select(this)
@@ -205,6 +208,28 @@ export class BeeswarmChart {
                 .attr("fill", "currentColor")
                 .attr("text-anchor", "end")
                 .text(this.cfg.xLabel));
+    }
+    highlight(target_swarm, old_swarm = undefined) {
+        if(!target_swarm) return 
+        const canvas = d3.select("svg.beeswarm_svg").select("g.canvas")
+        console.log(target_swarm, old_swarm)
+        if(old_swarm) {
+            const old_node = canvas.selectAll("circle").filter(i => this.T[i].split(":")[0] === old_swarm)
+            old_node.attr("fill", this.old_node_color)
+        }
+        const highlight_node = canvas.selectAll("circle").filter(i => this.T[i].split(":")[0] === target_swarm)
+        console.log(target_swarm)
+        this.old_node_color = highlight_node.attr("fill")
+        const cx = highlight_node.attr("cx")
+        const cy = highlight_node.attr("cy")
+        highlight_node.attr("cx", this.width/2).attr("cy", 0)
+            .attr("r", this.cfg.radius*2)
+            .attr("fill", "blue")
+            .transition().duration(1000)
+            .attr("cx", cx)
+            .attr("cy", cy)
+            .transition().duration(500)
+            .attr("r", this.cfg.radius)
     }
 }  
 
