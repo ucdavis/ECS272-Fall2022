@@ -221,8 +221,22 @@
                     .y((d) => {return this.y(d.liveness);})
 
 
+                // create a clipping region so that dots don't go past the axes
+                // use def tags
+                this.svg.append("defs").append("clipPath")
+                    .attr("id", "clip")
+                    .append("rect")
+                    .attr("width", width - 30) //slight adjustment to get proper window
+                    .attr("height", height)
+                    .attr("transform", `translate(${margin.left - 10}, 0)`) //so that points do not go into y-axis
+
+
+                let plotArea = this.svg.append("g") // we don't want to clip the axes.
+                        .attr("clip-path","url(#clip)")
+                        .attr("id", "scatterClip")
+
                 // add dots
-                let dots = this.svg.selectAll("#dots")
+                let dots = this.svg.select("#scatterClip").selectAll("#dots")
                     .data(this.topSongs)
                     .join("circle")
                     .attr("cx", d => this.x(d.instrumentalness))
@@ -292,13 +306,13 @@
                 const zoomed = ({transform}) => {
                     const zx = transform.rescaleX(this.x).interpolate(d3.interpolateRound);
                     const zy = transform.rescaleY(this.y).interpolate(d3.interpolateRound);
-                    this.svg.selectAll("#dots").attr("transform", transform).attr("stroke-width", 5);
+                    this.svg.select("#scatterClip").selectAll("#dots").attr("transform", transform).attr("stroke-width", 5);
                     gx.call(xAxis, zx);
                     gy.call(yAxis, zy);
                 }
 
                 this.zoom = d3.zoom()
-                    .scaleExtent([0.5, 32])
+                    .scaleExtent([1, 4])
                     .on("zoom", zoomed);
                 
 
@@ -322,7 +336,8 @@
 
                 console.log("trying to update scatter chart")
 
-                let dots = this.svg.selectAll("#dots")
+                // select the group and then select the elements
+                let dots = this.svg.select("#scatterClip").selectAll("#dots")
                     .data(data)
                     .join("circle")
 
