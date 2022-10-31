@@ -67,7 +67,6 @@ export class BeeswarmChart {
         this.tooltip = d3.select(`${this.id}`).select(`.${this.cfg.tooltip_class}`)
         this.updateXaxis(this.cfg.xMin, this.cfg.xMax)
         const zoomed:any = ({transform}) => {
-            console.log("🚀 ~ file: BeeswarmChart.ts ~ line 68 ~ BeeswarmChart ~ init ~ transform", transform)
             canvas.attr("transform", transform)
             const xAxis = d3.axisBottom(this.cfg.xScale).tickSizeOuter(0);
             canvas.select("g.x-axis").call(xAxis.scale(transform.reSacleX(this.cfg.xScale)))
@@ -212,13 +211,11 @@ export class BeeswarmChart {
     highlight(target_swarm, old_swarm = undefined) {
         if(!target_swarm) return 
         const canvas = d3.select("svg.beeswarm_svg").select("g.canvas")
-        console.log(target_swarm, old_swarm)
         if(old_swarm) {
             const old_node = canvas.selectAll("circle").filter(i => this.T[i].split(":")[0] === old_swarm)
             old_node.attr("fill", this.old_node_color)
         }
         const highlight_node = canvas.selectAll("circle").filter(i => this.T[i].split(":")[0] === target_swarm)
-        console.log(target_swarm)
         this.old_node_color = highlight_node.attr("fill")
         const cx = highlight_node.attr("cx")
         const cy = highlight_node.attr("cy")

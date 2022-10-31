@@ -34,6 +34,7 @@
             </div>
             <div class="artists-table-container">
                 <DataTable 
+                ref="data_table"
                 :data="artist_info_table_data" 
                 :columns="artist_info_table_columns"
                 v-model:selected_artist="selected_artist"/>
@@ -135,6 +136,22 @@ import { CaretRightOutlined, PauseOutlined, SearchOutlined, StepForwardOutlined,
 // import ArtistScatterPlot from "../components/ArtistScatterPlot.vue"
 
 import artist_song_dict from "../../assets/data/artist_song_dict.json" 
+
+const radar_key_list = [
+        "acousticness", 
+        "danceability", 
+        "energy", 
+        "instrumentalness",
+        "key",
+        "liveness",
+        "loudness", 
+        "popularity",
+        "speechiness",
+        "tempo",
+        "valence",
+]
+
+const data_table = ref()
 let artist_info_table_data: Ref<any[]> = ref([])
 Object.keys(artist_song_dict).forEach(artist => {
     artist_info_table_data.value.push({
@@ -148,6 +165,7 @@ const artist_info_table_columns = [
         title: "Artist",
         dataIndex: "artist",
         key: "artist",
+        map: d => d,
         customFilterDropdown: true,
         clickable: true,
         onFilter: (value, record) =>
@@ -164,11 +182,13 @@ const artist_info_table_columns = [
         title: "#Songs",
         dataIndex: "songs",
         key: "songs",
+        map: d => d,
         clickable: false,
         defaultSortOrder: 'descend',
         sorter: (a: TableDataType, b: TableDataType) => a.songs - b.songs,
     }
 ]
+
 const intro_label: Ref<any> = ref(null)
 const radar_chart: Ref<any> = ref(null)
 const animate_step: Ref<number> = ref(0)
@@ -199,19 +219,6 @@ const beeswarm_data = vue.computed(() => {
     return res
 })
 
-const radar_key_list = [
-        "acousticness", 
-        "danceability", 
-        "energy", 
-        "instrumentalness",
-        "key",
-        "liveness",
-        "loudness", 
-        "popularity",
-        "speechiness",
-        "tempo",
-        "valence",
-]
 
 function idsToItems(ids: any, id_item_dict: any) {
     return ids.reduce(function(item_list:any[], id:any) { item_list.push(id_item_dict[id]); return item_list; }, [])
@@ -224,14 +231,12 @@ function handleNodeClicked(node) {
 
 function handleDataFiltered(filtered_data) {
     artist_info_table_data.value = filtered_data.map(datum => { return { artist: datum.artist, songs: datum.songs.length}})
+    if(! artist_info_table_data.value.map(datum => datum.artist).includes(selected_artist.value)) {
+        selected_artist.value = undefined
+    }
     // update Table
     vue.nextTick(() => {
-        const rows = document.querySelectorAll(".ant-table-row")
-        rows.forEach(row => {
-            row.addEventListener("click", (e) => {
-                selected_artist.value = e.target.parentNode.firstElementChild.innerText
-            })
-        })
+        data_table.value.addRowClickListener()
     }) 
 }
 </script>

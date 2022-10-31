@@ -3,7 +3,6 @@
         :dataSource="data" 
         :columns="columns"
         :pagination="{pageSize:100}"
-        :expandRowByClick="true"
         :scroll="{y:200}" >
         <template #customFilterDropdown="{ setSelectedKeys, selectedKeys, confirm, clearFilters, column }">
         <div style="padding: 8px">
@@ -45,39 +44,18 @@
                     <template v-else>{{ fragment }}</template>
                 </template>
             </span>
+            <span v-else> {{ column.map(text) }} </span>
         </template>
-        <!-- <template #expandedRowRender>
-            <a-table :columns="innerColumns" :data-source="innerData" :pagination="false">
-                <template #bodyCell="{ column }">
-                    <template v-if="column.key === 'state'">
-                        <span>
-                        <a-badge status="success" />
-                        Finished
-                        </span>
-                    </template>
-                    <template v-else-if="column.key === 'operation'">
-                        <span class="table-operation">
-                        <a>Pause</a>
-                        <a>Stop</a>
-                        <a-dropdown>
-                            <template #overlay>
-                            <a-menu>
-                                <a-menu-item>Action 1</a-menu-item>
-                                <a-menu-item>Action 2</a-menu-item>
-                            </a-menu>
-                            </template>
-                            <a>
-                            More
-                            <down-outlined />
-                            </a>
-                        </a-dropdown>
-                        </span>
-                    </template>
+        <!-- <template #expandedRowRender="{record}">
+            <a-table :columns="innerColumns" :data-source="record.songs" :pagination="false">
+                <template #bodyCell="{ text, column }">
+                    <span> {{ text }} </span>
                 </template>
             </a-table>
         </template> -->
     </a-table>
 </template>
+
 <script setup lang="ts">
 import * as vue from "vue" 
 import { Ref, ref } from "vue"
@@ -85,10 +63,10 @@ import { Ref, ref } from "vue"
 const props = defineProps({
     data: Object as () => any,
     columns: Object as () => any,
+    innerColumns: Object as () => any,
     selected_artist: String,
 })
-const searchInput = ref();
-const searchText: Ref<string> = ref("")
+const searchInput = ref(); const searchText: Ref<string> = ref("")
 const searchedColumn: Ref<string> = ref("")
 
 const emit = defineEmits(["update:selected_artist"])
@@ -104,11 +82,19 @@ const handleReset = clearFilters => {
 };
 
 vue.onMounted(() => {
+    addRowClickListener()
+})
+
+function addRowClickListener() {
     const rows = document.querySelectorAll(".ant-table-row")
     rows.forEach(row => {
         row.addEventListener("click", (e) => {
-            emit("update:selected_artist", e.target.parentNode.firstElementChild.innerText)
+            emit("update:selected_artist", e.target.parentNode.children[0].innerText)
         })
     })
+}
+
+defineExpose({
+    addRowClickListener,
 })
 </script>

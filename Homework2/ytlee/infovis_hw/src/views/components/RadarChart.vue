@@ -56,7 +56,8 @@ const transition_options = {
 }
 
 vue.watch(sorted_data, () => {
-    radarChart.update(convert_to_radar_data(sorted_data.value[internal_step.value]), transition_options)
+    if(!sorted_data.value) radarChart.init()
+    else radarChart.update(convert_to_radar_data(sorted_data.value[internal_step.value]), transition_options)
 }, {deep:true})
 
 vue.watch(() => props.stop, (new_value, old_value) => {

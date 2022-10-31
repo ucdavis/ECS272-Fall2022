@@ -16,7 +16,6 @@ const props = defineProps({
 const margin = {top: 0, right: 0, bottom: 0, left: 0}
 const width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right
 const height = Math.min(100, window.innerHeight - margin.top - margin.bottom - 20) - margin.top - margin.bottom;
-console.log("🚀 ~ file: BarChart.vue ~ line 19 ~ height", height)
 // const height = 100
 const id = "barchart"
 let y: any = d3.scaleBand()
@@ -32,7 +31,6 @@ vue.watch(() => props.step, (new_value, old_value) => {
     updateHightLight(props.step)
 })
 vue.watch(() => props.data, (new_value, old_value) => {
-    console.log("attribute changed")
     updateBars()
 })
 
@@ -46,7 +44,6 @@ function init() {
     const canvas = svg.append("g").attr("class", "canvas")
             .attr("transform", "translate(" + (margin.left) + "," + (margin.top) + ")");
     // y axis
-    console.log(props.data)
     // const labels = props.data?.map((item, index) => `t${index}`)
     x = d3.scaleBand()
         // .domain(props.data.map((datum,i) => datum.x))
@@ -91,19 +88,16 @@ function updateBars() {
             exit => exit.remove()
         )
         .on("mousemove", function(e, i) {
-            console.log("mouse move")
             const tooltip = d3.select(`#${id}`).select(".tooltip")
             tooltip.style("left", e.clientX-150 + "px")
                 .style("top", e.clientY - 100 + "px")
         })
         .on("mouseover", function(e, d:any) {
-            console.log("mouse over")
             const tooltip = d3.select(`#${id}`).select(".tooltip")
                 .style("opacity", 1)
                 .html(`song: ${d.x} <br> value: ${d.y} <br> year: ${d.year}`)
         })
         .on("mouseout", function(e, d:any) {
-            console.log("mouse out")
             const tooltip = d3.select(`#${id}`).select(".tooltip")
                 .style("opacity", 0)
         })
