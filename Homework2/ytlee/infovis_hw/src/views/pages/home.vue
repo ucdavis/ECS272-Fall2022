@@ -33,54 +33,10 @@
                 </div>
             </div>
             <div class="artists-table-container">
-                <a-table
-                 :dataSource="artist_info_table_data" 
-                 :columns="artist_info_table_columns"
-                 :pagination="{pageSize:100}"
-                 :expandRowByClick="true"
-                 :scroll="{y:200}" >
-                    <template #customFilterDropdown="{ setSelectedKeys, selectedKeys, confirm, clearFilters, column }">
-                    <div style="padding: 8px">
-                        <a-input
-                            ref="searchInput"
-                            :placeholder="`Search ${column.dataIndex}`"
-                            :value="selectedKeys[0]"
-                            style="width: 188px; margin-bottom: 8px; display: block"
-                            @change="e => setSelectedKeys(e.target.value ? [e.target.value] : [])"
-                            @pressEnter="handleSearch(selectedKeys, confirm, column.dataIndex)"/>
-                        <a-button
-                        type="primary"
-                        size="small"
-                        style="width: 90px; margin-right: 8px"
-                        @click="handleSearch(selectedKeys, confirm, column.dataIndex)"
-                        >
-                        <template #icon><SearchOutlined /></template>
-                        Search
-                        </a-button>
-                        <a-button size="small" style="width: 90px" @click="handleReset(clearFilters)">
-                        Reset
-                        </a-button>
-                    </div>
-                    </template>
-                    <template #customFilterIcon="{ filtered }">
-                        <search-outlined :style="{ color: filtered ? '#108ee9' : 'black' }" />
-                    </template>
-                    <template #bodyCell="{ text, column, record }">
-                        <span v-if="searchText && searchedColumn === column.dataIndex ">
-                            <template 
-                                v-for="(fragment, i) in text.toString().split(new RegExp(`(?<=${searchText})|(?=${searchText})`, 'i'))" >
-                                <mark
-                                    v-if="fragment.toLowerCase() === searchText.toLowerCase()"
-                                    :key="i"
-                                    class="highlight"
-                                >
-                                    {{ fragment }}
-                                </mark>
-                                <template v-else>{{ fragment }}</template>
-                            </template>
-                        </span>
-                    </template>
-                </a-table>
+                <DataTable 
+                :data="artist_info_table_data" 
+                :columns="artist_info_table_columns"
+                v-model:selected_artist="selected_artist"/>
             </div>
         </div>
         <div class="right-section">
@@ -172,6 +128,8 @@ import RadarChart from "../components/RadarChart.vue"
 import BarChart from "../components/BarChart.vue"
 import BeesWarm from "../components/BeesWarm.vue";
 import Dropdown from "../components/Dropdown.vue"
+import DataTable from "../components/DataTable.vue"
+
 import { CaretRightOutlined, PauseOutlined, SearchOutlined, StepForwardOutlined, StepBackwardOutlined } from '@ant-design/icons-vue';
 
 // import ArtistScatterPlot from "../components/ArtistScatterPlot.vue"
@@ -211,19 +169,6 @@ const artist_info_table_columns = [
         sorter: (a: TableDataType, b: TableDataType) => a.songs - b.songs,
     }
 ]
-const searchInput = ref();
-const searchText: Ref<string> = ref("")
-const searchedColumn: Ref<string> = ref("")
-const handleSearch = (selectedKeys, confirm, dataIndex) => {
-      confirm();
-      searchText.value = selectedKeys[0];
-      searchedColumn.value = dataIndex;
-    };
-
-const handleReset = clearFilters => {
-    clearFilters({ confirm: true });
-    searchText.value = '';
-};
 const intro_label: Ref<any> = ref(null)
 const radar_chart: Ref<any> = ref(null)
 const animate_step: Ref<number> = ref(0)
@@ -268,14 +213,6 @@ const radar_key_list = [
         "valence",
 ]
 
-vue.onMounted(() => {
-    const rows = document.querySelectorAll(".ant-table-row")
-    rows.forEach(row => {
-        row.addEventListener("click", (e) => {
-            selected_artist.value = e.target.parentNode.firstElementChild.innerText
-        })
-    })
-})
 function idsToItems(ids: any, id_item_dict: any) {
     return ids.reduce(function(item_list:any[], id:any) { item_list.push(id_item_dict[id]); return item_list; }, [])
 }
@@ -287,7 +224,7 @@ function handleNodeClicked(node) {
 
 function handleDataFiltered(filtered_data) {
     artist_info_table_data.value = filtered_data.map(datum => { return { artist: datum.artist, songs: datum.songs.length}})
-
+    // update Table
     vue.nextTick(() => {
         const rows = document.querySelectorAll(".ant-table-row")
         rows.forEach(row => {
@@ -367,7 +304,7 @@ pointer-events: none;
    position:absolute; 
    width:400px; 
    left:20%; 
-   top:10%; 
+   top:7%; 
     box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
     background: #fff;
 padding: 0.5%;
