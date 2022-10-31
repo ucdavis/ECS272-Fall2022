@@ -4,23 +4,23 @@
             <h1 class="chartTitle">California Wildfires events 1992-2015</h1>
             <div class="row" style="height: 50%">
                 <h1 class="VisTitle">Acres <i>(in thousands)</i> burned due to fire across California: by cause, season and year</h1>
-                <h1 class="note"><i>Leave cursor in node/link to get a preview of the total area burned</i></h1>
+                <h1 class="note"><i>Leave cursor in node to get a preview of the total area burned. Click on a node to freeze the highlight view.</i></h1>
                 <!--<Sankey v-if="dataExists" :mySankeyData="mySankeyData" /> -->
                 <Sankey v-if="dataExists" :mySankeyData="mySankeyData" />
             </div>
         </div>     
         <div class="column">
             <div class="row">
-                <h1 class="VisTitle">Individual fire events</h1>
-                <div class="column">
+                <h1 class="VisTitle">Burned areas by wildfires by the years</h1>
+                <!--<div class="column">
                     <label class="button" for="yrange" 
                     style="display: inline-block; text-align: left">
                     Fire size below =   <span id="yrange-value">10</span>
                 </label>  
                 <input type="range" id="yrange" min=0.1 max=1000 value=10 style="width: 250px;">
                 <br>
-            </div>
-            <div class="column">
+            </div>-->
+            <!--<div class="column">
                 <label class="button">
                     Color  
                 </label>
@@ -28,23 +28,38 @@
                     <option value="cause">Cause</option>
                     <option value="season">Season</option>
                 </select>
-            </div>
+            </div>-->
         </div>
-            <div class="row" id="idScatter">
-                <!--<Scatter v-if="dataExists" :myScatterData="myScatterData" /> -->
-                <Scatter v-if="dataExists" :myScatterData="myScatterData" />
+            <!--
+                <div class="row" id="idScatter">
+                    <Scatter v-if="dataExists" :myScatterData="myScatterData" />
+                </div>
+            -->
+            <div class="row" id="idStackedArea">
+                <StackedArea v-if="dataExists" :myStackedAreaData="myStackedAreaData"/>
             </div>
             <div class="row" style="height: 50%">
                 <h1 class="VisTitle">Different causes/seaons have different impacts per event</h1>
                 <!-- <BarChart v-if="dataExists" :myBarchartData="myBarData" /> -->
-                <label class="button">
-                    Choose Metric to show:     
-                </label>
-                <select id="BarYaxis">
-                    <option value="totalSize">Total Acres Burned</option>
-                    <option value="numberFire">Number of Fire Events</option>
-                    <option value="avgSize"> Average Acres Burned per Fire </option>
-                </select>
+                <div class="column">
+                    <label class="button">
+                        Choose Metric to show:     
+                    </label>
+                    <select id="BarYaxis">
+                        <option value="fire_Totalsize">Total Acres Burned</option>
+                        <option value="fire_count">Number of Fire Events</option>
+                        <option value="fire_avgSize"> Average Acres Burned per Fire </option>
+                    </select>
+                </div>
+                <div class="column">
+                    <label class="button">
+                        Show metrics by:     
+                    </label>
+                    <select id="BarCauseSeason">
+                        <option value="STAT_CAUSE">Cause</option>
+                        <option value="SEASON">Season</option>
+                    </select>
+                </div>
                 <BarChart v-if="dataExists" :myBarchartData="myBarData" />
             </div>   
         </div>
@@ -55,6 +70,7 @@
 import BarChart from "../components/barchart.vue"
 import Scatter from "../components/scatter.vue"
 import Sankey from "../components/sankey.vue"
+import StackedArea from "../components/stackedArea.vue"
 import * as d3 from "d3";
 import csvPathBar from '../../assets/data/fire_bar.csv';
 import csvPath from '../../assets/data/fire_scatter.csv';
@@ -67,20 +83,24 @@ export default {
             dataExists: false,
             myBarData: [],
             myScatterData: [],
-            mySankeyData: []
+            mySankeyData: [],
+            myStackedAreaData: []
         }
     },
     components: {
         BarChart,
         Scatter,
-        Sankey
+        Sankey,
+        StackedArea
     },
     created(){
         /* Fetch via CSV */
         // this.drawBarFromCsv()
         this.drawScatterFromCsv()
     },
-    mounted(){},
+    mounted(){
+        document.title="California Wildfires Dashboard";
+    },
     methods: {
         drawScatterFromCsv(){
             //async method

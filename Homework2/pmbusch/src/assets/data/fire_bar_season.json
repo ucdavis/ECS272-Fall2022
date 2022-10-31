@@ -1,0 +1,28 @@
+{
+"data":[
+  {
+    "SEASON": "Summer",
+    "fire_Totalsize": 8887023.702,
+    "fire_count": 104072,
+    "fire_avgSize": 85.393
+  },
+  {
+    "SEASON": "Fall",
+    "fire_Totalsize": 2373465.72,
+    "fire_count": 29575,
+    "fire_avgSize": 80.2524
+  },
+  {
+    "SEASON": "Spring",
+    "fire_Totalsize": 1381635.9,
+    "fire_count": 46018,
+    "fire_avgSize": 30.0238
+  },
+  {
+    "SEASON": "Winter",
+    "fire_Totalsize": 103733.25,
+    "fire_count": 9885,
+    "fire_avgSize": 10.494
+  }
+]
+}
