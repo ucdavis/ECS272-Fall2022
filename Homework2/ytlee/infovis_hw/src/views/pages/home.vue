@@ -129,12 +129,12 @@
                 ></RadarChart>
             </div>
             <div class="barchart-container" v-if="barchart_data">
-                <Dropdown
-                    :attribute_list="radar_key_list"
-                    v-model:selected_attribute="selected_attribute"
-                ></Dropdown>
                 <h2 class="component-header barchart-header">
-                    Bar charts
+                    Bar charts of 
+                    <Dropdown
+                        :attribute_list="radar_key_list"
+                        v-model:selected_attribute="selected_attribute"
+                    ></Dropdown>
                     <i class='pi pi-info-circle tooltip'>
                         <span class="tooltiptext right-tooltiptext" style="width: 400px">
                             This bar chart shows you the exact value of the attribute of each song.
@@ -276,7 +276,6 @@ vue.onMounted(() => {
         })
     })
 })
-
 function idsToItems(ids: any, id_item_dict: any) {
     return ids.reduce(function(item_list:any[], id:any) { item_list.push(id_item_dict[id]); return item_list; }, [])
 }
@@ -288,6 +287,15 @@ function handleNodeClicked(node) {
 
 function handleDataFiltered(filtered_data) {
     artist_info_table_data.value = filtered_data.map(datum => { return { artist: datum.artist, songs: datum.songs.length}})
+
+    vue.nextTick(() => {
+        const rows = document.querySelectorAll(".ant-table-row")
+        rows.forEach(row => {
+            row.addEventListener("click", (e) => {
+                selected_artist.value = e.target.parentNode.firstElementChild.innerText
+            })
+        })
+    }) 
 }
 </script>
 
@@ -330,9 +338,7 @@ flex-direction: column;
   flex-direction: column;
 }
 .dropdown-container {
-  position: absolute;
-  right: 2%;
-  margin-top: 0.5%;
+    display:inline-block;
 }
 .label-bar-container {
   display: flex;
@@ -355,6 +361,7 @@ pointer-events: none;
 }
 .tooltip {
     font-size:1rem;
+    margin-left:5px;
 }
 .float-label {
    position:absolute; 
@@ -367,11 +374,13 @@ padding: 0.5%;
 font-family: Arial;
 }
 .button-set-container {
-    display: flex;
+    display: inline-flex;
+    width: fit-content;
 }
 .radar-float-label {
-    position: absolute;
-    margin-left: 45px;
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
 } 
 .highlight {
   background-color: rgb(255, 192, 105);

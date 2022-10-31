@@ -63,9 +63,4 @@ function handleClick(e) {
 }
 
 </script>
-<style scoped lang="scss">
-.dropdown-container{
-    position:absolute;
-}
-</style>
 
