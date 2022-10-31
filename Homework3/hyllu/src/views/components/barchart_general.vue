@@ -257,7 +257,7 @@ import { object } from "vue-types";
             drawBarChart(data, id, selection) {
 
                 let flag_dbclick = false;
-                let select_switch = "rgb(255, 255, 255)";
+                let select_switch = 0;
                 let select_item = undefined;
 
                 const margin = { top: 20, right: 40, bottom: 60, left: 60 };
@@ -326,7 +326,7 @@ import { object } from "vue-types";
                     .on("dblclick", bardbclick);
                 
                 function barclick(){
-                    if (flag_dbclick==false && select_switch==="rgb(0, 255, 0)"){
+                    if (flag_dbclick==false && select_switch===2){
                         d3.select(this).transition()
                             .duration('50')
                             .attr('stroke', '#999')
@@ -335,6 +335,7 @@ import { object } from "vue-types";
                 };
 
                 function bardbclick(){
+                    console.log(this.getAttribute('stroke-width'), select_switch);
                     if (flag_dbclick==false){
                         flag_dbclick = true;
                         // console.log(this.getAttribute('x1'), this.getAttribute('x2'), this.getAttribute('y1'), this.getAttribute('y2'));
@@ -356,16 +357,16 @@ import { object } from "vue-types";
                                 .style("font-size", "10px")
                                 .style("opacity", 1);
                         }
-                        select_switch = "rgb(0, 255, 0)";
+                        select_switch = 2;
                         
                         // forEmitThis.$emit('selectSingerChange', select_item);
                     }
-                    else if (this.getAttribute('stroke')===select_switch){
+                    else if (parseInt(this.getAttribute('stroke-width'))===select_switch){
                         d3.select(this).transition()
                             .duration('50')
                             .attr('stroke-width', 0);
                         d3.selectAll(".click_select_bar").remove();
-                        select_switch = "rgb(255, 255, 255)";
+                        select_switch = 0;
                         flag_dbclick = false;
                         select_item = undefined;
                         console.log(select_switch, select_item);
@@ -474,6 +475,10 @@ import { object } from "vue-types";
             },
             drawStackedBarChart(data, id) {
 
+                let flag_dbclick = false;
+                let select_switch = 0;
+                let select_item = undefined;
+
                 const margin = { top: 20, right: 40, bottom: 60, left: 60 };
                 // const height = 300;
                 // const width = 500;
@@ -484,6 +489,7 @@ import { object } from "vue-types";
                 const chartData = data;
                 const X = d3.map(chartData, d => d.album);
                 const Y = d3.map(chartData, d => d.songs);
+                const D = d3.map(chartData, d => d.detail);
                 const Z = d3.map(chartData, d => d.popularity);
 
                 let xDomain = X;
@@ -540,7 +546,63 @@ import { object } from "vue-types";
                     .attr("y", ([y1, y2]) => Math.min(yScale(y1), yScale(y2)))
                     .attr("height", ([y1, y2]) => Math.abs(yScale(y1) - yScale(y2)))
                     .attr("width", xScale.bandwidth())
+                    .attr("index", ({i}) => i)
+                    .on("click", stackbarclick)
+                    .on("dblclick", stackbardbclick);
                 
+                function stackbarclick(){
+                    console.log(this.getAttribute("index"));
+                }
+                
+                function stackbarclick(){
+                    if (flag_dbclick==false && select_switch===2){
+                        d3.select(this).transition()
+                            .duration('50')
+                            .attr('stroke', '#999')
+                            .attr('stroke-width', 0);
+                    }
+                };
+
+                function stackbardbclick(){
+                    console.log(this.getAttribute('stroke-width'), select_switch);
+                    if (flag_dbclick==false){
+                        flag_dbclick = true;
+                        // console.log(this.getAttribute('x1'), this.getAttribute('x2'), this.getAttribute('y1'), this.getAttribute('y2'));
+                        select_item = D[this.getAttribute('index')];
+                        console.log(select_item);
+                        let cx_tmp = this.getAttribute('x');
+                        let cy_tmp = this.getAttribute('y');
+                        d3.select(this).transition()
+                            .duration('50')
+                            .attr('stroke', '#0f0')
+                            .attr('stroke-width', 2);
+                        for (let item_idx=0; item_idx<select_item.length; item_idx++){
+                            if (item_idx>3) break;
+                            svg.append("text")
+                                .attr("x", cx_tmp)
+                                .attr("y", cy_tmp-item_idx*10)
+                                .attr("class", "click_select_bar")
+                                .text(String(select_item[item_idx]))
+                                .style("font-size", "10px")
+                                .style("opacity", 1);
+                        }
+                        select_switch = 2;
+                        
+                        // forEmitThis.$emit('selectSingerChange', select_item);
+                    }
+                    else if (parseInt(this.getAttribute('stroke-width'))===select_switch){
+                        d3.select(this).transition()
+                            .duration('50')
+                            .attr('stroke-width', 0);
+                        d3.selectAll(".click_select_bar").remove();
+                        select_switch = 0;
+                        flag_dbclick = false;
+                        select_item = undefined;
+                        console.log(select_switch, select_item);
+                        // forEmitThis.$emit('selectSingerChange', select_item);
+                    }
+                };
+
                 // add lengend for chosen colors.
                 svg.append("circle")
                     .attr("cx", margin.left + 95)

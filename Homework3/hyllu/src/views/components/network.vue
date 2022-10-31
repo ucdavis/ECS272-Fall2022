@@ -145,10 +145,10 @@
                 let select_singer = undefined;
                 let select_link = "rgb(255, 255, 255)";
                 let select_collab = undefined;
-                const margin = { top: 20, right: 5, bottom: 50, left: 5 };
+                const margin = { top: 15, right: 5, bottom: 50, left: 5 };
                 // const height = 300;
                 // const width = 500;
-                forEmitThis.$emit('selectSingerChange', select_singer);
+                // forEmitThis.$emit('selectSingerChange', select_singer);
 
                 let width  = d3.select(id).node().getBoundingClientRect().width;
                 let height = d3.select(id).node().getBoundingClientRect().width;
@@ -184,7 +184,7 @@
                 const forceNode = d3.forceManyBody();
                 const forceLink = d3.forceLink(links).id(({
                     index: i
-                }) => N[i]).distance(120);
+                }) => N[i]).distance(80);
 
                 d3.selectAll(".layout").remove();
                 let svg = d3.select(id).append("svg")
@@ -367,31 +367,33 @@
                 // add lengend for chosen colors.
                 svg.append("circle")
                     .attr("cx", -width/2 + 10)
-                    .attr("cy", -height/2 - 15)
+                    .attr("cy", -height/2 + 301)
                     .attr("r", 8)
                     .style("fill", color(5))
                 svg.append("circle")
                     .attr("cx", -width/2 + 120)
-                    .attr("cy", -height/2 - 15)
+                    .attr("cy", -height/2 + 301)
                     .attr("r", 8)
                     .style("fill", color(6))
 
+                d3.selectAll(".process_text").remove();
                 svg.append("text")
                     .attr("x", -width/2 + 20)
-                    .attr("y", -height/2 - 35)
-                    .text("Center: " + selection.text)
+                    .attr("y", -height/2 )
+                    .text("\"" + selection.text + "\" Song Collaboration")
+                    .attr("class", "process_text")
                     .style("font-size", "12px")
                     .attr("alignment-baseline","middle")
                 svg.append("text")
                     .attr("x", -width/2 + 20)
-                    .attr("y", -height/2 - 14)
+                    .attr("y", -height/2 + 300)
                     .text("Center Singer")
                     .style("font-size", "12px")
                     .attr("alignment-baseline","middle")
                 svg.append("text")
                     .attr("x", -width/2 + 130)
-                    .attr("y", -height/2 - 14)
-                    .text("Collaborated Singers with Center")
+                    .attr("y", -height/2 + 300)
+                    .text("Collaborated Singers")
                     .style("font-size", "12px")
                     .attr("alignment-baseline","middle")
 

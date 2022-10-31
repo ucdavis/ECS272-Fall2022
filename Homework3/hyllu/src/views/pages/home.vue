@@ -1,28 +1,21 @@
 <template>
     <div id="home">
         <div id="left_view">
-            <div id="intro">
-                Overview: <br>
-                <!-- Find the interested singer to focus on using the dropdown menu. <br>
-                The network layout shows the focused singer (center) and the singers he or she has collaborated with. <br>
-                The size of a node (singer) encodes the collaboration count. <br>
-                The edge thickness encodes how many times they have collaboraed with each other. <br>
-                Hover over nodes to check the singers' names. <br>
-                The center singer's collaborators will show up in the dopdown menu. <br> -->
+            <div id="center_table">
             </div>
             <div id="network_view">
-                <Dropdown_Network :myData="hop_1" @selectedChange="handleChange_network"/>
+                <!-- <Dropdown_Network :myData="hop_1" @selectedChange="handleChange_network"/> -->
                 <Network v-if="dataExists" :myData="myData" :mySelection="selected_network" @dropdownChange="handledropdown_network" @selectSingerChange="handleselectSinger_network"/>
             </div>
         </div>
         
         <div id="right_view">
             <div id="bar_view">
-                <Dropdown :mySelection="selected" @selectedChange="handleChange" />
+                <Dropdown v-if="BarExists" :mySelection="selected" @selectedChange="handleChange" />
                 <BarChart v-if="BarExists" :myBarchartData="myData" :mySelection="selected" :mySinger="selectSinger" @colorChange="handlecolor_views" />
             </div>
             <div id="beeswarm_view">
-                <Dropdown_Beeswarm @selectedChange="handleChange_beeswarm"/>
+                <Dropdown_Beeswarm v-if="BeeswarmExits" @selectedChange="handleChange_beeswarm"/>
                 <Beeswarm v-if="BeeswarmExits" :myData="myData" :mySelection="selected_beeswarm" :mySinger="selected_network.text" :myColor="color" />
             </div>
         </div>
@@ -105,6 +98,7 @@ export default {
             if (this.selectSinger !== undefined){
                 this.BarExists = true;
                 this.BeeswarmExits = this.colorExists & this.BarExists;
+                this.selected_network = {id: 0, text: this.selectSinger};
             }
             else {
                 this.BarExists = false;
@@ -139,8 +133,8 @@ export default {
         border-radius: 5px;
         justify-content: center;
     }
-    #intro {
-        height: 38%;
+    #center_table {
+        height: 20%;
         width: 80%;
         position: relative;
         border-style: solid;
@@ -153,7 +147,7 @@ export default {
         margin-right: auto;
     }
     #network_view {
-        height: 62%;
+        height: 80%;
         width: 80%;
         position: relative;
     }
