@@ -23,7 +23,7 @@
             </div>
             <div id="beeswarm_view">
                 <Dropdown_Beeswarm @selectedChange="handleChange_beeswarm"/>
-                <Beeswarm v-if="colorExists" :myData="myData" :mySelection="selected_beeswarm" :mySinger="selected_network.text" :myColor="color" />
+                <Beeswarm v-if="BeeswarmExits" :myData="myData" :mySelection="selected_beeswarm" :mySinger="selected_network.text" :myColor="color" />
             </div>
         </div>
     </div>
@@ -45,6 +45,7 @@ export default {
         return {
             dataExists: false,
             BarExists: false,
+            BeeswarmExits: false,
             myData: [],
             selected: {id: 0, text: 'Popularity All'},
             selected_beeswarm: {id: 0, text: 'acousticness'},
@@ -103,9 +104,11 @@ export default {
             this.selectSinger = select_singer;
             if (this.selectSinger !== undefined){
                 this.BarExists = true;
+                this.BeeswarmExits = this.colorExists & this.BarExists;
             }
             else {
                 this.BarExists = false;
+                this.BeeswarmExits = this.colorExists & this.BarExists;
                 this.selected = {id: 0, text: 'Popularity All'};
             }
         },
@@ -113,6 +116,7 @@ export default {
             console.log('parent noticed change color ' + color);
             this.color = color;
             this.colorExists = true;
+            this.BeeswarmExits = this.colorExists & this.BarExists;
         }
     }
 }

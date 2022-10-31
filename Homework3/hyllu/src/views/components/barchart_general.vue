@@ -93,6 +93,12 @@ import { object } from "vue-types";
                     const tmp_dict = {A:0, B:0, C:0, D:0, E:0};
                     year_singer[tmp] = tmp_dict;
                 };
+                let year_song = {};
+                for (let i=year_min; i<=year_max; i++){
+                    let tmp = String(i);
+                    const tmp_dict = {A:[], B:[], C:[], D:[], E:[]};
+                    year_song[tmp] = tmp_dict;
+                };
                 
                 data.forEach(element => {
                     let artist = element.artists.split('\'');
@@ -110,19 +116,49 @@ import { object } from "vue-types";
                         else if (artist[i]==this.mySinger[1]) flag_collab += 1;
                     }
                     if (flag == true){
-                        if (element.popularity < 20) year_singer[String(element.year)]['A'] += parseInt(element.popularity);
-                        else if (element.popularity < 40) year_singer[String(element.year)]['B'] += parseInt(element.popularity);
-                        else if (element.popularity < 60) year_singer[String(element.year)]['C'] += parseInt(element.popularity);
-                        else if (element.popularity < 80) year_singer[String(element.year)]['D'] += parseInt(element.popularity);
-                        else if (element.popularity < 101) year_singer[String(element.year)]['E'] += parseInt(element.popularity);
+                        // year_singer[String(element.year)].songs[element.name] = element.popularity;
+                        if (element.popularity < 20){
+                            year_singer[String(element.year)]['A'] += parseInt(element.popularity);
+                            year_song[String(element.year)]['A'].push(String(element.name) + ": " + String(element.popularity));
+                        } 
+                        else if (element.popularity < 40){
+                            year_singer[String(element.year)]['B'] += parseInt(element.popularity);
+                            year_song[String(element.year)]['B'].push(String(element.name) + ": " + String(element.popularity));
+                        } 
+                        else if (element.popularity < 60){
+                            year_singer[String(element.year)]['C'] += parseInt(element.popularity);
+                            year_song[String(element.year)]['C'].push(String(element.name) + ": " + String(element.popularity));
+                        } 
+                        else if (element.popularity < 80){
+                            year_singer[String(element.year)]['D'] += parseInt(element.popularity);
+                            year_song[String(element.year)]['D'].push(String(element.name) + ": " + String(element.popularity));
+                        } 
+                        else if (element.popularity < 101){
+                            year_singer[String(element.year)]['E'] += parseInt(element.popularity);
+                            year_song[String(element.year)]['E'].push(String(element.name) + ": " + String(element.popularity));
+                        } 
                     }
                     else if (flag_collab == 2){
-                        console.log(parseInt(element.popularity));
-                        if (element.popularity < 20) year_singer[String(element.year)]['A'] += parseInt(element.popularity);
-                        else if (element.popularity < 40) year_singer[String(element.year)]['B'] += parseInt(element.popularity);
-                        else if (element.popularity < 60) year_singer[String(element.year)]['C'] += parseInt(element.popularity);
-                        else if (element.popularity < 80) year_singer[String(element.year)]['D'] += parseInt(element.popularity);
-                        else if (element.popularity < 101) year_singer[String(element.year)]['E'] += parseInt(element.popularity);
+                        if (element.popularity < 20){
+                            year_singer[String(element.year)]['A'] += parseInt(element.popularity);
+                            year_song[String(element.year)]['A'].push(String(element.name) + ": " + String(element.popularity));
+                        } 
+                        else if (element.popularity < 40){
+                            year_singer[String(element.year)]['B'] += parseInt(element.popularity);
+                            year_song[String(element.year)]['B'].push(String(element.name) + ": " + String(element.popularity));
+                        } 
+                        else if (element.popularity < 60){
+                            year_singer[String(element.year)]['C'] += parseInt(element.popularity);
+                            year_song[String(element.year)]['C'].push(String(element.name) + ": " + String(element.popularity));
+                        } 
+                        else if (element.popularity < 80){
+                            year_singer[String(element.year)]['D'] += parseInt(element.popularity);
+                            year_song[String(element.year)]['D'].push(String(element.name) + ": " + String(element.popularity));
+                        } 
+                        else if (element.popularity < 101){
+                            year_singer[String(element.year)]['E'] += parseInt(element.popularity);
+                            year_song[String(element.year)]['E'].push(String(element.name) + ": " + String(element.popularity));
+                        } 
                     }
                 });
 
@@ -138,7 +174,8 @@ import { object } from "vue-types";
                             let pop_tmp = {
                                 album: key,
                                 popularity: "popularity 0-20",
-                                songs: year_singer[key][k]
+                                songs: year_singer[key][k],
+                                detail: year_song[key][k]
                             };
                             year_popularity.push(pop_tmp);
                             year_popularity_A.push(pop_tmp);
@@ -147,7 +184,8 @@ import { object } from "vue-types";
                             let pop_tmp = {
                                 album: key,
                                 popularity: "popularity 20-40",
-                                songs: year_singer[key][k]
+                                songs: year_singer[key][k],
+                                detail: year_song[key][k]
                             };
                             year_popularity.push(pop_tmp);
                             year_popularity_B.push(pop_tmp);
@@ -156,7 +194,8 @@ import { object } from "vue-types";
                             let pop_tmp = {
                                 album: key,
                                 popularity: "popularity 40-60",
-                                songs: year_singer[key][k]
+                                songs: year_singer[key][k],
+                                detail: year_song[key][k]
                             };
                             year_popularity.push(pop_tmp);
                             year_popularity_C.push(pop_tmp);
@@ -165,7 +204,8 @@ import { object } from "vue-types";
                             let pop_tmp = {
                                 album: key,
                                 popularity: "popularity 60-80",
-                                songs: year_singer[key][k]
+                                songs: year_singer[key][k],
+                                detail: year_song[key][k]
                             };
                             year_popularity.push(pop_tmp);
                             year_popularity_D.push(pop_tmp);
@@ -174,7 +214,8 @@ import { object } from "vue-types";
                             let pop_tmp = {
                                 album: key,
                                 popularity: "popularity 80-100",
-                                songs: year_singer[key][k]
+                                songs: year_singer[key][k],
+                                detail: year_song[key][k]
                             };
                             year_popularity.push(pop_tmp);
                             year_popularity_E.push(pop_tmp);
@@ -229,6 +270,7 @@ import { object } from "vue-types";
                 // Compute values.
                 const X = d3.map(data, d => d.album);
                 const Y = d3.map(data, d => d.songs);
+                const D = d3.map(data, d => d.detail);
 
                 // Compute default domains, and unique the x-domain.
                 let xDomain = X;
@@ -296,7 +338,7 @@ import { object } from "vue-types";
                     if (flag_dbclick==false){
                         flag_dbclick = true;
                         // console.log(this.getAttribute('x1'), this.getAttribute('x2'), this.getAttribute('y1'), this.getAttribute('y2'));
-                        select_item = this.getAttribute('index');
+                        select_item = D[this.getAttribute('index')];
                         console.log(select_item);
                         let cx_tmp = this.getAttribute('x');
                         let cy_tmp = this.getAttribute('y');
@@ -304,14 +346,18 @@ import { object } from "vue-types";
                             .duration('50')
                             .attr('stroke', '#0f0')
                             .attr('stroke-width', 2);
-                        svg.append("text")
-                            .attr("x", cx_tmp)
-                            .attr("y", cy_tmp)
-                            .attr("class", "click_select_bar")
-                            .text(String(select_item))
-                            .style("font-size", "12px")
-                            .style("opacity", 1);
-                            select_switch = "rgb(0, 255, 0)";
+                        for (let item_idx=0; item_idx<select_item.length; item_idx++){
+                            if (item_idx>3) break;
+                            svg.append("text")
+                                .attr("x", cx_tmp)
+                                .attr("y", cy_tmp-item_idx*10)
+                                .attr("class", "click_select_bar")
+                                .text(String(select_item[item_idx]))
+                                .style("font-size", "10px")
+                                .style("opacity", 1);
+                        }
+                        select_switch = "rgb(0, 255, 0)";
+                        
                         // forEmitThis.$emit('selectSingerChange', select_item);
                     }
                     else if (this.getAttribute('stroke')===select_switch){
