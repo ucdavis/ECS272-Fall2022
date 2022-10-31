@@ -56,9 +56,7 @@ const transition_options = {
 }
 
 vue.watch(sorted_data, () => {
-    console.log("data changed", sorted_data.value)
     radarChart.update(convert_to_radar_data(sorted_data.value[internal_step.value]), transition_options)
-    // radarChart.update(create_test_gradient_data(), { duration: 300, ease_func: d3.easeSinOut, })
 }, {deep:true})
 
 vue.watch(() => props.stop, (new_value, old_value) => {
@@ -67,18 +65,20 @@ vue.watch(() => props.stop, (new_value, old_value) => {
 
 let terminate = false
 vue.watch(() => props.step, (new_value, old_value) => {
-    if(old_value !== 0 && new_value === 0) terminate = true
+    if(old_value !== 0 && new_value === 0 && old_value-new_value !== 1) terminate = true
+    // else {
+    //     internal_step.value = props.step
+    //     radarChart.update(convert_to_radar_data(sorted_data.value[internal_step.value]), transition_options)
+    // }
 
 })
 //Call function to draw the Radar chart
 vue.onMounted(() => {
     radarChart = new RadarChart(`.${class_name}`, radar_key_list, radarChartOptions)
     radarChart.init()
-    // radarChart.update(create_test_gradient_data(), { duration: 300, ease_func: d3.easeSinOut, })
 })
 function loop() {
     if(terminate) {
-        console.log("stop", internal_step.value)
         internal_step.value = 0
         terminate = false
         return
@@ -94,6 +94,18 @@ function loop() {
     radarChart.update(convert_to_radar_data(sorted_data.value[internal_step.value]), transition_options)
     internal_step.value += 1
     d3.timeout(loop, transition_options.duration-100)
+}
+
+function stepForward(max:number) {
+    internal_step.value = Math.min(internal_step.value+1, max)
+    emit("update:step", internal_step.value)
+    radarChart.update(convert_to_radar_data(sorted_data.value[internal_step.value]), transition_options)
+}
+
+function stepBackward(min:number=0) {
+    internal_step.value = Math.max(internal_step.value-1, min)
+    emit("update:step", internal_step.value)
+    radarChart.update(convert_to_radar_data(sorted_data.value[internal_step.value]), transition_options)
 }
 
 function convert_to_radar_data(item:any) {
@@ -113,19 +125,9 @@ function create_test_gradient_data() {
     return res
 }
 
-function goNext() {
-    console.log("go next")
-    radarChart.update(create_test_gradient_data(), { duration: 300, ease_func: d3.easeSinOut, })
-    return
-
-    step.value += 1
-    if(step.value < sorted_data.value.length)
-        radarChart.update(convert_to_radar_data(sorted_data.value[step.value]))
-
-}
-
 defineExpose({
-    goNext
+    stepForward,
+    stepBackward,
 })
 
 </script>

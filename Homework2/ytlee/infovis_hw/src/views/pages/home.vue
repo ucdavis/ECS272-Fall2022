@@ -13,6 +13,7 @@
                     <i class='pi pi-info-circle tooltip'>
                         <span class="tooltiptext right-tooltiptext" style="width: 400px">
                             Each 'bee' is an artist, the position indicates how many songs this artist has released.
+                            Only artists who have release more than 50 songs are listed.
                         </span>
                     </i>
                 </h2>
@@ -93,15 +94,30 @@
                         </span>
                     </i>
                 </h2>
-                <a-button class="animation-play-button"
-                    size="large"
-                    v-if="selected_artist"
-                    @click="stop=!stop">
-                    <template #icon>
-                        <caret-right-outlined v-if="stop"/>
-                        <pause-outlined v-if="!stop"/>
-                    </template>
-                </a-button>
+                <div class="button-set-container" v-if="selected_artist">
+                    <a-button class="animation-previous-button"
+                        size="large"
+                        @click="radar_chart.stepBackward()">
+                        <template #icon>
+                            <step-backward-outlined/>
+                        </template>
+                    </a-button>
+                    <a-button class="animation-play-button"
+                        size="large"
+                        @click="stop=!stop">
+                        <template #icon>
+                            <caret-right-outlined v-if="stop"/>
+                            <pause-outlined v-if="!stop"/>
+                        </template>
+                    </a-button>
+                    <a-button class="animation-next-button"
+                        size="large"
+                        @click="radar_chart.stepForward(artist_song_dict[selected_artist].length-1)">
+                        <template #icon>
+                            <step-forward-outlined/>
+                        </template>
+                    </a-button>
+                </div>
                 <div class="radar-float-label" v-if="selected_artist">
                     Song name: {{ radarchart_data[animate_step]['name']}}
                 </div>
@@ -111,7 +127,6 @@
                     :stop="stop"
                     v-model:step="animate_step"
                 ></RadarChart>
-                <!-- <button type="button" @click="radar_chart.goNext"> Next </button> -->
             </div>
             <div class="barchart-container" v-if="barchart_data">
                 <Dropdown
@@ -157,7 +172,7 @@ import RadarChart from "../components/RadarChart.vue"
 import BarChart from "../components/BarChart.vue"
 import BeesWarm from "../components/BeesWarm.vue";
 import Dropdown from "../components/Dropdown.vue"
-import { CaretRightOutlined, PauseOutlined, SearchOutlined } from '@ant-design/icons-vue';
+import { CaretRightOutlined, PauseOutlined, SearchOutlined, StepForwardOutlined, StepBackwardOutlined } from '@ant-design/icons-vue';
 
 // import ArtistScatterPlot from "../components/ArtistScatterPlot.vue"
 
@@ -351,8 +366,8 @@ pointer-events: none;
 padding: 0.5%;
 font-family: Arial;
 }
-.animation-play-button {
-    position: absolute;
+.button-set-container {
+    display: flex;
 }
 .radar-float-label {
     position: absolute;
