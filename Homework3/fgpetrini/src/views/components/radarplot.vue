@@ -82,6 +82,7 @@
                                 "cb_accessible" : ["#67a9cf", "#ef8a62"] },
                 satisfaction_data : [],
                 loyalty_data : [],
+                class_data : [],
                 plot_title : "Average Respondent Rating By Service Category"
 
             }
@@ -92,6 +93,7 @@
             width : Number,
             dd_option : String,
             radio_option: String,
+            bar_option: String,
         },
         mounted(){
             this.color = d3.scaleOrdinal().range(this.color_dict[this.radio_option]);
@@ -115,6 +117,8 @@
             this.disloyal_v_loyal_data = [disloyal, loyal];
             // Need a deep copy
             this.disloyal_v_loyal_filtered_data = JSON.parse(JSON.stringify(this.disloyal_v_loyal_data));
+
+            this.class_data = this.groupBy(this.myRadarPlotData, "Class");
 
             var checkList = document.getElementById('checkbox-selection');
             checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
@@ -241,7 +245,6 @@
                         .attr("cx", (d,i) => rScale(d.value) * Math.cos(this.angleSlice*i - Math.PI/2))
                         .attr("cy", (d,i) => rScale(d.value) * Math.sin(this.angleSlice*i - Math.PI/2))
                     .on("mouseover", function(d) {
-                        console.log(d.clientX, d.clientY);
                         d3.select(this)
                         .attr("r", dotRadius+2)
                     })
@@ -251,7 +254,6 @@
                     })
                     .append("title")
                         .text((d, i) => {
-                            console.log(d, i);
                             return String(Math.round(d.value*100)/100)+"/5";
                         });
 
@@ -294,6 +296,7 @@
             getSpiderPlotData(subset) {
                 let ratings = {};
                 const columns = this.myRadarPlotData.columns;
+                console.log(subset.length)
                 for(let i = 0; i < subset.length; i++) {
                     for (let j = 8; j < 22; j++) {
                         if(columns[j] in ratings)
@@ -310,14 +313,39 @@
                 }
                 return final;
             },
+            FilterByBarOption() {
+                console.log(this.bar_option);
+                if(this.dd_option == "Dis_Vs_Sat") {
+                    if(this.bar_option == "default") {
+                        return this.dissatisfied_v_satisfied_filtered_data;
+                    }
+                    console.log(this.class_data);
+                    let class_data = this.groupBy(this.class_data[this.bar_option], "satisfaction");
+                    const satisfied = this.getSpiderPlotData(class_data["satisfied"]);
+                    const dissatisfied = this.getSpiderPlotData(class_data["neutral or dissatisfied"]);
+                    console.log(dissatisfied, satisfied);
+                    return [dissatisfied, satisfied];
+                    
+                } else {
+                    if(this.bar_option == "default") {
+                        return this.loyalty_data;
+                    }
+                    let class_data = this.groupBy(this.class_data[this.bar_option], "Customer Type");
+                    const disloyal = this.getSpiderPlotData(class_data["disloyal Customer"]);
+                    const loyal = this.getSpiderPlotData(class_data["Loyal Customer"]);
+                    return [disloyal, loyal];
+                }  
+            },
             updatePlot() {
                 d3.selectAll("#radar svg").remove();
                 this.color = d3.scaleOrdinal().range(this.color_dict[this.radio_option]);
                 if(this.dd_option == "Dis_Vs_Sat") {
-                    this.drawRadarPlot(this.dissatisfied_v_satisfied_filtered_data, "#radar");
+                    const data = this.FilterByBarOption();
+                    console.log(data);
+                    this.drawRadarPlot(data, "#radar");
                 }
                 else {
-                    this.drawRadarPlot(this.disloyal_v_loyal_filtered_data, "#radar");
+                    this.drawRadarPlot(this.FilterByBarOption(), "#radar");
                 }
             },
             checkboxChanged(event) {

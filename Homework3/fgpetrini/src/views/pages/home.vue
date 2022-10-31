@@ -23,14 +23,14 @@
             </div>
         </div>
         <div class="column" id="pie_quad">
-            <PieChart  ref="pie_component" v-if="dataExists" :myPieChartData="data_" :height="pie_h" :width="pie_w" :dd_option="current_dd_option" :radio_option="current_radio_option"/>
+            <PieChart  ref="pie_component" v-if="dataExists" :myPieChartData="data_" :height="pie_h" :width="pie_w" :dd_option="current_dd_option" :radio_option="current_radio_option" :bar_option="current_bar_selection"/>
         </div>
         <div class="column">
             <div class="row" id="bar_quad">
                 <StackedBar  ref="bar_component" v-if="dataExists" :myStackedBarData="data_" :height="radar_h" :width="radar_w" :dd_option="current_dd_option" :radio_option="current_radio_option"/>
             </div>
             <div class="row" id="radar_quad">
-                <RadarPlot  ref="radar_component" v-if="dataExists" :myRadarPlotData="data_" :height="radar_h" :width="radar_w" :dd_option="current_dd_option" :radio_option="current_radio_option"/>
+                <RadarPlot  ref="radar_component" v-if="dataExists" :myRadarPlotData="data_" :height="radar_h" :width="radar_w" :dd_option="current_dd_option" :radio_option="current_radio_option" :bar_option="current_bar_selection"/>
             </div>
         </div>
     </div>
@@ -58,6 +58,7 @@ export default {
                                      "Di_Vs_Loy" : ["Disloyal Respondents", "Loyal Respondents"] },
             color : {"default" : ["#999999", "#ef8a62"],
                     "cb_accessible" : ["#67a9cf", "#ef8a62"] },
+            current_bar_selection: "default",
         }
     },
     components: {
@@ -92,11 +93,13 @@ export default {
             console.log("Drop Down Option Changed");
             let e = document.getElementById("dataDropdown");
             this.current_dd_option = e.value;
+            // Clear bar filter when switching data
+            this.current_bar_selection = "default";
             // Needs time to update...
             this.sleep(50).then(() => {
                 console.log("Complete");
                 this.$refs.pie_component.updatePlot();
-                this.$refs.bar_component.updatePlot();
+                this.$refs.bar_component.updatePlot(false);
                 this.$refs.radar_component.updatePlot();
                 d3.selectAll("#legend svg").remove();
                 this.drawLegend();
@@ -109,7 +112,6 @@ export default {
 
             let width = document.getElementById("legend").offsetWidth;
             let height = document.getElementById("legend").offsetHeight;
-            console.log(height, width);
             let svg = d3.select("#legend").append("svg")
                     .attr("viewBox", [-width*0.5, -height*0.5, width, height])
                     .attr("width", width-20)
@@ -137,7 +139,18 @@ export default {
             this.sleep(50).then(() => {
                 console.log("Complete");
                 this.$refs.pie_component.updatePlot();
-                this.$refs.bar_component.updatePlot();
+                this.$refs.bar_component.updatePlot(true);
+                this.$refs.radar_component.updatePlot();
+                d3.selectAll("#legend svg").remove();
+                this.drawLegend();
+            });
+        },
+        stackedBarChanged(updateVariable) {
+            this.current_bar_selection = updateVariable;
+            console.log(this.current_bar_selection);
+            this.sleep(50).then(() => {
+                console.log("Complete");
+                this.$refs.pie_component.updatePlot();
                 this.$refs.radar_component.updatePlot();
                 d3.selectAll("#legend svg").remove();
                 this.drawLegend();

@@ -20,8 +20,8 @@
                 color_dict : {"default" : ["#999999", "#ef8a62"],
                                 "cb_accessible" : ["#67a9cf", "#ef8a62"] },
                 plot_title : "Respondent Satisfaction By Travel Class",
-                bar_clicked : true,
-                currently_clicked : "default",
+                current_filter : "default",
+                color_change : false,
             }
         },
         props:{
@@ -32,7 +32,6 @@
             radio_option: String,
         },
         mounted(){
-            console.log("HELLO", this.currently_clicked);
             let pixels = String(Math.round(this.width / 40));
             document.getElementById("bar_title").style.fontSize = pixels+"px";
             this.satisfaction_data = this.getStackedClassBins(this.myStackedBarData, "satisfaction");
@@ -64,7 +63,6 @@
                         height: this.height
                     });
                 }
-                
             },
             // Copyright 2021 Observable, Inc.
             // Released under the ISC license.
@@ -75,7 +73,7 @@
                 z = () => 1, // given d in data, returns the (categorical) z-value
                 title, // given d in data, returns the title text
                 marginTop = 50, // top margin, in pixels
-                marginRight = 0, // right margin, in pixels
+                marginRight = 20, // right margin, in pixels
                 marginBottom = 30, // bottom margin, in pixels
                 marginLeft = 40, // left margin, in pixels
                 width = 640, // outer width, in pixels
@@ -159,6 +157,8 @@
                         .attr("text-anchor", "start")
                         .text(yLabel));
 
+                let topObject = this;
+
                 const bar = svg.append("g")
                     .selectAll("g")
                     .data(series)
@@ -172,7 +172,6 @@
                     .attr("height", ([y1, y2]) => Math.abs(yScale(y1) - yScale(y2)))
                     .attr("width", xScale.bandwidth())
                     .attr("bar-category", (d) => {
-                        console.log(d['i']);
                         if(d['i'] == 0 || d['i'] == 1) {
                             return "Eco";
                         } else if(d['i'] == 2 || d['i'] == 3) {
@@ -197,32 +196,43 @@
                             .attr('opacity', 1.0);
                     })
                     .on("click", function(d,i) {
+                        console.log(current_param);
                         let target_param = i['data'][0];
                         let all_rect = d3.selectAll("rect");
                         let target_bar = all_rect.filter(function() {
-                            return d3.select(this).attr("bar-category") == target_param
+                            return d3.select(this).attr("bar-category") == target_param;
                         });
+                        let already_selected = target_bar.filter(function() {
+                            return (d3.select(this).attr("stroke-width") == "2");
+                        })["_groups"][0].length > 0;
                         // Clear any previous modifications
                         all_rect.attr("stroke", "black")
                                 .attr("stroke-width", 0)
-                        
-                        console.log(this.currently_clicked, target_param);
-                        if(this.currently_clicked != target_param) {
-                            this.bar_clicked = true;
-                            this.currently_clicked = target_param;
-                        } else {
-                            this.bar_clicked = false;
-                            this.currently_clicked = "default";
-                        }
-                        if(this.bar_clicked) {
+                        var current_param = "default";
+                        console.log(already_selected);
+                        if(!already_selected) {
                             target_bar.attr("stroke", "black")
-                                .attr("stroke-width", 2)
-                        } else {
-                            target_bar.attr("stroke", "black")
-                                .attr("stroke-width", 0)
+                                .attr("stroke-width", 2);
+                            current_param = target_param
                         }
-                        console.log(this.bar_clicked,this.currently_clicked);
+                        console.log(topObject);
+                        topObject.current_filter = current_param;
+                        topObject.$parent.stackedBarChanged(current_param);
                     });
+
+                // Redraw outline when color filter is changed
+                if(this.color_change && this.current_filter != "default") {
+                    let target_bar = d3.selectAll("rect");
+                    let filter = this.current_filter;
+                    target_bar.each(function(p,j){
+                        console.log(p["data"][0]);
+                        if(p["data"][0] == filter)
+                            d3.select(this).attr("stroke", "black").attr("stroke-width", 2);
+                    });
+                } else {
+                    // A non color change has taken place
+                    this.current_filter = "default";
+                }
 
                 if (title) bar.append("title")
                     .text(({i}) => title(i));
@@ -275,8 +285,9 @@
                 }
                 return retList;
             },
-            updatePlot() {
+            updatePlot(color_change) {
                 d3.selectAll("#stacked-bar svg").remove();
+                this.color_change = color_change;
                 if(this.dd_option == "Dis_Vs_Sat") {
                     this.plot_title = "Respondent Satisfaction By Travel Class";
                     this.drawStackedBar(this.satisfaction_data);

@@ -16,6 +16,7 @@
                 id : "#pie",
                 satisfaction_data : [],
                 loyalty_data : [],
+                class_data : [],
                 color_dict : {"default" : ["#999999", "#ef8a62"],
                                 "cb_accessible" : ["#67a9cf", "#ef8a62"] },
                 plot_title : "Percent of Respondents Dissatisfied Vs. Satisfied",
@@ -27,6 +28,7 @@
             width : Number,
             dd_option: String,
             radio_option: String,
+            bar_option: String,
         },
         mounted(){
 
@@ -37,6 +39,7 @@
             this.drawPieChart(this.satisfaction_data);
 
             this.loyalty_data = this.LoyaltyBreakdown(this.myPieChartData);
+            this.class_data = this.groupBy(this.myPieChartData, "Class");
         },
         methods: {
             drawPieChart(pie_data) {
@@ -187,16 +190,29 @@
                                         {name: "Loyal", value: loyal_share, count: loyal}];
                 return formatted_data;
             },
+            FilterByBarOption() {
+                console.log(this.bar_option);
+                if(this.dd_option == "Dis_Vs_Sat") {
+                    if(this.bar_option == "default") {
+                        return this.satisfaction_data;
+                    }
+                    return this.SatisfactionBreakdown(this.class_data[this.bar_option]);
+                } else {
+                    if(this.bar_option == "default") {
+                        return this.loyalty_data;
+                    }
+                    return this.LoyaltyBreakdown(this.class_data[this.bar_option]);
+                }  
+            },
             updatePlot() {
                 d3.selectAll("#pie svg").remove();
                 if(this.dd_option == "Dis_Vs_Sat") {
                     this.plot_title = "Percent of Respondents Dissatisfied Vs. Satisfied";
-                    this.drawPieChart(this.satisfaction_data);
                 }
                 else {
                     this.plot_title = "Percent of Respondents Disloyal Vs. Loyal";
-                    this.drawPieChart(this.loyalty_data);
                 }
+                this.drawPieChart(this.FilterByBarOption());
             },
         }
     }
