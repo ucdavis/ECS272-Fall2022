@@ -31,6 +31,8 @@
                 x: null, // function used to determine the x-coordinate
                 y: null, // function used to determine the y-coordinate
 
+                annotations: null,
+
                 zoom: null,
 
             }
@@ -44,7 +46,14 @@
                 console.log("Got the updated brushed Data in scatter watch");
                 console.log(value);
 
-                this.updateChart(value);
+                let currentArtists = this.getTopArtists(value, 10);
+
+                let currentArtistsNames = [];
+                for(let i = 0; i < currentArtists.length; i++){
+                    currentArtistsNames.push(currentArtists[i].artist)
+                }
+
+                this.updateChart(value, currentArtistsNames);
 
             }
         },
@@ -174,7 +183,6 @@
 
 
                 // Needed for svg
-                let annotations = null;
                 let line = null;
 
                 this.svg = d3.select(viz)
@@ -186,7 +194,7 @@
                             .attr("transform", `translate(${margin.left},${margin.top})`);
 
                 // annotation layer to keep labels on top of data
-                annotations = this.svg.append("g").attr("id", "annotation");
+                this.annotations = this.svg.append("g").attr("id", "annotation");
 
                 // add X-axis
                 this.x = d3.scaleLinear()
@@ -237,7 +245,7 @@
                 // Create legend and labels
 
                 // x - axis label
-                annotations.insert("text")
+                this.annotations.insert("text")
                     .attr("x", width / 2)
                     .attr("y", height + margin.bottom / 2)
                     .attr("text-anchor", "middle")
@@ -245,7 +253,7 @@
                     .attr("font-weight", "bold");
 
                 // y - axis label
-                annotations.insert("text")
+                this.annotations.insert("text")
                     .attr("x", 0)
                     .attr("y", height / 2)
                     .attr("transform", "rotate(-90)")
@@ -258,10 +266,10 @@
                 // add legend
 
                 // Add in the legend for each name.
-                annotations.selectAll("labels")
+                this.annotations.selectAll("#labels")
                     .data(artistNames)
-                    .enter()
-                    .append("text")
+                    .join("text")
+                    .attr("id", "labels")
                     .attr("x", 325)
                     .attr("y", function(d,i){ return 5 + i*10})
                     .style("fill", (d, i) => { return this.color(d)})
@@ -297,7 +305,7 @@
                 this.svg.call(this.zoom).call(this.zoom.transform, d3.zoomIdentity);
                 
             },
-            updateChart(data){
+            updateChart(data, currentArtistsNames){
                 /*
                 if(this.opacityFlag == 0){
                     this.svg.selectAll("#dots")
@@ -340,6 +348,22 @@
                     .on("mouseout.highlight", function(event, d) {
                         d3.select(this).style("stroke", null);
                     })
+
+                // where to start the legend from
+                let start_y = 50 - 10 * (currentArtistsNames.length / 2)
+
+                // Add in the legend for each name.
+                this.annotations.selectAll("#labels")
+                    .data(currentArtistsNames)
+                    .join("text")
+                    .attr("id", "labels")
+                    .attr("x", 325)
+                    .attr("y", function(d,i){ return start_y + i*10})
+                    .style("fill", (d, i) => { return this.color(d)})
+                    .style("font", "10px times")
+                    .text(function(d){ return d})
+                    .attr("text-anchor", "left")
+                    .style("alignment-baseline", "middle")
 
 
             },

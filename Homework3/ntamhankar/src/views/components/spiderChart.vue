@@ -33,6 +33,8 @@
                 color1: null, // function to assign color for chart1
                 radarLine1: null, // function to determine radarLine for chart1
 
+                annotations: null,
+
                 // specific to chart 2 for updating
                 container2: null, // array with data for spiderChart2
                 spiderData2: [], // container which has spiderChart2
@@ -55,7 +57,15 @@
                 this.spiderData1 = this.processSpider(value, ["acousticness", "instrumentalness", "liveness", "speechiness"]);
                 this.spiderData2 = this.processSpider(value, ["danceability", "energy", "loudness"]);
 
-                this.updateSpiderChart1(this.radarLine1, this.color1)
+                let currentArtists = this.getTopArtists(value, 10);
+
+                let currentArtistsNames = [];
+                for(let i = 0; i < currentArtists.length; i++){
+                    currentArtistsNames.push(currentArtists[i].artist)
+                }
+
+
+                this.updateSpiderChart1(this.radarLine1, this.color1, currentArtistsNames)
                 this.updateSpiderChart2(this.radarLine2, this.color2)
 
             }
@@ -301,7 +311,7 @@
                 // concact this.artistNames to keep same ordering as parallelSetChart
                 this.color1 = d3.scaleOrdinal().domain([this.generalName].concat(this.artistNames)).range(this.generalColor.concat(this.colorsBySinger));
 
-                let annotations = null;
+                //let annotations = null;
                 let rScale = null;
                 let axis = null;
                 let axisGrid = null;
@@ -312,10 +322,10 @@
                         .attr("id", "spider1")
                         .attr("width", width + margin.left + margin.right)
                         .attr("height", height + margin.top + margin.bottom)
-                        .attr('transform', `translate(${(width/2)+margin.left}, ${(height/2)-margin.top})`);
+                        .attr('transform', `translate(${(width/2) - 30}, ${(height/2)-margin.top})`);
 
                 // annotation layer to keep labels on top of data
-                annotations = this.svg.append("g").attr("id", "annotations");
+                this.annotations = this.svg.append("g").attr("id", "annotations");
 
 
                 rScale = d3.scaleLinear()
@@ -408,12 +418,12 @@
                 // add a legend
                 console.log("Trying to add legend")
                 // Add in the legend for each name.
-                annotations.selectAll("labels")
+                this.annotations.selectAll("#labels")
                     .data(this.artistNames)
-                    .enter()
-                    .append("text")
-                    .attr("x", 300)
-                    .attr("y", function(d,i){ return 15 + i*10})
+                    .join("text")
+                    .attr("id", "labels")
+                    .attr("x", 310)
+                    .attr("y", function(d,i){ return 120 + i*10})
                     .style("fill", (d, i) => this.color1(d))
                     .style("font", "10px times")
                     .text(function(d){ return d})
@@ -424,7 +434,7 @@
 
 
             },
-            updateSpiderChart1(radarLine, color){
+            updateSpiderChart1(radarLine, color, currentArtistsNames){
 
                 let currentData = (this.spiderData1[0])
                 let currentSinger = (this.spiderData1[1])
@@ -452,6 +462,21 @@
                     .attr("stroke", (d, i) => color(currentSinger[i]))
                     .attr("stroke-width", 2)
                     .attr("id", "path1")
+
+                // where to start the legend from
+                let start_y = 170 - 10 * Math.floor(currentArtistsNames.length / 2)
+
+                this.annotations.selectAll("#labels")
+                    .data(currentArtistsNames)
+                    .join("text")
+                    .attr("id", "labels")
+                    .attr("x", 310)
+                    .attr("y", function(d,i){ return start_y + i*10})
+                    .style("fill", (d, i) => this.color1(d))
+                    .style("font", "10px times")
+                    .text(function(d){ return d})
+                    .attr("text-anchor", "left")
+                    .style("alignment-baseline", "middle")
 
             },
             initSpiderChart2(viz){
@@ -488,7 +513,7 @@
                     .attr("id", "spider2")
                     .attr("width", width + margin.left + margin.right)
                     .attr("height", height + margin.top + margin.bottom)
-                    .attr('transform', `translate(${width + (width/2) + margin.left}, ${(height/2)-margin.top})`);
+                    .attr('transform', `translate(${width + (width/2) + 6*margin.left}, ${(height/2)-margin.top})`);
 
                 rScale = d3.scaleLinear()
                     .domain([0, maxValue])
