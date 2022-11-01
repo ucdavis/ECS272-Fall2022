@@ -48,6 +48,7 @@
                 console.log("In beeswarm: ", selection.id + selection.text);
 
                 let sorted_data = [];
+                let total_index = 0;
                 data.forEach(element => {
                     let flag = false;
                     let flag_collab = 0;
@@ -70,7 +71,8 @@
                             speechiness: element.speechiness,
                             valence: element.valence,
                             popularity: element.popularity,
-                            name: element.name
+                            name: element.name,
+                            total_index: total_index
                         };
                         // if (element.popularity<20){
                         //     TS_tmp.popularity = 0;
@@ -89,6 +91,7 @@
                         // }
                         sorted_data.push(TS_tmp);
                     }
+                    total_index += 1;
                 });
                 this.prepared_data = sorted_data;
                 console.log(sorted_data);
@@ -109,6 +112,7 @@
                 const X_valence = d3.map(data, d => d.valence);
 
                 const X = d3.map(data, d => d.popularity);
+                const N = d3.map(data, d => d.name);
                 let X_category = undefined;
                 let X_text = undefined;
                 if (this.slideshow%7 === 0){
@@ -231,70 +235,72 @@
                     .attr("r", radius)
                     .attr("fill", i => cScale(X_category[i]));
                     // .attr("fill", i => this.myColor[G[i]]);
+                
+                if (N) dot.append('title').text(({index: i}) => N[i]);
 
                 // add lengend for chosen colors.
-                svg.append("circle")
-                    .attr("cx", margin.left + 95)
-                    .attr("cy", height -15)
-                    .attr("r", 4)
-                    .style("fill", this.myColor[0])
-                svg.append("circle")
-                    .attr("cx", margin.left + 145)
-                    .attr("cy", height -15)
-                    .attr("r", 4)
-                    .style("fill", this.myColor[1])
-                svg.append("circle")
-                    .attr("cx", margin.left + 195)
-                    .attr("cy", height -15)
-                    .attr("r", 4)
-                    .style("fill", this.myColor[2])
-                svg.append("circle")
-                    .attr("cx", margin.left + 245)
-                    .attr("cy", height -15)
-                    .attr("r", 4)
-                    .style("fill", this.myColor[3])
-                svg.append("circle")
-                    .attr("cx", margin.left + 295)
-                    .attr("cy", height -15)
-                    .attr("r", 4)
-                    .style("fill", this.myColor[4])
+                // svg.append("circle")
+                //     .attr("cx", margin.left + 95)
+                //     .attr("cy", height -15)
+                //     .attr("r", 4)
+                //     .style("fill", this.myColor[0])
+                // svg.append("circle")
+                //     .attr("cx", margin.left + 145)
+                //     .attr("cy", height -15)
+                //     .attr("r", 4)
+                //     .style("fill", this.myColor[1])
+                // svg.append("circle")
+                //     .attr("cx", margin.left + 195)
+                //     .attr("cy", height -15)
+                //     .attr("r", 4)
+                //     .style("fill", this.myColor[2])
+                // svg.append("circle")
+                //     .attr("cx", margin.left + 245)
+                //     .attr("cy", height -15)
+                //     .attr("r", 4)
+                //     .style("fill", this.myColor[3])
+                // svg.append("circle")
+                //     .attr("cx", margin.left + 295)
+                //     .attr("cy", height -15)
+                //     .attr("r", 4)
+                //     .style("fill", this.myColor[4])
                 
-                svg.append("text")
-                    .attr("x", margin.left)
-                    .attr("y", height -15)
-                    .text("Song Popularity:")
-                    .style("font-size", "9px")
-                    .attr("alignment-baseline","middle")
-                svg.append("text")
-                    .attr("x", margin.left + 100)
-                    .attr("y", height -15)
-                    .text("0-20")
-                    .style("font-size", "9px")
-                    .attr("alignment-baseline","middle")
-                svg.append("text")
-                    .attr("x", margin.left + 150)
-                    .attr("y", height -15)
-                    .text("20-40")
-                    .style("font-size", "9px")
-                    .attr("alignment-baseline","middle")
-                svg.append("text")
-                    .attr("x", margin.left + 200)
-                    .attr("y", height -15)
-                    .text("40-60")
-                    .style("font-size", "9px")
-                    .attr("alignment-baseline","middle")
-                svg.append("text")
-                    .attr("x", margin.left + 250)
-                    .attr("y", height -15)
-                    .text("60-80")
-                    .style("font-size", "9px")
-                    .attr("alignment-baseline","middle")
-                svg.append("text")
-                    .attr("x", margin.left + 300)
-                    .attr("y", height -15)
-                    .text("80-100")
-                    .style("font-size", "9px")
-                    .attr("alignment-baseline","middle")
+                // svg.append("text")
+                //     .attr("x", margin.left)
+                //     .attr("y", height -15)
+                //     .text("Song Popularity:")
+                //     .style("font-size", "9px")
+                //     .attr("alignment-baseline","middle")
+                // svg.append("text")
+                //     .attr("x", margin.left + 100)
+                //     .attr("y", height -15)
+                //     .text("0-20")
+                //     .style("font-size", "9px")
+                //     .attr("alignment-baseline","middle")
+                // svg.append("text")
+                //     .attr("x", margin.left + 150)
+                //     .attr("y", height -15)
+                //     .text("20-40")
+                //     .style("font-size", "9px")
+                //     .attr("alignment-baseline","middle")
+                // svg.append("text")
+                //     .attr("x", margin.left + 200)
+                //     .attr("y", height -15)
+                //     .text("40-60")
+                //     .style("font-size", "9px")
+                //     .attr("alignment-baseline","middle")
+                // svg.append("text")
+                //     .attr("x", margin.left + 250)
+                //     .attr("y", height -15)
+                //     .text("60-80")
+                //     .style("font-size", "9px")
+                //     .attr("alignment-baseline","middle")
+                // svg.append("text")
+                //     .attr("x", margin.left + 300)
+                //     .attr("y", height -15)
+                //     .text("80-100")
+                //     .style("font-size", "9px")
+                //     .attr("alignment-baseline","middle")
                     
                 // add labels for axes.
                 svg.append("g")

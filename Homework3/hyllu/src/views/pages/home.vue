@@ -11,12 +11,12 @@
         
         <div id="right_view">
             <div id="bar_view">
-                <Dropdown v-if="BarExists" :mySelection="selected" @selectedChange="handleChange" />
-                <BarChart v-if="BarExists" :myBarchartData="myData" :mySelection="selected" :mySinger="selectSinger" @colorChange="handlecolor_views" />
+                <!-- <Dropdown v-if="BarExists" :mySelection="selected" @selectedChange="handleChange" /> -->
+                <BarChart v-if="BarExists" :myBarchartData="myData" :mySelection="selected" :mySinger="selectSinger" @colorChange="handlecolor_views" @selectSongsChange="handleselectSongs_bar" />
             </div>
             <div id="beeswarm_view">
-                <Dropdown_Beeswarm v-if="BeeswarmExits" @selectedChange="handleChange_beeswarm"/>
-                <Beeswarm v-if="BeeswarmExits" :myData="myData" :mySelection="selected_beeswarm" :mySinger="selected_network.text" :myColor="color" :slideshow="slideNumber" @slideshowChange="handleChange_slide"/>
+                <!-- <Dropdown_Beeswarm v-if="BeeswarmExits" @selectedChange="handleChange_beeswarm"/> -->
+                <Beeswarm v-if="BeeswarmExits" :myData="myData" :mySelection="selected_beeswarm" :mySinger="selectSinger" :myColor="color" :slideshow="slideNumber" @slideshowChange="handleChange_slide"/>
             </div>
         </div>
     </div>
@@ -40,13 +40,13 @@ export default {
             BarExists: false,
             BeeswarmExits: false,
             myData: [],
-            selected: {id: 0, text: 'Popularity All'},
+            selected: {id: 1, text: 'Popularity 0-20'},
             selected_beeswarm: {id: 0, text: 'acousticness'},
             selected_network: {id: 0, text: 'Taylor Swift'},
             hop_1: [{id: 0, text: 'Taylor Swift'}],
             selectSinger: undefined,
             color: undefined,
-            colorExists: false,
+            colorExists: true,
             slideNumber: 0
         }
     },
@@ -112,9 +112,11 @@ export default {
                 }
             }
             else {
-                this.BarExists = false;
-                this.BeeswarmExits = this.colorExists & this.BarExists;
-                this.selected = {id: 0, text: 'Popularity All'};
+                // this.BarExists = false;
+                // this.BeeswarmExits = this.colorExists & this.BarExists;
+
+                this.selectSinger = this.selected_network.text;
+                this.selected = {id: 1, text: 'Popularity 0-20'};
             }
         },
         handlecolor_views(color){
@@ -123,13 +125,16 @@ export default {
             this.colorExists = true;
             this.BeeswarmExits = this.colorExists & this.BarExists;
         },
+        handleselectSongs_bar(ti_tmp){
+            
+        },
         handleChange_slide(tmp_slide){
             const ori_this = this;
             function resolveAfter2Seconds() {
                 return new Promise(resolve => {
                     setTimeout(() => {
                     resolve('resolved');
-                    }, 2000);
+                    }, 5000);
                 });
             }
             async function asyncCall() {

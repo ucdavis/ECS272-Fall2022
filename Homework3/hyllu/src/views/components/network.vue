@@ -227,8 +227,8 @@
                         // console.log(this.getAttribute('x1'), this.getAttribute('x2'), this.getAttribute('y1'), this.getAttribute('y2'));
                         select_collab = [selection.text, T[this.getAttribute('index')]];
                         console.log(select_collab);
-                        let cx_tmp = this.getAttribute('x2');
-                        let cy_tmp = this.getAttribute('y2');
+                        let cx_tmp = this.getAttribute('x1');
+                        let cy_tmp = this.getAttribute('y1');
                         d3.select(this).transition()
                             .duration('50')
                             .attr('stroke', '#0f0');

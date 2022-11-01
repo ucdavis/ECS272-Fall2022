@@ -87,6 +87,21 @@ import { object } from "vue-types";
                     }
                 });
 
+                let year_release = {};
+                for (let i=year_min; i<=year_max; i++){
+                    let tmp = String(i);
+                    year_release[tmp] = 0;
+                };
+                let year_release_detail = {};
+                for (let i=year_min; i<=year_max; i++){
+                    let tmp = String(i);
+                    year_release_detail[tmp] = [];
+                };
+                let year_release_total_index = {};
+                for (let i=year_min; i<=year_max; i++){
+                    let tmp = String(i);
+                    year_release_total_index[tmp] = [];
+                };
                 let year_singer = {};
                 for (let i=year_min; i<=year_max; i++){
                     let tmp = String(i);
@@ -100,6 +115,7 @@ import { object } from "vue-types";
                     year_song[tmp] = tmp_dict;
                 };
                 
+                let total_index = 0;
                 data.forEach(element => {
                     let artist = element.artists.split('\'');
                     let musician_log = [];
@@ -116,6 +132,9 @@ import { object } from "vue-types";
                         else if (artist[i]==this.mySinger[1]) flag_collab += 1;
                     }
                     if (flag == true){
+                        year_release[String(element.year)] += 1;
+                        year_release_detail[String(element.year)].push(String(element.name));
+                        year_release_total_index[String(element.year)].push(total_index);
                         // year_singer[String(element.year)].songs[element.name] = element.popularity;
                         if (element.popularity < 20){
                             year_singer[String(element.year)]['A'] += parseInt(element.popularity);
@@ -139,6 +158,9 @@ import { object } from "vue-types";
                         } 
                     }
                     else if (flag_collab == 2){
+                        year_release[String(element.year)] += 1;
+                        year_release_detail[String(element.year)].push(String(element.name));
+                        year_release_total_index[String(element.year)].push(total_index);
                         if (element.popularity < 20){
                             year_singer[String(element.year)]['A'] += parseInt(element.popularity);
                             year_song[String(element.year)]['A'].push(String(element.name) + ": " + String(element.popularity));
@@ -160,101 +182,116 @@ import { object } from "vue-types";
                             year_song[String(element.year)]['E'].push(String(element.name) + ": " + String(element.popularity));
                         } 
                     }
+                    total_index += 1;
                 });
 
+                let year_release_prepared = [];
                 let year_popularity = [];
                 let year_popularity_A = [];
                 let year_popularity_B = [];
                 let year_popularity_C = [];
                 let year_popularity_D = [];
                 let year_popularity_E = [];
-                Object.keys(year_singer).forEach(key => {
-                    Object.keys(year_singer[key]).forEach(k => {
-                        if (k=='A'){
-                            let pop_tmp = {
-                                album: key,
-                                popularity: "popularity 0-20",
-                                songs: year_singer[key][k],
-                                detail: year_song[key][k]
-                            };
-                            year_popularity.push(pop_tmp);
-                            year_popularity_A.push(pop_tmp);
-                        }
-                        else if (k=='B'){
-                            let pop_tmp = {
-                                album: key,
-                                popularity: "popularity 20-40",
-                                songs: year_singer[key][k],
-                                detail: year_song[key][k]
-                            };
-                            year_popularity.push(pop_tmp);
-                            year_popularity_B.push(pop_tmp);
-                        }
-                        else if (k=='C'){
-                            let pop_tmp = {
-                                album: key,
-                                popularity: "popularity 40-60",
-                                songs: year_singer[key][k],
-                                detail: year_song[key][k]
-                            };
-                            year_popularity.push(pop_tmp);
-                            year_popularity_C.push(pop_tmp);
-                        }
-                        else if (k=='D'){
-                            let pop_tmp = {
-                                album: key,
-                                popularity: "popularity 60-80",
-                                songs: year_singer[key][k],
-                                detail: year_song[key][k]
-                            };
-                            year_popularity.push(pop_tmp);
-                            year_popularity_D.push(pop_tmp);
-                        }
-                        else if (k=='E'){
-                            let pop_tmp = {
-                                album: key,
-                                popularity: "popularity 80-100",
-                                songs: year_singer[key][k],
-                                detail: year_song[key][k]
-                            };
-                            year_popularity.push(pop_tmp);
-                            year_popularity_E.push(pop_tmp);
-                        }
-                    });
+                Object.keys(year_release).forEach(key => {
+                    const song_tmp = {
+                        album: key, //year
+                        songs: year_release[key], //song count
+                        detail: year_release_detail[key], //songs detail
+                        total_index: year_release_total_index[key]
+                    };
+                    year_release_prepared.push(song_tmp);
                 });
-                if (selection.id === 1){
-                    this.prepared_data = year_popularity_A;
-                }
-                else if (selection.id === 2){
-                    this.prepared_data = year_popularity_B;
-                }
-                else if (selection.id === 3){
-                    this.prepared_data = year_popularity_C;
-                }
-                else if (selection.id === 4){
-                    this.prepared_data = year_popularity_D;
-                }
-                else if (selection.id === 5){
-                    this.prepared_data = year_popularity_E;
-                }
-                else{
-                    this.prepared_data = year_popularity;
-                }
-                let Z = d3.map(year_popularity, d => d.popularity);
-                let zDomain = Z;
-                zDomain = new d3.InternSet(zDomain);
-                let color = d3.scaleOrdinal(zDomain, d3.schemeSpectral[zDomain.size]);
-                let colors = [];
-                colors.push(color(0));
-                colors.push(color(1));
-                colors.push(color(2));
-                colors.push(color(3));
-                colors.push(color(4));
-                colors.push(color(5));
-                this.$emit('colorChange', colors);
+                this.prepared_data = year_release_prepared;
+                // Object.keys(year_singer).forEach(key => {
+                //     Object.keys(year_singer[key]).forEach(k => {
+                //         if (k=='A'){
+                //             let pop_tmp = {
+                //                 album: key,
+                //                 popularity: "popularity 0-20",
+                //                 songs: year_singer[key][k],
+                //                 detail: year_song[key][k]
+                //             };
+                //             year_popularity.push(pop_tmp);
+                //             year_popularity_A.push(pop_tmp);
+                //         }
+                //         else if (k=='B'){
+                //             let pop_tmp = {
+                //                 album: key,
+                //                 popularity: "popularity 20-40",
+                //                 songs: year_singer[key][k],
+                //                 detail: year_song[key][k]
+                //             };
+                //             year_popularity.push(pop_tmp);
+                //             year_popularity_B.push(pop_tmp);
+                //         }
+                //         else if (k=='C'){
+                //             let pop_tmp = {
+                //                 album: key,
+                //                 popularity: "popularity 40-60",
+                //                 songs: year_singer[key][k],
+                //                 detail: year_song[key][k]
+                //             };
+                //             year_popularity.push(pop_tmp);
+                //             year_popularity_C.push(pop_tmp);
+                //         }
+                //         else if (k=='D'){
+                //             let pop_tmp = {
+                //                 album: key,
+                //                 popularity: "popularity 60-80",
+                //                 songs: year_singer[key][k],
+                //                 detail: year_song[key][k]
+                //             };
+                //             year_popularity.push(pop_tmp);
+                //             year_popularity_D.push(pop_tmp);
+                //         }
+                //         else if (k=='E'){
+                //             let pop_tmp = {
+                //                 album: key,
+                //                 popularity: "popularity 80-100",
+                //                 songs: year_singer[key][k],
+                //                 detail: year_song[key][k]
+                //             };
+                //             year_popularity.push(pop_tmp);
+                //             year_popularity_E.push(pop_tmp);
+                //         }
+                //     });
+                // });
+                // if (selection.id === 1){
+                //     this.prepared_data = year_popularity_A;
+                // }
+                // else if (selection.id === 2){
+                //     this.prepared_data = year_popularity_B;
+                // }
+                // else if (selection.id === 3){
+                //     this.prepared_data = year_popularity_C;
+                // }
+                // else if (selection.id === 4){
+                //     this.prepared_data = year_popularity_D;
+                // }
+                // else if (selection.id === 5){
+                //     this.prepared_data = year_popularity_E;
+                // }
+                // else{
+                //     this.prepared_data = year_popularity;
+                // }
+
+                // let Z = d3.map(year_popularity, d => d.popularity);
+                // let zDomain = Z;
+                // zDomain = new d3.InternSet(zDomain);
+                // let color = d3.scaleOrdinal(zDomain, d3.schemeSpectral[zDomain.size]);
+                // let colors = [];
+                // colors.push(color(0));
+                // colors.push(color(1));
+                // colors.push(color(2));
+                // colors.push(color(3));
+                // colors.push(color(4));
+                // colors.push(color(5));
+                // this.$emit('colorChange', colors);
             },
 
             drawBarChart(data, id, selection) {
+
+                const forEmitThis = this;
 
                 let flag_dbclick = false;
                 let select_switch = 0;
@@ -271,6 +308,7 @@ import { object } from "vue-types";
                 const X = d3.map(data, d => d.album);
                 const Y = d3.map(data, d => d.songs);
                 const D = d3.map(data, d => d.detail);
+                const TI = d3.map(data, d => d.total_index);
 
                 // Compute default domains, and unique the x-domain.
                 let xDomain = X;
@@ -313,7 +351,7 @@ import { object } from "vue-types";
                 //     .attr('style', 'max-width: 100%; height: auto; height: intrinsic;');
 
                 const bar = svg.append('g')
-                    .attr('fill', this.colorScale(selection.id-1))
+                    .attr('fill', "#578")
                     .selectAll('rect')
                     .data(I)
                     .join('rect')
@@ -340,6 +378,7 @@ import { object } from "vue-types";
                         flag_dbclick = true;
                         // console.log(this.getAttribute('x1'), this.getAttribute('x2'), this.getAttribute('y1'), this.getAttribute('y2'));
                         select_item = D[this.getAttribute('index')];
+                        let ti_tmp = TI[this.getAttribute('index')];
                         console.log(select_item);
                         let cx_tmp = this.getAttribute('x');
                         let cy_tmp = this.getAttribute('y');
@@ -353,13 +392,13 @@ import { object } from "vue-types";
                                 .attr("x", cx_tmp)
                                 .attr("y", cy_tmp-item_idx*10)
                                 .attr("class", "click_select_bar")
-                                .text(String(select_item[item_idx]))
+                                .text(String(select_item[item_idx]) + ": " + ti_tmp[item_idx])
                                 .style("font-size", "10px")
                                 .style("opacity", 1);
                         }
                         select_switch = 2;
                         
-                        // forEmitThis.$emit('selectSingerChange', select_item);
+                        forEmitThis.$emit('selectSongsChange', ti_tmp);
                     }
                     else if (parseInt(this.getAttribute('stroke-width'))===select_switch){
                         d3.select(this).transition()
@@ -369,75 +408,76 @@ import { object } from "vue-types";
                         select_switch = 0;
                         flag_dbclick = false;
                         select_item = undefined;
+                        let ti_tmp = undefined;
                         console.log(select_switch, select_item);
-                        // forEmitThis.$emit('selectSingerChange', select_item);
+                        forEmitThis.$emit('selectSongsChange', ti_tmp);
                     }
                 };
 
                 
                 // add lengend for chosen colors.
-                svg.append("circle")
-                    .attr("cx", margin.left + 95)
-                    .attr("cy", height -15)
-                    .attr("r", 4)
-                    .style("fill", this.colorScale(0))
-                svg.append("circle")
-                    .attr("cx", margin.left + 145)
-                    .attr("cy", height -15)
-                    .attr("r", 4)
-                    .style("fill", this.colorScale(1))
-                svg.append("circle")
-                    .attr("cx", margin.left + 195)
-                    .attr("cy", height -15)
-                    .attr("r", 4)
-                    .style("fill", this.colorScale(2))
-                svg.append("circle")
-                    .attr("cx", margin.left + 245)
-                    .attr("cy", height -15)
-                    .attr("r", 4)
-                    .style("fill", this.colorScale(3))
-                svg.append("circle")
-                    .attr("cx", margin.left + 295)
-                    .attr("cy", height -15)
-                    .attr("r", 4)
-                    .style("fill", this.colorScale(4))
+                // svg.append("circle")
+                //     .attr("cx", margin.left + 95)
+                //     .attr("cy", height -15)
+                //     .attr("r", 4)
+                //     .style("fill", this.colorScale(0))
+                // svg.append("circle")
+                //     .attr("cx", margin.left + 145)
+                //     .attr("cy", height -15)
+                //     .attr("r", 4)
+                //     .style("fill", this.colorScale(1))
+                // svg.append("circle")
+                //     .attr("cx", margin.left + 195)
+                //     .attr("cy", height -15)
+                //     .attr("r", 4)
+                //     .style("fill", this.colorScale(2))
+                // svg.append("circle")
+                //     .attr("cx", margin.left + 245)
+                //     .attr("cy", height -15)
+                //     .attr("r", 4)
+                //     .style("fill", this.colorScale(3))
+                // svg.append("circle")
+                //     .attr("cx", margin.left + 295)
+                //     .attr("cy", height -15)
+                //     .attr("r", 4)
+                //     .style("fill", this.colorScale(4))
                 
-                svg.append("text")
-                    .attr("x", margin.left)
-                    .attr("y", height -15)
-                    .text("Song Popularity:")
-                    .style("font-size", "9px")
-                    .attr("alignment-baseline","middle")
-                svg.append("text")
-                    .attr("x", margin.left + 100)
-                    .attr("y", height -15)
-                    .text("0-20")
-                    .style("font-size", "9px")
-                    .attr("alignment-baseline","middle")
-                svg.append("text")
-                    .attr("x", margin.left + 150)
-                    .attr("y", height -15)
-                    .text("20-40")
-                    .style("font-size", "9px")
-                    .attr("alignment-baseline","middle")
-                svg.append("text")
-                    .attr("x", margin.left + 200)
-                    .attr("y", height -15)
-                    .text("40-60")
-                    .style("font-size", "9px")
-                    .attr("alignment-baseline","middle")
-                svg.append("text")
-                    .attr("x", margin.left + 250)
-                    .attr("y", height -15)
-                    .text("60-80")
-                    .style("font-size", "9px")
-                    .attr("alignment-baseline","middle")
-                svg.append("text")
-                    .attr("x", margin.left + 300)
-                    .attr("y", height -15)
-                    .text("80-100")
-                    .style("font-size", "9px")
-                    .attr("alignment-baseline","middle")
+                // svg.append("text")
+                //     .attr("x", margin.left)
+                //     .attr("y", height -15)
+                //     .text("Song Popularity:")
+                //     .style("font-size", "9px")
+                //     .attr("alignment-baseline","middle")
+                // svg.append("text")
+                //     .attr("x", margin.left + 100)
+                //     .attr("y", height -15)
+                //     .text("0-20")
+                //     .style("font-size", "9px")
+                //     .attr("alignment-baseline","middle")
+                // svg.append("text")
+                //     .attr("x", margin.left + 150)
+                //     .attr("y", height -15)
+                //     .text("20-40")
+                //     .style("font-size", "9px")
+                //     .attr("alignment-baseline","middle")
+                // svg.append("text")
+                //     .attr("x", margin.left + 200)
+                //     .attr("y", height -15)
+                //     .text("40-60")
+                //     .style("font-size", "9px")
+                //     .attr("alignment-baseline","middle")
+                // svg.append("text")
+                //     .attr("x", margin.left + 250)
+                //     .attr("y", height -15)
+                //     .text("60-80")
+                //     .style("font-size", "9px")
+                //     .attr("alignment-baseline","middle")
+                // svg.append("text")
+                //     .attr("x", margin.left + 300)
+                //     .attr("y", height -15)
+                //     .text("80-100")
+                //     .style("font-size", "9px")
+                //     .attr("alignment-baseline","middle")
 
 
                 // add labels for axes.
@@ -468,7 +508,7 @@ import { object } from "vue-types";
                         .attr("y", -margin.left +10)
                         .attr("x", -((height - margin.bottom - margin.top)/2))
                         .attr("font-weight", "bold")
-                        .text("Song Popularity Sum")
+                        .text("Song Release Count")
                         );
 
                 return svg.node();
