@@ -22,7 +22,6 @@ Go to http://localhost:8080/
 
 
 ## Interactions
-
 Parallel Coordinates:
 
     Brushing:
