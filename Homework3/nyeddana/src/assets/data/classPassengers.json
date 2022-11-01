@@ -1,0 +1,54 @@
+{
+  "keys": ["Business", "Eco", "Eco Plus"],
+  "data": [
+    [
+      { "axis": "inflightWifi", "value": 2.776 },
+      { "axis": "Dept_Arr_Time_Convenience", "value": 2.908 },
+      { "axis": "onlineBooking_ease", "value": 2.916 },
+      { "axis": "gateLocation", "value": 2.985 },
+      { "axis": "foodandDrinks", "value": 3.33 },
+      { "axis": "onlineBoarding", "value": 3.719 },
+      { "axis": "seatComfort", "value": 3.764 },
+      { "axis": "inflightEntertainment", "value": 3.639 },
+      { "axis": "onboardService", "value": 3.683 },
+      { "axis": "legroomService", "value": 3.646 },
+      { "axis": "baggageHandling", "value": 3.845 },
+      { "axis": "checkinService", "value": 3.521 },
+      { "axis": "inflightService", "value": 3.846 },
+      { "axis": "Cleanliness", "value": 3.482 }
+    ],
+
+    [
+      { "axis": "inflightWifi", "value": 2.674 },
+      { "axis": "Dept_Arr_Time_Convenience", "value": 3.193 },
+      { "axis": "onlineBooking_ease", "value": 2.603 },
+      { "axis": "gateLocation", "value": 2.97 },
+      { "axis": "foodandDrinks", "value": 3.087 },
+      { "axis": "onlineBoarding", "value": 2.815 },
+      { "axis": "seatComfort", "value": 3.142 },
+      { "axis": "inflightEntertainment", "value": 3.097 },
+      { "axis": "onboardService", "value": 3.12 },
+      { "axis": "legroomService", "value": 3.084 },
+      { "axis": "baggageHandling", "value": 3.451 },
+      { "axis": "checkinService", "value": 3.124 },
+      { "axis": "inflightService", "value": 3.466 },
+      { "axis": "Cleanliness", "value": 3.105 }
+    ],
+    [
+      { "axis": "inflightWifi", "value": 2.756 },
+      { "axis": "Dept_Arr_Time_Convenience", "value": 3.21 },
+      { "axis": "onlineBooking_ease", "value": 2.662 },
+      { "axis": "gateLocation", "value": 2.968 },
+      { "axis": "foodandDrinks", "value": 3.11 },
+      { "axis": "onlineBoarding", "value": 2.886 },
+      { "axis": "seatComfort", "value": 3.168 },
+      { "axis": "inflightEntertainment", "value": 3.12 },
+      { "axis": "onboardService", "value": 3.036 },
+      { "axis": "legroomService", "value": 3.056 },
+      { "axis": "baggageHandling", "value": 3.352 },
+      { "axis": "checkinService", "value": 3.015 },
+      { "axis": "inflightService", "value": 3.383 },
+      { "axis": "Cleanliness", "value": 3.118 }
+    ]
+  ]
+}
