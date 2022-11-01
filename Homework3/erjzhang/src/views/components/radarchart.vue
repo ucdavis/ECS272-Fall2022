@@ -1,12 +1,11 @@
 <template>
-    <div id="radar" class="border mx-auto"></div>
+    <div id="radar" class="mx-auto"></div>
 </template>
 
 <script>
 // Resources URL: https://yangdanny97.github.io/blog/2019/03/01/D3-Spider-Chart
 
 import * as d3 from "d3";
-
 
 export default {
     name: 'RadarChart',
@@ -65,14 +64,12 @@ export default {
             Object.keys(group_by_region).forEach(key => {
                 group_by_region_array.push(group_by_region[key])
             });
-            // console.log("Group by region data: ", group_by_region_array)
 
             // Sort the array to alphabetical order
             group_by_region_array = group_by_region_array.sort((a, b) => {
                 return d3.descending(a["region"], b["region"])
             })
-
-            // console.log("Mounted My radar data", group_by_region_array);
+            
             new_data[year] = group_by_region_array
         }
             return new_data
@@ -209,6 +206,7 @@ export default {
             let radar_path = svg.select("#radar_path")
             radar_path.datum(positions)
             .transition()
+            .duration(500)
                 .attr("d", line)
                 .attr("stroke-width", 3)
                 .attr("stroke", color)
