@@ -83,7 +83,11 @@
                 satisfaction_data : [],
                 loyalty_data : [],
                 class_data : [],
-                plot_title : "Average Respondent Rating By Service Category"
+                plot_title : "Average Respondent Rating By Service Category",
+                class_satisfaction : {"Eco":[], "Eco Plus":[], "Business":[]},
+                class_satisfaction_filter : {"Eco":[], "Eco Plus":[], "Business":[]},
+                class_loyalty : {"Eco":[], "Eco Plus":[], "Business":[]},
+                class_loyalty_filter : {"Eco":[], "Eco Plus":[], "Business":[]},
 
             }
         },
@@ -119,6 +123,44 @@
             this.disloyal_v_loyal_filtered_data = JSON.parse(JSON.stringify(this.disloyal_v_loyal_data));
 
             this.class_data = this.groupBy(this.myRadarPlotData, "Class");
+
+            let class_satisfaction_data_eco = this.groupBy(this.class_data["Eco"], "satisfaction");
+            const eco_satisfied = this.getSpiderPlotData(class_satisfaction_data_eco["satisfied"]);
+            const eco_dissatisfied = this.getSpiderPlotData(class_satisfaction_data_eco["neutral or dissatisfied"]);
+            this.class_satisfaction["Eco"] = [eco_dissatisfied, eco_satisfied];
+
+            let class_satisfaction_data_eco_plus = this.groupBy(this.class_data["Eco Plus"], "satisfaction");
+            const eco_plus_satisfied = this.getSpiderPlotData(class_satisfaction_data_eco_plus["satisfied"]);
+            const eco_plus_dissatisfied = this.getSpiderPlotData(class_satisfaction_data_eco_plus["neutral or dissatisfied"]);
+            this.class_satisfaction["Eco Plus"] = [eco_plus_dissatisfied, eco_plus_satisfied];
+
+            let class_satisfaction_data_business = this.groupBy(this.class_data["Business"], "satisfaction");
+            const business_satisfied = this.getSpiderPlotData(class_satisfaction_data_business["satisfied"]);
+            const business_dissatisfied = this.getSpiderPlotData(class_satisfaction_data_business["neutral or dissatisfied"]);
+            this.class_satisfaction["Business"] = [business_dissatisfied, business_satisfied];
+
+            let class_loyalty_data_eco = this.groupBy(this.class_data["Eco"], "Customer Type");
+            const eco_loyal = this.getSpiderPlotData(class_loyalty_data_eco["Loyal Customer"]);
+            const eco_disloyal = this.getSpiderPlotData(class_loyalty_data_eco["disloyal Customer"]);
+            this.class_loyalty["Eco"] = [eco_disloyal, eco_loyal];
+
+            let class_loyalty_data_eco_plus = this.groupBy(this.class_data["Eco Plus"], "Customer Type");
+            const eco_plus_loyal = this.getSpiderPlotData(class_loyalty_data_eco_plus["Loyal Customer"]);
+            const eco_plus_disloyal = this.getSpiderPlotData(class_loyalty_data_eco_plus["disloyal Customer"]);
+            this.class_loyalty["Eco Plus"] = [eco_plus_disloyal, eco_plus_loyal];
+
+            let class_loyalty_data_business = this.groupBy(this.class_data["Business"], "Customer Type");
+            const business_loyal = this.getSpiderPlotData(class_loyalty_data_business["Loyal Customer"]);
+            const business_disloyal = this.getSpiderPlotData(class_loyalty_data_business["disloyal Customer"]);
+            this.class_loyalty["Business"] = [business_disloyal, business_loyal];
+
+            this.class_satisfaction_filter["Eco"] = JSON.parse(JSON.stringify(this.class_satisfaction["Eco"]));
+            this.class_satisfaction_filter["Eco Plus"] = JSON.parse(JSON.stringify(this.class_satisfaction["Eco Plus"]));
+            this.class_satisfaction_filter["Business"] = JSON.parse(JSON.stringify(this.class_satisfaction["Business"]));
+
+            this.class_loyalty_filter["Eco"] = JSON.parse(JSON.stringify(this.class_loyalty["Eco"]));
+            this.class_loyalty_filter["Eco Plus"] = JSON.parse(JSON.stringify(this.class_loyalty["Eco Plus"]));
+            this.class_loyalty_filter["Business"] = JSON.parse(JSON.stringify(this.class_loyalty["Business"]));
 
             var checkList = document.getElementById('checkbox-selection');
             checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
@@ -296,7 +338,7 @@
             getSpiderPlotData(subset) {
                 let ratings = {};
                 const columns = this.myRadarPlotData.columns;
-                console.log(subset.length)
+                console.log(subset.length, "HELLO");
                 for(let i = 0; i < subset.length; i++) {
                     for (let j = 8; j < 22; j++) {
                         if(columns[j] in ratings)
@@ -314,35 +356,23 @@
                 return final;
             },
             FilterByBarOption() {
-                console.log(this.bar_option);
                 if(this.dd_option == "Dis_Vs_Sat") {
                     if(this.bar_option == "default") {
                         return this.dissatisfied_v_satisfied_filtered_data;
                     }
-                    console.log(this.class_data);
-                    let class_data = this.groupBy(this.class_data[this.bar_option], "satisfaction");
-                    const satisfied = this.getSpiderPlotData(class_data["satisfied"]);
-                    const dissatisfied = this.getSpiderPlotData(class_data["neutral or dissatisfied"]);
-                    console.log(dissatisfied, satisfied);
-                    return [dissatisfied, satisfied];
-                    
+                    return this.class_satisfaction_filter[this.bar_option];
                 } else {
                     if(this.bar_option == "default") {
-                        return this.loyalty_data;
+                        return this.disloyal_v_loyal_filtered_data;
                     }
-                    let class_data = this.groupBy(this.class_data[this.bar_option], "Customer Type");
-                    const disloyal = this.getSpiderPlotData(class_data["disloyal Customer"]);
-                    const loyal = this.getSpiderPlotData(class_data["Loyal Customer"]);
-                    return [disloyal, loyal];
+                    return this.class_loyalty_filter[this.bar_option];
                 }  
             },
             updatePlot() {
                 d3.selectAll("#radar svg").remove();
                 this.color = d3.scaleOrdinal().range(this.color_dict[this.radio_option]);
                 if(this.dd_option == "Dis_Vs_Sat") {
-                    const data = this.FilterByBarOption();
-                    console.log(data);
-                    this.drawRadarPlot(data, "#radar");
+                    this.drawRadarPlot(this.FilterByBarOption(), "#radar");
                 }
                 else {
                     this.drawRadarPlot(this.FilterByBarOption(), "#radar");
@@ -370,10 +400,40 @@
                     this.dissatisfied_v_satisfied_filtered_data[0] = this.dissatisfied_v_satisfied_filtered_data[0].filter(function(){return true;});
                     this.dissatisfied_v_satisfied_filtered_data[1] = this.dissatisfied_v_satisfied_filtered_data[1].filter(function(){return true;});
 
+                    delete this.class_satisfaction_filter["Eco"][0][id_index];
+                    delete this.class_satisfaction_filter["Eco"][1][id_index];
+                    this.class_satisfaction_filter["Eco"][0] = this.class_satisfaction_filter["Eco"][0].filter(function(){return true;});
+                    this.class_satisfaction_filter["Eco"][1] = this.class_satisfaction_filter["Eco"][1].filter(function(){return true;});
+
+                    delete this.class_satisfaction_filter["Eco Plus"][0][id_index];
+                    delete this.class_satisfaction_filter["Eco Plus"][1][id_index];
+                    this.class_satisfaction_filter["Eco Plus"][0] = this.class_satisfaction_filter["Eco Plus"][0].filter(function(){return true;});
+                    this.class_satisfaction_filter["Eco Plus"][1] = this.class_satisfaction_filter["Eco Plus"][1].filter(function(){return true;});
+
+                    delete this.class_satisfaction_filter["Business"][0][id_index];
+                    delete this.class_satisfaction_filter["Business"][1][id_index];
+                    this.class_satisfaction_filter["Business"][0] = this.class_satisfaction_filter["Business"][0].filter(function(){return true;});
+                    this.class_satisfaction_filter["Business"][1] = this.class_satisfaction_filter["Business"][1].filter(function(){return true;});
+
                     delete this.disloyal_v_loyal_filtered_data[0][id_index];
                     delete this.disloyal_v_loyal_filtered_data[1][id_index];
                     this.disloyal_v_loyal_filtered_data[0] = this.disloyal_v_loyal_filtered_data[0].filter(function(){return true;});
                     this.disloyal_v_loyal_filtered_data[1] = this.disloyal_v_loyal_filtered_data[1].filter(function(){return true;});
+
+                    delete this.class_loyalty_filter["Eco"][0][id_index];
+                    delete this.class_loyalty_filter["Eco"][1][id_index];
+                    this.class_loyalty_filter["Eco"][0] = this.class_loyalty_filter["Eco"][0].filter(function(){return true;});
+                    this.class_loyalty_filter["Eco"][1] = this.class_loyalty_filter["Eco"][1].filter(function(){return true;});
+
+                    delete this.class_loyalty_filter["Eco Plus"][0][id_index];
+                    delete this.class_loyalty_filter["Eco Plus"][1][id_index];
+                    this.class_loyalty_filter["Eco Plus"][0] = this.class_loyalty_filter["Eco Plus"][0].filter(function(){return true;});
+                    this.class_loyalty_filter["Eco Plus"][1] = this.class_loyalty_filter["Eco Plus"][1].filter(function(){return true;});
+
+                    delete this.class_loyalty_filter["Business"][0][id_index];
+                    delete this.class_loyalty_filter["Business"][1][id_index];
+                    this.class_loyalty_filter["Business"][0] = this.class_loyalty_filter["Business"][0].filter(function(){return true;});
+                    this.class_loyalty_filter["Business"][1] = this.class_loyalty_filter["Business"][1].filter(function(){return true;});
 
                     // Adjust the radar slice angles
                     const active_params = this.dissatisfied_v_satisfied_filtered_data[0].length;
@@ -401,6 +461,45 @@
                     value = this.disloyal_v_loyal_data[1][id_index];
                     this.disloyal_v_loyal_filtered_data[1].splice(id_index, 0, value);
 
+                    // Sub Datasets
+                    // Satisfaction
+                    value = this.class_satisfaction["Eco"][0][id_index];
+                    this.class_satisfaction_filter["Eco"][0].splice(id_index, 0, value);
+
+                    value = this.class_satisfaction["Eco Plus"][0][id_index];
+                    this.class_satisfaction_filter["Eco Plus"][0].splice(id_index, 0, value);
+
+                    value = this.class_satisfaction["Business"][0][id_index];
+                    this.class_satisfaction_filter["Business"][0].splice(id_index, 0, value);
+
+                    value = this.class_satisfaction["Eco"][1][id_index];
+                    this.class_satisfaction_filter["Eco"][1].splice(id_index, 0, value);
+
+                    value = this.class_satisfaction["Eco Plus"][1][id_index];
+                    this.class_satisfaction_filter["Eco Plus"][1].splice(id_index, 0, value);
+
+                    value = this.class_satisfaction["Business"][1][id_index];
+                    this.class_satisfaction_filter["Business"][1].splice(id_index, 0, value);
+
+                    // Loyalty 
+                    value = this.class_loyalty["Eco"][0][id_index];
+                    this.class_loyalty_filter["Eco"][0].splice(id_index, 0, value);
+
+                    value = this.class_loyalty["Eco Plus"][0][id_index];
+                    this.class_loyalty_filter["Eco Plus"][0].splice(id_index, 0, value);
+
+                    value = this.class_loyalty["Business"][0][id_index];
+                    this.class_loyalty_filter["Business"][0].splice(id_index, 0, value);
+
+                    value = this.class_loyalty["Eco"][1][id_index];
+                    this.class_loyalty_filter["Eco"][1].splice(id_index, 0, value);
+
+                    value = this.class_loyalty["Eco Plus"][1][id_index];
+                    this.class_loyalty_filter["Eco Plus"][1].splice(id_index, 0, value);
+
+                    value = this.class_loyalty["Business"][1][id_index];
+                    this.class_loyalty_filter["Business"][1].splice(id_index, 0, value);
+
                     // Adjust the radar slice angles
                     const active_params = this.dissatisfied_v_satisfied_filtered_data[0].length;
                     this.angleSlice = Math.PI * 2 / active_params;
@@ -410,7 +509,7 @@
                 }
                 this.updatePlot();
                 
-            }
+            },
         },
         
     }

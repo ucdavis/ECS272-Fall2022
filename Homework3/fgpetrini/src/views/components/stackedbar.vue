@@ -181,7 +181,6 @@
                         }
                     })
                     .on("mouseover", function(d,i) {
-                        //console.log(i);
                         let target_param = i['data'][0];
                             d3.selectAll("rect")
                                 .filter(function() {
