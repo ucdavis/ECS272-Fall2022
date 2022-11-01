@@ -1,10 +1,12 @@
 <template>
     <div id="bar"></div>
+    <svg id="test"></svg>
 </template>
 
 <script>
     import * as d3 from "d3";
     import testData from "../../assets/data/test.json"; /* Example of reading in data direct from file*/
+    import legend from 'd3-svg-legend'
 
     export default {
         name: 'BarChart',
@@ -27,6 +29,25 @@
         },
         methods: {
             drawBarChart(data, id) {
+
+                var linear = d3.scaleLinear()
+                    .domain([0,10])
+                    .range(["rgb(46, 73, 123)", "rgb(71, 187, 94)"]);
+
+                var legendScale = d3.select("#test");
+
+                legendScale.append("g")
+                .attr("class", "legendLinear")
+                .attr("transform", "translate(20,20)");
+
+                var legendLinear  = legend.legendColor()
+                .shapeWidth(30)
+                .orient('horizontal')
+                .scale(linear);
+
+                legendScale.select(".legendLinear")
+                    .call(legendLinear);
+
 
                 const margin = { top: 40, right: 40, bottom: 120, left: 100 };
                 const height = 300;
