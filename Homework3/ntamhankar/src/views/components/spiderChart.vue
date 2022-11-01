@@ -1,6 +1,6 @@
 <template>
     <meta charset="utf-8">
-    <h1> Average of Important Features for All 2020 Songs by Artist </h1>
+    <h1> Average of Important Features for 2020 Songs by Artist </h1>
 
     <!-- Create a div where the graph will take place -->
     <div id="my_datavizSpider"></div>
