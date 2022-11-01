@@ -16,7 +16,7 @@
             </div>
             <div id="beeswarm_view">
                 <Dropdown_Beeswarm v-if="BeeswarmExits" @selectedChange="handleChange_beeswarm"/>
-                <Beeswarm v-if="BeeswarmExits" :myData="myData" :mySelection="selected_beeswarm" :mySinger="selected_network.text" :myColor="color" />
+                <Beeswarm v-if="BeeswarmExits" :myData="myData" :mySelection="selected_beeswarm" :mySinger="selected_network.text" :myColor="color" :slideshow="slideNumber" @slideshowChange="handleChange_slide"/>
             </div>
         </div>
     </div>
@@ -26,7 +26,7 @@
 <script>
 import * as d3 from "d3";
 import BarChart from "../components/barchart_general.vue";
-import Beeswarm from '../components/beeswarm_general.vue';
+import Beeswarm from '../components/beeswarm_popularity.vue';
 import Network from '../components/network.vue';
 import Dropdown from "../components/dropdown.vue";
 import Dropdown_Beeswarm from '../components/dropdown_beeswarm.vue';
@@ -46,7 +46,8 @@ export default {
             hop_1: [{id: 0, text: 'Taylor Swift'}],
             selectSinger: undefined,
             color: undefined,
-            colorExists: false
+            colorExists: false,
+            slideNumber: 0
         }
     },
     components: {
@@ -94,11 +95,21 @@ export default {
         },
         handleselectSinger_network(select_singer){
             console.log('parent noticed change selectSinger ' + select_singer);
-            this.selectSinger = select_singer;
-            if (this.selectSinger !== undefined){
-                this.BarExists = true;
-                this.BeeswarmExits = this.colorExists & this.BarExists;
-                this.selected_network = {id: 0, text: this.selectSinger};
+            // this.selectSinger = select_singer;
+            if (select_singer !== undefined){
+                if (String(typeof(select_singer))==="string"){
+                    this.BarExists = true;
+                    this.BeeswarmExits = this.colorExists & this.BarExists;
+                    if (select_singer !== this.selectSinger){
+                        this.selected_network = {id: 0, text: select_singer};
+                        this.selectSinger = select_singer;
+                    }
+                }
+                else {
+                    this.BarExists = true;
+                    this.BeeswarmExits = this.colorExists & this.BarExists;
+                    this.selectSinger = select_singer;
+                }
             }
             else {
                 this.BarExists = false;
@@ -111,6 +122,23 @@ export default {
             this.color = color;
             this.colorExists = true;
             this.BeeswarmExits = this.colorExists & this.BarExists;
+        },
+        handleChange_slide(tmp_slide){
+            const ori_this = this;
+            function resolveAfter2Seconds() {
+                return new Promise(resolve => {
+                    setTimeout(() => {
+                    resolve('resolved');
+                    }, 2000);
+                });
+            }
+            async function asyncCall() {
+                console.log('calling');
+                const result = await resolveAfter2Seconds();
+                console.log(result);
+                ori_this.slideNumber = tmp_slide;
+            }
+            asyncCall();
         }
     }
 }
