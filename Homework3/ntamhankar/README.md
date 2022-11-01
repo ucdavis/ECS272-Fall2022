@@ -28,7 +28,7 @@ Parallel Coordinates:
     Brushing:
     To use brushing on the parallel coordinates plot, hover over any axis, until you see a + pointer.
     Click on the axis and drag the brush to the desired size over the desired data.
-    Multiple axes can be brushed at the same time to further filter the data
+    Multiple axes can be brushed at the same time to further filter the data.
 
     To remove any brush, simply double click on the brush to delete it.
 
@@ -39,10 +39,10 @@ Parallel Coordinates:
 Scatter Plot:
 
     Pan and Zoom:
-    To use zoom on the scatter plot, hover over any of the data points until a black circle appears
+    To zoom on the scatter plot, hover over any of the data points until a black circle appears
     around the data point and then use the trackpad to zoom in or out.
 
-    To pan, hover over any of the data points until a black circle appears around the data point
+    To pan on the scatter plot, hover over any of the data points until a black circle appears around the data point
     and then use the trackpad to drag the points.
 
     To reset the zoom, click on the Reset button.
