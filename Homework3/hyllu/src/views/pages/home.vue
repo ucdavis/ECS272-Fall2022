@@ -12,7 +12,10 @@
         <div id="right_view">
             <div id="bar_view">
                 <!-- <Dropdown v-if="BarExists" :mySelection="selected" @selectedChange="handleChange" /> -->
-                <BarChart v-if="BarExists" :myBarchartData="myData" :mySelection="selected" :mySinger="selectSinger" @colorChange="handlecolor_views" @selectSongsChange="handleselectSongs_bar" />
+                <BarChart v-if="BarExists" :myBarchartData="myData" :mySelection="selected" :mySinger="selectSinger" @colorChange="handlecolor_views" @selectSongsChange="handleselectSongs_bar" @selectTextChange="handleselectText_bar" />
+            </div>
+            <div id="text_view">
+                <TextArea v-if="BarExists" :myText="selected_text" />
             </div>
             <div id="beeswarm_view">
                 <!-- <Dropdown_Beeswarm v-if="BeeswarmExits" @selectedChange="handleChange_beeswarm"/> -->
@@ -31,6 +34,7 @@ import Network from '../components/network.vue';
 import Dropdown from "../components/dropdown.vue";
 import Dropdown_Beeswarm from '../components/dropdown_beeswarm.vue';
 import Dropdown_Network from '../components/dropdown_network.vue';
+import TextArea from '../components/Text_area.vue'
 import csvPath from '../../assets/data/spotify.csv';
 
 export default {
@@ -48,17 +52,19 @@ export default {
             color: undefined,
             colorExists: true,
             slideNumber: 0,
-            selected_songs: []
+            selected_songs: [],
+            selected_text: []
         }
     },
     components: {
-    BarChart,
-    Dropdown,
-    Dropdown_Beeswarm,
-    Beeswarm,
-    Dropdown_Network,
-    Network
-},
+        BarChart,
+        Dropdown,
+        Dropdown_Beeswarm,
+        Beeswarm,
+        Dropdown_Network,
+        Network,
+        TextArea
+    },
     created(){
         /* Fetch via CSV */
         this.drawFromCsv()
@@ -105,18 +111,20 @@ export default {
                         this.selected_network = {id: 0, text: select_singer};
                         this.selectSinger = select_singer;
                     }
+                    this.selected_songs = [];
                 }
                 else {
                     this.BarExists = true;
                     this.BeeswarmExits = this.colorExists & this.BarExists;
                     this.selectSinger = select_singer;
+                    this.selected_songs = [];
                 }
             }
             else {
                 // this.BarExists = false;
                 // this.BeeswarmExits = this.colorExists & this.BarExists;
-
                 this.selectSinger = this.selected_network.text;
+                this.selected_songs = [];
                 this.selected = {id: 1, text: 'Popularity 0-20'};
             }
         },
@@ -129,6 +137,9 @@ export default {
         handleselectSongs_bar(ti_tmp){
             console.log('parent noticed change TI ' + ti_tmp);
             this.selected_songs = ti_tmp;
+        },
+        handleselectText_bar(select_item){
+            this.selected_text = selected_item;
         },
         handleChange_slide(tmp_slide){
             const ori_this = this;
@@ -194,14 +205,19 @@ export default {
         margin-left: auto;
         margin-right: auto;
     }
+    #text_view {
+        height: 30%;
+        width: 100%;
+        position: relative;
+    }
     #bar_view {
-        height: 50%;
+        height: 40%;
         width: 100%;
         position: relative;
     }
     #beeswarm_view {
         margin-top: 10px;
-        height: 50%;
+        height: 30%;
         width: 100%;
         position: relative;
     }

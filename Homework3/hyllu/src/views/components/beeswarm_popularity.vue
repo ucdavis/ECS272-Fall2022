@@ -160,7 +160,8 @@
                     .domain(d3.extent(X_category));
 
                 // Compute default domains.
-                let xDomain = d3.extent(X);
+                // let xDomain = d3.extent(X);
+                let xDomain = [0, 100];
                 let groups = d3.sort(G);
                 groups = new d3.InternSet(groups);
 
@@ -239,7 +240,7 @@
                     .attr("cx", i => xScale(X[i]))
                     .attr("cy", i => height - margin.bottom - radius - padding - Y[i])
                     .attr("r", radius)
-                    .attr("stroke-width", i => this.mySongs.includes(TI[i])? 1 : 0)
+                    .attr("stroke-width", i => this.mySongs.includes(TI[i])? 1.5 : 0)
                     .attr("stroke", i => this.mySongs.includes(TI[i])? "#0F0" : "#FFF")
                     .attr("fill", i => cScale(X_category[i]));
                     // .attr("fill", i => this.myColor[G[i]]);

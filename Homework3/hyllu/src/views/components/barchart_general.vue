@@ -399,6 +399,7 @@ import { object } from "vue-types";
                         select_switch = 2;
                         
                         forEmitThis.$emit('selectSongsChange', ti_tmp);
+                        forEmitThis.$emit('selectTextChange', select_item);
                     }
                     else if (parseInt(this.getAttribute('stroke-width'))===select_switch){
                         d3.select(this).transition()
@@ -411,6 +412,7 @@ import { object } from "vue-types";
                         let ti_tmp = [];
                         console.log(select_switch, select_item);
                         forEmitThis.$emit('selectSongsChange', ti_tmp);
+                        forEmitThis.$emit('selectTextChange', []);
                     }
                 };
 
