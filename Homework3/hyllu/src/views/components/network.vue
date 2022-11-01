@@ -145,7 +145,7 @@
                 let select_singer = undefined;
                 let select_link = "rgb(255, 255, 255)";
                 let select_collab = undefined;
-                const margin = { top: 15, right: 5, bottom: 60, left: 5 };
+                const margin = { top: 5, right: 5, bottom: 10, left: 5 };
                 // const height = 300;
                 // const width = 500;
                 // forEmitThis.$emit('selectSingerChange', select_singer);

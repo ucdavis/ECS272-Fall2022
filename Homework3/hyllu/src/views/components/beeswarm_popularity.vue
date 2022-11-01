@@ -104,7 +104,7 @@
 
             drawBeeswarm(data, id, selection) {
                 const width = d3.select(id).node().getBoundingClientRect().width;
-                const margin = { top: 20, right: 40, bottom: 60, left: 60 };
+                const margin = { top: 10, right: 10, bottom: 30, left: 10 };
 
                 // Compute values.
                 // const X = d3.map(data, d => d[selection.text]);
@@ -173,7 +173,7 @@
                 const color = this.myColor;
 
                 // Compute the y-positions.
-                const radius = 3;
+                const radius = 2.5;
                 const padding = 0.5;
                 const Y = dodge(I.map(i => xScale(X[i])), radius * 2 + padding);
 
@@ -240,7 +240,7 @@
                     .attr("cx", i => xScale(X[i]))
                     .attr("cy", i => height - margin.bottom - radius - padding - Y[i])
                     .attr("r", radius)
-                    .attr("stroke-width", i => this.mySongs.includes(TI[i])? 1.5 : 0)
+                    .attr("stroke-width", i => this.mySongs.includes(TI[i])? 1 : 0)
                     .attr("stroke", i => this.mySongs.includes(TI[i])? "#0F0" : "#FFF")
                     .attr("fill", i => cScale(X_category[i]));
                     // .attr("fill", i => this.myColor[G[i]]);
@@ -321,7 +321,7 @@
                         .clone()
                         .attr("text-anchor", "middle")
                         .attr("x", -(width - margin.left - margin.right) / 2)
-                        .attr("y", margin.bottom - 35)
+                        .attr("y", margin.bottom - 10)
                         .attr("font-weight", "bold")
                         .text(X_text)
                         );

@@ -297,7 +297,7 @@ import { object } from "vue-types";
                 let select_switch = 0;
                 let select_item = undefined;
 
-                const margin = { top: 20, right: 40, bottom: 60, left: 60 };
+                const margin = { top: 10, right: 10, bottom: 40, left: 30 };
                 // const height = 300;
                 // const width = 500;
 
@@ -386,16 +386,16 @@ import { object } from "vue-types";
                             .duration('50')
                             .attr('stroke', '#0f0')
                             .attr('stroke-width', 2);
-                        for (let item_idx=0; item_idx<select_item.length; item_idx++){
-                            if (item_idx>3) break;
-                            svg.append("text")
-                                .attr("x", cx_tmp)
-                                .attr("y", cy_tmp-item_idx*10)
-                                .attr("class", "click_select_bar")
-                                .text(String(select_item[item_idx]) + ": " + ti_tmp[item_idx])
-                                .style("font-size", "10px")
-                                .style("opacity", 1);
-                        }
+                        // for (let item_idx=0; item_idx<select_item.length; item_idx++){
+                        //     if (item_idx>3) break;
+                        //     svg.append("text")
+                        //         .attr("x", cx_tmp)
+                        //         .attr("y", cy_tmp-item_idx*10)
+                        //         .attr("class", "click_select_bar")
+                        //         .text(String(select_item[item_idx]) + ": " + ti_tmp[item_idx])
+                        //         .style("font-size", "10px")
+                        //         .style("opacity", 1);
+                        // }
                         select_switch = 2;
                         
                         forEmitThis.$emit('selectSongsChange', ti_tmp);
@@ -492,7 +492,7 @@ import { object } from "vue-types";
                         .clone()
                         .attr("text-anchor", "middle")
                         .attr("x", -(width - margin.left - margin.right) / 2)
-                        .attr("y", margin.bottom - 35)
+                        .attr("y", margin.bottom - 10)
                         .attr("font-weight", "bold")
                         .text("Song Release Year")
                         );
@@ -507,7 +507,7 @@ import { object } from "vue-types";
                         .clone()
                         .attr("transform", `rotate(-90)`)
                         .attr("text-anchor", "middle")
-                        .attr("y", -margin.left +10)
+                        .attr("y", -margin.left +7)
                         .attr("x", -((height - margin.bottom - margin.top)/2))
                         .attr("font-weight", "bold")
                         .text("Song Release Count")

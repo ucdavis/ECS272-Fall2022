@@ -2,6 +2,7 @@
     <div id="home">
         <div id="left_view">
             <div id="center_table">
+                <Table/>
             </div>
             <div id="network_view">
                 <!-- <Dropdown_Network :myData="hop_1" @selectedChange="handleChange_network"/> -->
@@ -34,7 +35,8 @@ import Network from '../components/network.vue';
 import Dropdown from "../components/dropdown.vue";
 import Dropdown_Beeswarm from '../components/dropdown_beeswarm.vue';
 import Dropdown_Network from '../components/dropdown_network.vue';
-import TextArea from '../components/Text_area.vue'
+import TextArea from '../components/Text_area.vue';
+import Table from '../components/table.vue';
 import csvPath from '../../assets/data/spotify.csv';
 
 export default {
@@ -63,7 +65,8 @@ export default {
         Beeswarm,
         Dropdown_Network,
         Network,
-        TextArea
+        TextArea,
+        Table
     },
     created(){
         /* Fetch via CSV */
@@ -112,12 +115,14 @@ export default {
                         this.selectSinger = select_singer;
                     }
                     this.selected_songs = [];
+                    this.selected_text = [];
                 }
                 else {
                     this.BarExists = true;
                     this.BeeswarmExits = this.colorExists & this.BarExists;
                     this.selectSinger = select_singer;
                     this.selected_songs = [];
+                    this.selected_text = [];
                 }
             }
             else {
@@ -125,6 +130,7 @@ export default {
                 // this.BeeswarmExits = this.colorExists & this.BarExists;
                 this.selectSinger = this.selected_network.text;
                 this.selected_songs = [];
+                this.selected_text = [];
                 this.selected = {id: 1, text: 'Popularity 0-20'};
             }
         },
@@ -139,7 +145,7 @@ export default {
             this.selected_songs = ti_tmp;
         },
         handleselectText_bar(select_item){
-            this.selected_text = selected_item;
+            this.selected_text = select_item;
         },
         handleChange_slide(tmp_slide){
             const ori_this = this;
@@ -171,7 +177,7 @@ export default {
     }
     #left_view {
         height: 100%;
-        width: 35%;
+        width: 40%;
         position: relative;
         border-style: dotted;
         border-width: 2px;
@@ -180,22 +186,26 @@ export default {
         justify-content: center;
     }
     #center_table {
-        height: 20%;
-        width: 80%;
+        height: 15%;
+        width: 95%;
         position: relative;
-        border-style: solid;
+        /* border-style: solid;
         border-width: 2px;
         border-radius: 5px;
-        border-color: #474141;
+        border-color: #474141; */
         margin-top: 10px;
         margin-bottom: 10px;
         margin-left: auto;
         margin-right: auto;
     }
     #network_view {
-        height: 80%;
-        width: 80%;
+        height: 85%;
+        width: 95%;
         position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
     #right_view {
         margin-left: 20px;
@@ -206,7 +216,7 @@ export default {
         margin-right: auto;
     }
     #text_view {
-        height: 30%;
+        height: 15%;
         width: 100%;
         position: relative;
     }
@@ -217,7 +227,7 @@ export default {
     }
     #beeswarm_view {
         margin-top: 10px;
-        height: 30%;
+        height: 45%;
         width: 100%;
         position: relative;
     }

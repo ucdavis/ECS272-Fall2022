@@ -23,7 +23,7 @@ import { object } from "vue-types";
             }
         },
         mounted(){ // actually drawing
-            this.drawText();
+            this.drawText("#song_detail");
         },
         methods: {
             drawText(id){
@@ -42,14 +42,14 @@ import { object } from "vue-types";
                     .attr("x", margin.left)
                     .attr("y", margin.top)
                     .text("Selected Songs: ")
-                    .style("font-size", "11px")
+                    .style("font-size", "9px")
                     .attr("alignment-baseline","middle")
                 for (let i=0; i<this.myText.length; i++){
                     svg.append("text")
-                        .attr("x", margin.left + 120)
-                        .attr("y", margin.top + 12*i)
+                        .attr("x", margin.left+80)
+                        .attr("y", margin.top + 10*(i+0))
                         .text(this.myText[i])
-                        .style("font-size", "11px")
+                        .style("font-size", "9px")
                         .attr("alignment-baseline","middle")
                 }
             }

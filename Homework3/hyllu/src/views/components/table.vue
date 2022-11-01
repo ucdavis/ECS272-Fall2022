@@ -1,5 +1,5 @@
 <template>
-  <a-table :data-source="data" :columns="columns">
+  <a-table :data-source="data" :columns="columns" :scroll="{ x: 100, y: 100 }">
     <template #filterDropdown="{ setSelectedKeys, selectedKeys, confirm, clearFilters, column }">
       <div style="padding: 8px">
         <a-input
@@ -50,6 +50,7 @@
     </template>
   </a-table>
 </template>
+
 <script>
 import { SearchOutlined } from '@ant-design/icons-vue';
 import { defineComponent, reactive, ref, toRefs } from 'vue';
@@ -173,9 +174,9 @@ export default defineComponent({
   },
 });
 </script>
-<!-- <style scoped>
+<style scoped>
 .highlight {
   background-color: rgb(255, 192, 105);
   padding: 0px;
 }
-</style> -->
+</style>
