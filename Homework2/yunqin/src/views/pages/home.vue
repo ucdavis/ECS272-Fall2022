@@ -11,7 +11,7 @@
                     <LineChart v-if="dataExistsLine" :myLineChartData="myLineData"/>
                 </div>
                 <div class="half-row">
-                    <h1 class="focusviewTitle">CO2 Emission Changes Comparison Between Regions</h1>
+                    <h1 class="focusviewTitle">CO2 Emission Changes Every 5 Years Comparison Between Regions</h1>
                     <RadarChart v-if="dataExistsRadar" :myRadarChartData="myRadarData"/>
                 </div>    
             </div>
@@ -123,7 +123,7 @@ export default {
         color: #1a1919;
         text-align: center;
         margin: 0;
-        height: 5%;
+        height: 6%;
     }
 
     .focusviewTitle{
@@ -133,6 +133,6 @@ export default {
         color: #1a1919;
         text-align: center;
         margin: 0;
-        height: 10%;
+        height: 12%;
     }
 </style>

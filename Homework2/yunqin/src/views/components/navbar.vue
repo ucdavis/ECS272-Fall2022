@@ -1,6 +1,6 @@
 <template>
      <a-layout-header class="header">
-      <div class="logo">CO2 Emission Around The World (Unit: metric tons per capita)</div> 
+      <div class="logo">CO2 Emission Around The World</div> 
       <a-menu
         :selectedKeys="selectedKey"
         theme="dark"

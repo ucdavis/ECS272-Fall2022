@@ -17,7 +17,6 @@
 <script>
     import * as d3 from "d3";
     import {legendColor} from "d3-svg-legend";
-    import WorldjsonPath from "../../assets/data/world.json";
 
     export default {
         name: 'MapChart',
@@ -51,7 +50,7 @@
         },
         methods: {
             init(id){
-                const margin = { top: 20, right: 40, bottom: 20, left: 0 };
+                const margin = { top: 20, right: 20, bottom: 20, left: 0 };
                 this.width = document.getElementById("mapWrapper").clientWidth - margin.left - margin.right;
                 this.height = document.getElementById("mapWrapper").clientHeight - margin.top - margin.bottom;
                 var colorScheme = d3.schemeReds[this.color_threshold.length];
@@ -74,7 +73,7 @@
                     .attr("class", "caption")
                     .attr("x", 0)
                     .attr("y", -6)
-                    .style("font-size","15px")
+                    .style("font-size","16px")
                     .text("CO2 Emission (Tons Per Capita)");
                 
                 this.tooltip = d3.select("#mapWrapper").append("div")
@@ -89,9 +88,9 @@
                     .style("position", "absolute")
             },
 
-            drawMap(data) {
-                data = this.myMapChartData;
-                let svg = d3.select("#mapGroup")
+            drawMap() {
+                let data = this.myMapChartData;
+                let svg = d3.select("#mapGroup");
                 let vueThis = this;
 
                 let legend = legendColor()
@@ -188,7 +187,7 @@
 
 <style scoped>
     .mapChartContainer{
-        height: 95%;
+        height: 94%;
         background-color: #ffffff;
     }
     .mapChart{
