@@ -10,7 +10,7 @@ To install additional packages based on your needs
 `npm install <package-name>`
 
 ## Run application
-cd ECS272-Fall2022/Homework2/ntamhankar
+cd ECS272-Fall2022/Homework3/ntamhankar
 
 `npm start`
 
