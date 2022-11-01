@@ -13,18 +13,19 @@ const props = defineProps({
     data: Object as () => any,
     step:Number,
 })
-const margin = {top: 0, right: 0, bottom: 0, left: 0}
+const margin = {top: 0, right: 0, bottom: 0, left: 20}
 const width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right
 const height = Math.min(100, window.innerHeight - margin.top - margin.bottom - 20) - margin.top - margin.bottom;
 // const height = 100
 const id = "barchart"
 let y: any = d3.scaleBand()
 let x: any = d3.scaleLinear()
-const bar_color = "blue"
+const bar_color = "#ababdd"
 
 vue.onMounted(() => {
     init()
     updateBars()
+    updateHightLight(0)
 })
 
 vue.watch(() => props.step, (new_value, old_value) => {
@@ -32,6 +33,7 @@ vue.watch(() => props.step, (new_value, old_value) => {
 })
 vue.watch(() => props.data, (new_value, old_value) => {
     updateBars()
+    updateHightLight(props.step)
 })
 
 
@@ -51,11 +53,11 @@ function init() {
         .range([0, width])
     y = d3.scaleLinear()
         .domain([0, 1])
-        .range([0, height])
+        .range([height, 0])
 
-    // canvas.append("g").attr("class", "y-axis-group")
-    //     .style("font-size", "0.5rem")
-    //     .call(d3.axisLeft(y))
+    canvas.append("g").attr("class", "y-axis-group")
+        .style("font-size", "0.5rem")
+        .call(d3.axisLeft(y))
 
     // canvas.append("g").attr("class", "x-axis-group")
     //     .attr("transform", `translate(0, ${height})`)
@@ -72,16 +74,16 @@ function updateBars() {
             enter => enter.append("rect").attr("class", "bar")
                     .attr("width", (d) => x.bandwidth())
                     .attr("x", (d:any, i) => x(i))
-                    .attr("y", (d:any, i) => height-y(d.y))
-                    .attr("height", (d) => y(d.y))
+                    .attr("y", (d:any, i) => y(d.y))
+                    .attr("height", (d) => height - y(d.y))
                     .attr("fill", bar_color)
                     .attr("stroke", "black")
                     .selection(),
             update => update
                     .attr("width", (d) => x.bandwidth())
                     .attr("x", (d:any, i) => x(i))
-                    .attr("y", (d:any, i) => height-y(d.y))
-                    .attr("height", (d) => y(d.y))
+                    .attr("y", (d:any, i) => y(d.y))
+                    .attr("height", (d) => height - y(d.y))
                     .attr("fill", bar_color)
                     .attr("stroke", "black")
                     .selection(),
@@ -135,5 +137,8 @@ function updateHightLight(step) {
   padding:0.5%;
   opacity:0;
   pointer-events: none;
+}
+.bar {
+    fill: #ababdd;;
 }
 </style>

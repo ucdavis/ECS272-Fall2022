@@ -99,7 +99,7 @@
                     </i>
                 </h2>
                 <div class="label-bar-container">
-                    <div class="barchart-y-label">value →</div>
+                    <!-- <div class="barchart-y-label">value →</div> -->
                     <BarChart 
                         :data="barchart_data"
                         :step="animate_step"
