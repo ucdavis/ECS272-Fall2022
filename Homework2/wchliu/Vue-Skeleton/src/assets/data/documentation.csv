@@ -1,0 +1,540 @@
+id,title,release_year,runtime,genres,production_country,imdb_score,imdb_votes
+tm69997,Richard Pryor: Live in Concert,1979,78,"['comedy', 'documentation']",['US'],8.1,5141.0
+tm89386,Hitler: A Career,1977,150,"['history', 'documentation', 'european']",['DE'],7.5,2460.0
+tm156453,FTA,1972,97,"['war', 'documentation', 'music', 'comedy']",['US'],6.2,418.0
+tm259855,We Are All for the Fatherland,1979,74,['documentation'],"['LB', 'CA', 'FR']",6.1,47.0
+tm259684,Whispers,1980,93,['documentation'],"['CA', 'FR', 'LB']",7.8,78.0
+tm20712,Eddie Murphy Raw,1987,90,"['comedy', 'documentation']",['US'],7.6,19757.0
+tm21953,Sam Kinison: Breaking the Rules,1987,50,"['comedy', 'documentation']",['US'],7.2,660.0
+tm152839,Tim Allen: Men Are Pigs,1990,30,"['comedy', 'documentation']",['US'],6.1,360.0
+tm62924,Monty Python Live at the Hollywood Bowl,1982,81,"['comedy', 'documentation']",['GB'],7.9,15230.0
+tm320211,Children of God,1994,63,['documentation'],['GB'],6.3,612.0
+tm64817,Jerry Seinfeld: I'm Telling You for the Last Time,1998,75,"['comedy', 'documentation']",['US'],7.9,5879.0
+tm63514,The Last Days,1998,87,"['drama', 'history', 'war', 'documentation']",['US'],7.9,4378.0
+tm21911,Sam Kinison: Live in Vegas,1991,72,"['comedy', 'music', 'documentation']",['US'],6.6,276.0
+tm188970,Bill Hicks: Revelations,1993,74,"['comedy', 'documentation']",['GB'],8.5,3098.0
+tm104933,Sinbad: Son of a Preacher Man,1996,56,"['comedy', 'documentation']",['US'],6.8,116.0
+tm57169,Monty Python: Live at Aspen,1998,58,"['comedy', 'documentation']","['GB', 'US']",7.8,1096.0
+tm203186,Children of Shatila,1999,50,"['documentation', 'history']",['LB'],8.1,78.0
+tm7951,Tim Allen: Rewires America,1991,30,"['comedy', 'documentation']",['US'],6.0,198.0
+tm64729,Sinbad: Nothin' but the Funk,1998,56,"['comedy', 'documentation']",['US'],6.3,65.0
+tm184224,Sinbad: Afros and Bellbottoms,1993,60,"['comedy', 'documentation']",['US'],7.8,172.0
+tm34391,Before the Flying Circus,2000,55,"['comedy', 'documentation']",['GB'],7.3,168.0
+tm105329,Road to Perdition,2002,117,"['thriller', 'documentation', 'drama', 'crime']",['US'],7.7,265216.0
+tm116324,Jackass: The Movie,2002,88,"['comedy', 'documentation', 'action']",['US'],6.6,94423.0
+tm23935,The Lake House,2006,99,"['drama', 'thriller', 'fantasy', 'romance', 'documentation']",['US'],6.8,149070.0
+tm112381,Comedian,2002,82,"['comedy', 'documentation']",['US'],6.9,6985.0
+tm26638,The Texas Chainsaw Massacre: The Beginning,2006,91,"['thriller', 'horror', 'documentation']",['US'],5.8,72845.0
+tm85549,Tito,2004,120,"['documentation', 'crime', 'drama', 'romance', 'action']",['EG'],7.2,3214.0
+tm22493,Katt Williams: The Pimp Chronicles Pt. 1,2006,46,"['comedy', 'documentation']",['US'],7.6,1819.0
+tm38896,From Within,2008,89,"['horror', 'thriller', 'documentation', 'war', 'european']",['US'],5.6,7650.0
+tm75022,Zach Galifianakis: Live at the Purple Onion,2007,61,"['comedy', 'documentation']",['US'],7.2,3977.0
+tm72587,Guru,2007,166,"['romance', 'documentation', 'drama', 'european']",['IN'],7.7,23708.0
+tm99776,Whitney Cummings: Money Shot,2010,48,"['comedy', 'documentation']",['US'],6.2,917.0
+tm139349,Jim Gaffigan: King Baby,2009,72,"['comedy', 'documentation']",['US'],7.7,2564.0
+tm25842,A Lion in the House,2006,225,['documentation'],['US'],8.7,324.0
+tm147686,Kevin Hart: I'm a Grown Little Man,2009,73,"['comedy', 'documentation']",['US'],7.5,4411.0
+tm175687,Sir! No Sir!,2005,85,"['war', 'documentation']",['US'],7.6,783.0
+tm352243,Interview with a Serial Killer,2008,44,"['documentation', 'crime']",['US'],5.9,611.0
+tm30289,Jeff Dunham: Arguing with Myself,2006,76,"['comedy', 'documentation']",['US'],8.0,4000.0
+tm368679,Madness in the Desert,2004,141,['documentation'],['IN'],8.4,379.0
+tm22989,Jim Gaffigan: Beyond the Pale,2006,72,"['comedy', 'documentation']",['US'],7.8,3974.0
+tm44634,Kevin James: Sweat the Small Stuff,2001,42,"['comedy', 'documentation']",['US'],7.4,1087.0
+tm52352,This Is the Life,2008,97,"['music', 'documentation']",['US'],6.3,264.0
+tm241875,Frank & Cindy,2007,73,"['documentation', 'music', 'drama']",['US'],6.9,348.0
+tm308960,Gina Yashere: Skinny B*tch,2008,57,"['comedy', 'documentation']",['GB'],6.5,86.0
+tm144835,Sergio,2009,94,['documentation'],['US'],7.4,887.0
+tm38454,Jeff Dunham's Very Special Christmas Special,2008,85,"['comedy', 'documentation']",['US'],7.4,3042.0
+tm216753,Old Thieves: The Legend of Artegio,2007,97,"['documentation', 'crime']",['MX'],8.0,317.0
+tm254745,Frontiers of Dreams and Fears,2001,56,"['documentation', 'history']",['PS'],8.2,55.0
+tm72845,John Mulaney: New in Town,2012,58,"['comedy', 'documentation']",['US'],8.2,6729.0
+tm161904,Bully,2011,92,"['drama', 'documentation']",['US'],7.4,10266.0
+tm57436,Sleepless Nights,2012,128,['documentation'],['FR'],7.7,27.0
+tm183039,Donald Glover: Weirdo,2012,65,"['comedy', 'documentation']",['US'],7.4,3584.0
+tm174190,Undefeated,2011,113,"['documentation', 'sport']",['US'],7.7,7073.0
+tm1096916,The Trial of Adolf Eichmann,2011,90,['documentation'],['FR'],7.5,84.0
+tm181856,Jeff Dunham: Controlled Chaos,2011,90,"['comedy', 'documentation']",['US'],7.4,2296.0
+tm164090,Lavell Crawford: Can a Brother Get Some Love?,2011,90,"['comedy', 'documentation']",['US'],6.9,234.0
+tm63368,A World Not Ours,2012,93,"['documentation', 'history']",['PS'],7.8,388.0
+tm148147,Big Eyes,2014,106,"['drama', 'documentation', 'romance', 'crime']","['CA', 'US']",7.2,51.0
+tm175843,Dark Skies,2013,97,"['scifi', 'thriller', 'horror', 'documentation']",['US'],6.3,75663.0
+tm148976,The Battered Bastards of Baseball,2014,80,"['documentation', 'sport']",['US'],8.0,4043.0
+tm151716,Cowspiracy: The Sustainability Secret,2014,90,['documentation'],['US'],8.2,25133.0
+tm149038,Bill Burr: I'm Sorry You Feel That Way,2014,80,"['comedy', 'documentation']",['US'],8.3,8084.0
+tm138431,Virunga,2014,90,"['documentation', 'war']","['CD', 'GB']",8.2,11476.0
+tm171965,Mike Birbiglia: My Girlfriend's Boyfriend,2013,75,"['comedy', 'documentation', 'romance']",['US'],8.0,3331.0
+tm185208,Elena,2013,82,"['documentation', 'european', 'drama', 'family']","['US', 'BR']",7.6,1823.0
+tm152904,Tom Segura: Completely Normal,2014,74,"['comedy', 'documentation']",['US'],7.7,2663.0
+tm172710,We Steal Secrets: The Story of WikiLeaks,2013,127,['documentation'],['US'],6.9,7934.0
+tm187390,The Square,2013,88,"['documentation', 'drama', 'history']","['US', 'EG', 'GB']",8.1,8949.0
+tm171929,The Short Game,2013,100,"['documentation', 'sport']",['US'],7.3,1570.0
+tm215339,Ralphie May: Imperfectly Yours,2013,69,"['comedy', 'documentation']",['US'],5.4,154.0
+tm139922,"The Other One: The Long, Strange Trip of Bob Weir",2014,85,"['music', 'documentation']",['US'],7.3,1677.0
+tm183706,Birth Reborn,2013,91,"['documentation', 'family', 'history']",['BR'],7.8,252.0
+tm199408,Monty Python: The Meaning of Live,2014,96,"['documentation', 'comedy']",['GB'],7.6,598.0
+tm148597,Monty Python: Live (Mostly),2014,138,"['documentation', 'comedy', 'music']",['GB'],7.6,2623.0
+tm167342,Satyagraha,2013,152,"['drama', 'documentation']",['IN'],5.9,5171.0
+tm35895,Buddies,2013,94,"['drama', 'comedy', 'action', 'documentation', 'european']",['BR'],6.5,1082.0
+tm2269,Selfie,2014,123,"['comedy', 'documentation', 'drama', 'european']",['RO'],6.0,1671.0
+tm149578,Mission Blue,2014,94,"['documentation', 'drama']",['US'],7.9,1991.0
+tm236725,My Beautiful Broken Brain,2014,84,['documentation'],['GB'],7.0,2286.0
+tm151210,Jim Gaffigan: Obsessed,2014,70,"['comedy', 'documentation']",['US'],7.6,2244.0
+tm175954,Aziz Ansari: Buried Alive,2013,79,"['comedy', 'documentation']",['US'],7.2,3998.0
+tm158436,Print the Legend,2014,100,"['documentation', 'drama', 'history']",['US'],7.0,1967.0
+tm209037,Tea Time,2014,70,['documentation'],['CL'],7.6,507.0
+tm153055,Mitt,2014,93,"['documentation', 'family']",['US'],6.9,2579.0
+tm157609,Born in Gaza,2014,69,"['documentation', 'european']",['ES'],7.4,511.0
+tm202914,My Own Man,2014,82,"['documentation', 'drama', 'comedy', 'family']",['US'],6.4,447.0
+tm147518,City of God: 10 Years Later,2013,69,['documentation'],['BR'],6.4,1322.0
+tm151860,Free to Play,2014,75,"['documentation', 'action']","['US', 'CN', 'DE', 'SG', 'UA']",7.6,13341.0
+tm147405,E-Team,2014,88,"['documentation', 'war']",['US'],7.1,873.0
+tm185736,SampleThis,2013,85,"['documentation', 'music']",['US'],6.4,471.0
+tm200926,Heritages,2014,96,"['drama', 'documentation', 'european']","['AE', 'LB']",7.3,131.0
+tm163066,Xenos,2013,12,['documentation'],['GB'],7.8,
+tm156397,Starting Over Again,2014,130,"['comedy', 'drama', 'documentation', 'european']",['PH'],8.3,15.0
+tm460055,The War Against Women,2013,62,"['documentation', 'war']","['US', 'ES']",7.3,74.0
+tm199607,The Gift,2015,108,"['drama', 'thriller', 'documentation']","['AU', 'US']",7.0,155102.0
+tm244788,13th,2016,100,"['documentation', 'history', 'crime']",['US'],8.2,35302.0
+tm225308,Into the Inferno,2016,107,['documentation'],"['CA', 'DE', 'GB']",7.2,8693.0
+tm147082,"What Happened, Miss Simone?",2015,101,"['music', 'documentation']",['US'],7.6,13872.0
+tm220594,Winter on Fire: Ukraine's Fight for Freedom,2015,98,['documentation'],"['UA', 'GB', 'US']",8.3,18748.0
+tm239683,Team Foxcatcher,2016,91,"['documentation', 'crime', 'history', 'sport']",['US'],7.3,6572.0
+tm242736,Bo Burnham: Make Happy,2016,60,"['comedy', 'music', 'documentation']",['US'],8.4,14356.0
+tm193125,Hot Girls Wanted,2015,84,['documentation'],['US'],6.1,17557.0
+tm253080,Rocco,2016,105,"['documentation', 'european']",['FR'],5.7,3998.0
+tm244134,Tramps,2016,82,"['comedy', 'romance', 'documentation', 'european']",['US'],6.5,5605.0
+tm247642,Amanda Knox,2016,92,"['documentation', 'crime', 'european']","['DK', 'US']",6.9,24488.0
+tm208903,For the Love of Spock,2016,105,['documentation'],"['US', 'CA']",7.6,4349.0
+tm229542,John Mulaney: The Comeback Kid,2015,62,"['comedy', 'documentation']",['US'],7.9,8595.0
+tm214085,Tig,2015,95,['documentation'],['US'],7.4,2691.0
+tm232954,Audrie & Daisy,2016,95,"['documentation', 'crime']",['US'],7.2,6602.0
+tm225693,Keith Richards: Under the Influence,2015,82,"['documentation', 'music']",['US'],7.1,3383.0
+tm267429,"Surviving Compton: Dre, Suge and Michel'le",2016,87,"['drama', 'documentation']",['US'],6.5,718.0
+tm209950,Kevin Hart: What Now?,2016,96,"['comedy', 'documentation']",['US'],5.9,9501.0
+tm220317,Demetri Martin: Live (At The Time),2015,61,"['comedy', 'documentation']",['US'],7.4,2207.0
+tm281182,Gabriel Iglesias: I'm Sorry for What I Said When I Was Hungry,2016,87,"['comedy', 'documentation']",['US'],7.4,2566.0
+tm232710,A Second Chance,2015,130,"['drama', 'romance', 'family', 'documentation', 'sport']",['PH'],8.6,47.0
+tm215054,Chris Tucker: Live,2015,92,"['comedy', 'documentation']",['US'],6.3,1955.0
+tm245297,Justin Timberlake + The Tennessee Kids,2016,90,"['music', 'documentation']",['US'],7.6,2191.0
+tm245148,Jim Jefferies: Freedumb,2016,86,"['comedy', 'documentation']",['US'],7.7,5420.0
+tm274053,Asperger's Are Us,2016,83,"['documentation', 'comedy', 'drama']",['US'],6.6,737.0
+tm239762,Tony Robbins: I Am Not Your Guru,2016,115,['documentation'],['US'],6.6,4391.0
+tm321189,All About Asado,2016,90,['documentation'],['AR'],6.5,579.0
+tm227922,Anjelah Johnson: Not Fancy,2015,63,"['comedy', 'documentation']",['US'],5.7,701.0
+tm193211,Mucize,2015,136,"['drama', 'comedy', 'romance', 'documentation', 'european']",['TR'],7.6,12593.0
+tm270555,The Ivory Game,2016,112,"['documentation', 'european']","['AT', 'US']",7.9,3243.0
+tm233023,Tom Segura: Mostly Stories,2016,73,"['comedy', 'documentation']",['US'],7.5,3653.0
+tm239769,I'll Sleep When I'm Dead,2016,82,['documentation'],['US'],6.6,1364.0
+tm315345,City of Joy,2016,74,"['documentation', 'thriller', 'war', 'crime', 'drama']",['CD'],7.5,525.0
+tm240728,Patton Oswalt: Talking for Clapping,2016,65,"['comedy', 'documentation']",['US'],6.7,2001.0
+tm267419,Joe Rogan: Triggered,2016,63,"['comedy', 'documentation']",['US'],7.4,4547.0
+tm149212,Olmo and the Seagull,2015,90,"['drama', 'european', 'romance', 'family', 'documentation']","['PT', 'SE', 'DK', 'BR', 'FR']",7.2,676.0
+tm243931,The Beginning of Life,2016,98,"['documentation', 'family']",['BR'],7.5,940.0
+tm193378,Iliza Shlesinger: Freezing Hot,2015,71,"['comedy', 'documentation']",['US'],6.8,2616.0
+tm327551,Born in Syria,2016,86,"['documentation', 'european']","['ES', 'DK']",7.7,280.0
+tm238486,Theo Von: No Offense,2016,65,"['comedy', 'documentation']",['US'],5.6,875.0
+tm286268,#Rucker50,2016,56,['documentation'],['US'],5.2,120.0
+tm207734,Chris D'Elia: Incorrigible,2015,83,"['comedy', 'documentation']",['US'],6.4,1540.0
+tm234773,Eddie: Strongman,2015,98,['documentation'],['GB'],7.4,1168.0
+tm278279,One in a Billion,2016,69,['documentation'],['US'],6.7,545.0
+tm290157,XV Beyond the Tryline,2016,91,"['documentation', 'sport']",['GB'],6.8,76.0
+tm247396,Virunga: Gorillas in Peril,2015,28,['documentation'],['US'],6.6,32.0
+tm533845,Sam Kinison: The Scream Continues,2016,29,['documentation'],['US'],6.1,39.0
+tm232090,Snervous Tyler Oakley,2015,82,['documentation'],['US'],5.4,473.0
+tm366889,Vice,2018,132,"['comedy', 'drama', 'documentation']",['US'],7.2,139439.0
+tm367185,Won't You Be My Neighbor?,2018,95,['documentation'],['US'],8.4,25061.0
+tm300280,Rumble: The Indians Who Rocked the World,2017,103,"['music', 'documentation']",['CA'],7.7,830.0
+tm244191,The Beguiled,2017,93,"['drama', 'documentation', 'thriller', 'war']",['US'],6.8,21.0
+tm320281,"Can't Stop, Won't Stop: A Bad Boy Story",2017,80,"['music', 'documentation']",['US'],5.3,735.0
+tm414285,Abducted in Plain Sight,2018,91,"['crime', 'documentation', 'thriller', 'drama']",['US'],6.8,18165.0
+tm311815,Icarus,2017,121,"['documentation', 'thriller', 'sport']",['US'],7.9,49269.0
+tm317542,1922,2017,101,"['horror', 'drama', 'documentation', 'crime', 'thriller']",['US'],6.2,62508.0
+tm349803,"Jim & Andy: The Great Beyond - Featuring a Very Special, Contractually Obligated Mention of Tony Clifton",2017,94,"['documentation', 'comedy']","['CA', 'US']",7.6,25948.0
+tm363488,RBG,2018,98,['documentation'],['US'],7.6,14182.0
+tm420274,Hannah Gadsby: Nanette,2018,69,"['comedy', 'documentation']",['AU'],8.1,12375.0
+tm363103,Perfect Bid: The Contestant Who Knew Too Much,2017,72,"['documentation', 'history']",['CA'],6.5,2665.0
+tm431347,Reversing Roe,2018,99,['documentation'],['US'],7.5,1400.0
+tm367065,Shirkers,2018,96,['documentation'],"['SG', 'GB', 'US']",7.4,5145.0
+tm411415,If I Leave Here Tomorrow: A Film About Lynyrd Skynyrd,2018,94,"['documentation', 'music']",['US'],7.9,1285.0
+tm307910,What the Health,2017,97,['documentation'],['US'],7.4,28911.0
+tm351214,Long Shot,2017,40,"['documentation', 'sport', 'crime']",['US'],7.4,7857.0
+tm351216,Joan Didion: The Center Will Not Hold,2017,92,['documentation'],['US'],7.4,2622.0
+tm438502,Sad Hill Unearthed,2017,86,"['documentation', 'european']",['ES'],7.4,1613.0
+tm352774,Voyeur,2017,95,"['documentation', 'crime', 'drama']",['US'],6.1,6097.0
+tm406881,Bathtubs Over Broadway,2018,87,"['comedy', 'music', 'documentation']",['US'],7.6,1089.0
+tm349138,One of Us,2017,95,['documentation'],['US'],7.0,6574.0
+tm448122,Taylor Swift: Reputation Stadium Tour,2018,125,"['music', 'documentation']",['US'],8.3,5435.0
+tm282910,Fireworks,2017,90,"['drama', 'fantasy', 'documentation', 'animation', 'romance', 'scifi', 'family']",['JP'],5.6,3147.0
+tm347530,Gaga: Five Foot Two,2017,100,"['music', 'documentation']",['US'],7.0,12937.0
+tm313974,Get Me Roger Stone,2017,100,"['documentation', 'history']",['US'],7.3,7408.0
+tm318200,Clive Davis: The Soundtrack of Our Lives,2017,123,"['documentation', 'music']",['US'],7.4,991.0
+tm308090,Bill Nye: Science Guy,2017,95,['documentation'],['US'],6.5,1222.0
+tm427465,Quincy,2018,124,"['music', 'documentation']",['US'],7.6,4551.0
+tm349529,Cuba and the Cameraman,2017,113,['documentation'],"['CU', 'US']",8.2,4859.0
+tm445735,Springsteen On Broadway,2018,153,"['music', 'documentation']",['US'],8.5,2199.0
+tm326624,Unrest,2017,97,"['documentation', 'drama', 'history', 'romance', 'european']","['US', 'DK', 'GB']",7.6,2904.0
+tm443993,"Take the Ball, Pass the Ball",2018,107,"['documentation', 'sport', 'european']",['ES'],7.9,3089.0
+tm313293,Whose Streets?,2017,90,['documentation'],['US'],5.5,1337.0
+tm320727,"Norm Macdonald: Hitler's Dog, Gossip & Trickery",2017,60,"['comedy', 'documentation']",['US'],7.4,2868.0
+tm313487,Bending the Arc,2017,102,['documentation'],['US'],8.0,337.0
+tm440415,John Leguizamo's Latin History for Morons,2018,89,"['comedy', 'documentation']",['US'],7.3,808.0
+tm443186,Generation Iron 3,2018,75,['documentation'],['US'],6.2,3169.0
+tm417440,Camarón: The Film,2018,104,['documentation'],['ES'],7.5,307.0
+tm270490,The B-Side: Elsa Dorfman's Portrait Photography,2017,76,['documentation'],['US'],6.7,763.0
+tm313988,The Death and Life of Marsha P. Johnson,2017,105,['documentation'],['US'],7.2,2964.0
+tm421776,Ronnie Coleman: The King,2018,93,['documentation'],['US'],7.0,3839.0
+tm322569,Hasan Minhaj: Homecoming King,2017,72,"['comedy', 'documentation']",['US'],8.2,7250.0
+tm306811,Casting JonBenet,2017,81,"['documentation', 'crime', 'drama']","['US', 'AU']",6.1,5426.0
+tm425884,They'll Love Me When I'm Dead,2018,98,['documentation'],['US'],7.4,5053.0
+tm307612,Strong Island,2017,107,"['documentation', 'crime']",['US'],6.4,3892.0
+tm410748,The Most Unknown,2018,92,['documentation'],['US'],6.5,2129.0
+tm408941,Mercury 13,2018,79,['documentation'],['IE'],6.9,1180.0
+tm404475,The Bleeding Edge,2018,99,['documentation'],['US'],7.6,2720.0
+tm375302,Derren Brown: The Push,2018,69,"['reality', 'documentation']",[],7.5,3637.0
+tm313120,Chasing Coral,2017,93,['documentation'],['US'],8.1,5188.0
+tm408306,Seth Rogen's Hilarity for Charity,2018,70,"['comedy', 'documentation']",['CA'],5.0,2381.0
+tm441060,ReMastered: Tricky Dick & The Man in Black,2018,58,"['documentation', 'music']",['US'],7.1,1519.0
+tm355666,Saving Capitalism,2017,73,['documentation'],['US'],6.8,3213.0
+tm374216,Take Your Pills,2018,87,['documentation'],['US'],6.3,5151.0
+tm313748,Handsome: A Netflix Mystery Movie,2017,81,"['comedy', 'documentation']",['US'],5.2,4551.0
+tm300447,Bill Burr: Walk Your Way Out,2017,77,"['comedy', 'documentation']",['US'],7.2,7256.0
+tm463806,The Legend of Cocaine Island,2018,87,['documentation'],['US'],6.3,3323.0
+tm414676,Paradise Lost,2018,110,"['drama', 'music', 'documentation']",['BR'],6.9,689.0
+tm365670,Perú: Tesoro Escondido,2017,76,['documentation'],['PE'],6.1,527.0
+tm346398,Ryan Hamilton: Happy Face,2017,56,"['comedy', 'documentation']",['US'],7.3,932.0
+tm372610,Derren Brown: Miracle,2018,73,['documentation'],['GB'],6.5,1037.0
+tm242765,Raising the Bar,2017,93,"['family', 'drama', 'documentation', 'sport']",['AU'],5.5,1555.0
+tm372891,Chris Rock: Tamborine,2018,64,"['comedy', 'documentation']",['US'],6.6,6982.0
+tm353046,Patton Oswalt: Annihilation,2017,66,"['comedy', 'documentation']",['US'],7.2,2377.0
+tm324588,Rory Scovel Tries Stand-Up for the First Time,2017,66,"['comedy', 'documentation']",['US'],6.7,831.0
+tm995893,The Crossing,2017,10,['documentation'],['PS'],7.5,
+tm437631,Derren Brown: Sacrifice,2018,49,"['documentation', 'reality']",['US'],7.1,1806.0
+tm445899,Struggle: The Life and Lost Art of Szukalski,2018,104,"['documentation', 'european']","['PL', 'US']",7.9,4195.0
+tm236659,Sky Ladder: The Art of Cai Guo-Qiang,2017,80,['documentation'],['US'],7.3,1463.0
+tm375007,Feminists: What Were They Thinking?,2018,86,['documentation'],['US'],6.9,2233.0
+tm363003,Seeing Allred,2018,96,['documentation'],['US'],7.2,1357.0
+tm348386,Resurface,2017,27,"['documentation', 'sport', 'war']",['US'],7.1,286.0
+tm372917,Pope Francis: A Man of His Word,2018,96,"['documentation', 'european']","['IT', 'CH', 'VA', 'FR', 'DE']",6.4,2260.0
+tm293867,Neal Brennan: 3 Mics,2017,65,"['comedy', 'documentation']",['US'],7.9,3302.0
+tm348568,Jerry Before Seinfeld,2017,62,"['comedy', 'documentation']",['US'],7.0,5709.0
+tm348392,The Last Shaman,2017,83,"['documentation', 'drama', 'family', 'european']","['PE', 'GB', 'US', 'IL', 'IT']",6.6,1911.0
+tm320489,Expedition Happiness,2017,95,"['documentation', 'european']",['DE'],5.9,4538.0
+tm376801,The Rachel Divide,2018,104,['documentation'],['US'],6.3,2558.0
+tm364206,Ex-Shaman,2018,81,['documentation'],['BR'],7.1,253.0
+tm411358,The American Meme,2018,90,['documentation'],['US'],6.7,16650.0
+tm476960,El testigo,2018,76,['documentation'],[],8.1,213.0
+tm373873,Weed the People,2018,98,['documentation'],['US'],7.3,344.0
+tm366973,Tom Segura: Disgraceful,2018,74,"['comedy', 'documentation']",['US'],7.5,3851.0
+tm295558,The Grown-Ups,2017,82,['documentation'],"['CL', 'NL', 'FR']",7.7,261.0
+tm320785,The Mars Generation,2017,97,['documentation'],['US'],6.5,999.0
+tm424888,Armed to the Teeth,2018,105,"['documentation', 'crime', 'thriller']",['MX'],7.9,650.0
+tm323195,Sarah Silverman: A Speck of Dust,2017,71,"['comedy', 'documentation']",['US'],6.9,3744.0
+tm314295,Nobody Speak: Trials of the Free Press,2017,95,"['documentation', 'european']","['US', 'NL']",6.4,4133.0
+tm358242,Brian Regan: Nunchucks and Flamethrowers,2017,61,"['comedy', 'documentation']",['US'],6.3,681.0
+tm351688,Def Comedy Jam 25,2017,81,"['comedy', 'documentation']",['US'],6.6,1101.0
+tm357272,Barbra: The Music ... The Mem'ries ... The Magic!,2017,108,"['documentation', 'music']",['US'],7.5,448.0
+tm337040,Maz Jobrani: Immigrant,2017,67,"['comedy', 'documentation']",['US'],6.7,859.0
+tm326270,Tiffany Haddish: She Ready! From the Hood to Hollywood!,2017,65,"['comedy', 'documentation']",['US'],6.7,536.0
+tm356666,Judah Friedlander: America Is the Greatest Country in the United States,2017,84,"['comedy', 'documentation']",['US'],7.8,1447.0
+tm428597,Being Napoleon,2018,88,['documentation'],['US'],5.5,125.0
+tm352033,The Milk System,2018,90,"['documentation', 'european']","['DE', 'IT']",7.0,532.0
+tm410298,Samouni Road,2018,129,"['animation', 'documentation', 'european']","['IT', 'FR']",6.7,180.0
+tm429377,Bert Kreischer: Secret Time,2018,57,"['comedy', 'documentation']",['US'],7.3,2330.0
+tm324806,Counterpunch,2017,91,"['documentation', 'sport']",['US'],6.7,918.0
+tm375091,Marlon Wayans: Woke-ish,2018,68,"['comedy', 'documentation']",['US'],6.5,1407.0
+tm370430,Liberated: The New Sexual Revolution,2017,84,['documentation'],"['US', 'MX']",6.0,1502.0
+tm348281,Kingdom of Us,2017,109,"['documentation', 'drama']",['GB'],6.9,904.0
+tm320249,Maria Bamford: Old Baby,2017,64,"['comedy', 'documentation']",['US'],6.1,945.0
+tm319477,Rodney King,2017,52,"['drama', 'crime', 'documentation', 'comedy', 'history']",['US'],5.8,606.0
+tm443283,Loudon Wainwright III: Surviving Twin,2018,91,"['music', 'documentation']",['US'],7.1,95.0
+tm315865,Laerte-se,2017,100,['documentation'],['BR'],7.0,694.0
+tm437159,ReMastered: Who Shot the Sheriff,2018,57,"['documentation', 'crime', 'history', 'music']",['US'],6.9,1430.0
+tm504329,Bigger Than Africa,2018,87,['documentation'],"['US', 'NG']",7.0,31.0
+tm492277,Semesta,2018,88,['documentation'],['ID'],7.3,111.0
+tm461349,Stars in the Sky: A Hunting Story,2018,69,['documentation'],['US'],7.2,343.0
+tm436266,Born Racer,2018,88,"['action', 'drama', 'documentation']",['NZ'],6.1,262.0
+tm459024,Food on the Go,2017,66,"['documentation', 'european']","['IT', 'AR']",6.3,215.0
+tm430057,Weapon of Choice,2018,90,"['documentation', 'european']","['AT', 'IQ', 'US']",4.8,162.0
+tm407349,The Birth Reborn 2,2018,91,['documentation'],['BR'],6.6,5.0
+tm404449,Ayotzinapa: The Turtle's Pace,2018,80,['documentation'],['MX'],7.4,206.0
+tm352865,Rodney Carrington: Here Comes the Truth,2017,66,"['comedy', 'documentation']",['XX'],4.5,164.0
+tm412515,Coffee for All,2017,69,"['documentation', 'european']","['AR', 'IT']",5.6,398.0
+tm434179,Two Catalonias,2018,116,"['documentation', 'history', 'european']",['ES'],6.4,677.0
+tm346334,Out of Thin Air,2017,85,"['crime', 'documentation']","['IS', 'GB']",6.3,2304.0
+tm325610,Chris D'Elia: Man on Fire,2017,65,"['comedy', 'documentation']",['US'],6.5,1729.0
+tm351505,The Reservoir Game,2017,100,['documentation'],['KR'],6.0,35.0
+tm423315,Pacíficum,2017,74,['documentation'],['PE'],6.5,128.0
+tm434776,Mo Amer: The Vagabond,2018,56,"['comedy', 'documentation']",['US'],7.3,838.0
+tm363181,Ladies First,2017,39,"['documentation', 'comedy', 'romance']",['IN'],3.9,25.0
+tm466084,Voulez-vous rire avec moi ce soir?,2018,93,"['documentation', 'european']",['FR'],6.8,43.0
+tm413082,Recovery Boys,2018,90,['documentation'],['US'],6.7,720.0
+tm431169,Late Life: The Chien-Ming Wang Story,2018,97,"['documentation', 'sport']","['TW', 'US']",7.1,474.0
+tm368448,Eve's Apple,2017,90,"['documentation', 'european']",['ES'],5.8,87.0
+tm323300,Joshua: Teenager vs. Superpower,2017,78,['documentation'],['US'],7.3,1554.0
+tm447328,ReMastered: Who Killed Jam Master Jay?,2018,58,"['music', 'documentation']",['US'],6.5,786.0
+tm307383,Ghost Hunting,2017,94,"['documentation', 'european']","['FR', 'PS', 'CH', 'QA']",7.1,222.0
+tm314138,Felipe Neto: My Life Makes No Sense,2017,90,"['comedy', 'documentation']",['BR'],4.4,247.0
+tm478654,Salam - The First ****** Nobel Laureate,2018,75,['documentation'],['US'],7.8,418.0
+tm480647,Ayana,2017,128,"['drama', 'documentation']",['KG'],7.1,127.0
+tm840936,Zoé: Panoramas,2017,89,"['documentation', 'music']",['XX'],6.8,78.0
+tm370472,Kavin Jay : Everybody Calm Down!,2018,53,"['comedy', 'documentation']",['XX'],5.9,236.0
+tm327926,Panoptic,2017,79,['documentation'],"['AE', 'LB']",6.3,60.0
+tm327636,Joe Mande's Award-Winning Comedy Special,2017,66,"['comedy', 'documentation']",['US'],6.1,509.0
+tm863808,My Octopus Teacher,2020,84,['documentation'],"['ZA', 'GB']",8.1,52771.0
+tm502532,Fantastic Fungi,2019,81,['documentation'],['US'],7.4,8430.0
+tm847085,The Social Dilemma,2020,94,"['drama', 'documentation']",['US'],7.6,80916.0
+tm818266,The Forgotten Battle,2020,124,"['drama', 'war', 'history', 'documentation', 'european']","['BE', 'LT', 'NL']",7.1,27275.0
+tm450262,Last Breath,2019,85,"['documentation', 'european']","['BE', 'SE', 'GB']",7.7,5800.0
+tm325325,The Game Changers,2019,88,['documentation'],['US'],7.8,19942.0
+tm845484,Dick Johnson Is Dead,2020,89,"['documentation', 'drama']",['US'],7.4,6511.0
+tm824488,The Art of Incarceration,2019,90,['documentation'],['AU'],8.6,25.0
+tm464662,Tread,2020,88,"['crime', 'documentation']",['US'],7.1,3074.0
+tm447788,Fyre,2019,98,"['documentation', 'crime', 'music']",['US'],7.2,45728.0
+tm437221,Charlie Says,2019,104,"['drama', 'documentation', 'crime']",['US'],5.9,4474.0
+tm845496,Crip Camp: A Disability Revolution,2020,107,"['documentation', 'history']",['US'],7.7,7428.0
+tm853783,David Attenborough: A Life on Our Planet,2020,83,['documentation'],['GB'],8.9,31625.0
+tm927480,Kiss the Ground,2020,84,['documentation'],['US'],8.2,6736.0
+tm444247,This Changes Everything,2019,97,['documentation'],['US'],7.6,1580.0
+tm934040,American Murder: The Family Next Door,2020,83,"['documentation', 'thriller', 'crime']",['US'],7.2,27193.0
+tm878842,The Edge of All We Know,2020,99,['documentation'],['US'],6.6,2422.0
+tm453099,Rolling Thunder Revue: A Bob Dylan Story by Martin Scorsese,2019,142,"['documentation', 'music', 'history']",['US'],7.6,6730.0
+tm446176,American Factory,2019,110,['documentation'],['US'],7.4,21694.0
+tm498034,The Last Blockbuster,2020,86,['documentation'],['US'],6.7,5448.0
+tm446609,The Great Hack,2019,114,"['documentation', 'history']",['US'],7.1,22838.0
+tm845415,Miss Americana,2020,85,"['music', 'documentation']",['US'],7.4,19482.0
+tm948128,Audrey,2020,100,"['documentation', 'history']","['US', 'CH']",7.1,1960.0
+tm845437,Disclosure,2020,107,['documentation'],['US'],8.2,5421.0
+tm463385,Framing John DeLorean,2019,109,"['drama', 'documentation']",['US'],6.5,2331.0
+tm497383,Sergio,2020,118,"['drama', 'history', 'romance', 'documentation']","['JO', 'TH', 'US', 'AL']",6.2,9698.0
+tm887450,Made You Look: A True Story About Fake Art,2020,96,"['documentation', 'crime']",['CA'],7.0,4230.0
+tm828317,Tell Me Who I Am,2019,85,"['thriller', 'documentation', 'drama']",['GB'],7.6,14466.0
+tm845549,The Reason I Jump,2020,82,"['documentation', 'drama']","['US', 'GB']",7.5,835.0
+tm369389,The Silence of Others,2019,95,"['documentation', 'history', 'european']","['US', 'CA', 'FR', 'ES']",8.0,2096.0
+tm493175,ZZ Top: That Little Ol' Band from Texas,2019,91,"['music', 'documentation']",['GB'],7.5,1732.0
+tm877456,9to5: The Story of A Movement,2020,89,"['documentation', 'history']",['US'],7.4,238.0
+tm446625,Miles Davis: Birth of the Cool,2019,116,"['documentation', 'music']",['US'],7.4,1771.0
+tm855483,Have a Good Trip: Adventures in Psychedelics,2020,85,"['documentation', 'comedy']",['US'],6.8,7707.0
+tm845535,Coded Bias,2020,86,['documentation'],"['US', 'CN', 'GB']",6.7,2311.0
+tm430171,Screwball,2019,105,"['history', 'documentation']",['US'],7.1,1713.0
+tm680024,Surviving R. Kelly: The Impact,2019,120,['documentation'],['US'],6.1,100.0
+tm890674,Becoming,2020,89,['documentation'],['US'],6.8,6349.0
+tm452573,Gabriel Iglesias: One Show Fits All,2019,90,"['comedy', 'documentation']",['US'],7.2,1830.0
+tm883441,Money Heist: The Phenomenon,2020,57,['documentation'],['ES'],7.4,3482.0
+tm458127,Human Nature,2019,107,"['documentation', 'thriller']",['US'],7.7,1608.0
+tm470560,Circus of Books,2019,92,"['documentation', 'history']",['US'],7.1,4624.0
+tm469400,Brené Brown: The Call to Courage,2019,76,"['documentation', 'drama']",['US'],7.7,1552.0
+tm472411,Iron Fists and Kung Fu Kicks,2019,108,"['documentation', 'history']",['AU'],6.6,1146.0
+tm824559,"Bikram: Yogi, Guru, Predator",2019,86,"['crime', 'documentation']",['US'],6.7,7525.0
+tm376739,Bethany Hamilton: Unstoppable,2019,99,"['documentation', 'sport']",['US'],7.4,736.0
+tm470836,The Show Must Go On: The Queen + Adam Lambert Story,2019,81,"['music', 'documentation']",['US'],7.8,1979.0
+tm446581,The Edge of Democracy,2019,121,"['documentation', 'history']",['BR'],7.3,14758.0
+tm467467,Homecoming: A Film by Beyoncé,2019,137,"['documentation', 'music']",['US'],7.5,7085.0
+tm847629,Dolly Parton: Here I Am,2019,89,"['documentation', 'music']",['GB'],7.3,1502.0
+tm881859,A Secret Love,2020,83,"['documentation', 'drama']",['US'],7.8,4409.0
+tm927286,Making The Witcher,2020,37,['documentation'],['GB'],6.8,456.0
+tm881162,Athlete A,2020,104,"['documentation', 'crime', 'sport']",['US'],7.6,10861.0
+tm457856,ReMastered: The Two Killings of Sam Cooke,2019,74,"['documentation', 'music']",[],7.2,2269.0
+tm464435,Grass Is Greener,2019,97,['documentation'],['US'],7.1,1345.0
+tm823488,David Foster: Off the Record,2019,98,['documentation'],['CA'],7.0,577.0
+tm884369,"Best Wishes, Warmest Regards: A Schitt's Creek Farewell",2020,44,['documentation'],['CA'],8.6,1445.0
+tm857399,Marc Maron: End Times Fun,2020,71,"['comedy', 'documentation']",['US'],6.8,1934.0
+tm931330,BLACKPINK: Light Up the Sky,2020,79,"['documentation', 'music']",['US'],7.3,6427.0
+tm470378,ReMastered: Devil at the Crossroads,2019,48,"['documentation', 'music']",['US'],7.0,2748.0
+tm857397,A Life of Speed: The Juan Manuel Fangio Story,2020,92,"['documentation', 'sport']",['AR'],6.9,1854.0
+tm675171,The Black Godfather,2019,118,"['documentation', 'music']",['US'],7.4,1363.0
+tm944331,Shawn Mendes: In Wonder,2020,83,"['documentation', 'music']",['US'],6.4,2049.0
+tm430106,El Pepe: A Supreme Life,2019,74,['documentation'],"['RS', 'UY', 'AR']",7.1,1887.0
+tm817542,Hikaru Utada Laughter in the Dark Tour 2018,2019,141,"['music', 'documentation', 'comedy']",['JP'],8.2,92.0
+tm454861,Patria,2019,89,"['documentation', 'history', 'war']",['MX'],7.2,105.0
+tm882887,LA Originals,2020,92,['documentation'],"['US', 'AR']",7.2,1820.0
+tm945168,Secrets of the Saqqara Tomb,2020,113,"['documentation', 'history']","['EG', 'US']",7.2,6326.0
+tm483420,Ella Fitzgerald: Just One of Those Things,2019,89,"['documentation', 'music']",['GB'],6.9,447.0
+tm821164,Enter the Anime,2019,58,['documentation'],"['US', 'JP']",2.6,1647.0
+tm825102,Our Planet: Behind the Scenes,2019,63,['documentation'],"['US', 'GB']",8.3,1723.0
+tm448767,Knock Down the House,2019,86,['documentation'],['US'],7.2,12496.0
+tm814894,Parchís: the Documentary,2019,105,"['documentation', 'music']",['ES'],6.8,542.0
+tm919106,Rising Phoenix,2020,105,"['documentation', 'sport']",['GB'],8.1,1683.0
+tm484989,The Influence,2019,99,"['documentation', 'horror', 'european']",['ES'],4.6,3738.0
+tm879609,Brave Blue World,2019,50,['documentation'],"['CA', 'GB']",6.7,791.0
+tm420181,Spelling the Dream,2020,82,['documentation'],['US'],6.9,720.0
+tm977464,Youth v Gov,2020,110,['documentation'],[],6.7,70.0
+tm470252,Calum von Moger: Unbroken,2019,93,['documentation'],['US'],6.2,851.0
+tm830833,"Hello, Privilege. It's Me, Chelsea",2019,64,['documentation'],['US'],4.5,1993.0
+tm982100,"ariana grande: excuse me, i love you",2020,97,"['documentation', 'music']",['US'],6.3,2591.0
+tm837843,It Takes a Lunatic,2019,120,"['documentation', 'drama']","['US', 'GB', 'DE']",6.6,174.0
+tm470597,A Kid from Coney Island,2019,89,"['documentation', 'sport']","['US', 'CN']",7.0,554.0
+tm455981,Rubaru Roshni,2019,110,['documentation'],['IN'],8.6,591.0
+tm845532,Mucho Mucho Amor: The Legend of Walter Mercado,2020,96,['documentation'],['US'],7.2,3312.0
+tm863992,The Most Dangerous Man in Europe,2020,68,"['documentation', 'history', 'war']",['ES'],6.8,215.0
+tm845020,Jack Whitehall: Christmas with my Father,2019,64,"['comedy', 'documentation']",[],6.0,951.0
+tm817087,#AnneFrank. Parallel Stories,2019,92,"['drama', 'history', 'documentation']",['IT'],6.5,1548.0
+tm819016,The Path of the Anaconda,2019,73,['documentation'],['CO'],6.7,279.0
+tm811971,Oprah Winfrey Presents: When They See Us Now,2019,61,['documentation'],[],7.7,2350.0
+tm931158,Gather,2020,74,['documentation'],['US'],7.8,202.0
+tm464527,ReMastered: The Miami Showband Massacre,2019,70,"['documentation', 'crime', 'music']",[],7.0,1400.0
+tm937044,Bigflo & Oli: Hip Hop Frenzy,2020,100,"['documentation', 'music']",['FR'],6.7,122.0
+tm938466,Kitty Love: An Homage to Cats,2020,60,"['documentation', 'european']",['NL'],5.1,472.0
+tm827640,Travis Scott: Look Mom I Can Fly,2019,85,"['documentation', 'music']",['US'],6.3,4629.0
+tm908529,Tell Me When,2020,95,"['romance', 'documentation', 'comedy']",['MX'],5.7,1002.0
+tm975765,Emicida: AmarElo - It's All for Yesterday,2020,89,"['music', 'documentation']",['BR'],8.5,1510.0
+tm977782,Shawn Mendes: Live in Concert,2020,87,"['music', 'documentation']",['CA'],7.1,327.0
+tm920320,Lift Like a Girl,2020,93,['documentation'],"['DE', 'DK', 'EG']",7.8,213.0
+tm853910,Road to Roma,2020,73,['documentation'],['MX'],7.7,656.0
+tm828326,The Crystal Calls - Making The Dark Crystal: Age of Resistance,2019,83,['documentation'],['US'],7.6,534.0
+tm841239,The Road to El Camino: Behind the Scenes of El Camino: A Breaking Bad Movie,2019,13,['documentation'],['US'],7.1,1415.0
+tm885845,Murder to Mercy - The Cyntoia Brown Story,2020,96,['documentation'],['US'],6.3,2776.0
+tm832684,Los Tigres del Norte at Folsom Prison,2019,64,"['documentation', 'music']",['US'],7.0,174.0
+tm844208,What the F* Is Going On?,2019,86,['documentation'],['ES'],7.4,173.0
+tm944631,The Three Deaths of Marisela Escobedo,2020,109,"['crime', 'documentation']",['MX'],8.1,1683.0
+tm853485,Night on Earth: Shot in the Dark,2020,59,['documentation'],[],7.7,306.0
+tm469432,Hating Peter Tatchell,2020,91,['documentation'],"['AU', 'GB']",7.6,787.0
+tm957903,The Boys in the Band: Something Personal,2020,28,['documentation'],['US'],7.2,362.0
+tm540277,Nasha Natasha,2020,83,"['documentation', 'music']",['UY'],6.3,305.0
+tm946927,Dance Dreams: Hot Chocolate Nutcracker,2020,80,"['documentation', 'family']",['US'],7.0,341.0
+tm431810,Evelyn,2019,95,['documentation'],['GB'],7.2,772.0
+tm452900,ReMastered: Massacre at the Stadium,2019,64,"['documentation', 'drama']",['CL'],7.2,787.0
+tm918962,Fearless,2020,89,"['animation', 'family', 'scifi', 'documentation', 'comedy']",['CA'],4.9,1735.0
+tm473647,ReMastered: The Lion's Share,2019,84,"['music', 'documentation']",['US'],6.9,637.0
+tm452574,"Ray Romano: Right Here, Around the Corner",2019,58,"['comedy', 'documentation']",['US'],7.2,1693.0
+tm907704,Dark City Beneath the Beat,2020,65,"['documentation', 'music']",['US'],6.6,141.0
+tm887052,Father Soldier Son,2020,99,"['war', 'documentation']",['US'],7.3,952.0
+tm474695,Dying to Tell,2019,87,"['documentation', 'european']",['ES'],6.8,351.0
+tm943808,Guillermo Vilas: Settling the Score,2020,94,"['documentation', 'sport']",['AR'],7.1,655.0
+tm975616,The Beginning of Life 2: Outside,2020,92,['documentation'],['BR'],8.0,20.0
+tm1020701,La Vocera,2020,82,['documentation'],['MX'],7.2,55.0
+tm992712,From Stress to Happiness,2020,60,['documentation'],[],6.3,208.0
+tm830151,One Day We'll Talk About Today,2020,121,"['drama', 'family', 'music', 'documentation']",['ID'],7.4,1155.0
+tm844978,Guatemala: Heart of the Mayan World,2019,66,['documentation'],"['GT', 'UY']",6.6,224.0
+tm823459,Léa & I,2019,84,['documentation'],['US'],6.5,215.0
+tm925702,Andre and His Olive Tree,2020,104,['documentation'],['SG'],6.7,207.0
+tm437379,I'm Leaving Now,2019,74,"['documentation', 'european']","['MX', 'US']",6.6,111.0
+tm474618,A Tale of Two Kitchens,2019,29,['documentation'],"['MX', 'US']",6.5,145.0
+tm922943,Beyond the Boundary: ICC Women's T20 World Cup Australia 2020,2020,59,"['documentation', 'sport']",['AU'],6.0,6.0
+tm530822,Carlos Almaraz: Playing with Fire,2019,82,['documentation'],['US'],7.5,62.0
+tm467116,Life Overtakes Me,2019,39,['documentation'],"['SE', 'US']",5.0,45.0
+tm918894,Anelka: Misunderstood,2020,94,"['documentation', 'sport']",['FR'],6.4,3174.0
+tm464212,Antoine Griezmann: The Making of a Legend,2019,60,"['documentation', 'sport']",['FR'],6.5,1157.0
+tm901961,One Take,2020,85,"['documentation', 'music', 'drama']",['DE'],5.9,52.0
+tm898285,Love and Fury,2020,93,['documentation'],[],6.6,28.0
+tm813075,To Be of Service,2019,88,['documentation'],['US'],7.3,99.0
+tm893510,What are the Odds?,2019,92,"['drama', 'documentation', 'music']",['IN'],5.2,840.0
+tm907872,Sky Tour: The Movie,2020,94,"['music', 'documentation']",[],5.5,1041.0
+tm944307,I'm Glad I Did,2020,123,['documentation'],['TR'],8.4,1416.0
+tm507191,Mayday Life,2019,112,"['music', 'documentation']",['TW'],6.7,129.0
+tm929614,GIMS: On the Record,2020,96,"['music', 'documentation']",['FR'],6.8,209.0
+tm912399,We Are One,2020,86,['documentation'],['FR'],4.7,93.0
+tm824566,Ibrahim: A Fate to Define,2019,75,['documentation'],"['PS', 'DK', 'LB']",7.4,31.0
+tm1226954,Girl in the Picture,2022,102,"['documentation', 'crime']",['US'],7.3,9786.0
+tm1228854,Bill Burr: Live at Red Rocks,2022,82,"['comedy', 'documentation']",[],7.8,1281.0
+tm1229846,My Daughter's Killer,2022,83,"['documentation', 'crime']","['DE', 'FR']",6.9,832.0
+tm937814,The Alpinist,2021,92,['documentation'],"['AT', 'GB', 'US']",8.0,8048.0
+tm1196288,Our Father,2022,97,"['crime', 'documentation']",['US'],6.5,9889.0
+tm1209228,Norm Macdonald: Nothing Special,2022,87,"['comedy', 'documentation']",['US'],7.6,1466.0
+tm1195971,Jennifer Lopez:  Halftime,2022,95,"['music', 'documentation']",['US'],6.5,3980.0
+tm1022953,Who We Are: A Chronicle of Racism in America,2022,117,['documentation'],['US'],6.2,715.0
+tm1219452,Cristela Alonzo: Middle Classy,2022,60,"['comedy', 'documentation']",[],6.8,211.0
+tm1138477,Downfall: The Case Against Boeing,2022,89,['documentation'],['US'],7.4,10313.0
+tm1119272,14 Peaks: Nothing Is Impossible,2021,101,"['documentation', 'sport']",['US'],7.7,24213.0
+tm1207097,Bill Burr Presents: Friends Who Kill,2022,73,"['comedy', 'documentation']",[],4.5,1857.0
+tm1185367,White Hot: The Rise & Fall of Abercrombie & Fitch,2022,88,['documentation'],['US'],5.7,4124.0
+tm983723,The Sparks Brothers,2021,140,"['documentation', 'music', 'comedy', 'history']","['GB', 'US']",7.8,4663.0
+tm1150385,The Tinder Swindler,2022,114,"['documentation', 'crime']",['GB'],7.2,61809.0
+tm1185360,Return to Space,2022,128,['documentation'],['US'],7.3,4087.0
+tm1185374,The Mystery of Marilyn Monroe: The Unheard Tapes,2022,101,['documentation'],['US'],6.2,3978.0
+tm1079334,"Bob Ross: Happy Accidents, Betrayal & Greed",2021,92,['documentation'],"['US', 'NL']",6.9,5856.0
+tm1210970,Gladbeck: The Hostage Crisis,2022,91,"['documentation', 'crime']",['DE'],7.5,1765.0
+tm1212673,Joel Kim Booster: Psychosexual,2022,67,"['comedy', 'documentation']",[],5.5,284.0
+tm919880,Final Account,2021,94,['documentation'],"['GB', 'US']",7.1,1042.0
+tm1179973,Trust No One: The Hunt for the Crypto King,2022,90,"['documentation', 'crime']",['GB'],6.3,4444.0
+tm1082974,Count Me In,2021,81,"['documentation', 'music']",[],6.8,1805.0
+tm1168932,Taylor Tomlinson: Look at You,2022,60,"['comedy', 'documentation']",[],7.3,2008.0
+tm1207094,Pete Davidson Presents: The Best Friends,2022,58,"['comedy', 'documentation']",['US'],4.7,569.0
+tm1198388,Cyber Hell: Exposing an Internet Horror,2022,105,"['documentation', 'crime']",['KR'],6.5,1407.0
+tm1048678,Like A Rolling Stone: The Life & Times of Ben Fong-Torres,2021,102,['documentation'],['US'],7.3,233.0
+tm1207098,Amy Schumer Presents: Parental Advisory,2022,57,"['comedy', 'documentation']",[],3.8,581.0
+tm673809,Schumacher,2021,112,"['sport', 'documentation']",['DE'],7.4,22280.0
+tm1018890,Seaspiracy,2021,89,['documentation'],['US'],8.1,30307.0
+tm888243,Pray Away,2021,101,['documentation'],['US'],6.5,2888.0
+tm1096775,Procession,2021,118,['documentation'],['US'],7.2,1148.0
+tm1185421,David Spade: Nothing Personal,2022,66,"['comedy', 'documentation']",[],5.8,697.0
+tm1074764,Shiny_Flakes: The Teenage Drug Lord,2021,96,"['documentation', 'crime']",['DE'],7.3,4699.0
+tm999927,A Cop Movie,2021,107,"['drama', 'crime', 'thriller', 'documentation', 'action']",['MX'],7.0,1739.0
+tm1082314,Untold: Malice at the Palace,2021,69,"['crime', 'documentation', 'sport']",['US'],7.5,7699.0
+tm1084966,Django & Django,2021,80,['documentation'],[],6.9,1006.0
+tm1219787,Stand Out: An LGBTQ+ Celebration,2022,96,"['comedy', 'documentation']",[],5.9,569.0
+tm1207099,Jane Fonda & Lily Tomlin: Ladies Night Live,2022,60,"['comedy', 'documentation']",['US'],5.5,268.0
+tm1104532,Britney vs. Spears,2021,93,"['documentation', 'music']",['US'],6.4,6924.0
+tm1228963,Ranveer vs Wild with Bear Grylls,2022,70,['documentation'],['IN'],7.3,2024.0
+tm983668,Misha and the Wolves,2021,90,"['documentation', 'drama']","['BE', 'GB', 'DE']",6.7,2474.0
+tm855641,Home2Home,2022,110,"['documentation', 'action', 'european']",['DE'],7.9,136.0
+tm1201457,Civil: Ben Crump,2022,101,['documentation'],[],5.4,170.0
+tm982887,The Minimalists: Less Is Now,2021,53,['documentation'],['US'],5.9,4108.0
+tm1218547,Bruna Louise: Demolition,2022,65,"['comedy', 'documentation']",['BR'],4.5,51.0
+tm1106044,100 días con la Tata,2021,82,"['documentation', 'family']",[],7.9,299.0
+tm1093287,The River Runner,2021,86,"['documentation', 'action']",[],6.9,1667.0
+tm1091155,Untold: Breaking Point,2021,79,"['documentation', 'sport']",['US'],7.6,2490.0
+tm991351,Pelé,2021,108,"['documentation', 'sport']",['GB'],7.0,4256.0
+tm983658,Rita Moreno: Just a Girl Who Decided to Go for It,2021,90,['documentation'],['US'],7.7,750.0
+tm1003353,Operation Varsity Blues: The College Admissions Scandal,2021,100,"['drama', 'documentation', 'crime']",['US'],6.9,8190.0
+tm1096769,Lead Me Home,2021,40,['documentation'],['US'],7.1,
+tm1207096,Snoop Dogg's F*cn Around Comedy Special,2022,67,"['documentation', 'comedy', 'music']",[],5.2,371.0
+tm1039147,Audible,2021,39,['documentation'],['US'],5.3,
+tm1215536,The Hall: Honoring the Greats of Stand-Up,2022,70,"['documentation', 'comedy']",['US'],6.3,400.0
+tm1043290,Murder by the Coast,2021,88,"['crime', 'documentation', 'history']",['ES'],6.5,2134.0
+tm1174920,Jeff Foxworthy: The Good Old Days,2022,60,"['comedy', 'documentation']",[],6.1,418.0
+tm1092892,Found,2021,97,"['documentation', 'drama']","['CN', 'US']",7.5,1198.0
+tm1191860,Oprah + Viola: A Netflix Special Event,2022,48,['documentation'],['US'],7.2,319.0
+tm1047190,The Phantom,2021,81,"['documentation', 'crime']","['US', 'GB']",6.5,759.0
+tm1041543,Breaking Boundaries: The Science of Our Planet,2021,73,['documentation'],['US'],7.8,2663.0
+tm1084481,Blood Brothers: Malcolm X & Muhammad Ali,2021,95,"['documentation', 'history', 'sport']",['US'],6.9,946.0
+tm1000599,The Last Forest,2021,74,"['drama', 'documentation']",['BR'],7.3,425.0
+tm1002408,Biking Borders - eine etwas andere Reise,2021,89,['documentation'],['DE'],7.7,933.0
+tm1187638,Ronny Chieng: Speakeasy,2022,60,"['comedy', 'documentation']",['US'],6.3,1146.0
+tm1001108,Biggie: I Got a Story to Tell,2021,97,"['documentation', 'music']",['US'],6.8,5028.0
+tm1201453,"Sing, Dance, Act: Kabuki featuring Toma Ikuta",2022,87,['documentation'],[],6.9,35.0
+tm989672,Creating The Queen's Gambit,2021,14,['documentation'],['US'],6.9,609.0
+tm1200703,Christina P: Mom Genes,2022,62,"['comedy', 'documentation']",[],5.8,605.0
+tm1077013,Memories of a Murderer: The Nilsen Tapes,2021,84,"['documentation', 'crime']",['GB'],6.3,3301.0
+tm1031186,Heroes: Silence and Rock & Roll,2021,94,"['documentation', 'music']",['ES'],7.5,668.0
+tm985712,"Strip Down, Rise Up",2021,112,['documentation'],['US'],5.2,656.0
+tm1217689,Yuri Marçal: Honest Mistake,2022,59,"['comedy', 'documentation']",[],6.1,41.0
+tm1094069,The Women and the Murderer,2021,92,"['documentation', 'crime']",['FR'],6.4,1237.0
+tm902870,7 Yards: The Chris Norton Story,2021,93,['documentation'],['US'],7.8,258.0
+tm1165118,UFO,2022,109,"['drama', 'romance', 'documentation']",['TR'],4.7,784.0
+tm1107848,Making Malinche: A Documentary by Nacho Cano,2021,89,"['documentation', 'music']",[],5.1,34.0
+tm1147890,The Hand of God: Through the Eyes of Sorrentino,2021,8,['documentation'],['IT'],7.1,10.0
+tm1030283,Why Did You Kill Me?,2021,83,"['crime', 'documentation']",['US'],5.6,4175.0
+tm1039422,Nail Bomber: Manhunt,2021,72,"['crime', 'history', 'documentation']",['GB'],6.3,2142.0
+tm1196455,The Photographer: Murder in Pinamar,2022,105,"['documentation', 'crime']",['AR'],6.7,494.0
+tm1033803,Searching for Sheela,2021,58,"['documentation', 'crime']",['IN'],4.3,1360.0
+tm1118822,Sex: Unzipped,2021,59,"['comedy', 'documentation']",['US'],2.5,411.0
+tm1185568,Broken Idol: The Undoing of Diomedes Díaz,2022,102,"['documentation', 'crime']",['CO'],6.3,178.0
+tm1119455,Camp Confidential: America's Secret Nazis,2021,34,"['documentation', 'animation', 'history']",['US'],6.3,
+tm1137797,137 Shots,2021,104,"['documentation', 'crime']",[],6.2,869.0
+tm942277,Accomplice,2021,52,['documentation'],"['US', 'IL']",7.2,380.0
+tm1174919,Mike Epps: Indiana Mike,2022,58,"['comedy', 'documentation']",[],4.2,224.0
+tm1166429,Whindersson Nunes: My Own Show!,2022,63,"['comedy', 'documentation']",['BR'],7.0,251.0
+tm1068692,Emicida AmarElo Live in Sao Paulo,2021,99,"['documentation', 'music']",['BR'],7.6,44.0
+tm983466,"Crack: Cocaine, Corruption & Conspiracy",2021,89,"['documentation', 'crime', 'history']",['US'],6.7,3324.0
+tm1147172,The Characters of the Continent,2021,9,['documentation'],['US'],6.6,61.0
+tm1038857,Lady Boss: The Jackie Collins Story,2021,96,['documentation'],"['GB', 'US']",6.8,401.0
+tm1044137,Headspace Unwind you Mind,2021,15,"['animation', 'documentation']",['US'],7.2,132.0
+tm1040733,In Our Mothers' Gardens,2021,84,['documentation'],['US'],8.6,132.0
+tm983730,Amy Tan: Unintended Memoir,2021,101,['documentation'],['US'],7.7,321.0
+tm1082515,Untold: Caitlyn Jenner,2021,69,"['documentation', 'sport']",['US'],6.4,2456.0
+tm1171107,Surviving Paradise: A Family Tale,2022,78,['documentation'],"['GB', 'US']",7.5,612.0
+tm1119172,Puff: Wonders of the Reef,2021,59,"['documentation', 'family']","['AU', 'US']",7.1,796.0
+tm1118234,Lords of Scam,2021,105,"['documentation', 'crime']",['FR'],6.3,641.0
+tm1172600,11M,2022,92,['documentation'],['ES'],7.0,1868.0
+tm1179176,"Michela Giraud: The Truth, I Swear!",2022,60,"['comedy', 'documentation']",['IT'],5.5,68.0
+tm1033369,Plastic Island,2021,102,['documentation'],['ID'],8.0,22.0
+tm1029279,Dolly Parton: A MusiCares Tribute,2021,55,"['music', 'documentation']",['US'],6.6,234.0
+tm988879,Tony Parker: The Final Shot,2021,98,"['documentation', 'sport']",['FR'],6.8,1400.0
+tm1033635,Sisters on Track,2021,96,"['documentation', 'sport']",['US'],5.8,199.0
+tm1076198,Blue Dream: The Road to Wembley,2021,61,"['documentation', 'sport']",['IT'],7.1,792.0
+tm1064193,Private Network: Who Killed Manuel Buendía?,2021,100,"['history', 'documentation', 'crime']",['MX'],6.8,224.0
+tm1146635,Daiki Tsuneta: Tokyo Chaotic,2021,89,"['documentation', 'music']",['JP'],7.5,19.0
+tm1120766,Angèle,2021,84,"['documentation', 'music']","['FR', 'BE']",7.0,518.0
+tm1046969,Myriam Fares: The Journey,2021,72,"['documentation', 'music']",['LB'],2.3,167.0
+tm1099320,Convergence: Courage in a Crisis,2021,113,['documentation'],"['GB', 'US']",5.4,262.0
+tm1183575,Celeb Five: Behind the Curtain,2022,55,"['comedy', 'documentation']",['KR'],4.7,29.0

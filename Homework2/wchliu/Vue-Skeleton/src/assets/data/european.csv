@@ -1,0 +1,330 @@
+id,title,release_year,runtime,genres,production_country,imdb_score,imdb_votes
+tm154986,Deliverance,1972,109,"['drama', 'action', 'thriller', 'european']",['US'],7.7,107673.0
+tm67378,The Professionals,1966,117,"['western', 'action', 'european']",['US'],7.3,16446.0
+tm89386,Hitler: A Career,1977,150,"['history', 'documentation', 'european']",['DE'],7.5,2460.0
+tm180542,Once Upon a Time in America,1984,139,"['crime', 'drama', 'european']","['US', 'IT']",8.3,345714.0
+tm54450,Christine,1983,110,"['horror', 'thriller', 'european']",['US'],6.7,81922.0
+tm145608,Awakenings,1990,120,"['drama', 'european']",['US'],7.8,139240.0
+tm147710,National Lampoon's Christmas Vacation,1989,97,"['comedy', 'european']",['US'],7.5,185760.0
+tm52274,The Little Wars,1982,108,"['war', 'drama', 'european']","['FR', 'LB']",6.3,152.0
+tm116655,Léon: The Professional,1994,111,"['crime', 'drama', 'action', 'thriller', 'european']","['US', 'FR']",8.5,1137357.0
+tm53991,Big Daddy,1999,93,"['drama', 'comedy', 'european']",['US'],6.4,215053.0
+tm44402,"Girl, Interrupted",1999,127,"['drama', 'european']","['DE', 'US']",7.3,183154.0
+tm6859,My Girl,1991,103,"['drama', 'family', 'romance', 'comedy', 'european']",['US'],6.9,80590.0
+tm192431,The Devil's Own,1997,107,"['crime', 'thriller', 'drama', 'action', 'european']",['US'],6.2,65323.0
+tm56033,Croupier,1998,94,"['drama', 'european', 'crime']","['IE', 'GB', 'DE', 'FR']",7.0,21599.0
+tm188606,Sankofa,1993,124,"['drama', 'european']","['DE', 'GH', 'GB', 'US', 'BF']",7.0,692.0
+tm52083,West Beirut,1998,105,"['romance', 'drama', 'comedy', 'war', 'european']","['FR', 'NO', 'LB', 'BE']",7.6,4221.0
+tm7032,Out of Life,1991,97,"['drama', 'war', 'crime', 'european']","['BE', 'FR', 'IT', 'LB']",6.9,376.0
+tm44776,The Other,1999,106,"['romance', 'european', 'drama']","['FR', 'EG']",5.9,997.0
+tm150112,Old School,2003,88,"['comedy', 'european']",['US'],7.0,229171.0
+tm39030,Casino Royale,2006,144,"['action', 'thriller', 'european']","['DE', 'GB', 'US', 'BS', 'CZ']",8.0,649676.0
+tm95477,Troy,2004,163,"['action', 'history', 'war', 'drama', 'european']","['MT', 'GB', 'US']",7.3,527447.0
+tm93055,Grown Ups,2010,102,"['comedy', 'drama', 'european']",['US'],5.9,249934.0
+tm131038,Public Enemies,2009,140,"['action', 'crime', 'drama', 'history', 'european']","['US', 'JP']",7.0,300773.0
+tm20959,The Pursuit of Happyness,2006,117,"['drama', 'european']",['US'],8.0,501457.0
+tm136308,Monster,2003,110,"['crime', 'drama', 'thriller', 'european']",['US'],7.3,150339.0
+tm29737,Rambo,2008,92,"['action', 'thriller', 'war', 'european']","['DE', 'US']",7.0,230333.0
+tm39828,Semi-Pro,2008,94,"['comedy', 'sport', 'european']",['US'],5.8,82159.0
+tm95252,The Book of Eli,2010,118,"['scifi', 'action', 'thriller', 'drama', 'european']",['US'],6.8,314920.0
+tm94606,Let Me In,2010,116,"['drama', 'horror', 'thriller', 'fantasy', 'european']","['GB', 'US']",7.1,121008.0
+tm74780,The Bucket List,2007,97,"['drama', 'comedy', 'european']",['US'],7.4,244028.0
+tm78919,Mr. Bean's Holiday,2007,90,"['family', 'comedy', 'european']","['US', 'FR', 'DE', 'GB']",6.4,125160.0
+tm173066,The Interpreter,2005,128,"['thriller', 'crime', 'european']","['GB', 'US', 'FR', 'DE']",6.4,106781.0
+tm161263,The Cave,2005,97,"['horror', 'thriller', 'action', 'scifi', 'european']","['DE', 'US']",5.1,38734.0
+tm118462,Half Past Dead,2002,98,"['thriller', 'action', 'crime', 'european']","['DE', 'US']",4.6,15740.0
+tm160800,Chaos,2005,106,"['crime', 'drama', 'action', 'thriller', 'european']","['CA', 'GB', 'US']",6.4,54900.0
+tm100688,Even the Rain,2010,104,"['drama', 'european', 'history']","['FR', 'MX', 'ES']",7.4,13533.0
+tm38896,From Within,2008,89,"['horror', 'thriller', 'documentation', 'war', 'european']",['US'],5.6,7650.0
+tm82765,Swades,2004,189,"['drama', 'european']","['IN', 'US']",8.1,89556.0
+tm72587,Guru,2007,166,"['romance', 'documentation', 'drama', 'european']",['IN'],7.7,23708.0
+tm30170,Don,2006,167,"['thriller', 'crime', 'action', 'european']",['IN'],7.1,37131.0
+tm48083,Te quiero,2001,85,"['drama', 'comedy', 'european']",['FR'],5.0,75.0
+tm160596,Zozo,2005,105,"['drama', 'european', 'family', 'war']","['CZ', 'GB', 'DK', 'NL', 'SE']",6.5,3225.0
+tm68191,My Führer,2007,89,"['war', 'comedy', 'drama', 'european']",['DE'],5.5,4442.0
+tm29028,Salt of This Sea,2008,109,"['drama', 'romance', 'european']","['BE', 'FR', 'ES', 'CH', 'PS']",6.8,1235.0
+tm76029,Under the Bombs,2007,98,"['war', 'romance', 'drama', 'history', 'european']","['LB', 'GB', 'FR']",7.0,1655.0
+tm21155,Falafel,2006,80,"['drama', 'european']","['LB', 'FR']",6.7,217.0
+tm85563,Ezra,2007,105,"['drama', 'european']","['GB', 'US', 'AT', 'FR', 'DE', 'NG']",6.4,274.0
+tm167232,Unknown,2011,113,"['thriller', 'action', 'european']","['GB', 'FR', 'DE']",6.8,260783.0
+tm38980,Rise of the Guardians,2012,97,"['fantasy', 'action', 'family', 'animation', 'thriller', 'scifi', 'comedy', 'drama', 'european']",['US'],7.2,173157.0
+tm183037,Don 2,2011,139,"['action', 'thriller', 'crime', 'european']","['IN', 'DE']",7.0,52750.0
+tm177958,Pyaar Ka Punchnama,2011,149,"['romance', 'drama', 'comedy', 'european']",['IN'],7.6,21521.0
+tm172883,Game,2011,135,"['thriller', 'action', 'crime', 'drama', 'european']",['IN'],5.2,2353.0
+tm172504,"Darling, Something's Wrong with Your Head",2011,78,"['drama', 'romance', 'war', 'european']","['PS', 'NL', 'US', 'AE']",6.7,133.0
+tm140389,Paddington,2014,95,"['comedy', 'family', 'fantasy', 'animation', 'european']","['US', 'FR', 'GB']",7.2,113735.0
+tm176864,Rush,2013,123,"['drama', 'action', 'sport', 'european']","['US', 'DE', 'GB']",8.1,471586.0
+tm163686,Blue Jasmine,2013,99,"['drama', 'comedy', 'european']",['US'],7.3,201749.0
+tm168400,Empire State,2013,94,"['action', 'drama', 'crime', 'thriller', 'european']",['US'],5.2,21538.0
+tm171042,The Call,2013,94,"['thriller', 'crime', 'drama', 'horror', 'action', 'european']",['US'],6.7,121843.0
+tm187279,Philomena,2013,97,"['drama', 'comedy', 'european']",['GB'],7.6,99647.0
+tm176630,The Butler,2013,132,"['drama', 'european']",['US'],7.2,114768.0
+tm181081,The Railway Man,2013,116,"['drama', 'history', 'european', 'romance', 'war']","['AU', 'CH', 'GB']",7.1,40175.0
+tm143642,Who Am I,2014,105,"['thriller', 'european', 'scifi', 'crime', 'drama']",['DE'],7.5,55044.0
+tm185208,Elena,2013,82,"['documentation', 'european', 'drama', 'family']","['US', 'BR']",7.6,1823.0
+tm35895,Buddies,2013,94,"['drama', 'comedy', 'action', 'documentation', 'european']",['BR'],6.5,1082.0
+tm2269,Selfie,2014,123,"['comedy', 'documentation', 'drama', 'european']",['RO'],6.0,1671.0
+tm157609,Born in Gaza,2014,69,"['documentation', 'european']",['ES'],7.4,511.0
+tm587320,El Mago Pop,2013,44,"['reality', 'european']",['ES'],6.8,21.0
+tm181051,Giraffada,2014,85,"['drama', 'european']","['DE', 'IT', 'PS', 'FR']",6.3,243.0
+tm200926,Heritages,2014,96,"['drama', 'documentation', 'european']","['AE', 'LB']",7.3,131.0
+tm144541,Refugiado,2014,95,"['thriller', 'drama', 'european']",['AR'],6.4,373.0
+tm156397,Starting Over Again,2014,130,"['comedy', 'drama', 'documentation', 'european']",['PH'],8.3,15.0
+tm195209,Legend,2015,131,"['thriller', 'crime', 'drama', 'european']","['GB', 'US', 'FR']",6.9,178601.0
+tm242705,Raw,2016,99,"['horror', 'drama', 'fantasy', 'european']","['FR', 'BE']",7.0,72460.0
+tm196296,A Monster Calls,2016,108,"['drama', 'animation', 'family', 'fantasy', 'thriller', 'european']","['US', 'GB', 'ES']",7.4,87806.0
+tm199700,The Danish Girl,2015,119,"['drama', 'romance', 'european']","['BE', 'DK', 'DE', 'GB', 'US']",7.1,183579.0
+tm206512,Circle,2015,87,"['thriller', 'drama', 'horror', 'scifi', 'european']",['US'],6.0,52925.0
+tm205812,The Siege of Jadotville,2016,108,"['war', 'drama', 'thriller', 'action', 'history', 'european']","['IE', 'ZA']",7.2,39404.0
+tm135543,By the Sea,2015,122,"['drama', 'romance', 'european']","['US', 'FR', 'MT']",5.3,20541.0
+tm244507,The Distinguished Citizen,2016,118,"['drama', 'comedy', 'european']","['ES', 'AR']",7.5,11876.0
+tm253080,Rocco,2016,105,"['documentation', 'european']",['FR'],5.7,3998.0
+tm244134,Tramps,2016,82,"['comedy', 'romance', 'documentation', 'european']",['US'],6.5,5605.0
+tm247642,Amanda Knox,2016,92,"['documentation', 'crime', 'european']","['DK', 'US']",6.9,24488.0
+tm205870,Message from the King,2016,102,"['thriller', 'action', 'crime', 'drama', 'european']",['FR'],6.4,16513.0
+tm271070,The Warriors Gate,2016,108,"['action', 'family', 'fantasy', 'comedy', 'european']","['CN', 'FR', 'CA']",5.4,5098.0
+tm244513,Divines,2016,105,"['drama', 'crime', 'european']","['FR', 'QA']",7.4,9821.0
+tm246175,The 101-Year-Old Man Who Skipped Out on the Bill and Disappeared,2016,108,"['action', 'comedy', 'crime', 'european']",['SE'],6.3,6023.0
+tm217939,Un + une,2015,115,"['comedy', 'romance', 'drama', 'european']",['FR'],6.2,2336.0
+tm275800,The Lighthouse of the Orcas,2016,110,"['drama', 'romance', 'european']","['AR', 'ES']",6.7,3910.0
+tm242646,Toro,2016,105,"['drama', 'crime', 'thriller', 'action', 'european']","['FR', 'ES']",5.9,3256.0
+tm242687,Riphagen the Untouchable,2016,132,"['thriller', 'drama', 'war', 'european']",['NL'],7.1,7800.0
+tm267948,7 Years,2016,77,"['drama', 'european']",['ES'],6.7,4961.0
+tm211461,Much Loved,2015,108,"['drama', 'european']","['FR', 'MA']",6.2,2772.0
+tm245102,The Next Skin,2016,100,"['drama', 'thriller', 'european']",['ES'],6.2,1820.0
+tm201906,Belgica,2016,127,"['drama', 'european']","['FR', 'BE']",6.7,4519.0
+tm242422,In the Shadow of Iris,2016,99,"['thriller', 'drama', 'crime', 'european']",['FR'],6.1,4275.0
+tm193211,Mucize,2015,136,"['drama', 'comedy', 'romance', 'documentation', 'european']",['TR'],7.6,12593.0
+tm270555,The Ivory Game,2016,112,"['documentation', 'european']","['AT', 'US']",7.9,3243.0
+tm236999,Our Lovers,2016,88,"['romance', 'comedy', 'drama', 'european']",['ES'],6.7,4228.0
+tm270982,Layla M.,2016,98,"['drama', 'european']",['NL'],6.6,1722.0
+tm311494,Slam,2016,100,"['comedy', 'romance', 'drama', 'european']",['IT'],6.1,1329.0
+tm245155,The Worthy,2016,95,"['thriller', 'action', 'scifi', 'fantasy', 'family', 'european']",['AE'],5.1,2004.0
+tm232832,The Lion Woman,2016,126,"['drama', 'european']","['SE', 'NO']",6.6,1410.0
+tm247644,Schubert in Love,2016,94,"['comedy', 'european']",['DE'],5.0,371.0
+tm283938,Selfie 69,2016,116,"['comedy', 'action', 'romance', 'european']",['RO'],6.1,1700.0
+tm246543,Journey to Greenland,2016,98,"['drama', 'comedy', 'european']","['GL', 'FR']",6.3,1343.0
+tm234064,Halal Love,2016,95,"['romance', 'drama', 'comedy', 'european']","['LB', 'DE']",6.3,382.0
+tm240733,100 Meters,2016,108,"['drama', 'comedy', 'european']",['ES'],7.5,6248.0
+tm149212,Olmo and the Seagull,2015,90,"['drama', 'european', 'romance', 'family', 'documentation']","['PT', 'SE', 'DK', 'BR', 'FR']",7.2,676.0
+tm307997,Offline: Are You Ready for the Next Level?,2016,88,"['action', 'comedy', 'european']",['DE'],5.0,783.0
+tm219699,Phantom,2015,136,"['thriller', 'action', 'drama', 'crime', 'horror', 'european']",['IN'],5.9,9281.0
+tm234136,MindGamers,2015,97,"['action', 'scifi', 'thriller', 'european']",['AT'],3.6,1111.0
+tm267017,I Love You,2016,98,"['comedy', 'drama', 'romance', 'european']",['SE'],4.7,1008.0
+tm271974,Pettson and Findus: The Best Christmas Ever,2016,82,"['family', 'animation', 'comedy', 'fantasy', 'european']",['DE'],5.5,356.0
+tm327551,Born in Syria,2016,86,"['documentation', 'european']","['ES', 'DK']",7.7,280.0
+tm282988,Dieter Nuhr: Nuhr in Berlin,2016,68,"['comedy', 'european']",['DE'],4.7,70.0
+tm368725,Love Is a Story,2015,107,"['romance', 'european', 'comedy']",['RO'],6.0,365.0
+tm267112,Gang of the Caribbean,2016,90,"['thriller', 'european']",['FR'],5.1,299.0
+tm232797,Dunkirk,2017,107,"['drama', 'war', 'action', 'thriller', 'history', 'european']","['FR', 'NL', 'GB', 'US']",7.8,619645.0
+tm288499,Roma,2018,135,"['drama', 'european']","['US', 'MX']",7.7,155787.0
+tm370212,Adrift,2018,96,"['action', 'thriller', 'romance', 'drama', 'european']","['HK', 'IS', 'US']",6.6,55597.0
+tm350379,Ghostland,2018,91,"['thriller', 'horror', 'drama', 'european']","['CA', 'FR']",6.4,31379.0
+tm233482,The Foreigner,2017,113,"['action', 'thriller', 'crime', 'drama', 'european']","['IN', 'CN', 'US', 'GB']",7.0,113338.0
+tm435086,Level 16,2018,102,"['scifi', 'thriller', 'drama', 'european']",['CA'],6.0,11823.0
+tm273294,I Don't Feel at Home in This World Anymore,2017,93,"['drama', 'thriller', 'crime', 'comedy', 'european']",['US'],6.9,55549.0
+tm362098,The Kindergarten Teacher,2018,96,"['drama', 'thriller', 'european']",['US'],6.7,15974.0
+tm346943,Kodachrome,2017,105,"['drama', 'comedy', 'european']",['US'],6.8,16821.0
+tm243326,Anon,2018,100,"['scifi', 'thriller', 'action', 'drama', 'crime', 'european']","['US', 'GB']",6.1,42608.0
+tm410742,Happy as Lazzaro,2018,125,"['fantasy', 'drama', 'european']","['IT', 'CH', 'FR']",7.5,18006.0
+tm244229,Everybody Knows,2018,132,"['drama', 'thriller', 'crime', 'european']","['IT', 'ES', 'FR']",6.9,34365.0
+tm348993,22 July,2018,143,"['thriller', 'crime', 'drama', 'history', 'european']","['US', 'IS', 'NO']",6.8,33609.0
+tm423436,Ben Is Back,2018,103,"['drama', 'european']",['US'],6.7,21735.0
+tm433381,Mirage,2018,129,"['fantasy', 'thriller', 'drama', 'romance', 'european']",['ES'],7.4,54188.0
+tm314477,Skins,2017,78,"['drama', 'comedy', 'fantasy', 'european']",['ES'],6.1,5892.0
+tm324155,Security,2017,87,"['thriller', 'action', 'crime', 'european']",['US'],5.7,18943.0
+tm139885,The Other Side of the Wind,2018,122,"['drama', 'european']","['IR', 'US', 'FR']",6.7,7104.0
+tm292837,The Bar,2017,102,"['horror', 'thriller', 'comedy', 'fantasy', 'european']",['ES'],6.3,26370.0
+tm351101,Errementari: The Blacksmith and the Devil,2018,98,"['drama', 'fantasy', 'horror', 'thriller', 'european']","['ES', 'FR']",6.4,11653.0
+tm298339,Handsome Devil,2017,95,"['drama', 'comedy', 'sport', 'european']",['IE'],7.0,14290.0
+tm414709,Siberia,2018,104,"['romance', 'thriller', 'crime', 'european']","['CA', 'US', 'DE']",4.3,15369.0
+tm367250,The Resistance Banker,2018,124,"['drama', 'war', 'european']",['NL'],6.9,9470.0
+tm438502,Sad Hill Unearthed,2017,86,"['documentation', 'european']",['ES'],7.4,1613.0
+tm219258,Brain on Fire,2017,88,"['drama', 'european']","['CA', 'IE']",6.6,21444.0
+tm407827,Girl,2018,105,"['drama', 'european']","['NL', 'BE']",7.1,14356.0
+tm324820,MFKZ,2018,95,"['scifi', 'comedy', 'thriller', 'animation', 'action', 'european']","['FR', 'JP']",6.7,4412.0
+tm307515,Amar,2017,105,"['romance', 'drama', 'european']","['US', 'ES']",5.1,4459.0
+tm407775,Lady J,2018,109,"['drama', 'romance', 'european']",['FR'],6.8,3306.0
+tm429163,The Photographer of Mauthausen,2018,110,"['thriller', 'drama', 'history', 'war', 'european']",['ES'],6.7,10687.0
+tm372318,The World Is Yours,2018,94,"['comedy', 'crime', 'european']",['FR'],6.3,4342.0
+tm299761,Toc Toc,2017,90,"['comedy', 'family', 'fantasy', 'european']",['ES'],6.8,18865.0
+tm348003,Acts of Vengeance,2017,87,"['drama', 'thriller', 'action', 'crime', 'european']","['BG', 'US']",5.7,12160.0
+tm434917,I Am Jonas,2018,82,"['drama', 'romance', 'european']",['FR'],7.0,5896.0
+tm368538,MILF,2018,101,"['comedy', 'european']",['FR'],4.8,6223.0
+tm427293,Solo,2018,100,"['thriller', 'drama', 'romance', 'sport', 'european']",['ES'],5.0,2779.0
+tm353742,Bullet Head,2017,94,"['thriller', 'crime', 'drama', 'european']","['US', 'BG']",5.4,10149.0
+tm326624,Unrest,2017,97,"['documentation', 'drama', 'history', 'romance', 'european']","['US', 'DK', 'GB']",7.6,2904.0
+tm443993,"Take the Ball, Pass the Ball",2018,107,"['documentation', 'sport', 'european']",['ES'],7.9,3089.0
+tm357479,Day of the Dead: Bloodline,2017,90,"['horror', 'action', 'scifi', 'thriller', 'drama', 'european']","['US', 'BG']",3.4,11909.0
+tm300054,Orbiter 9,2017,95,"['drama', 'romance', 'scifi', 'european']",['ES'],5.9,7738.0
+tm320670,White Fang,2018,87,"['animation', 'family', 'drama', 'western', 'european']","['LU', 'US', 'FR']",6.9,3682.0
+tm371630,How to Be Really Bad,2018,100,"['comedy', 'fantasy', 'romance', 'family', 'european']",['DE'],6.2,1152.0
+tm266702,The Climb,2017,103,"['comedy', 'romance', 'action', 'drama', 'european']",['FR'],6.9,7505.0
+tm426569,A Twelve-Year Night,2018,117,"['drama', 'history', 'crime', 'european']","['AR', 'ES', 'UY']",7.5,9920.0
+tm344336,Burn Out,2018,107,"['thriller', 'crime', 'action', 'european']",['FR'],6.2,3803.0
+tm244300,Lommbock,2017,102,"['comedy', 'european']",['DE'],6.7,3687.0
+tm301024,Wedding Unplanned,2017,94,"['romance', 'comedy', 'drama', 'european']",['FR'],5.7,1707.0
+tm299764,The Motive,2017,104,"['drama', 'thriller', 'comedy', 'crime', 'european']","['ES', 'MX']",6.5,5713.0
+tm309903,The Little Vampire 3D,2017,83,"['family', 'fantasy', 'comedy', 'animation', 'horror', 'european']","['DE', 'DK', 'NL', 'GB']",5.4,1721.0
+tm362121,Time Share,2018,96,"['horror', 'thriller', 'drama', 'european']","['NL', 'MX']",5.9,2793.0
+tm299504,Holy Camp!,2017,109,"['comedy', 'romance', 'european']",['ES'],6.2,4052.0
+tm365824,Zero,2018,180,"['romance', 'drama', 'comedy', 'scifi', 'thriller', 'fantasy', 'european']",['IN'],5.2,27346.0
+tm376234,The Warning,2018,93,"['thriller', 'fantasy', 'crime', 'drama', 'action', 'horror', 'european']",['ES'],5.9,6356.0
+tm326773,Sunday's Illness,2018,113,"['drama', 'european']",['ES'],6.9,3570.0
+tm407714,I Am Not an Easy Man,2018,98,"['fantasy', 'comedy', 'european']",['FR'],6.3,14432.0
+tm318641,Justice,2017,99,"['western', 'drama', 'action', 'european']",['US'],4.0,1237.0
+tm328175,Budapest,2018,102,"['comedy', 'european']",['FR'],5.4,2952.0
+tm300027,Thi Mai,2018,99,"['comedy', 'family', 'european']",['ES'],6.0,2558.0
+tm406098,Battle,2018,95,"['drama', 'romance', 'music', 'european']","['NO', 'SE', 'DK', 'NL']",5.9,4248.0
+tm300056,Holy Goalie,2018,95,"['comedy', 'sport', 'european']",['ES'],5.3,1634.0
+tm244292,Bibi & Tina: Perfect Pandemonium,2017,110,"['fantasy', 'action', 'family', 'comedy', 'drama', 'european']",['DE'],4.0,470.0
+tm372662,The Skin of the Wolf,2018,110,"['romance', 'thriller', 'drama', 'action', 'european']",['ES'],5.8,3108.0
+tm270987,Sahara,2017,86,"['animation', 'comedy', 'family', 'action', 'romance', 'drama', 'european']","['CA', 'FR']",5.5,2802.0
+tm362074,And Breathe Normally,2018,102,"['drama', 'european']","['IS', 'SE', 'BE']",6.9,3073.0
+tm263427,The Invisible Guardian,2017,129,"['thriller', 'crime', 'european']","['DE', 'ES']",6.4,15901.0
+tm295177,It's for Your Own Good,2017,93,"['comedy', 'european']",['ES'],5.5,2347.0
+tm299783,The Laws of Thermodynamics,2018,100,"['comedy', 'european']",['ES'],6.0,2762.0
+tm416620,Quién te cantará,2018,125,"['drama', 'thriller', 'music', 'european']","['ES', 'FR']",6.9,2915.0
+tm354644,Something Huge,2017,86,"['comedy', 'european']",['ES'],4.4,483.0
+tm331117,Carbone,2017,104,"['thriller', 'crime', 'european']","['BE', 'FR']",6.5,2587.0
+tm359150,Nothing to Hide,2018,93,"['drama', 'comedy', 'european']","['BE', 'FR', 'IT']",6.8,15185.0
+tm358666,The Awakening of Motti Wolkenbruch,2018,94,"['comedy', 'drama', 'european']","['DE', 'CH']",6.6,4330.0
+tm428073,When Angels Sleep,2018,94,"['thriller', 'drama', 'horror', 'action', 'crime', 'fantasy', 'european']",['ES'],5.5,3684.0
+tm415875,Break,2018,91,"['drama', 'comedy', 'european']",['FR'],5.7,1177.0
+tm367473,Bad Seeds,2018,100,"['comedy', 'european']",['FR'],7.3,5461.0
+tm409942,Shéhérazade,2018,111,"['thriller', 'drama', 'romance', 'european']",['FR'],7.0,2242.0
+tm300440,The Mansion,2017,100,"['comedy', 'horror', 'european']",['FR'],4.6,2645.0
+tm408890,Yucatán,2018,129,"['comedy', 'romance', 'european']",['ES'],5.5,2143.0
+tm426117,On My Skin,2018,100,"['drama', 'european']",['IT'],7.3,9211.0
+tm322210,Bomb Scared,2017,89,"['comedy', 'european']",['ES'],5.6,2871.0
+tm266705,Giant,2017,114,"['drama', 'history', 'european']",['ES'],6.6,4302.0
+tm426983,Joy,2018,99,"['drama', 'european']",['AT'],6.6,1304.0
+tm299396,Getaway Plan,2017,105,"['action', 'thriller', 'crime', 'drama', 'european']",['ES'],5.6,1867.0
+tm445899,Struggle: The Life and Lost Art of Szukalski,2018,104,"['documentation', 'european']","['PL', 'US']",7.9,4195.0
+tm372054,The Tribe,2018,90,"['comedy', 'family', 'european']",['ES'],5.8,2721.0
+tm440255,The Plagues of Breslau,2018,93,"['thriller', 'action', 'crime', 'european']",['PL'],5.9,5012.0
+tm372917,Pope Francis: A Man of His Word,2018,96,"['documentation', 'european']","['IT', 'CH', 'VA', 'FR', 'DE']",6.4,2260.0
+tm420800,"To Each, Her Own",2018,95,"['comedy', 'drama', 'european']",['FR'],5.4,1756.0
+tm286532,Rock my Heart,2017,105,"['drama', 'family', 'action', 'european']",['DE'],6.5,993.0
+tm348392,The Last Shaman,2017,83,"['documentation', 'drama', 'family', 'european']","['PE', 'GB', 'US', 'IL', 'IT']",6.6,1911.0
+tm372486,All Good,2018,93,"['drama', 'comedy', 'european']",['DE'],6.5,1442.0
+tm320489,Expedition Happiness,2017,95,"['documentation', 'european']",['DE'],5.9,4538.0
+tm411467,Dany Boon: Des Hauts-De-France,2018,113,"['comedy', 'european']",['FR'],6.2,95.0
+tm370447,The Tree of Blood,2018,130,"['drama', 'european']",['ES'],6.3,3007.0
+tm408871,Jefe,2018,89,"['comedy', 'european']",['ES'],5.4,1102.0
+tm409817,Sir,2018,98,"['drama', 'romance', 'european']","['IN', 'FR']",7.7,7109.0
+tm283559,The Art of Loving: Story of Michalina Wislocka,2017,121,"['comedy', 'romance', 'drama', 'european']",['PL'],7.1,3690.0
+tm319512,The Girl from the Song,2017,102,"['romance', 'drama', 'music', 'european']",['ES'],5.6,1775.0
+tm358609,Sara's Notebook,2018,115,"['thriller', 'drama', 'european']",['ES'],5.9,2725.0
+tm345767,The Maus,2017,90,"['fantasy', 'horror', 'drama', 'european']",['ES'],4.7,6422.0
+tm322200,Superlopez,2018,108,"['comedy', 'scifi', 'action', 'european']",['ES'],5.4,3635.0
+tm314295,Nobody Speak: Trials of the Free Press,2017,95,"['documentation', 'european']","['US', 'NL']",6.4,4133.0
+tm418870,Close Enemies,2018,111,"['thriller', 'drama', 'european']","['FR', 'BE']",6.4,2629.0
+tm413955,A Fortunate Man,2018,162,"['drama', 'romance', 'european']",['DK'],7.2,6194.0
+tm359658,The 3rd Eye,2017,107,"['horror', 'thriller', 'animation', 'drama', 'fantasy', 'european']",['ID'],5.1,1405.0
+tm408892,Unbridled,2018,96,"['thriller', 'european']","['IT', 'ES']",5.0,507.0
+tm429984,Pachamama,2018,72,"['fantasy', 'family', 'animation', 'european']","['FR', 'LU', 'CA']",6.8,864.0
+tm411313,Forgive Us Our Debts,2018,104,"['drama', 'european']","['PL', 'CH', 'AL', 'IT']",6.2,1604.0
+tm367264,Milada,2017,130,"['drama', 'history', 'european']","['CZ', 'US']",6.3,1331.0
+tm334949,Right Here Right Now,2018,89,"['drama', 'comedy', 'music', 'european']",['DE'],5.4,311.0
+tm328052,Sparring,2017,95,"['drama', 'action', 'sport', 'european']",['FR'],6.4,627.0
+tm444821,5 Star Christmas,2018,92,"['comedy', 'european']",['IT'],4.5,775.0
+tm247631,Clair Obscur,2017,100,"['drama', 'european']",['TR'],6.5,2468.0
+tm366025,Blanche Gardin: I Talk to Myself,2017,88,"['comedy', 'european']",['FR'],7.9,136.0
+tm352033,The Milk System,2018,90,"['documentation', 'european']","['DE', 'IT']",7.0,532.0
+tm323602,The Price of Success,2017,92,"['drama', 'comedy', 'european']",['FR'],5.7,367.0
+tm410298,Samouni Road,2018,129,"['animation', 'documentation', 'european']","['IT', 'FR']",6.7,180.0
+tm299771,Gad Gone Wild,2017,57,"['comedy', 'european']",['FR'],6.9,408.0
+tm443034,Your Son,2018,103,"['drama', 'crime', 'thriller', 'action', 'european']",['ES'],6.1,4796.0
+tm349656,A Sort of Family,2017,95,"['thriller', 'crime', 'drama', 'european']","['BR', 'DK', 'FR', 'DE', 'PL', 'AR']",6.3,701.0
+tm375547,El club de los buenos infieles,2018,90,"['comedy', 'european']",['ES'],5.5,664.0
+tm351720,The Most Assassinated Woman in the World,2018,102,"['thriller', 'drama', 'european']","['US', 'BE', 'GB']",5.3,1092.0
+tm429186,Up Among the Stars,2018,86,"['drama', 'european']",['ES'],6.2,498.0
+tm459024,Food on the Go,2017,66,"['documentation', 'european']","['IT', 'AR']",6.3,215.0
+tm313472,The Lost Brother,2017,112,"['thriller', 'crime', 'drama', 'european']",['AR'],6.5,1710.0
+tm430057,Weapon of Choice,2018,90,"['documentation', 'european']","['AT', 'IQ', 'US']",4.8,162.0
+tm412515,Coffee for All,2017,69,"['documentation', 'european']","['AR', 'IT']",5.6,398.0
+tm434179,Two Catalonias,2018,116,"['documentation', 'history', 'european']",['ES'],6.4,677.0
+tm429174,Gun City,2018,127,"['thriller', 'action', 'crime', 'history', 'european']","['ES', 'FR']",6.3,3895.0
+tm466084,Voulez-vous rire avec moi ce soir?,2018,93,"['documentation', 'european']",['FR'],6.8,43.0
+tm368448,Eve's Apple,2017,90,"['documentation', 'european']",['ES'],5.8,87.0
+tm368350,Jonaki,2018,96,"['fantasy', 'drama', 'european']","['FR', 'IN', 'SG']",6.8,255.0
+tm438105,Into the Wind,2018,76,"['drama', 'european']",['CZ'],4.1,49.0
+tm407881,Fary Is the New Black,2018,74,"['comedy', 'european']",['FR'],5.8,136.0
+tm307383,Ghost Hunting,2017,94,"['documentation', 'european']","['FR', 'PS', 'CH', 'QA']",7.1,222.0
+tm244473,Blessed Benefit,2017,83,"['drama', 'comedy', 'european']","['NL', 'JO', 'DE']",6.6,671.0
+tm316923,Kartini: Princess of Java,2017,118,"['drama', 'family', 'history', 'european']",['ID'],7.6,511.0
+tm411528,Enissa Amani: Ehrenwort,2018,65,"['comedy', 'european']",['US'],5.5,194.0
+tm306680,Grillo vs Grillo,2017,95,"['comedy', 'european']",['XX'],5.3,130.0
+tm824398,The Platform,2019,95,"['scifi', 'thriller', 'horror', 'european']",['ES'],7.0,213699.0
+tm412937,Trading Paint,2019,87,"['drama', 'thriller', 'action', 'sport', 'european']","['GB', 'US']",4.4,1996.0
+tm818266,The Forgotten Battle,2020,124,"['drama', 'war', 'history', 'documentation', 'european']","['BE', 'LT', 'NL']",7.1,27275.0
+tm832345,365 Days,2020,114,"['romance', 'drama', 'european']",['PL'],3.3,84940.0
+tm450262,Last Breath,2019,85,"['documentation', 'european']","['BE', 'SE', 'GB']",7.7,5800.0
+tm358770,Paradise Hills,2019,95,"['scifi', 'thriller', 'fantasy', 'european']","['US', 'ES']",5.3,22454.0
+tm361998,The Wolf's Call,2019,115,"['thriller', 'action', 'scifi', 'war', 'drama', 'european']",['FR'],6.9,17468.0
+tm449105,Polar,2019,118,"['action', 'drama', 'crime', 'thriller', 'european']","['DE', 'US']",6.3,88281.0
+tm418847,The Silence,2019,90,"['drama', 'thriller', 'fantasy', 'horror', 'scifi', 'european']",['DE'],5.3,44818.0
+tm469991,I Lost My Body,2019,81,"['fantasy', 'drama', 'romance', 'animation', 'european']",['FR'],7.5,32380.0
+tm375883,Klaus,2019,96,"['fantasy', 'comedy', 'family', 'animation', 'european']",['ES'],8.1,143737.0
+tm426638,Vita & Virginia,2019,110,"['drama', 'romance', 'european']","['GB', 'IE']",5.7,3823.0
+tm898474,The Swarm,2020,101,"['horror', 'drama', 'fantasy', 'european']",['FR'],5.3,6892.0
+tm818502,"Live Twice, Love Once",2019,101,"['comedy', 'drama', 'european']",['ES'],7.2,6588.0
+tm858954,Nobody Sleeps in the Woods Tonight,2020,102,"['horror', 'thriller', 'drama', 'romance', 'fantasy', 'european']",['PL'],4.9,11603.0
+tm369389,The Silence of Others,2019,95,"['documentation', 'history', 'european']","['US', 'CA', 'FR', 'ES']",8.0,2096.0
+tm933375,Cuties,2020,96,"['drama', 'european']",['FR'],3.4,30338.0
+tm471922,An Easy Girl,2019,92,"['comedy', 'drama', 'european']",['FR'],5.6,5045.0
+tm447439,System Crasher,2019,118,"['drama', 'european']",['DE'],7.8,12874.0
+tm461366,The Coldest Game,2019,104,"['thriller', 'history', 'sport', 'european']",['PL'],6.2,10749.0
+tm812916,The Stronghold,2020,105,"['crime', 'thriller', 'action', 'european']",['FR'],6.9,10013.0
+tm447159,The Kindness of Strangers,2019,114,"['drama', 'european']","['US', 'FR', 'SE', 'GB', 'DE', 'DK', 'CA']",6.4,3747.0
+tm935895,The Life Ahead,2020,94,"['drama', 'european']","['IT', 'US']",6.8,14170.0
+tm857430,The Occupant,2020,103,"['thriller', 'european', 'horror', 'drama']",['ES'],6.4,17289.0
+tm455059,We Die Young,2019,93,"['thriller', 'drama', 'action', 'crime', 'european']","['BG', 'US']",5.2,4181.0
+tm1127695,The Endless Trench,2019,148,"['drama', 'history', 'thriller', 'war', 'action', 'european']","['ES', 'FR']",7.2,6400.0
+tm839411,Me Against You: Mr. S's Vendetta,2020,64,"['comedy', 'family', 'european']",['IT'],1.6,370.0
+tm449594,Brother,2019,96,"['drama', 'european']",['FR'],6.7,1066.0
+tm453994,The Body Remembers When the World Broke Open,2019,105,"['drama', 'european']","['NO', 'CA']",6.9,757.0
+tm453903,Elisa & Marcela,2019,118,"['drama', 'romance', 'european']",['ES'],6.6,4780.0
+tm954303,Ni de coña,2020,90,"['comedy', 'european']","['CO', 'ES']",2.8,387.0
+tm375446,Asphalt Burning,2020,100,"['comedy', 'action', 'european']","['NO', 'DE']",5.1,2315.0
+tm454156,In Family I Trust,2019,94,"['romance', 'comedy', 'european']",['ES'],6.2,3194.0
+tm502151,A Remarkable Tale,2019,93,"['comedy', 'drama', 'european']",['ES'],5.3,1251.0
+tm485801,So My Grandma's a Lesbian!,2019,94,"['comedy', 'romance', 'european']","['ES', 'PT']",4.3,1122.0
+tm518467,Dragon Rider,2020,91,"['animation', 'comedy', 'family', 'fantasy', 'action', 'european']","['ES', 'BE', 'DE']",5.6,1597.0
+tm452962,Eye for an Eye,2019,107,"['drama', 'thriller', 'crime', 'action', 'european']","['US', 'FR', 'ES']",6.6,7625.0
+tm458893,"Oh, Ramona!",2019,109,"['comedy', 'romance', 'european']",['RO'],4.8,8895.0
+tm854876,Out of My League,2020,90,"['romance', 'comedy', 'drama', 'european']",['IT'],6.1,2734.0
+tm460360,4 latas,2019,105,"['comedy', 'drama', 'european']","['ES', 'FR']",5.9,3268.0
+tm514257,The Legacy of the Bones,2019,121,"['crime', 'thriller', 'european']",['ES'],6.3,8876.0
+tm835432,Sky High,2020,121,"['action', 'crime', 'thriller', 'drama', 'european']",['ES'],5.6,3532.0
+tm494531,Seventeen,2019,99,"['drama', 'european']",['ES'],7.2,3940.0
+tm496648,School Life,2019,111,"['drama', 'comedy', 'european']",['FR'],6.5,2592.0
+tm450698,The Ruthless,2019,111,"['crime', 'drama', 'european']","['FR', 'IT']",6.2,6237.0
+tm450832,Paradise Beach,2019,93,"['action', 'thriller', 'crime', 'drama', 'european']",['FR'],4.6,2242.0
+tm413558,Funan,2019,82,"['drama', 'history', 'war', 'animation', 'european']","['FR', 'LU', 'BE', 'KH']",6.8,935.0
+tm514494,Offering to the Storm,2020,139,"['crime', 'thriller', 'european']","['DE', 'ES']",6.2,6391.0
+tm494847,Made in China,2019,128,"['comedy', 'drama', 'romance', 'thriller', 'crime', 'european']",['IN'],6.2,4382.0
+tm484989,The Influence,2019,99,"['documentation', 'horror', 'european']",['ES'],4.6,3738.0
+tm843938,18 Presents,2020,110,"['drama', 'fantasy', 'european']",['IT'],6.9,3791.0
+tm948916,The Scary House,2020,100,"['thriller', 'family', 'fantasy', 'drama', 'horror', 'european']","['AT', 'DE']",5.4,3787.0
+tm351938,Girls with Balls,2019,77,"['horror', 'comedy', 'european']","['FR', 'BE']",3.9,3272.0
+tm452929,The Little Switzerland,2019,86,"['comedy', 'european']",['ES'],4.8,1260.0
+tm461827,Who Would You Take to a Deserted Island?,2019,90,"['comedy', 'drama', 'european']",['ES'],5.3,2487.0
+tm372035,Paris Is Us,2019,84,"['drama', 'european']",['FR'],4.6,1425.0
+tm938466,Kitty Love: An Homage to Cats,2020,60,"['documentation', 'european']",['NL'],5.1,472.0
+tm429172,The (Silent) War,2019,123,"['thriller', 'war', 'crime', 'action', 'drama', 'european']",['ES'],5.5,681.0
+tm462551,"¡Ay, mi madre!",2019,81,"['comedy', 'european']",['ES'],3.9,404.0
+tm463038,Despite Everything,2019,75,"['comedy', 'european']",['ES'],5.3,4956.0
+tm822596,Into the Beat,2020,102,"['music', 'romance', 'drama', 'european']",['DE'],5.3,1345.0
+tm425944,A Land Imagined,2019,95,"['thriller', 'drama', 'european']","['FR', 'NL', 'SG']",6.2,1297.0
+tm501222,Twin Murders: The Silence of the White City,2019,110,"['action', 'crime', 'drama', 'horror', 'thriller', 'european']",['ES'],5.3,5307.0
+tm431769,Once Again,2019,101,"['drama', 'romance', 'european']","['DE', 'IN', 'AT']",7.0,980.0
+tm474695,Dying to Tell,2019,87,"['documentation', 'european']",['ES'],6.8,351.0
+tm981475,Illegal Woman,2020,119,"['drama', 'crime', 'european']",['ES'],6.1,201.0
+tm437379,I'm Leaving Now,2019,74,"['documentation', 'european']","['MX', 'US']",6.6,111.0
+tm430120,Belmonte,2019,75,"['drama', 'comedy', 'european']","['UY', 'MX', 'ES']",6.1,382.0
+tm855641,Home2Home,2022,110,"['documentation', 'action', 'european']",['DE'],7.9,136.0
+tm945448,Vicky and Her Mystery,2021,84,"['drama', 'family', 'european']",['FR'],6.4,1900.0
+tm1000037,Je suis Karl,2021,126,"['drama', 'thriller', 'european', 'romance']","['CZ', 'DE']",5.4,1077.0
+tm462311,Latte and the Magic Waterstone,2022,82,"['animation', 'comedy', 'family', 'european']","['BE', 'DE']",5.6,955.0

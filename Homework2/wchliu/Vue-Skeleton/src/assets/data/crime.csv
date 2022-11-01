@@ -1,0 +1,534 @@
+id,title,release_year,runtime,genres,production_country,imdb_score,imdb_votes
+tm84618,Taxi Driver,1976,114,"['drama', 'crime']",['US'],8.2,808582.0
+tm14873,Dirty Harry,1971,102,"['thriller', 'action', 'crime']",['US'],7.7,155051.0
+tm119281,Bonnie and Clyde,1967,110,"['crime', 'drama', 'action']",['US'],7.7,112048.0
+tm135083,Cairo Station,1958,77,"['drama', 'crime', 'comedy']",['EG'],7.5,4471.0
+tm94651,Dostana,1980,161,"['drama', 'comedy', 'crime', 'romance', 'action']",['IN'],2.1,25.0
+tm19608,The Blazing Sun,1954,100,"['crime', 'romance', 'drama']",['EG'],7.4,1219.0
+tm356209,Singapore,1960,158,"['drama', 'thriller', 'crime']",['IN'],6.4,84.0
+tm90896,The Return of the Prodigal Son,1976,124,"['music', 'drama', 'crime']","['DZ', 'EG']",7.2,780.0
+tm336403,Khoon Khoon,1973,131,"['crime', 'thriller']",['IN'],5.1,41.0
+tm358653,Ujala,1959,142,"['romance', 'crime', 'drama']",['IN'],6.6,78.0
+tm155787,GoodFellas,1990,145,"['drama', 'crime']",['US'],8.7,1131681.0
+tm180542,Once Upon a Time in America,1984,139,"['crime', 'drama', 'european']","['US', 'IT']",8.3,345714.0
+tm177480,Police Academy,1984,97,"['crime', 'comedy']",['US'],6.7,124881.0
+tm159912,Agneepath,1990,174,"['drama', 'action', 'crime']",['IN'],7.6,8947.0
+tm51083,A Stoning in Fulham County,1988,120,"['thriller', 'crime', 'drama']",['US'],5.9,387.0
+tm258072,Adam: His Song Continues,1986,100,"['crime', 'drama']",['US'],7.0,212.0
+tm157853,In Defense of a Married Man,1990,94,"['drama', 'crime']",['US'],5.6,207.0
+tm446654,Mujrim,1989,162,"['drama', 'action', 'crime']",['IN'],5.4,197.0
+tm348735,Aakhri Adaalat,1988,148,"['action', 'crime', 'thriller']",['IN'],5.1,92.0
+tm15897,Se7en,1995,127,"['crime', 'thriller', 'drama']",['US'],8.6,1606270.0
+tm25947,Snatch,2000,103,"['crime', 'comedy']","['US', 'GB']",8.3,841435.0
+tm43808,The Talented Mr. Ripley,1999,139,"['thriller', 'drama', 'crime']",['US'],7.4,207524.0
+tm116655,Léon: The Professional,1994,111,"['crime', 'drama', 'action', 'thriller', 'european']","['US', 'FR']",8.5,1137357.0
+tm116488,Natural Born Killers,1994,118,"['thriller', 'drama', 'crime', 'action']",['US'],7.3,11.0
+tm191989,Donnie Brasco,1997,127,"['drama', 'thriller', 'crime']",['US'],7.7,303868.0
+tm118238,Wyatt Earp,1994,191,"['western', 'crime', 'action', 'drama']",['US'],6.7,50774.0
+tm111163,Eraser,1996,115,"['thriller', 'action', 'drama', 'crime']","['US', 'CA']",6.1,110921.0
+tm187791,In the Line of Fire,1993,128,"['drama', 'thriller', 'crime', 'action']",['US'],7.2,102916.0
+tm65686,U.S. Marshals,1998,131,"['thriller', 'crime', 'action']",['US'],6.5,105286.0
+tm12499,The Net,1995,114,"['thriller', 'action', 'crime', 'drama']",['US'],5.9,66667.0
+tm189764,Menace II Society,1993,97,"['drama', 'crime', 'thriller']",['US'],7.5,58179.0
+tm192431,The Devil's Own,1997,107,"['crime', 'thriller', 'drama', 'action', 'european']",['US'],6.2,65323.0
+tm56033,Croupier,1998,94,"['drama', 'european', 'crime']","['IE', 'GB', 'DE', 'FR']",7.0,21599.0
+tm41525,Herod's Law,1999,123,"['comedy', 'crime', 'thriller']",['MX'],7.8,6035.0
+tm184326,Damini,1993,175,"['drama', 'crime']",['IN'],7.8,3523.0
+tm58893,Duplicate,1998,165,"['comedy', 'action', 'crime', 'thriller']",['IN'],5.5,7618.0
+tm118438,Anjaam,1994,137,"['romance', 'crime', 'thriller', 'drama']",['IN'],6.6,6532.0
+tm340430,Govindha Govindha,1993,145,"['drama', 'action', 'crime']",['IN'],6.6,356.0
+tm7032,Out of Life,1991,97,"['drama', 'war', 'crime', 'european']","['BE', 'FR', 'IT', 'LB']",6.9,376.0
+tm256669,Gumrah,1993,149,"['drama', 'action', 'crime', 'thriller']",['IN'],6.1,795.0
+tm25389,Fiza,2000,170,"['romance', 'action', 'crime', 'drama', 'thriller']",['IN'],6.0,4213.0
+tm7810,Nightmare in Columbia County,1991,100,"['drama', 'thriller', 'crime']",['US'],5.5,345.0
+tm111828,Catch Me If You Can,2002,141,"['drama', 'crime']",['US'],8.1,952602.0
+tm27911,The Departed,2006,151,"['drama', 'thriller', 'crime', 'action']",['US'],8.5,1296244.0
+tm42877,Wanted,2008,110,"['action', 'thriller', 'crime', 'fantasy']","['DE', 'US']",6.7,384995.0
+tm78592,Michael Clayton,2007,114,"['thriller', 'drama', 'crime']",['US'],7.2,165109.0
+tm105329,Road to Perdition,2002,117,"['thriller', 'documentation', 'drama', 'crime']",['US'],7.7,265216.0
+tm154187,Sherlock Holmes,2009,129,"['crime', 'thriller', 'action']","['AU', 'DE', 'GB', 'US']",7.6,625708.0
+tm131038,Public Enemies,2009,140,"['action', 'crime', 'drama', 'history', 'european']","['US', 'JP']",7.0,300773.0
+tm35463,Blow,2001,124,"['crime', 'drama']",['US'],7.5,258431.0
+tm30603,Hancock,2008,92,"['fantasy', 'action', 'crime', 'drama']",['US'],6.4,476593.0
+tm136308,Monster,2003,110,"['crime', 'drama', 'thriller', 'european']",['US'],7.3,150339.0
+tm78067,The Girl Next Door,2007,91,"['crime', 'drama', 'horror', 'thriller']",['US'],6.5,26293.0
+tm40009,21,2008,123,"['crime', 'drama', 'history', 'thriller']",['US'],6.8,249016.0
+tm102337,A Nightmare on Elm Street,2010,95,"['horror', 'thriller', 'crime', 'drama']",['US'],5.2,99894.0
+tm159901,Miss Congeniality 2: Armed and Fabulous,2005,115,"['action', 'comedy', 'crime']",['US'],5.1,74637.0
+tm173066,The Interpreter,2005,128,"['thriller', 'crime', 'european']","['GB', 'US', 'FR', 'DE']",6.4,106781.0
+tm118637,John Q,2002,116,"['drama', 'thriller', 'crime']",['US'],7.0,133215.0
+tm137362,The Texas Chainsaw Massacre,2003,98,"['horror', 'crime']",['US'],6.2,141736.0
+tm141707,Blood and Bone,2009,93,"['thriller', 'sport', 'action', 'crime', 'drama']",['US'],6.7,33051.0
+tm78671,Cleaner,2007,88,"['thriller', 'crime']",['US'],6.1,42285.0
+tm101249,Cop Out,2010,107,"['crime', 'action', 'comedy', 'thriller']",['US'],5.5,88026.0
+tm81270,Starsky & Hutch,2004,101,"['comedy', 'crime']",['US'],6.1,146880.0
+tm89684,New York Minute,2004,87,"['comedy', 'crime', 'family', 'romance']",['US'],4.9,23476.0
+tm100015,Takers,2010,107,"['action', 'crime', 'drama', 'thriller']",['US'],6.2,62464.0
+tm118462,Half Past Dead,2002,98,"['thriller', 'action', 'crime', 'european']","['DE', 'US']",4.6,15740.0
+tm164557,Initial D,2005,107,"['crime', 'thriller', 'drama', 'action', 'animation', 'romance', 'comedy']","['JP', 'HK']",6.3,8678.0
+tm160800,Chaos,2005,106,"['crime', 'drama', 'action', 'thriller', 'european']","['CA', 'GB', 'US']",6.4,54900.0
+tm22342,Waist Deep,2006,97,"['thriller', 'action', 'drama', 'crime']",['US'],5.8,9990.0
+tm22636,Trailer Park Boys: The Movie,2006,95,"['comedy', 'crime']",['CA'],7.1,12910.0
+tm85549,Tito,2004,120,"['documentation', 'crime', 'drama', 'romance', 'action']",['EG'],7.2,3214.0
+tm138497,Trailer Park Boys: Countdown to Liquor Day,2009,102,"['comedy', 'crime']",['CA'],7.3,7488.0
+tm86051,Black Friday,2004,161,"['crime', 'history', 'action', 'drama']",['IN'],8.4,20768.0
+tm41508,First Sunday,2008,96,"['comedy', 'action', 'crime', 'drama']",['US'],4.5,10927.0
+tm33981,Bon Cop Bad Cop,2006,116,"['comedy', 'crime', 'action', 'scifi', 'drama', 'thriller']",['CA'],6.5,61.0
+tm32885,Rang De Basanti,2006,157,"['drama', 'history', 'comedy', 'crime']",['IN'],8.1,118477.0
+tm83175,Welcome,2007,160,"['drama', 'action', 'comedy', 'romance', 'crime']",['IN'],7.0,22243.0
+tm22540,Phir Hera Pheri,2006,155,"['comedy', 'crime']",['IN'],7.1,23119.0
+tm30170,Don,2006,167,"['thriller', 'crime', 'action', 'european']",['IN'],7.1,37131.0
+tm33067,Race,2008,161,"['drama', 'action', 'thriller', 'crime', 'comedy']",['IN'],7.0,63.0
+tm70222,Sivaji: The Boss,2007,189,"['action', 'drama', 'thriller', 'crime']",['IN'],7.5,19777.0
+tm352243,Interview with a Serial Killer,2008,44,"['documentation', 'crime']",['US'],5.9,611.0
+tm101609,Raajneeti,2010,167,"['drama', 'thriller', 'crime']",['IN'],7.1,17697.0
+tm93004,Yuva,2004,161,"['crime', 'action', 'drama', 'thriller']",['IN'],7.3,8929.0
+tm111226,Awara Paagal Deewana,2002,169,"['comedy', 'action', 'crime', 'drama', 'thriller']",['IN'],6.2,8393.0
+tm106625,"LSD: Love, Sex aur Dhokha",2010,108,"['drama', 'comedy', 'crime', 'romance']",['IN'],7.2,5684.0
+tm149209,Kaminey,2009,135,"['crime', 'drama', 'action', 'thriller']",['IN'],7.4,17219.0
+tm80455,Manorama Six Feet Under,2007,137,"['drama', 'thriller', 'crime']",['IN'],7.6,8110.0
+tm152724,Kurbaan,2009,161,"['thriller', 'action', 'drama', 'crime', 'romance', 'sport']",['IN'],5.7,5162.0
+tm96168,Once Upon a Time in Mumbaai,2010,132,"['thriller', 'crime', 'drama', 'romance', 'action']",['IN'],7.4,17642.0
+tm165809,Bluffmaster!,2005,137,"['drama', 'comedy', 'romance', 'thriller', 'crime']",['IN'],6.6,6370.0
+tm31335,Golmaal Returns,2008,135,"['comedy', 'crime']",['IN'],5.1,7983.0
+tm43179,Oye Lucky! Lucky Oye!,2008,42,"['comedy', 'action', 'crime', 'drama']",['IN'],7.7,17538.0
+tm84316,Shootout at Lokhandwala,2007,145,"['action', 'crime', 'drama', 'history']",['IN'],7.1,10213.0
+tm104349,The Unjust,2010,119,"['thriller', 'crime', 'drama', 'action']",['KR'],6.6,2217.0
+tm31564,Linewatch,2008,85,"['thriller', 'crime', 'drama']",['US'],5.4,2884.0
+tm97982,Do Dooni Chaar,2010,146,"['drama', 'crime', 'comedy']",['IN'],7.5,5594.0
+tm114504,The Legend of Bhagat Singh,2002,155,"['crime', 'drama', 'history', 'action']",['IN'],8.1,16340.0
+tm81864,Twins Mission,2007,102,"['action', 'comedy', 'crime', 'drama']",['HK'],5.2,695.0
+tm164591,Apaharan,2005,173,"['crime', 'drama', 'action']",['IN'],7.4,4773.0
+tm130301,Gangaajal,2003,157,"['drama', 'crime', 'action']",['IN'],7.8,17148.0
+tm49865,Aamir,2008,96,"['thriller', 'crime', 'drama', 'action']",['IN'],7.6,11290.0
+tm62369,Connected,2008,110,"['thriller', 'action', 'crime']","['CN', 'HK']",6.6,2291.0
+tm32915,EMI,2008,128,"['comedy', 'crime', 'drama']",['IN'],4.4,609.0
+tm91125,Fida,2004,122,"['romance', 'thriller', 'action', 'crime', 'drama']",['IN'],5.4,2638.0
+tm216753,Old Thieves: The Legend of Artegio,2007,97,"['documentation', 'crime']",['MX'],8.0,317.0
+tm142153,Kisaan,2009,100,"['drama', 'thriller', 'action', 'crime']",['IN'],5.5,305.0
+tm92671,Once a Gangster,2010,95,"['comedy', 'crime', 'action']",['HK'],5.7,500.0
+tm144263,Aagey Se Right,2009,117,"['comedy', 'crime', 'drama']",['IN'],5.2,411.0
+tm39888,The Dark Knight Rises,2012,165,"['thriller', 'action', 'drama', 'crime']",['US'],8.4,1669067.0
+tm178201,Sherlock Holmes: A Game of Shadows,2011,129,"['action', 'crime', 'thriller']","['GB', 'US']",7.4,449965.0
+tm36237,Contraband,2012,109,"['action', 'drama', 'crime', 'thriller']","['FR', 'US', 'GB']",6.4,122383.0
+tm40319,Savages,2012,131,"['drama', 'thriller', 'crime', 'action']",['US'],6.4,129746.0
+tm74848,Total Recall,2012,118,"['scifi', 'thriller', 'action', 'crime']","['CA', 'US']",6.2,253352.0
+tm164353,Singham,2011,135,"['drama', 'action', 'crime']",['IN'],6.8,16827.0
+tm177258,Delhi Belly,2011,102,"['comedy', 'action', 'crime', 'thriller']",['IN'],7.5,29927.0
+tm65765,6 Bullets,2012,115,"['thriller', 'action', 'crime', 'drama']",['US'],6.0,14988.0
+tm35700,Paan Singh Tomar,2012,135,"['drama', 'crime', 'sport', 'thriller', 'action']",['IN'],8.2,36077.0
+tm169053,Shor in the City,2011,107,"['drama', 'crime']",['IN'],7.2,3753.0
+tm183037,Don 2,2011,139,"['action', 'thriller', 'crime', 'european']","['IN', 'DE']",7.0,52750.0
+tm57610,Talaash,2012,139,"['crime', 'thriller', 'drama', 'fantasy']",['IN'],7.2,42188.0
+tm159593,No One Killed Jessica,2011,136,"['drama', 'thriller', 'crime']",['IN'],7.2,11783.0
+tm59289,Rowdy Rathore,2012,143,"['action', 'comedy', 'crime']",['IN'],5.7,22497.0
+tm172883,Game,2011,135,"['thriller', 'action', 'crime', 'drama', 'european']",['IN'],5.2,2353.0
+tm38013,Players,2012,165,"['thriller', 'action', 'crime']",['IN'],4.2,4534.0
+tm31948,26 Years,2012,135,"['drama', 'thriller', 'crime']",['KR'],6.3,1217.0
+tm172353,Bbuddah Hoga Terra Baap,2011,117,"['thriller', 'action', 'comedy', 'crime']",['IN'],5.6,2908.0
+tm53360,Blood Money,2012,110,"['thriller', 'drama', 'crime', 'action']",['IN'],5.0,1480.0
+tm180532,Shaitan,2011,121,"['drama', 'thriller', 'action', 'crime']",['IN'],7.2,8475.0
+tm34142,Department,2012,141,"['action', 'thriller', 'crime']",['IN'],3.2,1058.0
+tm53829,Blitz Patrollie,2012,101,"['crime', 'action', 'comedy']",['US'],5.4,145.0
+tm235979,My Friend Pinto,2011,115,"['comedy', 'crime', 'drama']",['IN'],5.3,392.0
+tm151663,Nightcrawler,2014,118,"['thriller', 'crime', 'drama']",['US'],7.8,531779.0
+tm148147,Big Eyes,2014,106,"['drama', 'documentation', 'romance', 'crime']","['CA', 'US']",7.2,51.0
+tm168400,Empire State,2013,94,"['action', 'drama', 'crime', 'thriller', 'european']",['US'],5.2,21538.0
+tm148671,A Walk Among the Tombstones,2014,113,"['drama', 'thriller', 'action', 'crime']",['US'],6.5,121232.0
+tm171042,The Call,2013,94,"['thriller', 'crime', 'drama', 'horror', 'action', 'european']",['US'],6.7,121843.0
+tm181270,The Frozen Ground,2013,105,"['thriller', 'crime', 'drama']",['US'],6.4,62972.0
+tm143642,Who Am I,2014,105,"['thriller', 'european', 'scifi', 'crime', 'drama']",['DE'],7.5,55044.0
+tm151447,The November Man,2014,108,"['thriller', 'action', 'crime']","['GB', 'US']",6.2,67737.0
+tm154797,The Nut Job,2014,85,"['comedy', 'crime', 'family', 'animation']","['CA', 'KR']",5.7,28484.0
+tm148910,Haider,2014,150,"['action', 'drama', 'thriller', 'crime']",['IN'],8.1,54709.0
+tm182275,Omar,2013,96,"['romance', 'thriller', 'drama', 'crime', 'war']",['PS'],7.5,14318.0
+tm155291,Highway,2014,133,"['crime', 'romance', 'drama']",['IN'],7.6,28688.0
+tm181092,Race 2,2013,150,"['thriller', 'action', 'crime']",['IN'],5.3,16455.0
+tm148662,The Boss: Anatomy of a Crime,2014,98,"['drama', 'crime']","['VE', 'AR']",7.3,2156.0
+tm181550,Once Upon a Time in Mumbai Dobaara!,2013,160,"['action', 'crime', 'drama', 'romance']",['IN'],4.4,7204.0
+tm186161,Boss,2013,143,"['comedy', 'drama', 'crime', 'action']",['IN'],5.1,11159.0
+tm157062,Anjaan,2014,170,"['crime', 'action', 'thriller']",['IN'],5.3,5018.0
+tm165504,Blind Detective,2013,130,"['crime', 'action', 'comedy', 'drama', 'thriller']",['HK'],6.4,3300.0
+tm167107,Saheb Biwi Aur Gangster Returns,2013,142,"['action', 'crime', 'thriller', 'drama']",['IN'],6.7,3997.0
+tm158546,Raja Natwarlal,2014,141,"['thriller', 'crime']",['IN'],6.1,4311.0
+tm143299,Ungli,2014,114,"['thriller', 'crime', 'drama']",['IN'],5.8,3914.0
+tm197423,October 1,2014,149,"['thriller', 'crime', 'drama']",['NG'],6.4,446.0
+tm183805,Ghanchakkar,2013,137,"['thriller', 'comedy', 'crime']",['IN'],5.8,5052.0
+tm144451,Cold Harbour,2014,76,"['thriller', 'crime', 'action']",['ZA'],5.2,215.0
+tm205684,Confusion Na Wa,2013,105,"['crime', 'drama', 'comedy']",['NG'],7.0,38.0
+tm179248,Settai,2013,136,"['comedy', 'crime', 'action']",['IN'],4.5,525.0
+tm242276,Na Bangaaru Talli,2014,116,"['thriller', 'crime', 'drama', 'family']",['IN'],7.2,160.0
+tm243100,Hell or High Water,2016,102,"['thriller', 'western', 'action', 'crime', 'drama']",['US'],7.6,227350.0
+tm195209,Legend,2015,131,"['thriller', 'crime', 'drama', 'european']","['GB', 'US', 'FR']",6.9,178601.0
+tm204163,War Dogs,2016,114,"['crime', 'war', 'comedy', 'drama']",['US'],7.1,212032.0
+tm135307,Blackhat,2015,133,"['action', 'crime', 'thriller']",['US'],5.4,58192.0
+tm205890,The Take,2016,92,"['action', 'drama', 'crime', 'thriller']","['US', 'FR', 'LU', 'GB']",6.3,43449.0
+tm138905,The Hateful Eight,2015,188,"['thriller', 'western', 'drama', 'crime']",['US'],7.8,570138.0
+tm137869,Wild Card,2015,92,"['action', 'thriller', 'crime', 'drama']",['US'],5.6,55605.0
+tm143984,London Has Fallen,2016,99,"['action', 'thriller', 'drama', 'crime']","['GB', 'US', 'BG']",5.9,157409.0
+tm143085,Chappie,2015,120,"['crime', 'action', 'scifi', 'drama', 'thriller']","['MX', 'ZA', 'US']",6.8,249345.0
+tm135106,In a Valley of Violence,2016,104,"['crime', 'thriller', 'western', 'action', 'drama']",['US'],6.0,18987.0
+tm239743,Batman: The Killing Joke,2016,76,"['animation', 'drama', 'action', 'thriller', 'crime']",['US'],6.4,56275.0
+tm244788,13th,2016,100,"['documentation', 'history', 'crime']",['US'],8.2,35302.0
+tm234586,Visaranai,2016,118,"['thriller', 'drama', 'crime']",['IN'],8.5,10548.0
+tm239683,Team Foxcatcher,2016,91,"['documentation', 'crime', 'history', 'sport']",['US'],7.3,6572.0
+tm232953,Sleight,2016,89,"['drama', 'thriller', 'action', 'scifi', 'crime']",['US'],5.9,8644.0
+tm233533,White Girl,2016,88,"['drama', 'horror', 'crime']",['US'],5.7,10646.0
+tm138672,Frank & Lola,2016,88,"['drama', 'romance', 'crime', 'thriller']",['US'],5.9,6083.0
+tm244381,Marauders,2016,107,"['crime', 'thriller', 'action']",['CA'],5.5,21929.0
+tm247642,Amanda Knox,2016,92,"['documentation', 'crime', 'european']","['DK', 'US']",6.9,24488.0
+tm219173,Term Life,2016,93,"['thriller', 'drama', 'action', 'crime']",['US'],5.5,8030.0
+tm205870,Message from the King,2016,102,"['thriller', 'action', 'crime', 'drama', 'european']",['FR'],6.4,16513.0
+tm218052,Drishyam,2015,163,"['thriller', 'crime', 'drama']",['IN'],8.2,80320.0
+tm248010,Taxi Driver,2015,100,"['comedy', 'crime', 'drama']",['NG'],6.0,69.0
+tm244513,Divines,2016,105,"['drama', 'crime', 'european']","['FR', 'QA']",7.4,9821.0
+tm232954,Audrie & Daisy,2016,95,"['documentation', 'crime']",['US'],7.2,6602.0
+tm213681,Veteran,2015,119,"['comedy', 'crime', 'action', 'thriller']",['KR'],7.0,6611.0
+tm139870,Opening Night,2016,90,"['comedy', 'thriller', 'drama', 'crime', 'action']",['US'],6.0,2662.0
+tm239739,Raman Raghav 2.0,2016,134,"['crime', 'thriller', 'drama']",['IN'],7.4,14380.0
+tm246175,The 101-Year-Old Man Who Skipped Out on the Bill and Disappeared,2016,108,"['action', 'comedy', 'crime', 'european']",['SE'],6.3,6023.0
+tm266844,True Memoirs of an International Assassin,2016,98,"['action', 'comedy', 'crime']",['US'],5.9,22891.0
+tm242646,Toro,2016,105,"['drama', 'crime', 'thriller', 'action', 'european']","['FR', 'ES']",5.9,3256.0
+tm208713,Gabbar Is Back,2015,130,"['drama', 'action', 'crime', 'comedy']",['IN'],7.1,24975.0
+tm219817,Talvar,2015,132,"['thriller', 'drama', 'crime']",['IN'],8.1,34943.0
+tm240162,Udta Punjab,2016,148,"['drama', 'action', 'crime']",['IN'],7.7,30276.0
+tm272854,Force 2,2016,123,"['action', 'crime', 'thriller']",['IN'],6.2,5550.0
+tm242422,In the Shadow of Iris,2016,99,"['thriller', 'drama', 'crime', 'european']",['FR'],6.1,4275.0
+tm315345,City of Joy,2016,74,"['documentation', 'thriller', 'war', 'crime', 'drama']",['CD'],7.5,525.0
+tm219699,Phantom,2015,136,"['thriller', 'action', 'drama', 'crime', 'horror', 'european']",['IN'],5.9,9281.0
+tm246485,U Turn,2016,121,"['horror', 'thriller', 'crime', 'drama']",['IN'],7.5,3310.0
+tm224255,Very Big Shot,2015,107,"['action', 'drama', 'thriller', 'crime']","['QA', 'LB']",6.9,1405.0
+tm375681,S Storm,2016,90,"['thriller', 'drama', 'crime', 'action']","['CN', 'HK']",5.1,721.0
+tm66466,Wazir,2016,103,"['thriller', 'crime', 'drama', 'action']",['IN'],7.2,18681.0
+tm246810,Santa Banta Pvt Ltd,2016,112,"['comedy', 'action', 'crime', 'drama']",['IN'],2.7,283.0
+tm407961,Gbomo Gbomo Express,2015,96,"['drama', 'crime']",['NG'],5.0,50.0
+tm350727,Hajwala: The Missing Engine,2016,96,"['drama', 'action', 'crime', 'sport', 'thriller']",['AE'],2.0,255.0
+tm409220,Ojukokoro (Greed),2016,112,"['thriller', 'comedy', 'crime']",['NG'],6.6,63.0
+tm244259,Wind River,2017,107,"['thriller', 'crime', 'drama', 'western']","['FR', 'GB', 'US']",7.7,244463.0
+tm315344,Molly's Game,2017,140,"['drama', 'crime', 'sport']","['CN', 'CA', 'US']",7.4,167955.0
+tm318206,Den of Thieves,2018,140,"['thriller', 'crime', 'drama', 'action']",['US'],7.0,110108.0
+tm266714,CHiPS,2017,100,"['action', 'comedy', 'crime']",['US'],6.0,46783.0
+tm414073,Backtrace,2018,92,"['crime', 'action', 'drama', 'thriller']","['CA', 'US']",3.8,4453.0
+tm299741,Crooked House,2017,115,"['drama', 'thriller', 'crime']",['GB'],6.3,24033.0
+tm272060,What Happened to Monday,2017,123,"['scifi', 'thriller', 'drama', 'action', 'crime', 'fantasy']","['FR', 'RO', 'GB', 'BE', 'DE']",6.8,121772.0
+tm233482,The Foreigner,2017,113,"['action', 'thriller', 'crime', 'drama', 'european']","['IN', 'CN', 'US', 'GB']",7.0,113338.0
+tm414285,Abducted in Plain Sight,2018,91,"['crime', 'documentation', 'thriller', 'drama']",['US'],6.8,18165.0
+tm273294,I Don't Feel at Home in This World Anymore,2017,93,"['drama', 'thriller', 'crime', 'comedy', 'european']",['US'],6.9,55549.0
+tm244332,Beirut,2018,110,"['thriller', 'drama', 'action', 'crime']",['US'],6.4,22065.0
+tm317542,1922,2017,101,"['horror', 'drama', 'documentation', 'crime', 'thriller']",['US'],6.2,62508.0
+tm299677,Hold the Dark,2018,126,"['thriller', 'crime', 'horror', 'action', 'drama']",['US'],5.6,36928.0
+tm244307,Bright,2017,117,"['fantasy', 'thriller', 'scifi', 'crime', 'action']",['US'],6.3,185996.0
+tm244233,The Book of Henry,2017,106,"['drama', 'thriller', 'crime']",['US'],6.5,27262.0
+tm317566,Creep 2,2017,80,"['thriller', 'horror', 'crime', 'drama']",['US'],6.4,25671.0
+tm422491,Speed Kills,2018,102,"['thriller', 'crime', 'drama', 'action']","['US', 'PR']",4.2,3244.0
+tm315340,The Night Comes for Us,2018,121,"['action', 'thriller', 'crime']",['ID'],6.9,25839.0
+tm243326,Anon,2018,100,"['scifi', 'thriller', 'action', 'drama', 'crime', 'european']","['US', 'GB']",6.1,42608.0
+tm244229,Everybody Knows,2018,132,"['drama', 'thriller', 'crime', 'european']","['IT', 'ES', 'FR']",6.9,34365.0
+tm348993,22 July,2018,143,"['thriller', 'crime', 'drama', 'history', 'european']","['US', 'IS', 'NO']",6.8,33609.0
+tm240076,Buster's Mal Heart,2017,96,"['drama', 'thriller', 'crime']",['US'],6.2,10490.0
+tm315424,An Evening with Beverly Luff Linn,2018,108,"['crime', 'comedy']","['GB', 'US']",5.8,5457.0
+tm320255,Bad Genius,2017,130,"['comedy', 'drama', 'crime', 'thriller']",['TH'],7.6,20571.0
+tm411311,King of Thieves,2018,108,"['drama', 'crime', 'history']",['GB'],5.5,14418.0
+tm324155,Security,2017,87,"['thriller', 'action', 'crime', 'european']",['US'],5.7,18943.0
+tm217228,Death Note,2017,101,"['horror', 'thriller', 'crime', 'fantasy', 'drama', 'action']",['US'],4.5,84119.0
+tm139545,The Outsider,2018,120,"['drama', 'action', 'crime', 'thriller']",['US'],6.2,25608.0
+tm423373,Andhadhun,2018,139,"['thriller', 'drama', 'comedy', 'crime', 'music']",['IN'],8.2,90237.0
+tm300184,iBoy,2017,90,"['scifi', 'action', 'crime', 'thriller']",['GB'],6.0,22594.0
+tm351214,Long Shot,2017,40,"['documentation', 'sport', 'crime']",['US'],7.4,7857.0
+tm414709,Siberia,2018,104,"['romance', 'thriller', 'crime', 'european']","['CA', 'US', 'DE']",4.3,15369.0
+tm327199,The Saint,2017,92,"['crime', 'action']",['US'],4.9,6669.0
+tm322243,Shimmer Lake,2017,83,"['thriller', 'crime', 'drama', 'action', 'history', 'horror', 'romance']","['CA', 'US']",6.3,14098.0
+tm346467,Wheelman,2017,82,"['action', 'crime', 'thriller']",['US'],6.4,20351.0
+tm244368,You Get Me,2017,89,"['thriller', 'romance', 'drama', 'crime']",['US'],4.7,12740.0
+tm352774,Voyeur,2017,95,"['documentation', 'crime', 'drama']",['US'],6.1,6097.0
+tm330869,Show Dogs,2018,92,"['comedy', 'crime', 'family']","['US', 'GB']",3.8,4704.0
+tm359103,River's Edge,2018,118,"['drama', 'crime']",['JP'],6.2,952.0
+tm372318,The World Is Yours,2018,94,"['comedy', 'crime', 'european']",['FR'],6.3,4342.0
+tm348003,Acts of Vengeance,2017,87,"['drama', 'thriller', 'action', 'crime', 'european']","['BG', 'US']",5.7,12160.0
+tm366019,BuyBust,2018,127,"['thriller', 'action', 'drama', 'crime']",['PH'],5.7,1902.0
+tm353742,Bullet Head,2017,94,"['thriller', 'crime', 'drama', 'european']","['US', 'BG']",5.4,10149.0
+tm311898,Small Crimes,2017,95,"['drama', 'comedy', 'thriller', 'crime']","['CA', 'US']",5.8,8109.0
+tm420656,Reprisal,2018,89,"['action', 'thriller', 'crime', 'drama']","['GB', 'US']",4.2,7504.0
+tm430104,High Society,2018,119,"['drama', 'crime']",['KR'],5.5,1018.0
+tm359713,El Camino Christmas,2017,89,"['comedy', 'drama', 'crime', 'western']",['US'],5.7,8830.0
+tm426569,A Twelve-Year Night,2018,117,"['drama', 'history', 'crime', 'european']","['AR', 'ES', 'UY']",7.5,9920.0
+tm311319,Manhunt,2017,106,"['thriller', 'action', 'crime']","['HK', 'CN']",5.2,3247.0
+tm344336,Burn Out,2018,107,"['thriller', 'crime', 'action', 'european']",['FR'],6.2,3803.0
+tm515157,Point Blank,2017,86,"['action', 'thriller', 'crime', 'drama']",['US'],5.7,14324.0
+tm306811,Casting JonBenet,2017,81,"['documentation', 'crime', 'drama']","['US', 'AU']",6.1,5426.0
+tm307612,Strong Island,2017,107,"['documentation', 'crime']",['US'],6.4,3892.0
+tm317491,Spyder,2017,145,"['thriller', 'action', 'crime']",['IN'],6.3,10339.0
+tm299764,The Motive,2017,104,"['drama', 'thriller', 'comedy', 'crime', 'european']","['ES', 'MX']",6.5,5713.0
+tm444469,Eerie,2018,101,"['horror', 'crime', 'thriller', 'drama']","['PH', 'SG']",4.6,2324.0
+tm365122,Benji,2018,87,"['drama', 'crime', 'family']","['US', 'AE']",6.3,4774.0
+tm244274,Lowriders,2017,99,"['crime', 'drama', 'action']",['US'],5.6,2542.0
+tm376234,The Warning,2018,93,"['thriller', 'fantasy', 'crime', 'drama', 'action', 'horror', 'european']",['ES'],5.9,6356.0
+tm314829,NY Prison Break: The Seduction of Joyce Mitchell,2017,103,"['crime', 'drama']",['US'],5.5,348.0
+tm327622,S.W.A.T.: Under Siege,2017,89,"['action', 'crime', 'thriller']",['US'],4.5,3572.0
+tm313712,Mom,2017,147,"['drama', 'thriller', 'crime']",['IN'],7.2,10522.0
+tm336712,An Imperfect Murder,2017,71,"['crime', 'thriller', 'drama']",['US'],3.2,1679.0
+tm238587,Shepherds and Butchers,2017,106,"['drama', 'crime']","['US', 'DE', 'ZA']",6.8,3357.0
+tm279585,Deidra & Laney Rob a Train,2017,92,"['drama', 'comedy', 'crime']",['US'],6.0,1913.0
+tm263427,The Invisible Guardian,2017,129,"['thriller', 'crime', 'european']","['DE', 'ES']",6.4,15901.0
+tm428453,Cities of Last Things,2018,106,"['drama', 'scifi', 'crime']","['CN', 'FR', 'TW', 'US']",6.2,1669.0
+tm331117,Carbone,2017,104,"['thriller', 'crime', 'european']","['BE', 'FR']",6.5,2587.0
+tm417317,Bhavesh Joshi Superhero,2018,155,"['action', 'crime', 'drama']",['IN'],7.6,8857.0
+tm428073,When Angels Sleep,2018,94,"['thriller', 'drama', 'horror', 'action', 'crime', 'fantasy', 'european']",['ES'],5.5,3684.0
+tm427143,Edge of Fear,2018,91,"['action', 'thriller', 'crime']",['US'],4.4,3187.0
+tm439854,Baazaar,2018,140,"['crime', 'drama', 'thriller']",['IN'],6.5,5590.0
+tm340587,Ittefaq,2017,107,"['crime', 'thriller']",['IN'],7.2,12262.0
+tm315850,Take Me,2017,83,"['comedy', 'crime', 'thriller']",['US'],6.1,5970.0
+tm440678,Revenger,2018,102,"['action', 'crime', 'thriller']",['KR'],5.7,4311.0
+tm275437,Coin Heist,2017,97,"['family', 'crime', 'drama', 'romance', 'thriller']",['US'],4.7,2743.0
+tm299396,Getaway Plan,2017,105,"['action', 'thriller', 'crime', 'drama', 'european']",['ES'],5.6,1867.0
+tm366972,The Drug King,2018,139,"['crime', 'action', 'drama']",['KR'],6.2,3159.0
+tm440255,The Plagues of Breslau,2018,93,"['thriller', 'action', 'crime', 'european']",['PL'],5.9,5012.0
+tm405738,Perdida,2018,103,"['crime', 'drama', 'thriller']","['ES', 'AR']",5.6,4762.0
+tm424888,Armed to the Teeth,2018,105,"['documentation', 'crime', 'thriller']",['MX'],7.9,650.0
+tm444799,Christmas Catch,2018,80,"['romance', 'comedy', 'crime']",['CA'],5.3,1439.0
+tm275004,Bon Cop Bad Cop 2,2017,126,"['crime', 'comedy', 'action']",['CA'],6.6,4152.0
+tm359975,The Chase,2017,110,"['thriller', 'crime', 'drama']",['KR'],6.6,3020.0
+tm443034,Your Son,2018,103,"['drama', 'crime', 'thriller', 'action', 'european']",['ES'],6.1,4796.0
+tm319477,Rodney King,2017,52,"['drama', 'crime', 'documentation', 'comedy', 'history']",['US'],5.8,606.0
+tm350971,The Last Hour,2017,118,"['crime', 'drama', 'history', 'thriller']",['PE'],6.3,522.0
+tm349656,A Sort of Family,2017,95,"['thriller', 'crime', 'drama', 'european']","['BR', 'DK', 'FR', 'DE', 'PL', 'AR']",6.3,701.0
+tm437159,ReMastered: Who Shot the Sheriff,2018,57,"['documentation', 'crime', 'history', 'music']",['US'],6.9,1430.0
+tm430090,The Last Runaway,2018,107,"['crime', 'drama', 'action']",['PY'],5.9,727.0
+tm408781,Teefa in Trouble,2018,155,"['drama', 'comedy', 'action', 'crime', 'romance']",['PK'],7.0,3659.0
+tm411288,Nigerian Prince,2018,104,"['thriller', 'drama', 'crime']","['NG', 'US']",5.7,397.0
+tm313472,The Lost Brother,2017,112,"['thriller', 'crime', 'drama', 'european']",['AR'],6.5,1710.0
+tm409376,Pickpockets,2018,100,"['crime', 'drama', 'thriller']",['CO'],5.4,1192.0
+tm346334,Out of Thin Air,2017,85,"['crime', 'documentation']","['IS', 'GB']",6.3,2304.0
+tm430426,El Diesel,2018,105,"['crime', 'thriller', 'action']",['EG'],4.5,455.0
+tm352951,Smaller and Smaller Circles,2017,111,"['crime', 'thriller']",['PH'],6.7,239.0
+tm374395,Vanjagar Ulagam,2018,161,"['thriller', 'action', 'crime', 'drama']",['IN'],6.1,258.0
+tm345225,Gurgaon,2017,107,"['crime', 'thriller']",['IN'],6.5,2216.0
+tm429174,Gun City,2018,127,"['thriller', 'action', 'crime', 'history', 'european']","['ES', 'FR']",6.3,3895.0
+tm449860,King of Boys,2018,169,"['drama', 'crime']",['NG'],5.8,423.0
+tm426994,Brij Mohan Amar Rahe!,2018,100,"['comedy', 'drama', 'crime']",['IN'],6.9,3783.0
+tm423802,Luciano Mellera: Infantiloide,2018,66,"['comedy', 'drama', 'crime']",['AR'],7.5,1517.0
+tm242887,Sei,2018,128,"['drama', 'romance', 'thriller', 'action', 'crime']",['IN'],4.2,67.0
+tm415245,Crossroads: One Two Jaga,2018,80,"['crime', 'drama']",['MY'],6.5,640.0
+tm460198,Catch.er,2017,81,"['crime', 'drama']",['NG'],4.5,30.0
+tm336084,Echcharikkai,2018,134,"['thriller', 'horror', 'crime', 'drama']",['IN'],6.3,312.0
+tm441050,The Gentlemen,2019,113,"['crime', 'action', 'comedy']","['US', 'GB']",7.8,325385.0
+tm510203,A Call to Spy,2019,123,"['crime', 'drama', 'thriller', 'war', 'history']",['US'],6.6,7091.0
+tm244149,The Irishman,2019,209,"['crime', 'drama', 'history', 'thriller']",['US'],7.8,376379.0
+tm496322,Extraction,2020,116,"['crime', 'drama', 'action', 'thriller']",['US'],6.7,196105.0
+tm827638,Synchronic,2019,102,"['crime', 'drama', 'horror', 'scifi', 'thriller']",['US'],6.2,29455.0
+tm911973,Enola Holmes,2020,123,"['crime', 'drama', 'action']",['US'],6.6,162511.0
+tm368699,The Devil All the Time,2020,138,"['crime', 'drama', 'thriller', 'horror']",['US'],7.1,122321.0
+tm414584,Rambo: Last Blood,2019,101,"['drama', 'action', 'crime', 'thriller', 'western']","['US', 'CN']",6.1,96740.0
+tm239927,Official Secrets,2019,112,"['drama', 'thriller', 'history', 'crime', 'war', 'romance']","['GB', 'US']",7.3,46901.0
+tm431321,21 Bridges,2019,99,"['action', 'drama', 'crime', 'thriller']",['US'],6.6,65845.0
+tm834851,I Care a Lot,2020,118,"['drama', 'thriller', 'comedy', 'crime']","['GB', 'US']",6.3,129321.0
+tm827648,El Camino: A Breaking Bad Movie,2019,123,"['crime', 'drama', 'thriller', 'action']",['US'],7.3,216847.0
+tm244207,Triple Frontier,2019,125,"['thriller', 'action', 'crime', 'drama']",['US'],6.4,125883.0
+tm448792,In the Shadow of the Moon,2019,115,"['scifi', 'crime', 'thriller']","['US', 'CA']",6.2,52206.0
+tm1121246,Code 8,2019,99,"['scifi', 'action', 'crime', 'thriller', 'drama']","['CA', 'GB', 'US']",6.1,39469.0
+tm983787,Ava,2020,96,"['thriller', 'crime', 'action', 'drama']",['US'],5.4,54279.0
+tm441231,Murder Mystery,2019,90,"['comedy', 'crime', 'romance', 'action']","['IT', 'MC', 'US', 'CA']",6.0,124599.0
+tm453862,The Call,2020,112,"['scifi', 'thriller', 'drama', 'crime', 'horror']",['KR'],7.1,30772.0
+tm420826,The Highwaymen,2019,133,"['drama', 'thriller', 'crime']",['US'],6.9,89893.0
+tm444017,"Extremely Wicked, Shockingly Evil and Vile",2019,110,"['crime', 'thriller', 'drama']",['US'],6.7,92156.0
+tm428557,The Laundromat,2019,96,"['drama', 'history', 'comedy', 'crime']",['US'],6.3,49391.0
+tm893480,Project Power,2020,113,"['crime', 'scifi', 'action', 'thriller']",['US'],6.0,86407.0
+tm464662,Tread,2020,88,"['crime', 'documentation']",['US'],7.1,3074.0
+tm471967,Lost Girls,2020,95,"['thriller', 'drama', 'crime']",['US'],6.1,21588.0
+tm447788,Fyre,2019,98,"['documentation', 'crime', 'music']",['US'],7.2,45728.0
+tm437221,Charlie Says,2019,104,"['drama', 'documentation', 'crime']",['US'],5.9,4474.0
+tm449105,Polar,2019,118,"['action', 'drama', 'crime', 'thriller', 'european']","['DE', 'US']",6.3,88281.0
+tm498803,Spenser Confidential,2020,111,"['action', 'comedy', 'drama', 'thriller', 'crime']",['US'],6.2,86593.0
+tm434553,Cut Throat City,2020,123,"['thriller', 'drama', 'action', 'crime']",['US'],4.8,2594.0
+tm934040,American Murder: The Family Next Door,2020,83,"['documentation', 'thriller', 'crime']",['US'],7.2,27193.0
+tm925584,The Vanished,2020,115,"['thriller', 'action', 'crime']",['US'],5.7,10378.0
+tm423140,Avengement,2019,90,"['action', 'crime', 'thriller']",['GB'],6.5,15685.0
+tm316311,Wasp Network,2020,128,"['thriller', 'drama', 'crime']","['BR', 'FR', 'ES', 'BE']",5.9,10368.0
+tm810547,Night in Paradise,2020,131,"['thriller', 'drama', 'action', 'crime']",['KR'],6.7,6747.0
+tm828069,Calm with Horses,2020,100,"['crime', 'drama']","['IE', 'GB']",6.8,5649.0
+tm831061,Magamuni,2019,157,"['drama', 'thriller', 'crime']",['IN'],7.8,2207.0
+tm887450,Made You Look: A True Story About Fake Art,2020,96,"['documentation', 'crime']",['CA'],7.0,4230.0
+tm465724,See You Yesterday,2019,86,"['scifi', 'thriller', 'action', 'crime', 'drama']",['US'],5.2,10725.0
+tm464351,The Last Thing He Wanted,2020,116,"['thriller', 'crime', 'drama']","['GB', 'US']",4.3,15238.0
+tm283581,Super Deluxe,2019,176,"['comedy', 'thriller', 'drama', 'action', 'crime']",['IN'],8.4,13680.0
+tm511940,Lying and Stealing,2019,100,"['crime', 'drama', 'comedy']",['US'],5.4,5818.0
+tm503508,Earthquake Bird,2019,107,"['romance', 'thriller', 'crime', 'drama']","['GB', 'JP']",5.9,14519.0
+tm850723,Altered Carbon: Resleeved,2020,75,"['scifi', 'animation', 'crime', 'drama', 'thriller', 'action']",['JP'],6.5,6127.0
+tm857051,Forensic,2020,134,"['crime', 'thriller']",['IN'],6.8,5124.0
+tm812916,The Stronghold,2020,105,"['crime', 'thriller', 'action', 'european']",['FR'],6.9,10013.0
+tm893799,Lost Bullet,2020,92,"['thriller', 'action', 'crime']","['BE', 'FR']",6.3,9479.0
+tm678851,Article 15,2019,130,"['crime', 'drama', 'thriller']",['IN'],8.2,33033.0
+tm453850,Time to Hunt,2020,135,"['thriller', 'drama', 'action', 'scifi', 'crime']",['KR'],6.3,5621.0
+tm455059,We Die Young,2019,93,"['thriller', 'drama', 'action', 'crime', 'european']","['BG', 'US']",5.2,4181.0
+tm888080,The Last Days of American Crime,2020,149,"['action', 'crime', 'thriller', 'scifi', 'drama']",['US'],3.7,11465.0
+tm883189,Dangerous Lies,2020,96,"['thriller', 'horror', 'drama', 'comedy', 'crime']",['US'],5.3,16943.0
+tm823355,Inside Man: Most Wanted,2019,106,"['action', 'thriller', 'crime']",['US'],5.6,3967.0
+tm824559,"Bikram: Yogi, Guru, Predator",2019,86,"['crime', 'documentation']",['US'],6.7,7525.0
+tm814644,Coffee & Kareem,2020,88,"['crime', 'action', 'comedy']",['US'],5.1,13535.0
+tm885805,Debt Collectors,2020,97,"['action', 'comedy', 'crime']",['US'],5.8,4347.0
+tm458328,Badla,2019,120,"['thriller', 'crime', 'drama']",['IN'],7.8,27539.0
+tm833638,The Forest of Love,2019,151,"['drama', 'crime', 'horror', 'thriller']",['JP'],6.3,2522.0
+tm831873,The Crimes That Bind,2020,99,"['crime', 'drama', 'thriller']",['AR'],6.7,3973.0
+tm986700,All My Friends Are Dead,2020,95,"['comedy', 'drama', 'thriller', 'crime']",['PL'],5.8,6299.0
+tm814734,Kidnapping Stella,2019,89,"['crime', 'thriller']",['DE'],4.9,6008.0
+tm881162,Athlete A,2020,104,"['documentation', 'crime', 'sport']",['US'],7.6,10861.0
+tm319139,Saaho,2019,171,"['thriller', 'action', 'crime', 'drama', 'romance']",['IN'],5.0,19610.0
+tm864480,Unknown Origins,2020,96,"['crime', 'drama', 'thriller', 'comedy', 'action']","['AR', 'ES']",6.1,6769.0
+tm366245,Drive,2019,147,"['thriller', 'crime', 'drama', 'action']",['IN'],3.1,7671.0
+tm948100,Footfairy,2020,115,"['crime', 'thriller']",['IN'],4.9,358.0
+tm452962,Eye for an Eye,2019,107,"['drama', 'thriller', 'crime', 'action', 'european']","['US', 'FR', 'ES']",6.6,7625.0
+tm449590,Rattlesnake,2019,85,"['horror', 'thriller', 'crime', 'drama']",['US'],4.6,8629.0
+tm890660,The Paramedic,2020,94,"['thriller', 'action', 'crime', 'drama']",['ES'],5.7,12396.0
+tm514257,The Legacy of the Bones,2019,121,"['crime', 'thriller', 'european']",['ES'],6.3,8876.0
+tm835432,Sky High,2020,121,"['action', 'crime', 'thriller', 'drama', 'european']",['ES'],5.6,3532.0
+tm453098,Svaha: The Sixth Finger,2019,122,"['thriller', 'crime', 'horror']",['KR'],6.2,3947.0
+tm918043,Raat Akeli Hai,2020,149,"['crime', 'thriller', 'drama']",['IN'],7.3,17570.0
+tm450698,The Ruthless,2019,111,"['crime', 'drama', 'european']","['FR', 'IT']",6.2,6237.0
+tm450832,Paradise Beach,2019,93,"['action', 'thriller', 'crime', 'drama', 'european']",['FR'],4.6,2242.0
+tm514494,Offering to the Storm,2020,139,"['crime', 'thriller', 'european']","['DE', 'ES']",6.2,6391.0
+tm494847,Made in China,2019,128,"['comedy', 'drama', 'romance', 'thriller', 'crime', 'european']",['IN'],6.2,4382.0
+tm831934,The Millions,2019,94,"['comedy', 'crime', 'thriller', 'drama']",['NG'],5.4,49.0
+tm465427,Maria,2019,89,"['action', 'crime', 'drama', 'thriller']",['PH'],5.0,2065.0
+tm975398,Christmas Crossfire,2020,106,"['thriller', 'comedy', 'crime']",['DE'],4.8,1373.0
+tm426630,Soni,2019,97,"['crime', 'drama']",['IN'],7.1,2788.0
+tm483602,Malang,2020,135,"['romance', 'action', 'crime', 'drama', 'thriller']",['IN'],6.5,10490.0
+tm886214,Mrs. Serial Killer,2020,106,"['thriller', 'drama', 'crime']",['IN'],4.2,19484.0
+tm477006,Psycho,2020,134,"['drama', 'crime', 'thriller']",['IN'],6.2,4153.0
+tm452867,Jo Pil-ho: The Dawning Rage,2019,127,"['drama', 'action', 'crime', 'thriller']",['KR'],6.3,2193.0
+tm464527,ReMastered: The Miami Showband Massacre,2019,70,"['documentation', 'crime', 'music']",[],7.0,1400.0
+tm921416,Class of '83,2020,98,"['drama', 'crime', 'thriller', 'action']",['IN'],5.8,5628.0
+tm861718,Villain,2020,97,"['crime', 'drama', 'thriller', 'action']",['GB'],5.9,3324.0
+tm455197,Kabir Singh,2019,172,"['drama', 'romance', 'crime', 'action']",['IN'],7.0,31918.0
+tm941531,The Beast,2020,90,"['crime', 'action', 'drama', 'thriller']",['IT'],5.2,4323.0
+tm931701,Òlòtūré,2019,106,"['drama', 'crime']",['NG'],5.5,791.0
+tm429172,The (Silent) War,2019,123,"['thriller', 'war', 'crime', 'action', 'drama', 'european']",['ES'],5.5,681.0
+tm423624,Ek Ladki Ko Dekha Toh Aisa Laga,2019,121,"['drama', 'comedy', 'romance', 'crime']",['IN'],5.6,4378.0
+tm944631,The Three Deaths of Marisela Escobedo,2020,109,"['crime', 'documentation']",['MX'],8.1,1683.0
+tm1149814,Uncovered,2019,95,"['crime', 'thriller', 'action']",['ZA'],4.6,24.0
+tm501222,Twin Murders: The Silence of the White City,2019,110,"['action', 'crime', 'drama', 'horror', 'thriller', 'european']",['ES'],5.3,5307.0
+tm822099,The Blue Elephant 2,2019,130,"['horror', 'thriller', 'crime', 'drama']",[],8.2,9475.0
+tm820116,Street Flow,2019,96,"['drama', 'crime']",['FR'],6.4,1527.0
+tm856545,Intuition,2020,116,"['thriller', 'crime', 'drama']",['AR'],5.5,2663.0
+tm469966,The Unknown Saint,2020,100,"['comedy', 'drama', 'crime']","['MA', 'FR', 'QA']",6.5,1127.0
+tm469510,Albert  Pinto Ko Gussa Kyun Aata Hai?,2019,94,"['crime', 'drama']",['IN'],5.5,1922.0
+tm926528,AK vs AK,2020,108,"['drama', 'action', 'crime', 'thriller', 'comedy']",['IN'],6.9,14195.0
+tm842829,Dead Kids,2019,94,"['crime', 'drama', 'thriller']",['PH'],5.3,494.0
+tm457410,Money Trap,2019,121,"['action', 'comedy', 'crime', 'drama']",['TR'],6.0,14565.0
+tm478962,Saavat,2019,117,"['thriller', 'crime', 'drama']",['IN'],6.5,176.0
+tm918258,Dogwashers,2020,107,"['crime', 'drama', 'comedy']","['AR', 'CO']",5.8,601.0
+tm493556,Kaagar,2019,129,"['crime', 'drama']",['IN'],6.2,64.0
+tm981475,Illegal Woman,2020,119,"['drama', 'crime', 'european']",['ES'],6.1,201.0
+tm925186,Santana,2020,106,"['action', 'crime', 'drama']","['ZA', 'AO']",3.8,984.0
+tm847805,Ludo,2020,150,"['crime', 'comedy', 'drama', 'action']",['IN'],7.6,37528.0
+tm820338,The 9th Precinct,2019,94,"['crime', 'fantasy', 'thriller', 'drama', 'action']",['TW'],5.6,535.0
+tm949905,Asura Guru,2020,120,"['action', 'crime', 'thriller']",['IN'],3.2,322.0
+tm439365,Bombairiya,2019,108,"['drama', 'crime', 'comedy']",['IN'],4.5,423.0
+tm1005937,Sanitation Day,2020,104,"['thriller', 'crime']",['NG'],3.3,18.0
+tm1020438,Spiderhead,2022,106,"['scifi', 'thriller', 'drama', 'action', 'crime']",['US'],5.4,43239.0
+tm1226954,Girl in the Picture,2022,102,"['documentation', 'crime']",['US'],7.3,9786.0
+tm404856,Red Notice,2021,117,"['thriller', 'action', 'comedy', 'crime']",['US'],6.3,264194.0
+tm1229846,My Daughter's Killer,2022,83,"['documentation', 'crime']","['DE', 'FR']",6.9,832.0
+tm1196288,Our Father,2022,97,"['crime', 'documentation']",['US'],6.5,9889.0
+tm1083293,Windfall,2022,92,"['crime', 'drama', 'thriller']",['US'],5.7,20903.0
+tm946869,Texas Chainsaw Massacre,2022,83,"['horror', 'thriller', 'crime']",['US'],4.8,48828.0
+tm986168,The Guilty,2021,91,"['drama', 'thriller', 'action', 'crime']",['US'],6.3,117984.0
+tm1092864,The Unforgivable,2021,112,"['drama', 'crime']","['GB', 'US', 'DE']",7.1,105353.0
+tm501313,Gunpowder Milkshake,2021,114,"['action', 'thriller', 'crime']","['FR', 'DE', 'US']",6.0,42709.0
+tm1048362,Army of Thieves,2021,127,"['comedy', 'crime', 'thriller', 'scifi', 'horror', 'romance', 'action']","['DE', 'US']",6.4,73790.0
+tm1165983,The Weekend Away,2022,90,"['thriller', 'crime', 'drama']",['GB'],5.6,22686.0
+tm456513,Army of the Dead,2021,148,"['horror', 'thriller', 'crime', 'scifi', 'action']",['US'],5.7,169348.0
+tm1046932,Kate,2021,106,"['action', 'drama', 'thriller', 'crime']","['US', 'JP', 'TH']",6.2,59480.0
+tm983784,Coming Home in the Dark,2021,93,"['thriller', 'crime', 'horror']",['NZ'],5.7,5114.0
+tm1046264,The Vault,2021,118,"['crime', 'action', 'thriller', 'fantasy']",['ES'],6.4,21511.0
+tm1150385,The Tinder Swindler,2022,114,"['documentation', 'crime']",['GB'],7.2,61809.0
+tm416779,The Woman in the Window,2021,100,"['drama', 'thriller', 'crime']",['US'],5.7,72490.0
+tm949309,The White Tiger,2021,125,"['drama', 'crime']","['SG', 'US', 'IN']",7.1,59441.0
+tm1022103,Outlaws,2021,125,"['crime', 'action', 'thriller']",['ES'],6.9,3985.0
+tm1210970,Gladbeck: The Hostage Crisis,2022,91,"['documentation', 'crime']",['DE'],7.5,1765.0
+tm413169,Peter Rabbit 2: The Runaway,2021,93,"['fantasy', 'action', 'family', 'comedy', 'animation', 'crime', 'drama']","['AU', 'US']",6.2,11233.0
+tm1151272,Beast,2022,162,"['thriller', 'action', 'comedy', 'crime']",['IN'],5.2,30369.0
+tm1159163,Fistful of Vengeance,2022,94,"['fantasy', 'action', 'crime', 'drama']",['US'],4.4,6341.0
+tm1164962,Restless,2022,95,"['thriller', 'action', 'crime']","['BE', 'FR']",5.8,4174.0
+tm857461,Gangubai Kathiawadi,2022,157,"['crime', 'drama']",['IN'],7.0,50163.0
+tm1141594,Brazen,2022,94,"['thriller', 'romance', 'crime', 'drama']",['US'],4.1,11753.0
+tm459789,The Lovebirds,2021,87,"['romance', 'comedy', 'action', 'thriller', 'crime']",['US'],6.0,25697.0
+tm1179973,Trust No One: The Hunt for the Crypto King,2022,90,"['documentation', 'crime']",['GB'],6.3,4444.0
+tm1134087,Borrego,2022,102,"['crime', 'thriller']",['US'],5.7,4122.0
+tm1166020,The Takedown,2022,119,"['action', 'comedy', 'crime', 'drama']",['FR'],5.7,5948.0
+tm1038327,Beckett,2021,109,"['crime', 'thriller', 'action', 'drama']","['IT', 'BR']",5.6,25703.0
+tm1020820,Night Teeth,2021,107,"['crime', 'drama', 'fantasy', 'horror', 'thriller', 'comedy', 'action']","['GB', 'US']",5.6,17526.0
+tm1198388,Cyber Hell: Exposing an Internet Horror,2022,105,"['documentation', 'crime']",['KR'],6.5,1407.0
+tm1080252,7 Prisoners,2021,93,"['drama', 'crime']",['BR'],7.1,6877.0
+tm1195561,Kuttavum Shikshayum,2022,136,"['crime', 'drama', 'thriller', 'action']",['IN'],6.2,610.0
+tm1210379,Collision,2022,99,"['drama', 'crime', 'thriller']",['ZA'],3.9,886.0
+tm1185687,Silverton Siege,2022,100,"['action', 'crime', 'drama', 'thriller']",['ZA'],6.2,3434.0
+tm1074764,Shiny_Flakes: The Teenage Drug Lord,2021,96,"['documentation', 'crime']",['DE'],7.3,4699.0
+tm999927,A Cop Movie,2021,107,"['drama', 'crime', 'thriller', 'documentation', 'action']",['MX'],7.0,1739.0
+tm1082314,Untold: Malice at the Palace,2021,69,"['crime', 'documentation', 'sport']",['US'],7.5,7699.0
+tm1106212,Photocopier,2021,130,"['drama', 'thriller', 'crime']",['ID'],6.7,3010.0
+tm1195032,Thar,2022,108,"['action', 'thriller', 'drama', 'crime', 'western']",['IN'],6.1,4703.0
+tm1138870,Badhaai Do,2022,147,"['comedy', 'drama', 'crime']",['IN'],7.1,16685.0
+tm816591,The Getaway King,2021,100,"['drama', 'action', 'comedy', 'crime']",['PL'],6.5,1812.0
+tm810504,Yaksha: Ruthless Operations,2022,125,"['action', 'crime', 'thriller']",['KR'],6.2,3146.0
+tm1143898,Jana Gana Mana,2022,161,"['drama', 'thriller', 'crime']",['IN'],8.3,9167.0
+tm1031976,Dhamaka,2021,104,"['thriller', 'crime', 'drama', 'action']",['IN'],7.2,40263.0
+tm362072,Monster,2021,98,"['drama', 'crime']","['CA', 'US']",6.5,5770.0
+tm1120509,Never Back Down: Revolt,2021,89,"['action', 'crime', 'drama', 'sport']",['US'],4.0,535.0
+tm1102891,Grudge,2021,104,"['thriller', 'crime', 'drama']",['TR'],5.5,4298.0
+tm1003353,Operation Varsity Blues: The College Admissions Scandal,2021,100,"['drama', 'documentation', 'crime']",['US'],6.9,8190.0
+tm817075,Furioza,2021,139,"['crime', 'drama', 'action']",['PL'],6.2,4129.0
+tm1185388,The Turning Point,2021,90,"['drama', 'crime']",['IT'],6.1,621.0
+tm998726,Sentinelle,2021,80,"['thriller', 'action', 'drama', 'crime']",['FR'],4.7,7844.0
+tm1119136,Game Changer,2021,102,"['crime', 'comedy', 'drama', 'romance', 'thriller']",['TH'],4.1,113.0
+tm1043290,Murder by the Coast,2021,88,"['crime', 'documentation', 'history']",['ES'],6.5,2134.0
+tm1029256,Ferry,2021,106,"['drama', 'action', 'crime', 'thriller']","['BE', 'NL']",7.0,10900.0
+tm1083068,Operation Hyacinth,2021,112,"['crime', 'drama', 'thriller']",['PL'],6.7,3119.0
+tm466544,Sooryavanshi,2021,145,"['action', 'thriller', 'crime']",['IN'],6.3,75952.0
+tm448707,CBI 5: The Brain,2022,163,"['thriller', 'crime']",['IN'],6.3,1394.0
+tm1108621,Yara,2021,96,"['drama', 'thriller', 'crime']",['IT'],6.2,4205.0
+tm1036270,I Am All Girls,2021,107,"['thriller', 'crime', 'drama']",['ZA'],5.9,5917.0
+tm990835,The Girl on the Train,2021,128,"['drama', 'thriller', 'crime']",['IN'],4.4,14348.0
+tm1047190,The Phantom,2021,81,"['documentation', 'crime']","['US', 'GB']",6.5,759.0
+tm1038355,The Last Mercenary,2021,110,"['action', 'comedy', 'crime', 'thriller']",['FR'],5.3,8476.0
+tm949382,Looop Lapeta,2022,131,"['romance', 'thriller', 'action', 'comedy', 'crime']",['IN'],5.2,4327.0
+tm1049155,Bordertown: The Mural Murders,2021,107,"['crime', 'drama']",['FI'],6.2,2219.0
+tm919869,And Tomorrow the Entire World,2021,111,"['romance', 'crime', 'drama']","['FR', 'DE']",6.0,3172.0
+tm454879,Major Grom: Plague Doctor,2021,136,"['action', 'crime']",['RU'],6.3,11939.0
+tm998033,Doctor,2021,150,"['action', 'comedy', 'thriller', 'crime']",['IN'],7.5,15385.0
+tm1024062,Nayattu,2021,124,"['thriller', 'drama', 'crime']",['IN'],8.1,7040.0
+tm1077013,Memories of a Murderer: The Nilsen Tapes,2021,84,"['documentation', 'crime']",['GB'],6.3,3301.0
+tm1094069,The Women and the Murderer,2021,92,"['documentation', 'crime']",['FR'],6.4,1237.0
+tm948681,Below Zero,2021,106,"['action', 'crime', 'thriller', 'horror', 'drama']",['ES'],6.2,19201.0
+tm813372,Etharkkum Thunindhavan,2022,151,"['thriller', 'action', 'crime', 'drama']",['IN'],6.6,11591.0
+tm876083,Xtreme,2021,111,"['action', 'crime', 'drama', 'thriller', 'fantasy']",['ES'],5.8,4351.0
+tm1030283,Why Did You Kill Me?,2021,83,"['crime', 'documentation']",['US'],5.6,4175.0
+tm1039422,Nail Bomber: Manhunt,2021,72,"['crime', 'history', 'documentation']",['GB'],6.3,2142.0
+tm1196455,The Photographer: Murder in Pinamar,2022,105,"['documentation', 'crime']",['AR'],6.7,494.0
+tm1033803,Searching for Sheela,2021,58,"['documentation', 'crime']",['IN'],4.3,1360.0
+tm926580,A Family,2021,136,"['crime', 'drama']",['JP'],7.0,2268.0
+tm1185568,Broken Idol: The Undoing of Diomedes Díaz,2022,102,"['documentation', 'crime']",['CO'],6.3,178.0
+tm1137797,137 Shots,2021,104,"['documentation', 'crime']",[],6.2,869.0
+tm856634,Jagame Thandhiram,2021,158,"['comedy', 'crime', 'action', 'drama', 'thriller']","['GB', 'IN']",5.8,11731.0
+tm1031499,Get the Grift,2021,94,"['crime', 'comedy']",['BR'],5.3,748.0
+tm1143058,How I Fell in Love with a Gangster,2022,179,"['drama', 'crime']",['PL'],6.0,2248.0
+tm963023,Chandigarh Kare Aashiqui,2021,117,"['romance', 'comedy', 'crime', 'drama']",['IN'],6.8,13203.0
+tm983466,"Crack: Cocaine, Corruption & Conspiracy",2021,89,"['documentation', 'crime', 'history']",['US'],6.7,3324.0
+tm1003376,Get the Goat,2021,105,"['comedy', 'action', 'crime']",['BR'],6.0,1784.0
+tm867681,Haseen Dillruba,2021,135,"['romance', 'thriller', 'crime', 'drama']",['IN'],6.9,26194.0
+tm1150800,Amandla,2022,106,"['drama', 'crime']","['CA', 'ZA']",5.5,391.0
+tm1023388,Madame Claude,2021,112,"['crime', 'drama', 'romance']",['FR'],5.4,3402.0
+tm1049290,In for a Murder,2021,105,"['comedy', 'thriller', 'drama', 'crime', 'scifi']",['PL'],5.3,1484.0
+tm1030241,Kurup,2021,155,"['thriller', 'crime']",['IN'],7.1,12251.0
+tm1073555,Thimmarusu: Assignment Vali,2021,127,"['crime', 'thriller', 'drama']",['IN'],7.2,1544.0
+tm1019865,Wild Dog,2021,145,"['thriller', 'crime', 'action']",['IN'],6.1,2283.0
+tm1142245,Kadaseela Biriyani,2021,115,"['drama', 'crime', 'comedy']",['IN'],7.5,1315.0
+tm1092075,Forever Rich,2021,90,"['crime', 'comedy', 'drama', 'music', 'thriller']",['NL'],5.5,1025.0
+tm1118234,Lords of Scam,2021,105,"['documentation', 'crime']",['FR'],6.3,641.0
+tm1024535,The Guardian,2021,127,"['drama', 'horror', 'music', 'thriller', 'crime']",['VN'],5.7,347.0
+tm1054462,The Land,2021,103,"['comedy', 'drama', 'crime']",['PL'],6.1,473.0
+tm1043655,One Lagos Night,2021,103,"['crime', 'comedy']",['NG'],6.6,17.0
+tm1068632,Bartkowiak,2021,91,"['action', 'thriller', 'crime', 'sport']",['PL'],5.1,1205.0
+tm996996,The Misadventures of Hedi and Cokeman,2021,99,"['action', 'crime', 'comedy']",['FR'],4.4,641.0
+tm1064193,Private Network: Who Killed Manuel Buendía?,2021,100,"['history', 'documentation', 'crime']",['MX'],6.8,224.0
+tm986017,Gatao: The Last Stray,2021,120,"['action', 'crime', 'drama', 'romance']",['TW'],5.9,266.0
+tm1011248,30 March,2021,99,"['crime', 'drama', 'thriller']",[],4.0,153.0
