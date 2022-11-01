@@ -5,7 +5,7 @@
         :selectedKeys="selectedKey"
         theme="dark"
         mode="horizontal"
-        :style="{ lineHeight: '64px' }"
+        :style="{ lineHeight: '53px' }"
       >
         <a-menu-item key="1"> 
              <router-link to="/">Home</router-link>
