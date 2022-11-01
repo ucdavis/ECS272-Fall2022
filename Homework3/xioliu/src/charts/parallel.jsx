@@ -11,6 +11,8 @@ export default function Parallel({data}) {
     const chartHeight = height - margin.top - margin.bottom;
     const charWidth = width - margin.left - margin.right;
     const [satisfaction, setSatisfaction] = React.useState('all');
+    let selected = false;
+    let lock = false;
 
 
     function plotParallel() {
@@ -31,7 +33,7 @@ export default function Parallel({data}) {
                 filtered_data.push(data[d]);
             }
         }
-        let sliced_data = filtered_data.slice(0, 1000);
+        let sliced_data = filtered_data.slice(0, 100);
 
         d3.select(svgRefParallel.current).selectAll('path').remove();
         const svg = d3.select(svgRefParallel.current).append('g')
@@ -49,15 +51,67 @@ export default function Parallel({data}) {
             return d3.line()(keys.map((p) => [x(p), y[p](d[p])]));
         }
 
-        svg.selectAll("myPath")
+        const color = d3.scaleOrdinal().domain(['satisfied', 'dissatisfied']).range(['green', '#d54545'])
+        var highlight = function (event, d){
+            if (!event.ctrlKey){
+                if (!lock) {
+                    let selected =  d.satisfaction;
+                    if (selected !== 'satisfied'){
+                        selected = 'dissatisfied';
+                    }
+
+                    d3.selectAll(".line")
+                        .transition().duration(200)
+                        .style("stroke", "lightgrey")
+                        .style("opacity", 0.25)
+
+                    d3.selectAll('.' + selected)
+                        .transition().duration(200)
+                        .style("stroke", color(selected))
+                        .style("opacity", 0.5)
+                }
+            }
+
+        }
+
+
+        var unHighlight = function (event, d) {
+            console.log("mouse leaving")
+            d3.selectAll(".line")
+                .transition().duration(100).delay(100)
+                .style("stroke", (d) => d['satisfaction'] === 'satisfied' ? 'green' : '#d54545')
+                .style("opacity", 0.2)
+            selected = false;
+            console.log(selected);
+        }
+
+        var unHighlightLeave = function (event, d) {
+            if (!event.ctrlKey && !selected) {
+                console.log("mouse leaving")
+                d3.selectAll(".line")
+                    .transition().duration(100).delay(100)
+                    .style("stroke", (d) => d['satisfaction'] === 'satisfied' ? 'green' : '#d54545')
+                    .style("opacity", 0.2)
+            }
+
+        }
+
+        const g = svg.append("g");
+
+        g.selectAll("myPath")
             .data(sliced_data)
             .join('path')
+            .attr("class", (d) => "line " + d.satisfaction)
             .attr('d', path)
             .style('fill', 'none')
             .style('stroke', (d) => d['satisfaction'] === 'satisfied' ? 'green' : '#d54545' )
-            .style("opacity", 0.016)
+            .style("opacity", 0.2)
+            .on("mouseover", highlight)
+            // .on("mouseleave", unHighlightLeave)
 
-        svg.selectAll("myAxis")
+
+
+        g.selectAll("myAxis")
             .data(keys).enter()
             .append('g')
             .attr('transform', (d) => `translate(${x(d)}, 0)`)
@@ -93,6 +147,27 @@ export default function Parallel({data}) {
             .attr('text-anchor', 'start')
             .text('neutral or dissatisfied')
 
+        function zoomed({transform}){
+            g.attr("transform", transform)
+        }
+        function filter(event) {
+            if (event.ctrlKey){
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                var isWheelEvent = event instanceof WheelEvent;
+                return !isWheelEvent || (isWheelEvent && event.ctrlKey);
+            }
+
+        }
+        const zoomBehavior = d3.zoom().scaleExtent([1, 8])
+            .translateExtent([[0, 0], [width, height]])
+            .on("zoom", zoomed)
+            .filter(filter)
+        svg.call(zoomBehavior)
+        svg.on('dblclick.zoom', null);
+        svg.on("dblclick", unHighlightLeave);
+        svg.on("click", () => {lock = !lock})
+
 
     }
 
@@ -110,19 +185,6 @@ export default function Parallel({data}) {
                 <div className={'parallel-header'}>
                     <div className={'header-text'}>
                         User Detailed Scores
-                    </div>
-                    <div className={"parallel-dropdown"}>
-                        <Dropdown>
-                            <Dropdown.Toggle id={"dropdown-basic"} variant="secondary" size={'sm'}>
-                                {satisfaction}
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu variant="dark">
-                                <Dropdown.Item onClick={() => setSatisfaction('all')}>All</Dropdown.Item>
-                                <Dropdown.Item onClick={() => setSatisfaction('satisfied')}>Satisfied</Dropdown.Item>
-                                <Dropdown.Item onClick={() => setSatisfaction('neutral or dissatisfied')}>Neutral or dissatisfied</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
                     </div>
 
                 </div>

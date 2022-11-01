@@ -56,9 +56,10 @@ export default function Histogram({data}) {
         // @ts-ignore
         let x = d3.scaleLinear().domain([d3.min(scores), d3.max(scores)]).range([0, width - margin.left - margin.right]);
         // @ts-ignore
-        svg.append("g")
+        let xAxis = d3.axisBottom(x)
+        let gx = svg.append("g")
             .attr('transform', `translate(0, ${height - margin.top - margin.bottom})`)
-            .call(d3.axisBottom(x));
+            .call(xAxis);
 
         // @ts-ignore
         let hisograms = d3.bin().value((d) => d).domain(x.domain()).thresholds(x.ticks(20));
@@ -66,11 +67,36 @@ export default function Histogram({data}) {
 
         // @ts-ignore
         let y = d3.scaleLinear().domain([0, d3.max(bins, (d) => d.length)]).range([height - margin.bottom - margin.top, 0]);
-        svg.append("g").call(d3.axisLeft(y));
+        let yAxis = d3.axisLeft(y);
+        let gy = svg.append("g").call(yAxis);
 
         // console.log(y.domain());
 
-        svg.selectAll("rect")
+        const zoom = d3.zoom()
+            .scaleExtent([1, 8])
+            .translateExtent([[-10, -10], [width - margin.left - margin.right, height]])
+            .on("zoom", zoomed)
+
+        function zoomed({transform}) {
+            // rects.attr("transform", transform);
+            let scaled_x = transform.rescaleX(x)
+            svg.selectAll('rect').attr("x", 1)
+                .attr("transform", function(d) { // @ts-ignore
+                    return "translate(" + scaled_x(d.x0) + "," + y(d.length) + ")"; })
+                .attr("width", function(d) { // @ts-ignore
+                    return scaled_x(d.x1) - scaled_x(d.x0) -1 ; })
+                .attr("height", function(d) { // @ts-ignore
+                    return (height - margin.top - margin.bottom) - y(d.length); })
+                .style("fill", "#1C8394")
+            gx.call(xAxis.scale(scaled_x));
+            gy.call(yAxis);
+
+        }
+
+        const rects = svg
+            .append("g")
+            .attr("class", "bars")
+            .selectAll("rect")
             .data(bins)
             .enter()
             .append("rect")
@@ -107,22 +133,8 @@ export default function Histogram({data}) {
             .attr('y', 2)
             .attr('text-anchor', 'start')
             .text('scores')
+        svg.call(zoom);
 
-        if (showAvgLine) {
-            // @ts-ignore
-            // @ts-ignore
-            svg.append('line').attr('x1', x(41)).attr('y1', height - margin.top - margin.bottom).attr('x2', x(41))
-                .attr('y2', -20).attr('stroke', '#d54545').attr('stroke-width', '2px');
-            svg.append('text').attr('x', x(25))
-                .attr('y', -20)
-                .style('fill', '#d54545')
-                .text('neutral or dissatisfied')
-
-            svg.append('text').attr('x', x(55))
-                .attr('y', -20)
-                .style('fill', '#179f5d')
-                .text('satisfied')
-        }
     }
 
     React.useEffect(() => {
@@ -139,18 +151,6 @@ export default function Histogram({data}) {
             <div className={'svg-container'}>
                 <div className={'headers'}>
                     <text>User Satisfaction Score Distribution</text>
-                    <div className={"Dropdown"}>
-                        <Dropdown>
-                            <Dropdown.Toggle id={"dropdown-basic"} variant="secondary" size={'sm'}>
-                                Ref Info: {showAvgLine === true? "On" : "Off"}
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu variant="dark">
-                                <Dropdown.Item onClick={() => setShowAvgLine(true)}>On</Dropdown.Item>
-                                <Dropdown.Item onClick={() => setShowAvgLine(false)}>Off</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    </div>
 
                 </div>
                 <div className={'svg-chart'}>
