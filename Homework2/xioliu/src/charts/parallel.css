@@ -1,0 +1,22 @@
+.p-container{
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: -2%;
+    margin-left: -11%;
+}
+.parallel-header{
+    flex-direction: row;
+}
+
+.header-text{
+    margin-top: 5%;
+    margin-bottom: -7%;
+    /*background-color: #282c34;*/
+    width: 50%;
+}
+.parallel-dropdown{
+    margin-left: 85%;
+    margin-top: 3%;
+}
