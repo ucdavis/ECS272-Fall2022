@@ -62,8 +62,10 @@ export default {
             const margin = { top: 30, right: 40, bottom: 60, left: 50 };
             const height = 400;
             const width = 700;
-
+            
             d3.selectAll(".scatterplot").remove()
+            d3.selectAll(".dot").remove()
+            d3.selectAll(".tooltip_scatter").remove()
             
             const svg = d3.select(id).append("svg")
                             .attr("class", "scatterplot")
@@ -87,13 +89,15 @@ export default {
             svg.append("g")
                 .call(d3.axisLeft(y))
 
-            const clip = svg.append("defs").append("svg:clipPath")
-                            .attr("id", "clip")
-                            .append("svg:rect")
-                            .attr("width", width)
-                            .attr("height", height)
-                            .attr("x", 0)
-                            .attr("y", 0)
+            const tooltip = d3.select(id).append("div")
+                                .style("position", "absolute")
+                                .style("opacity", 0)
+                                .attr("class", "tooltip_scatter")
+                                .style("background-color", "white")
+                                .style("border", "solid")
+                                .style("border-width", "1px")
+                                .style("border-radius", "5px")
+                                .style("padding", "10px")
 
             const color = d3.scaleOrdinal()
                 .domain(this.all_types)
@@ -104,13 +108,15 @@ export default {
                     .transition()
                     .duration(200)
                     .style("fill", "lightgrey")
-                    .attr("r", 3)
+                    .attr("r", 1)
 
                 d3.selectAll("." + d.type1)
                     .transition()
                     .duration(200)
                     .style("fill", color(d.type1))
-                    .attr("r", 7)
+                    .attr("r", 4)
+
+                tooltip.style("opacity", 1)
             }
 
             const doNotHighlight = function(event, d) {
@@ -118,10 +124,13 @@ export default {
                     .transition()
                     .duration(200)
                     .style("fill", d => color(d.type1))
-                    .attr("r", 5)
+                    .attr("r", 2)
+
+                tooltip.transition()
+                        .duration(200)
+                        .style("opacity", 0)
             }
 
-            
             if (selection.text == 'Attack') {
                 svg.append("g")
                     .selectAll("dot")
@@ -131,10 +140,15 @@ export default {
                     .attr("class", function (d) { return "dot " + d.type1 })
                     .attr("cx", function (d) { return x(d.Total); })
                     .attr("cy", function (d) { return y(d.Attack); })
-                    .attr("r", 5)
+                    .attr("r", 2)
                     .style("fill", function (d) { return color(d.type1)})
                     .on("mouseover", highlight)
                     .on("mouseleave", doNotHighlight)
+                    .on("mousemove", function(event, d) {
+                        tooltip.html(`This pokemon is: ${d.name}. It has Attack ${d.Attack}.`)
+                            .style("left", (event.x)/8 + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                            .style("top", (event.y)/8 + "px")
+                    })
             }
             else if (selection.text == 'Defense') {
                 svg.append("g")
@@ -145,10 +159,15 @@ export default {
                     .attr("class", function (d) { return "dot " + d.type1 })
                     .attr("cx", function (d) { return x(d.Total); })
                     .attr("cy", function (d) { return y(d.Defense); })
-                    .attr("r", 5)
+                    .attr("r", 2)
                     .style("fill", function (d) { return color(d.type1)})
                     .on("mouseover", highlight)
                     .on("mouseleave", doNotHighlight)
+                    .on("mousemove", function(event, d) {
+                        tooltip.html(`This pokemon is: ${d.name}. It has Defense ${d.Defense}.`)
+                            .style("left", (event.x)/8 + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                            .style("top", (event.y)/8 + "px")
+                    })
             }
             else if (selection.text == 'HP') {
                 svg.append("g")
@@ -159,10 +178,15 @@ export default {
                     .attr("class", function (d) { return "dot " + d.type1 })
                     .attr("cx", function (d) { return x(d.Total); })
                     .attr("cy", function (d) { return y(d.HP); })
-                    .attr("r", 5)
+                    .attr("r", 2)
                     .style("fill", function (d) { return color(d.type1)})
                     .on("mouseover", highlight)
                     .on("mouseleave", doNotHighlight)
+                    .on("mousemove", function(event, d) {
+                        tooltip.html(`This pokemon is: ${d.name}. It has HP ${d.HP}.`)
+                            .style("left", (event.x)/8 + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                            .style("top", (event.y)/8 + "px")
+                    })
             }
             else if (selection.text == 'SpecialAttack') {
                 svg.append("g")
@@ -173,10 +197,15 @@ export default {
                     .attr("class", function (d) { return "dot " + d.type1 })
                     .attr("cx", function (d) { return x(d.Total); })
                     .attr("cy", function (d) { return y(d.SpecialAttack); })
-                    .attr("r", 5)
+                    .attr("r", 2)
                     .style("fill", function (d) { return color(d.type1)})
                     .on("mouseover", highlight)
                     .on("mouseleave", doNotHighlight)
+                    .on("mousemove", function(event, d) {
+                        tooltip.html(`This pokemon is: ${d.name}. It has SpecialAttack ${d.SpecialAttack}.`)
+                            .style("left", (event.x)/8 + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                            .style("top", (event.y)/8 + "px")
+                    })
             }
             else if (selection.text == 'SpecialDefense') {
                 svg.append("g")
@@ -187,10 +216,15 @@ export default {
                     .attr("class", function (d) { return "dot " + d.type1 })
                     .attr("cx", function (d) { return x(d.Total); })
                     .attr("cy", function (d) { return y(d.SpecialDefense); })
-                    .attr("r", 5)
+                    .attr("r", 2)
                     .style("fill", function (d) { return color(d.type1)})
                     .on("mouseover", highlight)
                     .on("mouseleave", doNotHighlight)
+                    .on("mousemove", function(event, d) {
+                        tooltip.html(`This pokemon is: ${d.name}. It has SpecialDefense ${d.SpecialDefense}.`)
+                            .style("left", (event.x)/8 + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                            .style("top", (event.y)/8 + "px")
+                    })
             }
             else if (selection.text == 'Speed') {
                 svg.append("g")
@@ -201,10 +235,15 @@ export default {
                     .attr("class", function (d) { return "dot " + d.type1 })
                     .attr("cx", function (d) { return x(d.Total); })
                     .attr("cy", function (d) { return y(d.Speed); })
-                    .attr("r", 5)
+                    .attr("r", 2)
                     .style("fill", function (d) { return color(d.type1)})
                     .on("mouseover", highlight)
                     .on("mouseleave", doNotHighlight)
+                    .on("mousemove", function(event, d) {
+                        tooltip.html(`This pokemon is: ${d.name}. It has Speed ${d.Speed}.`)
+                            .style("left", (event.x)/8 + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                            .style("top", (event.y)/8 + "px")
+                    })
             } 
         }
     }
