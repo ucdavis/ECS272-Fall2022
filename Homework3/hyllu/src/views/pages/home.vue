@@ -38,6 +38,7 @@ import Dropdown_Network from '../components/dropdown_network.vue';
 import TextArea from '../components/Text_area.vue';
 import Table from '../components/table.vue';
 import csvPath from '../../assets/data/spotify.csv';
+import tablePath from '../../assets/data/table_data.csv';
 
 export default {
     data(){
