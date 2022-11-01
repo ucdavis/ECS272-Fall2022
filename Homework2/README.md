@@ -1,4 +1,6 @@
 # UPDATED (AGAIN) Portion of README For Assignment 3 (Scroll Down to See Assignment 2 Updates)
+Note: HW3 is done on `Homework3` branch.
+
 To properly switch to Homework3 branch, run the following command:
 `git checkout --track origin/Homework3`
 
@@ -18,6 +20,8 @@ Cool NEW Features for HW3!
 If you have any questions, please feel free to reach out to me! :)
 
 # UPDATED Portion of README For Assignment 2
+Note: HW2 is done on `main` branch.
+
 1. Change directory into the `Vue-Skeleton` template under `Homework 2` folder.
 2. Run `npm i` to install node modules as needed
 3. Run `npm run start` to start the sever.
