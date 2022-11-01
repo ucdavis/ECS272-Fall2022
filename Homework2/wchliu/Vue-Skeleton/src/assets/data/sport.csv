@@ -1,0 +1,114 @@
+id,title,release_year,runtime,genres,production_country,imdb_score,imdb_votes
+tm19494,The Replacements,2000,118,"['comedy', 'sport']",['US'],6.6,64771.0
+tm1822,3 Ninjas Kick Back,1994,93,"['comedy', 'family', 'action', 'sport']","['JP', 'US']",4.5,9321.0
+tm117488,The Next Karate Kid,1994,107,"['action', 'drama', 'family', 'sport', 'romance']",['US'],4.5,30422.0
+tm424630,A Triumph of the Heart: The Ricky Bell Story,1991,100,"['drama', 'sport']",['US'],7.2,250.0
+tm133374,The Blind Side,2009,129,"['drama', 'sport']",['US'],7.6,327675.0
+tm39828,Semi-Pro,2008,94,"['comedy', 'sport', 'european']",['US'],5.8,82159.0
+tm32144,We Are Marshall,2006,131,"['drama', 'sport']",['US'],7.0,61345.0
+tm141707,Blood and Bone,2009,93,"['thriller', 'sport', 'action', 'crime', 'drama']",['US'],6.7,33051.0
+tm43399,Lagaan: Once Upon a Time in India,2001,224,"['romance', 'drama', 'action', 'sport']",['IN'],8.1,111053.0
+tm103095,Ip Man 2,2010,108,"['drama', 'action', 'history', 'sport']","['HK', 'CN']",7.5,104500.0
+tm183963,Dreamer: Inspired By a True Story,2005,106,"['family', 'drama', 'sport', 'fantasy']",['US'],6.8,13205.0
+tm152724,Kurbaan,2009,161,"['thriller', 'action', 'drama', 'crime', 'romance', 'sport']",['IN'],5.7,5162.0
+tm75544,Dhan Dhana Dhan Goal,2007,167,"['drama', 'sport', 'thriller']",['IN'],5.0,2635.0
+tm85369,Hattrick,2007,110,"['drama', 'comedy', 'romance', 'sport']",['IN'],4.3,495.0
+tm160132,Soul Surfer,2011,106,"['drama', 'family', 'sport']",['US'],7.0,49599.0
+tm69926,Here Comes the Boom,2012,105,"['action', 'comedy', 'sport']",['US'],6.4,90126.0
+tm174190,Undefeated,2011,113,"['documentation', 'sport']",['US'],7.7,7073.0
+tm183176,A Second Chance,2011,90,"['drama', 'family', 'sport']",['AU'],4.7,1030.0
+tm35700,Paan Singh Tomar,2012,135,"['drama', 'crime', 'sport', 'thriller', 'action']",['IN'],8.2,36077.0
+tm44615,Ferrari Ki Sawaari,2012,140,"['family', 'comedy', 'drama', 'sport']",['IN'],6.4,5465.0
+tm176864,Rush,2013,123,"['drama', 'action', 'sport', 'european']","['US', 'DE', 'GB']",8.1,471586.0
+tm169719,42,2013,128,"['drama', 'sport']",['US'],7.5,94520.0
+tm148976,The Battered Bastards of Baseball,2014,80,"['documentation', 'sport']",['US'],8.0,4043.0
+tm171929,The Short Game,2013,100,"['documentation', 'sport']",['US'],7.3,1570.0
+tm151927,Mary Kom,2014,122,"['history', 'action', 'drama', 'sport']",['IN'],6.8,10769.0
+tm182322,Kai Po Che!,2013,126,"['drama', 'sport']",['IN'],7.7,36784.0
+tm239683,Team Foxcatcher,2016,91,"['documentation', 'crime', 'history', 'sport']",['US'],7.3,6572.0
+tm201365,Brothers,2015,156,"['family', 'action', 'drama', 'sport']",['IN'],6.4,13003.0
+tm232710,A Second Chance,2015,130,"['drama', 'romance', 'family', 'documentation', 'sport']",['PH'],8.6,47.0
+tm245042,Budhia Singh: Born to Run,2016,112,"['drama', 'sport']",['IN'],7.6,1503.0
+tm227523,Fifty,2015,101,"['drama', 'romance', 'sport', 'thriller']",['NG'],6.0,265.0
+tm290157,XV Beyond the Tryline,2016,91,"['documentation', 'sport']",['GB'],6.8,76.0
+tm239078,Jada,2016,16,"['drama', 'sport']",['US'],5.4,159.0
+tm350727,Hajwala: The Missing Engine,2016,96,"['drama', 'action', 'crime', 'sport', 'thriller']",['AE'],2.0,255.0
+tm315344,Molly's Game,2017,140,"['drama', 'crime', 'sport']","['CN', 'CA', 'US']",7.4,167955.0
+tm311815,Icarus,2017,121,"['documentation', 'thriller', 'sport']",['US'],7.9,49269.0
+tm219259,Goon: Last of the Enforcers,2017,101,"['comedy', 'sport']",['CA'],5.8,13717.0
+tm374454,Indian Horse,2018,96,"['drama', 'sport']",['CA'],7.2,2171.0
+tm351214,Long Shot,2017,40,"['documentation', 'sport', 'crime']",['US'],7.4,7857.0
+tm298339,Handsome Devil,2017,95,"['drama', 'comedy', 'sport', 'european']",['IE'],7.0,14290.0
+tm427293,Solo,2018,100,"['thriller', 'drama', 'romance', 'sport', 'european']",['ES'],5.0,2779.0
+tm443993,"Take the Ball, Pass the Ball",2018,107,"['documentation', 'sport', 'european']",['ES'],7.9,3089.0
+tm407295,Amateur,2018,17,"['drama', 'sport']",['US'],5.9,4459.0
+tm372305,First Match,2018,94,"['drama', 'sport']",['US'],6.4,2272.0
+tm300056,Holy Goalie,2018,95,"['comedy', 'sport', 'european']",['ES'],5.3,1634.0
+tm242765,Raising the Bar,2017,93,"['family', 'drama', 'documentation', 'sport']",['AU'],5.5,1555.0
+tm347850,SPF-18,2017,75,"['romance', 'drama', 'sport']",['US'],3.2,5173.0
+tm348386,Resurface,2017,27,"['documentation', 'sport', 'war']",['US'],7.1,286.0
+tm372061,Sudani from Nigeria,2018,123,"['comedy', 'drama', 'sport']",['IN'],8.2,4159.0
+tm273600,Kuroko's Basketball the Movie: Last Game,2017,90,"['animation', 'drama', 'sport']",['JP'],7.7,2558.0
+tm374357,Going for Gold,2018,89,"['drama', 'family', 'sport']",['AU'],4.7,557.0
+tm360945,Soorma,2018,131,"['drama', 'sport']",['IN'],7.3,5183.0
+tm328052,Sparring,2017,95,"['drama', 'action', 'sport', 'european']",['FR'],6.4,627.0
+tm324806,Counterpunch,2017,91,"['documentation', 'sport']",['US'],6.7,918.0
+tm459527,Good Game: The Beginning,2018,104,"['comedy', 'drama', 'sport']",['TR'],4.4,1841.0
+tm684591,Freej Al Taibeen,2018,100,"['comedy', 'sport']",['AE'],5.8,9.0
+tm431169,Late Life: The Chien-Ming Wang Story,2018,97,"['documentation', 'sport']","['TW', 'US']",7.1,474.0
+tm367613,Mr. Chandramouli,2018,122,"['romance', 'comedy', 'sport']",['IN'],5.1,236.0
+tm438250,"I, Potro",2018,50,"['comedy', 'sport']","['MX', 'AR']",6.2,498.0
+tm412937,Trading Paint,2019,87,"['drama', 'thriller', 'action', 'sport', 'european']","['GB', 'US']",4.4,1996.0
+tm428558,High Flying Bird,2019,90,"['drama', 'sport']",['US'],6.2,8616.0
+tm452826,Poms,2019,91,"['comedy', 'drama', 'sport']","['GB', 'US']",6.0,6274.0
+tm461366,The Coldest Game,2019,104,"['thriller', 'history', 'sport', 'european']",['PL'],6.2,10749.0
+tm454375,Benchwarmers 2: Breaking Balls,2019,90,"['comedy', 'sport']",['US'],4.1,967.0
+tm376739,Bethany Hamilton: Unstoppable,2019,99,"['documentation', 'sport']",['US'],7.4,736.0
+tm434830,The Grizzlies,2019,106,"['drama', 'sport']",['CA'],7.4,2194.0
+tm881162,Athlete A,2020,104,"['documentation', 'crime', 'sport']",['US'],7.6,10861.0
+tm836662,Go!,2020,102,"['family', 'sport']",['AU'],5.9,2913.0
+tm857397,A Life of Speed: The Juan Manuel Fangio Story,2020,92,"['documentation', 'sport']",['AR'],6.9,1854.0
+tm889629,Lady Driver,2020,104,"['drama', 'sport']",['US'],5.7,1538.0
+tm919106,Rising Phoenix,2020,105,"['documentation', 'sport']",['GB'],8.1,1683.0
+tm836674,The Main Event,2020,102,"['family', 'comedy', 'action', 'fantasy', 'sport']",['US'],4.8,2327.0
+tm470597,A Kid from Coney Island,2019,89,"['documentation', 'sport']","['US', 'CN']",7.0,554.0
+tm818588,All the Freckles in the World,2019,90,"['comedy', 'sport', 'romance']",['MX'],5.2,1290.0
+tm1079495,A Second Chance: Rivals!,2019,89,"['drama', 'family', 'sport']",['AU'],4.6,394.0
+tm474862,Bennett's War,2019,94,"['drama', 'sport']",['US'],6.0,899.0
+tm859143,Torbaaz,2020,132,"['drama', 'thriller', 'action', 'sport']",['IN'],6.9,17892.0
+tm462037,Mi amigo Alexis,2019,100,"['drama', 'family', 'comedy', 'sport']",['CL'],5.1,346.0
+tm818239,Penalty,2019,128,"['sport', 'drama']",['IN'],5.3,878.0
+tm454464,Pegasus,2019,98,"['comedy', 'action', 'fantasy', 'sport']",['CN'],6.3,1813.0
+tm943808,Guillermo Vilas: Settling the Score,2020,94,"['documentation', 'sport']",['AR'],7.1,655.0
+tm846630,Tarung Sarung,2020,115,"['drama', 'action', 'sport', 'thriller']",['ID'],5.9,196.0
+tm475815,The Zoya Factor,2019,134,"['romance', 'sport', 'comedy', 'drama']",['IN'],4.3,2451.0
+tm922943,Beyond the Boundary: ICC Women's T20 World Cup Australia 2020,2020,59,"['documentation', 'sport']",['AU'],6.0,6.0
+tm918894,Anelka: Misunderstood,2020,94,"['documentation', 'sport']",['FR'],6.4,3174.0
+tm464212,Antoine Griezmann: The Making of a Legend,2019,60,"['documentation', 'sport']",['FR'],6.5,1157.0
+tm471802,Sur Sapata,2019,128,"['comedy', 'drama', 'sport']",['IN'],7.3,45.0
+tm1126268,Hustle,2022,117,"['drama', 'sport', 'comedy']",['US'],7.4,89770.0
+tm1137051,Bubble,2022,101,"['scifi', 'fantasy', 'romance', 'sport', 'thriller', 'animation', 'action', 'drama']",['JP'],6.3,4597.0
+tm1119272,14 Peaks: Nothing Is Impossible,2021,101,"['documentation', 'sport']",['US'],7.7,24213.0
+tm1141439,Home Team,2022,95,"['family', 'comedy', 'sport']",['US'],6.0,17767.0
+tm897466,The Summit of the Gods,2021,95,"['animation', 'thriller', 'drama', 'sport', 'history']","['LU', 'FR']",7.5,5485.0
+tm673809,Schumacher,2021,112,"['sport', 'documentation']",['DE'],7.4,22280.0
+tm1221280,Jaadugar,2022,167,"['drama', 'fantasy', 'romance', 'sport', 'comedy']",['IN'],7.3,2563.0
+tm912100,Bruised,2021,129,"['drama', 'sport', 'thriller']","['GB', 'US']",6.1,14293.0
+tm1082314,Untold: Malice at the Palace,2021,69,"['crime', 'documentation', 'sport']",['US'],7.5,7699.0
+tm473502,83,2021,163,"['drama', 'history', 'sport']",['IN'],7.5,35093.0
+tm1120509,Never Back Down: Revolt,2021,89,"['action', 'crime', 'drama', 'sport']",['US'],4.0,535.0
+tm1091155,Untold: Breaking Point,2021,79,"['documentation', 'sport']",['US'],7.6,2490.0
+tm991351,Pelé,2021,108,"['documentation', 'sport']",['GB'],7.0,4256.0
+tm950444,Skater Girl,2021,107,"['drama', 'family', 'sport']","['US', 'IN']",6.6,4289.0
+tm858287,Jersey,2022,175,"['drama', 'sport', 'romance']",['IN'],7.3,10878.0
+tm1084481,Blood Brothers: Malcolm X & Muhammad Ali,2021,95,"['documentation', 'history', 'sport']",['US'],6.9,946.0
+tm886188,Caught by a Wave,2021,99,"['romance', 'drama', 'sport']",['IT'],5.7,1289.0
+tm1017664,Baggio: The Divine Ponytail,2021,91,"['sport', 'drama']",['IT'],6.1,4427.0
+tm1172947,Toolsidas Junior,2022,130,"['drama', 'family', 'sport']",['IN'],7.5,1783.0
+tm1165244,Into the Wind,2022,108,"['comedy', 'drama', 'romance', 'sport']",['PL'],5.2,864.0
+tm1082515,Untold: Caitlyn Jenner,2021,69,"['documentation', 'sport']",['US'],6.4,2456.0
+tm1064988,Zero to Hero,2021,103,"['drama', 'sport']",['HK'],6.7,842.0
+tm1068632,Bartkowiak,2021,91,"['action', 'thriller', 'crime', 'sport']",['PL'],5.1,1205.0
+tm988879,Tony Parker: The Final Shot,2021,98,"['documentation', 'sport']",['FR'],6.8,1400.0
+tm1033635,Sisters on Track,2021,96,"['documentation', 'sport']",['US'],5.8,199.0
+tm1076198,Blue Dream: The Road to Wembley,2021,61,"['documentation', 'sport']",['IT'],7.1,792.0

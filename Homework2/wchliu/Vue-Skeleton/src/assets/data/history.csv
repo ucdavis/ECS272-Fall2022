@@ -1,0 +1,146 @@
+id,title,release_year,runtime,genres,production_country,imdb_score,imdb_votes
+tm89386,Hitler: A Career,1977,150,"['history', 'documentation', 'european']",['DE'],7.5,2460.0
+tm27298,Saladin the Victorious,1963,186,"['action', 'drama', 'war', 'history', 'romance']",['EG'],7.6,2508.0
+tm191772,Seven Years in Tibet,1997,136,"['action', 'drama', 'history', 'war']",['US'],7.1,142903.0
+tm190811,Geronimo: An American Legend,1993,115,"['western', 'history', 'drama']",['US'],6.5,11709.0
+tm63514,The Last Days,1998,87,"['drama', 'history', 'war', 'documentation']",['US'],7.9,4378.0
+tm191614,Destiny,1997,136,"['drama', 'history', 'comedy', 'romance']","['FR', 'EG']",7.1,2857.0
+tm203186,Children of Shatila,1999,50,"['documentation', 'history']",['LB'],8.1,78.0
+tm95477,Troy,2004,163,"['action', 'history', 'war', 'drama', 'european']","['MT', 'GB', 'US']",7.3,527447.0
+tm131038,Public Enemies,2009,140,"['action', 'crime', 'drama', 'history', 'european']","['US', 'JP']",7.0,300773.0
+tm30205,Ip Man,2008,106,"['drama', 'fantasy', 'comedy', 'history', 'action']",['HK'],8.0,222372.0
+tm40009,21,2008,123,"['crime', 'drama', 'history', 'thriller']",['US'],6.8,249016.0
+tm700,"10,000 BC",2008,109,"['action', 'drama', 'fantasy', 'history', 'thriller']","['US', 'ZA']",5.1,130813.0
+tm103095,Ip Man 2,2010,108,"['drama', 'action', 'history', 'sport']","['HK', 'CN']",7.5,104500.0
+tm100688,Even the Rain,2010,104,"['drama', 'european', 'history']","['FR', 'MX', 'ES']",7.4,13533.0
+tm86051,Black Friday,2004,161,"['crime', 'history', 'action', 'drama']",['IN'],8.4,20768.0
+tm29269,Jodhaa Akbar,2008,214,"['romance', 'history', 'war', 'action', 'drama']",['IN'],7.5,32440.0
+tm32885,Rang De Basanti,2006,157,"['drama', 'history', 'comedy', 'crime']",['IN'],8.1,118477.0
+tm84316,Shootout at Lokhandwala,2007,145,"['action', 'crime', 'drama', 'history']",['IN'],7.1,10213.0
+tm114504,The Legend of Bhagat Singh,2002,155,"['crime', 'drama', 'history', 'action']",['IN'],8.1,16340.0
+tm143510,Harishchandrachi Factory,2009,96,"['comedy', 'drama', 'history']",['IN'],8.4,2498.0
+tm76029,Under the Bombs,2007,98,"['war', 'romance', 'drama', 'history', 'european']","['LB', 'GB', 'FR']",7.0,1655.0
+tm254745,Frontiers of Dreams and Fears,2001,56,"['documentation', 'history']",['PS'],8.2,55.0
+tm61801,Zero Dark Thirty,2012,157,"['thriller', 'drama', 'history', 'war']",['US'],7.4,296416.0
+tm32982,Les Misérables,2012,158,"['drama', 'history', 'romance', 'war']","['US', 'GB']",7.5,327017.0
+tm62210,Rurouni Kenshin Part I: Origins,2012,134,"['action', 'drama', 'history', 'war']",['JP'],7.4,26098.0
+tm63368,A World Not Ours,2012,93,"['documentation', 'history']",['PS'],7.8,388.0
+tm165967,Mandela: Long Walk to Freedom,2013,141,"['drama', 'history']","['GB', 'ZA']",7.1,27866.0
+tm161029,Mr. Peabody & Sherman,2014,92,"['action', 'family', 'animation', 'romance', 'comedy', 'fantasy', 'history', 'scifi']",['US'],6.8,69669.0
+tm181081,The Railway Man,2013,116,"['drama', 'history', 'european', 'romance', 'war']","['AU', 'CH', 'GB']",7.1,40175.0
+tm187390,The Square,2013,88,"['documentation', 'drama', 'history']","['US', 'EG', 'GB']",8.1,8949.0
+tm151927,Mary Kom,2014,122,"['history', 'action', 'drama', 'sport']",['IN'],6.8,10769.0
+tm183706,Birth Reborn,2013,91,"['documentation', 'family', 'history']",['BR'],7.8,252.0
+tm158436,Print the Legend,2014,100,"['documentation', 'drama', 'history']",['US'],7.0,1967.0
+tm172027,The Butterfly's Dream,2013,138,"['drama', 'history', 'romance']",['TR'],7.7,22191.0
+tm193769,Steve Jobs,2015,125,"['history', 'drama']","['GB', 'US']",7.2,168042.0
+tm244788,13th,2016,100,"['documentation', 'history', 'crime']",['US'],8.2,35302.0
+tm230551,Ip Man 3,2015,105,"['action', 'drama', 'history']","['HK', 'CN']",7.0,54977.0
+tm205812,The Siege of Jadotville,2016,108,"['war', 'drama', 'thriller', 'action', 'history', 'european']","['IE', 'ZA']",7.2,39404.0
+tm239683,Team Foxcatcher,2016,91,"['documentation', 'crime', 'history', 'sport']",['US'],7.3,6572.0
+tm136061,Suffragette,2015,106,"['drama', 'history']","['GB', 'FR']",6.9,41983.0
+tm233544,Marco Polo: One Hundred Eyes,2015,28,"['action', 'drama', 'history']",['US'],7.8,10742.0
+tm123789,The Young Messiah,2016,120,"['history', 'drama', 'fantasy']",['US'],5.6,3576.0
+tm138584,Hawaizaada,2015,157,"['history', 'drama', 'fantasy']",['IN'],5.5,1942.0
+tm224377,Heneral Luna,2015,118,"['comedy', 'action', 'drama', 'history', 'war']",['PH'],7.3,2132.0
+tm241998,Mohenjo Daro,2016,155,"['action', 'drama', 'history', 'romance']",['IN'],5.6,11693.0
+tm230524,"Chatô, The King of Brazil",2015,100,"['drama', 'comedy', 'history']",['BR'],5.4,19.0
+tm239933,7:19,2016,94,"['history', 'thriller', 'drama']",['MX'],5.8,649.0
+tm313149,12 Strong,2018,131,"['drama', 'action', 'war', 'history']",['US'],6.5,79980.0
+tm232797,Dunkirk,2017,107,"['drama', 'war', 'action', 'thriller', 'history', 'european']","['FR', 'NL', 'GB', 'US']",7.8,619645.0
+tm244220,Darkest Hour,2017,125,"['drama', 'history', 'war', 'thriller', 'family']",['GB'],7.4,193208.0
+tm357589,The Guernsey Literary & Potato Peel Pie Society,2018,124,"['drama', 'history', 'romance', 'war']","['GB', 'US', 'FR']",7.3,45626.0
+tm319818,Outlaw King,2018,121,"['action', 'drama', 'history', 'war']","['US', 'GB']",6.9,70822.0
+tm433228,Red Joan,2018,101,"['thriller', 'history', 'romance', 'drama']",['GB'],6.4,12452.0
+tm348993,22 July,2018,143,"['thriller', 'crime', 'drama', 'history', 'european']","['US', 'IS', 'NO']",6.8,33609.0
+tm310899,Mary Magdalene,2018,120,"['drama', 'history']","['US', 'AU', 'GB']",5.9,10364.0
+tm244175,The Zookeeper's Wife,2017,126,"['war', 'drama', 'history']","['CZ', 'GB', 'US']",7.0,43091.0
+tm285107,Victoria & Abdul,2017,111,"['drama', 'history']","['GB', 'US']",6.8,35690.0
+tm411311,King of Thieves,2018,108,"['drama', 'crime', 'history']",['GB'],5.5,14418.0
+tm363103,Perfect Bid: The Contestant Who Knew Too Much,2017,72,"['documentation', 'history']",['CA'],6.5,2665.0
+tm322243,Shimmer Lake,2017,83,"['thriller', 'crime', 'drama', 'action', 'history', 'horror', 'romance']","['CA', 'US']",6.3,14098.0
+tm285356,First They Killed My Father,2017,136,"['war', 'drama', 'history']","['US', 'KH']",7.2,17871.0
+tm313974,Get Me Roger Stone,2017,100,"['documentation', 'history']",['US'],7.3,7408.0
+tm429163,The Photographer of Mauthausen,2018,110,"['thriller', 'drama', 'history', 'war', 'european']",['ES'],6.7,10687.0
+tm326624,Unrest,2017,97,"['documentation', 'drama', 'history', 'romance', 'european']","['US', 'DK', 'GB']",7.6,2904.0
+tm426569,A Twelve-Year Night,2018,117,"['drama', 'history', 'crime', 'european']","['AR', 'ES', 'UY']",7.5,9920.0
+tm311995,The Battleship Island,2017,132,"['drama', 'action', 'history']",['KR'],7.1,7095.0
+tm311789,The Most Hated Woman in America,2017,91,"['drama', 'history']",['US'],6.1,6618.0
+tm326704,Parmanu: The Story of Pokhran,2018,129,"['drama', 'action', 'history']",['IN'],7.6,23973.0
+tm409456,Manto,2018,113,"['drama', 'history']",['IN'],7.3,4248.0
+tm266705,Giant,2017,114,"['drama', 'history', 'european']",['ES'],6.6,4302.0
+tm305112,The Fortress,2017,140,"['drama', 'action', 'history', 'war', 'thriller']",['KR'],6.8,2537.0
+tm367264,Milada,2017,130,"['drama', 'history', 'european']","['CZ', 'US']",6.3,1331.0
+tm413129,Goyo: The Boy General,2018,155,"['action', 'war', 'history']",['PH'],6.7,799.0
+tm319477,Rodney King,2017,52,"['drama', 'crime', 'documentation', 'comedy', 'history']",['US'],5.8,606.0
+tm245383,Te Ata,2017,105,"['drama', 'history']",['US'],7.4,736.0
+tm350971,The Last Hour,2017,118,"['crime', 'drama', 'history', 'thriller']",['PE'],6.3,522.0
+tm437159,ReMastered: Who Shot the Sheriff,2018,57,"['documentation', 'crime', 'history', 'music']",['US'],6.9,1430.0
+tm434179,Two Catalonias,2018,116,"['documentation', 'history', 'european']",['ES'],6.4,677.0
+tm429174,Gun City,2018,127,"['thriller', 'action', 'crime', 'history', 'european']","['ES', 'FR']",6.3,3895.0
+tm316923,Kartini: Princess of Java,2017,118,"['drama', 'family', 'history', 'european']",['ID'],7.6,511.0
+tm510203,A Call to Spy,2019,123,"['crime', 'drama', 'thriller', 'war', 'history']",['US'],6.6,7091.0
+tm244149,The Irishman,2019,209,"['crime', 'drama', 'history', 'thriller']",['US'],7.8,376379.0
+tm417392,The King,2019,140,"['history', 'war', 'drama', 'romance']","['US', 'AU']",7.2,124438.0
+tm239927,Official Secrets,2019,112,"['drama', 'thriller', 'history', 'crime', 'war', 'romance']","['GB', 'US']",7.3,46901.0
+tm916405,The Outpost,2020,123,"['history', 'action', 'war', 'drama']","['BG', 'US']",6.8,32952.0
+tm818266,The Forgotten Battle,2020,124,"['drama', 'war', 'history', 'documentation', 'european']","['BE', 'LT', 'NL']",7.1,27275.0
+tm840196,The Trial of the Chicago 7,2020,130,"['drama', 'history', 'thriller']",['US'],7.7,173103.0
+tm435520,The Two Popes,2019,125,"['drama', 'comedy', 'history']",['US'],7.6,122069.0
+tm458585,Dolemite Is My Name,2019,118,"['drama', 'comedy', 'history']",['US'],7.2,60334.0
+tm361746,Ophelia,2019,114,"['drama', 'romance', 'history', 'war', 'thriller']","['GB', 'US']",6.6,10357.0
+tm428557,The Laundromat,2019,96,"['drama', 'history', 'comedy', 'crime']",['US'],6.3,49391.0
+tm414341,The Red Sea Diving Resort,2019,129,"['history', 'drama', 'thriller']","['CA', 'US']",6.6,28051.0
+tm450375,Thackeray,2019,139,"['drama', 'history', 'action']",['IN'],5.3,3365.0
+tm845496,Crip Camp: A Disability Revolution,2020,107,"['documentation', 'history']",['US'],7.7,7428.0
+tm315255,Ip Man 4: The Finale,2019,107,"['action', 'drama', 'history']","['CN', 'HK']",7.0,31692.0
+tm449195,The Boy Who Harnessed the Wind,2019,113,"['drama', 'history']","['US', 'MW', 'GB']",7.6,37527.0
+tm453099,Rolling Thunder Revue: A Bob Dylan Story by Martin Scorsese,2019,142,"['documentation', 'music', 'history']",['US'],7.6,6730.0
+tm446609,The Great Hack,2019,114,"['documentation', 'history']",['US'],7.1,22838.0
+tm948128,Audrey,2020,100,"['documentation', 'history']","['US', 'CH']",7.1,1960.0
+tm497383,Sergio,2020,118,"['drama', 'history', 'romance', 'documentation']","['JO', 'TH', 'US', 'AL']",6.2,9698.0
+tm369389,The Silence of Others,2019,95,"['documentation', 'history', 'european']","['US', 'CA', 'FR', 'ES']",8.0,2096.0
+tm877456,9to5: The Story of A Movement,2020,89,"['documentation', 'history']",['US'],7.4,238.0
+tm461366,The Coldest Game,2019,104,"['thriller', 'history', 'sport', 'european']",['PL'],6.2,10749.0
+tm938793,I Am Woman,2020,116,"['drama', 'music', 'romance', 'history']",['AU'],6.5,2296.0
+tm430171,Screwball,2019,105,"['history', 'documentation']",['US'],7.1,1713.0
+tm470560,Circus of Books,2019,92,"['documentation', 'history']",['US'],7.1,4624.0
+tm1127695,The Endless Trench,2019,148,"['drama', 'history', 'thriller', 'war', 'action', 'european']","['ES', 'FR']",7.2,6400.0
+tm942240,Dance of the Forty One,2020,99,"['drama', 'history']","['BR', 'MX']",6.8,4386.0
+tm472411,Iron Fists and Kung Fu Kicks,2019,108,"['documentation', 'history']",['AU'],6.6,1146.0
+tm454824,Silver Skates,2020,136,"['history', 'romance', 'action', 'drama', 'family']",['RU'],7.1,5946.0
+tm446581,The Edge of Democracy,2019,121,"['documentation', 'history']",['BR'],7.3,14758.0
+tm898262,Coven,2020,92,"['drama', 'history', 'thriller', 'horror', 'action']","['ES', 'FR', 'AR']",6.4,4754.0
+tm454861,Patria,2019,89,"['documentation', 'history', 'war']",['MX'],7.2,105.0
+tm945168,Secrets of the Saqqara Tomb,2020,113,"['documentation', 'history']","['EG', 'US']",7.2,6326.0
+tm413558,Funan,2019,82,"['drama', 'history', 'war', 'animation', 'european']","['FR', 'LU', 'BE', 'KH']",6.8,935.0
+tm897418,DNA,2020,90,"['drama', 'history']",['FR'],5.9,1052.0
+tm455161,Panipat,2019,171,"['history', 'war', 'romance', 'action', 'drama']",['IN'],5.2,5615.0
+tm863992,The Most Dangerous Man in Europe,2020,68,"['documentation', 'history', 'war']",['ES'],6.8,215.0
+tm817087,#AnneFrank. Parallel Stories,2019,92,"['drama', 'history', 'documentation']",['IT'],6.5,1548.0
+tm849323,Shikara,2020,118,"['drama', 'romance', 'history']",['IN'],3.3,15092.0
+tm834653,The Knight and the Princess,2019,97,"['comedy', 'family', 'fantasy', 'history', 'animation', 'action']","['EG', 'SA']",5.5,394.0
+tm814953,This Earth of Mankind,2019,181,"['drama', 'history']",['ID'],6.8,747.0
+tm1043537,Operation Mincemeat,2022,128,"['drama', 'war', 'history']","['GB', 'US']",6.6,18893.0
+tm1014947,Against the Ice,2022,102,"['drama', 'history', 'action']","['DK', 'IS']",6.5,20521.0
+tm1111987,Munich: The Edge of War,2022,129,"['drama', 'history', 'thriller']",['GB'],6.8,28352.0
+tm1137119,Image of Victory,2021,128,"['war', 'history', 'drama']",['IL'],7.5,178.0
+tm992844,The Dig,2021,112,"['history', 'drama']",['GB'],7.1,73079.0
+tm983723,The Sparks Brothers,2021,140,"['documentation', 'music', 'comedy', 'history']","['GB', 'US']",7.8,4663.0
+tm855839,The Shadow in My Eye,2021,107,"['war', 'drama', 'history']",['DK'],7.3,9462.0
+tm861000,Worth,2021,118,"['drama', 'history']","['CA', 'GB', 'US']",6.8,13524.0
+tm897466,The Summit of the Gods,2021,95,"['animation', 'thriller', 'drama', 'sport', 'history']","['LU', 'FR']",7.5,5485.0
+tm465421,The Pirates: The Last Royal Treasure,2022,126,"['action', 'comedy', 'history']",['KR'],6.0,3367.0
+tm1038363,America: The Motion Picture,2021,98,"['action', 'animation', 'war', 'comedy', 'fantasy', 'history', 'scifi']",['US'],5.6,6349.0
+tm1066826,Diana: The Musical,2021,117,"['history', 'music', 'romance', 'drama']",['US'],4.2,1266.0
+tm473502,83,2021,163,"['drama', 'history', 'sport']",['IN'],7.5,35093.0
+tm1043290,Murder by the Coast,2021,88,"['crime', 'documentation', 'history']",['ES'],6.5,2134.0
+tm1084481,Blood Brothers: Malcolm X & Muhammad Ali,2021,95,"['documentation', 'history', 'sport']",['US'],6.9,946.0
+tm1114205,Amina,2021,120,"['war', 'history', 'drama', 'action']",['NG'],3.8,311.0
+tm1120937,Montford: The Chickasaw Rancher,2021,96,"['western', 'drama', 'history']",['US'],6.6,719.0
+tm1039422,Nail Bomber: Manhunt,2021,72,"['crime', 'history', 'documentation']",['GB'],6.3,2142.0
+tm1119455,Camp Confidential: America's Secret Nazis,2021,34,"['documentation', 'animation', 'history']",['US'],6.3,
+tm1102570,Swallow,2021,128,"['drama', 'thriller', 'history']",[],3.5,187.0
+tm983466,"Crack: Cocaine, Corruption & Conspiracy",2021,89,"['documentation', 'crime', 'history']",['US'],6.7,3324.0
+tm1064193,Private Network: Who Killed Manuel Buendía?,2021,100,"['history', 'documentation', 'crime']",['MX'],6.8,224.0
+tm994923,"Our Lady of San Juan, Four Centuries of Miracles",2021,122,"['drama', 'history']",['MX'],6.2,82.0

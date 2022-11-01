@@ -1,0 +1,329 @@
+id,title,release_year,runtime,genres,production_country,imdb_score,imdb_votes
+tm100027,Alibaba Aur 40 Chor,1979,146,"['drama', 'romance', 'action', 'fantasy', 'family']","['SU', 'IN']",6.2,565.0
+tm311264,Muqaddar Ka Faisla,1987,172,"['action', 'comedy', 'drama', 'family']",['IN'],4.8,69.0
+tm419052,Ek Jaan Hain Hum,1983,151,"['family', 'romance']",['IN'],6.3,70.0
+tm187187,Last Action Hero,1993,131,"['action', 'fantasy', 'comedy', 'family']",['US'],6.4,150498.0
+tm6859,My Girl,1991,103,"['drama', 'family', 'romance', 'comedy', 'european']",['US'],6.9,80590.0
+tm113576,Little Women,1994,115,"['drama', 'romance', 'family']",['US'],7.3,58178.0
+tm1822,3 Ninjas Kick Back,1994,93,"['comedy', 'family', 'action', 'sport']","['JP', 'US']",4.5,9321.0
+tm117488,The Next Karate Kid,1994,107,"['action', 'drama', 'family', 'sport', 'romance']",['US'],4.5,30422.0
+tm62385,Hum Saath Saath Hain,1999,177,"['romance', 'family', 'fantasy', 'drama']",['IN'],6.2,8552.0
+tm150260,Cloudy with a Chance of Meatballs,2009,90,"['animation', 'comedy', 'family', 'fantasy', 'scifi', 'romance', 'drama']",['US'],6.9,229274.0
+tm78919,Mr. Bean's Holiday,2007,90,"['family', 'comedy', 'european']","['US', 'FR', 'DE', 'GB']",6.4,125160.0
+tm148379,The Cat in the Hat,2003,82,"['family', 'fantasy', 'comedy', 'action']",['US'],4.0,82684.0
+tm81030,The Golden Compass,2007,113,"['action', 'fantasy', 'family']","['GB', 'US']",6.1,187485.0
+tm27268,Monster House,2006,91,"['animation', 'comedy', 'family', 'fantasy']",['US'],6.6,117008.0
+tm89684,New York Minute,2004,87,"['comedy', 'crime', 'family', 'romance']",['US'],4.9,23476.0
+tm183963,Dreamer: Inspired By a True Story,2005,106,"['family', 'drama', 'sport', 'fantasy']",['US'],6.8,13205.0
+tm22294,Deck the Halls,2006,93,"['family', 'comedy']",['US'],5.0,27936.0
+tm83786,Like Stars on Earth,2007,165,"['drama', 'family']",['IN'],8.3,189685.0
+tm114476,Stuart Little 2,2002,78,"['animation', 'comedy', 'family', 'action', 'fantasy']",['US'],5.5,54193.0
+tm86995,Christmas with the Kranks,2004,99,"['comedy', 'family']",['US'],5.4,49302.0
+tm97544,Alpha and Omega,2010,88,"['animation', 'family', 'comedy', 'action', 'romance']","['CA', 'US', 'IN']",5.1,14362.0
+tm80059,Naruto Shippuden the Movie,2007,94,"['animation', 'action', 'fantasy', 'family']",['JP'],6.7,4090.0
+tm71558,The Legend of the Nahuala,2007,80,"['fantasy', 'animation', 'family']",['MX'],6.1,511.0
+tm95238,The Boy Who Cried Werewolf,2010,97,"['fantasy', 'horror', 'family', 'comedy']","['US', 'CA']",5.9,3315.0
+tm166293,The Blue Umbrella,2005,90,"['drama', 'family', 'fantasy', 'comedy']",['IN'],7.3,2097.0
+tm160596,Zozo,2005,105,"['drama', 'european', 'family', 'war']","['CZ', 'GB', 'DK', 'NL', 'SE']",6.5,3225.0
+tm22558,Mukhsin,2006,95,"['comedy', 'drama', 'family']",['MY'],7.3,388.0
+tm98475,We Are Family,2010,115,"['drama', 'family', 'comedy']",['IN'],5.6,3166.0
+tm46867,Kuselan,2008,160,"['drama', 'family', 'comedy']",['IN'],4.8,1034.0
+tm639940,Tango with Me,2010,104,"['drama', 'family', 'romance']",['US'],6.3,46.0
+tm87672,Rabun,2003,90,"['drama', 'family']",['MY'],7.6,85.0
+tm171885,Kung Fu Panda 2,2011,90,"['animation', 'family', 'comedy', 'fantasy', 'drama', 'action']",['US'],7.2,280433.0
+tm168921,The Smurfs,2011,103,"['animation', 'family', 'action', 'comedy', 'fantasy']",['US'],5.4,90097.0
+tm160132,Soul Surfer,2011,106,"['drama', 'family', 'sport']",['US'],7.0,49599.0
+tm38980,Rise of the Guardians,2012,97,"['fantasy', 'action', 'family', 'animation', 'thriller', 'scifi', 'comedy', 'drama', 'european']",['US'],7.2,173157.0
+tm174683,Arthur Christmas,2011,97,"['drama', 'animation', 'family', 'comedy', 'fantasy']","['GB', 'US']",7.1,58635.0
+tm170758,Hop,2011,101,"['animation', 'comedy', 'family', 'fantasy']",['US'],5.4,34363.0
+tm183547,Escape from Planet Earth,2012,89,"['scifi', 'comedy', 'family', 'animation']","['CA', 'US']",5.8,25734.0
+tm44165,"Chaos, Disorder",2012,76,"['drama', 'family', 'fantasy']",['EG'],6.2,109.0
+tm160361,A Princess for Christmas,2011,89,"['family', 'romance', 'comedy', 'drama']",['US'],6.3,8268.0
+tm183176,A Second Chance,2011,90,"['drama', 'family', 'sport']",['AU'],4.7,1030.0
+tm40860,Big Time Movie,2012,68,"['comedy', 'music', 'family']",['US'],6.1,1962.0
+tm53395,FRED 3: Camp Fred,2012,81,"['comedy', 'family']",['US'],2.0,2654.0
+tm178106,Chillar Party,2011,130,"['comedy', 'drama', 'family']",['IN'],7.5,7831.0
+tm44615,Ferrari Ki Sawaari,2012,140,"['family', 'comedy', 'drama', 'sport']",['IN'],6.4,5465.0
+tm169128,An Elf's Story,2011,24,"['scifi', 'animation', 'family', 'fantasy']",['US'],5.1,510.0
+tm182026,Zokkomon,2011,109,"['fantasy', 'drama', 'family', 'action']",['IN'],4.0,411.0
+tm140389,Paddington,2014,95,"['comedy', 'family', 'fantasy', 'animation', 'european']","['US', 'FR', 'GB']",7.2,113735.0
+tm134967,How to Train Your Dragon 2,2014,102,"['action', 'animation', 'comedy', 'family', 'fantasy']",['US'],7.8,330975.0
+tm161282,Penguins of Madagascar,2014,92,"['family', 'animation', 'action', 'comedy', 'scifi']",['US'],6.6,89930.0
+tm187979,Cloudy with a Chance of Meatballs 2,2013,95,"['animation', 'scifi', 'drama', 'comedy', 'family', 'fantasy']",['US'],6.3,102071.0
+tm161029,Mr. Peabody & Sherman,2014,92,"['action', 'family', 'animation', 'romance', 'comedy', 'fantasy', 'history', 'scifi']",['US'],6.8,69669.0
+tm237143,Shrek the Musical,2013,130,"['music', 'comedy', 'fantasy', 'family']",['US'],6.9,3695.0
+tm166628,The Smurfs 2,2013,105,"['comedy', 'animation', 'fantasy', 'family']",['US'],5.3,42011.0
+tm185208,Elena,2013,82,"['documentation', 'european', 'drama', 'family']","['US', 'BR']",7.6,1823.0
+tm154797,The Nut Job,2014,85,"['comedy', 'crime', 'family', 'animation']","['CA', 'KR']",5.7,28484.0
+tm143372,Stand by Me Doraemon,2014,90,"['scifi', 'fantasy', 'drama', 'family', 'animation', 'comedy']",['JP'],7.3,7989.0
+tm180643,Jinxed,2013,70,"['comedy', 'family']","['CA', 'US']",6.3,1488.0
+tm174289,Free Birds,2013,91,"['animation', 'comedy', 'family', 'scifi']",['US'],5.8,24140.0
+tm183706,Birth Reborn,2013,91,"['documentation', 'family', 'history']",['BR'],7.8,252.0
+tm144021,LEGO DC Comics Super Heroes: Batman Be-Leaguered,2014,22,"['action', 'animation', 'family', 'comedy', 'scifi']",['US'],6.5,1340.0
+tm145791,Miss Granny,2014,124,"['drama', 'comedy', 'music', 'family', 'fantasy']",['KR'],7.2,3508.0
+tm153055,Mitt,2014,93,"['documentation', 'family']",['US'],6.9,2579.0
+tm202914,My Own Man,2014,82,"['documentation', 'drama', 'comedy', 'family']",['US'],6.4,447.0
+tm182580,Ghadi,2013,100,"['drama', 'family', 'comedy']",['LB'],7.3,1128.0
+tm158671,A Fairly Odd Summer,2014,66,"['fantasy', 'comedy', 'family', 'animation']",['US'],3.8,564.0
+tm144557,Deliha,2014,107,"['family', 'comedy', 'romance']",['TR'],4.5,4315.0
+tm242276,Na Bangaaru Talli,2014,116,"['thriller', 'crime', 'drama', 'family']",['IN'],7.2,160.0
+tm140391,Pan,2015,111,"['action', 'fantasy', 'family', 'comedy']","['US', 'GB']",5.7,63788.0
+tm233425,A Silent Voice: The Movie,2016,130,"['animation', 'drama', 'romance', 'family']",['JP'],8.1,77667.0
+tm120108,Kung Fu Panda 3,2016,95,"['action', 'animation', 'family', 'fantasy', 'drama', 'comedy']","['US', 'CN']",7.1,155678.0
+tm132273,Home,2015,94,"['family', 'fantasy', 'comedy', 'animation', 'scifi']",['US'],6.6,101975.0
+tm196296,A Monster Calls,2016,108,"['drama', 'animation', 'family', 'fantasy', 'thriller', 'european']","['US', 'GB', 'ES']",7.4,87806.0
+tm136321,Advantageous,2015,92,"['drama', 'scifi', 'family']",['US'],6.2,5378.0
+tm142881,Jem and the Holograms,2015,118,"['fantasy', 'music', 'romance', 'scifi', 'drama', 'family']",['US'],4.1,7867.0
+tm233317,Pee-wee's Big Holiday,2016,90,"['action', 'comedy', 'family']",['US'],6.1,8064.0
+tm139194,Ratchet & Clank,2016,94,"['animation', 'family', 'action', 'comedy', 'scifi', 'fantasy']","['CA', 'US']",5.5,10919.0
+tm233616,LEGO Marvel Super Heroes: Avengers Reassembled!,2015,22,"['family', 'animation', 'action', 'comedy', 'scifi']",['US'],6.1,862.0
+tm271070,The Warriors Gate,2016,108,"['action', 'family', 'fantasy', 'comedy', 'european']","['CN', 'FR', 'CA']",5.4,5098.0
+tm308241,Legends of the Hidden Temple,2016,68,"['action', 'family']",['US'],5.6,921.0
+tm233561,Shaun the Sheep: The Farmer's Llamas,2015,30,"['comedy', 'family', 'animation']",['GB'],6.8,1400.0
+tm276430,Servant Of The People 2,2016,100,"['comedy', 'family']",['UA'],6.2,417.0
+tm242755,Ordinary World,2016,86,"['comedy', 'drama', 'family', 'music']",['US'],5.5,3106.0
+tm208628,Dil Dhadakne Do,2015,170,"['drama', 'family', 'romance', 'comedy']",['IN'],7.0,17581.0
+tm421855,4K Fireplace,2015,181,"['family', 'reality']",['US'],7.7,49.0
+tm201365,Brothers,2015,156,"['family', 'action', 'drama', 'sport']",['IN'],6.4,13003.0
+tm232710,A Second Chance,2015,130,"['drama', 'romance', 'family', 'documentation', 'sport']",['PH'],8.6,47.0
+tm233344,Kapoor & Sons,2016,140,"['drama', 'romance', 'comedy', 'family']",['IN'],7.7,26130.0
+tm234466,Jonah,2016,97,"['drama', 'thriller', 'romance', 'family']",['BR'],5.4,230.0
+tm233157,The Guardian Brothers,2016,103,"['animation', 'family', 'fantasy', 'comedy']",['CN'],5.4,2121.0
+tm233196,Jessica Darling's It List,2016,79,['family'],['US'],5.4,994.0
+tm245155,The Worthy,2016,95,"['thriller', 'action', 'scifi', 'fantasy', 'family', 'european']",['AE'],5.1,2004.0
+tm211424,Dharam Sankat Mein,2015,129,"['comedy', 'drama', 'family', 'fantasy', 'thriller']",['IN'],6.3,2262.0
+tm230426,"Liar, Liar, Vampire",2015,66,"['comedy', 'family']",['US'],5.7,964.0
+tm149212,Olmo and the Seagull,2015,90,"['drama', 'european', 'romance', 'family', 'documentation']","['PT', 'SE', 'DK', 'BR', 'FR']",7.2,676.0
+tm243931,The Beginning of Life,2016,98,"['documentation', 'family']",['BR'],7.5,940.0
+tm271974,Pettson and Findus: The Best Christmas Ever,2016,82,"['family', 'animation', 'comedy', 'fantasy', 'european']",['DE'],5.5,356.0
+tm272012,Ghost Patrol,2016,50,"['thriller', 'animation', 'family']",['CA'],5.1,226.0
+tm296203,A Chaster Marriage,2016,93,"['comedy', 'romance', 'family']",['TR'],5.4,874.0
+tm233463,Husband Factor: Resurrection,2016,108,"['comedy', 'family', 'romance', 'drama', 'fantasy']",['TR'],5.3,310.0
+tm233121,Dedemin Fişi,2016,100,"['comedy', 'family']",['TR'],5.5,3524.0
+tm234735,Time Out,2015,98,"['drama', 'animation', 'family', 'music']",['IN'],6.0,414.0
+tm244220,Darkest Hour,2017,125,"['drama', 'history', 'war', 'thriller', 'family']",['GB'],7.4,193208.0
+tm362881,Mirai,2018,94,"['fantasy', 'animation', 'drama', 'family']",['JP'],7.0,14983.0
+tm323634,A-X-L,2018,98,"['scifi', 'thriller', 'action', 'drama', 'family']",['US'],5.3,11920.0
+tm312767,Monster High: Electrified,2017,72,"['family', 'animation', 'fantasy']",['US'],5.3,320.0
+tm356742,Trolls Holiday,2017,26,"['fantasy', 'comedy', 'family', 'romance', 'animation']",[],6.1,2764.0
+tm305437,Hey Arnold! The Jungle Movie,2017,81,"['animation', 'comedy', 'family', 'fantasy', 'thriller']",['US'],7.5,3183.0
+tm330869,Show Dogs,2018,92,"['comedy', 'crime', 'family']","['US', 'GB']",3.8,4704.0
+tm270999,The Resurrection of Gavin Stone,2017,91,"['drama', 'comedy', 'family', 'romance']",['US'],6.2,2269.0
+tm282910,Fireworks,2017,90,"['drama', 'fantasy', 'documentation', 'animation', 'romance', 'scifi', 'family']",['JP'],5.6,3147.0
+tm298779,Lu Over the Wall,2017,117,"['animation', 'family', 'fantasy', 'action', 'comedy', 'music']",['JP'],6.8,2269.0
+tm1883,Animal Crackers,2017,105,"['animation', 'action', 'comedy', 'family', 'fantasy']","['CN', 'US', 'ES']",5.8,3422.0
+tm436844,The Christmas Chronicles,2018,104,"['comedy', 'family', 'fantasy']",['US'],7.0,71740.0
+tm299761,Toc Toc,2017,90,"['comedy', 'family', 'fantasy', 'european']",['ES'],6.8,18865.0
+tm413557,Okko's Inn,2018,94,"['fantasy', 'animation', 'drama', 'family']",['JP'],7.0,1856.0
+tm350607,Escape from Mr. Lemoncello's Library,2017,69,"['fantasy', 'family']","['CA', 'US']",5.3,465.0
+tm441198,The Princess Switch,2018,101,"['romance', 'drama', 'family', 'comedy']",['US'],6.0,27852.0
+tm320670,White Fang,2018,87,"['animation', 'family', 'drama', 'western', 'european']","['LU', 'US', 'FR']",6.9,3682.0
+tm327540,Gnome Alone,2017,85,"['family', 'action', 'animation', 'comedy', 'fantasy', 'music', 'thriller', 'drama']","['CA', 'GB', 'US']",5.6,3488.0
+tm371630,How to Be Really Bad,2018,100,"['comedy', 'fantasy', 'romance', 'family', 'european']",['DE'],6.2,1152.0
+tm406831,Modest Heroes,2018,18,"['fantasy', 'animation', 'drama', 'family', 'comedy']",['JP'],6.6,2705.0
+tm365122,Benji,2018,87,"['drama', 'crime', 'family']","['US', 'AE']",6.3,4774.0
+tm309903,The Little Vampire 3D,2017,83,"['family', 'fantasy', 'comedy', 'animation', 'horror', 'european']","['DE', 'DK', 'NL', 'GB']",5.4,1721.0
+tm321628,Rip Tide,2017,85,"['family', 'drama', 'action', 'thriller']",['AU'],5.4,3472.0
+tm429208,Next Gen,2018,105,"['action', 'animation', 'family', 'scifi', 'comedy']","['CA', 'CN']",6.6,17445.0
+tm233485,Charming,2018,90,"['comedy', 'family', 'fantasy', 'music', 'animation', 'action']",['US'],5.6,3518.0
+tm300027,Thi Mai,2018,99,"['comedy', 'family', 'european']",['ES'],6.0,2558.0
+tm244292,Bibi & Tina: Perfect Pandemonium,2017,110,"['fantasy', 'action', 'family', 'comedy', 'drama', 'european']",['DE'],4.0,470.0
+tm376015,LEGO Marvel Super Heroes: Guardians of the Galaxy - The Thanos Threat,2017,22,"['scifi', 'animation', 'family', 'action', 'comedy', 'fantasy']",['US'],5.8,451.0
+tm438994,The Holiday Calendar,2018,94,"['romance', 'comedy', 'family', 'drama', 'fantasy']",['US'],5.7,10060.0
+tm270987,Sahara,2017,86,"['animation', 'comedy', 'family', 'action', 'romance', 'drama', 'european']","['CA', 'FR']",5.5,2802.0
+tm440946,Christmas with a View,2018,90,"['romance', 'family', 'drama']",['CA'],5.1,4574.0
+tm242765,Raising the Bar,2017,93,"['family', 'drama', 'documentation', 'sport']",['AU'],5.5,1555.0
+tm275437,Coin Heist,2017,97,"['family', 'crime', 'drama', 'romance', 'thriller']",['US'],4.7,2743.0
+tm233484,Duck Duck Goose,2018,82,"['comedy', 'animation', 'family', 'action']",['CN'],5.7,3721.0
+tm355724,A Christmas Prince,2017,92,"['romance', 'comedy', 'family']",['US'],5.7,19514.0
+tm372054,The Tribe,2018,90,"['comedy', 'family', 'european']",['ES'],5.8,2721.0
+tm286532,Rock my Heart,2017,105,"['drama', 'family', 'action', 'european']",['DE'],6.5,993.0
+tm348392,The Last Shaman,2017,83,"['documentation', 'drama', 'family', 'european']","['PE', 'GB', 'US', 'IL', 'IT']",6.6,1911.0
+tm363787,Christmas in the Heartland,2017,90,['family'],['US'],5.8,1435.0
+tm374357,Going for Gold,2018,89,"['drama', 'family', 'sport']",['AU'],4.7,557.0
+tm445456,Pihu,2018,91,"['thriller', 'drama', 'family']",['IN'],6.7,2482.0
+tm244277,Pa Paandi,2017,125,"['comedy', 'action', 'romance', 'drama', 'family']",['IN'],7.4,1734.0
+tm359030,F.R.E.D.I.,2018,89,"['scifi', 'family']",['XX'],4.9,1018.0
+tm358949,A Very Country Christmas,2017,83,"['drama', 'romance', 'family', 'comedy']","['CA', 'US']",6.0,1640.0
+tm348073,Pup Star: Better 2Gether,2017,90,['family'],['US'],4.3,239.0
+tm361505,48 Christmas Wishes,2017,84,"['family', 'comedy', 'fantasy']",['CA'],3.9,1105.0
+tm429984,Pachamama,2018,72,"['fantasy', 'family', 'animation', 'european']","['FR', 'LU', 'CA']",6.8,864.0
+tm558730,A Champion Heart,2018,90,['family'],['US'],5.9,406.0
+tm416121,Kuntilanak,2018,105,"['horror', 'comedy', 'family']",['ID'],4.6,672.0
+tm430281,Dhh,2018,126,"['drama', 'family']",['IN'],7.8,346.0
+tm431928,Rajma Chawal,2018,129,"['drama', 'comedy', 'family']",['IN'],5.7,1853.0
+tm324204,Monster Island,2017,80,"['comedy', 'animation', 'action', 'family', 'fantasy']","['IN', 'MX']",4.7,739.0
+tm361312,A StoryBots Christmas,2017,25,"['animation', 'comedy', 'family', 'fantasy']",['US'],5.8,160.0
+tm447261,Free Rein: The Twelve Neighs of Christmas,2018,58,"['drama', 'comedy', 'family']",['US'],6.6,5637.0
+tm321149,Fishtronaut: The Movie,2018,88,"['animation', 'action', 'family']",['BR'],7.5,73.0
+tm444576,Puppy Star Christmas,2018,90,"['family', 'comedy']",['US'],3.6,249.0
+tm312738,Jindua,2017,140,"['romance', 'family']",['IN'],6.3,283.0
+tm358746,A Witches' Ball,2017,90,"['fantasy', 'comedy', 'family']",['CA'],5.1,386.0
+tm413266,Pup Star: World Tour,2018,87,"['music', 'comedy', 'family']","['JP', 'US', 'CA']",3.8,208.0
+tm445852,Three Words to Forever,2018,106,"['drama', 'family', 'comedy', 'romance']",['XX'],6.8,110.0
+tm436704,Super Monsters Save Halloween,2018,24,"['animation', 'family']",['US'],5.4,27.0
+tm361161,DreamWorks Home: For the Holidays,2017,45,"['scifi', 'fantasy', 'animation', 'comedy', 'family']",['GB'],4.8,149.0
+tm450512,Pinky Memsaab,2018,124,"['drama', 'family']",['PK'],6.3,527.0
+tm815509,Mrs. Miracle Animals: An Squirrel's Princess Bride,2017,28,"['comedy', 'fantasy', 'animation', 'family']",[],4.7,98.0
+tm442805,My Travel Buddy 2,2018,111,"['family', 'comedy']",['TR'],5.8,3256.0
+tm404569,Shubh Aarambh,2017,126,"['comedy', 'drama', 'family']",['IN'],6.7,124.0
+tm316923,Kartini: Princess of Java,2017,118,"['drama', 'family', 'history', 'european']",['ID'],7.6,511.0
+tm441915,Elf Pets: Santa's St. Bernards Save Christmas,2018,26,"['animation', 'family', 'comedy', 'fantasy']",['US'],5.3,95.0
+tm430459,La Leyenda del Diamante,2018,87,"['action', 'fantasy', 'horror', 'western', 'family', 'scifi']",['MX'],3.3,51.0
+tm426260,Si Doel the Movie,2018,85,"['family', 'romance', 'drama', 'comedy']",['ID'],6.8,417.0
+tm828369,Lunana: A Yak in the Classroom,2019,109,"['drama', 'family']","['BT', 'CN']",7.4,3257.0
+tm878333,Pokémon the Movie: Secrets of the Jungle,2020,99,"['family', 'fantasy', 'animation', 'action', 'scifi']",['JP'],6.4,1942.0
+tm451078,Pokemon the Movie: Mewtwo Strikes Back - Evolution,2019,98,"['animation', 'action', 'fantasy', 'family']",['JP'],5.7,5475.0
+tm927037,The Water Man,2020,92,"['action', 'thriller', 'drama', 'family', 'fantasy']",['US'],5.4,3880.0
+tm824477,Over the Moon,2020,95,"['comedy', 'family', 'fantasy', 'scifi', 'romance', 'animation']","['CN', 'US']",6.3,22034.0
+tm348403,A Shaun the Sheep Movie: Farmageddon,2019,87,"['family', 'comedy', 'animation', 'fantasy', 'scifi']","['GB', 'FR']",6.8,13485.0
+tm375883,Klaus,2019,96,"['fantasy', 'comedy', 'family', 'animation', 'european']",['ES'],8.1,143737.0
+tm974366,We Can Be Heroes,2020,97,"['fantasy', 'drama', 'family', 'action', 'comedy']",['US'],4.7,14759.0
+tm852996,Captain Underpants: Epic Choice-o-rama,2020,37,"['comedy', 'fantasy', 'family', 'animation', 'action', 'scifi']",['US'],6.4,80.0
+tm918706,The Sleepover,2020,103,"['action', 'comedy', 'family']",['US'],5.6,10399.0
+tm852097,A Whisker Away,2020,104,"['fantasy', 'drama', 'romance', 'animation', 'family']",['JP'],6.7,9818.0
+tm928541,Barbie: Princess Adventure,2020,71,"['animation', 'family']",['US'],5.5,474.0
+tm849005,The Willoughbys,2020,92,"['comedy', 'fantasy', 'animation', 'drama', 'family']",['CA'],6.3,18662.0
+tm827501,Tall Girl,2019,101,"['comedy', 'drama', 'romance', 'family']",['US'],5.2,23452.0
+tm460829,Children of the Sea,2019,110,"['thriller', 'animation', 'fantasy', 'action', 'scifi', 'drama', 'family']",['JP'],6.5,2850.0
+tm524282,Invader ZIM: Enter the Florpus,2019,71,"['drama', 'animation', 'action', 'family', 'fantasy', 'comedy', 'scifi', 'thriller', 'horror']",['US'],7.4,5796.0
+tm816038,Violet Evergarden: Eternity and the Auto Memories Doll,2019,90,"['family', 'animation', 'drama', 'fantasy']",['JP'],7.4,4692.0
+tm897732,Bigfoot Family,2020,97,"['animation', 'family']","['BE', 'FR']",5.8,2723.0
+tm977997,Captain Underpants: Mega Blissmas,2020,46,"['animation', 'comedy', 'family']",['US'],5.2,160.0
+tm493511,The Sky Is Pink,2019,143,"['family', 'drama', 'romance']",['IN'],7.5,8664.0
+tm848995,Jingle Jangle: A Christmas Journey,2020,122,"['fantasy', 'music', 'family']",['US'],6.4,18374.0
+tm839411,Me Against You: Mr. S's Vendetta,2020,64,"['comedy', 'family', 'european']",['IT'],1.6,370.0
+tm454824,Silver Skates,2020,136,"['history', 'romance', 'action', 'drama', 'family']",['RU'],7.1,5946.0
+tm853113,Thomas & Friends: Marvelous Machinery,2020,59,"['fantasy', 'animation', 'action', 'family']",[],6.1,16.0
+tm827304,LEGO Marvel Spider-Man: Vexed by Venom,2019,21,"['animation', 'action', 'comedy', 'family']",['US'],5.6,311.0
+tm467848,NiNoKuni,2019,106,"['family', 'fantasy', 'romance', 'animation', 'action']",['JP'],6.1,3338.0
+tm843768,John Mulaney & The Sack Lunch Bunch,2019,70,"['comedy', 'family']",['US'],7.4,3532.0
+tm932595,A Babysitter's Guide to Monster Hunting,2020,94,"['fantasy', 'family', 'comedy']",['US'],5.4,4172.0
+tm889679,Roped,2020,90,"['drama', 'romance', 'family', 'comedy']",['US'],5.4,1436.0
+tm461159,Trouble,2019,88,"['action', 'family', 'comedy', 'music', 'animation']",['CA'],5.8,3281.0
+tm305433,Rocko's Modern Life: Static Cling,2019,45,"['animation', 'comedy', 'family', 'fantasy', 'scifi', 'action']",['US'],6.9,3865.0
+tm836662,Go!,2020,102,"['family', 'sport']",['AU'],5.9,2913.0
+tm518467,Dragon Rider,2020,91,"['animation', 'comedy', 'family', 'fantasy', 'action', 'european']","['ES', 'BE', 'DE']",5.6,1597.0
+tm941382,Stand by Me Doraemon 2,2020,96,"['scifi', 'animation', 'comedy', 'drama', 'family', 'fantasy']",['JP'],7.5,3791.0
+tm894619,Feel the Beat,2020,107,"['comedy', 'drama', 'family']","['US', 'CA']",6.3,10967.0
+tm421560,Let's Dance,2019,109,"['drama', 'comedy', 'music', 'family']","['BE', 'FR']",5.9,1412.0
+tm933639,Wish Upon a Unicorn,2020,93,"['fantasy', 'family']",['US'],5.3,183.0
+tm455410,Grand-Daddy Day Care,2019,91,"['comedy', 'family']",['FR'],4.9,875.0
+tm447755,Back of the Net,2019,86,"['drama', 'family', 'comedy']",['AU'],5.1,704.0
+tm943718,Operation Christmas Drop,2020,95,"['romance', 'family', 'comedy']",['US'],5.8,11444.0
+tm917325,Dragons: Rescue Riders: Secrets of the Songwing,2020,45,"['animation', 'action', 'comedy', 'family', 'fantasy']",['US'],5.0,181.0
+tm919082,Octonauts and the Caves of Sac Actun,2020,72,"['family', 'animation', 'comedy']",['GB'],6.2,181.0
+tm452440,Cinderela Pop,2019,94,"['romance', 'comedy', 'family', 'music']",['BR'],4.5,1061.0
+tm948916,The Scary House,2020,100,"['thriller', 'family', 'fantasy', 'drama', 'horror', 'european']","['AT', 'DE']",5.4,3787.0
+tm910999,Xico's Journey,2020,85,"['family', 'fantasy', 'animation']",['MX'],5.1,544.0
+tm836674,The Main Event,2020,102,"['family', 'comedy', 'action', 'fantasy', 'sport']",['US'],4.8,2327.0
+tm945825,Bobbleheads: The Movie,2020,82,"['animation', 'family']",['US'],2.3,366.0
+tm885669,The Christmas Chronicles: Part Two,2020,112,"['fantasy', 'family', 'comedy']",['US'],6.0,29538.0
+tm945435,Octonauts and the Great Barrier Reef,2020,47,"['animation', 'action', 'comedy', 'family']",['XX'],6.5,141.0
+tm474061,Malibu Rescue,2019,69,"['family', 'action', 'comedy']",['US'],4.9,1277.0
+tm466832,Dragon Quest: Your Story,2019,102,"['action', 'fantasy', 'animation', 'family', 'comedy']",['JP'],6.5,2831.0
+tm871330,Full Out 2: You Got This!,2020,90,['family'],['US'],4.6,521.0
+tm838765,A Christmas Prince: The Royal Baby,2019,84,"['romance', 'family']",['US'],5.4,6764.0
+tm849937,Jungle Beat: The Movie,2020,84,"['family', 'animation', 'scifi', 'comedy', 'fantasy']",['MU'],5.4,1029.0
+tm835512,The Spooky Tale of Captain Underpants Hack-a-Ween,2019,45,"['action', 'comedy', 'family', 'animation']",['US'],5.9,208.0
+tm446480,Cemara's Family,2019,110,"['family', 'drama']",['ID'],7.7,787.0
+tm912327,The Larva Island Movie,2020,89,"['animation', 'family', 'comedy']",['KR'],5.1,655.0
+tm1079495,A Second Chance: Rivals!,2019,89,"['drama', 'family', 'sport']",['AU'],4.6,394.0
+tm943771,Angela's Christmas Wish,2020,47,"['animation', 'family', 'comedy', 'drama']","['US', 'IE']",7.1,1451.0
+tm840723,Ramprasad Ki Tehrvi,2019,106,"['drama', 'family', 'comedy']",['IN'],7.5,5385.0
+tm938227,Dolly Parton's Christmas on the Square,2020,98,"['comedy', 'music', 'family']",['US'],5.2,2686.0
+tm838705,Holiday Rush,2019,94,"['drama', 'comedy', 'romance', 'family']",['US'],4.9,2723.0
+tm910612,The Claus Family,2020,96,"['comedy', 'family', 'fantasy']",['BE'],5.5,2022.0
+tm918960,The Magic School Bus Rides Again: Kids in Space,2020,45,"['action', 'family', 'animation', 'comedy', 'scifi']",['CA'],6.1,86.0
+tm946927,Dance Dreams: Hot Chocolate Nutcracker,2020,80,"['documentation', 'family']",['US'],7.0,341.0
+tm878995,Dragons: Rescue Riders: Hunt for the Golden Dragon,2020,46,"['animation', 'action', 'comedy', 'family', 'fantasy']",['US'],5.1,155.0
+tm462037,Mi amigo Alexis,2019,100,"['drama', 'family', 'comedy', 'sport']",['CL'],5.1,346.0
+tm927033,True: Friendship Day,2020,23,"['animation', 'family']",['CA'],6.9,23.0
+tm845607,Spirit Riding Free: Spirit of Christmas,2019,45,"['animation', 'family', 'action', 'comedy', 'drama']",['US'],5.2,124.0
+tm854454,Varane Avashyamund,2020,145,"['comedy', 'family', 'romance', 'drama']",['IN'],6.9,2803.0
+tm918962,Fearless,2020,89,"['animation', 'family', 'scifi', 'documentation', 'comedy']",['CA'],4.9,1735.0
+tm882606,Sethum Aayiram Pon,2019,102,"['drama', 'family']",['IN'],7.2,349.0
+tm845942,A Family Reunion Christmas,2019,29,"['comedy', 'family']",['US'],5.8,219.0
+tm834653,The Knight and the Princess,2019,97,"['comedy', 'family', 'fantasy', 'history', 'animation', 'action']","['EG', 'SA']",5.5,394.0
+tm918373,Malibu Rescue: The Next Wave,2020,70,"['comedy', 'family', 'action']",['US'],4.8,841.0
+tm938333,A Go! Go! Cory Carson Halloween,2020,21,"['animation', 'family', 'horror']",[],6.4,51.0
+tm977184,A Go! Go! Cory Carson Christmas,2020,21,"['animation', 'family']",['US'],6.1,50.0
+tm674135,Brother in Love,2019,115,"['comedy', 'family']",['TR'],7.0,6337.0
+tm475638,Luccas Neto em: Uma Babá Muito Esquisita,2019,75,"['comedy', 'family']",['BR'],3.0,36.0
+tm830151,One Day We'll Talk About Today,2020,121,"['drama', 'family', 'music', 'documentation']",['ID'],7.4,1155.0
+tm982018,A Trash Truck Christmas,2020,28,"['action', 'family', 'animation', 'comedy']",['US'],5.5,214.0
+tm844201,Super Monsters Save Christmas,2019,24,"['family', 'animation', 'fantasy']",['US'],4.8,57.0
+tm476708,Kids on the Block,2019,103,"['comedy', 'family']",['TR'],5.6,361.0
+tm935941,Horrid Henry's Gross Day Out,2020,61,"['family', 'animation', 'action', 'comedy']",['GB'],5.9,47.0
+tm927926,Dad Wanted,2020,102,"['drama', 'family', 'comedy']",['MX'],5.7,1075.0
+tm981956,Spirit Riding Free: Ride Along Adventure,2020,22,"['animation', 'comedy', 'action', 'family', 'western', 'drama']",['US'],6.1,61.0
+tm837802,Luccas Neto in: Children's Day,2019,81,"['comedy', 'family']",['BR'],2.5,12.0
+tm843345,Pinkfong & Baby Shark's Space Adventure,2019,66,"['animation', 'family', 'music', 'fantasy']","['KR', 'US']",5.1,74.0
+tm976797,Fukrey Boyzzz: Space Mein Fukrapanti,2020,74,"['animation', 'comedy', 'family']",[],7.8,14.0
+tm980439,Chico Bon Bon and the Very Berry Holiday,2020,25,"['animation', 'family']",[],5.7,39.0
+tm842976,Go! The Unforgettable Party,2019,60,"['music', 'family']",['AR'],5.1,144.0
+tm981675,Super Monsters: Santa's Super Monster Helpers,2020,24,"['animation', 'family']",['US'],4.5,25.0
+tm460199,High End Yaariyaan,2019,140,"['romance', 'comedy', 'drama', 'family']",['IN'],5.4,1525.0
+tm305129,Sing 2,2021,110,"['comedy', 'family', 'fantasy', 'music', 'drama', 'animation']",['US'],7.4,58423.0
+tm1067148,The Sea Beast,2022,115,"['comedy', 'family', 'fantasy', 'scifi', 'animation']",['US'],7.1,18852.0
+tm852172,Apollo 10½:  A Space Age Childhood,2022,98,"['animation', 'scifi', 'action', 'comedy', 'romance', 'family', 'horror', 'drama']","['NL', 'US']",7.3,6681.0
+tm370144,The Mitchells vs. the Machines,2021,109,"['comedy', 'family', 'scifi', 'animation']",['US'],7.6,103825.0
+tm1166288,Rescued by Ruby,2022,93,"['family', 'drama']",['CA'],7.1,7485.0
+tm1171875,Too Old for Fairy Tales,2022,106,"['comedy', 'family']",[],6.1,34.0
+tm1094217,Chickenhare and the Hamster of Darkness,2022,91,"['animation', 'comedy', 'family', 'romance', 'fantasy']","['BE', 'FR']",6.3,1303.0
+tm1141439,Home Team,2022,95,"['family', 'comedy', 'sport']",['US'],6.0,17767.0
+tm1110527,Captain Nova,2021,86,"['action', 'family', 'scifi']",['NL'],5.5,1391.0
+tm1020851,Back to the Outback,2021,95,"['animation', 'comedy', 'family']","['AU', 'US']",6.5,7896.0
+tm992260,Yes Day,2021,86,"['comedy', 'family']",['US'],5.7,23625.0
+tm1166046,Ante... Sundaraniki!,2022,173,"['comedy', 'romance', 'family']",['IN'],8.0,2538.0
+tm413169,Peter Rabbit 2: The Runaway,2021,93,"['fantasy', 'action', 'family', 'comedy', 'animation', 'crime', 'drama']","['AU', 'US']",6.2,11233.0
+tm314863,Vivo,2021,103,"['family', 'comedy', 'animation', 'drama']",['US'],6.7,18238.0
+tm841825,My Little Pony: A New Generation,2021,91,"['music', 'action', 'animation', 'family', 'fantasy', 'comedy', 'drama', 'scifi']","['IE', 'US', 'CA']",6.8,3657.0
+tm1002815,Nightbooks,2021,103,"['family', 'fantasy', 'horror']","['CA', 'US']",5.7,8573.0
+tm977704,Robin Robin,2021,30,"['animation', 'action', 'family', 'music', 'comedy']",['GB'],7.2,1533.0
+tm1141923,The Royal Treatment,2022,96,"['romance', 'comedy', 'family']",['US'],5.2,8803.0
+tm434625,Wish Dragon,2021,99,"['fantasy', 'animation', 'family', 'comedy', 'romance']","['US', 'CN']",7.2,25743.0
+tm863823,Finding ʻOhana,2021,123,"['action', 'comedy', 'family']",['US'],6.1,10056.0
+tm1131061,Hilda and the Mountain King,2021,85,"['fantasy', 'family', 'animation', 'comedy', 'drama']","['CA', 'GB']",7.7,2408.0
+tm1019885,F3: Fun and Frustration,2022,148,"['comedy', 'romance', 'family']",['IN'],5.5,1199.0
+tm1198745,Marmaduke,2022,88,"['animation', 'comedy', 'family']","['CA', 'US']",4.8,3394.0
+tm166973,Mixtape,2021,94,"['comedy', 'family', 'drama', 'romance']",['US'],6.6,3329.0
+tm319224,The Loud House Movie,2021,83,"['comedy', 'action', 'family', 'animation', 'fantasy', 'drama', 'music', 'thriller']",['US'],6.1,2027.0
+tm1045741,Blue Miracle,2021,95,"['family', 'action', 'drama']","['MX', 'US']",6.6,6778.0
+tm863919,Extinct,2021,85,"['animation', 'comedy', 'family', 'action']","['CA', 'CN', 'US']",5.4,2590.0
+tm1106044,100 días con la Tata,2021,82,"['documentation', 'family']",[],7.9,299.0
+tm1150256,Tall Girl 2,2022,97,"['comedy', 'romance', 'drama', 'family']",['US'],4.7,4356.0
+tm872108,A Week Away,2021,94,"['drama', 'family', 'romance']",['US'],5.7,4608.0
+tm1092995,Shaun the Sheep: The Flight Before Christmas,2021,30,"['animation', 'comedy', 'family']",['GB'],7.3,1491.0
+tm1166015,The Invisible Thread,2022,90,"['drama', 'family', 'comedy']",['IT'],6.7,1704.0
+tm945448,Vicky and Her Mystery,2021,84,"['drama', 'family', 'european']",['FR'],6.4,1900.0
+tm675820,A Boy Called Christmas,2021,106,"['drama', 'family', 'fantasy', 'action']",['GB'],6.7,21085.0
+tm1111717,L.O.L. Surprise: The Movie,2021,47,"['animation', 'family', 'fantasy', 'scifi', 'western', 'action']",['US'],3.8,129.0
+tm950444,Skater Girl,2021,107,"['drama', 'family', 'sport']","['US', 'IN']",6.6,4289.0
+tm1003725,A Castle for Christmas,2021,98,"['romance', 'comedy', 'drama', 'family']","['GB', 'US']",5.5,11894.0
+tm1096880,Thomas & Friends: All Engines Go - Race for the Sodor Cup,2021,60,"['animation', 'family']",[],3.7,70.0
+tm1001267,Secret Magic Control Agency,2021,103,"['comedy', 'family', 'fantasy', 'animation']","['RU', 'US']",6.2,4086.0
+tm963182,Trollhunters: Rise of the Titans,2021,104,"['animation', 'action', 'comedy', 'drama', 'family', 'fantasy']",['US'],6.7,4818.0
+tm1129394,The Princess Switch 3: Romancing the Star,2021,106,"['comedy', 'romance', 'drama', 'family']",['US'],5.5,5728.0
+tm1080406,"Barbie: Big City, Big Dreams",2021,62,"['animation', 'music', 'family']",['US'],5.7,305.0
+tm960430,Child of Kamiari Month,2021,99,"['fantasy', 'animation', 'drama', 'family']",['JP'],5.8,751.0
+tm1107912,American Girl,2021,101,"['drama', 'family']",['TW'],7.1,1221.0
+tm1101878,Honey Girls,2021,90,"['family', 'music', 'comedy']",['US'],4.7,173.0
+tm462311,Latte and the Magic Waterstone,2022,82,"['animation', 'comedy', 'family', 'european']","['BE', 'DE']",5.6,955.0
+tm1006127,Arlo the Alligator Boy,2021,90,"['animation', 'comedy', 'family']",['US'],6.4,1105.0
+tm1172947,Toolsidas Junior,2022,130,"['drama', 'family', 'sport']",['IN'],7.5,1783.0
+tm981676,Double Dad,2021,103,"['comedy', 'drama', 'family']",['BR'],5.6,1290.0
+tm1013111,1000 Miles from Christmas,2021,102,"['comedy', 'romance', 'fantasy', 'family']",['ES'],5.7,1502.0
+tm1179579,In Good Hands,2022,104,"['drama', 'comedy', 'romance', 'family']",['TR'],5.6,2618.0
+tm1104252,Escape the Undertaker,2021,31,"['thriller', 'family', 'horror', 'comedy']",['US'],4.2,926.0
+tm1119172,Puff: Wonders of the Reef,2021,59,"['documentation', 'family']","['AU', 'US']",7.1,796.0
+tm1107850,Sharkdog’s Fintastic Halloween,2021,24,"['animation', 'fantasy', 'family', 'comedy']",[],6.5,37.0
+tm1111616,David and the Elves,2021,106,"['fantasy', 'comedy', 'family']",['PL'],5.2,695.0
+tm1120636,Johnny Test's Ultimate Meatloaf Quest,2021,20,"['animation', 'family']",['US'],7.1,26.0
+tm988801,June & Kopi,2021,90,"['drama', 'comedy', 'family']",['ID'],6.3,554.0
+tm1141346,StarBeam: Beaming in the New Year,2021,47,"['animation', 'family', 'scifi']",[],5.5,36.0
+tm1045018,Clash,2021,88,"['family', 'drama']","['NG', 'CA']",6.1,34.0
+tm987730,Tribhanga,2021,95,"['drama', 'family']",['IN'],6.2,2922.0
+tm1026043,Just in Time,2021,91,"['comedy', 'drama', 'family']",['KE'],6.9,46.0
+tm1099969,Angeliena,2021,95,"['comedy', 'drama', 'family']",['ZA'],7.3,1164.0
+tm1066324,Super Monsters: Once Upon a Rhyme,2021,25,"['animation', 'family']",[],5.6,38.0

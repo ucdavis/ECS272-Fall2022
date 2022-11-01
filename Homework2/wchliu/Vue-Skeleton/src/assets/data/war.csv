@@ -1,0 +1,99 @@
+id,title,release_year,runtime,genres,production_country,imdb_score,imdb_votes
+tm120801,The Dirty Dozen,1967,150,"['war', 'action']","['GB', 'US']",7.7,72662.0
+tm44204,The Guns of Navarone,1961,158,"['action', 'drama', 'war']","['GB', 'US']",7.5,50748.0
+tm156453,FTA,1972,97,"['war', 'documentation', 'music', 'comedy']",['US'],6.2,418.0
+tm27298,Saladin the Victorious,1963,186,"['action', 'drama', 'war', 'history', 'romance']",['EG'],7.6,2508.0
+tm22327,Full Metal Jacket,1987,117,"['war', 'drama']","['US', 'GB']",8.3,729274.0
+tm40103,Mobile Suit Gundam: Char's Counterattack,1988,119,"['scifi', 'animation', 'action', 'drama', 'war']",['JP'],7.3,1693.0
+tm125985,Mobile Suit Gundam II: Soldiers of Sorrow,1981,133,"['animation', 'scifi', 'action', 'drama', 'war']",['JP'],7.2,1274.0
+tm49037,Mobile Suit Gundam III: Encounters in Space,1982,144,"['action', 'drama', 'war', 'animation', 'scifi']",['JP'],7.6,1236.0
+tm38736,Too Young The Hero,1988,100,"['drama', 'war']",['US'],6.7,502.0
+tm52274,The Little Wars,1982,108,"['war', 'drama', 'european']","['FR', 'LB']",6.3,152.0
+tm191772,Seven Years in Tibet,1997,136,"['action', 'drama', 'history', 'war']",['US'],7.1,142903.0
+tm63514,The Last Days,1998,87,"['drama', 'history', 'war', 'documentation']",['US'],7.9,4378.0
+tm52083,West Beirut,1998,105,"['romance', 'drama', 'comedy', 'war', 'european']","['FR', 'NO', 'LB', 'BE']",7.6,4221.0
+tm7032,Out of Life,1991,97,"['drama', 'war', 'crime', 'european']","['BE', 'FR', 'IT', 'LB']",6.9,376.0
+tm26327,The Hurt Locker,2008,131,"['thriller', 'drama', 'war']",['US'],7.5,446904.0
+tm95477,Troy,2004,163,"['action', 'history', 'war', 'drama', 'european']","['MT', 'GB', 'US']",7.3,527447.0
+tm29737,Rambo,2008,92,"['action', 'thriller', 'war', 'european']","['DE', 'US']",7.0,230333.0
+tm137342,Tears of the Sun,2003,121,"['war', 'action', 'drama', 'thriller']",['US'],6.6,121957.0
+tm147211,The Men Who Stare at Goats,2009,94,"['comedy', 'war']","['US', 'GB']",6.2,132177.0
+tm38896,From Within,2008,89,"['horror', 'thriller', 'documentation', 'war', 'european']",['US'],5.6,7650.0
+tm29269,Jodhaa Akbar,2008,214,"['romance', 'history', 'war', 'action', 'drama']",['IN'],7.5,32440.0
+tm110923,Divine Intervention,2002,92,"['romance', 'comedy', 'drama', 'war']","['FR', 'MA', 'DE', 'PS']",6.6,3598.0
+tm175687,Sir! No Sir!,2005,85,"['war', 'documentation']",['US'],7.6,783.0
+tm160596,Zozo,2005,105,"['drama', 'european', 'family', 'war']","['CZ', 'GB', 'DK', 'NL', 'SE']",6.5,3225.0
+tm112235,Kannathil Muthamittal,2002,137,"['drama', 'war', 'action']",['IN'],8.4,8491.0
+tm68191,My Führer,2007,89,"['war', 'comedy', 'drama', 'european']",['DE'],5.5,4442.0
+tm226362,Bosta,2005,112,['war'],['Lebanon'],6.4,605.0
+tm96595,Lakshya,2004,186,"['war', 'action', 'drama', 'romance']",['IN'],7.8,23262.0
+tm76029,Under the Bombs,2007,98,"['war', 'romance', 'drama', 'history', 'european']","['LB', 'GB', 'FR']",7.0,1655.0
+tm61801,Zero Dark Thirty,2012,157,"['thriller', 'drama', 'history', 'war']",['US'],7.4,296416.0
+tm32982,Les Misérables,2012,158,"['drama', 'history', 'romance', 'war']","['US', 'GB']",7.5,327017.0
+tm60844,Berserk: The Golden Age Arc I - The Egg of the King,2012,76,"['action', 'fantasy', 'animation', 'horror', 'war', 'drama']",['JP'],7.5,12548.0
+tm62210,Rurouni Kenshin Part I: Origins,2012,134,"['action', 'drama', 'history', 'war']",['JP'],7.4,26098.0
+tm172504,"Darling, Something's Wrong with Your Head",2011,78,"['drama', 'romance', 'war', 'european']","['PS', 'NL', 'US', 'AE']",6.7,133.0
+tm140877,The Imitation Game,2014,113,"['thriller', 'drama', 'war']","['GB', 'US']",8.0,756254.0
+tm181081,The Railway Man,2013,116,"['drama', 'history', 'european', 'romance', 'war']","['AU', 'CH', 'GB']",7.1,40175.0
+tm138431,Virunga,2014,90,"['documentation', 'war']","['CD', 'GB']",8.2,11476.0
+tm182275,Omar,2013,96,"['romance', 'thriller', 'drama', 'crime', 'war']",['PS'],7.5,14318.0
+tm147405,E-Team,2014,88,"['documentation', 'war']",['US'],7.1,873.0
+tm460055,The War Against Women,2013,62,"['documentation', 'war']","['US', 'ES']",7.3,74.0
+tm204163,War Dogs,2016,114,"['crime', 'war', 'comedy', 'drama']",['US'],7.1,212032.0
+tm233214,Under the Shadow,2016,84,"['war', 'drama', 'horror', 'thriller', 'fantasy']","['GB', 'IR', 'JO', 'QA']",6.8,27337.0
+tm136257,Beasts of No Nation,2015,137,"['drama', 'war']","['GH', 'US']",7.7,80750.0
+tm205812,The Siege of Jadotville,2016,108,"['war', 'drama', 'thriller', 'action', 'history', 'european']","['IE', 'ZA']",7.2,39404.0
+tm235405,Hyena Road,2015,120,"['drama', 'thriller', 'war', 'action']",['CA'],6.5,7839.0
+tm224377,Heneral Luna,2015,118,"['comedy', 'action', 'drama', 'history', 'war']",['PH'],7.3,2132.0
+tm242687,Riphagen the Untouchable,2016,132,"['thriller', 'drama', 'war', 'european']",['NL'],7.1,7800.0
+tm315345,City of Joy,2016,74,"['documentation', 'thriller', 'war', 'crime', 'drama']",['CD'],7.5,525.0
+tm244868,The Flower of Aleppo,2016,100,"['drama', 'action', 'war']",['TN'],5.4,128.0
+tm244923,My Mother's Wound,2016,120,"['drama', 'thriller', 'war']",['TR'],7.3,3692.0
+tm313149,12 Strong,2018,131,"['drama', 'action', 'war', 'history']",['US'],6.5,79980.0
+tm232797,Dunkirk,2017,107,"['drama', 'war', 'action', 'thriller', 'history', 'european']","['FR', 'NL', 'GB', 'US']",7.8,619645.0
+tm244220,Darkest Hour,2017,125,"['drama', 'history', 'war', 'thriller', 'family']",['GB'],7.4,193208.0
+tm244191,The Beguiled,2017,93,"['drama', 'documentation', 'thriller', 'war']",['US'],6.8,21.0
+tm357589,The Guernsey Literary & Potato Peel Pie Society,2018,124,"['drama', 'history', 'romance', 'war']","['GB', 'US', 'FR']",7.3,45626.0
+tm319818,Outlaw King,2018,121,"['action', 'drama', 'history', 'war']","['US', 'GB']",6.9,70822.0
+tm300615,Mudbound,2017,135,"['drama', 'war']",['US'],7.4,47676.0
+tm245176,Sand Castle,2017,113,"['war', 'action', 'drama']","['IQ', 'GB']",6.3,23158.0
+tm244175,The Zookeeper's Wife,2017,126,"['war', 'drama', 'history']","['CZ', 'GB', 'US']",7.0,43091.0
+tm233294,War Machine,2017,122,"['drama', 'comedy', 'war']",['US'],6.0,46276.0
+tm367250,The Resistance Banker,2018,124,"['drama', 'war', 'european']",['NL'],6.9,9470.0
+tm285356,First They Killed My Father,2017,136,"['war', 'drama', 'history']","['US', 'KH']",7.2,17871.0
+tm429163,The Photographer of Mauthausen,2018,110,"['thriller', 'drama', 'history', 'war', 'european']",['ES'],6.7,10687.0
+tm285649,The Ottoman Lieutenant,2017,111,"['war', 'romance', 'drama']","['TR', 'US']",6.4,25674.0
+tm305112,The Fortress,2017,140,"['drama', 'action', 'history', 'war', 'thriller']",['KR'],6.8,2537.0
+tm348386,Resurface,2017,27,"['documentation', 'sport', 'war']",['US'],7.1,286.0
+tm431760,Paskal,2018,114,"['action', 'war', 'drama']",['MY'],6.8,2964.0
+tm413129,Goyo: The Boy General,2018,155,"['action', 'war', 'history']",['PH'],6.7,799.0
+tm510203,A Call to Spy,2019,123,"['crime', 'drama', 'thriller', 'war', 'history']",['US'],6.6,7091.0
+tm417392,The King,2019,140,"['history', 'war', 'drama', 'romance']","['US', 'AU']",7.2,124438.0
+tm943790,Summerland,2020,102,"['romance', 'war', 'drama']",['GB'],7.0,6827.0
+tm239927,Official Secrets,2019,112,"['drama', 'thriller', 'history', 'crime', 'war', 'romance']","['GB', 'US']",7.3,46901.0
+tm916405,The Outpost,2020,123,"['history', 'action', 'war', 'drama']","['BG', 'US']",6.8,32952.0
+tm818266,The Forgotten Battle,2020,124,"['drama', 'war', 'history', 'documentation', 'european']","['BE', 'LT', 'NL']",7.1,27275.0
+tm843444,Da 5 Bloods,2020,156,"['war', 'drama']",['US'],6.5,50520.0
+tm361746,Ophelia,2019,114,"['drama', 'romance', 'history', 'war', 'thriller']","['GB', 'US']",6.6,10357.0
+tm361998,The Wolf's Call,2019,115,"['thriller', 'action', 'scifi', 'war', 'drama', 'european']",['FR'],6.9,17468.0
+tm471878,Fatima,2020,113,"['drama', 'war']","['PT', 'US']",6.5,3232.0
+tm902330,Ghosts of War,2020,94,"['war', 'fantasy', 'horror', 'thriller']",['GB'],5.5,9953.0
+tm1127695,The Endless Trench,2019,148,"['drama', 'history', 'thriller', 'war', 'action', 'european']","['ES', 'FR']",7.2,6400.0
+tm835869,Jarhead: Law of Return,2019,103,['war'],"['IL', 'US']",5.6,
+tm454861,Patria,2019,89,"['documentation', 'history', 'war']",['MX'],7.2,105.0
+tm413558,Funan,2019,82,"['drama', 'history', 'war', 'animation', 'european']","['FR', 'LU', 'BE', 'KH']",6.8,935.0
+tm847623,Rogue Warfare: Death of a Nation,2020,103,"['war', 'action']",['US'],3.3,380.0
+tm455161,Panipat,2019,171,"['history', 'war', 'romance', 'action', 'drama']",['IN'],5.2,5615.0
+tm863992,The Most Dangerous Man in Europe,2020,68,"['documentation', 'history', 'war']",['ES'],6.8,215.0
+tm442199,Shanghai Fortress,2019,107,"['scifi', 'war', 'action']",['CN'],4.3,2383.0
+tm851912,Gunjan Saxena: The Kargil Girl,2020,112,"['action', 'drama', 'war']",['IN'],5.6,34567.0
+tm429172,The (Silent) War,2019,123,"['thriller', 'war', 'crime', 'action', 'drama', 'european']",['ES'],5.5,681.0
+tm887052,Father Soldier Son,2020,99,"['war', 'documentation']",['US'],7.3,952.0
+tm1043537,Operation Mincemeat,2022,128,"['drama', 'war', 'history']","['GB', 'US']",6.6,18893.0
+tm928497,Valley of the Dead,2022,101,"['comedy', 'horror', 'war', 'fantasy', 'thriller', 'action']",['ES'],6.5,114.0
+tm1064065,Black Crab,2022,114,"['scifi', 'thriller', 'war', 'action', 'drama']",['SE'],5.6,19159.0
+tm1137119,Image of Victory,2021,128,"['war', 'history', 'drama']",['IL'],7.5,178.0
+tm855839,The Shadow in My Eye,2021,107,"['war', 'drama', 'history']",['DK'],7.3,9462.0
+tm1038363,America: The Motion Picture,2021,98,"['action', 'animation', 'war', 'comedy', 'fantasy', 'history', 'scifi']",['US'],5.6,6349.0
+tm1114205,Amina,2021,120,"['war', 'history', 'drama', 'action']",['NG'],3.8,311.0
+tm1159301,Forgive Us Our Trespasses,2022,13,"['war', 'drama']",['US'],6.5,
