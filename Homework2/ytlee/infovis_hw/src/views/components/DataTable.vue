@@ -59,11 +59,39 @@
 <script setup lang="ts">
 import * as vue from "vue" 
 import { Ref, ref } from "vue"
+import { SearchOutlined } from '@ant-design/icons-vue'
+
+const columns = [
+    {
+        title: "Artist",
+        dataIndex: "artist",
+        key: "artist",
+        map: d => d,
+        customFilterDropdown: true,
+        clickable: true,
+        onFilter: (value, record) =>
+          record.artist.toString().toLowerCase().includes(value.toLowerCase()),
+        onFilterDropdownVisibleChange: visible => {
+          if (visible) {
+            setTimeout(() => {
+              searchInput.value.focus();
+            }, 100);
+          }
+        }
+    },
+    {
+        title: "# of Songs",
+        dataIndex: "songs",
+        key: "songs",
+        map: d => d,
+        clickable: false,
+        defaultSortOrder: 'descend',
+        sorter: (a: TableDataType, b: TableDataType) => a.songs - b.songs,
+    }
+]
 
 const props = defineProps({
     data: Object as () => any,
-    columns: Object as () => any,
-    innerColumns: Object as () => any,
     selected_artist: String,
 })
 const searchInput = ref(); const searchText: Ref<string> = ref("")
@@ -98,3 +126,11 @@ defineExpose({
     addRowClickListener,
 })
 </script>
+<style scoped lang="scss">
+:deep(.ant-table-row) {
+    font-size: 0.7rem;
+}
+:deep(.ant-table-cell) {
+    padding: 3px 16px;
+}
+</style>

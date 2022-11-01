@@ -13,7 +13,7 @@ const props = defineProps({
     data: Object as () => any,
     step:Number,
 })
-const margin = {top: 0, right: 0, bottom: 0, left: 20}
+const margin = {top: 0, right: 0, bottom: 0, left: 21}
 const width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right
 const height = Math.min(100, window.innerHeight - margin.top - margin.bottom - 20) - margin.top - margin.bottom;
 // const height = 100
@@ -68,6 +68,7 @@ function init() {
 function updateBars() {
     const svg = d3.select(`#${id}`).select("svg")
     const canvas = svg.select("g.canvas")
+    canvas.selectAll("rect").remove()
     const bars_group = canvas.selectAll("rect.bar")
         .data(props.data)
         .join(

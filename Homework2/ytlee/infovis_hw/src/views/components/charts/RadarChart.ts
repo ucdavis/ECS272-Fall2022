@@ -32,6 +32,7 @@ class Config {
 	strokeWidth: number = 2 		//The width of the stroke around each blob
 	roundStrokes: boolean = false	//If true the area and stroke will follow a round path (cardinal-closed)
 	color: any = d3.scaleOrdinal(d3.schemeCategory10)	//Color function
+	circle_color: string = "black"
 }
 export class RadarChart {
 	cfg: Config;
@@ -314,7 +315,7 @@ export class RadarChart {
 						.attr("r", self.cfg.dotRadius)
 						.attr("cx", function(d,i){ return self.rScale(d.value) * Math.cos(self.angleSlice*i - Math.PI/2); })
 						.attr("cy", function(d,i){ return self.rScale(d.value) * Math.sin(self.angleSlice*i - Math.PI/2); })
-						.style("fill", function(d,i,j) { return self.cfg.color(j); })
+						.style("fill", self.cfg.circle_color)
 						.style("fill-opacity", 0.8)
 						.selection(),
 				update => update.transition().duration(duration).ease(ease_func)

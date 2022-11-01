@@ -13,7 +13,7 @@
                     <i class='pi pi-info-circle tooltip'>
                         <span class="tooltiptext right-tooltiptext" style="width: 400px">
                             Each 'bee' is an artist, the position indicates how many songs this artist has released.
-                            Only artists who have release more than 50 songs are listed.
+                            Only artists who have released more than 50 songs are listed.
                         </span>
                     </i>
                 </h2>
@@ -36,7 +36,6 @@
                 <DataTable 
                 ref="data_table"
                 :data="artist_info_table_data" 
-                :columns="artist_info_table_columns"
                 v-model:selected_artist="selected_artist"/>
             </div>
         </div>
@@ -53,14 +52,14 @@
                 </h2>
                 <div class="button-set-container" v-if="selected_artist">
                     <a-button class="animation-previous-button"
-                        size="large"
+                        size="middle"
                         @click="radar_chart.stepBackward()">
                         <template #icon>
                             <step-backward-outlined/>
                         </template>
                     </a-button>
                     <a-button class="animation-play-button"
-                        size="large"
+                        size="middle"
                         @click="stop=!stop">
                         <template #icon>
                             <caret-right-outlined v-if="stop"/>
@@ -68,7 +67,7 @@
                         </template>
                     </a-button>
                     <a-button class="animation-next-button"
-                        size="large"
+                        size="middle"
                         @click="radar_chart.stepForward(artist_song_dict[selected_artist].length-1)">
                         <template #icon>
                             <step-forward-outlined/>
@@ -131,7 +130,7 @@ import BeesWarm from "../components/BeesWarm.vue";
 import Dropdown from "../components/Dropdown.vue"
 import DataTable from "../components/DataTable.vue"
 
-import { CaretRightOutlined, PauseOutlined, SearchOutlined, StepForwardOutlined, StepBackwardOutlined } from '@ant-design/icons-vue';
+import { CaretRightOutlined, PauseOutlined, StepForwardOutlined, StepBackwardOutlined } from '@ant-design/icons-vue';
 
 // import ArtistScatterPlot from "../components/ArtistScatterPlot.vue"
 
@@ -160,34 +159,6 @@ Object.keys(artist_song_dict).forEach(artist => {
     })
 })
 
-const artist_info_table_columns = [
-    {
-        title: "Artist",
-        dataIndex: "artist",
-        key: "artist",
-        map: d => d,
-        customFilterDropdown: true,
-        clickable: true,
-        onFilter: (value, record) =>
-          record.artist.toString().toLowerCase().includes(value.toLowerCase()),
-        onFilterDropdownVisibleChange: visible => {
-          if (visible) {
-            setTimeout(() => {
-              searchInput.value.focus();
-            }, 100);
-          }
-        }
-    },
-    {
-        title: "#Songs",
-        dataIndex: "songs",
-        key: "songs",
-        map: d => d,
-        clickable: false,
-        defaultSortOrder: 'descend',
-        sorter: (a: TableDataType, b: TableDataType) => a.songs - b.songs,
-    }
-]
 
 const intro_label: Ref<any> = ref(null)
 const radar_chart: Ref<any> = ref(null)
@@ -207,6 +178,10 @@ const radarchart_data = vue.computed(() => {
     return artist_song_dict[selected_artist.value]
 })
 const selected_artist = ref(undefined)
+vue.watch(selected_artist, (new_value, old_value) => {
+    animate_step.value = 0
+    stop.value = true
+})
 
 const beeswarm_data = vue.computed(() => {
     let res: any[] = []

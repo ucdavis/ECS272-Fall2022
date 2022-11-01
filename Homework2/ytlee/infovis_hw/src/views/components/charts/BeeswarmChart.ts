@@ -68,8 +68,8 @@ export class BeeswarmChart {
         this.updateXaxis(this.cfg.xMin, this.cfg.xMax)
         const zoomed:any = ({transform}) => {
             canvas.attr("transform", transform)
-            const xAxis = d3.axisBottom(this.cfg.xScale).tickSizeOuter(0);
-            canvas.select("g.x-axis").call(xAxis.scale(transform.reSacleX(this.cfg.xScale)))
+            // const xAxis = d3.axisBottom(this.cfg.xScale).tickSizeOuter(0);
+            // canvas.select("g.x-axis").call(xAxis.scale(transform.rescaleX(this.cfg.xScale)))
         }
         const zoom: any = d3.zoom().scaleExtent([1, 3]).on("zoom", zoomed)
         svg.call(zoom)

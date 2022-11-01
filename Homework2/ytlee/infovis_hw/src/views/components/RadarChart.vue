@@ -40,6 +40,7 @@ const internal_step: Ref<number> = ref(0)
 let radarChart: any;
 var color = d3.scaleOrdinal()
     .range(["#EDC951","#CC333F","#00A0B0"]);
+
 const class_name = "radarChart" 
 var radarChartOptions = {
     w: width,
@@ -48,7 +49,8 @@ var radarChartOptions = {
     maxValue: 1,
     levels: 5,
     roundStrokes: true,
-    color: color
+    color: color,
+    circle_color: "#00A0B0",
 };
 const transition_options = {
     duration: 600,
@@ -57,7 +59,10 @@ const transition_options = {
 
 vue.watch(sorted_data, () => {
     if(!sorted_data.value) radarChart.init()
-    else radarChart.update(convert_to_radar_data(sorted_data.value[internal_step.value]), transition_options)
+    else {
+        internal_step.value = 0
+        radarChart.update(convert_to_radar_data(sorted_data.value[internal_step.value]), transition_options)
+    }
 }, {deep:true})
 
 vue.watch(() => props.stop, (new_value, old_value) => {
@@ -66,11 +71,7 @@ vue.watch(() => props.stop, (new_value, old_value) => {
 
 let terminate = false
 vue.watch(() => props.step, (new_value, old_value) => {
-    if(old_value !== 0 && new_value === 0 && old_value-new_value !== 1) terminate = true
-    // else {
-    //     internal_step.value = props.step
-    //     radarChart.update(convert_to_radar_data(sorted_data.value[internal_step.value]), transition_options)
-    // }
+    if(old_value && new_value &&  old_value-new_value === 1) terminate = true
 
 })
 //Call function to draw the Radar chart
@@ -79,6 +80,7 @@ vue.onMounted(() => {
     radarChart.init()
 })
 function loop() {
+    console.log(terminate)
     if(terminate) {
         internal_step.value = 0
         terminate = false
