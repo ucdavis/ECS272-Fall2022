@@ -1,5 +1,15 @@
-# UPDATED (AGAIN) Portion of README For Assignment 3
-Will be the same instructions and dimensions as for HW2, as you can see right below this.
+# TLDR
+For Assignment 2 use this link: https://github.com/ucdavis/ECS272-Fall2022/tree/aca108f5dd5728a7e6db68eeda6219ba1fa4ece2
+
+For Assignment 3 use latest changes in the Pull Request (https://github.com/ucdavis/ECS272-Fall2022/pull/8)
+
+# UPDATED (AGAIN) Portion of README For Assignment 3 (Scroll Down to See Assignment 2 Updates)
+Will be the same instructions and dimensions as for HW2, as you'll see right below:
+1. Change directory into the `Vue-Skeleton template` under `Homework 2 folder`.
+2. Run `npm i` to install node modules as needed
+3. Run `npm run` start to start the sever.
+
+Please use the latest hash in the git commit log to find the code submission for Assignment 3! This should also be the latest changes within the pull request itself.
 
 Cool NEW Features for HW3!
 1. Focus View: Parallel Coordinates showing intensity. `Interaction technique includes brushing`, which then filters the sunburst chart.
@@ -16,8 +26,12 @@ If you have any questions, please feel free to reach out to me! :)
 
 DIMENSIONS: For optimal scaling and dimensions, I developed and tested on a standard 24" 1080p monitor. You can also try to resize the scale to 1920 x 929 in case the current view is off. You can however feel free to use whatever you'd like, if when running `npm run start` and the view looks fine as is then no need to change it. Otherwise, try to adjust it to the dimensions I've given and hopefully it should look a little better.
 
+Please use this link for the correct up to date code submission for Homework 2. It contains the git commit hash for the final commit for HW2: https://github.com/ucdavis/ECS272-Fall2022/tree/aca108f5dd5728a7e6db68eeda6219ba1fa4ece2
 
-# Homework 2: Visualization Dashboard: Layout Design + Visual Encoding
+Feel free to also check the git commit logs in the pull request if you have any questions or reach out to me.
+
+
+<!-- # Homework 2: Visualization Dashboard: Layout Design + Visual Encoding
 For homework 2, you will create a dashboard with three visualization views. This homework will not be using Observable. Instead, you will be developing a visualization dashboard system in JavaScript with [D3.js](https://d3js.org/)
 
 To begin, you need to first fork (Links to an external site.) this repository (Links to an external site.). After the fork, clone the forked repository using the following commands:
@@ -110,4 +124,4 @@ git add <your-filename>
 git commit -m "Homework2" 
 git push
 ```
-After you pushed your code to your repository, follow the instruction [here](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) to create a pull request for this repository. Finally, submit the hyperlink of the pull request to UCD Canvas. The hyperlink should look like - "https://github.com/ucdavis/ECS272-Fall2022/pull/{your-pull-request-id}".
+After you pushed your code to your repository, follow the instruction [here](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) to create a pull request for this repository. Finally, submit the hyperlink of the pull request to UCD Canvas. The hyperlink should look like - "https://github.com/ucdavis/ECS272-Fall2022/pull/{your-pull-request-id}". -->
