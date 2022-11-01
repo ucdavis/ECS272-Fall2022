@@ -66,11 +66,18 @@ export default {
             d3.selectAll(".scatterplot").remove()
             d3.selectAll(".dot").remove()
             d3.selectAll(".tooltip_scatter").remove()
+
+            const container = d3.select(id)
             
-            const svg = d3.select(id).append("svg")
+            const zoom = d3.zoom().scaleExtent([1, 4])
+                                    .on("zoom", function(event) {
+                                        svg.attr("transform", event.transform)})
+            
+            const svg = container.append("svg")
                             .attr("class", "scatterplot")
                             .attr("width", width + margin.left + margin.right)
                             .attr("height", height + margin.top + margin.bottom)
+                            .call(zoom)
                             .append("g")
                             .attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -78,7 +85,7 @@ export default {
                         .domain([150, 750])
                         .range([0, width])
 
-            svg.append("g")
+            const xAxis = svg.append("g")
                 .attr("transform", `translate(0, ${height})`)
                 .call(d3.axisBottom(x))
 
@@ -86,7 +93,7 @@ export default {
                         .domain([0, 260])
                         .range([height, 0])
 
-            svg.append("g")
+            const yAxis = svg.append("g")
                 .call(d3.axisLeft(y))
 
             const tooltip = d3.select(id).append("div")
@@ -244,7 +251,7 @@ export default {
                             .style("left", (event.x)/8 + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
                             .style("top", (event.y)/8 + "px")
                     })
-            } 
+            }
         }
     }
 }
