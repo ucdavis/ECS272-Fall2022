@@ -1,16 +1,5 @@
-# UPDATED (AGAIN) Portion of README For Assignment 3
-Will be the same instructions and dimensions as for HW2, as you can see right below this.
-
-Cool NEW Features for HW3!
-1. Focus View: Parallel Coordinates showing intensity. `Interaction technique includes brushing`, which then filters the sunburst chart.
-2. Pressing on a decade in the sunburst chart displays an `interaction technique` and `an animation` showing the top 10 songs of that decade. After selecting one decade the radar chart will update showing the top 3 songs and their attributes. The color scheme of the radar legend will match that of the stroke of the top 3 songs on the sunburst chart.
-4. Hovering over a song in sunburst will display full name and popularity score to the right.
-3. Deselecting the brushing on the parallel coordinates chart will reset both the sunburst and the radar charts to their default views.
-
-If you have any questions, please feel free to reach out to me! :)
-
 # UPDATED Portion of README For Assignment 2
-1. Change directory into the `Vue-Skeleton` template under `Homework 2` folder.
+1. Change directory into the Vue-Skeleton template
 2. Run `npm i` to install node modules as needed
 3. Run `npm run start` to start the sever.
 
