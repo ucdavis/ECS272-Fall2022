@@ -18,7 +18,7 @@ This system is built with [ReactJS](https://reactjs.org/). Please follow the fol
 3. **Run Project**:
 
    ```
-   cd CS272-Fall2022/Homework2/xioliu
+   cd CS272-Fall2022/Homework3/xioliu
    yarn
    yarn start
    ```
