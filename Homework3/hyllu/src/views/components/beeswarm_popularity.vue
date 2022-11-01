@@ -19,7 +19,8 @@
             mySelection: Object,
             mySinger: String,
             myColor: Array,
-            slideshow: Number
+            slideshow: Number,
+            mySongs: Array,
         },
         watch: { 
             mySelection: function(newVal, oldVal) { // watch it
@@ -35,6 +36,10 @@
             },
             slideshow: function(newVal, oldVal) {
                 console.log(this.slideshow);
+                this.drawBeeswarm(this.prepared_data, "#beeswarm", this.mySelection);
+            },
+            mySongs: function(newVal, oldVal) {
+                console.log(this.mySongs);
                 this.drawBeeswarm(this.prepared_data, "#beeswarm", this.mySelection);
             }
         },
@@ -113,6 +118,7 @@
 
                 const X = d3.map(data, d => d.popularity);
                 const N = d3.map(data, d => d.name);
+                const TI = d3.map(data, d => d.total_index);
                 let X_category = undefined;
                 let X_text = undefined;
                 if (this.slideshow%7 === 0){
@@ -233,6 +239,8 @@
                     .attr("cx", i => xScale(X[i]))
                     .attr("cy", i => height - margin.bottom - radius - padding - Y[i])
                     .attr("r", radius)
+                    .attr("stroke-width", i => this.mySongs.includes(TI[i])? 1 : 0)
+                    .attr("stroke", i => this.mySongs.includes(TI[i])? "#0F0" : "#FFF")
                     .attr("fill", i => cScale(X_category[i]));
                     // .attr("fill", i => this.myColor[G[i]]);
                 

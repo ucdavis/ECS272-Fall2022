@@ -408,7 +408,7 @@ import { object } from "vue-types";
                         select_switch = 0;
                         flag_dbclick = false;
                         select_item = undefined;
-                        let ti_tmp = undefined;
+                        let ti_tmp = [];
                         console.log(select_switch, select_item);
                         forEmitThis.$emit('selectSongsChange', ti_tmp);
                     }

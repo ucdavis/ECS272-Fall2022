@@ -16,7 +16,7 @@
             </div>
             <div id="beeswarm_view">
                 <!-- <Dropdown_Beeswarm v-if="BeeswarmExits" @selectedChange="handleChange_beeswarm"/> -->
-                <Beeswarm v-if="BeeswarmExits" :myData="myData" :mySelection="selected_beeswarm" :mySinger="selectSinger" :myColor="color" :slideshow="slideNumber" @slideshowChange="handleChange_slide"/>
+                <Beeswarm v-if="BeeswarmExits" :myData="myData" :mySelection="selected_beeswarm" :mySinger="selectSinger" :myColor="color" :slideshow="slideNumber" :mySongs="selected_songs" @slideshowChange="handleChange_slide"/>
             </div>
         </div>
     </div>
@@ -47,7 +47,8 @@ export default {
             selectSinger: undefined,
             color: undefined,
             colorExists: true,
-            slideNumber: 0
+            slideNumber: 0,
+            selected_songs: []
         }
     },
     components: {
@@ -126,7 +127,8 @@ export default {
             this.BeeswarmExits = this.colorExists & this.BarExists;
         },
         handleselectSongs_bar(ti_tmp){
-            
+            console.log('parent noticed change TI ' + ti_tmp);
+            this.selected_songs = ti_tmp;
         },
         handleChange_slide(tmp_slide){
             const ori_this = this;
