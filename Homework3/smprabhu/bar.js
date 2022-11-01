@@ -130,8 +130,8 @@ function drawBar(width, height, region){
 
   var set_height = height;
   var svg = d3.select("#bar"),
-  margin = {top: 20, right: 20, bottom: 110, left: 40},
-  margin2 = {top: 230, right: 20, bottom: 30, left: 40},
+  margin = {top: 20, right: 20, bottom: 110, left: 70},
+  margin2 = {top: 230, right: 20, bottom: 30, left: 70},
   width = width - margin.left - margin.right,
   height = set_height - margin.top - margin.bottom,
   height2 = set_height - margin2.top - margin2.bottom;
@@ -230,6 +230,23 @@ svg.append("rect")
     .attr("height", height)
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
     .call(zoom);
+
+    svg.append("text")
+              .attr("transform", "rotate(-90)")
+              .attr("x", - height )
+              .attr("dy", "15")
+              .style("text-anchor", "middle")
+              .style("font-size", "1em")
+              .classed("y-axis-label", true)
+              .text('CO2 Emissions in metric tons/capita');
+  
+      svg.append("text")
+          .attr("x", width / 2)
+          .attr("y", "320")
+          .attr("font-size", "1em")
+          .style("text-anchor", "middle")
+          .classed("x-axis-label", true)
+          .text('Year');
 });
 
 function brushed() {

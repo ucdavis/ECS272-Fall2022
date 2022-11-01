@@ -3,8 +3,11 @@
 }
 
 .area {
-  fill: steelblue;
+  fill: #003f5c;
   clip-path: url(#clip);
+}
+.area2{
+  fill: #665191;
 }
 
 .zoom {
