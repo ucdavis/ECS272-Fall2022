@@ -1,6 +1,11 @@
 # Dashboard Preview
 ![](./preview.png)
 
+# Display Settings
+The dashboard was developed and ran on a 13.3 inch (2560 × 1600) screen, displayed by Chrome with 100% Zoom.
+
+Please use a mouse to zoom and drag the world map.
+
 # Install Dependencies
 Assuming you have node.js installed. (If not go do that :) )
 Install [Node](https://nodejs.org/en/).
@@ -13,6 +18,3 @@ To install additional packages based on your needs
 
 ## Run application 
 `npm start`
-
-The dashboard was developed and ran on a 13.3 inch (2560 × 1600) screen, displayed by Chrome with 100% Zoom.
-Please use a mouse to zoom and drag the world map.
