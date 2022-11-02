@@ -1,5 +1,8 @@
 <template>
-    <h3>The title:</h3>{{ this.showTitle }}
+    <div>Type ID to Show Scores:
+        <input v-model.trim="showID"/>
+        <h3>The title is :</h3>{{ this.showTitle }}
+    </div>
     <div class="card" :id="myChartID">
         <svg></svg>
     </div>
@@ -58,21 +61,21 @@ export default{
     },
     created(){
         console.log("Radar data passed:")
-        console.log(this.myRadarData)
-        console.log(this.showID)
+        //console.log(this.myRadarData)
+        //console.log(this.showID)
         this.showTitle = this.myRadarData[this.showID][0].name;
     },
     mounted(){
         //let localData = this.testData;
         let localData = this.processData(this.myRadarData[this.showID]);
-        console.log("Data Passed down as a Prop  ", localData)
-        console.log(this.myChartID)
+        //console.log("Data Passed down as a Prop  ", localData)
+        //console.log(this.myChartID)
         this.drawRadarChart(localData, this.myChartID)
     },
     watch:{
         showID(newval, oldval){
             let localData = this.processData(this.myRadarData[newval]);
-            console.log("Data Changed! ", localData)
+            //console.log("Data Changed! ", localData)
             this.drawRadarChart(localData, this.myChartID)
             this.showTitle = this.myRadarData[newval][0].name;
         }
@@ -90,13 +93,13 @@ export default{
             return [formattedData];
         },
         processData(data){
-            console.log("Process Radar Data:",data[0])
-            console.log(data[0].imscore);
+            //console.log("Process Radar Data:",data[0])
+            //console.log(data[0].imscore);
             let infos = {
-                IMDB_SCORE : parseFloat(data[0].imscore),
-                TMDB_SCORE : parseFloat(data[0].tmscore),
+                IMDB_SCORE_in10 : parseFloat(data[0].imscore),
+                TMDB_SCORE_in10 : parseFloat(data[0].tmscore),
                 //STAFF_NUM : parseInt(data[0].num_person),
-                TMDB_popular : parseFloat(data[0].popularity)
+                TMDB_popular_in10 : parseFloat(data[0].popularity)
             }
             return this.formatdata(infos);
         },

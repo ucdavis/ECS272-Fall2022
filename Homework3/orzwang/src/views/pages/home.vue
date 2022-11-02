@@ -13,13 +13,13 @@
     <div class="column middle">
         <div class="card">
             <h3>Sunburst Chart showing all titles</h3>
-            <Sunburst v-if="dataExists" @givefather="getSon" myChartID="upperright" :mysundata=titleGroups></Sunburst>
+            <Sunburst v-if="dataExists" @givefather="getSon" myChartID="upperright" :mysundata=titleGroups_selected></Sunburst>
         </div>
     </div>
     <div class="bottombar">
         <div class="card">
             <h3 align="left">Barchart of number of products each year </h3>
-            <BarChart v-if="dataExists" :myBarchartData=myBarData myChartID="barbottom"/>
+            <BarChart v-if="dataExists" @selectedyear="updateYear" :myBarchartData=myBarData myChartID="barbottom"/>
             
         </div>
         
@@ -49,7 +49,8 @@ export default {
             //data_person = d3.csvParse(FileAttachment().text(), d3.autoType)
             //data_title = d3.csvParse(FileAttachment().text(), d3.autoType)
             //actorGroups : Array,
-            titleGroups : [],
+            titleGroups : {},
+            titleGroups_selected : {},
             //fdata_person : Array,
             fdata_title : Array,
             title_nameindex : Object,
@@ -73,11 +74,24 @@ export default {
         
     },
     mounted(){
+        this.titleGroups_selected = this.titleGroups;
         this.levelGroup()
     },
     methods: {
+        updateYear(data){
+            console.log("Year changed!", data)
+            let selected = {}
+            Object.keys(this.titleGroups).forEach(k =>{
+                if (k>data[0] & k<data[1]){
+                    selected[k] = this.titleGroups[k]
+                }
+            })
+            //return
+            this.titleGroups_selected = selected;
+            //console.log("Year updated", this.titleGroups, this.titleGroups_selected)
+        },
         getSon(data){
-            console.log("Father get the data:", data)
+            //console.log("Father get the data:", data)
             this.title_radar = data;
         },
         retrieveFromCsv(){
@@ -244,14 +258,14 @@ export default {
                         runtime: d.runtime,
                         imscore: d.imdb_score,
                         tmscore: d.tmdb_score,
-                        popularity: Math.round(Math.min(0,d.tmdb_popularity)/100),
+                        popularity: Math.round(Math.min(100,parseFloat(d.tmdb_popularity))/100),
                         num_person: 0
                     }
                     //if (t.agec == ''){
                     //    t.agec = 'No restriction'
                     //}
                     if (parseInt(t.year)<=1990){
-                        t.year = "1945~1990"
+                        t.year = "1990"
                     }
                     titleGroups[d.id] = t;
                 }

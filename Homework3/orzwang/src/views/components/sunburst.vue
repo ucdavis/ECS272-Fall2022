@@ -29,12 +29,17 @@ export default{
         this.drawChart(sundata, this.myChartID)
     },
     watch:{
-
+        mysundata(newval, oldval){
+            //console.log("New sundata", newval)
+            let sundata = this.dataProcess(newval)
+            //console.log("Data Passed down as a Prop  ", sundata)
+            this.drawsunburst( sundata, this.myChartID)
+        }
     },
     methods:{
         givefather(data){
             this.$emit("givefather", data);
-            console.log("Send data to father:", data)
+            //console.log("Send data to father:", data)
         },
         drawChart(data, id){
             //console.log("Drawing Chart!")
@@ -75,12 +80,11 @@ export default{
                 formattedData.children.push(thistype);
             })
             //alldataprocessed.children.push(formattedData);
-            //console.log(data)
-            console.log("Sunburst Data Processed")
-            //console.log(formattedData)
+            //console.log("Sunburst Data Processed", formattedData)
             return formattedData;
         },
         drawsunburst(data, id) {
+            //console.log("Data have children:", data.children)
             let vueThis = this;
             id = '#'+id            
             let color = d3.scaleOrdinal(d3.quantize(d3.interpolateRainbow, data.children.length + 1));
@@ -105,12 +109,13 @@ export default{
                                             (root);
                                         }
             const root = partition(data);
-            console.log("Root is", root);
+            //console.log("Root is", root);
             root.each(d => d.current = d);
 
-            const svg = d3.select(id).select("svg");
+            d3.select(id).select("svg").remove();
             
-            svg.attr("viewBox", [0, 0, width, width])
+            const svg = d3.select(id).append("svg")
+                .attr("viewBox", [0, 0, width, width])
                 .style("font", "9px sans-serif");
 
             const g = svg.append("g")
