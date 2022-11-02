@@ -1,0 +1,122 @@
+@import "~animate.css/animate.css";
+
+
+/* Example of using SCSS */
+$font-size: 1rem;
+$font-color: lch(53 105 40);
+
+html {
+  font-size: $font-size;
+  color: $font-color;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+info{
+    height: 10%;
+    margin: auto;
+    padding-right: 20px;
+    font-size: 2vh;
+    text-align: left;
+    vertical-align: baseline;
+    display: inline-block;
+}
+
+
+#pitch_list span{
+    display: block;
+    float: left;
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 3px;
+    border: 1px solid #999;
+}
+#pitch_list {
+    list-style: none;
+}
+
+#pitch_list li{
+    list-style: none;
+}
+
+#chart ul{
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+}
+
+.overlay {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+.modal {
+    position: absolute;
+    width: 50%;
+    top: 10%;
+    left: 25%;
+    padding: 20px;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.home{
+  height: 100%;
+  width: 100%;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+#app{
+  height: 100%;
+  width: 100%;
+}
+
+#scene{
+  height: 90%;
+  width: 100%;
+}
+
+#chart{
+  height: 90%;
+  width: 100%;
+}
+
+#chart2{
+  height: 90%;
+  width: 100%;
+}
+
+#chart3{
+  height: 90%;
+  width: 100%;
+  text-align: center;
+}
+
+
+#legend{
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+
+#legend2{
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+
+
