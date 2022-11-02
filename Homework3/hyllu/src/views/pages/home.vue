@@ -209,7 +209,7 @@ export default {
         justify-content: center;
     }
     #center_table {
-        height: 15%;
+        height: 35%;
         width: 95%;
         position: relative;
         /* border-style: solid;
@@ -222,7 +222,7 @@ export default {
         margin-right: auto;
     }
     #network_view {
-        height: 90%;
+        height: 55%;
         width: 95%;
         position: relative;
         margin-top: 10px;

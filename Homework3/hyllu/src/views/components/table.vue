@@ -1,5 +1,5 @@
 <template>
-  <a-table :row-selection="rowSelection" :data-source="myData" :columns="columns" :scroll="{ x: 100, y: 100 }">
+  <a-table :row-selection="rowSelection" :data-source="myData" :columns="columns" :scroll="{ y: 100 }" :pagination="{ pageSize: 10 }">
     <template #filterDropdown="{ setSelectedKeys, selectedKeys, confirm, clearFilters, column }">
       <div style="padding: 8px">
         <a-input
