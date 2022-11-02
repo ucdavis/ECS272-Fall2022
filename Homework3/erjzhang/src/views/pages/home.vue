@@ -8,7 +8,9 @@
                     <LineChart v-if="dataExists" :myLineChartData="myCsvData" :curr_year="parseInt(curr_year)" :selected_country_code="selected_country_code"
                         :history_max="history_max" :selected_country_name="selected_country_name"/>
                     
-                    <h2 class="my-0">Year: {{ curr_year }}</h2>
+                    <h2 class="my-0">Year: {{ curr_year }}
+                        <span class="h6"><span class="badge badge-info mx-1">Tip</span>Click on white part to reset map</span>
+                    </h2>
                     <div class="slidecontainer">
                         <input type="range" v-bind:min="first_year" v-bind:max="last_year" class="slider"
                             id="year_slider" v-model="curr_year">   
