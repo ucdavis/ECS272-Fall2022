@@ -1,5 +1,5 @@
 <template>
-  <a-table :data-source="data" :columns="columns" :scroll="{ x: 100, y: 100 }">
+  <a-table :row-selection="rowSelection" :data-source="myData" :columns="columns" :scroll="{ x: 100, y: 100 }">
     <template #filterDropdown="{ setSelectedKeys, selectedKeys, confirm, clearFilters, column }">
       <div style="padding: 8px">
         <a-input
@@ -54,37 +54,47 @@
 <script>
 import { SearchOutlined } from '@ant-design/icons-vue';
 import { defineComponent, reactive, ref, toRefs } from 'vue';
-const data = [
-  {
-    key: '1',
-    name: 'John Brown',
-    age: 32,
-    address: 'New York No. 1 Lake Park',
-  },
-  {
-    key: '2',
-    name: 'Joe Black',
-    age: 42,
-    address: 'London No. 1 Lake Park',
-  },
-  {
-    key: '3',
-    name: 'Jim Green',
-    age: 32,
-    address: 'Sidney No. 1 Lake Park',
-  },
-  {
-    key: '4',
-    name: 'Jim Red',
-    age: 32,
-    address: 'London No. 2 Lake Park',
-  },
-];
+let data = [];
+// const data = [
+//   {
+//     key: '1',
+//     name: 'John Brown',
+//     age: 32,
+//     address: 'New York No. 1 Lake Park',
+//   },
+//   {
+//     key: '2',
+//     name: 'Joe Black',
+//     age: 42,
+//     address: 'London No. 1 Lake Park',
+//   },
+//   {
+//     key: '3',
+//     name: 'Jim Green',
+//     age: 32,
+//     address: 'Sidney No. 1 Lake Park',
+//   },
+//   {
+//     key: '4',
+//     name: 'Jim Red',
+//     age: 32,
+//     address: 'London No. 2 Lake Park',
+//   },
+// ];
 export default defineComponent({
   components: {
     SearchOutlined,
   },
   name: 'Table',
+
+  props:{ // received data from others
+      myData: Array
+  },
+  watch: { 
+      myData: function(newVal, oldVal) { // watch it
+          data = this.myData;
+      }
+  },
   setup() {
     const state = reactive({
       searchText: '',
@@ -93,16 +103,16 @@ export default defineComponent({
     const searchInput = ref();
     const columns = [
       {
-        title: 'Name',
-        dataIndex: 'name',
-        key: 'name',
+        title: 'Singer',
+        dataIndex: 'singer',
+        key: 'singer',
         slots: {
           filterDropdown: 'filterDropdown',
           filterIcon: 'filterIcon',
           customRender: 'customRender',
         },
         onFilter: (value, record) =>
-          record.name.toString().toLowerCase().includes(value.toLowerCase()),
+          record.singer.toString().toLowerCase().includes(value.toLowerCase()),
         onFilterDropdownVisibleChange: visible => {
           if (visible) {
             setTimeout(() => {
@@ -112,65 +122,44 @@ export default defineComponent({
           }
         },
       },
-      {
-        title: 'Age',
-        dataIndex: 'age',
-        key: 'age',
-        slots: {
-          filterDropdown: 'filterDropdown',
-          filterIcon: 'filterIcon',
-          customRender: 'customRender',
-        },
-        onFilter: (value, record) =>
-          record.age.toString().toLowerCase().includes(value.toLowerCase()),
-        onFilterDropdownVisibleChange: visible => {
-          if (visible) {
-            setTimeout(() => {
-              searchInput.value.focus();
-            }, 100);
-          }
-        },
-      },
-      {
-        title: 'Address',
-        dataIndex: 'address',
-        key: 'address',
-        slots: {
-          filterDropdown: 'filterDropdown',
-          filterIcon: 'filterIcon',
-          customRender: 'customRender',
-        },
-        onFilter: (value, record) =>
-          record.address.toString().toLowerCase().includes(value.toLowerCase()),
-        onFilterDropdownVisibleChange: visible => {
-          if (visible) {
-            setTimeout(() => {
-              searchInput.value.focus();
-            }, 100);
-          }
-        },
-      },
     ];
+    const rowSelection = {
+        onChange: (selectedRowKeys, selectedRows) => {
+            console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+            this.$emit('selectCenterChange', "test");
+        },
+        getCheckboxProps: record => ({
+            disabled: record.singer === 'Disabled User',
+            // Column configuration not to be checked
+            singer: record.singer,
+        }),
+    };
 
     const handleSearch = (selectedKeys, confirm, dataIndex) => {
-      confirm();
-      state.searchText = selectedKeys[0];
-      state.searchedColumn = dataIndex;
+        confirm();
+        state.searchText = selectedKeys[0];
+        state.searchedColumn = dataIndex;
     };
 
     const handleReset = clearFilters => {
-      clearFilters();
-      state.searchText = '';
+        clearFilters();
+        state.searchText = '';
     };
 
     return {
-      data,
-      columns,
-      handleSearch,
-      handleReset,
-      searchInput,
-      ...toRefs(state),
+        data,
+        columns,
+        rowSelection,
+        handleSearch,
+        handleReset,
+        searchInput,
+        ...toRefs(state),
     };
+  },
+  method: {
+      update_selection(){
+          console.log("test");  
+      }
   },
 });
 </script>

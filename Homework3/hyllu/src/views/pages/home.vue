@@ -2,7 +2,7 @@
     <div id="home">
         <div id="left_view">
             <div id="center_table">
-                <Table/>
+                <Table v-if="tableExists" :myData="myTableData" @selectCenterChange=""/>
             </div>
             <div id="network_view">
                 <!-- <Dropdown_Network :myData="hop_1" @selectedChange="handleChange_network"/> -->
@@ -44,9 +44,11 @@ export default {
     data(){
         return {
             dataExists: false,
+            tableExists: false,
             BarExists: false,
             BeeswarmExits: false,
             myData: [],
+            myTableData: [],
             selected: {id: 1, text: 'Popularity 0-20'},
             selected_beeswarm: {id: 0, text: 'acousticness'},
             selected_network: {id: 0, text: 'Taylor Swift'},
@@ -83,6 +85,12 @@ export default {
                 console.log(data);
                 this.dataExists = true; // updates the v-if to conditionally show the barchart only if our data is here.
                 this.myData = data; // updates the prop value to be the recieved data, which we hand in to our bar-chart
+            });
+            d3.csv(tablePath).then((data) => {
+                console.log(data.length);
+                console.log(data);
+                this.tableExists = true;
+                this.myTableData = data;
             });
         },
         handleChange(selected) {
@@ -164,6 +172,9 @@ export default {
                 ori_this.slideNumber = tmp_slide;
             }
             asyncCall();
+        },
+        handleselectCenter_table(center){
+            console.log('parent noticed change center ' + center);
         }
     }
 }
