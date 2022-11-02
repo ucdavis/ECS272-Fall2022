@@ -39,7 +39,7 @@
                 let hop_1_weight = {};
                 let hop_1_size = {};
                 let count = 1;
-                console.log("In network: ", selection.id + selection.text);
+                // console.log("In network: ", selection.id + selection.text);
                 data.forEach(element => {
                     let artist = element.artists.split('\'');
                     let musician_log = [];

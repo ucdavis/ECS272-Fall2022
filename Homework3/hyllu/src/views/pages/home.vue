@@ -2,25 +2,25 @@
     <div id="home">
         <div id="left_view">
             <div id="center_table">
-                <Table v-if="tableExists" :myData="myTableData" @selectCenterChange=""/>
+                <Table v-if="tableExists" :myData="myTableData" @selectCenterChange="handleCenterChange_table"/>
             </div>
             <div id="network_view">
                 <!-- <Dropdown_Network :myData="hop_1" @selectedChange="handleChange_network"/> -->
-                <Network v-if="dataExists" :myData="myData" :mySelection="selected_network" @dropdownChange="handledropdown_network" @selectSingerChange="handleselectSinger_network"/>
+                <Network v-if="NetworkExists" :myData="myData" :mySelection="myCenter" @selectSingerChange="handleselectSinger_network"/>
             </div>
         </div>
         
         <div id="right_view">
             <div id="bar_view">
                 <!-- <Dropdown v-if="BarExists" :mySelection="selected" @selectedChange="handleChange" /> -->
-                <BarChart v-if="BarExists" :myBarchartData="myData" :mySelection="selected" :mySinger="selectSinger" @colorChange="handlecolor_views" @selectSongsChange="handleselectSongs_bar" @selectTextChange="handleselectText_bar" />
+                <BarChart v-if="BarExists" :myBarchartData="myData" :mySelection="selected" :mySinger="selectSinger" @selectSongsChange="handleselectSongs_bar" @selectTextChange="handleselectText_bar" />
             </div>
             <div id="text_view">
                 <TextArea v-if="BarExists" :myText="selected_text" />
             </div>
             <div id="beeswarm_view">
-                <!-- <Dropdown_Beeswarm v-if="BeeswarmExits" @selectedChange="handleChange_beeswarm"/> -->
-                <Beeswarm v-if="BeeswarmExits" :myData="myData" :mySelection="selected_beeswarm" :mySinger="selectSinger" :myColor="color" :slideshow="slideNumber" :mySongs="selected_songs" @slideshowChange="handleChange_slide"/>
+                <!-- <Dropdown_Beeswarm v-if="BeeswarmExists" @selectedChange="handleChange_beeswarm"/> -->
+                <Beeswarm v-if="BeeswarmExists" :myData="myData" :mySelection="selected_beeswarm" :mySinger="selectSinger" :myColor="color" :slideshow="slideNumber" :mySongs="selected_songs" @slideshowChange="handleChange_slide"/>
             </div>
         </div>
     </div>
@@ -44,9 +44,10 @@ export default {
     data(){
         return {
             dataExists: false,
+            NetworkExists: false,
             tableExists: false,
             BarExists: false,
-            BeeswarmExits: false,
+            BeeswarmExists: false,
             myData: [],
             myTableData: [],
             selected: {id: 1, text: 'Popularity 0-20'},
@@ -58,7 +59,8 @@ export default {
             colorExists: true,
             slideNumber: 0,
             selected_songs: [],
-            selected_text: []
+            selected_text: [],
+            myCenter: {id: 0, text: ''}
         }
     },
     components: {
@@ -108,17 +110,18 @@ export default {
             console.log('parent noticed change network ' + selected.id + selected.text);
             this.selected_network = selected;
         },
-        handledropdown_network(dropdown_update){
-            console.log('parent noticed change dropdown ' + dropdown_update);
-            this.hop_1 = dropdown_update;
-        },
+        // handledropdown_network(dropdown_update){
+        //     console.log('parent noticed change dropdown ' + dropdown_update);
+        //     this.hop_1 = dropdown_update;
+        // },
         handleselectSinger_network(select_singer){
             console.log('parent noticed change selectSinger ' + select_singer);
             // this.selectSinger = select_singer;
             if (select_singer !== undefined){
                 if (String(typeof(select_singer))==="string"){
                     this.BarExists = true;
-                    this.BeeswarmExits = this.colorExists & this.BarExists;
+                    this.BarExists = this.BarExists & this.NetworkExists;
+                    this.BeeswarmExists = this.BarExists & this.NetworkExists;
                     if (select_singer !== this.selectSinger){
                         this.selected_network = {id: 0, text: select_singer};
                         this.selectSinger = select_singer;
@@ -128,27 +131,28 @@ export default {
                 }
                 else {
                     this.BarExists = true;
-                    this.BeeswarmExits = this.colorExists & this.BarExists;
+                    this.BarExists = this.BarExists & this.NetworkExists;
+                    this.BeeswarmExists = this.BarExists & this.NetworkExists;
                     this.selectSinger = select_singer;
                     this.selected_songs = [];
                     this.selected_text = [];
                 }
             }
             else {
-                // this.BarExists = false;
-                // this.BeeswarmExits = this.colorExists & this.BarExists;
+                this.BarExists = false;
+                this.BeeswarmExists = this.colorExists & this.BarExists;
                 this.selectSinger = this.selected_network.text;
                 this.selected_songs = [];
                 this.selected_text = [];
                 this.selected = {id: 1, text: 'Popularity 0-20'};
             }
         },
-        handlecolor_views(color){
-            console.log('parent noticed change color ' + color);
-            this.color = color;
-            this.colorExists = true;
-            this.BeeswarmExits = this.colorExists & this.BarExists;
-        },
+        // handlecolor_views(color){
+        //     console.log('parent noticed change color ' + color);
+        //     this.color = color;
+        //     this.colorExists = true;
+        //     // this.BeeswarmExists = this.colorExists & this.BarExists;
+        // },
         handleselectSongs_bar(ti_tmp){
             console.log('parent noticed change TI ' + ti_tmp);
             this.selected_songs = ti_tmp;
@@ -173,8 +177,15 @@ export default {
             }
             asyncCall();
         },
-        handleselectCenter_table(center){
+        handleCenterChange_table(center){
             console.log('parent noticed change center ' + center);
+            this.myCenter.text = center;
+            if (this.myCenter.text != '')    this.NetworkExists = true;
+            else{
+                this.NetworkExists = false;
+                this.BarExists = false;
+                this.BeeswarmExists = false;
+            }    
         }
     }
 }

@@ -95,10 +95,10 @@ export default defineComponent({
           data = this.myData;
       }
   },
-  setup() {
+  setup(props, context) {
     const state = reactive({
       searchText: '',
-      searchedColumn: '',
+      searchedColumn: ''
     });
     const searchInput = ref();
     const columns = [
@@ -123,10 +123,19 @@ export default defineComponent({
         },
       },
     ];
+    let selectText = '';
     const rowSelection = {
         onChange: (selectedRowKeys, selectedRows) => {
             console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
-            this.$emit('selectCenterChange', "test");
+            // this.$emit('selectCenterChange', "test");
+            if (selectedRows.length>0){
+              console.log(selectedRows[0].singer);
+              selectText = String(selectedRows[0].singer);
+            }
+            else{
+              selectText = '';
+            }
+            context.emit("selectCenterChange", selectText);
         },
         getCheckboxProps: record => ({
             disabled: record.singer === 'Disabled User',
@@ -154,6 +163,7 @@ export default defineComponent({
         handleReset,
         searchInput,
         ...toRefs(state),
+        selectText
     };
   },
   method: {
