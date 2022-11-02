@@ -1,0 +1,38 @@
+{
+  "keys": ["Loyal", "Disloyal"],
+  "data": [
+    [
+      { "axis": "inflightWifi", "value": 2.732 },
+      { "axis": "Dept_Arr_Time_Convenience", "value": 3.207 },
+      { "axis": "onlineBooking_ease", "value": 2.769 },
+      { "axis": "gateLocation", "value": 2.974 },
+      { "axis": "foodandDrinks", "value": 3.241 },
+      { "axis": "onlineBoarding", "value": 3.374 },
+      { "axis": "seatComfort", "value": 3.539 },
+      { "axis": "inflightEntertainment", "value": 3.425 },
+      { "axis": "onboardService", "value": 3.416 },
+      { "axis": "legroomService", "value": 3.38 },
+      { "axis": "baggageHandling", "value": 3.618 },
+      { "axis": "checkinService", "value": 3.325 },
+      { "axis": "inflightService", "value": 3.629 },
+      { "axis": "Cleanliness", "value": 3.337 }
+    ],
+
+    [
+      { "axis": "inflightWifi", "value": 2.713 },
+      { "axis": "Dept_Arr_Time_Convenience", "value": 2.39 },
+      { "axis": "onlineBooking_ease", "value": 2.703 },
+      { "axis": "gateLocation", "value": 2.989 },
+      { "axis": "foodandDrinks", "value": 3.045 },
+      { "axis": "onlineBoarding", "value": 2.713 },
+      { "axis": "seatComfort", "value": 3.006 },
+      { "axis": "inflightEntertainment", "value": 3.059 },
+      { "axis": "onboardService", "value": 3.236 },
+      { "axis": "legroomService", "value": 3.221 },
+      { "axis": "baggageHandling", "value": 3.694 },
+      { "axis": "checkinService", "value": 3.223 },
+      { "axis": "inflightService", "value": 3.7 },
+      { "axis": "Cleanliness", "value": 3.061 }
+    ]
+  ]
+}
