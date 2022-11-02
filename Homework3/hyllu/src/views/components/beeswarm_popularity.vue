@@ -311,6 +311,32 @@
                 //     .style("font-size", "9px")
                 //     .attr("alignment-baseline","middle")
                     
+                const legendScale = d3.scaleSequential()
+                    .interpolator(d3.interpolate("blue", "red"))
+                    .domain([0,100]);
+                svg.append("text")
+                    .attr("x", margin.left + 10)
+                    .attr("y", margin.top)
+                    .text(X_text)
+                    .style("font-size", "12px")
+                    .attr("alignment-baseline","middle")
+                    .attr("font-weight", "bold")
+                svg.append("text")
+                    .attr("x", margin.left + 10)
+                    .attr("y", margin.top +15)
+                    .text("from low to high: ")
+                    .style("font-size", "10px")
+                    .attr("alignment-baseline","middle")
+                for (let legend_tmp=1; legend_tmp<=100; legend_tmp+=5){
+                    svg.append("line")
+                        .attr('stroke', legendScale(legend_tmp))
+                        .attr('stroke-width', 6)
+                        .attr('x1', margin.left + 12 +6*legend_tmp/5)
+                        .attr('y1', margin.top +27)
+                        .attr('x2', margin.left + 12 +6*legend_tmp/5)
+                        .attr('y2', margin.top +47)
+                }
+
                 // add labels for axes.
                 svg.append("g")
                     .attr('transform', `translate(0,${height - margin.bottom})`)
@@ -323,7 +349,8 @@
                         .attr("x", -(width - margin.left - margin.right) / 2)
                         .attr("y", margin.bottom - 10)
                         .attr("font-weight", "bold")
-                        .text(X_text)
+                        .attr("font-size", 10)
+                        .text("Popularity")
                         );
                 
                 

@@ -211,7 +211,7 @@ export default {
         margin-right: auto;
     }
     #network_view {
-        height: 85%;
+        height: 90%;
         width: 95%;
         position: relative;
         margin-top: 10px;
@@ -222,13 +222,13 @@ export default {
     #right_view {
         margin-left: 20px;
         height:100%;
-        width: 50%;
+        width: 55%;
         position: relative;
         margin-left: auto;
         margin-right: auto;
     }
     #text_view {
-        height: 15%;
+        height: 20%;
         width: 100%;
         position: relative;
     }
@@ -239,7 +239,7 @@ export default {
     }
     #beeswarm_view {
         margin-top: 10px;
-        height: 45%;
+        height: 40%;
         width: 100%;
         position: relative;
     }

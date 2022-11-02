@@ -42,13 +42,15 @@ import { object } from "vue-types";
                     .attr("x", margin.left)
                     .attr("y", margin.top)
                     .text("Selected Songs: ")
+                    .attr("font-weight", "bold")
                     .style("font-size", "9px")
                     .attr("alignment-baseline","middle")
                 for (let i=0; i<this.myText.length; i++){
+                    if (i==20)  break;
                     svg.append("text")
-                        .attr("x", margin.left+80)
-                        .attr("y", margin.top + 10*(i+0))
-                        .text(this.myText[i])
+                        .attr("x", margin.left +250*(parseInt(i/10)))
+                        .attr("y", margin.top + 10 + 10*(i%10+0))
+                        .text(this.myText[i].substring(0, 53))
                         .style("font-size", "9px")
                         .attr("alignment-baseline","middle")
                 }
