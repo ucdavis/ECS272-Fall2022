@@ -1,3 +1,10 @@
+# Overview
+With this homework, we visualize an MLB pitch dataset obtained at (http://inalitic.com/datasets/mlb%20pitch%20data.html). One of the goals for this vis system is for the users to explore different at-bats from the 2015 MLB season. (An at-bat refers to one batters trip to the batter's box facing a number of pitches before called out or make it on base)
+
+* AB id refers to the at-bat ID that MLB assigns to each at-bat played during the regular season. 
+* The Sankey diagram on the bottom left shows all the pitch count progression present in the dataset as well as the result of the currently-displayed at bat.
+* Clicking the `Get New at-bat` button will trigger all three views to display a new, randomly chosen at-bat.
+
 # VUE 3.0 Skeleton
 This is is a tempalate for working in Vue.js.
 Vue 3.0 sits between react and basic javascript depending on the developers comfort level.
@@ -46,3 +53,4 @@ The root file for all **development** needs with be `App.vue`
 You will be adding to and editing files under the **Views** Directory.
 Within the pages directory you really only need one page  **Pages/Home.vue** 
 For components you may have several based on your design feel free to add what makes sense to you under **Components**
+
