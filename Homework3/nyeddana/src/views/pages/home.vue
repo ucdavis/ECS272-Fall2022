@@ -68,7 +68,7 @@
               <font-awesome-icon icon="fa-solid fa-circle-info" size="xl" />
             </div>
             <div class="hide">
-              Use the brush tool to view a single group. <br />
+              Use the brush tool to highlight selected group(s). <br />
               Toggle views to obtain values.
             </div>
             <div class="toggle">
