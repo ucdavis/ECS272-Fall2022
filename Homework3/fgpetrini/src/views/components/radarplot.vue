@@ -251,11 +251,6 @@
                                 return "cb1";
                             }
                         });
-
-                const transitionPath = d3
-                    .transition()
-                    .ease(d3.easeSin)
-                    .duration(2500);
                 
                 plots.append('path')
                     .attr("d", d => radarLine(d.map(v => v.value)))
@@ -263,7 +258,15 @@
                     .attr("fill-opacity", 0.3)
                     .attr("stroke", (d, i) => this.color(i))
                     .attr("stroke-width", 2)
-                    .on("mouseover", function(d) {
+                    .append("title")
+                    .text((d, i) => {
+                        if(this.dd_option != "Dis_Vs_Sat")
+                            return this.category(i+2);
+                        else
+                            return this.category(i)
+                    });
+
+                plots.selectAll("path").on("mouseover", function(d) {
                         d3.select(this)
                         .style("transition", "fill-opacity 0.8s")
                         .attr("fill-opacity", 0.4)
@@ -271,22 +274,20 @@
                     .on("mouseout", function(d) {
                         d3.select(this)
                         .attr("fill-opacity", 0.1)
-                    })
-                    .append("title")
-                        .text((d, i) => {
-                            if(this.dd_option != "Dis_Vs_Sat")
-                                return this.category(i+2);
-                            else
-                                return this.category(i)
-                        });
+                    });
                 
-                plots.selectAll("circle")
+                let circles = plots.selectAll("circle")
                     .data(d => d)
                     .join("circle")
                         .attr("r", dotRadius)
-                        .attr("cx", (d,i) => rScale(d.value) * Math.cos(this.angleSlice*i - Math.PI/2))
-                        .attr("cy", (d,i) => rScale(d.value) * Math.sin(this.angleSlice*i - Math.PI/2))
-                    .on("mouseover", function(d) {
+
+                circles.transition()
+                    //.delay(function(d,i){ return (i*100)})
+                    .duration(1000)
+                    .attr("cx", (d,i) => rScale(d.value) * Math.cos(this.angleSlice*i - Math.PI/2))
+                    .attr("cy", (d,i) => rScale(d.value) * Math.sin(this.angleSlice*i - Math.PI/2));
+                
+                circles.on("mouseover", function(d) {
                         d3.select(this)
                         .attr("r", dotRadius+2)
                     })

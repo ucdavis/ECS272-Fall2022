@@ -124,17 +124,17 @@
                     .attr("fill-opacity", 0.8)
                     .attr("d", arc)
                     .on("mouseover", function(d) {
-                    d3.select(this)
-                        .attr("stroke", "black")
-                        .attr("stroke-width", 2)
-                        .attr("transform", "scale(1.05)")
-                    })
+                        d3.select(this)
+                            .attr("stroke", "black")
+                            .attr("stroke-width", 2)
+                            .attr("transform", "scale(1.05)")
+                        })
                     .on("mouseout", function(d) {
-                    d3.select(this)
-                        .attr("stroke", d => color[d.data])
-                        .attr("stroke-width", strokeWidth)
-                        .attr("transform", "scale(1.0)")
-                    })
+                        d3.select(this)
+                            .attr("stroke", d => color[d.data])
+                            .attr("stroke-width", strokeWidth)
+                            .attr("transform", "scale(1.0)")
+                        })
                     .append("title")
                     .text(d => infoTitle(d.data));
 
@@ -157,6 +157,8 @@
                     .attr("y", (_, i) => `${i * 1.1}em`)
                     .attr("font-weight", (_, i) => i ? null : "bold")
                     .text(d => d);      
+
+                d3.select("#pie svg").transition().duration(2000);
             },
             groupBy(objectArray, property) {
                 return objectArray.reduce(function (acc, obj) {
