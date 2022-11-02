@@ -1,0 +1,40 @@
+#name {
+    text-align: center;
+    font-family: "Times New Roman", "serif";
+    font-size: 12px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Arial", "sans-serif";
+}
+
+#vis1 {
+    float: left;
+    width: 720px;
+    height: 360px;
+    padding-left: 25px;
+}
+
+#vis2 {
+    float: right;
+    width: 720px;
+    height: 360px;
+    padding-right: 25px;
+}
+
+#vis3 {
+    float: left;
+    width: 1440px;
+    height: 1440px;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+#title1, #title2, #title3 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 2.5px;
+}
