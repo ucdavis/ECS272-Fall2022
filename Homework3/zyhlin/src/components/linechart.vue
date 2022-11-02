@@ -38,7 +38,7 @@
                     "East Asia", "Southeast Asia", "Western Europe", "Central America & Caribbean", 
                     "Eastern Europe", "North America", "South Asia", "Sub-Saharan Africa"
                     ]
-                console.log(data)
+                // console.log(data)
 
                 const x = d3.scaleLinear()
                     .domain([0, d3.max(data, d => d.kill)])
@@ -156,6 +156,21 @@
                     .attr('font-size', 9)
                     .text(d => d)
 
+                this.$root.$on('message-from-chart1-year', (msg) => {
+                    if (msg) {
+                        dots.attr('fill', '#ECEBEB')
+                            .filter(d => {
+                                return msg.region.has(d.region)
+                            })
+                            .attr('fill', d => colors(d.region))
+                    }
+                })
+
+                this.$root.$on('message-from-chart1-refilldots', (msg) => {
+                    console.log(msg)
+                    dots.attr('fill', d => colors(d.region))
+                })
+
                 function zoom(svg) {
                     svg.call(d3.zoom()
                         .scaleExtent([0.8, 8])
@@ -163,10 +178,8 @@
                         .on('zoom', updatechart))
 
                     function updatechart(ev) {
-                        console.log(ev);
                         var newx = ev.transform.rescaleX(x)
                         var newy = ev.transform.rescaleY(y)
-                        console.log(newx)
                         gx.transition().duration(1000).call(d3.axisBottom(newx))
                         gy.transition().duration(1000).call(d3.axisLeft(newy))
                         svg.selectAll('.dot')
@@ -205,7 +218,6 @@
                 }
                 cb(dset, id, option)
             }
-
 
         }
     }

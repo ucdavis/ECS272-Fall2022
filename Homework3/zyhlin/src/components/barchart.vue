@@ -26,13 +26,16 @@ import { forEach } from "shelljs/commands";
             console.log("Data Passed down as a Prop  ", this.myBarchartData)
         },
         methods: {
-            drawBarChart(dset, id, name) {
+            drawBarChart(dset, id, option) {
 
                 const margin = { top: 40, right: 100, bottom: 120, left: 40 };
                 const height = 450;
                 const width = 500;              
 
-                const data = dset['data']
+                this.$root.$emit('message-from-chart1-refilldots', true)
+                var op_name = {'xyear': 'half decade', 'xregion': 'region'}
+                dset = dset[option]
+                var data = dset['data']
 
                 var focused = new Set()
 
@@ -128,7 +131,14 @@ import { forEach } from "shelljs/commands";
                                 }
                             })
                             .attr('fill', dd => colors(dd.region))
-                        
+
+                        if (option == 'xyear') {
+                            if (focused.size != 0){
+                                this.$root.$emit('message-from-chart1-year', {'region': focused})
+                            } else {
+                                this.$root.$emit('message-from-chart1-year', {'region': new Set(subgroups)})
+                            }
+                        }
                     })
                 
                 const xAxis = g => g
@@ -182,7 +192,7 @@ import { forEach } from "shelljs/commands";
                     .text(d => d)
 
                 svg.append('text')
-                    .text('# of terrorist attacks / ' + name)
+                    .text('# of terrorist attacks / ' + op_name[option])
                     .attr('x', 10)
                     .attr('y', 10)
                     .attr('font-size', 8)
@@ -197,22 +207,19 @@ import { forEach } from "shelljs/commands";
 
             pick_data(dset, id, cb) {
                 var option = 'xyear'
-                var op_name = {'xyear': 'half decade', 'xregion': 'region'}
-                var filtered_data = dset[option]
                 
-                d3.selectAll('input').on("change", function(event, d) {
+                d3.selectAll('input').on("change", function(e, d) {
                     const selectedOption = d3.select(this).property("value")
                     update(selectedOption)
                 })
 
                 function update(option) {
-                    filtered_data = dset[option]
                     d3.select('#bar').selectAll('g').remove()
                     d3.select('#bar').selectAll('text').remove()
-                    cb(filtered_data, id, op_name[option])
-                    
+                    cb(dset, id, option)
                 }
-                cb(dset[option], id, op_name[option])
+                
+                cb(dset, id, option)
             }
 
         }
