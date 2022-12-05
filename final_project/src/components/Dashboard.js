@@ -20,14 +20,14 @@ import Inst2 from '../inst2.png'
 import Inst3 from '../Inst3.png'
 
 const tempData =
-  { name: allCountries[0][0].country,
+  { name: 'None',
     axes: [
-      {axis: 'Economic Production', value: allCountries[0][0].economy},
-      {axis: 'Social Support', value: allCountries[0][0].social_support},
-      {axis: 'Life Expectancy', value: allCountries[0][0].life_expectancy},
-      {axis: 'Freedom', value: allCountries[0][0].freedom},
-      {axis: 'Absence of Corruption', value: allCountries[0][0].trust_in_government},
-      {axis: 'Generosity', value: allCountries[0][0].generosity}
+      {axis: 'Economic Production', value: [0,0,0,0,0,0]},
+      {axis: 'Social Support', value: [0,0,0,0,0,0]},
+      {axis: 'Life Expectancy', value: [0,0,0,0,0,0]},
+      {axis: 'Freedom', value: [0,0,0,0,0,0]},
+      {axis: 'Absence of Corruption', value: [0,0,0,0,0,0]},
+      {axis: 'Generosity', value: [0,0,0,0,0,0]}
       ],
   color: countryColors[0]
   }
@@ -54,11 +54,11 @@ class Dashboard extends React.Component {
       dropDownValue: 'Events',
       economy: temporalLine[0].economy,
       dropdownOpen: false,
-      geoData: [allCountries[0]],
+      geoData: [],
       geoArr: [],
       selectedData: [allCountries[0]],
       worldData: year2015,
-      radarData: [tempData],
+      radarData: [],
       url: "",
       selectedRegions: [],
       detailed: false,
@@ -70,7 +70,7 @@ class Dashboard extends React.Component {
       loadRadar: false,
       modal: false,
       modal1: false,
-      keys: [0],
+      keys: [],
       lineData: this.temporalValues,
       happinessFactor: 'Economic Production',
       happinessAccessor: 'economy',
@@ -134,18 +134,41 @@ class Dashboard extends React.Component {
             color: countryColors[i]
             }
     }
-    console.log("I'm")
+  }
+
+  removeData(e){
+    this.setState({
+      geoArr: []
+    })
+    for(let i = 0; i < this.state.geoData.length; i++){
+        this.state.geoArr[i] =
+
+            { name: this.state.geoData[i][this.state.count].country,
+              axes: [
+                {axis: 'Economic Production', value: this.state.geoData[i][this.state.count].economy},
+                {axis: 'Social Support', value: this.state.geoData[i][this.state.count].social_support},
+                {axis: 'Life Expectancy', value: this.state.geoData[i][this.state.count].life_expectancy},
+                {axis: 'Freedom', value: this.state.geoData[i][this.state.count].freedom},
+                {axis: 'Absence of Corruption', value: this.state.geoData[i][this.state.count].trust_in_government},
+                {axis: 'Generosity', value: this.state.geoData[i][this.state.count].generosity}
+                ],
+            color: countryColors[i]
+            }
+    }
+    
   }
 
 
 
 
-  temporalValues = []
+  
   axes = ['Economy', 'Social Support', 'Life Expectancy', 'Trust in Government', 'Freedom', 'Generosity']
+  temporalValues = []
 
   loadTemporal = (e) => {
+    console.log(this.state.keys)
 
-    for(let i = 0; i < this.state.geoData.length; i++){
+    for(let i = 0; i < this.state.keys.length; i++){
       this.temporalValues[i] =
       {
         label: temporalLine[this.state.keys[i]].country,
@@ -188,9 +211,13 @@ class Dashboard extends React.Component {
       geoData: tempArray,
       key: keyArray
     })
-    console.log("Im here 2")
     this.loadData();
     this.loadTemporal();
+
+    this.setState({
+      radarData: this.state.geoArr,
+      lineData: this.temporalValues
+    })
   }
 
 
@@ -201,11 +228,15 @@ class Dashboard extends React.Component {
     keyArray2.splice(keyArray2.indexOf(e.key), 1)
     this.setState({
       geoData: tempArray2,
-      key: keyArray2,
-      happinessAccessor: this.state.happinessAccessor
+      key: keyArray2
     })
-      this.loadData();
+      this.removeData();
       this.loadTemporal();
+
+      this.setState({
+        radarData: this.state.geoArr,
+        lineData: this.temporalValues
+      })
 
   }
 
@@ -328,8 +359,8 @@ class Dashboard extends React.Component {
           </ModalBody>
         </Modal></CardHeader>
                     <CardBody>
-                     {this.state.loadRadar ? <D3RadarPlot data={this.state.radarData} writeValue={this.writeValue}/>:<div>Loading...</div>}
-                    <Multiselect onSelect={this.selectValue} onRemove={this.removeValue} isObject = {true} displayValue="value" options = {numberCountries} selectionLimit={3} selectedValues={[numberCountries[0]]}/>
+                    {this.state.radarData.length > 0 ? <D3RadarPlot data={this.state.radarData} writeValue={this.writeValue}/>:<div>Please select a country from the dropdown!</div>}
+                    <Multiselect onSelect={this.selectValue} onRemove={this.removeValue} isObject = {true} displayValue="value" options = {numberCountries} selectionLimit={3} />
                             </CardBody>
                   </Card>
               
@@ -342,7 +373,7 @@ class Dashboard extends React.Component {
             <Row>
             <Card style={{ height:'20rem'}}>
 
-                    <CardHeader>How did  the influence of <b>{this.state.happinessFactor}</b> change over time?</CardHeader>
+                    <CardHeader>How did the influence of <b>{this.state.happinessFactor}</b> change over time?</CardHeader>
                     <CardBody>
                     <LineChart key={this.state.happinessAccessor} data={this.state.lineData}/>
                     </CardBody>

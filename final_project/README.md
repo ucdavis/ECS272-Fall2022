@@ -26,4 +26,7 @@ Please click through the various tabs on the dashboard:
 
 Wherever applicable, please click the "?" buttons for more interaction instructions or additional useful info!
 
+## Active Bugs
+1) Do not use the remove button on the dropdown - it does not work. Using it also causes the line chart to stop updating!
+
 

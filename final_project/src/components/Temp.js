@@ -15,15 +15,19 @@ import WorldMap from './WorldMap';
 
 import {year2015, year2016, year2017, year2018, year2019, year2020, year2021} from '../data/HappinessData'
 
+import Inst1 from '../inst1.png'
+import Inst2 from '../inst2.png'
+import Inst3 from '../Inst3.png'
+
 const tempData =
-  { name: allCountries[0][0].country,
+  { name: 'None',
     axes: [
-      {axis: 'Economic Production', value: allCountries[0][0].economy},
-      {axis: 'Social Support', value: allCountries[0][0].social_support},
-      {axis: 'Life Expectancy', value: allCountries[0][0].life_expectancy},
-      {axis: 'Freedom', value: allCountries[0][0].freedom},
-      {axis: 'Absence of Corruption', value: allCountries[0][0].trust_in_government},
-      {axis: 'Generosity', value: allCountries[0][0].generosity}
+      {axis: 'Economic Production', value: [0,0,0,0,0,0]},
+      {axis: 'Social Support', value: [0,0,0,0,0,0]},
+      {axis: 'Life Expectancy', value: [0,0,0,0,0,0]},
+      {axis: 'Freedom', value: [0,0,0,0,0,0]},
+      {axis: 'Absence of Corruption', value: [0,0,0,0,0,0]},
+      {axis: 'Generosity', value: [0,0,0,0,0,0]}
       ],
   color: countryColors[0]
   }
@@ -50,7 +54,7 @@ class Dashboard extends React.Component {
       dropDownValue: 'Events',
       economy: temporalLine[0].economy,
       dropdownOpen: false,
-      geoData: [allCountries[0]],
+      geoData: [],
       geoArr: [],
       selectedData: [allCountries[0]],
       worldData: year2015,
@@ -66,10 +70,11 @@ class Dashboard extends React.Component {
       loadRadar: false,
       modal: false,
       modal1: false,
-      keys: [0],
+      keys: [],
       lineData: this.temporalValues,
       happinessFactor: 'Economic Production',
-      happinessAccessor: 'economy'
+      happinessAccessor: 'economy',
+      nothing: true
 
     };
     this.toggle = this.toggle.bind(this);
@@ -115,6 +120,7 @@ class Dashboard extends React.Component {
 
   loadData = (e) => {
     for(let i = 0; i < this.state.geoData.length; i++){
+      
         this.state.geoArr[i] =
 
             { name: this.state.geoData[i][this.state.count].country,
@@ -129,18 +135,41 @@ class Dashboard extends React.Component {
             color: countryColors[i]
             }
     }
-    this.setState({
-      loadRadar: true,
-      radarData: this.state.geoArr
-  })
+    
   }
+
+  removeData = (e) => {
+    this.setState({
+      geoArr: []
+    })
+    for(let i = 0; i < this.state.geoData.length; i++){
+      
+        this.state.geoArr[i] =
+
+            { name: this.state.geoData[i][this.state.count].country,
+              axes: [
+                {axis: 'Economic Production', value: this.state.geoData[i][this.state.count].economy},
+                {axis: 'Social Support', value: this.state.geoData[i][this.state.count].social_support},
+                {axis: 'Life Expectancy', value: this.state.geoData[i][this.state.count].life_expectancy},
+                {axis: 'Freedom', value: this.state.geoData[i][this.state.count].freedom},
+                {axis: 'Absence of Corruption', value: this.state.geoData[i][this.state.count].trust_in_government},
+                {axis: 'Generosity', value: this.state.geoData[i][this.state.count].generosity}
+                ],
+            color: countryColors[i]
+            }
+    }
+    
+  }
+
+
+
 
   temporalValues = []
   axes = ['Economy', 'Social Support', 'Life Expectancy', 'Trust in Government', 'Freedom', 'Generosity']
 
   loadTemporal = (e) => {
 
-    for(let i = 0; i < this.state.geoData.length; i++){
+    for(let i = 0; i < this.state.keys.length; i++){
       this.temporalValues[i] =
       {
         label: temporalLine[this.state.keys[i]].country,
@@ -150,8 +179,6 @@ class Dashboard extends React.Component {
       }
    }
   }
-
-
 
   toggle() {
     this.setState({
@@ -165,19 +192,17 @@ class Dashboard extends React.Component {
     });
   }
 
-  componentDidMount = () => {
-    this.loadData()
-    this.loadTemporal()
-    this.setState({
-      loadRadar: true,
-      radarData: this.state.geoArr
-  })
-  }
+  // componentDidMount = () => {
+
+  //   this.loadData()
+  //   this.loadTemporal()
+  //   this.setState({
+  //     loadRadar: true,
+  //     radarData: this.state.geoArr
+  // })
+  // }
 
  
-
-
-
   selectValue = (m, e) => {
     let tempArray = this.state.geoData
     let keyArray = this.state.keys
@@ -189,21 +214,34 @@ class Dashboard extends React.Component {
     })
     this.loadData();
     this.loadTemporal();
+
+    this.setState({
+      radarData: this.state.geoArr,
+      lineData: this.temporalValues
+    })
   }
 
 
   removeValue = (m, e) => {
     let tempArray2 = this.state.geoData
     let keyArray2 = this.state.keys
-    tempArray2.pop(tempArray2.indexOf(allCountries[e.key]))
-    keyArray2.pop(keyArray2.indexOf(e.key))
+    tempArray2.splice(tempArray2.indexOf(allCountries[e.key]), 1)
+    console.log(keyArray2.indexOf(e.key))
+    keyArray2.splice(keyArray2.indexOf(e.key), 1)
     this.setState({
       geoData: tempArray2,
       key: keyArray2
-    })
+    }, () => {
       this.loadData();
       this.loadTemporal();
-      console.log(this.state.geoArr);
+    })
+    console.log(this.state.geoData)
+      this.setState({
+        radarData: this.state.geoArr,
+        lineData: this.temporalValues
+      })
+
+
   }
 
   writeValue = (e, m) => {
@@ -282,8 +320,12 @@ class Dashboard extends React.Component {
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>World Map</ModalHeader>
           <ModalBody>
-            <b>Worldwide Happiness Scores:</b> Toggle the slide bar above the map to see how happiness has changed over time. Hover over each country to see their names and annual happiness score. 
-
+            <b>Worldwide Happiness Scores:</b> Toggle the slide bar above the map to see how happiness has changed over time. 
+            <img src={Inst1} width={260} height={40}/>
+            <div className='new-line'>{"\n"}</div>
+            Hover over each country to see their names and annual happiness score. 
+            <div className='new-line'>{"\n"}</div>
+            <img src={Inst2} width={260} height={200}/>
           </ModalBody>
         </Modal> 
                     </CardHeader>
@@ -310,14 +352,19 @@ class Dashboard extends React.Component {
                         <li><b>Generosity</b> is people’s response to the question, “Have you donated money to a charity in the past month?” generated by GWP data.</li>
                       </ol>
                       <div className='new-line'>{"\n"}</div>
+                      <b>Instructions</b>
+                      <div className='new-line'>{"\n"}</div>
                       To see how the six factors play into the happiness score, select (or type) the country’s name from the dropdown menu. You can explore how it changed over time by moving the slide bar on the World Map. You can select multiple countries for comparison.
                       <div className='new-line'>{"\n"}</div>
                       To see how these factors have contributed to happiness over the years, click on a datapoint on the axis, to see the axis presented on the line chart below!
+                      <div className='new-line'>{"\n"}</div>
+                      <img src={Inst3} width={260} height={250}/>
+                      
           </ModalBody>
         </Modal></CardHeader>
                     <CardBody>
-                     {this.state.loadRadar ? <D3RadarPlot data={this.state.radarData} writeValue={this.writeValue}/>:<div>Loading...</div>}
-                    <Multiselect onSelect={this.selectValue} onRemove={this.removeValue} isObject = {true} displayValue="value" options = {numberCountries} selectionLimit={3} selectedValues={[numberCountries[0]]}/>
+                    {this.state.radarData.length > 0?<D3RadarPlot data={this.state.radarData} writeValue={this.writeValue}/>:<div>Please select a country from the dropdown!</div>}
+                    <Multiselect onSelect={this.selectValue} onRemove={this.removeValue} isObject = {true} displayValue="value" options = {numberCountries} selectionLimit={3} />
                             </CardBody>
                   </Card>
               
