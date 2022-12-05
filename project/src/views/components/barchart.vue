@@ -188,11 +188,17 @@
                     //console.log(selection);
                     let select_start = 0
                     let select_end = 0
+                    let current = ''
                     if (selection) {
                         console.log(selection[0],x(2000))
-                        for (let year=1990; year<=2020; year++){
-                            if (selection[0]<=x(year) & select_start == 0) { select_start = year}
-                            if (selection[1]>=x(year)) { select_end = year}
+                        for (let year=2019; year<=2020; year++){
+                            for (let mon=1; mon<=12; mon++){
+                                current = year+'-';
+                                if (mon<10){current=current+'0';}
+                                current=current+mon;
+                                if (selection[0]<=x(current) & select_start == 0) { select_start = current}
+                                if (selection[1]>=x(current)) { select_end = current}
+                            }
                         }
                     let selecteddata = [select_start, select_end]
                     vueThis.$emit("selectedyear", selecteddata)

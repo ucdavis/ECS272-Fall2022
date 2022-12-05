@@ -9,7 +9,7 @@
         <PieChart v-if="dataExists" myChartID="middlepie"></Piechart>
     </div>
     <div class="bottom bar">
-        <BarChart v-if="dataExists" myChartID="bottombar" :myBarchartData=myBarData></BarChart>
+        <BarChart v-if="dataExists" @selectedyear="updateYear" myChartID="bottombar" :myBarchartData=myBarData></BarChart>
     </div>
 </template>
 
@@ -35,6 +35,7 @@ export default {
             //data_person = d3.csvParse(FileAttachment().text(), d3.autoType)
             //data_title = d3.csvParse(FileAttachment().text(), d3.autoType)
             //actorGroups : Array,
+            dateselected : {},
             titleGroups : {},
             titleGroups_selected : {},
             //fdata_person : Array,
@@ -58,6 +59,14 @@ export default {
     },
     mounted(){
         
+    },
+    methods:{
+        updateYear(data){
+            console.log("Year changed!", data)
+            this.dateselected[0] = data[0];
+            this.dateselected[1] = data[1];
+            console.log("Year updated", this.dateselected)
+        },
     }
 }
 </script>
