@@ -1,0 +1,719 @@
+Company,Language,Commits
+Facebook,Boogie,5
+Tencent,C,13
+Microsoft,Lean,13
+Apple,C,1
+CircleCI,HTML,4
+Microsoft,C,12
+JetBrains,Java,4
+PingCAP,Rust,1
+CS Group,C,4
+Lyft,C++,3
+Google,Objective-C,5
+Renovateapp,CSS,24
+Puppet,Go,2
+Goldman Sachs,Java,13
+Talend,C,2
+Obvious,JavaScript,2
+VMware,HCL,3
+Cloudbees,Go,2
+Microsoft,Jupyter Notebook,8
+VMware,HTML,5
+Polidea,None,8
+JankariTech,Dockerfile,1
+Facebook,Makefile,2
+Pixel & Tonic,PHP,18
+Couchbase,Java,3
+GitHub,Go,7
+Red Hat,Jinja,9
+Travis CI,Shell,31
+Expedia Group,C++,1
+eBay,JavaScript,3
+Cloudera,Python,18
+Google,C#,15
+Salesforce,Apex,24
+Oracle,Ruby,2
+VMware,C,1
+Kaltura,Python,2
+Amazon,SWIG,1
+Travis CI,CSS,6
+Lablup,Python,2
+Google,C++,308
+Red Hat,TypeScript,48
+Google,Rust,15
+Nextcloud,Python,1
+ThoughtWorks,Go,2
+VMware,Java,2
+Snyk,TypeScript,21
+JankariTech,JavaScript,1
+Mozilla,Python,1
+Salesforce,CSS,10
+Microsoft,Java,6
+Baidu,HTML,1
+Autodesk,HTML,2
+Canonical,C,14
+Facebook,C++,165
+Sony,Java,4
+Datadoghq,Go,2
+GitLab,HTML,2
+Microsoft,SCSS,1
+WarnerMedia,Python,3
+Bloomberg,C,11
+Travis CI,Nunjucks,1
+Renovateapp,Java,75
+Renovateapp,Shell,7
+Datadoghq,Scala,1
+BBC,JavaScript,1
+IBM,Java,21
+BBC,Python,8
+Facebook,Ruby,5
+Travis CI,Mustache,1
+Bootlin,Makefile,5
+Dimagi,Python,1
+ARM,None,2
+Red Hat,Kotlin,3
+Facebook,Java,9
+Exoplatform,Java,1
+eBay,Scala,3
+Travis CI,Rich Text Format,1
+Mozilla,Java,3
+Hewlett Packard Enterprise,Python,6
+SAP,Shell,4
+Google,Python,36
+ARM,Python,10
+Yandex,TeX,1
+Renovateapp,EJS,1
+Amazon,C#,1
+Red Hat,Shell,32
+Microsoft,CMake,10
+Kaltura,TypeScript,8
+Red Hat,None,38
+Kaltura,Ruby,1
+Cloudfare,TypeScript,1
+Unity Technologies,C#,1
+Oracle,Python,2
+Chef,Go,2
+Nextcloud,JavaScript,20
+Travis CI,TeX,3
+Reaktor,TypeScript,1
+Autodesk,C#,7
+Alibaba,C++,6
+Atomist,TypeScript,1
+Alibaba,Python,4
+Nordic Semiconductor,None,1
+Canonical,Shell,16
+ScyllaDB,Java,2
+Binary Group,JavaScript,20
+Renovateapp,Handlebars,9
+Acsone,JavaScript,17
+Igalia,HTML,1
+Red Hat,Ruby,23
+Mozilla,JavaScript,4
+Red Hat,Go,48
+Google,Dart,28
+Microsoft,CSS,16
+Red Hat,Dockerfile,3
+LabKey,TypeScript,6
+Google,Kotlin,11
+Spryker,PHP,4
+Intel,HTML,1
+Amazon,TypeScript,4
+Camptocamp,Python,21
+Microsoft,Clojure,7
+Intel,Groovy,7
+Google,Jupyter Notebook,10
+Buoyant,JavaScript,2
+SAP,JavaScript,24
+Red Hat,Makefile,14
+IBM,Ruby,10
+Percona,Python,5
+Cisco Systems,C,9
+Cloudfare,HTML,2
+mongoDB,C++,9
+Plotly,JavaScript,3
+Google,WebAssembly,4
+Google,Starlark,14
+CGI,TypeScript,6
+SAP,C,2
+Amazon,Jupyter Notebook,14
+Adobe,Python,2
+MediaTek,C,1
+Infosiftr,Dockerfile,1
+Ad Hoc,PLpgSQL,3
+ARM,C,23
+Microsoft,None,28
+VMware,Go,33
+Linaro,Python,3
+Oracle,Java,2
+Collabora,JavaScript,1
+Analog Devices,C,1
+Intel,Haskell,3
+Mozilla,Rust,7
+Huawei,None,2
+Eficent,Python,19
+Amazon,Go,8
+Atlassian,TypeScript,9
+RStudio,Java,4
+EPAM,Java,22
+Mozilla,Swift,3
+Sonymobile,Java,2
+Red Hat,C,260
+Adguard,Adblock Filter List,21
+Facebook,Shell,3
+Samsung,PLpgSQL,1
+Qt,C++,1
+Google,Smarty,1
+Intel,Shell,1
+Zalando,Java,3
+Cisco Systems,Go,4
+ARM,Go,2
+Automattic,PHP,1
+Square,Kotlin,8
+Arbisoft,Python,17
+ARM,TypeScript,9
+Travis CI,PHP,3
+ESRI,C#,2
+Baidu,C++,4
+Huawei,Go,3
+ThoughtWorks,Python,4
+Azavea,Scala,1
+Travis CI,Java,29
+Amazon,C,58
+Google,JavaScript,27
+Oracle,Haskell,1
+Baidu,CSS,4
+SUSE,C++,2
+IBM,TypeScript,75
+Collabora,C,3
+Endlessm,C++,1
+Docker,None,2
+GitHub,Shell,8
+Snyk,Rust,1
+Salesforce,JavaScript,2
+Brave,HTML,7
+Verizon Media,C++,2
+Alibaba,Go,2
+WIX,Java,1
+Snyk,CSS,3
+Travis CI,Groovy,3
+Oracle,None,3
+Kainos,Python,4
+Renovateapp,Scala,1
+Ericsson,None,1
+tweag.io,Haskell,1
+Samsung,Go,1
+Mozilla,HTML,3
+Adobe,JavaScript,2
+IBM,PowerShell,16
+IBM,None,16
+Lyft,None,2
+Grafana,TypeScript,6
+Gradle,Groovy,56
+Collabora,None,11
+Intel,Jinja,1
+Renovateapp,Ruby,50
+Renovateapp,Dart,13
+Renovateapp,Go,504
+SAP,Go,26
+Pivotal,Go,16
+Cisco Systems,Python,16
+Bosch,Java,1
+Bloomberg,HTML,2
+Samsung,None,3
+VMware,Mustache,2
+Google,Groovy,1
+MariaDB,C,1
+Travis CI,Scala,1
+JetBrains,C++,1
+eBay,None,1
+Yandex,PHP,1
+Infosiftr,Shell,230
+D2iQ,Python,1
+Renovateapp,HTML,33
+Microsoft,Q#,2
+Citrix,C,1
+Facebook,Swift,1
+IBM,Shell,1
+Google,Go,78
+Travis CI,JavaScript,89
+Samsung,Java,4
+GatsbyJS,None,1
+ARM,C++,5
+Renovateapp,TypeScript,696
+Intel,Python,33
+Pyup,JavaScript,1
+Linaro,Jinja,1
+AMD,C++,21
+JankariTech,PHP,25
+SiFive,Scala,4
+Yandex,None,1
+H2O.ai,Python,3
+Bitnami,Jsonnet,9
+Mapbox,JavaScript,6
+IBM,HTML,5
+SUSE,Smarty,1
+HERE,C++,1
+JetBrains,None,58
+Renovateapp,None,12
+mongoDB,TypeScript,8
+ArangoDB,JavaScript,1
+HERE,TypeScript,4
+Netflix,Go,1
+Splunk,C,1
+Renovateapp,SCSS,13
+Iohk,Nix,2
+Alibaba,TypeScript,3
+Travis CI,Objective-C,1
+Microsoft,TypeScript,115
+Synopsys,Java,3
+GatsbyJS,JavaScript,1
+Renovateapp,PHP,12
+Microsoft,Go,46
+SAP,Nunjucks,2
+Renovateapp,Python,37
+Adguard,Go,4
+Buoyant,Rust,6
+TeamDev,Java,1
+Microsoft,Scala,1
+Travis CI,DM,12
+Siemens,C,12
+Puppet,Clojure,1
+Tencent,C++,1
+Microsoft,Cool,1
+SUSE,Haskell,7
+Renovateapp,Dockerfile,3
+Kaltura,C#,2
+Odoo,Python,9
+Facebook,Rust,5
+SAP,Python,1
+Alibaba,PHP,6
+PingCAP,Go,6
+Microsoft,Python,87
+Google,None,88
+Snyk,None,2
+Travis CI,Adblock Filter List,1
+Palo Alto Networks,Brainfuck,1
+Renovateapp,Rust,44
+Google,C,226
+Pivotal,Java,88
+LINE Corporation,C++,2
+Alibaba,Scala,1
+NVidia,C++,31
+Odoo,JavaScript,21
+Percona,Groovy,1
+Amazon,HTML,9
+NXP,Rust,5
+Pivotal,None,1
+Tencent,None,8
+Oracle,Scala,6
+Samsung,HTML,1
+Renovateapp,Vue,268
+GitHub,C++,18
+Renovateapp,Svelte,8
+Test.com,None,8
+AMD,C,4
+Salesforce,Go,3
+Intel,C,99
+Netflix,Kotlin,5
+Uber,Go,5
+Bootlin,C,16
+Netflix,Java,3
+SAP,TypeScript,9
+Microchip Technology,C,5
+Uber,Python,12
+SUSE,None,4
+Google,Nunjucks,3
+WIX,Scala,1
+CircleCI,Kotlin,1
+Netflix,C,3
+Nextcloud,PHP,10
+SAP,Java,6
+EPAM,Python,11
+GitHub,DM,7
+Open Robotics,None,1
+Orange,Java,1
+Wind River,BitBake,2
+ScyllaDB,Python,12
+Enalean,SCSS,1
+Accenture,None,1
+Mozilla,C,3
+Nordic Semiconductor,C,3
+New Relic,HCL,1
+Travis CI,None,55
+Elastic,Java,4
+SAP,None,1
+CircleCI,Python,29
+Microsoft,Shell,16
+Julia Computing,Julia,35
+GitHub,C,12
+GitHub,WebAssembly,2
+Broadcom,C,5
+Expedia Group,Java,1
+Mapbox,PLpgSQL,1
+GitHub,Kotlin,2
+Intel,Rust,1
+Nextcloud,Swift,1
+NXP,None,1
+Travis CI,Crystal,3
+Travis CI,C++,21
+Microsoft,F*,2
+Salesforce,None,3
+WIX,None,6
+Expedia Group,None,1
+Uber,None,26
+GitHub,R,3
+Google,Haskell,4
+Gradle,Java,8
+Netflix,TypeScript,17
+Travis CI,Swift,2
+Tencent,JavaScript,14
+Sony,None,1
+GitHub,Groovy,1
+Samsung,C,11
+IBM,JavaScript,33
+Kaltura,PHP,17
+VMware,Swift,6
+Amazon,JavaScript,14
+Snyk,Java,5
+Google,Swift,1
+Tencent,Makefile,7
+WIX,TypeScript,26
+VMware,Jupyter Notebook,1
+Microsoft,Dockerfile,8
+Accenture,C,11
+Gofore,Clojure,7
+Aiven,Go,2
+Mozilla,GLSL,1
+Yandex,C++,47
+Snyk,JavaScript,36
+Cisco Systems,None,19
+Travis CI,C,7
+Atlassian,JavaScript,5
+Automattic,JavaScript,7
+GitHub,Ruby,10
+Ant Financial,Java,3
+Shopify,Ruby,3
+Kitware,None,24
+Datadoghq,Python,2
+Yandex,JavaScript,1
+SUSE,Perl,3
+Renovateapp,Clojure,1
+Igalia,None,1
+Google,Emacs Lisp,4
+Mozilla,Kotlin,16
+Cloudfare,None,11
+Expedia Group,Scala,1
+Kainos,TypeScript,1
+Chef,Erlang,2
+Docker,Go,1
+IBM,OpenQASM,1
+IBM,Go,15
+Orange,Jinja,1
+Tencent,Shell,4
+Intel,JavaScript,2
+Facebook,C,2
+WIX,Objective-C,4
+NXP,C,9
+Andela,Vim Script,8
+Travis CI,Python,34
+Bitnami,Go,6
+IBM,C,13
+Adobe,Kotlin,1
+Travis CI,Kotlin,2
+Netflix,C++,11
+Kitware,C++,32
+Yahoo,Java,19
+Amazon,Java,13
+VMware,Shell,12
+Automattic,Kotlin,6
+WIX,JavaScript,10
+Nextcloud,Kotlin,1
+Endlessm,C,1
+SUSE,HTML,1
+GitHub,HTML,42
+Oracle,C,20
+Travis CI,Nim,4
+HashiCorp,Go,9
+Cozy,JavaScript,4
+Samsung,C#,3
+Microsoft,R,1
+SUSE,Java,10
+Renovateapp,Elm,10
+Stripe,Ruby,10
+Linaro,Emacs Lisp,6
+Tencent,SCSS,2
+Orange,C,2
+Joyent,Shell,1
+Equinor,C++,6
+Intel,TypeScript,3
+PTV Group,HTML,8
+STMicroelectronics,C,1
+Alibaba,Objective-C,1
+Facebook,SCSS,15
+GitHub,CSS,1
+Accenture,Shell,2
+Uber,JavaScript,1
+Balena,CoffeeScript,6
+Open Robotics,Python,1
+Tencent,PHP,23
+Mozilla,None,88
+Cloudbees,None,3
+Twilio,JavaScript,12
+NVidia,TypeScript,20
+Accenture,HTML,1
+D2iQ,Scala,1
+Docker,JavaScript,1
+Pyup,Python,47
+Obvious,Kotlin,46
+Travis CI,Batchfile,4
+Pivotal,Shell,13
+Red Hat,JavaScript,2
+SUSE,Ruby,1
+Huawei,C,82
+Acsone,Python,25
+Travis CI,R,8
+Alibaba,JavaScript,3
+Alibaba,Java,13
+LG Electronics,Java,1
+Microsoft,JavaScript,53
+Amazon,None,17
+LG Electronics,BitBake,21
+DigitalOcean,Go,22
+LinkedIn,Java,16
+GitHub,Dart,1
+Ericsson,Java,1
+Cloudera,C++,1
+ESRI,JavaScript,1
+Bitnami,Dockerfile,107
+Verizon Media,Python,25
+Percona,C++,6
+Renovateapp,Objective-C,3
+Microsoft,C++,8
+GitHub,Java,5
+Kaltura,Java,4
+Apple,Makefile,5
+Apple,Swift,5
+RTE,Java,1
+Ericsson,TypeScript,3
+Apple,Scala,7
+Open Robotics,Ruby,19
+Sony,C,4
+CGI,JavaScript,1
+Travis CI,Lua,2
+Amazon,Python,30
+Microsoft,F#,8
+ConsenSys,Java,7
+Twitter,Rust,14
+MuleSoft,Java,1
+LunarG,C++,1
+Improbable,C#,1
+ArangoDB,Go,6
+Amazon,Rust,13
+Yunion,Go,5
+Infosiftr,Perl,15
+Facebook,Go,1
+Travis CI,OCaml,1
+Balena,BitBake,6
+Snyk,HTML,1
+Unity Technologies,Python,2
+Azavea,Python,5
+Autonomous,Go,3
+Huawei,Java,12
+Adobe,PHP,9
+Twitter,Python,1
+Kitware,C,1
+commercetools,TypeScript,2
+Uber,Java,1
+Kaltura,None,1
+Instructure,JavaScript,5
+Red Hat,Python,168
+Lyft,Go,2
+Elastic,TypeScript,13
+Salesforce,Python,10
+Broadcom,Java,8
+RStudio,R,3
+Capgemini,Java,1
+iXsystems,Shell,3
+Espressif,Python,1
+Netflix,PHP,1
+Twitter,Java,1
+Google,TypeScript,28
+Amazon,Shell,5
+Mellanox Technologies,C,66
+New Relic,C,10
+Pivotal,HTML,6
+Huawei,JavaScript,12
+ESRI,TypeScript,4
+Intel,C++,117
+Polidea,Python,38
+SUSE,Go,4
+Huawei,Fortran,2
+Microsoft,Liquid,1
+The guardian,Scala,2
+Facebook,None,1
+Tencent,Go,3
+Baidu,Python,3
+Linaro,C,37
+Philips,JavaScript,2
+JetBrains,TypeScript,1
+CircleCI,None,3
+Uber,Shell,1
+Shopware,JavaScript,1
+Google,Vim script,1
+PTV Group,TypeScript,8
+Google,OCaml,1
+SUSE,Python,54
+Kaltura,JavaScript,13
+Microsoft,TSQL,1
+Intel,Java,10
+CircleCI,PHP,12
+Microsoft,HTML,4
+Red Hat,Gherkin,1
+Cloudera,Java,89
+Canonical,Python,3
+Uber,C,2
+JetBrains,F#,1
+Brave,JavaScript,5
+Yahoo,Python,4
+Elastic,SCSS,1
+Google,Vim Script,1
+Alibaba,None,1
+Travis CI,Ruby,18
+Tencent,Python,19
+GitHub,TypeScript,2
+Pivotal,C++,2
+Automattic,Java,1
+Origin,HTML,1
+Pyup,HTML,1
+Red Hat,HTML,43
+GitHub,Python,111
+EuroLinux,Dockerfile,6
+Apple,Java,6
+GitHub,None,42
+Unity Technologies,C++,9
+Renovateapp,JavaScript,633
+Palantir,Java,23
+Cockroachlabs,Go,6
+WSO2,Shell,1
+Baidu,JavaScript,3
+ThoughtWorks,C#,2
+Travis CI,EJS,3
+IBM,Scala,7
+Microsoft,PowerShell,105
+Datadoghq,None,7
+Wind River,Python,11
+Tencent,Java,1
+Snyk,Go,1
+Amazon,C++,13
+Digital Asset,Python,18
+NXP,Python,1
+Travis CI,SCSS,5
+Facebook,JavaScript,4
+Twitter,Scala,4
+Ant Financial,Go,2
+Silverstripe,JavaScript,6
+ThoughtWorks,JavaScript,4
+Nextcloud,Java,4
+Infosys Ltd,JavaScript,2
+Liferay,Java,30
+Facebook,Python,21
+Zalando,Scala,4
+NVidia,C,8
+Kaltura,Shell,1
+Camunda,HTML,1
+Palo Alto Networks,Python,109
+mongoDB,C,10
+ScyllaDB,C++,20
+Shopify,HTML,3
+Automattic,None,1
+LINE Corporation,Java,10
+Luxoft,Python,1
+VMware,None,13
+Sentry,Python,7
+D2iQ,SCSS,1
+Broadcom,Shell,3
+Travis CI,TypeScript,41
+Red Hat,Java,74
+SiFive,C,2
+Netflix,Groovy,3
+D2iQ,Java,1
+Bloomberg,Java,1
+GitHub,JavaScript,48
+TI,C,11
+Confluent,Java,40
+SecOps Solutions,None,24
+IBM,C++,12
+Binary Group,None,8
+GitHub,SCSS,2
+Bloomberg,None,1
+SUSE,Shell,16
+Synopsys,C,12
+EPAM,HTML,2
+Verizon Media,Java,1
+Collabora,Python,17
+mongoDB,Dockerfile,12
+WSO2,None,1
+Apple,HTML,1
+IBM,Python,26
+Tencent,HTML,2
+GitLab,Ruby,5
+Red Hat,C++,24
+Travis CI,Vue,7
+MediaTek,Java,1
+Google,Ruby,10
+Intel,None,16
+Huawei,Ruby,10
+Netflix,Python,1
+Automattic,Swift,4
+Chef,Ruby,9
+Mozilla,TypeScript,1
+Linagora,Shell,2
+Bitnami,None,2
+Reaktor,C,2
+Shopify,C++,2
+AMD,None,13
+Cisco Systems,Java,1
+GitHub,C#,4
+Google,Shell,2
+Adobe,Java,5
+Travis CI,Stylus,1
+Pivotal,C,20
+Dynatrace,HTML,1
+GitHub,Dockerfile,2
+Square,Java,1
+VMware,CSS,2
+Google,HTML,13
+Google,GLSL,4
+Percona,Go,1
+Bitnami,Shell,229
+Square,None,1
+Travis CI,HTML,93
+Accenture,CSS,9
+Kitware,Python,26
+Huawei,Scala,2
+Truss Works,Go,4
+Google,Java,141
+Broadcom,Go,12
+Block.one,C++,17
+Yandex,C,3
+Linutronix,C,5
+D2iQ,None,1
+SUSE,C,53
+Mozilla,PowerShell,1
+Huawei,Python,13
+Pyup,Shell,1
+Travis CI,Go,1
+Sentry,Rust,1
+Travis CI,Makefile,3
+Travis CI,Nix,2
+WIX,Go,2
+Infosys Ltd,HTML,1
+Microsoft,C#,222
+New Relic,Go,2
+Nordic Semiconductor,C++,2
+Cockroachlabs,None,1
+Indexdata,JavaScript,2
+Travis CI,Rust,5
+Adguard,JavaScript,9
+Nextcloud,C++,1
+Kaltura,Swift,1
