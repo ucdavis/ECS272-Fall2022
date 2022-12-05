@@ -3,17 +3,20 @@
         <h1>Summary of Companies' contribution to OSS projects</h1>
     </div>
     <div class="column left">
-        <PieChart myChartID="leftpie"></Piechart>
+        <PieChart v-if="dataExists" myChartID="leftpie"></Piechart>
     </div>
     <div class="column middle">
-        <PieChart myChartID="middlepie"></Piechart>
+        <PieChart v-if="dataExists" myChartID="middlepie"></Piechart>
     </div>
-    
+    <div class="bottom bar">
+        <BarChart v-if="dataExists" myChartID="bottombar" :myBarchartData=myBarData></BarChart>
+    </div>
 </template>
 
 <script setup>
     import PieChart from '../components/piechart.vue';
     import BarChart from '../components/barchart.vue';
+    import testData from "../../assets/data/test.json";
 </script>
 
 <script>
@@ -28,7 +31,7 @@ export default {
     data(){
         return {
             dataExists: false,
-            myBarData: [],
+            myBarData: Array,
             //data_person = d3.csvParse(FileAttachment().text(), d3.autoType)
             //data_title = d3.csvParse(FileAttachment().text(), d3.autoType)
             //actorGroups : Array,
@@ -48,6 +51,14 @@ export default {
         //NodeTree,
         //RadarChart
     },
+    created(){
+        this.myBarData = testData.data;
+        //console.log("Test Bardata", this.myBarData);
+        this.dataExists = true;
+    },
+    mounted(){
+        
+    }
 }
 </script>
 <style scoped>

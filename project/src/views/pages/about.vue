@@ -13,11 +13,10 @@
         </div>
     </div>
     <div class="bottombar">
-        <div class="card">
-            <h3 align="left">Barchart of number of products each year </h3>
-            <BarChart v-if="dataExists" @selectedyear="updateYear" :myBarchartData=myBarData myChartID="barbottom"/>
-            
-        </div>
+        
+        <h3 align="left">Barchart of number of products each year </h3>
+        <BarChart v-if="dataExists" @selectedyear="updateYear" :myBarchartData=myBarData myChartID="barbottom"/>
+        
         
     </div>
 </template>
@@ -36,6 +35,7 @@ import * as d3 from "d3";
 //import csvPath from '../../assets/data/SF_Historical_Ballot_Measures.csv';
 import person_csvPath from '../../assets/data/credits.csv';
 import title_csvPath from '../../assets/data/titles.csv';
+import testData from "../../assets/data/test.json";
 
 export default {
     data(){

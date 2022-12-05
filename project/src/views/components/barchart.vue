@@ -28,8 +28,8 @@
                 if ((thiskey>this.start) & (thiskey<this.end)){
                     localData.push(this.myBarchartData[item]);
                 }
-                //console.log(item, thiskey, this.start, this.end)
-                //console.log(this.myBarchartData[item])
+                console.log(item, thiskey, this.start, this.end)
+                console.log(this.myBarchartData[item])
             });
             //let localData = testData['data'];
             this.drawBarChart(localData, this.myChartID) 
@@ -63,7 +63,7 @@
                 id = '#'+id
                 const margin = { top: 20, right: 20, bottom: 30, left: 60 };
                 const height = 200;
-                const width = 500;
+                const width = 1000;
                 const focusHeight = 100;
 
                 const x = d3.scaleBand().domain(data.map(d => d.y))
@@ -198,7 +198,7 @@
                     vueThis.$emit("selectedyear", selecteddata)
                     //svg.property("value", selection.map(x.invert, x).map(d3.utcDay.round));
                     //svg.dispatch("input");
-                    //console.log("Selected", select_start, select_end)
+                    console.log("Selected", select_start, select_end)
                     }
                 }
 
