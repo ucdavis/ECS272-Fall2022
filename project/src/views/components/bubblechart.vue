@@ -1,6 +1,5 @@
 <template>
-    <div  class="pieChartContainer" :id="myChartID">
-        <svg></svg>
+    <div class="bubbleChartContainer" :id="myChartID">
     </div>
 </template>
 
@@ -9,18 +8,18 @@ import * as d3 from "d3";
 //import { piefunction } from "./myTestFunction"
 
 export default {
-    name: 'PieChart',
+    name: 'BubbleChart',
     componets: {},
     data() {
         return {
-            pieData: [
-                {date: 1910, count: 14},
-                {date: 1920, count: 20},
-                {date: 1930, count: 42},
-                {date: 1940, count: 94},
-                {date: 1950, count: 344},
-                {date: 1960, count: 54},    
-                {date: 1970, count: 124}
+            bubbleData: [
+                {name: 1910, count: 14},
+                {name: 1920, count: 20},
+                {name: 1930, count: 42},
+                {name: 1940, count: 94},
+                {name: 1950, count: 344},
+                {name: 1960, count: 54},    
+                {name: 1970, count: 124}
             ],
             arc: null,
             arcs: [],
@@ -32,7 +31,7 @@ export default {
         }
     },
     props: {
-        myPieData: Array,
+        myBubbleData: Array,
         myChartID: String,
     },
     created() {
@@ -45,15 +44,6 @@ export default {
         // D3 CODE CALLED HERE\
         this.init(this.pieData);
         this.drawPie(this.pieData);
-    },
-    watch:{
-        myPiedata(newval, oldval){
-            //console.log("New sundata", newval)
-            
-            //console.log("Data Passed down as a Prop  ", sundata)
-            //this.init(newval);
-            this.drawPie(newval);
-        }
     },
     methods: {
         init(data) {
@@ -73,7 +63,7 @@ export default {
             const radius = Math.min(this.width, this.height) / 2 * 0.8;
             this.arcLabel = d3.arc().innerRadius(radius).outerRadius(radius)
 
-            let svg = d3.select(id).select("svg").attr("viewBox", [0, 0, this.width, this.height]);
+            let svg = d3.select(id).append("svg").attr("viewBox", [0, 0, this.width, this.height]);
             svg.append("g").attr("id", this.myChartID+"pieGroup").attr("transform", `translate(${this.width / 2},${this.height / 2})`)
             svg.append("g").attr("id", this.myChartID+"pieLabelGroup").attr("transform", `translate(${this.width / 2},${this.height / 2})`)
         },
