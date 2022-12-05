@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>What is this about?</h1>
+        <h1>Summary of Companies' contribution to OSS projects</h1>
     </div>
     <div class="column left">
         <PieChart myChartID="leftpie"></Piechart>

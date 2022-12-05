@@ -18,7 +18,7 @@ export default {
                 {date: 1930, count: 42},
                 {date: 1940, count: 94},
                 {date: 1950, count: 344},
-                {date: 1960, count: 54},
+                {date: 1960, count: 54},    
                 {date: 1970, count: 124}
             ],
             arc: null,
@@ -83,7 +83,7 @@ export default {
                 //    console.log("CLICKED THIS", e,d,i)
                 //    vueThis.$emit("TellParentSTuff", d)
                 //});
-
+                
 
             d3.select(id+"pieLabelGroup")
                 .attr("font-family", "sans-serif")

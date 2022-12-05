@@ -89,6 +89,20 @@
                     .attr("height", d => y(0) - y(d.x))
                     .attr("fill", "green");
 
+                let curve = d3.curveLinear
+                let line = d3.line()
+                    .curve(curve)
+                    .x(d => x(d.y))
+                    .y(d => y(d.x))
+
+                svg.append("path")
+                .datum(data)
+                .attr('d', line(data))
+                .attr("fill", "none")
+                .attr("stroke","steelblue")
+                .attr('stroke-width', 3)
+                .attr('stroke', 'steelblue');
+                
                 const xAxis = g => g
                     .attr("transform", `translate(0,${height - margin.bottom})`)
                     .call(d3.axisBottom(x))
