@@ -43,9 +43,9 @@ export default {
     mounted() {
         /* We have access to our HTML defined in Template*/
         // D3 CODE CALLED HERE\
-        console.log("Piedata", this.myPiedata)
-        this.init(this.myPiedata);
-        this.drawPie(this.myPiedata);
+        //console.log("Piedata", this.myPieData);
+        this.init(this.myPieData);
+        this.drawPie(this.myPieData);
 
     },
     watch:{
