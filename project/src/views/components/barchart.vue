@@ -87,7 +87,7 @@
                     .attr("y", d => y(d.x))
                     .attr("width", x.bandwidth())
                     .attr("height", d => y(0) - y(d.x))
-                    .attr("fill", "green");
+                    .attr("fill", "steelblue");
 
                 let curve = d3.curveLinear
                 let line = d3.line()
@@ -101,7 +101,7 @@
                 .attr("fill", "none")
                 .attr("stroke","steelblue")
                 .attr('stroke-width', 3)
-                .attr('stroke', 'steelblue');
+                .attr('stroke', 'red');
                 
                 const xAxis = g => g
                     .attr("transform", `translate(0,${height - margin.bottom})`)
