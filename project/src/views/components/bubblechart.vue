@@ -34,6 +34,7 @@ export default {
     },
     props: {
         myBubbleData: Array,
+        refSize: Number,
         myChartID: String,
     },
     created() {
@@ -44,8 +45,17 @@ export default {
     mounted() {
         /* We have access to our HTML defined in Template*/
         // D3 CODE CALLED HERE\
-        this.init(this.bubbleData);
-        this.drawBubble(this.bubbleData);
+        this.init(this.myBubbleData);
+        this.drawBubble(this.myBubbleData, this.refSize);
+    },
+    watch: {
+        myBubbleData(newval, oldval) {
+            console.log("New piedata", newval)
+
+            //console.log("Data Passed down as a Prop  ", newval)
+            //this.init(newval);
+            this.drawBubble(newval, this.refSize);
+        }
     },
     methods: {
         classes(root) {
@@ -67,39 +77,43 @@ export default {
             return { children: classes };                                                                             //返回所有的子节点  （包含在children中）                                                                          
         },
         init(data) {
-            let id = '#' + this.myChartID;
-            this.bubble = d3.pack()                                  //初始化包图
-                //.radius(this.diameter)                       
-                .size([this.diameter, this.diameter])	                    //设置范围
-                .padding(1.5);
-            //设置间距
-            this.color = d3.scaleOrdinal()
-                .domain(data.map(d => d.key))
-                .range(d3.quantize(t => d3.interpolateSpectral(t * 0.8 + 0.1), data.length).reverse())
-
-            let svg = d3.select(id).select("svg").attr("viewBox", [0, 0, this.width, this.height]);
-
-        },
-        drawBubble(data_) {
-            let vueThis = this;
-            let id = '#' + this.myChartID;
-            const cols = 2;
+            const cols = 5;
             const rows = 2;
             var margin = { top: 10, right: 30, bottom: 30, left: 60 },
-                width = 460 - margin.left - margin.right,
-                height = 400 - margin.top - margin.bottom;
+                width = 150 * cols,
+                height = 150 * rows;
 
-            let svg = d3.select(id).select("svg")
+            let id = '#' + this.myChartID;
+
+            d3.select(id).select("svg").remove();
+            let svg = d3.select(id).append("svg")
                 .attr("viewBox", [0, 0, width, height])
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom);
-            let data = [
-                { name: "AAA", size: 50 },
-                { name: "asd", size: 200 },
-                { name: "AdfA", size: 100 },
-                { name: "AdsadfvAA", size: 150 },
-                { name: "AasdfA", size: 1 },
-            ]
+
+            svg.append("g").attr("id", this.myChartID + "bubble")
+
+        },
+        drawBubble(data, refSize) {
+            let vueThis = this;
+            let id = '#' + this.myChartID;
+            const cols = 5;
+            const rows = 2;
+            var margin = { top: 10, right: 30, bottom: 30, left: 60 },
+                width = 150 * cols,
+                height = 150 * rows;
+
+            // let svg = d3.select(id).select("svg")
+            //     .attr("viewBox", [0, 0, width, height])
+            //     .attr("width", width + margin.left + margin.right)
+            //     .attr("height", height + margin.top + margin.bottom);
+            // let data = [
+            //     { name: "AAA", size: 50 },
+            //     { name: "asd", size: 200 },
+            //     { name: "AdfA", size: 100 },
+            //     { name: "AdsadfvAA", size: 150 },
+            //     { name: "AasdfA", size: 1 },
+            // ]
 
 
             var x = d3.scaleLinear()
@@ -118,7 +132,6 @@ export default {
                 data[i]["order"] = i
             }
 
-            const max_size = 100 //max(...data.map((x) => x.commits))
 
 
             function slot_x(order) {
@@ -128,10 +141,10 @@ export default {
                 return Math.floor(order / cols)
             }
             function get_r(size) {
-                return Math.sqrt(size / max_size) * 0.5 * 100
+                return Math.sqrt(size / refSize) * 0.5 * 100
             }
 
-            let node = svg.append('g')
+            let node = d3.select(id + "bubble")
                 .selectAll(".node")
                 .data(data)
                 .enter()
@@ -164,7 +177,7 @@ export default {
                     .selectAll("text")
                     .transition()
                     .duration(100)
-                    .attr("font-size", function (d) { return 1.2 * get_r(d.size)/3 })
+                    .attr("font-size", function (d) { return 1.2 * get_r(d.size) / 3 })
 
             })
             node.on("mouseout", function (d) {
@@ -177,18 +190,36 @@ export default {
                     .selectAll("text")
                     .transition()
                     .duration(100)
-                    .attr("font-size", function (d) { return get_r(d.size)/3 })
+                    .attr("font-size", function (d) { return get_r(d.size) / 3 })
 
             })
-            node.on("click", function(event, d) {
+            node.on("click", function (event, d) {
                 console.log("Selected", d.name)
                 vueThis.$emit("selectedEntry", d.name)
             })
+
+            d3.select(id + "bubble")
+                .selectAll(".node")
+                .data(data)
+                .exit()
+                .remove();
+                // .transition(t)
+                // .attr("opacity", 1e-6)
+
+            var t = d3.transition()
+                .duration(750);
+            d3.select(id + "bubble")
+                .selectAll(".node")
+                .data(data)
+                .transition(t)
+                .attr("transform", function (d) {
+                    return "translate(" + x(slot_x(d.order)) + "," + y(slot_y(d.order)) + ")";
+                });
             //     .attr("id", function (d) { return d.company })
             // .attr("cx", function (d) { return x(slot_x(d.order)); })
             // .attr("cy", function (d) { return y(slot_y(d.order)); })
 
-            
+
         }
     }
 }
