@@ -220,22 +220,22 @@ body {
 
 .column.left {
     width: 30%;
-    height: 50%;
+    height: 55%;
 }
 
 .column.middle {
     width: 30%;
-    height: 50%;
+    height: 55%;
 }
 
 .column.right {
     width: 30%;
-    height: 50%;
+    height: 55%;
 }
 
 .bottombar {
     width: 100%;
-    height: 30%;
+    height: 25%;
 }
 
 .card {

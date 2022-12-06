@@ -60,9 +60,9 @@ export default {
     methods: {
         init(data) {
             let id = '#'+this.myChartID;
+            const radius = Math.min(this.width, this.height) / 2 * 0.8;
             this.arc =  d3.arc()
-                        .innerRadius(20)
-                        .outerRadius(Math.min(this.width, this.height) / 2 - 1)
+                        .innerRadius(radius*0.4).outerRadius(radius);
 
             this.color = d3.scaleOrdinal()
                         .domain(data.map(d => d.date))
@@ -72,8 +72,8 @@ export default {
                     .sort(null)
                     .value(d => d.count)
             
-            const radius = Math.min(this.width, this.height) / 2 * 0.8;
-            this.arcLabel = d3.arc().innerRadius(radius).outerRadius(radius)
+            
+            this.arcLabel = d3.arc().innerRadius(radius*0.4).outerRadius(radius)
 
             let svg = d3.select(id).select("svg").attr("viewBox", [0, 0, this.width, this.height]);
             svg.append("g").attr("id", this.myChartID+"pieGroup").attr("transform", `translate(${this.width / 2},${this.height / 2})`)
@@ -96,10 +96,11 @@ export default {
                 //    vueThis.$emit("TellParentSTuff", d)
                 //});
                 
-
+            let sum = d3.sum(data, d => d.count);
+            console.log("SUM", sum)
             d3.select(id+"pieLabelGroup")
                 .attr("font-family", "sans-serif")
-                .attr("font-size", "12px")
+                .attr("font-size", "10px")
                 .attr("text-anchor", "middle")
                 .selectAll("text")
                 .data(arcs)
@@ -110,7 +111,7 @@ export default {
                 //.attr("x", 0)
                 //.attr("y", (_, i) => `${i * 1.1}em`)
                 //.attr("font-weight", (_, i) => i ? null : "bold")
-                .text(function (d) { return d.data.date })
+                .text(function (d) { return d.data.date+":"+(d.data.count / sum * 100).toFixed(2) + "%"; })
                 .on("mouseover", function(d) {
                     d3.select(this)
                     .transition()
@@ -121,7 +122,7 @@ export default {
                     d3.select(this)
                     .transition()
                     .duration(100)
-                    .attr("font-size", "12px")
+                    .attr("font-size", "18px")
                 });
         }
     }

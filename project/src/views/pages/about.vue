@@ -1,5 +1,5 @@
 <template>
-    <h2>Top Enterprise that contribute to </h2>
+    <h2>Top Enterprise that contribute to OSS projects </h2>
     <div class="column side">
         <!--<div class="card">
             <h3>Staff of the Movie</h3>
@@ -7,7 +7,6 @@
         </div>-->
             
         <div class="card">
-            <h3>Top 10 Enterprise of contribution</h3>
             <BubbleChart v-if="dataExists" myChartID="companybubble" @selectedEntry="updateCompany"/>
             <!--<Sunburst v-if="dataExists" @givefather="getSon" myChartID="upperright" :mysundata=titleGroups_selected>
 
@@ -23,7 +22,7 @@
     </div>
     <div class="bottombar">
         
-        <h3>Barchart of number of products each year </h3>
+        <h1>Number of commits </h1>
         <BarChart v-if="dataExists" @selectedyear="updateYear" :myBarchartData=myBarData myChartID="barbottom"/>
         
         
@@ -89,7 +88,7 @@ export default {
         
     },
     mounted(){
-        
+
     },
     methods: {
         updateYear(data){
@@ -255,16 +254,16 @@ export default {
 
     .column.side {
     width: 50%;
-    height: 60%;
+    height: 55%;
     }
 
     .column.middle {
     width: 50%;
-    height: 60%;
+    height: 55%;
     }
     .bottombar{
         width: 100%;
-        height: 20%;
+        height: 25%;
     }
     .card {
     background-color: white;

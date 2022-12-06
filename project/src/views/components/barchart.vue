@@ -61,7 +61,7 @@
             },
             drawBarChart(data, id) {
                 id = '#'+id
-                const margin = { top: 20, right: 20, bottom: 30, left: 60 };
+                const margin = { top: 10, right: 20, bottom: 30, left: 60 };
                 const height = 200;
                 const width = 1000;
                 const focusHeight = 100;

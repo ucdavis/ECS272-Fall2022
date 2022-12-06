@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Summary of Companies' involved OSS projects</h1>
+        <h1>Summary of top popular involved OSS projects</h1>
     </div>
     <div class="column middle">
         <BubbleChart v-if="dataExists" myChartID="middlepie"></BubbleChart>
@@ -73,16 +73,16 @@ export default {
 
     .column.side {
     width: 50%;
-    height: 50%;
+    height: 55%;
     }
 
     .column.middle {
     width: 50%;
-    height: 50%;
+    height: 55%;
     }
     .bottombar{
         width: 100%;
-        height: 30%;
+        height: 25%;
     }
     .card {
     background-color: white;
