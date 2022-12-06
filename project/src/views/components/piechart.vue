@@ -49,10 +49,10 @@ export default {
 
     },
     watch:{
-        myPiedata(newval, oldval){
-            //console.log("New sundata", newval)
+        myPieData(newval, oldval){
+            console.log("New piedata", newval)
             
-            //console.log("Data Passed down as a Prop  ", sundata)
+            //console.log("Data Passed down as a Prop  ", newval)
             //this.init(newval);
             this.drawPie(newval);
         }

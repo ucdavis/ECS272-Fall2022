@@ -190,7 +190,7 @@
                     let select_end = 0
                     let current = ''
                     if (selection) {
-                        console.log(selection[0],x(2000))
+                        //console.log(selection[0],x(2000))
                         for (let year=2019; year<=2020; year++){
                             for (let mon=1; mon<=12; mon++){
                                 current = year+'-';
@@ -204,7 +204,7 @@
                     vueThis.$emit("selectedyear", selecteddata)
                     //svg.property("value", selection.map(x.invert, x).map(d3.utcDay.round));
                     //svg.dispatch("input");
-                    console.log("Selected", select_start, select_end)
+                    //console.log("Selected", select_start, select_end)
                     }
                 }
 

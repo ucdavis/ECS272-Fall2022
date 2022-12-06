@@ -104,8 +104,8 @@ export default {
                 }
             }
             this.commitPieData = [{ date: "Enterprise", count: company_commits_in_period }, { date: "Community", count: noncompany_commits_in_period }]
-            console.log("Year updated", this.dateselected)
-            console.log("data updated", this.commitPieData)
+            //console.log("Year updated", this.dateselected)
+            //console.log("data updated", this.commitPieData)
         },
 
         parse_data() {
