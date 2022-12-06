@@ -245,13 +245,13 @@ export default {
                 }
             )
             console.log(company_repo_count)
-            let repos = Object.entries(company_repo_count[company])
+            let repos = Object.entries(company_repo_count[company] || [])
             repos.sort((a,b) => -a[1] + b[1])
 
             let relevantCommunityData = communityData.filter((x) => x.Company == company && new Date(x.month) >= new Date(this.dateselected[0]) && new Date(x.month) < new Date(this.dateselected[1]))
             console.log("updated")
             this.selected_company_info = {
-                repo_count: Object.keys(company_repo_count[company]).length,
+                repo_count: repos.length,
                 repos: repos,
                 community: Math.max(...relevantCommunityData.map((x) => x["Total community"])),
                 contributors: Math.max(...relevantCommunityData.map((x) => x["Active contributors"])),
