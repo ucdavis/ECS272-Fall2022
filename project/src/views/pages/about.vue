@@ -5,6 +5,7 @@
             <h3>Staff of the Movie</h3>
             <NodeTree v-if="dataExists" :myNodeData=title_nameindex myChartID="upperleft"></NodeTree>
         </div>-->
+            <BubbleChart v-if="dataExists" myChartID="companybubble" @selectedEntry="updateCompany"/>
         <div class="card">
             <h3>Sunburst Chart showing all titles</h3>
             <Sunburst v-if="dataExists" @givefather="getSon" myChartID="upperright" :mysundata=titleGroups_selected></Sunburst>
@@ -26,6 +27,7 @@
 </template>
 
 <script setup>
+import BubbleChart from "../components/bubblechart.vue"
 import BarChart from "../components/barchart.vue";
 import Piechart from '../components/piechart.vue';
 import Sunburst from "../components/sunburst.vue";
@@ -79,6 +81,18 @@ export default {
     },
     methods: {
         updateYear(data){
+            console.log("Year changed!", data)
+            let selected = {}
+            Object.keys(this.titleGroups).forEach(k =>{
+                if (k>data[0] & k<data[1]){
+                    selected[k] = this.titleGroups[k]
+                }
+            })
+            //return
+            this.titleGroups_selected = selected;
+            //console.log("Year updated", this.titleGroups, this.titleGroups_selected)
+        },
+        updateCompany(data){
             console.log("Year changed!", data)
             let selected = {}
             Object.keys(this.titleGroups).forEach(k =>{
