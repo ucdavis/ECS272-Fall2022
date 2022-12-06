@@ -1,7 +1,6 @@
 <template>
-    <div>Type ID to Show Scores:
-        <input v-model.trim="showID"/>
-        <h3>The title is :</h3>{{ this.showTitle }}
+    <div>
+        <h3>The project is : {{ this.showTitle }}</h3>
     </div>
     <div class="card" :id="myChartID">
         <svg></svg>
@@ -278,7 +277,8 @@ export default{
                 .style("font-size", "10px")
                 .attr("fill", "#737373")
                 .text(function(d, i) {
-                return Format((maxValue/maxValue * d) / cfg.levels);
+                    let temp = Math.pow(10,d-1);
+                    return '<='+temp;
                 });
 
             /////////////////////////////////////////////////////////
