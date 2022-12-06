@@ -1,12 +1,18 @@
 <template>
     <div>
-        <h1>Summary of Companies' contribution to OSS projects</h1>
+        <h3>Summary of Enterprise' contribution to OSS projects</h3>
     </div>
     <div class="column left">
+        <h1>Enterprise commit vs Community commit</h1>
         <PieChart v-if="dataExists" myChartID="leftpie" :myPieData=commitPieData></Piechart>
     </div>
     <div class="column middle">
+        <h1>Enterprise pull vs Community pull</h1>
         <PieChart v-if="dataExists" myChartID="middlepie" :myPieData=commitPieData></Piechart>
+    </div>
+    <div class="column right">
+        <h1>Enterprise comment vs Community comment</h1>
+        <PieChart v-if="dataExists" myChartID="rightpie" :myPieData=commitPieData></Piechart>
     </div>
     <div class="bottom bar">
         <BarChart v-if="dataExists" @selectedyear="updateYear" myChartID="bottombar" :myBarchartData=myBarData>
