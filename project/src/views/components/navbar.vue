@@ -16,6 +16,12 @@
         <a-menu-item key="3">
              <router-link to="/third">third</router-link>
         </a-menu-item>
+        <a-menu-item key="4">
+             <router-link to="/trend">Trend</router-link>
+        </a-menu-item>
+        <a-menu-item key="4">
+             <router-link to="/explore">Explore</router-link>
+        </a-menu-item>
       </a-menu>
     </a-layout-header>
 </template>
