@@ -66,7 +66,7 @@ export default {
         const [repository_composition, commit_by_company, commit_by_company_vs_noncompany, company_contributed_repository_count] = this.parse_data()
         this.commit_by_company_vs_noncompany = commit_by_company_vs_noncompany
         this.myBarData = testData.data;
-        this.commitPieData = [{ date: "Company", count: 1 }, { date: "Non-Company", count: 1 }];
+        this.commitPieData = [{ date: "Enterprise", count: 1 }, { date: "Community", count: 1 }];
         this.extract_company_commmit()
         console.log(this.commitPieData)
         // console.log("Test Bardata", this.myBarData);
@@ -87,7 +87,7 @@ export default {
                     noncompany_commits_in_period += commits["noncompany"]
                 }
             }
-            this.commitPieData = [{ date: "Company", count: company_commits_in_period }, { date: "Noncompany", count: noncompany_commits_in_period }]
+            this.commitPieData = [{ date: "Enterprise", count: company_commits_in_period }, { date: "Community", count: noncompany_commits_in_period }]
 
         },
         updateYear(data) {
@@ -103,7 +103,7 @@ export default {
                     noncompany_commits_in_period += commits["noncompany"]
                 }
             }
-            this.commitPieData = [{ date: "Company", count: company_commits_in_period }, { date: "Noncompany", count: noncompany_commits_in_period }]
+            this.commitPieData = [{ date: "Enterprise", count: company_commits_in_period }, { date: "Community", count: noncompany_commits_in_period }]
             console.log("Year updated", this.dateselected)
         },
 
