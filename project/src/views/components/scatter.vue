@@ -67,8 +67,8 @@ export default{
                 .data(data)
                 .enter()
                 .append("circle")
-                .attr("cx", function (d) { return this.x(d.commits); } )
-                .attr("cy", function (d) { return this.y(d.ratio); } )
+                .attr("cx", function (d) { return this.x(d.x); } )
+                .attr("cy", function (d) { return this.y(d.y); } )
                 .attr("r", 1.5)
                 .style("fill", "#69b3a2")
 

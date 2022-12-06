@@ -68,7 +68,7 @@ export default {
         this.myBarData = testData.data;
         this.commitPieData = [{ date: "Enterprise", count: 1 }, { date: "Community", count: 1 }];
         this.extract_company_commmit()
-        console.log(this.commitPieData)
+        //console.log(this.commitPieData)
         // console.log("Test Bardata", this.myBarData);
         this.dataExists = true;
     },
@@ -105,6 +105,7 @@ export default {
             }
             this.commitPieData = [{ date: "Enterprise", count: company_commits_in_period }, { date: "Community", count: noncompany_commits_in_period }]
             console.log("Year updated", this.dateselected)
+            console.log("data updated", this.commitPieData)
         },
 
         parse_data() {
