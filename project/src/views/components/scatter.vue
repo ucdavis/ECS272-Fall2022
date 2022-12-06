@@ -1,5 +1,4 @@
 <template>
-    <h2>Scatter plot of all projects</h2>
     <div class="card" :id="myChartID">
         <svg></svg>
     </div>
@@ -11,9 +10,7 @@ export default{
     name : "ScatterPlot",
     data(){
         return{
-            margin : {top: 10, right: 30, bottom: 30, left: 60},
-            width : 460 - margin.left - margin.right,
-            height : 400 - margin.top - margin.bottom,
+            datatest:[{"x":1084,"y":15}]
         }
     },
     props:{
@@ -24,7 +21,8 @@ export default{
 
     },
     mounted(){
-        let localData = this.myPlotData;
+        //let localData = this.myPlotData;
+        let localData = this.datatest;
         this.init(localData);
         this.drawplot(localData);
     },
@@ -36,31 +34,36 @@ export default{
     methods:{
         init(data){
             let id= '#'+this.myChartID;
+            var margin = {top: 10, right: 30, bottom: 20, left: 60},
+                width = 1000 - margin.left - margin.right,
+                height = 150 - margin.top - margin.bottom;
+
             const svg = d3.select(id).select("svg")
-                        .attr("viewbox",[0,0, this.width, this.height])
+                        .attr("viewbox",[0, 0, width, height])
                         .append("g")
                         .attr("transform",
-                            "translate(" + this.margin.left + "," + this.margin.top + ")");
-            this.x = d3.scaleLinear()
+                            "translate(" + margin.left + "," + margin.top + ")");
+            this.xs = d3.scaleLinear()
                         .domain([0, 8000])
-                        .range([ 0, this.width ]);
+                        .range([ 0, width ]);
 
                     svg.append("g")
-                        .attr("transform", "translate(0," + this.height + ")")
-                        .call(d3.axisBottom(this.x));
+                        .attr("transform", "translate(0," + height + ")")
+                        .call(d3.axisBottom(this.xs));
 
                     // Add Y axis
-            this.y = d3.scaleLinear()
+            this.ys = d3.scaleLinear()
                         .domain([0, 20])
-                        .range([ this.height, 0]);
+                        .range([ height, 0]);
 
                     svg.append("g")
-                        .call(d3.axisLeft(this.y));
+                        .call(d3.axisLeft(this.ys));
 
             this.dots = svg.append('g').selectAll("dot")
         },
         drawplot(data){
             let id= '#'+this.myChartID;
+            let vueThis = this;
             //const svg = d3.select(id).select("svg");
 
             // Add dots
@@ -68,8 +71,8 @@ export default{
             this.dots.data(data)
                 .enter()
                 .append("circle")
-                .attr("cx", function (d) { return this.x(d.x); } )
-                .attr("cy", function (d) { return this.y(d.y); } )
+                .attr("cx", function (d) { return vueThis.xs(d.x); } )
+                .attr("cy", function (d) { return vueThis.ys(d.y); } )
                 .attr("r", 1.5)
                 .style("fill", "#69b3a2")
 

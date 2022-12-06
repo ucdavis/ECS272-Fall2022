@@ -15,6 +15,7 @@
         <PieChart v-if="dataExists" myChartID="rightpie" :myPieData=activeContributorPieData></Piechart>
     </div>
     <div class="bottom bar">
+        <h1>Number of commits </h1>
         <BarChart v-if="dataExists" @selectedyear="updateYear" myChartID="bottombar" :myBarchartData=myBarData>
         </BarChart>
     </div>
