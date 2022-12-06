@@ -7,12 +7,12 @@
         <PieChart v-if="dataExists" myChartID="leftpie" :myPieData=commitPieData></Piechart>
     </div>
     <div class="column middle">
-        <h1>Enterprise pull vs Community pull</h1>
-        <PieChart v-if="dataExists" myChartID="middlepie" :myPieData=commitPieData></Piechart>
+        <h1>Enterprise community vs Community community</h1>
+        <PieChart v-if="dataExists" myChartID="middlepie" :myPieData=communityPieData></Piechart>
     </div>
     <div class="column right">
-        <h1>Enterprise comment vs Community comment</h1>
-        <PieChart v-if="dataExists" myChartID="rightpie" :myPieData=commitPieData></Piechart>
+        <h1>Enterprise active contributors vs Community active contributors</h1>
+        <PieChart v-if="dataExists" myChartID="rightpie" :myPieData=activeContributorPieData></Piechart>
     </div>
     <div class="bottom bar">
         <BarChart v-if="dataExists" @selectedyear="updateYear" myChartID="bottombar" :myBarchartData=myBarData>
@@ -25,6 +25,7 @@ import PieChart from '../components/piechart.vue';
 import BarChart from '../components/barchart.vue';
 import testData from "../../assets/data/test.json";
 import commitData from "../../assets/data/OSCI_commits_ranking_MTD.json"
+import communityData from "../../assets/data/OSCI_ranking_MTD.json"
 </script>
 
 <script>
@@ -41,7 +42,11 @@ export default {
             dataExists: false,
             myBarData: Array,
             commitPieData: Array,
-            commit_by_company_vs_noncompany: Object,
+            communityPieData: Array,
+            activeContributorPieData: Array,
+            commit_company_vs_noncompany: Object,
+            community_company_vs_noncompany: Object,
+            active_contributor_company_vs_noncompany: Object,
             //data_person = d3.csvParse(FileAttachment().text(), d3.autoType)
             //data_title = d3.csvParse(FileAttachment().text(), d3.autoType)
             //actorGroups : Array,
@@ -63,11 +68,15 @@ export default {
         //RadarChart
     },
     created() {
-        const [repository_composition, commit_by_company, commit_by_company_vs_noncompany, company_contributed_repository_count] = this.parse_data()
-        this.commit_by_company_vs_noncompany = commit_by_company_vs_noncompany
+        const [commit_company_vs_noncompany, community_company_vs_noncompany, active_contributor_company_vs_noncompany] = this.parse_data()
+        this.commit_company_vs_noncompany = commit_company_vs_noncompany
+        this.community_company_vs_noncompany = community_company_vs_noncompany
+        this.active_contributor_company_vs_noncompany = active_contributor_company_vs_noncompany
         this.myBarData = testData.data;
         this.commitPieData = [{ date: "Enterprise", count: 1 }, { date: "Community", count: 1 }];
-        this.extract_company_commmit()
+        this.extract_company_commit()
+        this.extract_company_community()
+        this.extract_company_active_contributor() 
         //console.log(this.commitPieData)
         // console.log("Test Bardata", this.myBarData);
         this.dataExists = true;
@@ -76,10 +85,10 @@ export default {
 
     },
     methods: {
-        extract_company_commmit() {
+        extract_company_commit() {
             let company_commits_in_period = 0
             let noncompany_commits_in_period = 0
-            for (const [month, commits] of Object.entries(this.commit_by_company_vs_noncompany)) {
+            for (const [month, commits] of Object.entries(this.commit_company_vs_noncompany)) {
                 // console.log(commits)
                 let date = new Date(month);
                 if (date >= new Date(this.dateselected[0]) && date < new Date(this.dateselected[1])) {
@@ -90,20 +99,41 @@ export default {
             this.commitPieData = [{ date: "Enterprise", count: company_commits_in_period }, { date: "Community", count: noncompany_commits_in_period }]
 
         },
+        extract_company_community() {
+            let company_community_in_period = 0
+            let noncompany_community_in_period = 0
+            for (const [month, community] of Object.entries(this.community_company_vs_noncompany)) {
+                // console.log(commits)
+                let date = new Date(month);
+                if (date >= new Date(this.dateselected[0]) && date < new Date(this.dateselected[1])) {
+                    company_community_in_period += community["company"]
+                    noncompany_community_in_period += community["noncompany"]
+                }
+            }
+            this.communityPieData = [{ date: "Enterprise", count: company_community_in_period }, { date: "Community", count: noncompany_community_in_period }]
+
+        },
+        extract_company_active_contributor() {
+            let company_active_contributor_in_period = 0
+            let noncompany_active_contributor_in_period = 0
+            for (const [month, active_contributor] of Object.entries(this.active_contributor_company_vs_noncompany)) {
+                // console.log(commits)
+                let date = new Date(month);
+                if (date >= new Date(this.dateselected[0]) && date < new Date(this.dateselected[1])) {
+                    company_active_contributor_in_period += active_contributor["company"]
+                    noncompany_active_contributor_in_period += active_contributor["noncompany"]
+                }
+            }
+            this.activeContributorPieData = [{ date: "Enterprise", count: company_active_contributor_in_period }, { date: "Community", count: noncompany_active_contributor_in_period }]
+
+        },
         updateYear(data) {
             console.log("Year changed!", data)
             this.dateselected[0] = data[0];
             this.dateselected[1] = data[1];
-            let company_commits_in_period = 0
-            let noncompany_commits_in_period = 0
-            for (const [month, commits] of Object.entries(this.commit_by_company_vs_noncompany)) {
-                let date = new Date(month);
-                if (date >= new Date(this.dateselected[0]) && date < new Date(this.dateselected[1])) {
-                    company_commits_in_period += commits["company"]
-                    noncompany_commits_in_period += commits["noncompany"]
-                }
-            }
-            this.commitPieData = [{ date: "Enterprise", count: company_commits_in_period }, { date: "Community", count: noncompany_commits_in_period }]
+            this.extract_company_commit()
+            this.extract_company_community()
+            this.extract_company_active_contributor() 
             //console.log("Year updated", this.dateselected)
             //console.log("data updated", this.commitPieData)
         },
@@ -188,23 +218,37 @@ export default {
                 }
                 return acc;
             });
-            // const company_commits_in_period = 0
-            // const noncompany_commits_in_period = 0
-            // for (const [month, commits] of Object.entries(commit_by_company_vs_noncompany)) {
-            //     let date = new Date(month);
-            //     if (date >= new Date(this.dateselected[0]) && date < new Date(this.dateselected[0])) {
-            //         company_commits_in_period += commits["company"]
-            //         noncompany_commits_in_period += commits["noncompany"]
-            //     }
-            // }
 
+            const community_company_vs_noncompany_by_month = groupBy(communityData, "month", undefined, (acc, entry) => {
+                // console.log(entry)
+                if (!acc) {
+                    acc = {}
+                }
+                if (entry['Company'] == 'Unknown') {
+                    acc['noncompany'] = (acc['noncompany'] || 0) + entry['Total community']
+                } else {
+                    acc['company'] = (acc['company'] || 0) + entry['Total community']
+                }
+                return acc;
+            });
 
-
+            const active_contributor_company_vs_noncompany_by_month = groupBy(communityData, "month", undefined, (acc, entry) => {
+                // console.log(entry)
+                if (!acc) {
+                    acc = {}
+                }
+                if (entry['Company'] == 'Unknown') {
+                    acc['noncompany'] = (acc['noncompany'] || 0) + entry['Active contributors']
+                } else {
+                    acc['company'] = (acc['company'] || 0) + entry['Active contributors']
+                }
+                return acc;
+            });
 
 
             // return [repository_composition, commit_by_company, commit_by_company_vs_noncompany, company_contributed_repository_count]
 
-            return [0,0, commit_company_vs_noncompany_by_month, 0]
+            return [commit_company_vs_noncompany_by_month, community_company_vs_noncompany_by_month, active_contributor_company_vs_noncompany_by_month]
         }
     }
 }
