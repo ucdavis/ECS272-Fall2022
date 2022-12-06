@@ -54,6 +54,7 @@ export default {
 
             //console.log("Data Passed down as a Prop  ", newval)
             //this.init(newval);
+            this.init(this.myBubbleData);
             this.drawBubble(newval, this.refSize);
         }
     },

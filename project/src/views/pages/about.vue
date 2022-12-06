@@ -20,14 +20,14 @@
             <RadarChart v-if="dataExists" :myRadarData=title_idindex :showID=title_radar myChartID="upperleftradar"></RadarChart>
             -->
             <h3>Now viewing : {{ this.selectedCompany }}</h3>
-            <table>
+            <table v-if="dataExists">
                 <tr>
                     <th>Metric</th>
                     <th></th>
                 </tr>
                 <tr>
                     <td>Commits</td>
-                    <td>{{ this.bubbleChartData.find((x) => x.name == this.selectedCompany).size }}</td>
+                    <td>{{ (this.bubbleChartData.find((x) => x.name == this.selectedCompany) || {size:0}).size }}</td>
                 </tr>
                 <tr>
                     <td>Contributed Repository Count</td>
@@ -43,7 +43,7 @@
                 </tr>
                 <tr>
                     <td>Top Repository Contributed </td>
-                    <td>{{ this.selected_company_info.repos[0][0] }} (Commits: {{ this.selected_company_info.repos[0][1] }})</td>
+                    <td>{{ this.selected_company_info.repos[0] ? this.selected_company_info.repos[0][0]: `N/A`}} (Commits: {{ this.selected_company_info.repos[0] ? this.selected_company_info.repos[0][1]: `N/A` }})</td>
                 </tr>
             </table>
         </div>
