@@ -1,46 +1,16 @@
 {
-    "project1":[
-        {
-            "enterprize":
-                {"enterprizes":[
-                    {
-                        "name" : "Google",
-                        "topdeveloper" : [
-                            {"name": "dev1"},
-                            {"name": "dev2"}
-                        ]
-                    },
-                    {
-                        "name" : "Meta",
-                        "topdeveloper" : [
-                            {"name": "dev1"},
-                            {"name": "dev2"}
-                        ]
-                    }
-                ]},
-            "commnuity":{
-            "enterprizes":[
-                {
-                    "name" : "Google",
-                    "topdeveloper" : [
-                        {"name": "dev1"},
-                        {"name": "dev2"}
-                    ]
-                },
-                {
-                    "name" : "Meta",
-                    "topdeveloper" : [
-                        {"name": "dev1"},
-                        {"name": "dev2"}
-                    ]
-                }
-            ]
-            }
+    "project1":{
+        "enterprize":{
+            "Google": 100,
+            "Meta": 200
+        },
+        "community":{
+            "total": 80
         }
-    ],
-    "project2":[
-        {
+    },
+    "project2":{
 
-        }
-    ]
+    }
+            
+    
 }
