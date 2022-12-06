@@ -5,16 +5,20 @@
             <h3>Staff of the Movie</h3>
             <NodeTree v-if="dataExists" :myNodeData=title_nameindex myChartID="upperleft"></NodeTree>
         </div>-->
-            <BubbleChart v-if="dataExists" myChartID="companybubble" @selectedEntry="updateCompany"/>
+            
         <div class="card">
-            <h3>Sunburst Chart showing all titles</h3>
-            <Sunburst v-if="dataExists" @givefather="getSon" myChartID="upperright" :mysundata=titleGroups_selected></Sunburst>
+            <h3>Top 10 Enterprise of contribution</h3>
+            <BubbleChart v-if="dataExists" myChartID="companybubble" @selectedEntry="updateCompany"/>
+            <!--<Sunburst v-if="dataExists" @givefather="getSon" myChartID="upperright" :mysundata=titleGroups_selected>
+
+            </Sunburst>-->
         </div>
     </div>
     <div class="column middle">
         <div class="card">
-            <h3>RadarChart of the scores of Movie/Show</h3>
+            <!--<h3>RadarChart of the scores of Movie/Show</h3>
             <RadarChart v-if="dataExists" :myRadarData=title_idindex :showID=title_radar myChartID="upperleftradar"></RadarChart>
+            -->
         </div>
     </div>
     <div class="bottombar">
@@ -42,42 +46,50 @@ import * as d3 from "d3";
 import person_csvPath from '../../assets/data/credits.csv';
 import title_csvPath from '../../assets/data/titles.csv';
 import testData from "../../assets/data/test.json";
+import commitData from "../../assets/data/OSCI_commits_ranking_MTD.json"
 
 export default {
     data(){
         return {
             dataExists: false,
-            myBarData: [],
+            myBarData: Array,
+            //commitPieData: Array,
+            commit_by_company_vs_noncompany: Object,
             //data_person = d3.csvParse(FileAttachment().text(), d3.autoType)
             //data_title = d3.csvParse(FileAttachment().text(), d3.autoType)
             //actorGroups : Array,
-            titleGroups : {},
-            titleGroups_selected : {},
+            dateselected: ['2019-01', '2019-06'],
+            titleGroups: {},
+            titleGroups_selected: {},
             //fdata_person : Array,
-            fdata_title : Array,
-            title_nameindex : Object,
-            title_idindex : Object,
-            title_radar : String,
+            fdata_title: Array,
+            title_nameindex: Object,
+            title_idindex: Object,
+            title_radar: String,
         }
     },
     components: {
     BarChart,
-    Piechart,
-    Sunburst,
-    NodeTree,
+    //Piechart,
+    //Sunburst,
+    //NodeTree,
     RadarChart
 },
     created(){
-        /* Fetch via CSV */
-        this.retrieveFromCsv(),
-        this.drawBarChart(),
-        this.levelGroup(),
+        const [repository_composition, commit_by_company, commit_by_company_vs_noncompany, company_contributed_repository_count] = this.parse_data()
+        this.commit_by_company_vs_noncompany = commit_by_company_vs_noncompany
+        this.myBarData = testData.data;
+        this.commitPieData = [{ date: "Enterprise", count: 1 }, { date: "Community", count: 1 }];
+        this.extract_company_commmit()
+        console.log(this.commitPieData)
+        // console.log("Test Bardata", this.myBarData);
+        this.dataExists = true;
+        // radar data update
         this.title_radar = "tm32982"
         
     },
     mounted(){
-        this.titleGroups_selected = this.titleGroups;
-        this.levelGroup()
+        
     },
     methods: {
         updateYear(data){
@@ -104,88 +116,7 @@ export default {
             this.titleGroups_selected = selected;
             //console.log("Year updated", this.titleGroups, this.titleGroups_selected)
         },
-        getSon(data){
-            //console.log("Father get the data:", data)
-            this.title_radar = data;
-        },
-        retrieveFromCsv(){
-            //async method
-            
-            d3.csv(person_csvPath).then((data_person) => {
-                // array of objects
-                console.log(data_person.length);
-                //console.log(data_person);
-                //this.dataExists = true; // updates the v-if to conditionally show the barchart only if our data is here.
-                //this.myBarData = data; // updates the prop value to be the recieved data, which we hand in to our bar-chart
-                //this.data_person = data_person;
-                
-            
-                d3.csv(title_csvPath).then((data_title) => {
-                    // array of objects
-                    console.log(data_title.length);
-                    //console.log(data_title);
-                    //this.dataExists = true; // updates the v-if to conditionally show the barchart only if our data is here.
-                    //this.myBarData = data; // updates the prop value to be the recieved data, which we hand in to our bar-chart
-                    //this.data_title = data_title;
-                    this.processAllData(data_person,data_title);
-                    this.title_idindex = this.groupBy(this.fdata_title,"id")
-                    this.dataExists = true;
-                });
-            });
-            
-        },
-        processAllData(data_person,data_title){
-            this.fdata_person = this.processpersonData(data_person,data_title);
-            this.fdata_title = this.processtitleData(data_person,data_title);
-            console.log(this.fdata_person.length);
-            //console.log(this.fdata_person);
-            console.log(this.fdata_title.length);
-            //console.log(this.fdata_title);
-            this.dataExists = true;
-            this.actorGroups = this.groupBy(this.fdata_person, 'role')
-            this.titleGroups = this.groupBy(this.fdata_title, 'year')
-            //console.log(this.actorGroups.length)
-            //console.log(Object.keys(this.actorGroups))
-            //console.log(this.titleGroups.length)
-            //console.log(Object.keys(this.titleGroups))
-            const titlebarArray = [];
-            const actorbarArray = [];
-            Object.keys(this.titleGroups).forEach(d => {
-                let year = {
-                    y: d,
-                    x: this.titleGroups[d].length
-                }
-                titlebarArray.push(year);
-                this.titleGroups[d] = this.groupBy(this.titleGroups[d],'type');
-                //console.log(Object.keys(this.titleGroups[d]))
-
-                Object.keys(this.titleGroups[d]).forEach(itemkey =>{
-                    this.titleGroups[d][itemkey] = this.groupBy(this.titleGroups[d][itemkey], 'first_country')
-                    //console.log(Object.keys(this.titleGroups[d][itemkey]))
-                })
-
-            });
-            this.myBarData = titlebarArray;
-            //console.log("Bardata Complete");
-            //console.log(this.titleGroups);
-            //console.log(this.myBarData);
-        },
-        drawBarChart(){
-            
-            //Object.keys(this.titleGroups).forEach(d => {
-                
-            //});
-            //this.myBarData = barArray;
-            
-            //console.log(barArray.length);
-            //console.log(barArray);
-            //console.log(this.myBarData);
-            //let Filesaver = require('file-saver');
-            //Filesaver.saveAs(this.myBarData,"../assets/data/myBarData.json")
-        },
-        levelGroup(){
-            console.log("levelGroup running!")
-        },
+        
         groupBy(objectArray, property) {            
             return objectArray.reduce(function (acc, obj) {
                 let key = obj[property]
@@ -196,113 +127,117 @@ export default {
                 return acc
             }, {})
         },
-        processpersonData(data_person,data_title){
-            // calculate product titles to merge for persons
-            const titleGroups = {};
-            data_title.forEach(d=>{
-                if(!(d.id in titleGroups)){
-                const t = {
-                    name: d.title,
-                    id: d.id,
-                    type: d.type,
+        extract_company_commmit() {
+            let company_commits_in_period = 0
+            let noncompany_commits_in_period = 0
+            for (const [month, commits] of Object.entries(this.commit_by_company_vs_noncompany)) {
+                // console.log(commits)
+                let date = new Date(month);
+                if (date >= new Date(this.dateselected[0]) && date < new Date(this.dateselected[1])) {
+                    company_commits_in_period += commits["company"]
+                    noncompany_commits_in_period += commits["noncompany"]
                 }
-                titleGroups[d.id] = t;
-                }
-            })
-            const personGroups = {};
-            data_person.forEach(d => {
-                if(d.person_id in personGroups){
-                personGroups[d.person_id].products = personGroups[d.person_id].products + 1;
-                personGroups[d.person_id].titles.push(titleGroups[d.id]);
+            }
+            this.commitPieData = [{ date: "Enterprise", count: company_commits_in_period }, { date: "Community", count: noncompany_commits_in_period }]
 
-                }else{
-                const person = {
-                    titles : [],
-                    name: d.name,
-                    id: d.person_id,
-                    products: 1,
-                    role: d.role
-                }
-                personGroups[d.person_id] = person;
-                personGroups[d.person_id].titles.push(titleGroups[d.id]);
-
-                }
-            })
-            const formattedData = []
-            Object.keys(personGroups).forEach(d => {
-                formattedData.push(personGroups[d]);
-            });
-            
-            // Sort by number of products per person
-            formattedData.sort(function(a, b){
-                if(a.products < b.products) { return 1; }
-                if(a.products > b.products) { return -1; }
-                return 0;
-            })
-            //console.log(formattedData)
-            return formattedData
         },
-        processtitleData(data_person,data_title) {
-            // calculate persons to merge for product titles
-            const personGroups = {};
-            data_person.forEach(d => {
-                if(d.person_id in personGroups){
-                personGroups[d.person_id].products = personGroups[d.person_id].products + 1;
-                }else{
-                const person = {
-                    name: d.name,
-                    id: d.person_id,
-                    products: 1,
-                    role: d.role
-                }
-                personGroups[d.person_id] = person;
-                }
-            })
-            const titleGroups = {};
-            data_title.forEach(d=>{
-                if(!(d.id in titleGroups)){
-                    const t = {
-                        first_country : d.production_countries.split(',')[0].split('[')[1].split(']')[0].split("'")[1],
-                        year : d.release_year,
-                        agec : (d.age_certification == '') ? 'No restriction' : d.age_certification,
-                        name: d.title,
-                        id: d.id,
-                        type: d.type,
-                        involve: [],
-                        runtime: d.runtime,
-                        imscore: d.imdb_score,
-                        tmscore: d.tmdb_score,
-                        popularity: Math.round(Math.min(100,parseFloat(d.tmdb_popularity))/100),
-                        num_person: 0
+        parse_data() {
+            function groupBy(objectArray, property, transform, accumulate) {
+                return objectArray.reduce(function (acc, obj) {
+                    let key = obj[property]
+                    if (transform) {
+                        key = transform(key)
                     }
-                    //if (t.agec == ''){
-                    //    t.agec = 'No restriction'
-                    //}
-                    if (parseInt(t.year)<=1990){
-                        t.year = "1990"
+                    if (accumulate) {
+                        acc[key] = accumulate(acc[key], obj);
+                    } else {
+                        if (!acc[key]) {
+                            acc[key] = []
+                        }
+                        acc[key].push(obj)
                     }
-                    titleGroups[d.id] = t;
+                    return acc
+                }, {})
+            }
+
+            // const months = 24
+            // const start_year = 2019
+            // let repository_composition = [];
+            // let company_contributed_repository_count = [];
+            // for (let i = 0; i < months; i++) {
+            //     const year = start_year + Math.floor(i / 12)
+            //     const month = 1 + (i % 12)
+            //     const last_day_of_month = new Date(year, month, 0)
+            //     const repository_composition_monthly = d3.csvParseRows(require(`../../assets/data/Repository_Composition_Ranking_MTD/Repository_Composition_Ranking_MTD_${last_day_of_month.toISOString().split('T')[0]}.csv`), (d, i) => {
+            //         return {
+            //             repo_name: d.repo_name,
+            //             company: d.company,
+            //             commits: d.commits,
+            //             month: `${year}-${month < 10 ? month : ('0' + str(month))}`,
+            //         };
+            //     });
+
+            //     const is_repository_contributed_by_company = groupBy(repository_composition_monthly, "repo_name", accumulate = (acc, entry) => acc || entry.company != "Unknown")
+
+            //     company_contributed_repository_count.push({
+            //         x: Object.entries(is_repository_contributed_by_company).filter(([key, flag]) => flag == true).length,
+            //         y: `${year}-${month < 10 ? month : ('0' + str(month))}`,
+            //     })
+
+
+            //     repository_composition = repository_composition.concat(repository_composition_monthly)
+            // }
+
+            // let commit_by_company = [];
+            // let commit_by_company_vs_noncompany = []
+            // for (let i = 0; i < months; i++) {
+            //     const year = start_year + math.floor(i / 12)
+            //     const month = 1 + (i % 12)
+            //     const last_day_of_month = new Date(year, month + 1, 0)
+            //     commit_by_company = commit_by_company.concat(d3.csvParseRows(require(`../../assets/data/OSCI_commits_ranking_MTD/OSCI_commits_ranking_MTD_${last_day_of_month.toISOString().split('T')[0]}.csv`), (d, i) => {
+            //         return {
+            //             company: d.company,
+            //             commits: d.commits,
+            //             month: `${year}-${month < 10 ? month : ('0' + str(month))}`,
+            //         };
+            //     }));
+            //     const commit_by_company_total = commit_by_company.filter((d) => d.company != "Unknown").map((d) => d.commits).sum();
+            //     commit_by_company_vs_noncompany.push({
+            //         commits_noncompany: commit_by_company.find((d) => d.company == "Unknown").commits,
+            //         commits_company: commit_by_company_total,
+            //         month: `${year}-${month < 10 ? month : ('0' + str(month))}`,
+            //     })
+            // }
+
+            const commit_company_vs_noncompany_by_month = groupBy(commitData, "month", undefined, (acc, entry) => {
+                // console.log(entry)
+                if (!acc) {
+                    acc = {}
                 }
-            })
-            const formattedData = []
-            Object.keys(titleGroups).forEach(d => {
-                data_person.forEach(e =>{
-                    if (e.id == titleGroups[d].id){
-                        titleGroups[d].num_person+=1;
-                        titleGroups[d].involve.push(personGroups[e.person_id]);
-                    }
-                })
-                formattedData.push(titleGroups[d]);
+                if (entry['Company'] == 'Unknown') {
+                    acc['noncompany'] = (acc['noncompany'] || 0) + entry['Commits']
+                } else {
+                    acc['company'] = (acc['company'] || 0) + entry['Commits']
+                }
+                return acc;
             });
-            
-            // Sort by name
-            formattedData.sort(function(a, b){
-                if(a.num_person < b.num_person) { return 1; }
-                if(a.num_person > b.num_person) { return -1; }
-                return 0;
-            })
-            //console.log(formattedData)
-            return formattedData
+            // const company_commits_in_period = 0
+            // const noncompany_commits_in_period = 0
+            // for (const [month, commits] of Object.entries(commit_by_company_vs_noncompany)) {
+            //     let date = new Date(month);
+            //     if (date >= new Date(this.dateselected[0]) && date < new Date(this.dateselected[0])) {
+            //         company_commits_in_period += commits["company"]
+            //         noncompany_commits_in_period += commits["noncompany"]
+            //     }
+            // }
+
+
+
+
+
+            // return [repository_composition, commit_by_company, commit_by_company_vs_noncompany, company_contributed_repository_count]
+
+            return [0,0, commit_company_vs_noncompany_by_month, 0]
         }
     }
 
