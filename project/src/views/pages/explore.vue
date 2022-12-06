@@ -1,12 +1,18 @@
 <template>
     <div>
-        <h3>Sunburst Here!</h3>
+        <h3>ScatterPlot</h3>
+        <ScatterPlot myChartID="topscatter" :myPlotData=testData.data></ScatterPlot>
+    </div>
+    <div class="bottombar">
+        <BarChart v-if="dataExists" @selectedyear="updateYear" myChartID="bottombar" :myBarchartData=myBarData>
+        </BarChart>
     </div>
 </template>
 <script setup>
 import BarChart from '../components/barchart.vue';
 import testData from "../../assets/data/test.json";
-import commitData from "../../assets/data/OSCI_commits_ranking_MTD.json"
+import commitData from "../../assets/data/OSCI_commits_ranking_MTD.json";
+import ScatterPlot from "../components/scatter.vue";
 </script>
 <script>
 export default {
@@ -24,6 +30,7 @@ export default {
     },
     components:{
         BarChart,
+        ScatterPlot
     },
     props:{
 

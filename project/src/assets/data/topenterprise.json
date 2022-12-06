@@ -1,16 +1,38 @@
 {
-    "project1":{
+    "batazor/hcfc":{
         "enterprize":{
-            "Google": 100,
-            "Meta": 200
+            "Renovateapp": 40153
         },
         "community":{
-            "total": 80
+            "Restyled": 42854
         }
     },
-    "project2":{
+    "brianchandotcom/liferay-portal":{
+
+    },
+    "docker-library/docs":{
+
+    },
+    "odoo/odoo":{
+
+    },
+    "mapr/hadoop-common":{
+
+    },
+    "pytorch/pytorch":{
+
+    },
+    "Automattic/wp-calypso":{
+
+    },
+    "mozilla/gecko-dev":{
+
+    },
+    "JetBrains/intellij-community":{
+
+    },
+    "tigefa4u/gitlabhq":{
 
     }
-            
-    
+
 }

@@ -51,20 +51,21 @@ export default{
 
                     // Add Y axis
             this.y = d3.scaleLinear()
-                        .domain([0, 100])
+                        .domain([0, 20])
                         .range([ this.height, 0]);
 
                     svg.append("g")
                         .call(d3.axisLeft(this.y));
+
+            this.dots = svg.append('g').selectAll("dot")
         },
         drawplot(data){
             let id= '#'+this.myChartID;
-            const svg = d3.select(id).select("svg");
+            //const svg = d3.select(id).select("svg");
 
             // Add dots
-            svg.append('g')
-                .selectAll("dot")
-                .data(data)
+            
+            this.dots.data(data)
                 .enter()
                 .append("circle")
                 .attr("cx", function (d) { return this.x(d.x); } )
