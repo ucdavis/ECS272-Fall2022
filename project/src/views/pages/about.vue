@@ -116,11 +116,11 @@ export default {
         this.extract_company_commmit()
         console.log(this.commitPieData)
         // console.log("Test Bardata", this.myBarData);
-        this.dataExists = true;
         // radar data update
         this.title_radar = "tm32982"
         this.selectedCompany = "Google"
         this.update_selected_company_info(this.selectedCompany)
+        this.dataExists = true;
     },
     mounted() {
 
@@ -190,7 +190,7 @@ export default {
                     size: commits
                 }
             })
-            this.bubbleChartSizeRef = 7000 * months;
+            this.bubbleChartSizeRef = 8000 * months;
 
         },
         parse_data() {

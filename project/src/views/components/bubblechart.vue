@@ -127,8 +127,8 @@ export default {
 
             let color = d3.scaleOrdinal().domain(data.map((x) => x.name)).range(d3.schemeCategory10);
 
-            data = [...data].slice(0, rows * cols);
             data.sort((a, b) => -a.size + b.size);
+            data = [...data].slice(0, rows * cols);
             for (let i = 0; i < data.length; i++) {
                 data[i]["order"] = i
             }
@@ -165,7 +165,7 @@ export default {
                 })
                 .attr("font-family", "sans-serif")
                 .attr("font-size", function (d) {
-                    return get_r(d.size) / 3;
+                    return get_r(d.size) / 4;
                 })
                 .attr("fill", "white");
             node.on("mouseover", function (d) {
