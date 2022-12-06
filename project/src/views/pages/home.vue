@@ -94,8 +94,8 @@ export default {
             console.log("Year changed!", data)
             this.dateselected[0] = data[0];
             this.dateselected[1] = data[1];
-            const company_commits_in_period = 0
-            const noncompany_commits_in_period = 0
+            let company_commits_in_period = 0
+            let noncompany_commits_in_period = 0
             for (const [month, commits] of Object.entries(this.commit_by_company_vs_noncompany)) {
                 let date = new Date(month);
                 if (date >= new Date(this.dateselected[0]) && date < new Date(this.dateselected[1])) {
