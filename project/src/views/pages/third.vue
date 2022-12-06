@@ -5,7 +5,7 @@
     <div class="column middle">
         <BubbleChart v-if="dataExists" myChartID="middlepie"></BubbleChart>
     </div>
-    <div class="bottom bar">
+    <div class="bottombar">
         <BarChart v-if="dataExists" @selectedyear="updateYear" myChartID="bottombar" :myBarchartData=myBarData></BarChart>
     </div>
 </template>

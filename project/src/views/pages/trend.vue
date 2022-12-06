@@ -2,7 +2,7 @@
     <div class = "column middle">
         <h3>ScatterPlot Here!</h3>
     </div>
-    <div class="bottom bar">
+    <div class="bottombar">
         <BarChart v-if="dataExists" @selectedyear="updateYear" myChartID="bottombar" :myBarchartData=myBarData>
         </BarChart>
     </div>
@@ -40,7 +40,9 @@ export default {
 
     },
     methods:{
+        updateYear(){
 
+        },
     }
 }
 </script>

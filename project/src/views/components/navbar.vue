@@ -28,7 +28,7 @@
 
 <script setup lang="ts">
     import {ref} from 'vue';
-    const selectedKey = ref(['1'])
+    var selectedKey = ref(['1'])
 
 
 </script>
