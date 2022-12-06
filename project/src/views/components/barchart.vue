@@ -100,8 +100,8 @@
                 .attr('d', line(data))
                 .attr("fill", "none")
                 .attr("stroke","steelblue")
-                .attr('stroke-width', 3)
-                .attr('stroke', 'red');
+                .attr('stroke-width', 4)
+                .attr('stroke', 'green');
                 
                 const xAxis = g => g
                     .attr("transform", `translate(0,${height - margin.bottom})`)

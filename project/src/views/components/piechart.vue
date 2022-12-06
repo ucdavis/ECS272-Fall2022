@@ -122,7 +122,7 @@ export default {
                     d3.select(this)
                     .transition()
                     .duration(100)
-                    .attr("font-size", "18px")
+                    .attr("font-size", "10px")
                 });
         }
     }
