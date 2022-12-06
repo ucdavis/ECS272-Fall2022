@@ -1,6 +1,6 @@
 <template>
     <div class = "bottombar">
-        <h3>ScatterPlot Here!</h3>
+        <h3>Enterprise Involvment vs Repository Activity</h3>
         <ScatterPlot v-if="dataExists" myChartID="topscatter" :myPlotData=scatterChartData></ScatterPlot>
     </div>
     <div class="bottombar">

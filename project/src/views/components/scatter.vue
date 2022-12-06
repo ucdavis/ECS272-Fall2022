@@ -37,7 +37,7 @@ export default {
             let id = '#' + this.myChartID;
             var margin = { top: 10, right: 30, bottom: 20, left: 60 },
                 width = 1000 - margin.left - margin.right,
-                height = 400 - margin.top - margin.bottom;
+                height = 380 - margin.top - margin.bottom;
 
                 d3.select(id).select("svg").remove();
             const svg = d3.select(id).append("svg")
@@ -48,7 +48,7 @@ export default {
                 .attr("transform",
                     "translate(" + margin.left + "," + margin.top + ")");
             this.xs = d3.scaleLinear()
-                .domain([0, 5000])
+                .domain([50, 2000])
                 .range([0, width]);
 
             svg.append("g")
@@ -73,6 +73,7 @@ export default {
             // Add dots
             var t = d3.transition()
                 .duration(1000);
+                data = data.filter((p) => p.x>50)
             let selection = d3.select(id+"scatter").selectAll("dot")
                 .data(data, function (d) { return d.id; })
             
@@ -80,7 +81,7 @@ export default {
                 .append("circle")
                 .attr("cx", function (d) { return vueThis.xs(d.x); })
                 .attr("cy", function (d) { return vueThis.ys(d.y); })
-                .attr("r", 1.5)
+                .attr("r", 2)
                 .style("fill", "#69b3a2")
                 selection.exit().remove();
 
