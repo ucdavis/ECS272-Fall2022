@@ -88,7 +88,7 @@ export default {
             })
             //return
             this.titleGroups_selected = selected;
-            //console.log("Year updated", this.titleGroups, this.titleGroups_selected)
+            console.log("Year updated", this.titleGroups, this.titleGroups_selected)
         },
         getSon(data){
             //console.log("Father get the data:", data)
