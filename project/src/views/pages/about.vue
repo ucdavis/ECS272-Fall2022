@@ -1,20 +1,24 @@
 <template>
-    <h2>Netflix Movie and Shows Dataset</h2>
+    <h2>Top Enterprise that contribute to </h2>
     <div class="column side">
         <!--<div class="card">
             <h3>Staff of the Movie</h3>
             <NodeTree v-if="dataExists" :myNodeData=title_nameindex myChartID="upperleft"></NodeTree>
         </div>-->
-    </div>
-    <div class="column middle">
         <div class="card">
             <h3>Sunburst Chart showing all titles</h3>
             <Sunburst v-if="dataExists" @givefather="getSon" myChartID="upperright" :mysundata=titleGroups_selected></Sunburst>
         </div>
     </div>
+    <div class="column middle">
+        <div class="card">
+            <h3>RadarChart of the scores of Movie/Show</h3>
+            <RadarChart v-if="dataExists" :myRadarData=title_idindex :showID=title_radar myChartID="upperleftradar"></RadarChart>
+        </div>
+    </div>
     <div class="bottombar">
         
-        <h3 align="left">Barchart of number of products each year </h3>
+        <h3>Barchart of number of products each year </h3>
         <BarChart v-if="dataExists" @selectedyear="updateYear" :myBarchartData=myBarData myChartID="barbottom"/>
         
         
@@ -302,16 +306,16 @@ export default {
 
     .column.side {
     width: 50%;
-    height: 50%;
+    height: 60%;
     }
 
     .column.middle {
     width: 50%;
-    height: 50%;
+    height: 60%;
     }
     .bottombar{
         width: 100%;
-        height: 30%;
+        height: 20%;
     }
     .card {
     background-color: white;
