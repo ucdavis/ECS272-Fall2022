@@ -12,7 +12,38 @@ import BarChart from '../components/barchart.vue';
 import testData from "../../assets/data/test.json";
 import commitData from "../../assets/data/OSCI_commits_ranking_MTD.json"
 </script>
+<script>
+export default {
+    data() {
+        return {
+            dataExists: false,
+            myBarData: Array,
+            commitPieData: Array,
+            commit_by_company_vs_noncompany: Object,
+            //data_person = d3.csvParse(FileAttachment().text(), d3.autoType)
+            //data_title = d3.csvParse(FileAttachment().text(), d3.autoType)
+            //actorGroups : Array,
+            dateselected: ['2019-01', '2019-06'],
+        }
+    },
+    components:{
+        BarChart,
+    },
+    props:{
 
+    },
+    created(){
+        this.myBarData = testData.data;
+        this.dataExists = true;
+    },
+    mounted(){
+
+    },
+    methods:{
+
+    }
+}
+</script>
 <style scoped>
     body {
     margin: 0;

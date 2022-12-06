@@ -128,7 +128,7 @@ export default {
 
         },
         updateYear(data) {
-            console.log("Year changed!", data)
+            //console.log("Year changed!", data)
             this.dateselected[0] = data[0];
             this.dateselected[1] = data[1];
             this.extract_company_commit()
