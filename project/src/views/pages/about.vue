@@ -5,9 +5,10 @@
             <h3>Staff of the Movie</h3>
             <NodeTree v-if="dataExists" :myNodeData=title_nameindex myChartID="upperleft"></NodeTree>
         </div>-->
-            
+
         <div class="card">
-            <BubbleChart v-if="dataExists" myChartID="companybubble" @selectedEntry="updateCompany"/>
+            <BubbleChart v-if="dataExists" myChartID="companybubble" @selectedEntry="updateCompany"
+                :myBubbleData=bubbleChartData :refSize=bubbleChartSizeRef />
             <!--<Sunburst v-if="dataExists" @givefather="getSon" myChartID="upperright" :mysundata=titleGroups_selected>
 
             </Sunburst>-->
@@ -18,14 +19,41 @@
             <!--<h3>RadarChart of the scores of Movie/Show</h3>
             <RadarChart v-if="dataExists" :myRadarData=title_idindex :showID=title_radar myChartID="upperleftradar"></RadarChart>
             -->
+            <h3>Now viewing : {{ this.selectedCompany }}</h3>
+            <table>
+                <tr>
+                    <th>Metric</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Commits</td>
+                    <td>{{ this.bubbleChartData.find((x) => x.name == this.selectedCompany).size }}</td>
+                </tr>
+                <tr>
+                    <td>Contributed Repository Count</td>
+                    <td>{{ this.selected_company_info.repo_count }}</td>
+                </tr>
+                <tr>
+                    <td>Community Size </td>
+                    <td>{{ this.selected_company_info.community }}</td>
+                </tr>
+                <tr>
+                    <td>Active Contributors </td>
+                    <td>{{ this.selected_company_info.contributors }}</td>
+                </tr>
+                <tr>
+                    <td>Top Repository Contributed </td>
+                    <td>{{ this.selected_company_info.repos[0][0] }} (Commits: {{ this.selected_company_info.repos[0][1] }})</td>
+                </tr>
+            </table>
         </div>
     </div>
     <div class="bottombar">
-        
+
         <h1>Number of commits </h1>
-        <BarChart v-if="dataExists" @selectedyear="updateYear" :myBarchartData=myBarData myChartID="barbottom"/>
-        
-        
+        <BarChart v-if="dataExists" @selectedyear="updateYear" :myBarchartData=myBarData myChartID="barbottom" />
+
+
     </div>
 </template>
 
@@ -46,18 +74,23 @@ import person_csvPath from '../../assets/data/credits.csv';
 import title_csvPath from '../../assets/data/titles.csv';
 import testData from "../../assets/data/test.json";
 import commitData from "../../assets/data/OSCI_commits_ranking_MTD.json"
+import repositoryCompositionData from "../../assets/data/Repository_Composition_Ranking_MTD.json"
+import communityData from "../../assets/data/OSCI_ranking_MTD.json"
 
 export default {
-    data(){
+    data() {
         return {
             dataExists: false,
             myBarData: Array,
+            bubbleChartData: Array,
+            bubbleChartSizeRef: Number,
             //commitPieData: Array,
-            commit_by_company_vs_noncompany: Object,
+            commit_company_by_month: Object,
             //data_person = d3.csvParse(FileAttachment().text(), d3.autoType)
             //data_title = d3.csvParse(FileAttachment().text(), d3.autoType)
             //actorGroups : Array,
             dateselected: ['2019-01', '2019-06'],
+            selectedCompany: String,
             titleGroups: {},
             titleGroups_selected: {},
             //fdata_person : Array,
@@ -65,18 +98,19 @@ export default {
             title_nameindex: Object,
             title_idindex: Object,
             title_radar: String,
+            selected_company_info: Object
         }
     },
     components: {
-    BarChart,
-    //Piechart,
-    //Sunburst,
-    //NodeTree,
-    RadarChart
-},
-    created(){
-        const [repository_composition, commit_by_company, commit_by_company_vs_noncompany, company_contributed_repository_count] = this.parse_data()
-        this.commit_by_company_vs_noncompany = commit_by_company_vs_noncompany
+        BarChart,
+        //Piechart,
+        //Sunburst,
+        //NodeTree,
+        RadarChart
+    },
+    created() {
+        const commit_by_company_vs_noncompany = this.parse_data()
+        this.commit_company_by_month = commit_by_company_vs_noncompany
         this.myBarData = testData.data;
         this.commitPieData = [{ date: "Enterprise", count: 1 }, { date: "Community", count: 1 }];
         this.extract_company_commmit()
@@ -85,59 +119,78 @@ export default {
         this.dataExists = true;
         // radar data update
         this.title_radar = "tm32982"
-        
+        this.selectedCompany = "Google"
+        this.update_selected_company_info(this.selectedCompany)
     },
-    mounted(){
+    mounted() {
 
     },
     methods: {
-        updateYear(data){
+        updateYear(data) {
             console.log("Year changed!", data)
-            let selected = {}
-            Object.keys(this.titleGroups).forEach(k =>{
-                if (k>data[0] & k<data[1]){
-                    selected[k] = this.titleGroups[k]
-                }
-            })
-            //return
-            this.titleGroups_selected = selected;
+            this.dateselected[0] = data[0];
+            this.dateselected[1] = data[1];
+            this.extract_company_commmit()
+            this.update_selected_company_info(this.selectedCompany)
             //console.log("Year updated", this.titleGroups, this.titleGroups_selected)
         },
-        updateCompany(data){
+        updateCompany(data) {
             console.log("Year changed!", data)
-            let selected = {}
-            Object.keys(this.titleGroups).forEach(k =>{
-                if (k>data[0] & k<data[1]){
-                    selected[k] = this.titleGroups[k]
-                }
-            })
             //return
-            this.titleGroups_selected = selected;
+            this.selectedCompany = data
+            this.update_selected_company_info(this.selectedCompany)
             //console.log("Year updated", this.titleGroups, this.titleGroups_selected)
         },
-        
-        groupBy(objectArray, property) {            
+
+        groupBy(objectArray, property) {
             return objectArray.reduce(function (acc, obj) {
                 let key = obj[property]
                 if (!acc[key]) {
-                acc[key] = []
+                    acc[key] = []
                 }
                 acc[key].push(obj)
                 return acc
             }, {})
         },
         extract_company_commmit() {
-            let company_commits_in_period = 0
-            let noncompany_commits_in_period = 0
-            for (const [month, commits] of Object.entries(this.commit_by_company_vs_noncompany)) {
+            function groupBy(objectArray, property, transform, accumulate) {
+                return objectArray.reduce(function (acc, obj) {
+                    let key = obj[property]
+                    if (transform) {
+                        key = transform(key)
+                    }
+                    if (accumulate) {
+                        acc[key] = accumulate(acc[key], obj);
+                    } else {
+                        if (!acc[key]) {
+                            acc[key] = []
+                        }
+                        acc[key].push(obj)
+                    }
+                    return acc
+                }, {})
+            }
+            let commits_by_company = {};
+            let months = 0;
+            for (const [month, commit_data] of Object.entries(this.commit_company_by_month)) {
                 // console.log(commits)
                 let date = new Date(month);
                 if (date >= new Date(this.dateselected[0]) && date < new Date(this.dateselected[1])) {
-                    company_commits_in_period += commits["company"]
-                    noncompany_commits_in_period += commits["noncompany"]
+                    months += 1;
+                    for (const commit_entry of commit_data) {
+                        const company = commit_entry["Company"]
+                        commits_by_company[company] = (commits_by_company[company] || 0) + commit_entry["Commits"]
+
+                    }
                 }
             }
-            this.commitPieData = [{ date: "Enterprise", count: company_commits_in_period }, { date: "Community", count: noncompany_commits_in_period }]
+            this.bubbleChartData = Object.entries(commits_by_company).map(([company, commits]) => {
+                return {
+                    name: company,
+                    size: commits
+                }
+            })
+            this.bubbleChartSizeRef = 7000 * months;
 
         },
         parse_data() {
@@ -159,84 +212,50 @@ export default {
                 }, {})
             }
 
-            // const months = 24
-            // const start_year = 2019
-            // let repository_composition = [];
-            // let company_contributed_repository_count = [];
-            // for (let i = 0; i < months; i++) {
-            //     const year = start_year + Math.floor(i / 12)
-            //     const month = 1 + (i % 12)
-            //     const last_day_of_month = new Date(year, month, 0)
-            //     const repository_composition_monthly = d3.csvParseRows(require(`../../assets/data/Repository_Composition_Ranking_MTD/Repository_Composition_Ranking_MTD_${last_day_of_month.toISOString().split('T')[0]}.csv`), (d, i) => {
-            //         return {
-            //             repo_name: d.repo_name,
-            //             company: d.company,
-            //             commits: d.commits,
-            //             month: `${year}-${month < 10 ? month : ('0' + str(month))}`,
-            //         };
-            //     });
-
-            //     const is_repository_contributed_by_company = groupBy(repository_composition_monthly, "repo_name", accumulate = (acc, entry) => acc || entry.company != "Unknown")
-
-            //     company_contributed_repository_count.push({
-            //         x: Object.entries(is_repository_contributed_by_company).filter(([key, flag]) => flag == true).length,
-            //         y: `${year}-${month < 10 ? month : ('0' + str(month))}`,
-            //     })
-
-
-            //     repository_composition = repository_composition.concat(repository_composition_monthly)
-            // }
-
-            // let commit_by_company = [];
-            // let commit_by_company_vs_noncompany = []
-            // for (let i = 0; i < months; i++) {
-            //     const year = start_year + math.floor(i / 12)
-            //     const month = 1 + (i % 12)
-            //     const last_day_of_month = new Date(year, month + 1, 0)
-            //     commit_by_company = commit_by_company.concat(d3.csvParseRows(require(`../../assets/data/OSCI_commits_ranking_MTD/OSCI_commits_ranking_MTD_${last_day_of_month.toISOString().split('T')[0]}.csv`), (d, i) => {
-            //         return {
-            //             company: d.company,
-            //             commits: d.commits,
-            //             month: `${year}-${month < 10 ? month : ('0' + str(month))}`,
-            //         };
-            //     }));
-            //     const commit_by_company_total = commit_by_company.filter((d) => d.company != "Unknown").map((d) => d.commits).sum();
-            //     commit_by_company_vs_noncompany.push({
-            //         commits_noncompany: commit_by_company.find((d) => d.company == "Unknown").commits,
-            //         commits_company: commit_by_company_total,
-            //         month: `${year}-${month < 10 ? month : ('0' + str(month))}`,
-            //     })
-            // }
-
-            const commit_company_vs_noncompany_by_month = groupBy(commitData, "month", undefined, (acc, entry) => {
-                // console.log(entry)
-                if (!acc) {
-                    acc = {}
+            const commit_company_by_month = groupBy(commitData.filter((x) => x["Company"] != 'Unknown'), "month", undefined, undefined);
+            return commit_company_by_month
+        },
+        update_selected_company_info(company, dateselected) {
+            function groupBy(objectArray, property, transform, accumulate) {
+                return objectArray.reduce(function (acc, obj) {
+                    let key = obj[property]
+                    if (transform) {
+                        key = transform(key)
+                    }
+                    if (accumulate) {
+                        acc[key] = accumulate(acc[key], obj);
+                    } else {
+                        if (!acc[key]) {
+                            acc[key] = []
+                        }
+                        acc[key].push(obj)
+                    }
+                    return acc
+                }, {})
+            }
+            let company_repo_count = groupBy(repositoryCompositionData.filter((x) => new Date(x.month) >= new Date(this.dateselected[0]) && new Date(x.month) < new Date(this.dateselected[1])),
+                "company",
+                undefined,
+                (acc, entry) => {
+                    if (!acc) {
+                        acc = {}
+                    }
+                    acc[entry["repo_name"]] = (acc[entry["repo_name"]] || 0) + entry["Commits"]
+                    return acc
                 }
-                if (entry['Company'] == 'Unknown') {
-                    acc['noncompany'] = (acc['noncompany'] || 0) + entry['Commits']
-                } else {
-                    acc['company'] = (acc['company'] || 0) + entry['Commits']
-                }
-                return acc;
-            });
-            // const company_commits_in_period = 0
-            // const noncompany_commits_in_period = 0
-            // for (const [month, commits] of Object.entries(commit_by_company_vs_noncompany)) {
-            //     let date = new Date(month);
-            //     if (date >= new Date(this.dateselected[0]) && date < new Date(this.dateselected[0])) {
-            //         company_commits_in_period += commits["company"]
-            //         noncompany_commits_in_period += commits["noncompany"]
-            //     }
-            // }
+            )
+            console.log(company_repo_count)
+            let repos = Object.entries(company_repo_count[company])
+            repos.sort((a,b) => -a[1] + b[1])
 
-
-
-
-
-            // return [repository_composition, commit_by_company, commit_by_company_vs_noncompany, company_contributed_repository_count]
-
-            return [0,0, commit_company_vs_noncompany_by_month, 0]
+            let relevantCommunityData = communityData.filter((x) => x.Company == company && new Date(x.month) >= new Date(this.dateselected[0]) && new Date(x.month) < new Date(this.dateselected[1]))
+            console.log("updated")
+            this.selected_company_info = {
+                repo_count: Object.keys(company_repo_count[company]).length,
+                repos: repos,
+                community: Math.max(...relevantCommunityData.map((x) => x["Total community"])),
+                contributors: Math.max(...relevantCommunityData.map((x) => x["Active contributors"])),
+            }
         }
     }
 
@@ -244,41 +263,47 @@ export default {
 
 </script>
 <style scoped>
-    body {
+body {
     margin: 0;
-    }
-    .column {
+}
+
+.column {
     float: left;
     padding: 10px;
-    }
+}
 
-    .column.side {
+.column.side {
     width: 50%;
     height: 55%;
-    }
+}
 
-    .column.middle {
+.column.middle {
     width: 50%;
     height: 55%;
-    }
-    .bottombar{
-        width: 100%;
-        height: 25%;
-    }
-    .card {
+}
+
+.bottombar {
+    width: 100%;
+    height: 25%;
+}
+
+.card {
     background-color: white;
     padding: 5px;
     margin-top: 5px;
-    }
+}
 
-    .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-    }
+}
+
 @media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
+
+    .column.side,
+    .column.middle {
+        width: 100%;
+    }
 }
 </style>

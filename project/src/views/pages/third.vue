@@ -58,6 +58,71 @@ export default {
             this.dateselected[1] = data[1];
             console.log("Year updated", this.dateselected)
         },
+
+        extract_repository_commmit() {
+            function groupBy(objectArray, property, transform, accumulate) {
+                return objectArray.reduce(function (acc, obj) {
+                    let key = obj[property]
+                    if (transform) {
+                        key = transform(key)
+                    }
+                    if (accumulate) {
+                        acc[key] = accumulate(acc[key], obj);
+                    } else {
+                        if (!acc[key]) {
+                            acc[key] = []
+                        }
+                        acc[key].push(obj)
+                    }
+                    return acc
+                }, {})
+            }
+            let commits_by_company = {};
+            let months = 0;
+            for (const [month, commit_data] of Object.entries(this.commit_company_by_month)) {
+                // console.log(commits)
+                let date = new Date(month);
+                if (date >= new Date(this.dateselected[0]) && date < new Date(this.dateselected[1])) {
+                    months +=1;
+                    for (const commit_entry of commit_data) {
+                        const company = commit_entry["Company"]
+                        commits_by_company[company] = (commits_by_company[company] || 0) + commit_entry["Commits"]
+
+                    }
+                }
+            }
+            this.bubbleChartData = Object.entries(commits_by_company).map(([company, commits]) => {
+                return {
+                    name: company,
+                    size: commits
+                }
+            })
+            this.bubbleChartSizeRef = 7000 * months;
+
+        },
+
+        parse_data() {
+            function groupBy(objectArray, property, transform, accumulate) {
+                return objectArray.reduce(function (acc, obj) {
+                    let key = obj[property]
+                    if (transform) {
+                        key = transform(key)
+                    }
+                    if (accumulate) {
+                        acc[key] = accumulate(acc[key], obj);
+                    } else {
+                        if (!acc[key]) {
+                            acc[key] = []
+                        }
+                        acc[key].push(obj)
+                    }
+                    return acc
+                }, {})
+            }
+
+            const commit_company_by_month = groupBy(commitData.filter((x) => x["Company"] != 'Unknown'), "month", undefined, undefined);
+            return commit_company_by_month
+        }
     }
 }
 </script>

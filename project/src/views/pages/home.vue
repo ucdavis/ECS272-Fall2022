@@ -157,55 +157,6 @@ export default {
                 }, {})
             }
 
-            // const months = 24
-            // const start_year = 2019
-            // let repository_composition = [];
-            // let company_contributed_repository_count = [];
-            // for (let i = 0; i < months; i++) {
-            //     const year = start_year + Math.floor(i / 12)
-            //     const month = 1 + (i % 12)
-            //     const last_day_of_month = new Date(year, month, 0)
-            //     const repository_composition_monthly = d3.csvParseRows(require(`../../assets/data/Repository_Composition_Ranking_MTD/Repository_Composition_Ranking_MTD_${last_day_of_month.toISOString().split('T')[0]}.csv`), (d, i) => {
-            //         return {
-            //             repo_name: d.repo_name,
-            //             company: d.company,
-            //             commits: d.commits,
-            //             month: `${year}-${month < 10 ? month : ('0' + str(month))}`,
-            //         };
-            //     });
-
-            //     const is_repository_contributed_by_company = groupBy(repository_composition_monthly, "repo_name", accumulate = (acc, entry) => acc || entry.company != "Unknown")
-
-            //     company_contributed_repository_count.push({
-            //         x: Object.entries(is_repository_contributed_by_company).filter(([key, flag]) => flag == true).length,
-            //         y: `${year}-${month < 10 ? month : ('0' + str(month))}`,
-            //     })
-
-
-            //     repository_composition = repository_composition.concat(repository_composition_monthly)
-            // }
-
-            // let commit_by_company = [];
-            // let commit_by_company_vs_noncompany = []
-            // for (let i = 0; i < months; i++) {
-            //     const year = start_year + math.floor(i / 12)
-            //     const month = 1 + (i % 12)
-            //     const last_day_of_month = new Date(year, month + 1, 0)
-            //     commit_by_company = commit_by_company.concat(d3.csvParseRows(require(`../../assets/data/OSCI_commits_ranking_MTD/OSCI_commits_ranking_MTD_${last_day_of_month.toISOString().split('T')[0]}.csv`), (d, i) => {
-            //         return {
-            //             company: d.company,
-            //             commits: d.commits,
-            //             month: `${year}-${month < 10 ? month : ('0' + str(month))}`,
-            //         };
-            //     }));
-            //     const commit_by_company_total = commit_by_company.filter((d) => d.company != "Unknown").map((d) => d.commits).sum();
-            //     commit_by_company_vs_noncompany.push({
-            //         commits_noncompany: commit_by_company.find((d) => d.company == "Unknown").commits,
-            //         commits_company: commit_by_company_total,
-            //         month: `${year}-${month < 10 ? month : ('0' + str(month))}`,
-            //     })
-            // }
-
             const commit_company_vs_noncompany_by_month = groupBy(commitData, "month", undefined, (acc, entry) => {
                 // console.log(entry)
                 if (!acc) {
