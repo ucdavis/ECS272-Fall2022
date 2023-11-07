@@ -1,0 +1,38 @@
+{
+    "batazor/hcfc":{
+        "enterprize":{
+            "Renovateapp": 40153
+        },
+        "community":{
+            "Restyled": 42854
+        }
+    },
+    "brianchandotcom/liferay-portal":{
+
+    },
+    "docker-library/docs":{
+
+    },
+    "odoo/odoo":{
+
+    },
+    "mapr/hadoop-common":{
+
+    },
+    "pytorch/pytorch":{
+
+    },
+    "Automattic/wp-calypso":{
+
+    },
+    "mozilla/gecko-dev":{
+
+    },
+    "JetBrains/intellij-community":{
+
+    },
+    "tigefa4u/gitlabhq":{
+
+    }
+
+}

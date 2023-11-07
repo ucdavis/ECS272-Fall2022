@@ -1,0 +1,476 @@
+Company,License,Commits
+Renovateapp,mit,1441
+Google,other,519
+Microsoft,mit,447
+Renovateapp,apache-2.0,372
+Google,apache-2.0,361
+Bitnami,other,336
+Renovateapp,agpl-3.0,291
+Red Hat,apache-2.0,232
+Renovateapp,other,225
+Red Hat,other,219
+Infosiftr,mit,216
+Travis CI,mit,196
+Facebook,other,153
+Microsoft,cc-by-4.0,148
+Intel,other,141
+IBM,apache-2.0,139
+Red Hat,gpl-2.0,136
+Pivotal,apache-2.0,136
+Red Hat,gpl-3.0,127
+GitHub,gpl-3.0,118
+Palo Alto Networks,mit,109
+Cloudera,apache-2.0,108
+Intel,apache-2.0,98
+Amazon,apache-2.0,93
+GitHub,mit,89
+Microsoft,apache-2.0,85
+Microsoft,other,84
+Google,mit,80
+Huawei,other,79
+Google,bsd-3-clause,76
+Mozilla,other,71
+Travis CI,apache-2.0,69
+SUSE,other,68
+Gradle,apache-2.0,64
+VMware,apache-2.0,63
+JetBrains,apache-2.0,63
+IBM,mit,55
+Tencent,other,54
+Travis CI,other,54
+Kaltura,agpl-3.0,50
+Renovateapp,gpl-3.0,50
+Mozilla,mpl-2.0,49
+GitHub,agpl-3.0,49
+Obvious,mit,48
+Yandex,apache-2.0,48
+WIX,mit,48
+Kitware,other,47
+Mellanox Technologies,other,46
+SUSE,apache-2.0,46
+Polidea,apache-2.0,46
+Amazon,mit,46
+Facebook,mit,44
+Snyk,mit,41
+Salesforce,bsd-3-clause,41
+Confluent,apache-2.0,40
+IBM,other,39
+Travis CI,mpl-2.0,39
+Intel,bsd-3-clause,38
+SAP,apache-2.0,37
+Travis CI,gpl-3.0,35
+Julia Computing,mit,34
+SUSE,gpl-2.0,33
+Tencent,mit,33
+GitHub,apache-2.0,32
+Nextcloud,agpl-3.0,32
+Linaro,other,32
+Liferay,other,30
+Odoo,other,30
+Infosiftr,apache-2.0,29
+Amazon,mit-0,29
+Travis CI,agpl-3.0,28
+CircleCI,mit,28
+Huawei,bsd-3-clause,28
+JankariTech,agpl-3.0,26
+Red Hat,mit,26
+Verizon Media,other,25
+ARM,other,25
+Kitware,bsd-3-clause,25
+Red Hat,lgpl-3.0,25
+SAP,other,25
+Facebook,apache-2.0,25
+Oracle,other,24
+Renovateapp,0bsd,24
+SecOps Solutions,mit,24
+Travis CI,bsd-2-clause,23
+NVidia,apache-2.0,23
+Netflix,apache-2.0,23
+Acsone,mit,22
+Uber,mit,22
+DigitalOcean,apache-2.0,22
+GitHub,other,21
+Palantir,apache-2.0,21
+Bootlin,other,21
+NVidia,unlicense,20
+mongoDB,apache-2.0,20
+LG Electronics,mit,20
+Mellanox Technologies,apache-2.0,20
+Google,bsd-2-clause,20
+Uber,apache-2.0,20
+Binary Group,apache-2.0,20
+ScyllaDB,apache-2.0,20
+EPAM,apache-2.0,20
+Open Robotics,apache-2.0,19
+Eficent,agpl-3.0,19
+Yahoo,apache-2.0,19
+AMD,other,19
+mongoDB,other,19
+AMD,mit,19
+Pixel & Tonic,other,18
+Broadcom,other,18
+Automattic,gpl-2.0,18
+Digital Asset,apache-2.0,18
+Adguard,lgpl-3.0,18
+Cisco Systems,gpl-3.0,18
+Acsone,other,17
+Amazon,other,17
+Renovateapp,bsd-2-clause,17
+Huawei,apache-2.0,17
+Block.one,mit,17
+Camptocamp,wtfpl,16
+Elastic,other,16
+Pyup,mit,16
+Netflix,mit,16
+Apple,apache-2.0,16
+Adguard,gpl-3.0,16
+PTV Group,isc,16
+Canonical,apache-2.0,16
+IBM,unlicense,16
+NVidia,other,16
+EPAM,mit,15
+Bitnami,apache-2.0,15
+ARM,apache-2.0,15
+Cisco Systems,apache-2.0,14
+Travis CI,bsd-3-clause,14
+ScyllaDB,agpl-3.0,14
+Snyk,other,14
+Red Hat,lgpl-2.1,14
+Twitter,mit,14
+Arbisoft,agpl-3.0,14
+Alibaba,mit,14
+Goldman Sachs,apache-2.0,13
+Baidu,apache-2.0,13
+Intel,mit,13
+Bloomberg,other,13
+Renovateapp,zlib,13
+Canonical,other,13
+Alibaba,apache-2.0,13
+Synopsys,other,13
+Huawei,mit,13
+Siemens,other,12
+Amazon,gpl-3.0,12
+Balena,apache-2.0,12
+CircleCI,mpl-2.0,12
+Travis CI,cc-by-sa-4.0,12
+Collabora,agpl-3.0,12
+Unity Technologies,other,12
+Twilio,mit,12
+LinkedIn,apache-2.0,12
+Brave,mpl-2.0,12
+Red Hat,bsd-3-clause,11
+Collabora,gpl-3.0,11
+Google,gpl-3.0,11
+Linaro,gpl-3.0,11
+Wind River,other,11
+Kitware,apache-2.0,11
+TI,other,11
+Stripe,apache-2.0,10
+Accenture,mit,10
+Accenture,apache-2.0,10
+New Relic,gpl-2.0,10
+Samsung,apache-2.0,10
+Pivotal,mit,10
+Square,apache-2.0,10
+LINE Corporation,apache-2.0,10
+Samsung,other,9
+Renovateapp,bsd-3-clause,9
+Sony,other,9
+Percona,gpl-2.0,9
+Cisco Systems,other,9
+Cloudfare,mit,9
+Adobe,osl-3.0,9
+Datadoghq,bsd-3-clause,9
+VMware,mit,9
+Microsoft,gpl-3.0,9
+Atlassian,mit,9
+Chef,apache-2.0,9
+Binary Group,other,8
+BBC,apache-2.0,8
+ThoughtWorks,apache-2.0,8
+NXP,other,8
+Travis CI,lgpl-3.0,8
+CircleCI,other,8
+Travis CI,gpl-2.0,8
+Mozilla,apache-2.0,8
+Test.com,mit,8
+Andela,mit,8
+SAP,mit,8
+ARM,mit,8
+Apple,other,7
+Oracle,apache-2.0,7
+SUSE,gpl-3.0,7
+Lyft,apache-2.0,7
+VMware,other,7
+NXP,mit,7
+Pyup,gpl-3.0,7
+ConsenSys,apache-2.0,7
+Sentry,other,7
+Gofore,epl-1.0,7
+RStudio,other,7
+Cisco Systems,mit,7
+PingCAP,apache-2.0,7
+GitHub,unlicense,7
+ArangoDB,apache-2.0,7
+Broadcom,mit,7
+Pyup,bsd-3-clause,7
+Uber,other,6
+Equinor,gpl-3.0,6
+Alibaba,other,6
+Alibaba,gpl-2.0,6
+LabKey,other,6
+Salesforce,apache-2.0,6
+Mapbox,cc0-1.0,6
+Shopify,other,6
+Silverstripe,bsd-3-clause,6
+Facebook,afl-3.0,6
+CGI,mit,6
+Twitter,apache-2.0,6
+Adobe,mit,6
+EuroLinux,gpl-2.0,6
+Netflix,other,6
+Tencent,apache-2.0,6
+Pyup,apache-2.0,6
+Snyk,apache-2.0,6
+Salesforce,mit,5
+Renovateapp,unlicense,5
+Pyup,bsd-2-clause,5
+Cockroachlabs,other,5
+Ant Financial,apache-2.0,5
+Facebook,gpl-2.0,5
+Travis CI,isc,5
+Collabora,lgpl-2.1,5
+SiFive,other,5
+Instructure,mit,5
+Microsoft,bsd-2-clause,5
+D2iQ,apache-2.0,5
+Kainos,mit,5
+Linutronix,other,5
+Microchip Technology,other,5
+Yunion,apache-2.0,5
+ESRI,other,5
+Azavea,mit,5
+Camptocamp,agpl-3.0,5
+Atlassian,other,5
+Grafana,agpl-3.0,5
+Google,cc-by-4.0,4
+GitLab,apache-2.0,4
+HERE,mit,4
+ThoughtWorks,mit,4
+Accenture,other,4
+CS Group,other,4
+Truss Works,mit,4
+LinkedIn,bsd-2-clause,4
+Zalando,apache-2.0,4
+Hewlett Packard Enterprise,apache-2.0,4
+Cloudfare,isc,4
+Travis CI,wtfpl,4
+Autodesk,mit,4
+Chef,other,4
+Autodesk,other,4
+Nordic Semiconductor,apache-2.0,4
+GitHub,bsd-3-clause,4
+Yandex,other,4
+GitHub,gpl-2.0,4
+Buoyant,apache-2.0,4
+Google,gpl-2.0,4
+Adobe,apache-2.0,4
+eBay,apache-2.0,4
+Spryker,mit,4
+Yahoo,other,4
+Buoyant,mit,4
+Nextcloud,gpl-3.0,4
+HashiCorp,mpl-2.0,4
+Renovateapp,isc,3
+iXsystems,bsd-2-clause,3
+Ad Hoc,other,3
+GitHub,cc-by-sa-4.0,3
+SAP,bsd-3-clause,3
+Acsone,agpl-3.0,3
+Pyup,afl-3.0,3
+WarnerMedia,apache-2.0,3
+Plotly,mit,3
+Broadcom,epl-2.0,3
+Canonical,mit,3
+New Relic,apache-2.0,3
+eBay,mit,3
+Couchbase,apache-2.0,3
+Linaro,mit,3
+Docker,apache-2.0,3
+Pyup,other,3
+Zalando,upl-1.0,3
+Collabora,other,3
+Autonomous,mit,3
+HashiCorp,mit,3
+Arbisoft,gpl-3.0,3
+Ericsson,other,3
+ARM,bsd-3-clause,3
+Puppet,apache-2.0,3
+Facebook,gpl-3.0,3
+Snyk,gpl-3.0,3
+Datadoghq,apache-2.0,3
+Snyk,epl-2.0,3
+Google,lgpl-3.0,3
+Renovateapp,mpl-2.0,3
+Cozy,agpl-3.0,3
+Verizon Media,apache-2.0,3
+Infosys Ltd,cc-by-4.0,3
+Cloudbees,mit,3
+H2O.ai,apache-2.0,3
+JetBrains,mit,2
+Intel,gpl-3.0,2
+Percona,other,2
+commercetools,mit,2
+Google,epl-1.0,2
+Nordic Semiconductor,bsd-3-clause,2
+Philips,mit,2
+Expedia Group,gpl-3.0,2
+Cockroachlabs,bsd-3-clause,2
+IBM,lgpl-3.0,2
+Indexdata,apache-2.0,2
+Snyk,agpl-3.0,2
+Travis CI,cc-by-4.0,2
+Reaktor,apache-2.0,2
+Hewlett Packard Enterprise,other,2
+Oracle,mit,2
+Microsoft,bsd-3-clause,2
+Wind River,mit,2
+Nextcloud,gpl-2.0,2
+Endlessm,other,2
+Linagora,other,2
+GitLab,mit,2
+Open Robotics,other,2
+Cloudbees,apache-2.0,2
+Sonymobile,other,2
+Amazon,bsd-3-clause,2
+Mozilla,mit,2
+Aiven,mit,2
+Bitnami,agpl-3.0,2
+Oracle,gpl-2.0,2
+Tencent,gpl-3.0,2
+Talend,mit,2
+LINE Corporation,other,2
+Lablup,lgpl-3.0,2
+Travis CI,unlicense,2
+Tencent,cc-by-4.0,2
+SAP,epl-2.0,2
+Shopify,apache-2.0,2
+WIX,apache-2.0,2
+ESRI,apache-2.0,2
+Renovateapp,gpl-2.0,2
+WSO2,apache-2.0,2
+Travis CI,epl-2.0,2
+Orange,other,2
+Samsung,mit,2
+MediaTek,other,2
+HashiCorp,bsd-3-clause,2
+Elastic,apache-2.0,2
+Synopsys,apache-2.0,2
+Apple,mit,2
+The guardian,apache-2.0,1
+Facebook,bsd-3-clause,1
+Reaktor,other,1
+Shopware,mit,1
+Palantir,lgpl-2.1,1
+Iohk,apache-2.0,1
+Luxoft,other,1
+Expedia Group,apache-2.0,1
+Percona,apache-2.0,1
+Intel,bsd-3-clause-clear,1
+Exoplatform,lgpl-3.0,1
+GatsbyJS,0bsd,1
+Grafana,apache-2.0,1
+Docker,mit,1
+Oracle,bsd-3-clause,1
+NXP,bsd-3-clause,1
+JankariTech,mit,1
+SiFive,gpl-2.0,1
+Bloomberg,mpl-2.0,1
+GitHub,lgpl-2.1,1
+Ericsson,gpl-3.0,1
+Sentry,mit,1
+HERE,other,1
+Capgemini,apache-2.0,1
+Espressif,apache-2.0,1
+Dynatrace,mit,1
+Samsung,cc-by-4.0,1
+Automattic,apache-2.0,1
+Orange,apache-2.0,1
+LunarG,other,1
+CircleCI,apache-2.0,1
+Alibaba,cc0-1.0,1
+Renovateapp,cc0-1.0,1
+Julia Computing,other,1
+Cloudfare,gpl-3.0,1
+Intel,lgpl-3.0,1
+Microsoft,gpl-2.0,1
+Bloomberg,apache-2.0,1
+Automattic,mit,1
+GitLab,other,1
+Pyup,gpl-2.0,1
+Igalia,mit,1
+Yandex,mit,1
+Igalia,other,1
+Improbable,mit,1
+Samsung,gpl-3.0,1
+MuleSoft,mit,1
+Splunk,mit,1
+Microsoft,unlicense,1
+Amazon,cc-by-sa-4.0,1
+VMware,cc-by-4.0,1
+MariaDB,other,1
+CGI,other,1
+Atomist,gpl-3.0,1
+Pyup,agpl-3.0,1
+Mapbox,bsd-3-clause,1
+TeamDev,apache-2.0,1
+Percona,agpl-3.0,1
+Citrix,other,1
+Facebook,cc-by-4.0,1
+Palo Alto Networks,gpl-3.0,1
+tweag.io,apache-2.0,1
+Renovateapp,lgpl-3.0,1
+Qt,other,1
+SUSE,mit,1
+Analog Devices,other,1
+Travis CI,cc0-1.0,1
+GitHub,isc,1
+Canonical,gpl-2.0,1
+Pyup,lgpl-3.0,1
+Joyent,mpl-2.0,1
+Ericsson,apache-2.0,1
+Travis CI,zlib,1
+Linaro,apache-2.0,1
+Collabora,apache-2.0,1
+Huawei,gpl-3.0,1
+Facebook,bsd-2-clause,1
+Autodesk,apache-2.0,1
+Baidu,mit,1
+Samsung,bsd-3-clause,1
+Baidu,cc-by-4.0,1
+Iohk,mit,1
+Palantir,other,1
+SUSE,cc-by-4.0,1
+Enalean,other,1
+RTE,mpl-2.0,1
+BBC,gpl-3.0,1
+Infosiftr,bsd-3-clause,1
+Cozy,mit,1
+Snyk,bsd-3-clause,1
+Cisco Systems,agpl-3.0,1
+Origin,mit,1
+Expedia Group,gpl-2.0,1
+Mozilla,gpl-2.0,1
+GatsbyJS,mit,1
+Travis CI,ofl-1.1,1
+STMicroelectronics,other,1
+Camunda,mit,1
+Bosch,other,1
+Orange,lgpl-2.1,1
+GitHub,wtfpl,1
+LG Electronics,other,1
+Dimagi,bsd-3-clause,1
+Yandex,gpl-3.0,1
+Azavea,apache-2.0,1
+The guardian,other,1
+LG Electronics,gpl-2.0,1

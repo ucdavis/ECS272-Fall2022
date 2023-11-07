@@ -14,7 +14,7 @@
     },
     "include": [
         "./src/**/*"
-, "../orzwang/src/views/components/dropdown.vue.ts"    ],
+    ],
     "exclude": [
         "./node_modules",
         "./src/store/**/*"

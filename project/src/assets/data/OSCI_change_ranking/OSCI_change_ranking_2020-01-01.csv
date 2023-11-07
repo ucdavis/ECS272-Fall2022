@@ -1,0 +1,202 @@
+Position Change,Company,Active contributors,Active contributors Change,Total community,Total community Change
+0,Google,21.0,0.0,310,0
+0,Microsoft,19.0,0.0,224,0
+0,Red Hat,17.0,0.0,188,0
+0,IBM,8.0,0.0,49,0
+0,Intel,6.0,0.0,105,0
+0,Pivotal,5.0,0.0,26,0
+0,GitHub,5.0,0.0,55,0
+0,Amazon,5.0,0.0,54,0
+0,Kitware,4.0,0.0,10,0
+0,SUSE,4.0,0.0,38,0
+0,Polidea,3.0,0.0,4,0
+0,Huawei,3.0,0.0,30,0
+0,Cloudera,3.0,0.0,27,0
+0,Tencent,3.0,0.0,23,0
+0,Palo Alto Networks,3.0,0.0,15,0
+0,VMware,3.0,0.0,24,0
+0,Facebook,3.0,0.0,74,0
+0,Travis CI,3.0,0.0,6,0
+0,Liferay,2.0,0.0,5,0
+0,Gradle,2.0,0.0,8,0
+0,Bitnami,2.0,0.0,3,0
+0,Mozilla,2.0,0.0,39,0
+0,Infosiftr,2.0,0.0,2,0
+0,Kaltura,2.0,0.0,12,0
+0,JetBrains,2.0,0.0,18,0
+0,CircleCI,2.0,0.0,3,0
+0,Acsone,2.0,0.0,4,0
+0,Netflix,2.0,0.0,12,0
+0,Obvious,2.0,0.0,5,0
+0,NVidia,2.0,0.0,13,0
+0,Elastic,1.0,0.0,5,0
+0,Brave,1.0,0.0,1,0
+0,Bloomberg,1.0,0.0,4,0
+0,Arbisoft,1.0,0.0,4,0
+0,Cloudfare,1.0,0.0,4,0
+0,Eficent,1.0,0.0,5,0
+0,JankariTech,1.0,0.0,2,0
+0,Binary Group,1.0,0.0,2,0
+0,Accenture,1.0,0.0,7,0
+0,Nextcloud,1.0,0.0,1,0
+0,Julia Computing,1.0,0.0,2,0
+0,Twilio,1.0,0.0,1,0
+0,Adguard,1.0,0.0,6,0
+0,Goldman Sachs,1.0,0.0,1,0
+0,Palantir,1.0,0.0,3,0
+0,Salesforce,1.0,0.0,10,0
+0,Collabora,1.0,0.0,10,0
+0,Yandex,1.0,0.0,10,0
+0,DigitalOcean,1.0,0.0,1,0
+0,Twitter,1.0,0.0,4,0
+0,Bootlin,1.0,0.0,4,0
+0,Block.one,1.0,0.0,2,0
+0,Pyup,1.0,0.0,1,0
+0,Siemens,1.0,0.0,1,0
+0,Cisco Systems,1.0,0.0,10,0
+0,Canonical,1.0,0.0,10,0
+0,Open Robotics,1.0,0.0,4,0
+0,Camptocamp,1.0,0.0,3,0
+0,Uber,1.0,0.0,14,0
+0,New Relic,1.0,0.0,3,0
+0,PTV Group,1.0,0.0,1,0
+0,Digital Asset,1.0,0.0,1,0
+0,mongoDB,1.0,0.0,12,0
+0,SecOps Solutions,1.0,0.0,1,0
+0,Verizon Media,1.0,0.0,3,0
+0,Confluent,1.0,0.0,11,0
+0,Renovateapp,1.0,0.0,1,0
+0,Snyk,1.0,0.0,3,0
+0,Mellanox Technologies,1.0,0.0,19,0
+0,LG Electronics,1.0,0.0,3,0
+0,The guardian,,,2,0
+0,Igalia,,,2,0
+0,iXsystems,,,1,0
+0,Cozy,,,1,0
+0,ARM,,,21,0
+0,Mapbox,,,2,0
+0,TeamDev,,,1,0
+0,Bosch,,,1,0
+0,Unity Technologies,,,3,0
+0,Shopware,,,1,0
+0,Talend,,,1,0
+0,Linaro,,,14,0
+0,Couchbase,,,1,0
+0,D2iQ,,,5,0
+0,Spryker,,,1,0
+0,Balena,,,3,0
+0,Adobe,,,9,0
+0,Sony,,,5,0
+0,WSO2,,,1,0
+0,Orange,,,3,0
+0,Dimagi,,,1,0
+0,Docker,,,3,0
+0,Autodesk,,,3,0
+0,Azavea,,,2,0
+0,Qt,,,1,0
+0,Buoyant,,,3,0
+0,TI,,,8,0
+0,Aiven,,,1,0
+0,EPAM,,,10,0
+0,WarnerMedia,,,1,0
+0,Puppet,,,2,0
+0,LunarG,,,1,0
+0,Stripe,,,3,0
+0,Chef,,,6,0
+0,Yahoo,,,6,0
+0,Enalean,,,1,0
+0,Percona,,,4,0
+0,Joyent,,,1,0
+0,Shopify,,,4,0
+0,Grafana,,,4,0
+0,ConsenSys,,,4,0
+0,Infosys Ltd,,,2,0
+0,Luxoft,,,1,0
+0,Oracle,,,19,0
+0,Lyft,,,3,0
+0,Sentry,,,4,0
+0,Dynatrace,,,1,0
+0,LabKey,,,1,0
+0,RStudio,,,2,0
+0,Origin,,,1,0
+0,Sonymobile,,,1,0
+0,Capgemini,,,1,0
+0,Automattic,,,7,0
+0,GatsbyJS,,,2,0
+0,Andela,,,1,0
+0,Hewlett Packard Enterprise,,,2,0
+0,Camunda,,,1,0
+0,RTE,,,1,0
+0,commercetools,,,1,0
+0,Lablup,,,1,0
+0,MediaTek,,,2,0
+0,Autonomous,,,2,0
+0,Philips,,,1,0
+0,Linagora,,,2,0
+0,Kainos,,,3,0
+0,CS Group,,,1,0
+0,Zalando,,,2,0
+0,H2O.ai,,,1,0
+0,LINE Corporation,,,5,0
+0,Wind River,,,2,0
+0,CGI,,,2,0
+0,Samsung,,,13,0
+0,STMicroelectronics,,,1,0
+0,Cockroachlabs,,,4,0
+0,Citrix,,,1,0
+0,Analog Devices,,,1,0
+0,Square,,,3,0
+0,Gofore,,,1,0
+0,Broadcom,,,12,0
+0,Plotly,,,1,0
+0,Ad Hoc,,,1,0
+0,Exoplatform,,,1,0
+0,Pixel & Tonic,,,2,0
+0,Atlassian,,,3,0
+0,ThoughtWorks,,,6,0
+0,Baidu,,,9,0
+0,AMD,,,18,0
+0,Synopsys,,,7,0
+0,Indexdata,,,1,0
+0,Improbable,,,1,0
+0,LinkedIn,,,6,0
+0,PingCAP,,,4,0
+0,GitLab,,,4,0
+0,Yunion,,,1,0
+0,Splunk,,,1,0
+0,Alibaba,,,17,0
+0,Odoo,,,14,0
+0,Cloudbees,,,2,0
+0,Iohk,,,2,0
+0,Atomist,,,1,0
+0,Equinor,,,1,0
+0,tweag.io,,,1,0
+0,Silverstripe,,,1,0
+0,ArangoDB,,,1,0
+0,NXP,,,10,0
+0,HERE,,,2,0
+0,Linutronix,,,2,0
+0,Ericsson,,,3,0
+0,Endlessm,,,2,0
+0,HashiCorp,,,4,0
+0,SAP,,,33,0
+0,MuleSoft,,,1,0
+0,Apple,,,8,0
+0,Datadoghq,,,5,0
+0,ScyllaDB,,,14,0
+0,eBay,,,4,0
+0,Ant Financial,,,4,0
+0,Espressif,,,1,0
+0,Nordic Semiconductor,,,3,0
+0,ESRI,,,4,0
+0,Expedia Group,,,4,0
+0,SiFive,,,3,0
+0,Microchip Technology,,,2,0
+0,Instructure,,,1,0
+0,Test.com,,,1,0
+0,MariaDB,,,1,0
+0,Reaktor,,,2,0
+0,Truss Works,,,2,0
+0,WIX,,,16,0
+0,BBC,,,2,0
+0,EuroLinux,,,1,0

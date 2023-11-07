@@ -1,0 +1,608 @@
+Company,Contributor,Contributor's email,Commits
+The guardian,Regis Kuckaertz,702ecba08fff1835fc54fdfc481a7e8e01ca17b8@guardian.co.uk,1
+The guardian,Rob Phillips,98aab2252b8b6aa7cd0bb97ef322056fe6acb6dc@guardian.co.uk,1
+Igalia,Carlos Alberto Lopez Perez,45a570777a6c50c2469f6b78726da35ad0c612a3@igalia.com,1
+Igalia,cathiechen,27ff641d3b607c8393359086e0d34d7faf01d7d9@igalia.com,1
+iXsystems,Ken Moore,470bc578162732ac7f9d387d34c4af4ca6e1b6f7@ixsystems.com,3
+Cozy,doubleface,0d099451edbf5d797581d87f40d0edec83ba71e3@cozycloud.cc,4
+ARM,Chris Reed,5c8e7a799cb891a0ec7887f2dd5d3bfb138b5f9c@arm.com,9
+ARM,Rob Moran,81acdfa5fb0145c878184d729157ee4cf9c5192b@arm.com,9
+ARM,Kevin Brodsky,5f74e3c951b86fbfea69f924a41b90a5a234ca94@arm.com,6
+ARM,Jerry Yu,c6cd1413a9492a82cc7fe506fb3a273f7dc9927d@arm.com,3
+ARM,Anton Kachatkou,cd707a877a534bc4aa239e6eb3e7ce576a5c599f@arm.com,3
+Kitware,Forrest Li,11d4423a8d0e2275b9f4d5550c79113564211217@kitware.com,20
+Kitware,Ben Boeckel,324c08c85a2ea316c32c8891473623125a09cc6a@kitware.com,15
+Kitware,Matt Dawkins,5711217423a5f78f24e0424ddd23f27de1aa4909@kitware.com,11
+Kitware,Patrick Avery,743342299f279e7a8c3ff5eb40671fce3e95f13a@kitware.com,10
+Kitware,Omar Padron,323d7f205a4936fc2b363db7f9f1d862f88e9e96@kitware.com,6
+Mapbox,Eliott Gray,3782a4b6233479830186a30ef2f9b9f301d5536f@mapbox.com,6
+Mapbox,Dane Springmeyer,7caf4fada912172ae38c6555f73b0fcf5f41c218@mapbox.com,1
+TeamDev,Alex Tymchenko,75cfc1262819ca35bc92b814eefdd8b3c525f28b@teamdev.com,1
+Bosch,Achim Kraus,c0aa70188c573438cac4066daa2a461a20ee3f46@bosch-si.com,1
+Polidea,Tomek,7e38c157b38712ab48554ef39b016cae59500db8@polidea.com,17
+Polidea,Jarek Potiuk,f41fb3c6021305a2b88483c10bc35385d65a7c7a@polidea.com,13
+Polidea,TobKed,f3231a1cc3659d2a5ab4bd64d87ad980e72154b6@polidea.com,10
+Polidea,Kamil Breguła,d1fe9b427c633bb95227c15cb23d7cff500f1bcf@polidea.com,3
+Polidea,Tomek Urbaszek,7e38c157b38712ab48554ef39b016cae59500db8@polidea.com,2
+Shopware,Hendrik Söbbing,78fab366ea5a49b9dc7d57af0049638d4211eeb8@shopware.com,1
+Unity Technologies,Christophe Riccio,c1ae2ca07200944f21212ed49a843c47861f2c8f@unity3d.com,9
+Unity Technologies,Levi Bard,5c89acdb7c04bd28e84a39dd595b90562186dcc4@unity3d.com,2
+Unity Technologies,ChuanXin-Unity,c2d6c4d08dbc8fd02a4bb421397c3c11dbbeaf12@unity3d.com,1
+Talend,undx,767bb6213d70a87d0d9b9b97a17b6e7bf750f619@talend.com,2
+Linaro,Adhemerval Zanella,51ff02d58cc896f1ad67af6dca38b149ddc1b88d@linaro.org,9
+Linaro,Viresh Kumar,5ff32272b3d9f86512eddc8e0af523fc6f7924e5@linaro.org,9
+Linaro,Alex Bennée,97ce1413105b2e68f811413f1ea07a68d9e5b40a@linaro.org,6
+Linaro,Linus Walleij,9cd9d802d23c0ed5e224beabf4ae4a5c478746ef@linaro.org,5
+Linaro,Joakim Bech,741f90e2a7f4d9afbad8bd50be20560f4cf38962@linaro.org,3
+Couchbase,G. Blake Meike,fb5f94695fc31b8d2390e087b0e3a197be2d3bc4@couchbase.com,3
+D2iQ,Tim Harper,fbcf19e3e699569a4900fe341b72674421e73f8b@mesosphere.com,1
+D2iQ,Mesosphere CI Robot,18800db075db0f12157a1111f56bb69431d45e15@mesosphere.io,1
+D2iQ,Alena Varkockova,1ab2cbf747a54c20fc44ad72f79e4bda4fa006e2@mesosphere.com,1
+D2iQ,Kaiwalya Joshi,286befac4b1c6753c97a1fcd8ffde1765f2e55c9@mesosphere.com,1
+D2iQ,Charles Provencher,e9273cc6a41b8b553e69b2f3074cf18e9e2c4f78@mesosphere.com,1
+Spryker,mscherer,944b30f280a7ac0dffe848575401333652faa8c3@spryker.com,4
+Balena,Alex Gonzalez,59ce0f63e40328cff03fa578b2b98f47829af4e6@balena.io,6
+Balena,Florin Sarbu,3a837a37a2ac9072a088641ec330e0e5d5b86f4e@balena.io,4
+Balena,Sebastian Panceac,db043b2055cb3a47b2eb0b5aebf4e114a8c24a5a@balena.io,2
+Adobe,Volodymyr Zaets,8708b0f0e5fba1ec2afdd620f47480f773c9066b@magento.com,3
+Adobe,Thierry Ygé,214a4fbabb89e453418831d0334e8ef8a5c70658@adobe.com,3
+Adobe,muagarwa,e5356c34e3b3b8ef2f9750bb431df6fcd5e2fa6e@adobe.com,2
+Adobe,Dmytro Horytskyi,6c8b368259a77f9138786fed73b5f79f91994193@adobe.com,2
+Adobe,Xabriel J. Collazo Mojica,ada50b634c1527329e9e2877111524a355f98e45@adobe.com,2
+Gradle,Andres Almiray,883768b6dd2c42aea0031b24be8a2da40fef4b64@gradle.com,28
+Gradle,Lóránt Pintér,af37ce1066612ac119d4d429b57f5a7aabf0bdac@gradle.com,15
+Gradle,Adam Murdoch,0e18f44c1fec03ec4083422cb58ba6a09ac4fb2a@gradle.com,7
+Gradle,mockGitUserName,92be4770a7ea3495bce4cad0d4c675db7fe6910f@gradle.com,5
+Gradle,Stefan Wolf,a3cb738850fa39be667c4d6428d72aee854b2cc7@gradle.com,4
+Liferay,hai.yu,313a321544b78489b01ed5254ca28368d27e4862@liferay.com,15
+Liferay,Yang Cao,2148eb959069ab3e5099bdfdb713f91a7f1ac54b@liferay.com,10
+Liferay,hai.yu,06f47b55e1c7f09928afd9bca96584d6a777924a@liferay.com,2
+Liferay,Leon Chi,b101c66f9a4e8470a475a295736bf6ba23a72518@liferay.com,2
+Liferay,tina.tian,72a5fe0bd6f30182e049b14621a715ad23634d86@liferay.com,1
+Elastic,Brian Seeders,fcf42c71d1ec216e12ee4c2185e0d5e1002b1104@elastic.co,11
+Elastic,Dima Arnautov,c3c19b97d8551da7a145919f42b8b438063248c2@elastic.co,2
+Elastic,Henning Andersen,0677bbc580df66c34bc9370a69575481a8f11cbe@elastic.co,2
+Elastic,Albert Zaharovits,2b41d54e6567a819085ba9c6bedb407ffe03dcb5@elastic.co,2
+Elastic,Jorge Sanz,debec54b2629000b71c0553c347f2ede8e219619@elastic.co,1
+Brave,brave-builds,c2c369c9e498b1ecfb102707c472799832235dc0@brave.com,12
+Sony,Frank Rowand,964289eda363137c5cb6fd2bdcdba711c4b6176d@sony.com,4
+Sony,Jianpeng Li,5edc49aacf9ff81a9aa75ef87b07dd21f95c36b3@sony.com,2
+Sony,Koji Fukui,825ebca5d33ba68cf4786bdb45f47232ab7b2a05@sony.com,1
+Sony,Ting Yu,87233cce3ebf4c27b61fb0043e8953c616bed82f@sony.com,1
+Sony,hfukuchi,023cdeb8c143e3dc58fd8387d7c5a10d4fb9e5a2@sony.com,1
+WSO2,omindu,e60135fd2bf71711e609830367ae5f16f5984879@wso2.com,1
+WSO2,Omindu Rathnaweera,e60135fd2bf71711e609830367ae5f16f5984879@wso2.com,1
+Dimagi,Norman Hooper,c715efc362145a4fd7584cac035d97ad58ed8445@dimagi.com,1
+Orange,Pavel Paroulek,febc67146379161c6c3d3f31a2957a298e53c559@orange.com,2
+Orange,Ali Sanhaji,03695dbb4cc71894104fb44998816457a1cd49ba@orange.com,1
+Orange,guillaume.lambert,ff2d17c839764a2a87823227aa5937bb1900aed3@orange.com,1
+Bloomberg,Adi Zaimi,6686a91aed31958d3bcf04dd34b52fd3435d2b73@bloomberg.net,11
+Bloomberg,Jason Grout,2a09b980d793a26f54bb0c28dc1ccdef3b2729de@bloomberg.net,2
+Bloomberg,Kevin P. Fleming,7272cdd26fc08d22a206b1d2743d8ccdecad0f7f@bloomberg.net,1
+Bloomberg,Alex Leung,5d524834b690dce3973d202972a15aebc10992af@bloomberg.net,1
+Arbisoft,Imran Bashir,b9040d83e33f47b8f681cc30dd664cb677f85f29@arbisoft.com,11
+Arbisoft,imhassantariq,c40d9bd375cc1284d17ee713afa8dac71ad12f14@arbisoft.com,3
+Arbisoft,tehreem-sadat,01eba13d196048fe502e141b50c7fd3ecb0a590c@arbisoft.com,2
+Arbisoft,Danial Malik,7b404a4a7cbf02955703b61182e22c973cb26df7@arbisoft.com,1
+Autodesk,Jeremy Tammik,e736854446bae5406123335447069cc8a1462af5@autodesk.com,4
+Autodesk,DynamoEngOps,76ce6b5791038fe93a7481b2abb38f303cffb00b@autodesk.com,4
+Autodesk,tanga,caea5e3201525da77b8c53d42e9cd683d18c20ea@autodesk.com,1
+Azavea,James W. McClain,c14e1bb5aceaede93da0cccbff67f0b84b63950c@azavea.com,5
+Azavea,Chris Brown,eb0819782e2e967e3d4f4d71eab0c647ed2659cf@azavea.com,1
+Docker,Ulrich VACHON,135d23b133146807223d3e86e9afb88a22c8a83b@docker.com,2
+Docker,devenv-vim,cd4a02e47ff399b5fee4d5fb7f1f552cba6bd731@docker.com,1
+Docker,elangovan sivanandam,a62f9100cf092bb75687cfe06b46746c2a5d2558@docker.com,1
+Buoyant,Eliza Weisman,f43a79dfd42415a8656f99967c2caaf66ded84db@buoyant.io,4
+Buoyant,Charles Pretzer,cbdb0cc7f3f5b4be81a75fa7242590e3e9882e1e@buoyant.io,2
+Buoyant,Oliver Gould,5e0b8aa15aad848de36cf3fd23d80803845b78d5@buoyant.io,2
+Qt,Shawn Rutledge,7b40856c8c1100512025516d7c58756d644d9e8d@qt.io,1
+Cloudfare,robocdnjs,3a7509894e48c4943d084d9ea0624212016339ab@cloudflare.com,10
+Cloudfare,Alan Braithwaite,91e38e63b890fbb214c8914809fde03c73e7f24d@cloudflare.com,2
+Cloudfare,Martin Levy,54669547a225ff20cba8b75a4adca540eef25858@cloudflare.com,1
+Cloudfare,Sven Sauleau,dd860110a62b19214c4ee03aec0abffecb4e86b8@cloudflare.com,1
+TI,Lokesh Vutla,c1574519d727edaf2e16b260e452051ef77bf018@ti.com,3
+TI,Peter Ujfalusi,e5c0b4cdf99ae1d408b9c497159e74b54e02e008@ti.com,2
+TI,Grygorii Strashko,bfa0a1520768723a1c60e18250fb841c342eb8d8@ti.com,1
+TI,Faiz Abbas,d34117b2c1ff4e5ae357ddac5bceed40fda99e76@ti.com,1
+TI,Nishanth Menon,50c3c575ce2bb12c45e20736ce59e86fe81915b4@ti.com,1
+Aiven,Rauli Ikonen,55650fe7f1c733bc1f0c5e5799433ec66a65d171@aiven.io,2
+EPAM,Dmytro Popov,f9d719fa919807a8f851501d99d8fc711f0211d9@epam.com,9
+EPAM,Niccolum,a92d999d327f5cf5ab7c898a1c57b8b49779898d@epam.com,8
+EPAM,Roman Iovlev,d778353f8965365d9c8112db66ac2ed9bd86e428@epam.com,4
+EPAM,Svitlana_Zmiivska,82507f8c72ec28cd5110cff4e2a267669f6cf31a@epam.com,4
+EPAM,Svitlana Zmiivska,82507f8c72ec28cd5110cff4e2a267669f6cf31a@epam.com,3
+WarnerMedia,Chris Farris,b18db506be6d3165f82778a4a7761ba15fb3d969@turner.com,3
+Eficent,jbeficent,cc0a0cc4e76df5bd68a73a1251f17681f6cfb77c@eficent.com,10
+Eficent,hveficent,69ee4c3a8cebc00a1e7782255f0e3905230af961@eficent.com,3
+Eficent,Jordi Ballester Alomar,cc0a0cc4e76df5bd68a73a1251f17681f6cfb77c@eficent.com,2
+Eficent,mreficent,ba997cdf43d97e935af3981c5577761d2594ee41@eficent.com,2
+Eficent,Adrià Gil Sorribes,7542764d8f03f3fe80a19717bc18df3e7fa33f40@eficent.com,1
+LunarG,locke-lunarg,edaada06d70519b2163e3ef74881a70d35b010c8@lunarg.com,1
+Puppet,Enis Inan,3563b75a242909b3255358a8ee33acff4d252761@puppet.com,2
+Puppet,Jenkins CI,5a4fe08359c7f97380e408c717ef42c86939cd86@puppet.com,1
+Chef,Tim Smith,764ef62106582a09ed09dfa0b6bff7c05fd7d1e4@chef.io,5
+Chef,Chef Expeditor,1a5f3932b577fa1037adece08b9899743ca0c501@chef.io,4
+Chef,Rick Marry,ec8b702b13a80ebc48aabb2295bdf23f5dab8ed9@chef.io,1
+Chef,Ryan Davis,f3417dae5443a381b6f3c0abee902614d44fe9d3@chef.io,1
+Chef,Christopher A. Snapp,dffaa860ed97a8fe2bd7fd9817f16f80af273fae@chef.io,1
+Stripe,David Judd,5b51faa4a29df477fc56de7604a526fcd6c7d3ea@stripe.com,8
+Stripe,Dmitry Petrashko,a8cf97adadec4e1b734a39bc5aea71b5741cfca1@stripe.com,1
+Stripe,Sorbet build farm,82f0b6cce45fc25a2899a2aef4ac87e022a1fe5c@stripe.com,1
+Huawei,webpagetest_server,60727a7ac9150a29b5ea683c6633397e98a22b03@huawei.com,30
+Huawei,pef,e9c95830d88b36513b961459a335f5fd097ba3c7@huawei.com,28
+Huawei,Chao Yu,9e61b03ab6eb4c662b8067c1275cb6ea64b3eace@huawei.com,17
+Huawei,YueHaibing,87ef4e6170d5e1d30adb7567acad1fcb98f93b6e@huawei.com,8
+Huawei,Jiangfeng Xiao,5c4274f2693afc1895537ccd787bbc606777dba4@huawei.com,6
+JankariTech,Phil Davis,e888d2bd6f13f82caa51a37c03d034c76f661ba3@jankaritech.com,26
+JankariTech,Artur Neumann,259dcac0d552e78e0bc7975f47adf49655882143@jankaritech.com,1
+Yahoo,Jason Lowe,90fcd8d86983ac71a1cdd9ac529fd4dcbd59c955@yahoo-inc.com,9
+Yahoo,Kiran Lonikar,2e615f54165057cceaad21406a4033585d726978@yahoo-inc.com,6
+Yahoo,Dwight Hubbard,0e228d5c54b6205f6eb0d17caced4c00a0c413a7@yahoo-inc.com,4
+Yahoo,Henning Baldersheim,f1eba164350d709ddfbf6128daaff4172be73f09@yahoo-inc.com,2
+Yahoo,Jonathan Eagles,a25ffd10fa51dd23d590dd7c1fb3cced5ee10a74@yahoo-inc.com,1
+GitHub,GitHub Action,34eb4c4ef005207e8b8f916b9f1fffacccd6945e@github.com,110
+GitHub,Froilan Irizarry,1a3f72120e1196ddfd7951ac2d727ba191165cca@github.com,21
+GitHub,40823132,cd2513379d4bb51f89481387d632869d9c366fb4@github.com,17
+GitHub,40823135,2f0722f5fece8f9b4d6443df864740a0717d4075@github.com,12
+GitHub,GitHub,1505422b2465e9a84f6fdfaa161078890c593f06@github.com,12
+Pivotal,buildmaster,be900a48edee3edeb3f0a2fa72a7f95b94ab79d9@springframework.org,39
+Pivotal,Stephane Nicoll,3983f561e482e04844477d812f12209922eddb0d@pivotal.io,19
+Pivotal,Ning Yu,1ef20c7bf83cc456c790d6afa040b63811531869@pivotal.io,13
+Pivotal,Sacha Dubois,09dd24aa8674e58fa18a2c618bbe2c834ebf20be@pivotal.io,12
+Pivotal,aoldershaw,30ef7a6e0d016bc846f26d89dacbd23aceded206@pivotal.io,10
+Accenture,Stephen Barrett,2ed0190b19e035374dbd4b96115c27ab8296b031@accenture.com,10
+Accenture,Lima,42ac0e4c8dd3c3d1db6e4f3abb21e8ddeb5bdd71@accenture.com,9
+Accenture,Jim Lawton,dc608f4f8c76e68c302bb4220bef2eb6c0b06a95@accenture.com,1
+Accenture,"Kadlcik, Patrik",9c4d112fd60054ba48ad57d2b986c1150d3f44b1@accenture.com,1
+Accenture,Dave Smith,ce459533e817852dc5e7898edc92808b4f1dfca3@accenture.com,1
+Binary Group,oskar-binary,23f36105ed28b51cd4b5160b8912d2fa50250cb0@binary.com,20
+Binary Group,chylli-binary,7c2e559f8aff5131229a5408fcc5be66a91df5b8@binary.com,8
+Enalean,Thomas Gerbet,69a03171bfd9f3aa997b865ac95bcc295467fe75@enalean.com,1
+Nextcloud,Nextcloud bot,c71e7261d37a4f6ae4cfb0cbd79081310a237e67@nextcloud.com,38
+Percona,Mikhail Samoylov,57006f5b50ac6584481310cf60dfe3e7029fe60e@percona.com,5
+Percona,Przemyslaw Skibinski,035081a600efb43fbb22946bd9efedc58c802f4d@percona.com,4
+Percona,Krunal Bauskar,b1f80d0d6abea91ddc55a38e42ca9d3f6f9d1fca@percona.com,2
+Percona,Viacheslav Sarzhan,8c2fef624b1834029b51af1d3a1eb641b9bfeef5@percona.com,2
+Joyent,Trent Mick,1e4e715e63395d895d288fec22760c1b0d4efbb8@joyent.com,1
+Shopify,Kaelig,c52323ff88916df320a5b7903854736018045f6b@shopify.com,3
+Shopify,Dale Hamel,b35f77af638d1f3ad2938035de9f1ca2cfc613cb@shopify.com,2
+Shopify,Chris Seaton,a35177f4419294c70179b2e805dce09225ba3347@shopify.com,2
+Shopify,Marco Imperatore,575b515cdaf317757591547bb193e75fe41d61de@shopify.com,1
+Julia Computing,Registrator,5a4fe08359c7f97380e408c717ef42c86939cd86@juliacomputing.com,25
+Julia Computing,JuliaRegistrator,5a4fe08359c7f97380e408c717ef42c86939cd86@juliacomputing.com,8
+Julia Computing,Keno Fischer,7e3ed8186492aca8c039a0528716df31ad911f7e@juliacomputing.com,2
+Red Hat,Matthias Clasen,097d21dc5518307d71567a83214156cf1ca80f59@redhat.com,74
+Red Hat,Kebechet,34bdc1736eb0d709b443a663cdda5c5af769c519@redhat.com,48
+Red Hat,Thomas Haller,16e26612e4159990a6b3691e92592e691ff74132@redhat.com,33
+Red Hat,Roland T. Lichti,123b075fbcadd5eb07cb16ea90a61638537c21cf@redhat.com,25
+Red Hat,Ivan Straka,f6a1cf1e2cdf6cd7bc089defdc99360e6f61c469@redhat.com,21
+ConsenSys,Joshua Fernandes,7d953fd6861da0946c91a97d0461766d2e5777f7@consensys.net,4
+ConsenSys,Lucas Saldanha,cb4c788f5d97464617d0b02fcd3b1f3dd6035f53@consensys.net,1
+ConsenSys,Sally MacFarlane,55d8a1f47cceb6d987e871f3da9a5a6fcb9230ef@consensys.net,1
+ConsenSys,Adrian Sutton,cd04e818f6a33894a7e4426cd5dafb325da57290@consensys.net,1
+Grafana,Kyle Brandt,3c25b01657254677d3e1a8fd1f0742c5d489bd39@grafana.com,3
+Grafana,Torkel Ödegaard,2444f623261649beda78f6b78b885295d1709b1e@grafana.com,1
+Grafana,Dominik Prokop,b74770151813ae727af3dbf028e344e77aefc34b@grafana.com,1
+Grafana,Alexandre de Verteuil,b30f4169e054ee7b8c243480bcfcef62416f3b08@grafana.com,1
+Infosys Ltd,Arshita Kakkar,d28614d3916f6e8ac82f9f50d81b32b65440abec@infosys.com,2
+Infosys Ltd,ljnaresh,6f4073c73fd5c9c8311fc1e34f93c96952ca5fbb@infosys.com,1
+Twilio,Wade Christensen,fc5c897669ea65846f6480615035e80d88f4482d@twilio.com,12
+Luxoft,Olof Schonbeck,ee2a4ab13d5585eaff2ed8fd03a737e712517b38@luxoft.com,1
+Cloudera,Tsz-Wo Nicholas Sze,ce86496ef98c2bcbf008f91782cf8004d32c8909@hortonworks.com,19
+Cloudera,Colin Patrick Mccabe,3142ce8a0bdba4a38073365893e6b74f72d9c512@cloudera.com,19
+Cloudera,Ying Chen,97525f3e0fac943b96f190a46fb5871a9c3d8820@cloudera.com,18
+Cloudera,Yongjun Zhang,4491cc95d1ec9ae1eb24fc37297a4f6e862d7d1e@cloudera.com,8
+Cloudera,Miklos Szegedi,f169718dbad33c4f6b4032fc4d34b114e641e8bf@cloudera.com,6
+Lyft,Jyoti Mahapatra,41a0013ab283a85d9a132447fd2518c0a2692cf9@lyft.com,3
+Lyft,Matt Klein,684e4e870ef5a243d6d0345280f09d95db603639@lyft.com,2
+Lyft,Ashley Kasim,49b019dc02826a4afba72ed18b7c4424ff9d3a2e@lyft.com,2
+Oracle,Dan Carpenter,ff341aa343d564f9e53e9dcb6996be8c04859a66@oracle.com,8
+Oracle,Spencer Wood,0923b93c00454d03decae93aacc2e2b96d10f7db@oracle.com,4
+Oracle,Konrad Rzeszutek Wilk,da3a51b335cef0eb0e2c329c5ef6bcd6acef687a@oracle.com,2
+Oracle,Soufiane Nassih,d5722dc2fa88917210adf7091ed7d2a79268090c@oracle.com,2
+Oracle,Benoit Daloze,db2d2d83fdad3b5ac22a7275a790b69cd86a4a12@oracle.com,2
+Sentry,Mark Story,f1b5a91d4d6ad523f2610114591c007e75d15084@sentry.io,4
+Sentry,Burak Yigit Kaya,eb08f08e9099c502e3e4e03f90295b50c78ec816@sentry.io,2
+Sentry,Dan Fuller,0ef9a53fb7c9192b7dae0fb57d27c4cb415f4042@sentry.io,1
+Sentry,Jan Michael Auer,7763e75a0ecdc5b124da37f062ccb0bc1b52ec57@sentry.io,1
+Adguard,Filters Builder,9ce5ff458c686cc5e9436295af1c60fa27be6140@adguard.com,18
+Adguard,Ilya Kovalchuk,628c4351bc98b9e660d0f3891b678df4c96274cc@adguard.com,8
+Adguard,Alex302,66fb8a45b1fb84e565bc97cea76b94497fa96efc@adguard.com,2
+Adguard,Andrey Meshkov,96e8155732e8324ae26f64d4516eb6fe696ac84f@adguard.com,2
+Adguard,Simon Zolin,63ffda32808a82e034b1be71daaa19621a21979d@adguard.com,2
+Dynatrace,Lucas Hocker,51fd133d9d3870c7b50cf021f228249f1720e91b@dynatrace.com,1
+LabKey,Alan Vezina,2620a157b89ca286eb44ea266e57e59c4a60c460@labkey.com,6
+Bitnami,Bitnami Bot,82e28e1b3dcd0e52f6c19a7125c7c859e9bcf4a4@bitnami.com,336
+Bitnami,Bitnami Containers,642b5cd982d48582ca759a01b28bd2ade45c3b8a@bitnami.com,9
+Bitnami,Bitnami Bot,642b5cd982d48582ca759a01b28bd2ade45c3b8a@bitnami.com,7
+Bitnami,Juan Ariza Toledano,b49a5780a99ea81284fc0746a78f84a30e4d5c73@bitnami.com,1
+Mozilla,bors-servo,1d30da7446c147361b50ba946a7897e87cc888f4@mozilla.com,15
+Mozilla,Ting-Yu Lin,2a6ec19851ae96f2a0830c3c040b66071081b940@mozilla.com,10
+Mozilla,MozLando,70060e461d321c1f17fff8102bb8fa96484a1936@mozilla.com,9
+Mozilla,Jan de Mooij,100d882f73ead7fe0daac2dbf9d244085ac392dd@mozilla.com,8
+Mozilla,Ricky Stewart,ae47486b79e87935dadd35e4dbdbba86b274dbea@mozilla.com,7
+Origin,Josh Fraser,c028c213ed5efcf30c3f4fc7361dbde0c893c5b7@originprotocol.com,1
+RStudio,Joe Cheng,16a9a54ddf4259952e3c118c763138e83693d7fd@rstudio.com,3
+RStudio,Gary Ritchie,f9023000f29773649f3850298becb9544b5fd6a9@rstudio.com,3
+RStudio,Gary,f9023000f29773649f3850298becb9544b5fd6a9@rstudio.com,1
+Sonymobile,Carsten Hauge,3e2446a0d05d8c460ba0d0589de41ac28fc236e4@sonymobile.com,2
+Capgemini,Andrej Petras,c2bfa32ac1c140ab157d83b71d98c854783b7469@capgemini.com,1
+Automattic,Jeremy Massel,672bed5e23ef39b69486d3edeb1c32f5d45d8f61@automattic.com,6
+Automattic,AmandaRiu,1f3ab44cb42d3d21428e5dda454710aeef13924c@automattic.com,5
+Automattic,James Newell,677832fcc51d7db7917e10152edcd91c3e1d9d23@automattic.com,3
+Automattic,Payton Swick,82d6bfae7359c55d641b18a210d819369c549929@automattic.com,3
+Automattic,Kamen Stanev,c8b990d5ce290d2e75196d35d305b6dcd21e5e69@automattic.com,1
+GatsbyJS,GatsbyJS Bot,cc251e37571380f263731d0a5f8045b8032a3ac8@gatsbyjs.com,1
+GatsbyJS,Hashim Warren,64af4db84c67a92e6c0944e1e936550a67a85901@gatsbyjs.com,1
+Goldman Sachs,Victor Borisoff,2a12613e2b65b2b630f2333defde654dd6a358c4@gs.com,13
+Andela,Owajigbanam Ogbuluijah,8537d34a10e810f696354fb6a1d6e89f6e265883@andela.com,8
+Palantir,svc-excavator-bot,4450c98737d02bb402ce6664bc16f34f6c82a40e@palantir.com,20
+Palantir,svc-autorelease,b1e045b844cd6e1e267bfad9d095cc80d64811cf@palantir.com,2
+Palantir,Mike Glazer,249f5f4a2dfad8008580187cd51f64bf30b0dbf2@palantir.com,1
+Salesforce,radSFDeveloper,1d837e4575a2670ee853292d36f60539226d683f@salesforce.com,15
+Salesforce,David Glick,fdeb68f6a417029805b4b71743b80dccbc7ef1c0@salesforce.com,9
+Salesforce,Rama Chavali,40109507d7c707c570c476fc1522e2d26df7f15e@salesforce.com,6
+Salesforce,Kinnaird McQuade,eb106f816759c6b21bdf82f0f5fe938cfd2e4609@salesforce.com,5
+Salesforce,David Reed,5d11fa09b561e54b73c52c791a1d61890cd2c1bd@salesforce.com,5
+Hewlett Packard Enterprise,Ivan Smirnov,94489028bc52bdea9dbe6d7d3f2beadf7a098259@hpe.com,4
+Hewlett Packard Enterprise,Mka Madlavana,9ec364919de9be2d0c64c157ee6ec8402fb99484@hpe.com,2
+Camunda,Niklas Kiefer,e39cb2016f107622f9bad5f0313ba28acc2daccb@camunda.com,1
+IBM,Gerhard Dinhof,20736734eb06f9078784cecffabf22cc743b4d60@ibm.com,24
+IBM,Nick Mitchell,72ea8dfcf31d0eadc9160881a3c0d99a31e0e524@us.ibm.com,23
+IBM,Dave Conway-Jones,5eb9712ca8c10a15c27535f68fcad377f8baf9c1@uk.ibm.com,22
+IBM,Mandy Chessell,367e51e863c31660a8e9e322977f32f1dec771c0@uk.ibm.com,20
+IBM,Richard Waller,784211713cb90a8d36561cf9b90fd682edc81c11@ibm.com,18
+RTE,Geoffroy Jamgotchian,28a090a669f177216c1617b0782e26ce58587575@rte-france.com,1
+commercetools,Nicola Molinari,8e2441544ae097d980a4119ffe7f1dcae2bb6a2f@commercetools.de,2
+Lablup,Joongi Kim,a43acdc04c480d1f01e30326db1ca1253f7cc068@lablup.com,2
+Infosiftr,Docker Library Bot,e9eb8628e6e13b82f1626c7b3a59cda71a9b1514@infosiftr.com,235
+Infosiftr,yosifkit,16a9a54ddf4259952e3c118c763138e83693d7fd@infosiftr.com,11
+Collabora,Guillaume Tucker,e7e20b7c30f19d4ca6b81319ef81bf200369d137@collabora.com,18
+Collabora,Mike Kaganski,7b1b450b6fb4ae3d512bde65efd8b712a8d9a512@collabora.com,3
+Collabora,Jan Holesovsky,67a28ff7a21deab50d2ee273ee43e6600bf6af60@collabora.com,2
+Collabora,Michael Meeks,7e3f212bc57cabc465c9df7f45a34ee84553965e@collabora.com,2
+Collabora,Tamas Bunth,09e2118e931298b7cfd30777155d695df52fb3cd@collabora.co.uk,2
+MediaTek,Miles Chen,b187a429f4445a58d0c83c03f2ee85d69c8b3f0f@mediatek.com,1
+MediaTek,Manpreet,5499736ac1ceb6655366510a992f912b0815aa47@mediatek.com,1
+Autonomous,0xmerman,3baaa792aa3eec25897a6a84cf8b30a096990336@autonomous.nyc,2
+Autonomous,0xsirrush,03e98fe09c0ab58897059c28b1bdddeeb581c55c@autonomous.nyc,1
+Philips,Yicong Chen,cda802027c3f1da5b5f2bcea481047e1bf3d7ed0@philips.com,2
+Yandex,Alexey Milovidov,2814f99cda7b63b79afd80b2ed71672855798b39@yandex-team.ru,20
+Yandex,alexey-milovidov,2814f99cda7b63b79afd80b2ed71672855798b39@yandex-team.ru,14
+Yandex,Nikolai Kochetov,74104343aa3320bbab01f956d22be40c4bcbfba1@yandex-team.ru,6
+Yandex,Vitaly Baranov,9a2d7757f69a28c16914b1afb74459ebe2d8a8f6@yandex-team.ru,3
+Yandex,Konstantin Khlebnikov,3b96b99f19643d33e1bfa1caa535c041c3608549@yandex-team.ru,3
+Linagora,Frédéric MARTIN,38656c22f7bc0e5f6b372114c088419712e78722@linagora.com,1
+Linagora,Michael BAILLY,e1eacee03c2b8dd482cfd760d1d8c9c6adb4c662@linagora.com,1
+Kainos,Eugene Fahy,a6b019ef99f8dcdd6fe484306c7e8cd3b3df7330@kainos.com,3
+Kainos,Andy Walker,8aa357c1dfff088c926bf68d533dc4f4d8fbe068@kainos.com,1
+Kainos,Jan Faracik,908e8955d99eb54875d83a5c691e04c6c5c8a5de@kainos.com,1
+CS Group,Christophe Leroy,4e2d3d12816ace76f1cfa36c1816509bd24cf089@c-s.fr,4
+DigitalOcean,Timo Reimann,950296c5c77855007d8f84882cee99a4138fd02b@digitalocean.com,22
+Twitter,Brian Martin,0b30b9a819630d245a05805242fc051d996b6d78@twitter.com,14
+Twitter,Olafur Pall Geirsson,56e789da4ef97095a6f76b9aa3f225aca43681db@twitter.com,4
+Twitter,Sumit Maheshwari,644017abfd6acb7771216201d15ab272c94c965d@twitter.com,1
+Twitter,fdai,aacc45a94171c96660f2f9dfd10bcf7e1ff4f209@twitter.com,1
+Zalando,Maxim Schuwalow,0f166f4c2589ae7616d6971fa78e8bc5128f555c@zalando.de,4
+Zalando,Soroosh Sarabadani,4f7f93de8c53cffdd802606beb55cc69957a2e7e@zalando.de,3
+Bootlin,Alexandre Belloni,a7228e626ecf0022ac91fc1cd8db88e71d0e5e0e@bootlin.com,13
+Bootlin,Thomas Petazzoni,a5d87d2bd7c424ee5cbdb4e978635bf653d5a005@bootlin.com,5
+Bootlin,Antoine Tenart,7fc24f17b07747ca12864f96f551beca43e4577d@bootlin.com,2
+Bootlin,Miquel Raynal,9accb993cc69da7fe0dcb886780d358fa42aadcc@bootlin.com,1
+H2O.ai,goldentom42,a64ddd62aad0d18426ac6a0f7874ba3ad46064a8@h2o.ai,3
+LINE Corporation,Hannam Rhee,270c530e5fb97ebc6c05caaa69d2df2fc9b2adc5@linecorp.com,4
+LINE Corporation,Trustin Lee,5da16fcbbd974f7664efef57890c0e4a0c3f1c65@linecorp.com,3
+LINE Corporation,Kim Soo,9173ff9236bde4fa5c8a7a24d633aea0c11dd64e@linecorp.com,2
+LINE Corporation,Ikhun Um,9f47f82e7a3a0ca0ca534488cfb1ecadcf5ff6ec@linecorp.com,2
+LINE Corporation,minux,a58ab4cedf59e116e2f3d06ec1f3c39a2e32e66d@linecorp.com,1
+Wind River,Kai Kang,12cd79c4a5e843cb1f0f6ae2d45a5336990c82a6@windriver.com,9
+Wind River,Trevor Gamblin,fb8c09b3db10148c84dac072f39fc5dba3573139@windriver.com,4
+CGI,Jeroen Claassens,6bd8a26cfa58f5b7a9829af110d0610f082ec854@cgi.com,6
+CGI,Vesa Meskanen,079804a2125933683198caa37131a18fea2d3582@cgi.com,1
+Block.one,Nathan Pierce,10847f65ea568842e0ac77dca8a6e706812b02ab@block.one,16
+Block.one,Zach Butler,6d511fdff63a63266e22f5e9b7efacc53e4bc622@block.one,1
+STMicroelectronics,Alexandre Torgue,2def9cba63f53479ee2284c78700c4765096eb7e@st.com,1
+Samsung,YiHyunjin,6e6abafb7493b3a4ce9f2b106a143482f2e41c6f@samsung.com,5
+Samsung,Marek Szyprowski,2a0259761cc3e88db42be5300c1579a67c77e65e@samsung.com,3
+Samsung,Shuah Khan,c62751f8c6ce7eb0639cab80a821801931863a4b@osg.samsung.com,2
+Samsung,Sunggyu Kam,0f586711c70488fa6f7f05305e43f954f7ad1272@samsung.com,2
+Samsung,Sunkwan Kwon,8217da8804db333a1772b757fae0889937a764e0@samsung.com,2
+Kaltura,Kaltura CSI,418b03c91215cc919b0411338e64a1f9a8c01e9a@kaltura.com,15
+Kaltura,Backend CI,c0739b9a8cd6d646ef6d092a568692512b0a4195@kaltura.com,11
+Kaltura,amir.chervinsky,7ed33ce68e4ef15945deda13ccbaddb17a5637b0@kaltura.com,4
+Kaltura,Roy Bregman,b5b24297769652e4b639d1a6d8c4e217ec6adfc3@kaltura.com,4
+Kaltura,Yuval keidar,7ce5a6fb93d2a78b4995b55716fec80651d99b10@kaltura.com,4
+Pyup,pyup-bot,014ca7bb507255f115360f46141ad318dcf61352@pyup.io,45
+Pyup,pyup.io bot,014ca7bb507255f115360f46141ad318dcf61352@pyup.io,5
+Analog Devices,Mircea Caprioru,fdf9b353bce3f14891245201e506dd14e197470a@analog.com,1
+Citrix,Ross Lagerwall,d769abb2ab51a4b3c6d56e5ec4ccdd860b82f07a@citrix.com,1
+Cockroachlabs,sumeerbhola,a80e25e082c58860f22ca6d0f55ad97dfed8c7c1@cockroachlabs.com,2
+Cockroachlabs,craig[bot],3a2c29237f73c7cf88424b80e427b1884f346b35@cockroachlabs.com,2
+Cockroachlabs,Yahor Yuzefovich,41a4422ea0196d94bb8402972d1e94c23f34d26f@cockroachlabs.com,2
+Cockroachlabs,Yevgeniy Miretskiy,aca0aaa8dd3b860196996c009d092f369445cec2@cockroachlabs.com,1
+Gofore,Anne-Mari Silvast,27eaf2b59533739c99eb1e57db890cfd6795c919@gofore.com,7
+Square,Jesse Wilson,b559ba3411cf55dd74bd9675d6ce4d094c2e3438@squareup.com,8
+Square,Egor Andreevich,3a99b570fa95bc749fc9c40106122c8f65be8fe1@squareup.com,1
+Square,Spencer Lewis,e0580b9aacf857d9a3792f1965500f217c0fc9c9@squareup.com,1
+Broadcom,Hariom Yadav,fcec21b54d970742d56db3ef1a7dbca9bd02a086@broadcom.com,7
+Broadcom,Vitek Vlcek,6db2aa77d41eadb7700cdbafdd1158fdae99e986@broadcom.com,4
+Broadcom,Partha Dutta,2f818cad5bb980f7f1dfe49d4be228e3e1e5c4ba@broadcom.com,3
+Broadcom,Mohammed Faraaz,c8694021f8d3a0d39b019363f51c17822e36272a@broadcom.com,2
+Broadcom,Mayank Maheshwari,b90cee436d3a835afd614a2c6018017b7ff3f784@broadcom.com,2
+Plotly,archmoj,3bab8ab772a50421b50f90b76c9ba8e094f2dfa2@plot.ly,3
+Ad Hoc,Matt Snook,ce5f3b1e2e3a63b201b7848f39d7606895d1da69@adhocteam.us,3
+Exoplatform,Houssem B Ali,1d5365b6e4d5adcb1b20c10ea302597ddad48f19@exoplatform.com,1
+Pixel & Tonic,Brad Bell,9233b6f5388d6867a2a7be14d8b4ba53c86cfde2@pixelandtonic.com,9
+Pixel & Tonic,Brandon Kelly,ef971ee38bba25d9ac8a840d235457a038448b09@pixelandtonic.com,9
+Siemens,Jan Kiszka,a5b45c9af271d077f30d36aa7d9b988eed9d56eb@siemens.com,12
+Cisco Systems,Dax Mickelson,308774eb3b49e98750a7e3af5bfa2f45d54bd9d3@cisco.com,17
+Cisco Systems,cordavis,79944c4627308f5d64b44bd2ed951bbb501e5aa1@cisco.com,8
+Cisco Systems,Neale Ranns,b9c0e9ef0223633bc2f318425f615cf5840a0be7@cisco.com,5
+Cisco Systems,Florin Coras,c9715e5cdf0718c2e9b10678757dfb027875eba2@cisco.com,4
+Cisco Systems,Serguei Bezverkhi,c33ca6227aebfb54a1e138877913c69b58e15edc@cisco.com,4
+SUSE,Mohamed Eldafrawi,95dcbb8f7213f7d1ad0af14d8ea121bdc38bc2c9@rancher.com,25
+SUSE,Gary Lin,a057d4b27e9e9055b973f54b519db54c22ed5ee8@suse.com,16
+SUSE,Simon Lees,35502ec1d4d3e6cf9a00e3f00b7b94c63a03eed8@suse.de,13
+SUSE,Eric Bischoff,69d81e4af301bf11172954fe5dd08ce26303a32b@suse.com,10
+SUSE,Takashi Iwai,4596b3305151c7ee743192a95d394341e3d3b644@suse.de,9
+Canonical,Konstantinos Tsakalozos,ff664cdca24cfe35b12f973bd258040295348e54@canonical.com,16
+Canonical,Kai-Heng Feng,06af28c154da900e58fef391e9e9415561e1d8ae@canonical.com,4
+Canonical,Colin Ian King,d100aa70785e45ee8deab668147d941941915c21@canonical.com,4
+Canonical,Andrea Ieri,c77de9555d2476db236f207b4ae9d0bd8c030552@canonical.com,3
+Canonical,Thadeu Lima de Souza Cascardo,c8883472cb5fbead63941b41bccc869c7deaf90f@canonical.com,1
+Atlassian,Will Binns-Smith,9480c1628aa5909fb50f652c67b35e086251f11c@atlassian.com,5
+Atlassian,Mario Nebl,78d02a475bf79cdc0c8aba14524622d9aa78fdf0@atlassian.com,5
+Atlassian,Michael Dougall,ff07f416751e325667ced47b80f97e2c50bb1ec3@atlassian.com,4
+JetBrains,Kirill Kirichenko,8809861a33fe3a062710d818a302d90f8b069370@jetbrains.com,12
+JetBrains,Dmitry.Krasilschikov,b0041564ca481c1adfa56a935f05de970c91baf0@jetbrains.com,10
+JetBrains,Sergey Ignatov,bc9ebbcc19a6331a047f958ea6d3f85a5936f67a@jetbrains.com,7
+JetBrains,Konstantin Kolosovsky,ea3de97701f47f749b7858544e06dfd96123272c@jetbrains.com,7
+JetBrains,Tagir Valeev,39a123a39fa599c3a3d7ac25296af8023fdbd06f@jetbrains.com,5
+ThoughtWorks,Timothy Findlay,061aff006a325bbb82a265be9ef8003c5b935afd@thoughtworks.com,4
+ThoughtWorks,chenlei,fa0a237a9cc6a55c7a7995fb317cdc0cd386ba75@thoughtworks.com,2
+ThoughtWorks,Jinke Li,e91320eb330c5798ff382c0c03dc3adc9898bae4@thoughtworks.com,2
+ThoughtWorks,ganesan.arunachalam,c1baf80aef3073528fa055adae94b68af00b565b@thoughtworks.com,2
+ThoughtWorks,Tomasz Sętkowski,ba9c2401122bbb2bf5b72a8445ad2301030852a3@thoughtworks.com,1
+Google,Erwin Coumans,03df3b4e3864572243f6250d10cd051d278a034c@google.com,37
+Google,Steven Johnson,e8350eca9f4b6ee33e9badce2f35816074ed41e7@google.com,37
+Google,Antoine Albertelli,41bc8f2e9885596af258ee1fe51fa51c582087c1@google.com,30
+Google,Fangrui Song,89e54f19065b0b047a91fe0cbcb78b61efd4358f@google.com,25
+Google,Eric Dumazet,312c7d941f03386814be517ffdb3e0eb6624e275@google.com,21
+Baidu,wangyunzhu,1a1d6d8eeffdf9201f2df6a7c031edfa17410c3e@baidu.com,4
+Baidu,zhangxuefei,ffbba337b10423b46651568b16afe127169555af@baidu.com,2
+Baidu,Chen Weihang,bde4fffd76983351e148f7a91ea38350cd8d04cf@baidu.com,2
+Baidu,cryoco,4833bc398475ad9bb229dd2167bdaf4d40cc8868@baidu.com,2
+Baidu,yufeng04,abdbea18611147bf45171f18d700cc054b797df2@baidu.com,1
+Tencent,chenhao668,04d9af972227b0f3c287c4f06676e1e3a2434a24@git.code.tencent.com,23
+Tencent,bellkeyang,9f88e88e24c7af52e60bc7b428d437a57cb248b1@tencent.com,15
+Tencent,owentou,4a3f86a245b3a1dcdb9e5eb4b64894dd9118c1d8@tencent.com,10
+Tencent,pegasuswang,5b00db3606e3380c04a38c30f742de84a91127c2@tencent.com,7
+Tencent,linjianghe,dcc0e587ac377bd4d582b4efa6ae61f85688db4a@tencent.com,5
+AMD,Matt Arsenault,788c14eeffa2067e120409a238fa186a04f20a10@amd.com,8
+AMD,Rex Xu,1d860abfc100dc3a9630180e15cc05577b7aa8c9@amd.com,4
+AMD,Jenkins,65f48432a179cd87fe914a5a7f7e60a506981f53@amd.com,4
+AMD,xuechen417,2e665ed6af44636e830331b6abebe2c6be68d05b@amd.com,2
+AMD,yuhachen,18b36245f1d9615b378b1994f4bda73b0bfa97d1@amd.com,2
+Open Robotics,Steven Peters,19cdd629ec3b4ea4663c77a4169548f370fdc02f@openrobotics.org,15
+Open Robotics,OSRF Build Bot,e7ccba6b2e9a009fc519e029a919f6da63312f55@osrfoundation.org,4
+Open Robotics,Tully Foote,22715502305f5acc3bd5bf22a9c406e70a1e1348@osrfoundation.org,1
+Open Robotics,chapulina,a8a345be5c4ec9546d4a8b399c0256542c1e44a6@openrobotics.org,1
+Camptocamp,Stéphane Brunner,17c80816e74b5674bf9a5c20e537bd659d5a71de@camptocamp.com,16
+Camptocamp,Guewen Baconnier,e9cee4326ae166ab11544065435112b9a951b934@camptocamp.com,4
+Camptocamp,Cyril Gaudin,34b16eea4fb13fad926507c8d6749341bd308548@camptocamp.com,1
+CircleCI,CircleCI,b232ae125d1abd56c43942a08ae6275802312111@circleci.com,33
+CircleCI,Gabriel Simmer,18a98c35f49808b45edadc75fb1b25ebfd4037d6@circleci.com,12
+CircleCI,Circle CI,b232ae125d1abd56c43942a08ae6275802312111@circleci.com,3
+CircleCI,CircleCI,43e471c5df6420b594e7421150ddb8d2a538bdab@circleci.com,1
+Indexdata,jenkins,a6f1d62f4938a1acbeb6845e1a18c89191bb8f6c@indexdata.com,2
+Palo Alto Networks,rsagi,d767a51a544a7089c514205258b43862dc6bf857@paloaltonetworks.com,25
+Palo Alto Networks,rshalem,176546c3d7cae06beb034b675edd94cc56e5aca4@paloaltonetworks.com,19
+Palo Alto Networks,dtavori,eacb2bac6d908e2ba5a8ee0e7be9a78b6e415d1c@paloaltonetworks.com,11
+Palo Alto Networks,teizenman,d69033aa38ffb73663f8e4560bf0c879badc86ca@paloaltonetworks.com,9
+Palo Alto Networks,Shelly Berman,8344674e4cb199beadefcfbcd3696e56fa758a4c@paloaltonetworks.com,9
+Synopsys,Alexey Brodkin,1fa739873496c8c0c1b521f2061ee5fa4a0306e8@synopsys.com,7
+Synopsys,Thinh Nguyen,8e436f42a8d87f445466a3edb7bd598ad284eedd@synopsys.com,2
+Synopsys,Chris Papademetrious,3f0789fa766b0808cf877774d4ad4a60995a0ca6@synopsys.com,2
+Synopsys,Alexey Brodkin,158876194ba5f55e36cb70e88c8dd7e8434df64d@synopsys.com,1
+Synopsys,Alexey Brodkin,df74735e5e8e4da139876d19d7450f461d604b9f@synopsys.com,1
+Improbable,Jamie Brynes,eff65bff9569821be030cc722e9f8dfa01ed80c4@improbable.io,1
+LinkedIn,Jonathan Hung,5c22f68c3fbcf6dea7d1a2f5923006fcdcd8be99@linkedin.com,6
+LinkedIn,Adem Efe Gencer,65bb95d72174f9e70b391043f2fd013b7111ac28@linkedin.com,4
+LinkedIn,Yingyi Zhang,7f84852cef590b651942b03c0dc5600b1542a9bb@linkedin.com,2
+LinkedIn,Ratandeep Ratti,17a560ff8a7af6112cfd0a0d2f186799cd78e67c@linkedin.com,2
+LinkedIn,Erik Krogen,d76fb7fe223fbbb851ee7792a98faf2d75c74dce@linkedin.com,1
+PingCAP,pingcap-github-bot,02289d1d97168591eb26d2551f7cc1b10910d341@pingcap.com,3
+PingCAP,qupeng,61d746964f2cf9aa900605464d8422efaad5ea7d@pingcap.com,2
+PingCAP,Calvin Weng,03310b1688af3ac6d84b03af03b0c4d581e884d9@pingcap.com,1
+PingCAP,Yecheng Fu,00676efc52bd538e20f95be5b0b8f7fbd9eb4829@pingcap.com,1
+GitLab,DJ Mountney,10099878e72cf7e0ee4aa0cbce77aa8d5e6825f3@gitlab.com,3
+GitLab,ddavison,2d8af30be2746a8359c9d49236dee9d2380c4fc1@gitlab.com,2
+GitLab,GitLab Bot,6197745c6c2dca5f9a7ee12c614d4add2793a3bd@gitlab.com,1
+GitLab,"Balasankar ""Balu"" C",250a398eb3bfb9862062144cc742cc8f9bdd8d78@gitlab.com,1
+Splunk,Joshua Weinstein,2e69ad29a4830cec613db37928c470dc329f3b75@splunk.com,1
+Yunion,Yousong Zhou,93565d0aa743f277e994100c8e84217c25e48d7b@yunionyun.com,5
+Alibaba,余玠,1b00db1ba55cf57ffa156c87c63349fa5ec55905@alibaba-inc.com,9
+Alibaba,songshenzong,e733853182a75d29c9d5851f41a3e591aa617593@alibaba-inc.com,5
+Alibaba,denghui.ddh,8f3043fa9f0d889a96d2c82af308bd715f861095@alibaba-inc.com,4
+Alibaba,soar.gy,636613a7c3252d67c5bdce2cd3b8272a6e7312fa@alibaba-inc.com,3
+Alibaba,gaoshen.gs,2e9f382256f9a849c396899264865db0b3eb85ae@alibaba-inc.com,3
+Uber,Abhinav Gupta,d1f85e55fba9f5b6db087e58762c7c8e370f6a57@uber.com,19
+Uber,Yuri Shkuro,5317e98bec552d72f09b5ccb59f677c59aad3592@uber.com,9
+Uber,Sanyam Kapoor,961324cd4f7587be761c65e7e20ae381dc88cf23@uber.com,5
+Uber,Travis Addair,9199294717ebd02829c953a5e9f4967553c502c0@uber.com,4
+Uber,AJ Friend,be4931e0dcbf2d23b7f90e231ad2bb7bda192dc8@uber.com,2
+Odoo,Odoo's Mergebot,e5b8af77144c7ab3b64f7d349223922596815c76@odoo.com,9
+Odoo,Goffin Simon,b3ed2cf313e7546085c3c50622143ff31e467d23@odoo.com,4
+Odoo,Nicolas Martinelli,771435c469f83f6aa9c405ac5e1ed06314a94f2d@odoo.com,2
+Odoo,Parth Choksi,8a841e5ee538422e3e749158644b5c16a7cfaad9@odoo.com,2
+Odoo,Odoo Translation Bot,e7f5472e9a159f4d404f1091c7e345bf7ac1ddb0@odoo.com,2
+New Relic,Mike Hix,9468c16f00dd286c3324a50ccc6d4d0e8bf657c8@newrelic.com,10
+New Relic,Amine Benzaied,d22edb176b63b659c1faeada9b93ad06e824c2b1@newrelic.com,2
+New Relic,Sean P. Kane,483a1b311904613e62bda03b11ff7548291a2d19@newrelic.com,1
+PTV Group,xserverinternet,1e74a796143421ca75af2f1712eb2b21ab977992@ptvgroup.com,16
+Digital Asset,Davin K. Tanabe,ea3a1a9dc075a4ec9b6f680c5856b13ba6a03e12@digitalasset.com,18
+mongoDB,Rodrigo Valin,c0618d1176e82e2e0da59b674cb9875245a5a19f@mongodb.com,12
+mongoDB,Matt Broadstone,2626bd2ac946deacb0e46757163926f9fd67d226@mongodb.com,8
+mongoDB,Esha Maharishi,2da6f95a1418455068288edbbb5f3400215cee3f@mongodb.com,4
+mongoDB,Hari Babu Kommi,59c04cc182bcf110c4c9bb395579ff53a3be5179@mongodb.com,3
+mongoDB,Don Anderson,60ca224dd88a387ef6ad398a7b4575d59c7d2ea7@mongodb.com,2
+Microsoft,olprod,77949e2ea6c1b8c4709aae2481dcbd2f3fc26856@microsoft.com,39
+Microsoft,Jesse McCulloch,56c8ed14393a8c07e56521ca8c2b934a41fc236b@microsoft.com,22
+Microsoft,Allison Chou,250beec27507b8a9861643e4f4fcdf388ce0c721@microsoft.com,22
+Microsoft,paelaz@microsoft.com,44e245a2b958fcaa9c21c543fd5e361f23c13624@microsoft.com,21
+Microsoft,Badrish Chandramouli,42fd33f294d802c9d60b220c9a572afc31e237e5@microsoft.com,20
+Cloudbees,Alex Taylor,497ebbb45a2870c04ada14e7bf1d3579328b5f9c@cloudbees.com,3
+Cloudbees,deanesmith,943534bf6a2b742d47789a3e75a955a7cc54c69f@cloudbees.com,2
+Intel,Lukasz Dorau,53b29e3eacf7eaf0ae974656da98c5cdec29199c@intel.com,35
+Intel,Parijat Mukherjee,4c11fb468dfdfec310371bdbb01a938e5c961dbd@intel.com,20
+Intel,Brian Fulkerson,ede3fb42c87a47516af8836b262e947b00e245f6@intel.com,12
+Intel,Gabriel Schulhof,48f782b795f0aaf1d96fa1a041257d381b059e00@intel.com,12
+Intel,Craig Topper,0c9ca018c303606191d06dd2c0bdf1206717c3f3@intel.com,10
+Iohk,IOHK,89f38109521d8cbaf03d86eb0302ad8ba560fff4@iohk.io,1
+Iohk,Michael Fellinger,6015b26d07f4928eb38f6c0ecae59660e5919704@iohk.io,1
+Atomist,Christian Dupuis,034778198a045c1ed80be271cdd029b76874f6fc@atomist.com,1
+Equinor,Torbjørn Skille,8bafd1d02f29529d1de1f4cffa730839bf51e31e@equinor.com,6
+tweag.io,Arnaud Spiwack,f86bb0eb5e965ca37406beb61cc7e84ea1dc8e16@tweag.io,1
+SecOps Solutions,aarvee11,eeef760e02e16ef08144f52d7498c0eec7cdee38@secops.in,24
+Silverstripe,Maxime Rainville,1acc295174379ec718e1123290d06dcd8d68feb6@silverstripe.com,6
+Acsone,Stéphane Bidoul (ACSONE),9258fa6aabcd2ac002f38c590212f68202bdc103@acsone.eu,23
+Acsone,acsone-git-bot,1191f2104b12a215fe19b4cd9849382f5e22280a@acsone.eu,16
+Acsone,Benoit Aimont,20427dbab1035c426e36f841bc531ac5138652f1@acsone.eu,2
+Acsone,Laurent Mignon (ACSONE),d29852553be57d1b475b540ca4f8d9e22dfb5f1b@acsone.eu,1
+ArangoDB,Gergely Brautigam,c255ecbe71911eccdfe33b8c0c659cd71e377472@arangodb.com,7
+NXP,Paul DeRouen,8b74d655616c476cd0a32a98607085ec6b05ab06@nxp.com,3
+NXP,Peng Fan,d3c162a96b7fb54e5d94bc77bc2c7cbbce10806f@nxp.com,3
+NXP,Peter Chen,c01a8c815a4ad165fff2d1c0d35ddf5b16bd3d7b@nxp.com,2
+NXP,Corey Engelken,05977e8261605e408c08d6582e0b06f26298386c@nxp.com,2
+NXP,Gray Girling,39f65ed45dd4f3a8b955cb48f38f00588e91e777@nxp.com,1
+HERE,Chinmay Dalvi,f9658f723cb4250a0db2894a6405aa1fd49c88e0@here.com,4
+HERE,Ruslan Balagansky,5d42a4291fa732e8ad7f6ea054e5d52052372c3d@here.com,1
+Verizon Media,dhubbard,0e228d5c54b6205f6eb0d17caced4c00a0c413a7@oath.com,25
+Verizon Media,Susan Hinrichs,1a32c1ae5617e82b439b596eb593321571c039a7@oath.com,2
+Verizon Media,Eric E Payne,8333aedf05cc00db6fd1daa54cd2a77473884a1c@oath.com,1
+Ericsson,Vincent Fugnitto,69d295927f3a38bcd388000f9bcaa7837d25010f@ericsson.com,3
+Ericsson,Victor Ferrer,86ed6d1b0e190cd9bc90db583d57f35ac3c5a705@ericsson.com,1
+Ericsson,Peter Vargovcik,1f406f30f176c1fec9c8748aee214238090bcf31@ericsson.com,1
+Linutronix,Thomas Gleixner,00e4cf8f46a57000a44449bf9dd8cbbcc209fd2a@linutronix.de,4
+Linutronix,speck for Pawan Gupta,c8a089aaa8380c22dc1612e45b246b9f1b89d427@linutronix.de,1
+VMware,Stephen Augustus,f96984fef9637085f0559f1484dfd4e99545cd6e@vmware.com,13
+VMware,Matt Moore,866b498749d560dfd4b9805e44d1fa0b8bc948c7@vmware.com,11
+VMware,Javier J. Salmerón-García,b79cf1e2189fc74525c53ab3cf54ff9727aee7ce@vmware.com,10
+VMware,Alex Lynch,0388c26721ba25c5fb7b575e3519694e4d889bcb@vmware.com,6
+VMware,Ted Yu,30adb03a4babba70a8889dc298073fabb71ca4ff@vmware.com,4
+Confluent,A. Sophie Blee-Goldman,5f50443bfe76f7279a8e0f2f0a98975cdbff38e9@confluent.io,14
+Confluent,Brian Byrne,c5c84f21e98692554def10d763698f3fe514f6ae@confluent.io,6
+Confluent,Matthias J. Sax,e388d34fd3c0456122779e95f262c0d70198a168@confluent.io,4
+Confluent,Bruno Cadonna,660609b171607ff3dcd294929e5d8239736f4298@confluent.io,4
+Confluent,David Jacot,5fc0bbf1edd0c5fffb0c57f617de5d4a64ca0cc5@confluent.io,3
+Endlessm,Philip Chimento,3ba3974e96044dcde818e6310ed799abe10671d4@endlessm.com,1
+Endlessm,Jian-Hong Pan,3b9ef8f96e918e236a25a0fcdde751d948301867@endlessm.com,1
+HashiCorp,Mahmood Ali,62203e42ce27c7ee51f19d82aa80a717ee0766f4@hashicorp.com,3
+HashiCorp,Nick Cabatoff,0416004c7a77c0adac464978aca592d70fd881ec@hashicorp.com,2
+HashiCorp,Seth Hoenig,fe10bfe73ff03c3cf8f70a8c5f56e3b052118857@hashicorp.com,2
+HashiCorp,ncabatoff,0416004c7a77c0adac464978aca592d70fd881ec@hashicorp.com,1
+HashiCorp,R.B. Boyer,3f2132fc381ee3186016a447d3239d1662d6d65d@hashicorp.com,1
+SAP,Rafael Franzke,a7aa6a2f1f939c317a83bddbc38f713a4b62b701@sap.com,8
+SAP,natesan.sivagnanam,45548ae92b67f5c33a18f381dbf958aee6c4ed05@sap.com,8
+SAP,Merlin Beutlberger,772d7d96e1817e1910dc582c2ad5b391dd664e19@sap.com,6
+SAP,Sebastian Heid,b3c0fb010e559328a5e2658581c70095793a2c99@sap.com,5
+SAP,Nimrod Oron,0104f6e72fbe32235c03daea319520e3434bed0c@sap.com,4
+Apple,Anton Okolnychyi,d1229c8653134fa7d4c20e0516efd625946c207a@apple.com,6
+Apple,Doug Gregor,20237f4b434bdcccb3b4c7b8643e049a656bb565@apple.com,5
+Apple,Tommy Pauly,a685e9bf50079d792b49d536bfd437e02a00bfd9@apple.com,5
+Apple,Dongjoon Hyun,9b02cb7e37158797a8e22c559f7c5f5ecd28ea57@apple.com,4
+Apple,gaoyunfeng,51003d54105f21809a4130779cbe65857aa9dfd1@apple.com,2
+MuleSoft,Luis De Bello,64715b66d140fd621d2a0ad85187bb00e08edffa@mulesoft.com,1
+Renovateapp,Renovate Bot,c71e7261d37a4f6ae4cfb0cbd79081310a237e67@renovateapp.com,2457
+Datadoghq,CharlyF,6d801fb2355a07c9e004ea4635b4ce3edfe405d7@datadoghq.com,7
+Datadoghq,chelsea.l,c87697a887c2e98b339daeaa6828537773ec944b@datadoghq.com,2
+Datadoghq,Celene,da17b26c72170e8fbfe7bc23c5912c3087aabe1f@datadoghq.com,1
+Datadoghq,Aaron Lau,5991ce8e8f2813fd59d8df9544884ad27e36091e@datadoghq.com,1
+Datadoghq,Lee Avital,fccaee5cffdef4549c46818c99ad5d9d1a8ec639@datadoghq.com,1
+Netflix,Brendan Gregg,1ad6c5685d842133fc3af190a122240428fda52e@netflix.com,11
+Netflix,Chris Thielen,730d25c7db9988b33a43a1aa32fdf68e2acbcf30@netflix.com,11
+Netflix,George Campbell,8f6b1baebe672f528881e1910d838c81e2c34a6e@netflix.com,5
+Netflix,Rob Fletcher,90d1f69c4225d68e4465b6a0800650a8200f79d2@netflix.com,5
+Netflix,Rob Zienert,4e7f4d65b1ba6b280a5f76829b08a1fa1eb3d728@netflix.com,3
+ScyllaDB,juliayakovlev,59243ad05205cbbc727e349991ba205b16bc36c1@scylladb.com,7
+ScyllaDB,Rafael Ávila de Espíndola,1975039f9046bf513b77c0c5639a0efc25f00e7f@scylladb.com,7
+ScyllaDB,Amnon Heiman,ed5fc74c4692051ad0b19749fd7cea6ec2d74b9e@scylladb.com,4
+ScyllaDB,Bentsi,93dd1672fa605c108cac8d16245f1873dfdfb1b8@scylladb.com,3
+ScyllaDB,Piotr Sarna,e33b92f6981c007874effcd5dd0a95568bc054a8@scylladb.com,2
+eBay,Andrew Gliga,366829964dd986e803c3beba2b37db28b00d61c0@ebay.com,3
+eBay,Yuming Wang,a045e9e381e8d6ed98f3af6ea924f96c8dd7fbad@ebay.com,2
+eBay,Luan,8294a1a1302d2d66a07f405ad02471e833d66dd4@ebay.com,1
+eBay,Ming Deng,9bd90cd03b427586951bba11558cb80a4dee4a98@ebay.com,1
+Amazon,Wesley Pettit,78c973ed9c1462fe35634d4fce92367e57ac034c@amazon.com,36
+Amazon,Kevin DeJong,72b44d95b606d0b59e8a69b23368c60f7eaf910b@amazon.com,15
+Amazon,Yuval Fernbach,a3443c4af26de76be7527ddf01a39c10150d5042@amazon.com,14
+Amazon,Marcin Kolny,de542642e8dabf08c783c88ed024e6f8b3412185@amazon.com,11
+Amazon,Clare Liguori,7d1716f808386461736482d1343b9e1851152116@amazon.com,10
+Ant Financial,Jason Song,e75adb837215a4210e281b4e60e3a9d2ea65ab05@antfin.com,2
+Ant Financial,caojie09,344b20e434e5acf34a59d4463a3682c69ecb37d6@antfin.com,1
+Ant Financial,雄木,ca252b439e8f8c4c03c920843bd862d9c62e590c@antfin.com,1
+Ant Financial,Jing Ai,0ffffa17668d573e5b0480d0fda5eb1a1742b34a@antfin.com,1
+Snyk,snyk-bot,6524ae312692b75c8ed05087d0aa3c757ac39348@snyk.io,49
+Snyk,Snyk bot,6524ae312692b75c8ed05087d0aa3c757ac39348@snyk.io,16
+Snyk,Snyk bot,e9ad510d502f47b63f125300b6a834b41023b8db@snyk.io,4
+Snyk,Jonathan Santilli,b7d0245ab100af4b70cbcb6108e5d69cd03f810e@snyk.io,1
+Espressif,Angus Gratton,937404b2d7ba31652101e3bc73fab515a5eefa5c@espressif.com,1
+Mellanox Technologies,Paul Blakey,ea6ccc96e935d58f46ebd44c8a14dfcede3a2d8d@mellanox.com,10
+Mellanox Technologies,Eli Britstein,c54ad588c3167261842bc40039d7bd4571322ce1@mellanox.com,9
+Mellanox Technologies,Yossi Itigin,6bf403f5b5c5db79779da69eda74b88a13b6a4ae@mellanox.com,8
+Mellanox Technologies,Moni Shoua,82f7eb136882fcd734e8a5cba82c0447dc78e8e3@mellanox.com,6
+Mellanox Technologies,Artemy Kovalyov,1d230fbf623f31c41bff1eed54a1e053b5872c1f@mellanox.com,6
+Nordic Semiconductor,Konrad Derda,d62ec6fbb4c62fd972715588c4d74aeea4b8a8d0@nordicsemi.no,3
+Nordic Semiconductor,Peter Bigot,a4112a160b558d5427af084318038e19a95979ee@nordicsemi.no,2
+Nordic Semiconductor,Mieszko Mierunski,0153720f373f9fb33402fd56a3b748bfb748366c@nordicsemi.no,1
+ESRI,Matt Driscoll,e48ff29b7ac83f76f7cf46541aee085ffeffd3ae@esri.com,3
+ESRI,Lauren Boyd,cdb25495d0ddd24580e39441e0ebc79b984bea53@esri.com,2
+ESRI,Daniel,662c74b6c4346bf6168fd79e0897facb5b66222b@esri.com,1
+ESRI,Matt Driscoll,96aa76718a16821ea4c423a81aa7abcf13ab74b2@esri.com,1
+Expedia Group,Kannan Kalidasan,d302552b8ececbc14ee446b68dc45bb62c36ea79@expediagroup.com,1
+Expedia Group,Suraj Muraleedharan,c62f02b135ffbf60bd334b91e18d04454b41fdca@expediagroup.com,1
+Expedia Group,David,d9b24b8a98908170848cb0f8d99c9ab1d358cc16@expediagroup.com,1
+Expedia Group,josepjones,ccea86fd6c116ff4c66d2486f00ffea2ff573126@expedia.com,1
+Microchip Technology,Cristian Birsan,0cb032615d2842358b4a8e1daa5f1b3e6f635525@microchip.com,3
+Microchip Technology,Deepak Ukey,09a13cd1fd098400ab5b25ad47f37e78866fc694@microchip.com,2
+NVidia,predrags,98add0ab4f24e419f15d49d7b736c025f90fdefc@nvidia.com,20
+NVidia,Frederic Bastien,f97faf633e0f27948feb654f3e29ab2be0f12d06@nvidia.com,16
+NVidia,peter klausler,40a3e5313df6cfbfd9517ce247667f2334d8e9d6@nvidia.com,7
+NVidia,Thierry Reding,3055038c414aef68bf32c33b8118623e7554e0f2@nvidia.com,3
+NVidia,Trent Lo,7ddb1753734378bc8a5ee2f8f682002ac2d0087e@nvidia.com,3
+Obvious,Sanchita Agarwal,b51dced5fb0c7687e0ad4ded59e55d6bf73364f5@obvious.in,17
+Obvious,Sasikanth Miriyampalli,1cae112bb6be181bebab70ae68858488618946b0@obvious.in,15
+Obvious,Vinay S Shenoy,d17670f349e3e89f2b06d7c02c3a4f7338bb9ee0@obvious.in,7
+Obvious,Rakshak R.Hegde,076ccbe9b17fd37a817c8179a1a3df1fa6ab650d@obvious.in,6
+Obvious,Meet Bhatt,47fc1e76b399d74e6423fac3d2047326c5195b81@obvious.in,2
+SiFive,Ernie Edgar,38d7fc6a34942a5a88220db053561afa51c5ce58@sifive.com,4
+SiFive,Alan Mikhak,503fe1e822ef18fb27b6142f1180d70be22df2d7@sifive.com,1
+SiFive,Zong Li,e380b301e66ef79f88792ec2571b80c6b30c7a6b@sifive.com,1
+Instructure,dluchi,69cdd05a9f9a171ba0da1231a59785972c4a6a8a@instructure.com,5
+Test.com,dotnet-maestro-bot,458099d2bb48149f6c8651220a3b35e07025afbf@test.com,8
+MariaDB,Esa Korhonen,f13be5abbc897110f44367ab688d3ccb706c3733@mariadb.com,1
+LG Electronics,Martin Jansa,77d25b640e536c950b8ae8cdd4f0574e3b263d04@lge.com,14
+LG Electronics,Herb Kuta,b3a29751759f7c347ddccce0da8ed5b3d511fcd0@lge.com,7
+LG Electronics,sangho.yoon,c896dd2296be839ac3d4f901562fbf6ad0897ab9@lge.com,1
+Reaktor,Jouni Hartikainen,2a7a7c9f0b568f27c4f62b8bbc5d125d74bd2427@reaktor.com,2
+Reaktor,Mr. Jenkins,bf7b51d3f39fcda074cbbee7fa9c1d2d31472c9e@reaktor.com,1
+Truss Works,Matt Krump,1fa2ef4755a9226cb9a0a4840bd89b158ac71391@truss.works,2
+Truss Works,Chris Gilmer,711c73f64afdce07b7e38039a96d2224209e9a6c@truss.works,2
+Facebook,svcscm,319d4a8b107b971d56786637202f7ee82b269e79@fb.com,22
+Facebook,Naor Matania,bffa7722f021412541edf3fbfd9e2815b7ef6525@fb.com,16
+Facebook,Sebastian Messmer,ef83834e7ce69695dd3376888da48b8a95d5228b@fb.com,11
+Facebook,Gregory Chanan,405a4c10dc10d9753e4d637a51ebfa857b6fcbb3@fb.com,9
+Facebook,Amit Arbel,f9261d0500fd278b78726d93b2247638fab76922@fb.com,9
+Travis CI,Deployment Bot (from Travis CI),b0d51b9ff91b623cc42b17c529b7c21c2ab57fb4@travis-ci.org,346
+Travis CI,Travis CI,e6cc0fb2b8dad4110ef62e9a33e5a8aa4e0f86d7@travis-ci.org,79
+Travis CI,travis-ci,e6cc0fb2b8dad4110ef62e9a33e5a8aa4e0f86d7@travis-ci.org,25
+Travis CI,Piotr Milcarz,0a9feebf4a97bf70baf43dff2d9f3d326b4e1e17@travis-ci.org,11
+Travis CI,Travis CI,b0d51b9ff91b623cc42b17c529b7c21c2ab57fb4@travis-ci.org,10
+WIX,Ethan Sharabi,35f405cfdc320332993d9ae86433a04857e2f990@wix.com,9
+WIX,Avi Vahl,4e59f6836862a72cb05867e526371268be4683c1@wix.com,6
+WIX,builduser,cc5a91e57be0395248cfb61182afdc42db6a3e6b@wix.com,5
+WIX,Guy Carmeli,1f9f46e8d3dc43b5a9ce05f27827923b2023b310@wix.com,5
+WIX,tomr,b770298d3584223c1e6860aaaef49529636e22d8@wix.com,4
+BBC,Chris Needham,b0652be335954223d6ccb7a83b99c9074ddba074@bbc.co.uk,8
+BBC,Simone Spaccarotella,1f44028880b738ac33d62488cd47fc1c03fd4238@bbc.co.uk,1
+EuroLinux,Alex Baranowski,60c6d277a8bd81de7fdde19201bf9c58a3df08f4@euro-linux.com,6
